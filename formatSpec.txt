@@ -7,7 +7,8 @@ header - <vector version, 4 bytes, must be equal to or lower than vector viewer 
          <rgba or hsva background color, 4 bytes>
          <color mode, 00 is rgba, 01 is hsva, 02 is rgb, 03 is hsv>
          00
-         <sets of 2 bytes containing extensions used, viewer must support the extensions, you at the very least must have either 0102 or 0202
+         <sets of 2 bytes containing extensions used, viewer must support the extensions, you at the very least must have either 0102 or 0202, all instructions in an extension
+          MUST have paramaters be 4 bytes long
             2D 
              ║ 01 01 - base
              ║ 
@@ -17,8 +18,9 @@ header - <vector version, 4 bytes, must be equal to or lower than vector viewer 
              ║ 
          >
          00
+         <instructions>
 
-default commands:
+default commands, all viewers must support these:
     set color  - 01 02 00 00 <rgba color or hsva color, 4 bytes, if color model is 02 or 03, alpha is discarded, 
                                                                       rgba follows the format: rr gg bb aa
                                                                       hsva follows the format: hh ss vv aa
