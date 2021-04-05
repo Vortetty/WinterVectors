@@ -22,13 +22,19 @@ header - <vector version, 4 bytes, must be equal to or lower than vector viewer 
          <instructions>
 
 default commands, all viewers must support these:
+    noop       - 00 00 00 00 <can be used for alignment, no parameters>
+
     set color  - 01 01 00 00 <rgba color or hsva color, 4 bytes, if color model is 02 or 03, alpha is discarded, 
                                                                       rgba follows the format: rr gg bb aa
                                                                       hsva follows the format: hh ss vv aa
                                                                         note: hue is a number 0-255 in this case>
+    set debug  - 01 01 00 01 <bool, 4 bytes, either 00 00 00 00 or 00 00 00 01> 
+
+    raster     - 01 01 00 02 <top left corner x, 4 bytes> <top left corner y, 4 bytes> <width, 4 bytes> <height, 4 bytes> <set of colors equaling width*height, 4 bytes each>
+    rgb Raster - 01 01 00 03 <top left corner x, 4 bytes> <top left corner y, 4 bytes> <width, 4 bytes> <height, 4 bytes> <set of colors equaling width*height, 3 bytes each>
 
 2D - base ext:
-    pixel      - 01 02 00 01 <x, 4 bytes> <y, 4 bytes>
+    pixel      - 01 02 00 00 <x, 4 bytes> <y, 4 bytes>
     rectangles - 01 02 00 01 <top left corner x, 4 bytes> <top left corner y, 4 bytes> <width, 4 bytes> <height, 4 bytes>
     circles    - 01 02 00 02 <center x, 4 bytes> <center y, 4 bytes> <radius, 4 bytes>
     lines      - 01 02 00 03 <first x, 4 bytes> <first y, 4 bytes> <second x, 4 bytes> <second y, 4 bytes>

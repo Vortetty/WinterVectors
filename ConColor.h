@@ -38,4 +38,8 @@ std::string concolor_fg_rgb(uint8_t r, uint8_t g, uint8_t b){
     return "\x1b[38;2;" + std::to_string(r) + ";" + std::to_string(g) + ";" + std::to_string(b) + "m";
 }
 
+std::string concolor_reset(){
+    return "\x1b[0m";
+}
+
 #endif // CONCOLOR_H

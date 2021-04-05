@@ -87,8 +87,6 @@ int main(int argc, char* argv[]){
         file.pop_front();
 
         image.instructions = std::deque<uint8_t>(file.begin(), file.end());
-
-        delete &file;
         // ------------------------------------------------------------------------
 
 

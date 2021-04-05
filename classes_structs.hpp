@@ -19,6 +19,7 @@ class fileInfo {
         uint8_t colorMode;
         std::deque<extension> extensions;
         std::deque<uint8_t> instructions;
+        bool debugEnabled = false;
 };
 
 class instructionDef {

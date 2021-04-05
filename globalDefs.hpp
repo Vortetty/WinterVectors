@@ -1,5 +1,6 @@
 #include <deque>
 #include <map>
+#include <cmath>
 #include "classes_structs.hpp"
 
 #define LODEPNG_NO_COMPILE_ZLIB
@@ -27,6 +28,19 @@ void setPixel(unsigned int x, unsigned int y, unsigned int width, std::deque<uin
     image[4 * width * y + 4 * x + 3] = a;
 }
 
+void setPixel(unsigned int x, unsigned int y, unsigned int width, std::deque<uint8_t>& image, color col){
+    image[4 * width * y + 4 * x + 0] = col.r;
+    image[4 * width * y + 4 * x + 1] = col.g;
+    image[4 * width * y + 4 * x + 2] = col.b;
+    image[4 * width * y + 4 * x + 3] = col.a;
+}
+
+double pointDistance(unsigned int x1, unsigned int y1, unsigned int x2, unsigned int y2)
+{
+    // Calculating distance
+    return sqrt(((x2-x1)*(x2-x1)) + ((y2-y1)*(y2-y1)));
+}
+
 unsigned int getNextInt(std::deque<uint8_t>& file){
     int tmp = genInt(file[0], file[1], file[2], file[3]);
     for (int i = 0; i < 4; i++) file.pop_front();
@@ -36,6 +50,12 @@ unsigned int getNextInt(std::deque<uint8_t>& file){
 color getNextColor(std::deque<uint8_t>& file){
     color tmp = {file[0] | 0, file[1] | 0, file[2] | 0, file[3] | 0};
     for (int i = 0; i < 4; i++) file.pop_front();
+    return tmp;
+}
+
+bool getNextBool(std::deque<uint8_t>& file){
+    bool tmp = file[0];
+    file.pop_front();
     return tmp;
 }
 
