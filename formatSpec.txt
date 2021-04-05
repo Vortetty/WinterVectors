@@ -22,6 +22,7 @@ header - <vector version, 4 bytes, must be equal to or lower than vector viewer 
          <instructions>
 
 default commands, all viewers must support these:
+    noop short - FF <No paramaters, a 1 byte noop>
     noop       - 00 00 00 00 <can be used for alignment, no parameters>
     noop ex    - 00 00 00 01 <2 bytes equaling the length of the padding minus 8> <# of bytes specified previously, can be any value, great for Steganography ;) >
 

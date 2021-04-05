@@ -158,9 +158,12 @@ int main(int argc, char* argv[]){
     // Run instructions and save image
     // ------------------------------------------------------------------------
     while (image.instructions.size() > 0){
-        currentInstruction = getNextInt(image.instructions);
-        std::cout << std::hex << "Instruction: " << currentInstruction << "\n";
-        instructionParsers[currentInstruction](outImage, image);
+        if (image.instructions[0] == 0xff) image.instructions.pop_front(); // Remove the FF noop
+        else {
+            currentInstruction = getNextInt(image.instructions);
+            std::cout << std::hex << "Instruction: " << currentInstruction << "\n";
+            instructionParsers[currentInstruction](outImage, image);
+        }
     }
 
     saveImage((filename + ".png").c_str(), &outImage, image.width, image.height);
