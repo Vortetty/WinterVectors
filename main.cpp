@@ -115,7 +115,7 @@ int main(int argc, char* argv[]){
         }
 
         if (unsupportedExtension) {
-            std::cout << "Image uses one or more unsupported extensions, exiting.";
+            std::cout << "Image uses one or more unsupported extensions, exiting.\n";
             return 0;
         }
 
