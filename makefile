@@ -12,6 +12,10 @@ github: all
 	git commit
 	git push
 
+git: github
+push: github
+update: github
+
 all:
 ifeq ($(OS),Windows_NT)
 	g++ main.cpp include/lodepng.cpp -o bin/main.exe -std=c++17 -I.
