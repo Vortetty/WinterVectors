@@ -8,7 +8,7 @@ header - <vector version, 4 bytes, must be equal to or lower than vector viewer 
          <color mode, 00 is rgba, 01 is hsva, 02 is rgb, 03 is hsv>
          00
          <sets of 2 bytes containing extensions used, viewer must support the extensions, you at the very least must have either 0102 or 0202,
-          extension FF FF is reserved for testing, extension 00 00 will break all readers
+          extension FF FF is reserved for testing, extension 00 00 will break all readers, and should not be used except for the noop command
             2D 
              ║ 01 01 - default commands, should not be set here, but can be
              ║ 01 02 - basic 2d
@@ -23,6 +23,7 @@ header - <vector version, 4 bytes, must be equal to or lower than vector viewer 
 
 default commands, all viewers must support these:
     noop       - 00 00 00 00 <can be used for alignment, no parameters>
+    noop ex    - 00 00 00 01 <2 bytes equaling the length of the padding minus 8> <# of bytes specified previously, can be any value, great for Steganography ;) >
 
     set color  - 01 01 00 00 <rgba color or hsva color, 4 bytes, if color model is 02 or 03, alpha is discarded, 
                                                                       rgba follows the format: rr gg bb aa

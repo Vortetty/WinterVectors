@@ -21,6 +21,10 @@ unsigned int genInt(uint8_t a, uint8_t b, uint8_t c, uint8_t d){
     return (unsigned int)a << 24 | (unsigned int)b << 16 | (unsigned int)c << 8 | (unsigned int)d;
 }
 
+uint16_t genInt16(uint8_t a, uint8_t b){
+    return (uint16_t)a << 8 | (uint16_t)b;
+}
+
 void setPixel(unsigned int x, unsigned int y, unsigned int width, std::deque<uint8_t>& image, uint8_t r, uint8_t g, uint8_t b, uint8_t a){
     image[4 * width * y + 4 * x + 0] = r;
     image[4 * width * y + 4 * x + 1] = g;
@@ -47,15 +51,22 @@ unsigned int getNextInt(std::deque<uint8_t>& file){
     return tmp;
 }
 
-color getNextColor(std::deque<uint8_t>& file){
-    color tmp = {file[0] | 0, file[1] | 0, file[2] | 0, file[3] | 0};
-    for (int i = 0; i < 4; i++) file.pop_front();
+unsigned int getNextInt16(std::deque<uint8_t>& file){
+    int tmp = genInt16(file[0], file[1]);
+    file.pop_front();
+    file.pop_front();
     return tmp;
 }
 
-bool getNextBool(std::deque<uint8_t>& file){
-    bool tmp = file[0];
+uint8_t getNextInt8(std::deque<uint8_t>& file){
+    uint8_t tmp = file[0];
     file.pop_front();
+    return tmp;
+}
+
+color getNextColor(std::deque<uint8_t>& file){
+    color tmp = {file[0] | 0, file[1] | 0, file[2] | 0, file[3] | 0};
+    for (int i = 0; i < 4; i++) file.pop_front();
     return tmp;
 }
 
