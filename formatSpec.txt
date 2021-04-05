@@ -7,38 +7,39 @@ header - <vector version, 4 bytes, must be equal to or lower than vector viewer 
          <rgba or hsva background color, 4 bytes>
          <color mode, 00 is rgba, 01 is hsva, 02 is rgb, 03 is hsv>
          00
-         <sets of 2 bytes containing extensions used, viewer must support the extensions, you at the very least must have either 0102 or 0202, all instructions in an extension
-          MUST have paramaters be 4 bytes long
+         <sets of 2 bytes containing extensions used, viewer must support the extensions, you at the very least must have either 0102 or 0202,
+          extension FF FF is reserved for testing, extension 00 00 will break all readers
             2D 
-             ║ 01 01 - base
+             ║ 01 01 - default commands, should not be set here, but can be
+             ║ 01 02 - basic 2d
              ║ 
 
             3D
-             ║ 02 01 - base
+             ║ 01 03 - basic 3d
              ║ 
          >
          00
          <instructions>
 
 default commands, all viewers must support these:
-    set color  - 01 02 00 00 <rgba color or hsva color, 4 bytes, if color model is 02 or 03, alpha is discarded, 
+    set color  - 01 01 00 00 <rgba color or hsva color, 4 bytes, if color model is 02 or 03, alpha is discarded, 
                                                                       rgba follows the format: rr gg bb aa
                                                                       hsva follows the format: hh ss vv aa
                                                                         note: hue is a number 0-255 in this case>
 
 2D - base ext:
-    rectangles - 01 01 00 01 <top left corner x, 4 bytes> <top left corner y, 4 bytes> <width, 4 bytes> <height, 4 bytes>
-    circles    - 01 01 00 02 <center x, 4 bytes> <center y, 4 bytes> <radius, 4 bytes>
-    lines      - 01 01 00 03 <first x, 4 bytes> <first y, 4 bytes> <second x, 4 bytes> <second y, 4 bytes>
-    pixels     - 01 01 00 04 <x, 4 bytes> <y, 4 bytes>
+    pixel      - 01 02 00 01 <x, 4 bytes> <y, 4 bytes>
+    rectangles - 01 02 00 01 <top left corner x, 4 bytes> <top left corner y, 4 bytes> <width, 4 bytes> <height, 4 bytes>
+    circles    - 01 02 00 02 <center x, 4 bytes> <center y, 4 bytes> <radius, 4 bytes>
+    lines      - 01 02 00 03 <first x, 4 bytes> <first y, 4 bytes> <second x, 4 bytes> <second y, 4 bytes>
 
 3D - base ext:
-    rectangular prism - 02 01 00 01 <first corner x, 4 bytes> <first corner y, 4 bytes> <first corner z, 4 bytes> <second corner x, 4 bytes> <second corner y, 4 bytes> <second corner z, 4 bytes>
-    triangles         - 02 01 00 02 <first x, 4 bytes> <first y, 4 bytes> <first z, 4 bytes> <second x, 4 bytes> <second y, 4 bytes> <second z, 4 bytes> <third x, 4 bytes> <third y, 4 bytes> <third z, 4 bytes>
-    lines             - 02 01 00 03 <first x, 4 bytes> <first y, 4 bytes> <first z, 4 bytes> <second x, 4 bytes> <second y, 4 bytes> <second z, 4 bytes>
-    pixels            - 02 01 00 04 <x, 4 bytes> <y, 4 bytes> <z, 4 bytes>
+    pixel             - 01 03 00 00 <x, 4 bytes> <y, 4 bytes> <z, 4 bytes>
+    rectangular prism - 01 03 00 01 <first corner x, 4 bytes> <first corner y, 4 bytes> <first corner z, 4 bytes> <second corner x, 4 bytes> <second corner y, 4 bytes> <second corner z, 4 bytes>
+    triangles         - 01 03 00 02 <first x, 4 bytes> <first y, 4 bytes> <first z, 4 bytes> <second x, 4 bytes> <second y, 4 bytes> <second z, 4 bytes> <third x, 4 bytes> <third y, 4 bytes> <third z, 4 bytes>
+    lines             - 01 03 00 03 <first x, 4 bytes> <first y, 4 bytes> <first z, 4 bytes> <second x, 4 bytes> <second y, 4 bytes> <second z, 4 bytes>
 
-an example file to draw a black line on a white background (10x10):
+an example file to draw a clear line on a white background (10x10):
 00 00 00 00                                                     // Version 0
 00 00 00 0A                                                     // 10 wide
 00 00 00 0A                                                     // 10 tall
@@ -46,4 +47,25 @@ an example file to draw a black line on a white background (10x10):
 ff ff ff ff                                                     // White background
 00                                                              // color mode 0 (rgba)
 00 01 01 00                                                     // Load 2d extension
-01 01 00 03  00 00 00 00  00 00 00 00  00 00 00 09  00 00 00 09 // Line from 0, 0 to 10, 10
+01 02 00 03  00 00 00 00  00 00 00 00  00 00 00 09  00 00 00 09 // Line from 0, 0 to 10, 10
+
+
+an example file to draw a red line on a white background (10x10):
+00 00 00 00                                                     // Version 0
+00 00 00 0A                                                     // 10 wide
+00 00 00 0A                                                     // 10 tall
+00 7b 22 74 65 78 74 22 3a 22 74 65 73 74 22 7d 00              // Metadata containing {"text":"test"}
+ff ff ff ff                                                     // White background
+00                                                              // color mode 0 (rgba)
+00 01 01 00                                                     // Load 2d extension
+01 01 00 00  ff 00 00 ff                                        // Set color to #ff0000ff
+01 02 00 03  00 00 00 00  00 00 00 00  00 00 00 09  00 00 00 09 // Line from 0, 0 to 10, 10
+
+an example with an unsupported extension (10x10):
+00 00 00 00                                                     // Version 0
+00 00 00 0A                                                     // 10 wide
+00 00 00 0A                                                     // 10 tall
+00 7b 22 74 65 78 74 22 3a 22 74 65 73 74 22 7d 00              // Metadata containing {"text":"test"}
+ff ff ff ff                                                     // White background
+00                                                              // color mode 0 (rgba)
+00 01 01 00                                                     // Load 2d extension and invalid FF FF extension

@@ -6,9 +6,11 @@
 #include <map>
 #include <algorithm>
 #include "classes_structs.hpp"
+#include "ConColor.h"
 
 #include "globalDefs.hpp"
-#include "extensions/2D/01.hpp"
+#include "extensions/0101.hpp"
+#include "extensions/2D/0102.hpp"
 
 #define LODEPNG_NO_COMPILE_ZLIB
 #define LODEPNG_NO_COMPILE_DECODER
@@ -20,61 +22,24 @@
 // ------------------------------------------------------------------------
 // ------------------------------------------------------------------------
 
-std::deque<unsigned char> readFile(const char* filename)
-{
-    // open the file:
-    std::ifstream file(filename, std::ios::binary);
-
-    // Stop eating new lines in binary mode!!!
-    file.unsetf(std::ios::skipws);
-
-    // get its size:
-    std::streampos fileSize;
-
-    file.seekg(0, std::ios::end);
-    fileSize = file.tellg();
-    file.seekg(0, std::ios::beg);
-
-    // reserve capacity
-    std::deque<unsigned char> vec;
-    //vec.reserve(fileSize);
-
-    // read the data:
-    vec.insert(vec.begin(),
-               std::istream_iterator<unsigned char>(file),
-               std::istream_iterator<unsigned char>());
-
-    return vec;
-}
-
-void setPixel(unsigned int x, unsigned int y, unsigned int width, std::deque<unsigned char>* image, unsigned char r, unsigned char g, unsigned char b, unsigned char a){
-    (*image)[4 * width * y + 4 * x + 0] = r;
-    (*image)[4 * width * y + 4 * x + 1] = g;
-    (*image)[4 * width * y + 4 * x + 2] = b;
-    (*image)[4 * width * y + 4 * x + 3] = a;
-}
-
-void saveImage(const char* filename, std::deque<unsigned char>* image, unsigned int width, unsigned int height){
-    std::vector<unsigned char> png;
-    std::vector<unsigned char> inpng((*image).begin(), (*image).end());
-
-    unsigned error = lodepng::encode(png, inpng, width, height);
-    if(!error) lodepng::save_file(png, filename);
-    else std::cout << lodepng_error_text(error) << " " << inpng.size() << " " << (*image).size() << " " << width*height;
-}
-
 int main(int argc, char* argv[]){
     // Magic numbers are bad so i put stuff here
     // ------------------------------------------------------------------------
     std::string filename = "";
     if (argc > 1) filename = argv[1];
-    std::deque<unsigned char> file;
-    fileInfo image;
-    std::string colorModes[] = {"RGBA", "HSVA", "RGB", "HSV"};
-    // ------------------------------------------------------------------------
 
-    // Parse parameters
-    // ------------------------------------------------------------------------
+    std::deque<uint8_t> file;
+    fileInfo image;
+
+    std::string colorModes[] = {"RGBA", "HSVA", "RGB", "HSV"};
+
+    std::map<unsigned int, void (*)(std::deque<uint8_t>&, fileInfo&)> instructionParsers;
+    std::deque<uint8_t> outImage;
+    unsigned int currentInstruction;
+
+    bool unsupportedExtension = false;
+    
+    concolor_setup();
     // ------------------------------------------------------------------------
 
 
@@ -114,14 +79,14 @@ int main(int argc, char* argv[]){
             image.extensions.push_front(
                 e
             );
-            image.extensions[0].extType = file[0];
-            image.extensions[0].extID = file[1];
+            image.extensions[0].extHigh = file[0];
+            image.extensions[0].extLow = file[1];
             file.pop_front();
             file.pop_front();
         }
         file.pop_front();
 
-        image.instructions = std::deque<unsigned char>(file.begin(), file.end());
+        image.instructions = std::deque<uint8_t>(file.begin(), file.end());
 
         delete &file;
         // ------------------------------------------------------------------------
@@ -142,12 +107,20 @@ int main(int argc, char* argv[]){
         std::cout << "  Background Color: #" << std::hex << (int)image.bg.r << (int)image.bg.g << (int)image.bg.b << (int)image.bg.a << std::dec << "\n";
         std::cout << "  Color Mode: " << colorModes[image.colorMode] << "\n";
         
-        std::cout << "  Extensions: { ";
+        std::cout << "  Extensions Needed: { ";
         for (auto i = image.extensions.begin(); i != image.extensions.end(); ++i){
-            std::cout << std::hex << (unsigned int)((extension)*i).extType << "::" << (unsigned int)((extension)*i).extID << " ";
+            std::cout << std::hex << (checkInstructionSetSupported((*i).extHigh, (*i).extLow) ? concolor_fg_rgb(119, 221, 119) : concolor_fg_rgb(221, 119, 119)) << ((uint16_t)(*i).extHigh << 8 | (uint16_t)(*i).extLow) << "\x1b[0m";
             if (image.extensions.end()-1 != i) std::cout << ", ";
-            else std::cout << "}\n";
+            else std::cout << " }\n";
+
+            if (!checkInstructionSetSupported((*i).extHigh, (*i).extLow)) unsupportedExtension = true;
         }
+
+        if (unsupportedExtension) {
+            std::cout << "Image uses one or more unsupported extensions, exiting.";
+            return 0;
+        }
+
         // ------------------------------------------------------------------------
     } else {
         std::cout << "Proper usage: " << argv[0] << " <wvc file>";
@@ -159,9 +132,12 @@ int main(int argc, char* argv[]){
 
     // Extension loader
     // ------------------------------------------------------------------------
-    std::map<unsigned int, void (*)(std::deque<unsigned char>&, fileInfo&)> instructionParsers;
-    std::deque<unsigned char> outImage;
-
+    ext0101_registerAll(instructionParsers);
+    ext0102_registerAll(instructionParsers);
+    // ------------------------------------------------------------------------
+    
+    // Setup image
+    // ------------------------------------------------------------------------
     for (unsigned int x = 0; x < image.width; x++){
         for (unsigned int y = 0; y < image.height; y++){
             outImage.push_back(0);
@@ -178,14 +154,18 @@ int main(int argc, char* argv[]){
             outImage[4 * image.width * y + 4 * x + 3] = image.bg.a;
         }
     }
+    // ------------------------------------------------------------------------
 
-    ext01_registerAll(instructionParsers);
-
+    
+    // Run instructions and save image
+    // ------------------------------------------------------------------------
     while (image.instructions.size() > 0){
-        instructionParsers[getNextInt(image.instructions)](outImage, image);
+        currentInstruction = getNextInt(image.instructions);
+        std::cout << std::hex << "Instruction: " << currentInstruction << "\n";
+        instructionParsers[currentInstruction](outImage, image);
     }
 
-    saveImage("test.png", &outImage, image.width, image.height);
+    saveImage((filename + ".png").c_str(), &outImage, image.width, image.height);
     // ------------------------------------------------------------------------
 
     return 0;

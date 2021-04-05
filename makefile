@@ -1,5 +1,7 @@
 run: all
-	main.exe test.wvc
+	main.exe transpLine.wvc
+	main.exe redLine.wvc
+	main.exe invalidExtensionTest.wvc
 
 all:
-	clang main.cpp include/lodepng.cpp -o main.exe -std=c++17 -I.
+	g++ main.cpp include/lodepng.cpp -o main.exe -std=c++17 -I.

@@ -4,26 +4,26 @@
 #ifndef CLASSES_STRUCTS
 #define CLASSES_STRUCTS
 struct color {
-    unsigned char r, g, b, a;
+    uint8_t r, g, b, a;
 };
 
 struct extension {
-    unsigned char extType, extID;
+    uint8_t extHigh, extLow;
 };
 
 class fileInfo {
     public:
         unsigned int version, width, height;
-        std::deque<unsigned char> meta;
-        color bg, currentColor={0, 0, 0, 0};
-        unsigned char colorMode;
+        std::deque<uint8_t> meta;
+        color bg, currentColor = {0, 0, 0, 0};
+        uint8_t colorMode;
         std::deque<extension> extensions;
-        std::deque<unsigned char> instructions;
+        std::deque<uint8_t> instructions;
 };
 
 class instructionDef {
     public:
-        void inst(std::deque<unsigned char>& img, fileInfo& fi);
+        void inst(std::deque<uint8_t>& img, fileInfo& fi);
         unsigned int id;
 };
 #endif
