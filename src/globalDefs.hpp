@@ -65,7 +65,7 @@ uint8_t getNextInt8(std::deque<uint8_t>& file){
 }
 
 color getNextColor(std::deque<uint8_t>& file){
-    color tmp = {file[0] | 0, file[1] | 0, file[2] | 0, file[3] | 0};
+    color tmp = {file[0], file[1], file[2], file[3]};
     for (int i = 0; i < 4; i++) file.pop_front();
     return tmp;
 }

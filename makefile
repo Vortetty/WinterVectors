@@ -7,7 +7,11 @@ else
 	bin/main tests/invalidExtensionTest.wvc
 endif
 
-github: all
+asm:
+	cd src && clang main.cpp -std=c++17 -I../src -I../include -I.. -O3 -s -S -masm=intel
+	cd include && clang lodepng.cpp -std=c++17 -I../src -I../include -I.. -O3 -s -S -masm=intel
+
+github: all asm
 	git add *
 	git commit
 	git push
@@ -18,8 +22,8 @@ update: github
 
 all:
 ifeq ($(OS),Windows_NT)
-	g++ src/main.cpp include/lodepng.cpp -o bin/main.exe -std=c++17 -I./src -I./include -I.
+	g++ src/main.cpp include/lodepng.cpp -o bin/main.exe -std=c++17 -I./src -I./include -I. -O9999 -s
 else
-	g++ src/main.cpp include/lodepng.cpp -o bin/main -std=c++17 -I./src -I./include -I.
+	g++ src/main.cpp include/lodepng.cpp -o bin/main -std=c++17 -I./src -I./include -I. -O9999 -s
 	chmod +x bin/main
 endif
