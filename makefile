@@ -8,8 +8,8 @@ else
 endif
 
 asm:
-	cd src && clang main.cpp -std=c++17 -I../src -I../include -I.. -O3 -s -S -masm=intel
-	cd include && clang lodepng.cpp -std=c++17 -I../src -I../include -I.. -O3 -s -S -masm=intel
+	cd src && clang main.cpp -std=c++17 -I../src -I../include -I.. -Ofast -S -masm=intel
+	cd include && clang lodepng.cpp -std=c++17 -I../src -I../include -I.. -Ofast -S -masm=intel
 
 github: all asm
 	git add *
@@ -22,8 +22,10 @@ update: github
 
 all:
 ifeq ($(OS),Windows_NT)
-	g++ src/main.cpp include/lodepng.cpp -o bin/main.exe -std=c++17 -I./src -I./include -I. -O9999 -s
+	clang src/main.cpp include/lodepng.cpp -o bin/main.exe -std=c++17 -I./src -I./include -I. -O3 -s -Ofast
+	llvm-strip bin/main.exe
 else
-	g++ src/main.cpp include/lodepng.cpp -o bin/main -std=c++17 -I./src -I./include -I. -O9999 -s
+	clang src/main.cpp include/lodepng.cpp -o bin/main -std=c++17 -I./src -I./include -I. -O3 -s -Ofast
+	llvm-strip bin/main
 	chmod +x bin/main
 endif
