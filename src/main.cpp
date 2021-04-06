@@ -7,6 +7,7 @@
 #include <algorithm>
 #include "classes_structs.hpp"
 #include "ConColor.h"
+#include "palettes/palettes.h"
 
 #include "globalDefs.hpp"
 #include "extensions/0101.hpp"
@@ -40,6 +41,7 @@ int main(int argc, char* argv[]){
     bool unsupportedExtension = false;
     
     concolor_setup();
+    palettes_setup();
     // ------------------------------------------------------------------------
 
 

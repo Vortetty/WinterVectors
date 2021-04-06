@@ -9,43 +9,36 @@ header - <vector version, 4 bytes, must be equal to or lower than vector viewer 
          00
          <sets of 2 bytes containing extensions used, viewer must support the extensions, you at the very least must have either 0102 or 0202,
           extension FF FF is reserved for testing, extension 00 00 will break all readers, and should not be used except for the noop command
-            2D 
+            Extensions
              ║ 01 01 - default commands, should not be set here, but can be
              ║ 01 02 - basic 2d
-             ║ 
-
-            3D
-             ║ 01 03 - basic 3d
              ║ 
          >
          00
          <instructions>
 
 default commands, all viewers must support these:
-    noop short - FF <No paramaters, a 1 byte noop>
-    noop       - 00 00 00 00 <can be used for alignment, no parameters>
-    noop ex    - 00 00 00 01 <2 bytes equaling the length of the padding minus 8> <# of bytes specified previously, can be any value, great for Steganography ;) >
-
-    set color  - 01 01 00 00 <rgba color or hsva color, 4 bytes, if color model is 02 or 03, alpha is discarded, 
-                                                                      rgba follows the format: rr gg bb aa
-                                                                      hsva follows the format: hh ss vv aa
-                                                                        note: hue is a number 0-255 in this case>
-    set debug  - 01 01 00 01 <bool, 4 bytes, either 00 00 00 00 or 00 00 00 01> 
-
-    raster     - 01 01 00 02 <top left corner x, 4 bytes> <top left corner y, 4 bytes> <width, 4 bytes> <height, 4 bytes> <set of colors equaling width*height, 4 bytes each>
-    rgb Raster - 01 01 00 03 <top left corner x, 4 bytes> <top left corner y, 4 bytes> <width, 4 bytes> <height, 4 bytes> <set of colors equaling width*height, 3 bytes each>
+    noop short     - FF <No paramaters, a 1 byte noop>
+    noop           - 00 00 00 00 <can be used for alignment, no parameters>
+    noop ex        - 00 00 00 01 <2 bytes equaling the length of the padding minus 8> <# of bytes specified previously, can be any value, great for Steganography ;) >
+    
+    set color      - 01 01 00 00 <rgba color or hsva color, 4 bytes, if color model is 02 or 03, alpha is discarded, 
+                                                                          rgba follows the format: rr gg bb aa
+                                                                          hsva follows the format: hh ss vv aa
+                                                                            note: hue is a number 0-255 in this case>
+    set debug      - 01 01 00 01 <bool, 4 bytes, either 00 00 00 00 or 00 00 00 01> 
+    
+    raster         - 01 01 00 02 <top left corner x, 4 bytes> <top left corner y, 4 bytes> <width, 4 bytes> <height, 4 bytes> <set of colors equaling width*height, 4 bytes each>
+    rgb Raster     - 01 01 00 03 <top left corner x, 4 bytes> <top left corner y, 4 bytes> <width, 4 bytes> <height, 4 bytes> <set of colors equaling width*height, 3 bytes each>
+   
+    set palette    - 01 01 00 04 <1 byte, palette id, valid values are 00-07>
+    palette raster - 01 01 00 05 <top left corner x, 4 bytes> <top left corner y, 4 bytes> <width, 4 bytes> <height, 4 bytes> <set of colors equaling width*height, 1 byte per, specifies index in palette>
 
 2D - base ext:
     pixel      - 01 02 00 00 <x, 4 bytes> <y, 4 bytes>
     rectangles - 01 02 00 01 <top left corner x, 4 bytes> <top left corner y, 4 bytes> <width, 4 bytes> <height, 4 bytes>
     circles    - 01 02 00 02 <center x, 4 bytes> <center y, 4 bytes> <radius, 4 bytes>
     lines      - 01 02 00 03 <first x, 4 bytes> <first y, 4 bytes> <second x, 4 bytes> <second y, 4 bytes>
-
-3D - base ext:
-    pixel             - 01 03 00 00 <x, 4 bytes> <y, 4 bytes> <z, 4 bytes>
-    rectangular prism - 01 03 00 01 <first corner x, 4 bytes> <first corner y, 4 bytes> <first corner z, 4 bytes> <second corner x, 4 bytes> <second corner y, 4 bytes> <second corner z, 4 bytes>
-    triangles         - 01 03 00 02 <first x, 4 bytes> <first y, 4 bytes> <first z, 4 bytes> <second x, 4 bytes> <second y, 4 bytes> <second z, 4 bytes> <third x, 4 bytes> <third y, 4 bytes> <third z, 4 bytes>
-    lines             - 01 03 00 03 <first x, 4 bytes> <first y, 4 bytes> <first z, 4 bytes> <second x, 4 bytes> <second y, 4 bytes> <second z, 4 bytes>
 
 an example file to draw a clear line on a white background (10x10):
 00 00 00 00                                                     // Version 0

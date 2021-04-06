@@ -4818,6 +4818,2526 @@ LBB22_23:
 	pop	ebp
 	ret
                                         # -- End function
+	.def	 "??__Fpalettes@@YAXXZ";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90                         # -- Begin function ??__Fpalettes@@YAXXZ
+"??__Fpalettes@@YAXXZ":                 # @"??__Fpalettes@@YAXXZ"
+# %bb.0:
+	mov	ecx, offset "?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"
+	call	"?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ"
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"]
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"], 0
+	push	8
+	push	eax
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+	ret
+                                        # -- End function
+	.def	 "??__FpaletteNames@@YAXXZ";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90                         # -- Begin function ??__FpaletteNames@@YAXXZ
+"??__FpaletteNames@@YAXXZ":             # @"??__FpaletteNames@@YAXXZ"
+Lfunc_begin9:
+# %bb.0:
+	push	ebp
+	mov	ebp, esp
+	push	ebx
+	push	edi
+	push	esi
+	sub	esp, 16
+	mov	dword ptr [ebp - 28], esp
+	mov	dword ptr [ebp - 16], -1
+	mov	dword ptr [ebp - 20], offset "___ehhandler$??__FpaletteNames@@YAXXZ"
+	lea	eax, [ebp - 24]
+	mov	ecx, dword ptr fs:[0]
+	mov	dword ptr [ebp - 24], ecx
+	mov	dword ptr fs:[0], eax
+	mov	eax, dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+188]
+	cmp	eax, 16
+	jb	LBB24_8
+# %bb.1:
+	mov	ecx, dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+168]
+	lea	edx, [eax + 1]
+	cmp	edx, 4096
+	jb	LBB24_7
+# %bb.2:
+	mov	esi, dword ptr [ecx - 4]
+	add	ecx, -4
+	sub	ecx, esi
+	cmp	ecx, 32
+	jae	LBB24_3
+# %bb.6:
+	add	eax, 36
+	mov	ecx, esi
+	mov	edx, eax
+LBB24_7:
+	push	edx
+	push	ecx
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+LBB24_8:
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+184], 0
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+188], 15
+	mov	byte ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+168], 0
+	mov	eax, dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+164]
+	cmp	eax, 16
+	jb	LBB24_16
+# %bb.9:
+	mov	ecx, dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+144]
+	lea	edx, [eax + 1]
+	cmp	edx, 4096
+	jb	LBB24_15
+# %bb.10:
+	mov	esi, dword ptr [ecx - 4]
+	add	ecx, -4
+	sub	ecx, esi
+	cmp	ecx, 32
+	jae	LBB24_11
+# %bb.14:
+	add	eax, 36
+	mov	ecx, esi
+	mov	edx, eax
+LBB24_15:
+	push	edx
+	push	ecx
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+LBB24_16:
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+160], 0
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+164], 15
+	mov	byte ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+144], 0
+	mov	eax, dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+140]
+	cmp	eax, 16
+	jb	LBB24_21
+# %bb.17:
+	mov	ecx, dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+120]
+	lea	esi, [eax + 1]
+	cmp	esi, 4096
+	jb	LBB24_20
+# %bb.18:
+	mov	edx, dword ptr [ecx - 4]
+	add	ecx, -4
+	sub	ecx, edx
+	cmp	ecx, 31
+	ja	LBB24_11
+# %bb.19:
+	add	eax, 36
+	mov	ecx, edx
+	mov	esi, eax
+LBB24_20:
+	push	esi
+	push	ecx
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+LBB24_21:
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+136], 0
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+140], 15
+	mov	byte ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+120], 0
+	mov	eax, dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+116]
+	cmp	eax, 16
+	jb	LBB24_26
+# %bb.22:
+	mov	ecx, dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+96]
+	lea	esi, [eax + 1]
+	cmp	esi, 4096
+	jb	LBB24_25
+# %bb.23:
+	mov	edx, dword ptr [ecx - 4]
+	add	ecx, -4
+	sub	ecx, edx
+	cmp	ecx, 31
+	ja	LBB24_11
+# %bb.24:
+	add	eax, 36
+	mov	ecx, edx
+	mov	esi, eax
+LBB24_25:
+	push	esi
+	push	ecx
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+LBB24_26:
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+112], 0
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+116], 15
+	mov	byte ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+96], 0
+	mov	eax, dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+92]
+	cmp	eax, 16
+	jb	LBB24_31
+# %bb.27:
+	mov	ecx, dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+72]
+	lea	esi, [eax + 1]
+	cmp	esi, 4096
+	jb	LBB24_30
+# %bb.28:
+	mov	edx, dword ptr [ecx - 4]
+	add	ecx, -4
+	sub	ecx, edx
+	cmp	ecx, 31
+	ja	LBB24_11
+# %bb.29:
+	add	eax, 36
+	mov	ecx, edx
+	mov	esi, eax
+LBB24_30:
+	push	esi
+	push	ecx
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+LBB24_31:
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+88], 0
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+92], 15
+	mov	byte ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+72], 0
+	mov	eax, dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+68]
+	cmp	eax, 16
+	jb	LBB24_36
+# %bb.32:
+	mov	ecx, dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+48]
+	lea	esi, [eax + 1]
+	cmp	esi, 4096
+	jb	LBB24_35
+# %bb.33:
+	mov	edx, dword ptr [ecx - 4]
+	add	ecx, -4
+	sub	ecx, edx
+	cmp	ecx, 31
+	ja	LBB24_11
+# %bb.34:
+	add	eax, 36
+	mov	ecx, edx
+	mov	esi, eax
+LBB24_35:
+	push	esi
+	push	ecx
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+LBB24_36:
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+64], 0
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+68], 15
+	mov	byte ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+48], 0
+	mov	eax, dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+44]
+	cmp	eax, 16
+	jb	LBB24_41
+# %bb.37:
+	mov	ecx, dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+24]
+	lea	esi, [eax + 1]
+	cmp	esi, 4096
+	jb	LBB24_40
+# %bb.38:
+	mov	edx, dword ptr [ecx - 4]
+	add	ecx, -4
+	sub	ecx, edx
+	cmp	ecx, 31
+	ja	LBB24_11
+# %bb.39:
+	add	eax, 36
+	mov	ecx, edx
+	mov	esi, eax
+LBB24_40:
+	push	esi
+	push	ecx
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+LBB24_41:
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+40], 0
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+44], 15
+	mov	byte ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+24], 0
+	mov	eax, dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+20]
+	cmp	eax, 16
+	jb	LBB24_46
+# %bb.42:
+	mov	ecx, dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"]
+	lea	esi, [eax + 1]
+	cmp	esi, 4096
+	jb	LBB24_45
+# %bb.43:
+	mov	edx, dword ptr [ecx - 4]
+	add	ecx, -4
+	sub	ecx, edx
+	cmp	ecx, 31
+	ja	LBB24_11
+# %bb.44:
+	add	eax, 36
+	mov	ecx, edx
+	mov	esi, eax
+LBB24_45:
+	push	esi
+	push	ecx
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+LBB24_46:
+	mov	eax, dword ptr [ebp - 24]
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+16], 0
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+20], 15
+	mov	byte ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"], 0
+	mov	dword ptr fs:[0], eax
+	add	esp, 16
+	pop	esi
+	pop	edi
+	pop	ebx
+	pop	ebp
+	ret
+LBB24_11:
+	mov	dword ptr [ebp - 16], 1
+	call	__invalid_parameter_noinfo_noreturn
+# %bb.12:
+LBB24_3:
+	mov	dword ptr [ebp - 16], 0
+	call	__invalid_parameter_noinfo_noreturn
+# %bb.4:
+	.def	 "?dtor$5@?0???__FpaletteNames@@YAXXZ@4HA";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90
+"?dtor$5@?0???__FpaletteNames@@YAXXZ@4HA":
+LBB24_5:
+	push	ebp
+	sub	esp, 8
+	add	ebp, 12
+	call	___std_terminate
+	.def	 "?dtor$13@?0???__FpaletteNames@@YAXXZ@4HA";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90
+"?dtor$13@?0???__FpaletteNames@@YAXXZ@4HA":
+LBB24_13:
+	push	ebp
+	sub	esp, 8
+	add	ebp, 12
+	call	___std_terminate
+Lfunc_end9:
+	.section	.xdata,"dr"
+	.p2align	2
+"L__ehtable$??__FpaletteNames@@YAXXZ":
+	.long	429065506                       # MagicNumber
+	.long	2                               # MaxState
+	.long	("$stateUnwindMap$??__FpaletteNames@@YAXXZ") # UnwindMap
+	.long	0                               # NumTryBlocks
+	.long	0                               # TryBlockMap
+	.long	0                               # IPMapEntries
+	.long	0                               # IPToStateXData
+	.long	0                               # ESTypeList
+	.long	1                               # EHFlags
+"$stateUnwindMap$??__FpaletteNames@@YAXXZ":
+	.long	-1                              # ToState
+	.long	"?dtor$5@?0???__FpaletteNames@@YAXXZ@4HA" # Action
+	.long	-1                              # ToState
+	.long	"?dtor$13@?0???__FpaletteNames@@YAXXZ@4HA" # Action
+	.text
+                                        # -- End function
+	.def	 "??__Fchr2nib@@YAXXZ";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90                         # -- Begin function ??__Fchr2nib@@YAXXZ
+"??__Fchr2nib@@YAXXZ":                  # @"??__Fchr2nib@@YAXXZ"
+# %bb.0:
+	mov	eax, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	dword ptr [eax + 4]
+	push	offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	call	"??$_Erase_tree@V?$allocator@U?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@std@@@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEXAAV?$allocator@U?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@1@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@1@@Z"
+	push	16
+	push	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+	ret
+                                        # -- End function
+	.def	 "?palettes_setup@@YAXXZ";
+	.scl	2;
+	.type	32;
+	.endef
+	.globl	"?palettes_setup@@YAXXZ"        # -- Begin function ?palettes_setup@@YAXXZ
+	.p2align	4, 0x90
+"?palettes_setup@@YAXXZ":               # @"?palettes_setup@@YAXXZ"
+# %bb.0:
+	push	ebx
+	push	edi
+	push	esi
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16]
+	lea	edx, [ecx + eax]
+	test	dl, 3
+	jne	LBB26_3
+# %bb.1:
+	lea	edx, [ecx + 4]
+	shr	edx, 2
+	cmp	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8], edx
+	ja	LBB26_3
+# %bb.2:
+	mov	ecx, offset "?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"
+	push	1
+	call	"?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16]
+LBB26_3:
+	mov	edi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8]
+	lea	edx, [4*edi - 1]
+	add	edi, 1073741823
+	and	edx, eax
+	lea	esi, [edx + ecx]
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12], edx
+	mov	eax, esi
+	shr	eax, 2
+	and	edi, eax
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	eax, dword ptr [eax + 4*edi]
+	test	eax, eax
+	jne	LBB26_5
+# %bb.4:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	dword ptr [ecx + 4*edi], eax
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16]
+	mov	edx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	eax, dword ptr [eax + 4*edi]
+LBB26_5:
+	and	esi, 3
+	lea	ebx, [edx + ecx + 1]
+	mov	dword ptr [eax + 4*esi], offset _atari_8_bit_family_gtia_hex
+	lea	eax, [ecx + 1]
+	test	bl, 3
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16], eax
+	jne	LBB26_8
+# %bb.6:
+	add	ecx, 5
+	shr	ecx, 2
+	cmp	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8], ecx
+	ja	LBB26_8
+# %bb.7:
+	mov	ecx, offset "?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"
+	push	1
+	call	"?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
+	mov	edx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16]
+LBB26_8:
+	mov	ebx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8]
+	lea	esi, [4*ebx - 1]
+	add	ebx, 1073741823
+	and	esi, edx
+	lea	edi, [esi + eax]
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12], esi
+	mov	ecx, edi
+	shr	ecx, 2
+	and	ebx, ecx
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	ecx, dword ptr [ecx + 4*ebx]
+	test	ecx, ecx
+	jne	LBB26_10
+# %bb.9:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	dword ptr [ecx + 4*ebx], eax
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	esi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	ecx, dword ptr [eax + 4*ebx]
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16]
+LBB26_10:
+	and	edi, 3
+	lea	edx, [esi + eax + 1]
+	mov	dword ptr [ecx + 4*edi], offset _aurora_hex
+	lea	ecx, [eax + 1]
+	test	dl, 3
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16], ecx
+	jne	LBB26_13
+# %bb.11:
+	add	eax, 5
+	shr	eax, 2
+	cmp	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8], eax
+	ja	LBB26_13
+# %bb.12:
+	mov	ecx, offset "?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"
+	push	1
+	call	"?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
+	mov	esi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16]
+LBB26_13:
+	mov	edi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8]
+	lea	edx, [4*edi - 1]
+	add	edi, 1073741823
+	and	edx, esi
+	lea	esi, [edx + ecx]
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12], edx
+	mov	eax, esi
+	shr	eax, 2
+	and	edi, eax
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	eax, dword ptr [eax + 4*edi]
+	test	eax, eax
+	jne	LBB26_15
+# %bb.14:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	dword ptr [ecx + 4*edi], eax
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16]
+	mov	edx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	eax, dword ptr [eax + 4*edi]
+LBB26_15:
+	and	esi, 3
+	lea	ebx, [edx + ecx + 1]
+	mov	dword ptr [eax + 4*esi], offset _duel_hex
+	lea	eax, [ecx + 1]
+	test	bl, 3
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16], eax
+	jne	LBB26_18
+# %bb.16:
+	add	ecx, 5
+	shr	ecx, 2
+	cmp	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8], ecx
+	ja	LBB26_18
+# %bb.17:
+	mov	ecx, offset "?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"
+	push	1
+	call	"?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
+	mov	edx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16]
+LBB26_18:
+	mov	ebx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8]
+	lea	esi, [4*ebx - 1]
+	add	ebx, 1073741823
+	and	esi, edx
+	lea	edi, [esi + eax]
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12], esi
+	mov	ecx, edi
+	shr	ecx, 2
+	and	ebx, ecx
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	ecx, dword ptr [ecx + 4*ebx]
+	test	ecx, ecx
+	jne	LBB26_20
+# %bb.19:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	dword ptr [ecx + 4*ebx], eax
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	esi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	ecx, dword ptr [eax + 4*ebx]
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16]
+LBB26_20:
+	and	edi, 3
+	lea	edx, [esi + eax + 1]
+	mov	dword ptr [ecx + 4*edi], offset _hocus_pocus_hex
+	lea	ecx, [eax + 1]
+	test	dl, 3
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16], ecx
+	jne	LBB26_23
+# %bb.21:
+	add	eax, 5
+	shr	eax, 2
+	cmp	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8], eax
+	ja	LBB26_23
+# %bb.22:
+	mov	ecx, offset "?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"
+	push	1
+	call	"?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
+	mov	esi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16]
+LBB26_23:
+	mov	edi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8]
+	lea	edx, [4*edi - 1]
+	add	edi, 1073741823
+	and	edx, esi
+	lea	esi, [edx + ecx]
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12], edx
+	mov	eax, esi
+	shr	eax, 2
+	and	edi, eax
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	eax, dword ptr [eax + 4*edi]
+	test	eax, eax
+	jne	LBB26_25
+# %bb.24:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	dword ptr [ecx + 4*edi], eax
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16]
+	mov	edx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	eax, dword ptr [eax + 4*edi]
+LBB26_25:
+	and	esi, 3
+	lea	ebx, [edx + ecx + 1]
+	mov	dword ptr [eax + 4*esi], offset _sonic_robo_blast_2_v22_hex
+	lea	eax, [ecx + 1]
+	test	bl, 3
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16], eax
+	jne	LBB26_28
+# %bb.26:
+	add	ecx, 5
+	shr	ecx, 2
+	cmp	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8], ecx
+	ja	LBB26_28
+# %bb.27:
+	mov	ecx, offset "?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"
+	push	1
+	call	"?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
+	mov	edx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16]
+LBB26_28:
+	mov	ebx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8]
+	lea	esi, [4*ebx - 1]
+	add	ebx, 1073741823
+	and	esi, edx
+	lea	edi, [esi + eax]
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12], esi
+	mov	ecx, edi
+	shr	ecx, 2
+	and	ebx, ecx
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	ecx, dword ptr [ecx + 4*ebx]
+	test	ecx, ecx
+	jne	LBB26_30
+# %bb.29:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	dword ptr [ecx + 4*ebx], eax
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	esi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	ecx, dword ptr [eax + 4*ebx]
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16]
+LBB26_30:
+	and	edi, 3
+	lea	edx, [esi + eax + 1]
+	mov	dword ptr [ecx + 4*edi], offset _srb2_hex
+	lea	ecx, [eax + 1]
+	test	dl, 3
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16], ecx
+	jne	LBB26_33
+# %bb.31:
+	add	eax, 5
+	shr	eax, 2
+	cmp	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8], eax
+	ja	LBB26_33
+# %bb.32:
+	mov	ecx, offset "?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"
+	push	1
+	call	"?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
+	mov	esi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16]
+LBB26_33:
+	mov	edi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8]
+	lea	eax, [4*edi - 1]
+	add	edi, 1073741823
+	and	eax, esi
+	lea	esi, [eax + ecx]
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12], eax
+	mov	edx, esi
+	shr	edx, 2
+	and	edi, edx
+	mov	edx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	edx, dword ptr [edx + 4*edi]
+	test	edx, edx
+	jne	LBB26_35
+# %bb.34:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	dword ptr [ecx + 4*edi], eax
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16]
+	mov	edx, dword ptr [eax + 4*edi]
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+LBB26_35:
+	and	esi, 3
+	lea	ebx, [eax + ecx + 1]
+	mov	dword ptr [edx + 4*esi], offset _uzebox_hex
+	lea	edx, [ecx + 1]
+	test	bl, 3
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16], edx
+	jne	LBB26_38
+# %bb.36:
+	add	ecx, 5
+	shr	ecx, 2
+	cmp	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8], ecx
+	ja	LBB26_38
+# %bb.37:
+	mov	ecx, offset "?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"
+	push	1
+	call	"?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	edx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16]
+LBB26_38:
+	mov	edi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8]
+	lea	esi, [4*edi - 1]
+	add	edi, 1073741823
+	and	esi, eax
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12], esi
+	add	esi, edx
+	mov	eax, esi
+	shr	eax, 2
+	and	edi, eax
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	eax, dword ptr [eax + 4*edi]
+	test	eax, eax
+	jne	LBB26_40
+# %bb.39:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	dword ptr [ecx + 4*edi], eax
+	mov	eax, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	edx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16]
+	mov	eax, dword ptr [eax + 4*edi]
+LBB26_40:
+	and	esi, 3
+	inc	edx
+	xor	ebx, ebx
+	mov	dword ptr [eax + 4*esi], offset _windows_95_256_colours_hex
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16], edx
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_42
+# %bb.41:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_47
+	jmp	LBB26_46
+LBB26_42:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_43:                               # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 48
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_43
+# %bb.44:
+	xor	ebx, ebx
+	cmp	dl, 47
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_47
+LBB26_46:
+	cmp	byte ptr [eax + 14], 49
+	jb	LBB26_49
+LBB26_47:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.48:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 3145728
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_49:
+	mov	byte ptr [eax + 15], 0
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_51
+# %bb.50:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_56
+	jmp	LBB26_55
+LBB26_51:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_52:                               # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 49
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_52
+# %bb.53:
+	xor	ebx, ebx
+	cmp	dl, 48
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_56
+LBB26_55:
+	cmp	byte ptr [eax + 14], 50
+	jb	LBB26_58
+LBB26_56:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.57:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 3211264
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_58:
+	mov	byte ptr [eax + 15], 1
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_60
+# %bb.59:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_65
+	jmp	LBB26_64
+LBB26_60:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_61:                               # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 50
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_61
+# %bb.62:
+	xor	ebx, ebx
+	cmp	dl, 49
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_65
+LBB26_64:
+	cmp	byte ptr [eax + 14], 51
+	jb	LBB26_67
+LBB26_65:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.66:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 3276800
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_67:
+	mov	byte ptr [eax + 15], 2
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_69
+# %bb.68:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_74
+	jmp	LBB26_73
+LBB26_69:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_70:                               # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 51
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_70
+# %bb.71:
+	xor	ebx, ebx
+	cmp	dl, 50
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_74
+LBB26_73:
+	cmp	byte ptr [eax + 14], 52
+	jb	LBB26_76
+LBB26_74:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.75:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 3342336
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_76:
+	mov	byte ptr [eax + 15], 3
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_78
+# %bb.77:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_83
+	jmp	LBB26_82
+LBB26_78:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_79:                               # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 52
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_79
+# %bb.80:
+	xor	ebx, ebx
+	cmp	dl, 51
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_83
+LBB26_82:
+	cmp	byte ptr [eax + 14], 53
+	jb	LBB26_85
+LBB26_83:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.84:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 3407872
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_85:
+	mov	byte ptr [eax + 15], 4
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_87
+# %bb.86:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_92
+	jmp	LBB26_91
+LBB26_87:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_88:                               # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 53
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_88
+# %bb.89:
+	xor	ebx, ebx
+	cmp	dl, 52
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_92
+LBB26_91:
+	cmp	byte ptr [eax + 14], 54
+	jb	LBB26_94
+LBB26_92:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.93:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 3473408
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_94:
+	mov	byte ptr [eax + 15], 5
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_96
+# %bb.95:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_101
+	jmp	LBB26_100
+LBB26_96:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_97:                               # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 54
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_97
+# %bb.98:
+	xor	ebx, ebx
+	cmp	dl, 53
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_101
+LBB26_100:
+	cmp	byte ptr [eax + 14], 55
+	jb	LBB26_103
+LBB26_101:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.102:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 3538944
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_103:
+	mov	byte ptr [eax + 15], 6
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_105
+# %bb.104:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_110
+	jmp	LBB26_109
+LBB26_105:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_106:                              # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 55
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_106
+# %bb.107:
+	xor	ebx, ebx
+	cmp	dl, 54
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_110
+LBB26_109:
+	cmp	byte ptr [eax + 14], 56
+	jb	LBB26_112
+LBB26_110:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.111:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 3604480
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_112:
+	mov	byte ptr [eax + 15], 7
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_114
+# %bb.113:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_119
+	jmp	LBB26_118
+LBB26_114:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_115:                              # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 56
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_115
+# %bb.116:
+	xor	ebx, ebx
+	cmp	dl, 55
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_119
+LBB26_118:
+	cmp	byte ptr [eax + 14], 57
+	jb	LBB26_121
+LBB26_119:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.120:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 3670016
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_121:
+	mov	byte ptr [eax + 15], 8
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_123
+# %bb.122:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_128
+	jmp	LBB26_127
+LBB26_123:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_124:                              # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 57
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_124
+# %bb.125:
+	xor	ebx, ebx
+	cmp	dl, 56
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_128
+LBB26_127:
+	cmp	byte ptr [eax + 14], 58
+	jb	LBB26_130
+LBB26_128:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.129:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 3735552
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_130:
+	mov	byte ptr [eax + 15], 9
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_132
+# %bb.131:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_137
+	jmp	LBB26_136
+LBB26_132:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_133:                              # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 65
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_133
+# %bb.134:
+	xor	ebx, ebx
+	cmp	dl, 64
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_137
+LBB26_136:
+	cmp	byte ptr [eax + 14], 66
+	jb	LBB26_139
+LBB26_137:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.138:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 4259840
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_139:
+	mov	byte ptr [eax + 15], 10
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_141
+# %bb.140:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_146
+	jmp	LBB26_145
+LBB26_141:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_142:                              # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 66
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_142
+# %bb.143:
+	xor	ebx, ebx
+	cmp	dl, 65
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_146
+LBB26_145:
+	cmp	byte ptr [eax + 14], 67
+	jb	LBB26_148
+LBB26_146:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.147:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 4325376
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_148:
+	mov	byte ptr [eax + 15], 11
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_150
+# %bb.149:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_155
+	jmp	LBB26_154
+LBB26_150:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_151:                              # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 67
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_151
+# %bb.152:
+	xor	ebx, ebx
+	cmp	dl, 66
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_155
+LBB26_154:
+	cmp	byte ptr [eax + 14], 68
+	jb	LBB26_157
+LBB26_155:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.156:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 4390912
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_157:
+	mov	byte ptr [eax + 15], 12
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_159
+# %bb.158:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_164
+	jmp	LBB26_163
+LBB26_159:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_160:                              # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 68
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_160
+# %bb.161:
+	xor	ebx, ebx
+	cmp	dl, 67
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_164
+LBB26_163:
+	cmp	byte ptr [eax + 14], 69
+	jb	LBB26_166
+LBB26_164:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.165:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 4456448
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_166:
+	mov	byte ptr [eax + 15], 13
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_168
+# %bb.167:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_173
+	jmp	LBB26_172
+LBB26_168:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_169:                              # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 69
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_169
+# %bb.170:
+	xor	ebx, ebx
+	cmp	dl, 68
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_173
+LBB26_172:
+	cmp	byte ptr [eax + 14], 70
+	jb	LBB26_175
+LBB26_173:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.174:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 4521984
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_175:
+	mov	byte ptr [eax + 15], 14
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_177
+# %bb.176:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_182
+	jmp	LBB26_181
+LBB26_177:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_178:                              # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 70
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_178
+# %bb.179:
+	xor	ebx, ebx
+	cmp	dl, 69
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_182
+LBB26_181:
+	cmp	byte ptr [eax + 14], 71
+	jb	LBB26_184
+LBB26_182:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.183:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 4587520
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_184:
+	mov	byte ptr [eax + 15], 15
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_186
+# %bb.185:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_191
+	jmp	LBB26_190
+LBB26_186:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_187:                              # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 97
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_187
+# %bb.188:
+	xor	ebx, ebx
+	cmp	dl, 96
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_191
+LBB26_190:
+	cmp	byte ptr [eax + 14], 98
+	jb	LBB26_193
+LBB26_191:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.192:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 6356992
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_193:
+	mov	byte ptr [eax + 15], 10
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_195
+# %bb.194:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_200
+	jmp	LBB26_199
+LBB26_195:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_196:                              # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 98
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_196
+# %bb.197:
+	xor	ebx, ebx
+	cmp	dl, 97
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_200
+LBB26_199:
+	cmp	byte ptr [eax + 14], 99
+	jb	LBB26_202
+LBB26_200:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.201:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 6422528
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_202:
+	mov	byte ptr [eax + 15], 11
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_204
+# %bb.203:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_209
+	jmp	LBB26_208
+LBB26_204:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_205:                              # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 99
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_205
+# %bb.206:
+	xor	ebx, ebx
+	cmp	dl, 98
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_209
+LBB26_208:
+	cmp	byte ptr [eax + 14], 100
+	jb	LBB26_211
+LBB26_209:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.210:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 6488064
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_211:
+	mov	byte ptr [eax + 15], 12
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_213
+# %bb.212:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_218
+	jmp	LBB26_217
+LBB26_213:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_214:                              # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 100
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_214
+# %bb.215:
+	xor	ebx, ebx
+	cmp	dl, 99
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_218
+LBB26_217:
+	cmp	byte ptr [eax + 14], 101
+	jb	LBB26_220
+LBB26_218:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.219:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 6553600
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_220:
+	mov	byte ptr [eax + 15], 13
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_222
+# %bb.221:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_227
+	jmp	LBB26_226
+LBB26_222:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_223:                              # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 101
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_223
+# %bb.224:
+	xor	ebx, ebx
+	cmp	dl, 100
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_227
+LBB26_226:
+	cmp	byte ptr [eax + 14], 102
+	jb	LBB26_229
+LBB26_227:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.228:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 6619136
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	mov	esi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+LBB26_229:
+	mov	byte ptr [eax + 15], 14
+	xor	ebx, ebx
+	mov	edi, dword ptr [esi + 4]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_231
+# %bb.230:
+	mov	eax, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_236
+	jmp	LBB26_235
+LBB26_231:
+	mov	eax, esi
+	.p2align	4, 0x90
+LBB26_232:                              # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [edi + 14]
+	xor	ebx, ebx
+	mov	ecx, edi
+	cmp	dl, 102
+	setb	bl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*ebx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB26_232
+# %bb.233:
+	xor	ebx, ebx
+	cmp	dl, 101
+	mov	edi, ecx
+	seta	bl
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB26_236
+LBB26_235:
+	cmp	byte ptr [eax + 14], 103
+	jb	LBB26_238
+LBB26_236:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	je	LBB26_239
+# %bb.237:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	dword ptr [eax], esi
+	mov	dword ptr [eax + 4], esi
+	mov	dword ptr [eax + 8], esi
+	mov	dword ptr [eax + 12], 6684672
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	ebx
+	push	edi
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+LBB26_238:
+	mov	byte ptr [eax + 15], 15
+	pop	esi
+	pop	edi
+	pop	ebx
+	ret
+LBB26_239:
+	call	"?_Throw_tree_length_error@std@@YAXXZ"
+                                        # -- End function
+	.def	 "?read_palette_color@@YA?AUcolor@@E@Z";
+	.scl	2;
+	.type	32;
+	.endef
+	.globl	"?read_palette_color@@YA?AUcolor@@E@Z" # -- Begin function ?read_palette_color@@YA?AUcolor@@E@Z
+	.p2align	4, 0x90
+"?read_palette_color@@YA?AUcolor@@E@Z": # @"?read_palette_color@@YA?AUcolor@@E@Z"
+Lfunc_begin10:
+# %bb.0:
+	push	ebp
+	mov	ebp, esp
+	push	ebx
+	push	edi
+	push	esi
+	sub	esp, 72
+	mov	dword ptr [ebp - 28], esp
+	mov	dword ptr [ebp - 16], -1
+	mov	dword ptr [ebp - 20], offset "___ehhandler$?read_palette_color@@YA?AUcolor@@E@Z"
+	lea	eax, [ebp - 24]
+	movzx	edi, byte ptr [ebp + 8]
+	mov	dword ptr [ebp - 36], 0         # 4-byte Folded Spill
+	mov	ecx, dword ptr fs:[0]
+	shl	edi, 3
+	mov	dword ptr [ebp - 24], ecx
+	mov	dword ptr fs:[0], eax
+	mov	dword ptr [ebp - 52], edi       # 4-byte Spill
+	movzx	esi, byte ptr ["?palette@@3EA"]
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8]
+	mov	edx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	add	esi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	dec	ecx
+	mov	eax, esi
+	and	esi, 3
+	shr	eax, 2
+	and	ecx, eax
+	mov	eax, dword ptr [edx + 4*ecx]
+	mov	dword ptr [ebp - 44], ecx       # 4-byte Spill
+	mov	eax, dword ptr [eax + 4*esi]
+	mov	dword ptr [ebp - 40], eax       # 4-byte Spill
+	mov	eax, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+	mov	ebx, dword ptr [eax + 4]
+	mov	dword ptr [ebp - 56], eax       # 4-byte Spill
+	mov	cl, byte ptr [ebx + 13]
+	mov	byte ptr [ebp - 60], cl         # 1-byte Spill
+	test	cl, cl
+	mov	ecx, ebx
+	je	LBB27_1
+# %bb.4:
+	cmp	byte ptr [eax + 13], 0
+	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
+	jne	LBB27_7
+	jmp	LBB27_5
+LBB27_1:
+	mov	eax, dword ptr [ebp - 40]       # 4-byte Reload
+	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
+	mov	edx, ebx
+	mov	dword ptr [ebp - 64], edx       # 4-byte Spill
+	mov	bh, byte ptr [eax + edi]
+	mov	eax, dword ptr [ebp - 56]       # 4-byte Reload
+	mov	edi, edx
+	.p2align	4, 0x90
+LBB27_2:                                # =>This Inner Loop Header: Depth=1
+	mov	bl, byte ptr [edi + 14]
+	xor	edx, edx
+	mov	ecx, edi
+	cmp	bl, bh
+	setb	dl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*edx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB27_2
+# %bb.3:
+	xor	edx, edx
+	cmp	bl, bh
+	mov	edi, dword ptr [ebp - 52]       # 4-byte Reload
+	mov	ebx, dword ptr [ebp - 64]       # 4-byte Reload
+	setae	dl
+	mov	dword ptr [ebp - 36], edx       # 4-byte Spill
+	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
+	cmp	byte ptr [eax + 13], 0
+	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
+	jne	LBB27_7
+LBB27_5:
+	mov	ecx, edi
+	mov	edi, edx
+	mov	edx, dword ptr [ebp - 40]       # 4-byte Reload
+	mov	dl, byte ptr [edx + ecx]
+	cmp	dl, byte ptr [eax + 14]
+	jae	LBB27_6
+LBB27_7:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	mov	dword ptr [ebp - 16], 0
+	je	LBB27_8
+# %bb.10:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+# %bb.11:
+	mov	ecx, dword ptr [ebp - 40]       # 4-byte Reload
+	mov	edx, dword ptr [ebp - 52]       # 4-byte Reload
+	mov	cl, byte ptr [ecx + edx]
+	mov	byte ptr [eax + 14], cl
+	mov	ecx, dword ptr [ebp - 56]       # 4-byte Reload
+	mov	byte ptr [eax + 15], 0
+	mov	dword ptr [eax], ecx
+	mov	dword ptr [eax + 4], ecx
+	mov	dword ptr [eax + 8], ecx
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	mov	word ptr [eax + 12], 0
+	push	eax
+	push	dword ptr [ebp - 36]            # 4-byte Folded Reload
+	push	dword ptr [ebp - 32]            # 4-byte Folded Reload
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	movzx	esi, byte ptr ["?palette@@3EA"]
+	mov	ebx, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8]
+	add	esi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	edi, dword ptr [ebx + 4]
+	dec	ecx
+	mov	dword ptr [ebp - 40], ebx       # 4-byte Spill
+	mov	edx, esi
+	and	esi, 3
+	shr	edx, 2
+	and	ecx, edx
+	mov	dl, byte ptr [edi + 13]
+	mov	byte ptr [ebp - 60], dl         # 1-byte Spill
+	mov	edx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
+	mov	edx, ebx
+	mov	ebx, edi
+	mov	edi, dword ptr [ebp - 32]       # 4-byte Reload
+LBB27_12:
+	mov	al, byte ptr [eax + 15]
+	mov	dword ptr [ebp - 68], 0         # 4-byte Folded Spill
+	mov	dword ptr [ebp - 48], ebx       # 4-byte Spill
+	mov	dword ptr [ebp - 56], edx       # 4-byte Spill
+	mov	byte ptr [ebp - 70], al         # 1-byte Spill
+	mov	eax, dword ptr [edi + 4*ecx]
+	mov	eax, dword ptr [eax + 4*esi]
+	mov	dword ptr [ebp - 44], eax       # 4-byte Spill
+	mov	eax, dword ptr [ebp - 52]       # 4-byte Reload
+	or	eax, 1
+	cmp	byte ptr [ebp - 60], 0          # 1-byte Folded Reload
+	mov	dword ptr [ebp - 36], eax       # 4-byte Spill
+	mov	eax, edx
+	je	LBB27_13
+# %bb.16:
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB27_19
+	jmp	LBB27_17
+LBB27_13:
+	mov	eax, dword ptr [ebp - 44]       # 4-byte Reload
+	mov	edx, dword ptr [ebp - 36]       # 4-byte Reload
+	mov	dword ptr [ebp - 32], edi       # 4-byte Spill
+	mov	edi, ebx
+	mov	dword ptr [ebp - 76], esi       # 4-byte Spill
+	mov	dword ptr [ebp - 64], edi       # 4-byte Spill
+	mov	bh, byte ptr [eax + edx]
+	mov	eax, dword ptr [ebp - 40]       # 4-byte Reload
+	.p2align	4, 0x90
+LBB27_14:                               # =>This Inner Loop Header: Depth=1
+	mov	bl, byte ptr [edi + 14]
+	xor	edx, edx
+	mov	esi, edi
+	cmp	bl, bh
+	setb	dl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*edx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB27_14
+# %bb.15:
+	mov	dword ptr [ebp - 48], esi       # 4-byte Spill
+	xor	edx, edx
+	cmp	bl, bh
+	mov	ebx, dword ptr [ebp - 64]       # 4-byte Reload
+	mov	edi, dword ptr [ebp - 32]       # 4-byte Reload
+	mov	esi, dword ptr [ebp - 76]       # 4-byte Reload
+	setae	dl
+	mov	dword ptr [ebp - 68], edx       # 4-byte Spill
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB27_19
+LBB27_17:
+	mov	dword ptr [ebp - 32], edi       # 4-byte Spill
+	mov	edx, dword ptr [ebp - 44]       # 4-byte Reload
+	mov	edi, dword ptr [ebp - 36]       # 4-byte Reload
+	mov	dl, byte ptr [edx + edi]
+	cmp	dl, byte ptr [eax + 14]
+	jae	LBB27_18
+LBB27_19:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	mov	dword ptr [ebp - 16], 0
+	je	LBB27_20
+# %bb.22:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+# %bb.23:
+	mov	ecx, dword ptr [ebp - 44]       # 4-byte Reload
+	mov	edx, dword ptr [ebp - 36]       # 4-byte Reload
+	mov	cl, byte ptr [ecx + edx]
+	mov	byte ptr [eax + 14], cl
+	mov	ecx, dword ptr [ebp - 40]       # 4-byte Reload
+	mov	byte ptr [eax + 15], 0
+	mov	dword ptr [eax], ecx
+	mov	dword ptr [eax + 4], ecx
+	mov	dword ptr [eax + 8], ecx
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	mov	word ptr [eax + 12], 0
+	push	eax
+	push	dword ptr [ebp - 68]            # 4-byte Folded Reload
+	push	dword ptr [ebp - 48]            # 4-byte Folded Reload
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	movzx	esi, byte ptr ["?palette@@3EA"]
+	mov	edi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8]
+	add	esi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	ebx, dword ptr [edi + 4]
+	dec	ecx
+	mov	dword ptr [ebp - 40], edi       # 4-byte Spill
+	mov	edx, esi
+	and	esi, 3
+	shr	edx, 2
+	and	ecx, edx
+	mov	dl, byte ptr [ebx + 13]
+	mov	byte ptr [ebp - 60], dl         # 1-byte Spill
+	mov	edx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
+LBB27_24:
+	movzx	eax, byte ptr [eax + 15]
+	mov	edx, dword ptr [ebp - 52]       # 4-byte Reload
+	mov	dword ptr [ebp - 76], esi       # 4-byte Spill
+	mov	dword ptr [ebp - 44], ecx       # 4-byte Spill
+	mov	dword ptr [ebp - 48], 0         # 4-byte Folded Spill
+	mov	dword ptr [ebp - 56], edi       # 4-byte Spill
+	mov	dword ptr [ebp - 84], eax       # 4-byte Spill
+	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
+	or	edx, 2
+	cmp	byte ptr [ebp - 60], 0          # 1-byte Folded Reload
+	mov	dword ptr [ebp - 36], edx       # 4-byte Spill
+	mov	eax, dword ptr [eax + 4*ecx]
+	mov	ecx, ebx
+	mov	esi, dword ptr [eax + 4*esi]
+	mov	eax, edi
+	je	LBB27_25
+# %bb.28:
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB27_31
+	jmp	LBB27_29
+LBB27_25:
+	mov	eax, dword ptr [ebp - 36]       # 4-byte Reload
+	mov	edi, ebx
+	mov	dword ptr [ebp - 64], edi       # 4-byte Spill
+	mov	bh, byte ptr [esi + eax]
+	mov	eax, dword ptr [ebp - 40]       # 4-byte Reload
+	.p2align	4, 0x90
+LBB27_26:                               # =>This Inner Loop Header: Depth=1
+	mov	bl, byte ptr [edi + 14]
+	xor	edx, edx
+	mov	ecx, edi
+	cmp	bl, bh
+	setb	dl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*edx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB27_26
+# %bb.27:
+	xor	edx, edx
+	cmp	bl, bh
+	mov	ebx, dword ptr [ebp - 64]       # 4-byte Reload
+	setae	dl
+	mov	dword ptr [ebp - 48], edx       # 4-byte Spill
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB27_31
+LBB27_29:
+	mov	edx, dword ptr [ebp - 36]       # 4-byte Reload
+	mov	dl, byte ptr [esi + edx]
+	cmp	dl, byte ptr [eax + 14]
+	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
+	jae	LBB27_30
+LBB27_31:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	mov	dword ptr [ebp - 60], esi       # 4-byte Spill
+	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
+	mov	dword ptr [ebp - 16], 0
+	je	LBB27_32
+# %bb.34:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+# %bb.35:
+	mov	ecx, dword ptr [ebp - 60]       # 4-byte Reload
+	mov	edx, dword ptr [ebp - 36]       # 4-byte Reload
+	mov	cl, byte ptr [ecx + edx]
+	mov	byte ptr [eax + 14], cl
+	mov	ecx, dword ptr [ebp - 40]       # 4-byte Reload
+	mov	byte ptr [eax + 15], 0
+	mov	dword ptr [eax], ecx
+	mov	dword ptr [eax + 4], ecx
+	mov	dword ptr [eax + 8], ecx
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	mov	word ptr [eax + 12], 0
+	push	eax
+	push	dword ptr [ebp - 48]            # 4-byte Folded Reload
+	push	dword ptr [ebp - 32]            # 4-byte Folded Reload
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	movzx	edi, byte ptr ["?palette@@3EA"]
+	mov	ecx, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+	mov	esi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8]
+	add	edi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	ebx, dword ptr [ecx + 4]
+	dec	esi
+	mov	dword ptr [ebp - 40], ecx       # 4-byte Spill
+	mov	edx, edi
+	and	edi, 3
+	shr	edx, 2
+	and	esi, edx
+	mov	dl, byte ptr [ebx + 13]
+	mov	byte ptr [ebp - 60], dl         # 1-byte Spill
+	mov	edx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
+	mov	edx, ecx
+	mov	ecx, dword ptr [ebp - 52]       # 4-byte Reload
+LBB27_36:
+	mov	al, byte ptr [eax + 15]
+	or	ecx, 3
+	cmp	byte ptr [ebp - 60], 0          # 1-byte Folded Reload
+	mov	dword ptr [ebp - 44], esi       # 4-byte Spill
+	mov	dword ptr [ebp - 68], 0         # 4-byte Folded Spill
+	mov	dword ptr [ebp - 56], edx       # 4-byte Spill
+	mov	dword ptr [ebp - 48], ecx       # 4-byte Spill
+	mov	ecx, ebx
+	mov	byte ptr [ebp - 69], al         # 1-byte Spill
+	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
+	mov	eax, dword ptr [eax + 4*esi]
+	mov	esi, edi
+	mov	eax, dword ptr [eax + 4*edi]
+	mov	dword ptr [ebp - 36], eax       # 4-byte Spill
+	mov	eax, edx
+	je	LBB27_37
+# %bb.40:
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB27_43
+	jmp	LBB27_41
+LBB27_37:
+	mov	eax, dword ptr [ebp - 36]       # 4-byte Reload
+	mov	ecx, dword ptr [ebp - 48]       # 4-byte Reload
+	mov	edi, ebx
+	mov	dword ptr [ebp - 64], edi       # 4-byte Spill
+	mov	bh, byte ptr [eax + ecx]
+	mov	eax, dword ptr [ebp - 40]       # 4-byte Reload
+	.p2align	4, 0x90
+LBB27_38:                               # =>This Inner Loop Header: Depth=1
+	mov	bl, byte ptr [edi + 14]
+	xor	edx, edx
+	mov	ecx, edi
+	cmp	bl, bh
+	setb	dl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*edx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB27_38
+# %bb.39:
+	xor	edx, edx
+	cmp	bl, bh
+	mov	ebx, dword ptr [ebp - 64]       # 4-byte Reload
+	setae	dl
+	mov	dword ptr [ebp - 68], edx       # 4-byte Spill
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB27_43
+LBB27_41:
+	mov	edi, esi
+	mov	edx, dword ptr [ebp - 36]       # 4-byte Reload
+	mov	esi, dword ptr [ebp - 48]       # 4-byte Reload
+	mov	dl, byte ptr [edx + esi]
+	cmp	dl, byte ptr [eax + 14]
+	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
+	jae	LBB27_42
+LBB27_43:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
+	mov	dword ptr [ebp - 16], 0
+	je	LBB27_44
+# %bb.46:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+# %bb.47:
+	mov	ecx, dword ptr [ebp - 36]       # 4-byte Reload
+	mov	edx, dword ptr [ebp - 48]       # 4-byte Reload
+	mov	cl, byte ptr [ecx + edx]
+	mov	byte ptr [eax + 14], cl
+	mov	ecx, dword ptr [ebp - 40]       # 4-byte Reload
+	mov	byte ptr [eax + 15], 0
+	mov	dword ptr [eax], ecx
+	mov	dword ptr [eax + 4], ecx
+	mov	dword ptr [eax + 8], ecx
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	mov	word ptr [eax + 12], 0
+	push	eax
+	push	dword ptr [ebp - 68]            # 4-byte Folded Reload
+	push	dword ptr [ebp - 32]            # 4-byte Folded Reload
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	movzx	edi, byte ptr ["?palette@@3EA"]
+	mov	ecx, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+	mov	esi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8]
+	add	edi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	ebx, dword ptr [ecx + 4]
+	dec	esi
+	mov	dword ptr [ebp - 40], ecx       # 4-byte Spill
+	mov	edx, edi
+	and	edi, 3
+	shr	edx, 2
+	and	esi, edx
+	mov	dl, byte ptr [ebx + 13]
+	mov	byte ptr [ebp - 60], dl         # 1-byte Spill
+	mov	edx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
+	mov	edx, ecx
+	mov	ecx, dword ptr [ebp - 52]       # 4-byte Reload
+LBB27_48:
+	movzx	eax, byte ptr [eax + 15]
+	mov	dword ptr [ebp - 44], esi       # 4-byte Spill
+	mov	dword ptr [ebp - 76], 0         # 4-byte Folded Spill
+	mov	dword ptr [ebp - 68], ebx       # 4-byte Spill
+	mov	dword ptr [ebp - 56], edx       # 4-byte Spill
+	mov	dword ptr [ebp - 80], eax       # 4-byte Spill
+	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
+	mov	eax, dword ptr [eax + 4*esi]
+	mov	esi, edi
+	mov	eax, dword ptr [eax + 4*edi]
+	mov	dword ptr [ebp - 36], eax       # 4-byte Spill
+	mov	eax, ecx
+	or	eax, 4
+	cmp	byte ptr [ebp - 60], 0          # 1-byte Folded Reload
+	mov	dword ptr [ebp - 48], eax       # 4-byte Spill
+	mov	eax, edx
+	je	LBB27_49
+# %bb.52:
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB27_55
+	jmp	LBB27_53
+LBB27_49:
+	mov	eax, dword ptr [ebp - 36]       # 4-byte Reload
+	mov	ecx, dword ptr [ebp - 48]       # 4-byte Reload
+	mov	edi, ebx
+	mov	dword ptr [ebp - 64], edi       # 4-byte Spill
+	mov	bh, byte ptr [eax + ecx]
+	mov	eax, dword ptr [ebp - 40]       # 4-byte Reload
+	.p2align	4, 0x90
+LBB27_50:                               # =>This Inner Loop Header: Depth=1
+	mov	bl, byte ptr [edi + 14]
+	xor	edx, edx
+	mov	ecx, edi
+	cmp	bl, bh
+	setb	dl
+	cmovae	eax, edi
+	mov	edi, dword ptr [edi + 8*edx]
+	cmp	byte ptr [edi + 13], 0
+	je	LBB27_50
+# %bb.51:
+	mov	dword ptr [ebp - 68], ecx       # 4-byte Spill
+	xor	ecx, ecx
+	cmp	bl, bh
+	mov	ebx, dword ptr [ebp - 64]       # 4-byte Reload
+	setae	cl
+	mov	dword ptr [ebp - 76], ecx       # 4-byte Spill
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB27_55
+LBB27_53:
+	mov	edx, dword ptr [ebp - 36]       # 4-byte Reload
+	mov	edi, dword ptr [ebp - 48]       # 4-byte Reload
+	mov	dl, byte ptr [edx + edi]
+	mov	edi, dword ptr [ebp - 52]       # 4-byte Reload
+	cmp	dl, byte ptr [eax + 14]
+	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
+	jae	LBB27_54
+LBB27_55:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	mov	dword ptr [ebp - 16], 0
+	je	LBB27_56
+# %bb.58:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+# %bb.59:
+	mov	ecx, dword ptr [ebp - 36]       # 4-byte Reload
+	mov	edx, dword ptr [ebp - 48]       # 4-byte Reload
+	mov	cl, byte ptr [ecx + edx]
+	mov	byte ptr [eax + 14], cl
+	mov	ecx, dword ptr [ebp - 40]       # 4-byte Reload
+	mov	byte ptr [eax + 15], 0
+	mov	dword ptr [eax], ecx
+	mov	dword ptr [eax + 4], ecx
+	mov	dword ptr [eax + 8], ecx
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	mov	word ptr [eax + 12], 0
+	push	eax
+	push	dword ptr [ebp - 76]            # 4-byte Folded Reload
+	push	dword ptr [ebp - 68]            # 4-byte Folded Reload
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	movzx	esi, byte ptr ["?palette@@3EA"]
+	mov	edi, dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"]
+	mov	ecx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8]
+	add	esi, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12]
+	mov	ebx, dword ptr [edi + 4]
+	dec	ecx
+	mov	dword ptr [ebp - 40], edi       # 4-byte Spill
+	mov	dword ptr [ebp - 56], edi       # 4-byte Spill
+	mov	edi, dword ptr [ebp - 52]       # 4-byte Reload
+	mov	edx, esi
+	and	esi, 3
+	shr	edx, 2
+	and	ecx, edx
+	mov	dl, byte ptr [ebx + 13]
+	mov	byte ptr [ebp - 60], dl         # 1-byte Spill
+	mov	edx, dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4]
+LBB27_60:
+	mov	edx, dword ptr [edx + 4*ecx]
+	mov	al, byte ptr [eax + 15]
+	or	edi, 5
+	cmp	byte ptr [ebp - 60], 0          # 1-byte Folded Reload
+	mov	dword ptr [ebp - 44], 0         # 4-byte Folded Spill
+	mov	byte ptr [ebp - 36], al         # 1-byte Spill
+	mov	edx, dword ptr [edx + 4*esi]
+	mov	eax, dword ptr [ebp - 56]       # 4-byte Reload
+	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
+	je	LBB27_61
+# %bb.64:
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB27_66
+	jmp	LBB27_65
+LBB27_61:
+	mov	cl, byte ptr [edx + edi]
+	mov	eax, dword ptr [ebp - 40]       # 4-byte Reload
+	.p2align	4, 0x90
+LBB27_62:                               # =>This Inner Loop Header: Depth=1
+	movzx	edx, byte ptr [ebx + 14]
+	mov	esi, ebx
+	xor	ebx, ebx
+	cmp	dl, cl
+	setb	bl
+	cmovae	eax, esi
+	mov	ebx, dword ptr [esi + 8*ebx]
+	cmp	byte ptr [ebx + 13], 0
+	je	LBB27_62
+# %bb.63:
+	xor	ebx, ebx
+	cmp	dl, cl
+	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
+	setae	bl
+	mov	dword ptr [ebp - 44], ebx       # 4-byte Spill
+	mov	ebx, esi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB27_66
+LBB27_65:
+	mov	cl, byte ptr [edx + edi]
+	cmp	cl, byte ptr [eax + 14]
+	jae	LBB27_71
+LBB27_66:
+	cmp	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 268435455
+	mov	dword ptr [ebp - 64], ebx       # 4-byte Spill
+	mov	dword ptr [ebp - 52], edi       # 4-byte Spill
+	mov	dword ptr [ebp - 16], 0
+	je	LBB27_67
+# %bb.69:
+	push	16
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+# %bb.70:
+	mov	ecx, dword ptr [ebp - 52]       # 4-byte Reload
+	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
+	mov	cl, byte ptr [edx + ecx]
+	mov	byte ptr [eax + 14], cl
+	mov	ecx, dword ptr [ebp - 40]       # 4-byte Reload
+	mov	byte ptr [eax + 15], 0
+	mov	dword ptr [eax], ecx
+	mov	dword ptr [eax + 4], ecx
+	mov	dword ptr [eax + 8], ecx
+	mov	word ptr [eax + 12], 0
+	mov	ecx, offset "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	push	eax
+	push	dword ptr [ebp - 44]            # 4-byte Folded Reload
+	push	dword ptr [ebp - 64]            # 4-byte Folded Reload
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+LBB27_71:
+	mov	cl, byte ptr [ebp - 69]         # 1-byte Reload
+	mov	esi, dword ptr [ebp - 80]       # 4-byte Reload
+	mov	bl, byte ptr [ebp - 36]         # 1-byte Reload
+	mov	edx, dword ptr [ebp - 84]       # 4-byte Reload
+	movzx	eax, byte ptr [eax + 15]
+	shl	cl, 4
+	shl	bl, 4
+	movzx	ecx, cl
+	movzx	edi, bl
+	or	esi, ecx
+	mov	cl, byte ptr [ebp - 70]         # 1-byte Reload
+	or	edi, eax
+	mov	eax, dword ptr [ebp - 24]
+	shl	esi, 8
+	shl	edi, 16
+	shl	cl, 4
+	mov	dword ptr fs:[0], eax
+	movzx	ecx, cl
+	or	edx, ecx
+	or	esi, edx
+	or	esi, edi
+	or	esi, -16777216
+	mov	eax, esi
+	add	esp, 72
+	pop	esi
+	pop	edi
+	pop	ebx
+	pop	ebp
+	ret
+LBB27_6:
+	mov	edx, dword ptr [ebp - 56]       # 4-byte Reload
+	mov	ecx, dword ptr [ebp - 44]       # 4-byte Reload
+	mov	dword ptr [ebp - 40], edx       # 4-byte Spill
+	jmp	LBB27_12
+LBB27_18:
+	mov	edi, dword ptr [ebp - 56]       # 4-byte Reload
+	jmp	LBB27_24
+LBB27_30:
+	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
+	mov	edx, dword ptr [ebp - 56]       # 4-byte Reload
+	mov	ecx, dword ptr [ebp - 52]       # 4-byte Reload
+	mov	esi, dword ptr [ebp - 44]       # 4-byte Reload
+	mov	edi, dword ptr [ebp - 76]       # 4-byte Reload
+	jmp	LBB27_36
+LBB27_42:
+	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
+	mov	edx, dword ptr [ebp - 56]       # 4-byte Reload
+	mov	ecx, dword ptr [ebp - 52]       # 4-byte Reload
+	mov	esi, dword ptr [ebp - 44]       # 4-byte Reload
+	jmp	LBB27_48
+LBB27_54:
+	mov	ecx, dword ptr [ebp - 44]       # 4-byte Reload
+	jmp	LBB27_60
+LBB27_8:
+	call	"?_Throw_tree_length_error@std@@YAXXZ"
+# %bb.9:
+LBB27_20:
+	call	"?_Throw_tree_length_error@std@@YAXXZ"
+# %bb.21:
+LBB27_32:
+	call	"?_Throw_tree_length_error@std@@YAXXZ"
+# %bb.33:
+LBB27_44:
+	call	"?_Throw_tree_length_error@std@@YAXXZ"
+# %bb.45:
+LBB27_56:
+	call	"?_Throw_tree_length_error@std@@YAXXZ"
+# %bb.57:
+LBB27_67:
+	call	"?_Throw_tree_length_error@std@@YAXXZ"
+# %bb.68:
+	.def	 "?catch$72@?0??read_palette_color@@YA?AUcolor@@E@Z@4HA";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90
+"?catch$72@?0??read_palette_color@@YA?AUcolor@@E@Z@4HA":
+LBB27_72:
+	push	ebp
+	sub	esp, 12
+	add	ebp, 12
+	mov	dword ptr [ebp - 28], esp
+	mov	dword ptr [ebp - 16], 1
+	push	offset "??_C@_0BP@LDKDOJOI@Index?5out?5of?5range?5for?5palette?$AA@"
+	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
+	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
+	add	esp, 8
+	push	1
+	call	_exit
+Lfunc_end10:
+	.section	.xdata,"dr"
+	.p2align	2
+"L__ehtable$?read_palette_color@@YA?AUcolor@@E@Z":
+	.long	429065506                       # MagicNumber
+	.long	2                               # MaxState
+	.long	("$stateUnwindMap$?read_palette_color@@YA?AUcolor@@E@Z") # UnwindMap
+	.long	1                               # NumTryBlocks
+	.long	("$tryMap$?read_palette_color@@YA?AUcolor@@E@Z") # TryBlockMap
+	.long	0                               # IPMapEntries
+	.long	0                               # IPToStateXData
+	.long	0                               # ESTypeList
+	.long	1                               # EHFlags
+"$stateUnwindMap$?read_palette_color@@YA?AUcolor@@E@Z":
+	.long	-1                              # ToState
+	.long	0                               # Action
+	.long	-1                              # ToState
+	.long	0                               # Action
+"$tryMap$?read_palette_color@@YA?AUcolor@@E@Z":
+	.long	0                               # TryLow
+	.long	0                               # TryHigh
+	.long	1                               # CatchHigh
+	.long	1                               # NumCatches
+	.long	("$handlerMap$0$?read_palette_color@@YA?AUcolor@@E@Z") # HandlerArray
+"$handlerMap$0$?read_palette_color@@YA?AUcolor@@E@Z":
+	.long	0                               # Adjectives
+	.long	"??_R0?AVout_of_range@std@@@8"  # Type
+	.long	0                               # CatchObjOffset
+	.long	"?catch$72@?0??read_palette_color@@YA?AUcolor@@E@Z@4HA" # Handler
+	.text
+                                        # -- End function
 	.def	 "?ext0101_noop_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z";
 	.scl	2;
 	.type	32;
@@ -4871,22 +7391,22 @@ LBB22_23:
 	or	edx, ebp
 	mov	dword ptr [eax + 80], edi
 	mov	dword ptr [eax + 76], ecx
-	je	LBB24_4
+	je	LBB29_4
 # %bb.1:
 	add	esi, -3
 	mov	ebp, edx
 	.p2align	4, 0x90
-LBB24_2:                                # =>This Inner Loop Header: Depth=1
+LBB29_2:                                # =>This Inner Loop Header: Depth=1
 	inc	ecx
 	sub	esi, 1
 	cmovb	ecx, ebx
 	dec	ebp
-	jne	LBB24_2
+	jne	LBB29_2
 # %bb.3:
 	sub	edi, edx
 	mov	dword ptr [eax + 76], ecx
 	mov	dword ptr [eax + 80], edi
-LBB24_4:
+LBB29_4:
 	pop	esi
 	pop	edi
 	pop	ebx
@@ -5051,10 +7571,1226 @@ LBB24_4:
 	pop	ebp
 	ret
                                         # -- End function
+	.def	 "?ext0101_raster4_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z";
+	.scl	2;
+	.type	32;
+	.endef
+	.globl	"?ext0101_raster4_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z" # -- Begin function ?ext0101_raster4_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z
+	.p2align	4, 0x90
+"?ext0101_raster4_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z": # @"?ext0101_raster4_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
+# %bb.0:
+	push	ebp
+	push	ebx
+	push	edi
+	push	esi
+	push	eax
+	mov	eax, dword ptr [esp + 28]
+	mov	ebp, 268435455
+	mov	esi, dword ptr [eax + 76]
+	add	ebp, dword ptr [eax + 72]
+	mov	ebx, dword ptr [eax + 68]
+	lea	ecx, [esi + 3]
+	mov	edx, ecx
+	and	ecx, 15
+	shr	edx, 4
+	and	edx, ebp
+	mov	edx, dword ptr [ebx + 4*edx]
+	movzx	eax, byte ptr [edx + ecx]
+	lea	edx, [esi + 2]
+	mov	edi, edx
+	and	edx, 15
+	shr	edi, 4
+	and	edi, ebp
+	mov	edi, dword ptr [ebx + 4*edi]
+	mov	dword ptr [esp], eax            # 4-byte Spill
+	lea	eax, [esi + 1]
+	movzx	edx, byte ptr [edi + edx]
+	mov	edi, eax
+	and	eax, 15
+	shr	edi, 4
+	and	edi, ebp
+	mov	edi, dword ptr [ebx + 4*edi]
+	movzx	edi, byte ptr [edi + eax]
+	mov	eax, esi
+	shr	eax, 4
+	and	eax, ebp
+	mov	ecx, dword ptr [ebx + 4*eax]
+	mov	eax, dword ptr [esp + 28]
+	mov	ebx, esi
+	add	esi, 4
+	and	ebx, 15
+	mov	ebp, dword ptr [eax + 80]
+	mov	eax, 3
+	movzx	ecx, byte ptr [ecx + ebx]
+	cmp	ebp, 1
+	cmovne	eax, esi
+	cmp	ebp, 2
+	mov	esi, 1
+	cmove	eax, ebp
+	cmp	ebp, 3
+	cmovne	esi, eax
+	xor	eax, eax
+	cmp	ebp, 4
+	cmovne	eax, esi
+	shl	edx, 8
+	shl	edi, 16
+	shl	ecx, 24
+	add	ebp, -4
+	add	edx, dword ptr [esp]            # 4-byte Folded Reload
+	or	edx, edi
+	or	edx, ecx
+	mov	edx, dword ptr [esp + 28]
+	mov	dword ptr [edx + 76], eax
+	mov	dword ptr [edx + 80], ebp
+	setne	byte ptr [edx + 84]
+	add	esp, 4
+	pop	esi
+	pop	edi
+	pop	ebx
+	pop	ebp
+	ret
+                                        # -- End function
+	.def	 "?ext0101_raster3_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z";
+	.scl	2;
+	.type	32;
+	.endef
+	.globl	"?ext0101_raster3_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z" # -- Begin function ?ext0101_raster3_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z
+	.p2align	4, 0x90
+"?ext0101_raster3_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z": # @"?ext0101_raster3_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
+# %bb.0:
+	push	ebp
+	push	ebx
+	push	edi
+	push	esi
+	push	eax
+	mov	eax, dword ptr [esp + 28]
+	mov	ebp, 268435455
+	mov	esi, dword ptr [eax + 76]
+	add	ebp, dword ptr [eax + 72]
+	mov	ebx, dword ptr [eax + 68]
+	lea	ecx, [esi + 3]
+	mov	edx, ecx
+	and	ecx, 15
+	shr	edx, 4
+	and	edx, ebp
+	mov	edx, dword ptr [ebx + 4*edx]
+	movzx	eax, byte ptr [edx + ecx]
+	lea	edx, [esi + 2]
+	mov	edi, edx
+	and	edx, 15
+	shr	edi, 4
+	and	edi, ebp
+	mov	edi, dword ptr [ebx + 4*edi]
+	mov	dword ptr [esp], eax            # 4-byte Spill
+	lea	eax, [esi + 1]
+	movzx	edx, byte ptr [edi + edx]
+	mov	edi, eax
+	and	eax, 15
+	shr	edi, 4
+	and	edi, ebp
+	mov	edi, dword ptr [ebx + 4*edi]
+	movzx	edi, byte ptr [edi + eax]
+	mov	eax, esi
+	shr	eax, 4
+	and	eax, ebp
+	mov	ecx, dword ptr [ebx + 4*eax]
+	mov	eax, dword ptr [esp + 28]
+	mov	ebx, esi
+	add	esi, 4
+	and	ebx, 15
+	mov	ebp, dword ptr [eax + 80]
+	mov	eax, 3
+	movzx	ecx, byte ptr [ecx + ebx]
+	cmp	ebp, 1
+	cmovne	eax, esi
+	cmp	ebp, 2
+	mov	esi, 1
+	cmove	eax, ebp
+	cmp	ebp, 3
+	cmovne	esi, eax
+	xor	eax, eax
+	cmp	ebp, 4
+	cmovne	eax, esi
+	shl	edx, 8
+	shl	edi, 16
+	shl	ecx, 24
+	add	ebp, -4
+	add	edx, dword ptr [esp]            # 4-byte Folded Reload
+	or	edx, edi
+	or	edx, ecx
+	mov	edx, dword ptr [esp + 28]
+	mov	dword ptr [edx + 76], eax
+	mov	dword ptr [edx + 80], ebp
+	setne	byte ptr [edx + 84]
+	add	esp, 4
+	pop	esi
+	pop	edi
+	pop	ebx
+	pop	ebp
+	ret
+                                        # -- End function
+	.def	 "?ext0101_raster_set_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z";
+	.scl	2;
+	.type	32;
+	.endef
+	.globl	"?ext0101_raster_set_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z" # -- Begin function ?ext0101_raster_set_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z
+	.p2align	4, 0x90
+"?ext0101_raster_set_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z": # @"?ext0101_raster_set_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
+# %bb.0:
+	push	edi
+	push	esi
+	mov	eax, dword ptr [esp + 16]
+	mov	ecx, dword ptr [eax + 76]
+	mov	edi, dword ptr [eax + 72]
+	mov	esi, dword ptr [eax + 68]
+	mov	edx, ecx
+	dec	edi
+	shr	edx, 4
+	and	edi, edx
+	mov	edx, ecx
+	inc	ecx
+	mov	esi, dword ptr [esi + 4*edi]
+	and	edx, 15
+	mov	dl, byte ptr [esi + edx]
+	xor	esi, esi
+	dec	dword ptr [eax + 80]
+	cmovne	esi, ecx
+	mov	dword ptr [eax + 76], esi
+	mov	byte ptr ["?palette@@3EA"], dl
+	cmp	byte ptr [eax + 84], 0
+	je	LBB34_5
+# %bb.1:
+	push	offset "??_C@_0BB@OCFNGDLM@Set?5palette?5to?5?$CC?$AA@"
+	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
+	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
+	add	esp, 8
+	movzx	edx, byte ptr ["?palette@@3EA"]
+	shl	edx, 3
+	mov	ecx, dword ptr [edx + 2*edx + "?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+16]
+	cmp	dword ptr [edx + 2*edx + "?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+20], 15
+	jbe	LBB34_2
+# %bb.3:
+	mov	edx, dword ptr [edx + 2*edx + "?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"]
+	jmp	LBB34_4
+LBB34_2:
+	lea	edx, [edx + 2*edx + "?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"]
+LBB34_4:
+	push	ecx
+	push	edx
+	push	eax
+	call	"??$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z"
+	add	esp, 12
+	push	offset "??_C@_01BJJEKLCA@?$CC?$AA@"
+	push	eax
+	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
+	add	esp, 8
+LBB34_5:
+	pop	esi
+	pop	edi
+	ret
+                                        # -- End function
+	.def	 "?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z";
+	.scl	2;
+	.type	32;
+	.endef
+	.globl	"?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z" # -- Begin function ?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z
+	.p2align	4, 0x90
+"?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z": # @"?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
+Lfunc_begin11:
+# %bb.0:
+	push	ebp
+	mov	ebp, esp
+	push	ebx
+	push	edi
+	push	esi
+	sub	esp, 92
+	mov	dword ptr [ebp - 28], esp
+	mov	dword ptr [ebp - 16], -1
+	mov	dword ptr [ebp - 20], offset "___ehhandler$?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
+	mov	esi, dword ptr [ebp + 12]
+	lea	eax, [ebp - 24]
+	mov	edx, 268435455
+	mov	ecx, dword ptr fs:[0]
+	mov	dword ptr [ebp - 24], ecx
+	mov	dword ptr fs:[0], eax
+	mov	eax, dword ptr [esi + 76]
+	mov	esi, dword ptr [esi + 72]
+	add	esi, edx
+	mov	edx, dword ptr [ebp + 12]
+	lea	ecx, [eax + 3]
+	mov	edi, ecx
+	and	ecx, 15
+	mov	dword ptr [ebp - 40], esi       # 4-byte Spill
+	shr	edi, 4
+	and	edi, esi
+	mov	edx, dword ptr [edx + 68]
+	mov	edi, dword ptr [edx + 4*edi]
+	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
+	movzx	ecx, byte ptr [edi + ecx]
+	lea	edi, [eax + 2]
+	mov	ebx, edi
+	and	edi, 15
+	shr	ebx, 4
+	and	ebx, esi
+	mov	ebx, dword ptr [edx + 4*ebx]
+	mov	dword ptr [ebp - 36], ecx       # 4-byte Spill
+	movzx	ecx, byte ptr [ebx + edi]
+	lea	edi, [eax + 1]
+	mov	ebx, edi
+	and	edi, 15
+	shr	ebx, 4
+	and	ebx, esi
+	mov	ebx, dword ptr [edx + 4*ebx]
+	mov	dword ptr [ebp - 48], ecx       # 4-byte Spill
+	mov	ecx, eax
+	and	ecx, 15
+	movzx	ebx, byte ptr [ebx + edi]
+	mov	edi, eax
+	add	eax, 4
+	shr	edi, 4
+	and	edi, esi
+	mov	edi, dword ptr [edx + 4*edi]
+	mov	edx, dword ptr [ebp + 12]
+	movzx	ecx, byte ptr [edi + ecx]
+	mov	edi, dword ptr [edx + 80]
+	mov	edx, 3
+	cmp	edi, 1
+	mov	dword ptr [ebp - 52], edi       # 4-byte Spill
+	cmove	eax, edx
+	cmp	edi, 2
+	mov	edx, 1
+	cmove	eax, edi
+	cmp	edi, 3
+	cmove	eax, edx
+	xor	edx, edx
+	cmp	edi, 4
+	cmove	eax, edx
+	mov	edx, dword ptr [ebp - 48]       # 4-byte Reload
+	shl	ebx, 16
+	shl	ecx, 24
+	shl	edx, 8
+	add	edx, dword ptr [ebp - 36]       # 4-byte Folded Reload
+	or	edx, ebx
+	lea	ebx, [edi - 4]
+	or	edx, ecx
+	mov	ecx, dword ptr [ebp + 12]
+	mov	dword ptr [ebp - 48], edx       # 4-byte Spill
+	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
+	mov	dword ptr [ecx + 76], eax
+	mov	dword ptr [ecx + 80], ebx
+	lea	ecx, [eax + 3]
+	mov	edi, ecx
+	and	ecx, 15
+	shr	edi, 4
+	and	edi, esi
+	mov	edi, dword ptr [edx + 4*edi]
+	movzx	ecx, byte ptr [edi + ecx]
+	mov	dword ptr [ebp - 36], ecx       # 4-byte Spill
+	lea	ecx, [eax + 2]
+	mov	edi, ecx
+	and	ecx, 15
+	shr	edi, 4
+	and	edi, esi
+	mov	edi, dword ptr [edx + 4*edi]
+	movzx	ecx, byte ptr [edi + ecx]
+	mov	dword ptr [ebp - 56], ecx       # 4-byte Spill
+	lea	ecx, [eax + 1]
+	mov	edi, ecx
+	and	ecx, 15
+	shr	edi, 4
+	and	edi, esi
+	mov	edi, dword ptr [edx + 4*edi]
+	mov	edx, 3
+	movzx	ecx, byte ptr [edi + ecx]
+	mov	edi, eax
+	shr	edi, 4
+	and	edi, esi
+	mov	dword ptr [ebp - 44], ecx       # 4-byte Spill
+	mov	ecx, eax
+	add	eax, 4
+	and	ecx, 15
+	cmp	ebx, 1
+	mov	esi, dword ptr [ebp - 44]       # 4-byte Reload
+	cmove	eax, edx
+	cmp	ebx, 2
+	mov	edx, 1
+	cmove	eax, ebx
+	cmp	ebx, 3
+	cmove	eax, edx
+	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
+	cmp	ebx, 4
+	mov	edi, dword ptr [edx + 4*edi]
+	mov	edx, 0
+	cmove	eax, edx
+	mov	edx, dword ptr [ebp - 56]       # 4-byte Reload
+	shl	esi, 16
+	movzx	ecx, byte ptr [edi + ecx]
+	lea	edi, [eax + 3]
+	shl	edx, 8
+	mov	ebx, edi
+	and	edi, 15
+	add	edx, dword ptr [ebp - 36]       # 4-byte Folded Reload
+	shr	ebx, 4
+	and	ebx, dword ptr [ebp - 40]       # 4-byte Folded Reload
+	shl	ecx, 24
+	or	edx, esi
+	mov	esi, dword ptr [ebp + 12]
+	or	edx, ecx
+	mov	ecx, dword ptr [ebp - 52]       # 4-byte Reload
+	mov	dword ptr [ebp - 56], edx       # 4-byte Spill
+	mov	dword ptr [esi + 76], eax
+	lea	edx, [ecx - 8]
+	mov	dword ptr [esi + 80], edx
+	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
+	mov	ebx, dword ptr [esi + 4*ebx]
+	movzx	ecx, byte ptr [ebx + edi]
+	mov	ebx, dword ptr [ebp - 40]       # 4-byte Reload
+	mov	dword ptr [ebp - 36], ecx       # 4-byte Spill
+	lea	ecx, [eax + 2]
+	mov	edi, ecx
+	and	ecx, 15
+	shr	edi, 4
+	and	edi, ebx
+	mov	edi, dword ptr [esi + 4*edi]
+	movzx	ecx, byte ptr [edi + ecx]
+	mov	dword ptr [ebp - 44], ecx       # 4-byte Spill
+	lea	ecx, [eax + 1]
+	mov	edi, ecx
+	and	ecx, 15
+	shr	edi, 4
+	and	edi, ebx
+	mov	edi, dword ptr [esi + 4*edi]
+	mov	esi, eax
+	and	esi, 15
+	movzx	edi, byte ptr [edi + ecx]
+	mov	ecx, eax
+	add	eax, 4
+	shr	ecx, 4
+	and	ecx, ebx
+	cmp	edx, 1
+	mov	ebx, 3
+	cmove	eax, ebx
+	cmp	edx, 2
+	mov	ebx, 1
+	cmove	eax, edx
+	cmp	edx, 3
+	cmove	eax, ebx
+	cmp	edx, 4
+	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
+	mov	ecx, dword ptr [edx + 4*ecx]
+	mov	edx, 0
+	cmove	eax, edx
+	mov	edx, dword ptr [ebp - 44]       # 4-byte Reload
+	shl	edi, 16
+	movzx	ecx, byte ptr [ecx + esi]
+	mov	esi, dword ptr [ebp - 40]       # 4-byte Reload
+	shl	edx, 8
+	add	edx, dword ptr [ebp - 36]       # 4-byte Folded Reload
+	shl	ecx, 24
+	or	edx, edi
+	mov	edi, dword ptr [ebp - 32]       # 4-byte Reload
+	or	edx, ecx
+	mov	ecx, dword ptr [ebp - 52]       # 4-byte Reload
+	mov	dword ptr [ebp - 44], edx       # 4-byte Spill
+	mov	edx, dword ptr [ebp + 12]
+	lea	ebx, [ecx - 12]
+	lea	ecx, [eax + 3]
+	mov	dword ptr [edx + 76], eax
+	mov	dword ptr [edx + 80], ebx
+	mov	edx, ecx
+	and	ecx, 15
+	shr	edx, 4
+	and	edx, esi
+	mov	edx, dword ptr [edi + 4*edx]
+	movzx	ecx, byte ptr [edx + ecx]
+	mov	dword ptr [ebp - 36], ecx       # 4-byte Spill
+	lea	ecx, [eax + 2]
+	mov	edx, ecx
+	and	ecx, 15
+	shr	edx, 4
+	and	edx, esi
+	mov	esi, edi
+	mov	edx, dword ptr [edi + 4*edx]
+	movzx	edi, byte ptr [edx + ecx]
+	lea	ecx, [eax + 1]
+	mov	edx, ecx
+	and	ecx, 15
+	shr	edx, 4
+	and	edx, dword ptr [ebp - 40]       # 4-byte Folded Reload
+	mov	edx, dword ptr [esi + 4*edx]
+	movzx	ecx, byte ptr [edx + ecx]
+	mov	edx, eax
+	shr	edx, 4
+	and	edx, dword ptr [ebp - 40]       # 4-byte Folded Reload
+	mov	edx, dword ptr [esi + 4*edx]
+	mov	esi, eax
+	add	eax, 4
+	and	esi, 15
+	cmp	ebx, 1
+	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
+	mov	edx, 3
+	cmove	eax, edx
+	cmp	ebx, 2
+	mov	edx, 1
+	cmove	eax, ebx
+	cmp	ebx, 3
+	cmove	eax, edx
+	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
+	cmp	ebx, 4
+	mov	ebx, dword ptr [ebp + 12]
+	movzx	edx, byte ptr [edx + esi]
+	mov	esi, 0
+	cmove	eax, esi
+	shl	edi, 8
+	shl	ecx, 16
+	mov	esi, dword ptr [ebp - 52]       # 4-byte Reload
+	add	edi, dword ptr [ebp - 36]       # 4-byte Folded Reload
+	mov	dword ptr [ebx + 76], eax
+	mov	eax, dword ptr [ebp - 48]       # 4-byte Reload
+	shl	edx, 24
+	add	esi, -16
+	or	edi, ecx
+	add	dword ptr [ebp - 44], eax       # 4-byte Folded Spill
+	mov	dword ptr [ebx + 80], esi
+	or	edi, edx
+	add	edi, dword ptr [ebp - 56]       # 4-byte Folded Reload
+	mov	dword ptr [ebp - 52], edi       # 4-byte Spill
+	jmp	LBB35_1
+	.p2align	4, 0x90
+LBB35_4:                                #   in Loop: Header=BB35_1 Depth=1
+	inc	eax
+LBB35_1:                                # =>This Loop Header: Depth=1
+                                        #     Child Loop BB35_3 Depth 2
+	cmp	eax, dword ptr [ebp - 44]       # 4-byte Folded Reload
+	jae	LBB35_44
+# %bb.2:                                #   in Loop: Header=BB35_1 Depth=1
+	mov	esi, dword ptr [ebp - 56]       # 4-byte Reload
+	lea	ecx, [4*eax]
+	mov	dword ptr [ebp - 48], eax       # 4-byte Spill
+	mov	dword ptr [ebp - 36], ecx       # 4-byte Spill
+	jmp	LBB35_3
+LBB35_29:                               #   in Loop: Header=BB35_3 Depth=2
+	add	eax, 36
+	mov	ecx, esi
+	mov	edx, eax
+LBB35_30:                               #   in Loop: Header=BB35_3 Depth=2
+	push	edx
+	push	ecx
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+LBB35_31:                               #   in Loop: Header=BB35_3 Depth=2
+	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
+	mov	eax, dword ptr [ebp - 48]       # 4-byte Reload
+	inc	esi
+LBB35_3:                                #   Parent Loop BB35_1 Depth=1
+                                        # =>  This Inner Loop Header: Depth=2
+	cmp	esi, dword ptr [ebp - 52]       # 4-byte Folded Reload
+	jae	LBB35_4
+# %bb.5:                                #   in Loop: Header=BB35_3 Depth=2
+	mov	ebx, dword ptr [ebp + 12]
+	mov	eax, dword ptr [ebx + 76]
+	mov	edx, dword ptr [ebx + 72]
+	mov	ecx, eax
+	dec	edx
+	shr	ecx, 4
+	and	edx, ecx
+	mov	ecx, dword ptr [ebx + 68]
+	mov	ecx, dword ptr [ecx + 4*edx]
+	mov	edx, eax
+	inc	eax
+	and	edx, 15
+	movzx	ecx, byte ptr [ecx + edx]
+	dec	dword ptr [ebx + 80]
+	mov	edx, 0
+	cmove	eax, edx
+	mov	dword ptr [ebx + 76], eax
+	mov	dword ptr [ebp - 16], -1
+	push	ecx
+	call	"?read_palette_color@@YA?AUcolor@@E@Z"
+	add	esp, 4
+	mov	ecx, dword ptr [ebx + 4]
+	mov	dword ptr [ebp - 40], eax       # 4-byte Spill
+	mov	eax, dword ptr [ebp + 8]
+	mov	dword ptr [ebp - 32], esi       # 4-byte Spill
+	mov	ebx, 268435455
+	imul	ecx, dword ptr [ebp - 36]       # 4-byte Folded Reload
+	mov	edx, dword ptr [eax + 12]
+	mov	edi, dword ptr [eax + 8]
+	lea	ecx, [ecx + 4*esi]
+	add	edi, ebx
+	mov	ebx, dword ptr [ebp - 40]       # 4-byte Reload
+	add	edx, ecx
+	mov	esi, edx
+	and	edx, 15
+	shr	esi, 4
+	and	edi, esi
+	mov	esi, dword ptr [eax + 4]
+	mov	esi, dword ptr [esi + 4*edi]
+	mov	byte ptr [esi + edx], bl
+	mov	edx, ecx
+	or	edx, 1
+	mov	edi, dword ptr [eax + 8]
+	add	edx, dword ptr [eax + 12]
+	dec	edi
+	mov	esi, edx
+	and	edx, 15
+	shr	esi, 4
+	and	edi, esi
+	mov	esi, dword ptr [eax + 4]
+	mov	esi, dword ptr [esi + 4*edi]
+	mov	byte ptr [esi + edx], bh
+	mov	esi, ecx
+	or	ecx, 3
+	or	esi, 2
+	mov	edi, dword ptr [eax + 8]
+	add	esi, dword ptr [eax + 12]
+	dec	edi
+	mov	edx, esi
+	and	esi, 15
+	shr	edx, 4
+	and	edi, edx
+	mov	edx, dword ptr [eax + 4]
+	mov	edi, dword ptr [edx + 4*edi]
+	mov	edx, ebx
+	shr	edx, 16
+	mov	byte ptr [edi + esi], dl
+	add	ecx, dword ptr [eax + 12]
+	mov	edi, dword ptr [eax + 8]
+	mov	esi, ecx
+	dec	edi
+	and	ecx, 15
+	shr	esi, 4
+	and	edi, esi
+	mov	esi, dword ptr [eax + 4]
+	mov	eax, dword ptr [ebp + 12]
+	mov	esi, dword ptr [esi + 4*edi]
+	mov	byte ptr [esi + ecx], -1
+	cmp	byte ptr [eax + 84], 0
+	je	LBB35_31
+# %bb.6:                                #   in Loop: Header=BB35_3 Depth=2
+	movzx	ecx, dl
+	movzx	eax, bl
+	movzx	edx, bh
+	push	ecx
+	push	edx
+	push	eax
+	lea	esi, [ebp - 104]
+	push	esi
+	call	"?concolor_fg_rgb@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@EEE@Z"
+	add	esp, 16
+	mov	eax, dword ptr [ebp - 88]
+	cmp	dword ptr [ebp - 84], 15
+	mov	ecx, esi
+	jbe	LBB35_8
+# %bb.7:                                #   in Loop: Header=BB35_3 Depth=2
+	mov	ecx, dword ptr [ebp - 104]
+LBB35_8:                                #   in Loop: Header=BB35_3 Depth=2
+	mov	dword ptr [ebp - 16], 2
+	push	eax
+	push	ecx
+	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
+	call	"??$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z"
+	add	esp, 12
+# %bb.9:                                #   in Loop: Header=BB35_3 Depth=2
+	push	offset "??_C@_01ODHLEDKK@?$CI?$AA@"
+	push	eax
+	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
+	add	esp, 8
+# %bb.10:                               #   in Loop: Header=BB35_3 Depth=2
+	mov	ecx, eax
+	push	dword ptr [ebp - 32]            # 4-byte Folded Reload
+	call	"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
+# %bb.11:                               #   in Loop: Header=BB35_3 Depth=2
+	push	offset "??_C@_02KEGNLNML@?0?5?$AA@"
+	push	eax
+	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
+	add	esp, 8
+# %bb.12:                               #   in Loop: Header=BB35_3 Depth=2
+	mov	ecx, eax
+	push	dword ptr [ebp - 48]            # 4-byte Folded Reload
+	call	"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
+# %bb.13:                               #   in Loop: Header=BB35_3 Depth=2
+	push	offset "??_C@_02MNMNLDAI@?$CJ?6?$AA@"
+	push	eax
+	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
+	add	esp, 8
+# %bb.14:                               #   in Loop: Header=BB35_3 Depth=2
+	mov	dword ptr [ebp - 60], 15
+	mov	dword ptr [ebp - 64], 4
+	mov	dword ptr [ebp - 80], 1831885595
+	mov	byte ptr [ebp - 76], 0
+	mov	dword ptr [ebp - 16], 3
+	push	4
+	lea	ecx, [ebp - 80]
+	push	ecx
+	push	eax
+	call	"??$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z"
+	add	esp, 12
+# %bb.15:                               #   in Loop: Header=BB35_3 Depth=2
+	mov	eax, dword ptr [ebp - 60]
+	cmp	eax, 16
+	jb	LBB35_23
+# %bb.16:                               #   in Loop: Header=BB35_3 Depth=2
+	mov	ecx, dword ptr [ebp - 80]
+	lea	edx, [eax + 1]
+	cmp	edx, 4096
+	jb	LBB35_22
+# %bb.17:                               #   in Loop: Header=BB35_3 Depth=2
+	mov	esi, dword ptr [ecx - 4]
+	add	ecx, -4
+	sub	ecx, esi
+	cmp	ecx, 32
+	jae	LBB35_18
+# %bb.21:                               #   in Loop: Header=BB35_3 Depth=2
+	add	eax, 36
+	mov	ecx, esi
+	mov	edx, eax
+LBB35_22:                               #   in Loop: Header=BB35_3 Depth=2
+	push	edx
+	push	ecx
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+LBB35_23:                               #   in Loop: Header=BB35_3 Depth=2
+	mov	eax, dword ptr [ebp - 84]
+	cmp	eax, 16
+	jb	LBB35_31
+# %bb.24:                               #   in Loop: Header=BB35_3 Depth=2
+	mov	ecx, dword ptr [ebp - 104]
+	lea	edx, [eax + 1]
+	cmp	edx, 4096
+	jb	LBB35_30
+# %bb.25:                               #   in Loop: Header=BB35_3 Depth=2
+	mov	esi, dword ptr [ecx - 4]
+	add	ecx, -4
+	sub	ecx, esi
+	cmp	ecx, 32
+	jb	LBB35_29
+# %bb.26:
+	mov	dword ptr [ebp - 16], 1
+	call	__invalid_parameter_noinfo_noreturn
+# %bb.27:
+LBB35_44:
+	mov	eax, dword ptr [ebp - 24]
+	mov	dword ptr fs:[0], eax
+	add	esp, 92
+	pop	esi
+	pop	edi
+	pop	ebx
+	pop	ebp
+	ret
+LBB35_18:
+	mov	dword ptr [ebp - 16], 0
+	call	__invalid_parameter_noinfo_noreturn
+# %bb.19:
+	.def	 "?dtor$20@?0??ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@4HA";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90
+"?dtor$20@?0??ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@4HA":
+LBB35_20:
+	push	ebp
+	sub	esp, 16
+	add	ebp, 12
+	call	___std_terminate
+	.def	 "?dtor$28@?0??ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@4HA";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90
+"?dtor$28@?0??ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@4HA":
+LBB35_28:
+	push	ebp
+	sub	esp, 16
+	add	ebp, 12
+	call	___std_terminate
+	.def	 "?dtor$32@?0??ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@4HA";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90
+"?dtor$32@?0??ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@4HA":
+LBB35_32:
+	push	ebp
+	sub	esp, 16
+	add	ebp, 12
+	mov	eax, dword ptr [ebp - 60]
+	cmp	eax, 16
+	jb	LBB35_37
+# %bb.33:
+	mov	ecx, dword ptr [ebp - 80]
+	lea	esi, [eax + 1]
+	cmp	esi, 4096
+	jb	LBB35_36
+# %bb.34:
+	mov	edx, dword ptr [ecx - 4]
+	add	ecx, -4
+	sub	ecx, edx
+	cmp	ecx, 32
+	jae	LBB35_45
+# %bb.35:
+	add	eax, 36
+	mov	ecx, edx
+	mov	esi, eax
+LBB35_36:
+	push	esi
+	push	ecx
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+LBB35_37:
+	mov	dword ptr [ebp - 64], 0
+	mov	dword ptr [ebp - 60], 15
+	mov	byte ptr [ebp - 80], 0
+	add	esp, 16
+	pop	ebp
+	ret                                     # CLEANUPRET
+LBB35_45:
+	call	__invalid_parameter_noinfo_noreturn
+	.def	 "?dtor$38@?0??ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@4HA";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90
+"?dtor$38@?0??ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@4HA":
+LBB35_38:
+	push	ebp
+	sub	esp, 16
+	add	ebp, 12
+	mov	eax, dword ptr [ebp - 84]
+	cmp	eax, 16
+	jb	LBB35_43
+# %bb.39:
+	mov	ecx, dword ptr [ebp - 104]
+	lea	esi, [eax + 1]
+	cmp	esi, 4096
+	jb	LBB35_42
+# %bb.40:
+	mov	edx, dword ptr [ecx - 4]
+	add	ecx, -4
+	sub	ecx, edx
+	cmp	ecx, 32
+	jae	LBB35_46
+# %bb.41:
+	add	eax, 36
+	mov	ecx, edx
+	mov	esi, eax
+LBB35_42:
+	push	esi
+	push	ecx
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+LBB35_43:
+	add	esp, 16
+	pop	ebp
+	ret                                     # CLEANUPRET
+LBB35_46:
+	call	__invalid_parameter_noinfo_noreturn
+Lfunc_end11:
+	.section	.xdata,"dr"
+	.p2align	2
+"L__ehtable$?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z":
+	.long	429065506                       # MagicNumber
+	.long	4                               # MaxState
+	.long	("$stateUnwindMap$?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z") # UnwindMap
+	.long	0                               # NumTryBlocks
+	.long	0                               # TryBlockMap
+	.long	0                               # IPMapEntries
+	.long	0                               # IPToStateXData
+	.long	0                               # ESTypeList
+	.long	1                               # EHFlags
+"$stateUnwindMap$?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z":
+	.long	-1                              # ToState
+	.long	"?dtor$20@?0??ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@4HA" # Action
+	.long	-1                              # ToState
+	.long	"?dtor$28@?0??ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@4HA" # Action
+	.long	-1                              # ToState
+	.long	"?dtor$38@?0??ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@4HA" # Action
+	.long	2                               # ToState
+	.long	"?dtor$32@?0??ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@4HA" # Action
+	.text
+                                        # -- End function
+	.def	 "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z";
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text,"xr",discard,"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
+	.globl	"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z" # -- Begin function ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z
+	.p2align	4, 0x90
+"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z": # @"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
+Lfunc_begin12:
+# %bb.0:
+	push	ebp
+	mov	ebp, esp
+	push	ebx
+	push	edi
+	push	esi
+	sub	esp, 64
+	mov	dword ptr [ebp - 28], esp
+	mov	dword ptr [ebp - 16], -1
+	mov	dword ptr [ebp - 20], offset "___ehhandler$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
+	mov	esi, ecx
+	lea	eax, [ebp - 24]
+	mov	ecx, dword ptr fs:[0]
+	mov	dword ptr [ebp - 24], ecx
+	mov	dword ptr fs:[0], eax
+	mov	dword ptr [ebp - 40], esi
+	mov	eax, dword ptr [esi]
+	mov	edx, dword ptr [eax + 4]
+	mov	ecx, dword ptr [esi + edx + 56]
+	test	ecx, ecx
+	je	LBB36_2
+# %bb.1:
+	mov	eax, dword ptr [ecx]
+	call	dword ptr [eax + 4]
+	mov	eax, dword ptr [esi]
+	mov	edx, dword ptr [eax + 4]
+LBB36_2:
+	cmp	dword ptr [esi + edx + 12], 0
+	mov	dword ptr [ebp - 32], esi       # 4-byte Spill
+	je	LBB36_9
+# %bb.3:
+	xor	edi, edi
+	mov	byte ptr [ebp - 36], 0
+	jmp	LBB36_4
+LBB36_9:
+	mov	ecx, dword ptr [esi + edx + 60]
+	test	ecx, ecx
+	je	LBB36_11
+# %bb.10:
+	cmp	ecx, esi
+	je	LBB36_11
+# %bb.15:
+	mov	dword ptr [ebp - 16], 0
+	call	"?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ"
+# %bb.16:
+	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
+	xor	edi, edi
+	mov	eax, dword ptr [esi]
+	mov	ecx, dword ptr [eax + 4]
+	cmp	dword ptr [esi + ecx + 12], 0
+	sete	byte ptr [ebp - 36]
+	jne	LBB36_4
+	jmp	LBB36_17
+LBB36_11:
+	mov	byte ptr [ebp - 36], 1
+LBB36_17:
+	mov	eax, dword ptr [eax + 4]
+	mov	eax, dword ptr [esi + eax + 48]
+	mov	ecx, dword ptr [eax + 4]
+	mov	dword ptr [ebp - 64], ecx
+	mov	eax, dword ptr [ecx]
+	call	dword ptr [eax + 4]
+	lea	eax, [ebp - 68]
+	mov	dword ptr [ebp - 16], 4
+	push	eax
+	call	"??$use_facet@V?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@@std@@YAABV?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@0@ABVlocale@0@@Z"
+	add	esp, 4
+# %bb.18:
+	mov	ecx, dword ptr [ebp - 64]
+	mov	edi, dword ptr [ebp + 8]
+	mov	esi, eax
+	test	ecx, ecx
+	je	LBB36_21
+# %bb.19:
+	mov	eax, dword ptr [ecx]
+	call	dword ptr [eax + 8]
+	test	eax, eax
+	je	LBB36_21
+# %bb.20:
+	mov	edx, dword ptr [eax]
+	mov	ecx, eax
+	push	1
+	call	dword ptr [edx]
+LBB36_21:
+	mov	ebx, dword ptr [ebp - 32]       # 4-byte Reload
+	mov	eax, dword ptr [ebx]
+	mov	eax, dword ptr [eax + 4]
+	lea	ecx, [ebx + eax]
+	movsx	edx, byte ptr [ebx + eax + 64]
+	mov	eax, dword ptr [ebx + eax + 56]
+	mov	dword ptr [ebp - 48], 0
+	mov	dword ptr [ebp - 44], eax
+	mov	eax, dword ptr [esi]
+	mov	eax, dword ptr [eax + 36]
+	mov	dword ptr [ebp - 16], 5
+	sub	esp, 24
+	movsd	xmm0, qword ptr [ebp - 48]      # xmm0 = mem[0],zero
+	movsd	qword ptr [esp + 4], xmm0
+	mov	dword ptr [esp + 12], ecx
+	lea	ecx, [ebp - 76]
+	mov	dword ptr [esp + 20], edi
+	mov	dword ptr [esp + 16], edx
+	mov	dword ptr [esp], ecx
+	mov	ecx, esi
+	call	eax
+# %bb.22:
+	movzx	edi, byte ptr [ebp - 76]
+	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
+	shl	edi, 2
+LBB36_4:
+	mov	eax, dword ptr [esi]
+	xor	ecx, ecx
+	mov	edx, dword ptr [eax + 4]
+	cmp	dword ptr [esi + edx + 56], 0
+	mov	eax, dword ptr [esi + edx + 12]
+	sete	cl
+	and	eax, 23
+	shl	ecx, 2
+	or	ecx, edi
+	or	eax, ecx
+	mov	dword ptr [esi + edx + 12], eax
+	and	eax, dword ptr [esi + edx + 16]
+	jne	LBB36_5
+# %bb.33:
+	call	"?uncaught_exception@std@@YA_NXZ"
+	test	al, al
+	jne	LBB36_35
+# %bb.34:
+	mov	ecx, dword ptr [ebp - 40]
+	mov	dword ptr [ebp - 16], 2
+	call	"?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ"
+	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
+LBB36_35:
+	mov	eax, dword ptr [ebp - 40]
+	mov	ecx, dword ptr [eax]
+	mov	ecx, dword ptr [ecx + 4]
+	mov	ecx, dword ptr [eax + ecx + 56]
+	test	ecx, ecx
+	je	LBB36_37
+# %bb.36:
+	mov	eax, dword ptr [ecx]
+	mov	eax, dword ptr [eax + 8]
+	mov	dword ptr [ebp - 16], 1
+	call	eax
+	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
+LBB36_37:
+	mov	eax, dword ptr [ebp - 24]
+	mov	dword ptr fs:[0], eax
+	mov	eax, esi
+	add	esp, 64
+	pop	esi
+	pop	edi
+	pop	ebx
+	pop	ebp
+	ret	4
+LBB36_5:
+	cmp	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], 0
+	#MEMBARRIER
+	jne	LBB36_7
+# %bb.6:
+	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"+4], 5
+	#MEMBARRIER
+	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], offset "??_7_Iostream_error_category2@std@@6B@"
+	mov	dword ptr [ebp - 16], 3
+LBB36_7:
+	test	al, 2
+	mov	ecx, offset "??_C@_0BF@OOHOMBOF@ios_base?3?3eofbit?5set?$AA@"
+	mov	edx, offset "??_C@_0BG@FMKFHCIL@ios_base?3?3failbit?5set?$AA@"
+	mov	dword ptr [ebp - 16], 3
+	cmove	edx, ecx
+	test	al, 4
+	mov	eax, offset "??_C@_0BF@PHHKMMFD@ios_base?3?3badbit?5set?$AA@"
+	lea	ecx, [ebp - 68]
+	cmove	eax, edx
+	push	eax
+	push	offset "?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"
+	push	1
+	call	"??0system_error@std@@QAE@Verror_code@1@PBD@Z"
+# %bb.8:
+	mov	dword ptr [ebp - 68], offset "??_7failure@ios_base@std@@6B@"
+	push	offset "__TI5?AVfailure@ios_base@std@@"
+	lea	eax, [ebp - 68]
+	push	eax
+	call	__CxxThrowException@8
+	add	esp, 8
+# %bb.32:
+LBB36_31:                               # Block address taken
+	add	ebp, 12
+	xor	edi, edi
+	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
+	jmp	LBB36_4
+	.def	 "?dtor$12@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90
+"?dtor$12@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA":
+LBB36_12:
+	push	ebp
+	sub	esp, 24
+	add	ebp, 12
+	mov	eax, dword ptr [ebp - 40]
+	mov	ecx, dword ptr [eax]
+	mov	ecx, dword ptr [ecx + 4]
+	mov	ecx, dword ptr [eax + ecx + 56]
+	test	ecx, ecx
+	je	LBB36_14
+# %bb.13:
+	mov	eax, dword ptr [ecx]
+	call	dword ptr [eax + 8]
+LBB36_14:
+	add	esp, 24
+	pop	ebp
+	ret                                     # CLEANUPRET
+	.def	 "?dtor$23@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90
+"?dtor$23@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA":
+LBB36_23:
+	push	ebp
+	sub	esp, 24
+	add	ebp, 12
+	mov	ecx, dword ptr [ebp - 64]
+	test	ecx, ecx
+	je	LBB36_26
+# %bb.24:
+	mov	eax, dword ptr [ecx]
+	call	dword ptr [eax + 8]
+	test	eax, eax
+	je	LBB36_26
+# %bb.25:
+	mov	edx, dword ptr [eax]
+	mov	ecx, eax
+	push	1
+	call	dword ptr [edx]
+LBB36_26:
+	add	esp, 24
+	pop	ebp
+	ret                                     # CLEANUPRET
+	.def	 "?catch$27@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90
+"?catch$27@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA":
+LBB36_27:
+	push	ebp
+	sub	esp, 24
+	add	ebp, 12
+	mov	dword ptr [ebp - 28], esp
+	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
+	mov	eax, dword ptr [edx]
+	mov	eax, dword ptr [eax + 4]
+	mov	ecx, dword ptr [edx + eax + 12]
+	and	ecx, 19
+	or	ecx, 4
+	mov	dword ptr [edx + eax + 12], ecx
+	test	dword ptr [edx + eax + 16], ecx
+	jne	LBB36_28
+# %bb.30:
+	mov	eax, offset LBB36_31
+	add	esp, 24
+	pop	ebp
+	ret                                     # CATCHRET
+LBB36_28:
+	mov	dword ptr [ebp - 16], 6
+	push	0
+	push	0
+	call	__CxxThrowException@8
+	add	esp, 8
+# %bb.29:
+	.def	 "?dtor$38@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90
+"?dtor$38@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA":
+LBB36_38:
+	push	ebp
+	sub	esp, 24
+	add	ebp, 12
+	call	___std_terminate
+	.def	 "?dtor$39@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90
+"?dtor$39@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA":
+LBB36_39:
+	push	ebp
+	sub	esp, 24
+	add	ebp, 12
+	lea	ecx, [ebp - 40]
+	call	"??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ"
+	call	___std_terminate
+	.def	 "?dtor$40@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90
+"?dtor$40@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA":
+LBB36_40:
+	push	ebp
+	sub	esp, 24
+	add	ebp, 12
+	call	"?uncaught_exception@std@@YA_NXZ"
+	test	al, al
+	jne	LBB36_42
+# %bb.41:
+	mov	ecx, dword ptr [ebp - 40]
+	call	"?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ"
+LBB36_42:
+	mov	eax, dword ptr [ebp - 40]
+	mov	ecx, dword ptr [eax]
+	mov	ecx, dword ptr [ecx + 4]
+	mov	ecx, dword ptr [eax + ecx + 56]
+	test	ecx, ecx
+	je	LBB36_44
+# %bb.43:
+	mov	eax, dword ptr [ecx]
+	call	dword ptr [eax + 8]
+LBB36_44:
+	add	esp, 24
+	pop	ebp
+	ret                                     # CLEANUPRET
+Lfunc_end12:
+	.section	.xdata,"dr",associative,"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
+	.p2align	2
+"L__ehtable$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z":
+	.long	429065506                       # MagicNumber
+	.long	7                               # MaxState
+	.long	("$stateUnwindMap$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z") # UnwindMap
+	.long	1                               # NumTryBlocks
+	.long	("$tryMap$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z") # TryBlockMap
+	.long	0                               # IPMapEntries
+	.long	0                               # IPToStateXData
+	.long	0                               # ESTypeList
+	.long	1                               # EHFlags
+"$stateUnwindMap$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z":
+	.long	-1                              # ToState
+	.long	"?dtor$12@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA" # Action
+	.long	-1                              # ToState
+	.long	"?dtor$38@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA" # Action
+	.long	-1                              # ToState
+	.long	"?dtor$39@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA" # Action
+	.long	-1                              # ToState
+	.long	"?dtor$40@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA" # Action
+	.long	3                               # ToState
+	.long	"?dtor$23@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA" # Action
+	.long	3                               # ToState
+	.long	0                               # Action
+	.long	3                               # ToState
+	.long	0                               # Action
+"$tryMap$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z":
+	.long	5                               # TryLow
+	.long	5                               # TryHigh
+	.long	6                               # CatchHigh
+	.long	1                               # NumCatches
+	.long	("$handlerMap$0$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z") # HandlerArray
+"$handlerMap$0$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z":
+	.long	64                              # Adjectives
+	.long	0                               # Type
+	.long	0                               # CatchObjOffset
+	.long	"?catch$27@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA" # Handler
+	.section	.text,"xr",discard,"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
+                                        # -- End function
 	.def	 "?ext0101_registerAll@@YAXAAV?$map@IP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@ZU?$less@I@2@V?$allocator@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@2@@std@@@Z";
 	.scl	2;
 	.type	32;
 	.endef
+	.text
 	.globl	"?ext0101_registerAll@@YAXAAV?$map@IP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@ZU?$less@I@2@V?$allocator@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@2@@std@@@Z" # -- Begin function ?ext0101_registerAll@@YAXAAV?$map@IP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@ZU?$less@I@2@V?$allocator@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@2@@std@@@Z
 	.p2align	4, 0x90
 "?ext0101_registerAll@@YAXAAV?$map@IP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@ZU?$less@I@2@V?$allocator@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@2@@std@@@Z": # @"?ext0101_registerAll@@YAXAAV?$map@IP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@ZU?$less@I@2@V?$allocator@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@2@@std@@@Z"
@@ -5067,18 +8803,18 @@ LBB24_4:
 	mov	edi, dword ptr [esi]
 	mov	ebx, dword ptr [edi + 4]
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB27_2
+	je	LBB37_2
 # %bb.1:
 	xor	ebp, ebp
 	mov	eax, edi
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB27_7
-	jmp	LBB27_6
-LBB27_2:
+	jne	LBB37_7
+	jmp	LBB37_6
+LBB37_2:
 	mov	edx, dword ptr ["?ext0101_noop_id@@3IA"]
 	mov	eax, edi
 	.p2align	4, 0x90
-LBB27_3:                                # =>This Inner Loop Header: Depth=1
+LBB37_3:                                # =>This Inner Loop Header: Depth=1
 	mov	ebp, dword ptr [ebx + 16]
 	mov	ecx, ebx
 	xor	ebx, ebx
@@ -5087,7 +8823,7 @@ LBB27_3:                                # =>This Inner Loop Header: Depth=1
 	cmovae	eax, ecx
 	mov	ebx, dword ptr [ecx + 8*ebx]
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB27_3
+	je	LBB37_3
 # %bb.4:
 	xor	ebx, ebx
 	cmp	ebp, edx
@@ -5095,14 +8831,14 @@ LBB27_3:                                # =>This Inner Loop Header: Depth=1
 	mov	ebp, ebx
 	mov	ebx, ecx
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB27_7
-LBB27_6:
+	jne	LBB37_7
+LBB37_6:
 	mov	ecx, dword ptr ["?ext0101_noop_id@@3IA"]
 	cmp	ecx, dword ptr [eax + 16]
-	jae	LBB27_9
-LBB27_7:
+	jae	LBB37_9
+LBB37_7:
 	cmp	dword ptr [esi + 4], 178956970
-	je	LBB27_37
+	je	LBB37_55
 # %bb.8:
 	push	24
 	call	"??2@YAPAXI@Z"
@@ -5119,23 +8855,23 @@ LBB27_7:
 	push	ebp
 	push	ebx
 	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z"
-LBB27_9:
+LBB37_9:
 	mov	dword ptr [eax + 20], offset "?ext0101_noop_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
 	mov	edi, dword ptr [esi]
 	mov	ebx, dword ptr [edi + 4]
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB27_11
+	je	LBB37_11
 # %bb.10:
 	xor	ebp, ebp
 	mov	eax, edi
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB27_16
-	jmp	LBB27_15
-LBB27_11:
+	jne	LBB37_16
+	jmp	LBB37_15
+LBB37_11:
 	mov	edx, dword ptr ["?ext0101_noopex_id@@3IA"]
 	mov	eax, edi
 	.p2align	4, 0x90
-LBB27_12:                               # =>This Inner Loop Header: Depth=1
+LBB37_12:                               # =>This Inner Loop Header: Depth=1
 	mov	ebp, dword ptr [ebx + 16]
 	mov	ecx, ebx
 	xor	ebx, ebx
@@ -5144,7 +8880,7 @@ LBB27_12:                               # =>This Inner Loop Header: Depth=1
 	cmovae	eax, ecx
 	mov	ebx, dword ptr [ecx + 8*ebx]
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB27_12
+	je	LBB37_12
 # %bb.13:
 	xor	ebx, ebx
 	cmp	ebp, edx
@@ -5152,14 +8888,14 @@ LBB27_12:                               # =>This Inner Loop Header: Depth=1
 	mov	ebp, ebx
 	mov	ebx, ecx
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB27_16
-LBB27_15:
+	jne	LBB37_16
+LBB37_15:
 	mov	ecx, dword ptr ["?ext0101_noopex_id@@3IA"]
 	cmp	ecx, dword ptr [eax + 16]
-	jae	LBB27_18
-LBB27_16:
+	jae	LBB37_18
+LBB37_16:
 	cmp	dword ptr [esi + 4], 178956970
-	je	LBB27_37
+	je	LBB37_55
 # %bb.17:
 	push	24
 	call	"??2@YAPAXI@Z"
@@ -5176,23 +8912,23 @@ LBB27_16:
 	push	ebp
 	push	ebx
 	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z"
-LBB27_18:
+LBB37_18:
 	mov	dword ptr [eax + 20], offset "?ext0101_noopex_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
 	mov	edi, dword ptr [esi]
 	mov	ebx, dword ptr [edi + 4]
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB27_20
+	je	LBB37_20
 # %bb.19:
 	xor	ebp, ebp
 	mov	eax, edi
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB27_25
-	jmp	LBB27_24
-LBB27_20:
+	jne	LBB37_25
+	jmp	LBB37_24
+LBB37_20:
 	mov	edx, dword ptr ["?ext0101_setcolor_id@@3IA"]
 	mov	eax, edi
 	.p2align	4, 0x90
-LBB27_21:                               # =>This Inner Loop Header: Depth=1
+LBB37_21:                               # =>This Inner Loop Header: Depth=1
 	mov	ebp, dword ptr [ebx + 16]
 	mov	ecx, ebx
 	xor	ebx, ebx
@@ -5201,7 +8937,7 @@ LBB27_21:                               # =>This Inner Loop Header: Depth=1
 	cmovae	eax, ecx
 	mov	ebx, dword ptr [ecx + 8*ebx]
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB27_21
+	je	LBB37_21
 # %bb.22:
 	xor	ebx, ebx
 	cmp	ebp, edx
@@ -5209,14 +8945,14 @@ LBB27_21:                               # =>This Inner Loop Header: Depth=1
 	mov	ebp, ebx
 	mov	ebx, ecx
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB27_25
-LBB27_24:
+	jne	LBB37_25
+LBB37_24:
 	mov	ecx, dword ptr ["?ext0101_setcolor_id@@3IA"]
 	cmp	ecx, dword ptr [eax + 16]
-	jae	LBB27_27
-LBB27_25:
+	jae	LBB37_27
+LBB37_25:
 	cmp	dword ptr [esi + 4], 178956970
-	je	LBB27_37
+	je	LBB37_55
 # %bb.26:
 	push	24
 	call	"??2@YAPAXI@Z"
@@ -5233,23 +8969,23 @@ LBB27_25:
 	push	ebp
 	push	ebx
 	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z"
-LBB27_27:
+LBB37_27:
 	mov	dword ptr [eax + 20], offset "?ext0101_setcolor_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
 	mov	edi, dword ptr [esi]
 	mov	ebx, dword ptr [edi + 4]
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB27_29
+	je	LBB37_29
 # %bb.28:
 	xor	ebp, ebp
 	mov	eax, edi
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB27_34
-	jmp	LBB27_33
-LBB27_29:
+	jne	LBB37_34
+	jmp	LBB37_33
+LBB37_29:
 	mov	edx, dword ptr ["?ext0101_setdebug_id@@3IA"]
 	mov	eax, edi
 	.p2align	4, 0x90
-LBB27_30:                               # =>This Inner Loop Header: Depth=1
+LBB37_30:                               # =>This Inner Loop Header: Depth=1
 	mov	ebp, dword ptr [ebx + 16]
 	mov	ecx, ebx
 	xor	ebx, ebx
@@ -5258,7 +8994,7 @@ LBB27_30:                               # =>This Inner Loop Header: Depth=1
 	cmovae	eax, ecx
 	mov	ebx, dword ptr [ecx + 8*ebx]
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB27_30
+	je	LBB37_30
 # %bb.31:
 	xor	ebx, ebx
 	cmp	ebp, edx
@@ -5266,14 +9002,14 @@ LBB27_30:                               # =>This Inner Loop Header: Depth=1
 	mov	ebp, ebx
 	mov	ebx, ecx
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB27_34
-LBB27_33:
+	jne	LBB37_34
+LBB37_33:
 	mov	ecx, dword ptr ["?ext0101_setdebug_id@@3IA"]
 	cmp	ecx, dword ptr [eax + 16]
-	jae	LBB27_36
-LBB27_34:
+	jae	LBB37_36
+LBB37_34:
 	cmp	dword ptr [esi + 4], 178956970
-	je	LBB27_37
+	je	LBB37_55
 # %bb.35:
 	push	24
 	call	"??2@YAPAXI@Z"
@@ -5290,14 +9026,128 @@ LBB27_34:
 	push	ebp
 	push	ebx
 	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z"
-LBB27_36:
+LBB37_36:
 	mov	dword ptr [eax + 20], offset "?ext0101_setdebug_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
+	mov	edi, dword ptr [esi]
+	mov	ebx, dword ptr [edi + 4]
+	cmp	byte ptr [ebx + 13], 0
+	je	LBB37_38
+# %bb.37:
+	xor	ebp, ebp
+	mov	eax, edi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB37_43
+	jmp	LBB37_42
+LBB37_38:
+	mov	edx, dword ptr ["?ext0101_raster_set_palette_id@@3IA"]
+	mov	eax, edi
+	.p2align	4, 0x90
+LBB37_39:                               # =>This Inner Loop Header: Depth=1
+	mov	ebp, dword ptr [ebx + 16]
+	mov	ecx, ebx
+	xor	ebx, ebx
+	cmp	ebp, edx
+	setb	bl
+	cmovae	eax, ecx
+	mov	ebx, dword ptr [ecx + 8*ebx]
+	cmp	byte ptr [ebx + 13], 0
+	je	LBB37_39
+# %bb.40:
+	xor	ebx, ebx
+	cmp	ebp, edx
+	setae	bl
+	mov	ebp, ebx
+	mov	ebx, ecx
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB37_43
+LBB37_42:
+	mov	ecx, dword ptr ["?ext0101_raster_set_palette_id@@3IA"]
+	cmp	ecx, dword ptr [eax + 16]
+	jae	LBB37_45
+LBB37_43:
+	cmp	dword ptr [esi + 4], 178956970
+	je	LBB37_55
+# %bb.44:
+	push	24
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	ecx, dword ptr ["?ext0101_raster_set_palette_id@@3IA"]
+	mov	dword ptr [eax + 16], ecx
+	mov	dword ptr [eax + 20], 0
+	mov	dword ptr [eax], edi
+	mov	dword ptr [eax + 4], edi
+	mov	dword ptr [eax + 8], edi
+	mov	word ptr [eax + 12], 0
+	mov	ecx, esi
+	push	eax
+	push	ebp
+	push	ebx
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z"
+LBB37_45:
+	mov	dword ptr [eax + 20], offset "?ext0101_raster_set_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
+	mov	edi, dword ptr [esi]
+	mov	ebx, dword ptr [edi + 4]
+	cmp	byte ptr [ebx + 13], 0
+	je	LBB37_47
+# %bb.46:
+	xor	ebp, ebp
+	mov	eax, edi
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB37_52
+	jmp	LBB37_51
+LBB37_47:
+	mov	edx, dword ptr ["?ext0101_raster_palette_id@@3IA"]
+	mov	eax, edi
+	.p2align	4, 0x90
+LBB37_48:                               # =>This Inner Loop Header: Depth=1
+	mov	ebp, dword ptr [ebx + 16]
+	mov	ecx, ebx
+	xor	ebx, ebx
+	cmp	ebp, edx
+	setb	bl
+	cmovae	eax, ecx
+	mov	ebx, dword ptr [ecx + 8*ebx]
+	cmp	byte ptr [ebx + 13], 0
+	je	LBB37_48
+# %bb.49:
+	xor	ebx, ebx
+	cmp	ebp, edx
+	setae	bl
+	mov	ebp, ebx
+	mov	ebx, ecx
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB37_52
+LBB37_51:
+	mov	ecx, dword ptr ["?ext0101_raster_palette_id@@3IA"]
+	cmp	ecx, dword ptr [eax + 16]
+	jae	LBB37_54
+LBB37_52:
+	cmp	dword ptr [esi + 4], 178956970
+	je	LBB37_55
+# %bb.53:
+	push	24
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	ecx, dword ptr ["?ext0101_raster_palette_id@@3IA"]
+	mov	dword ptr [eax + 16], ecx
+	mov	dword ptr [eax + 20], 0
+	mov	dword ptr [eax], edi
+	mov	dword ptr [eax + 4], edi
+	mov	dword ptr [eax + 8], edi
+	mov	word ptr [eax + 12], 0
+	mov	ecx, esi
+	push	eax
+	push	ebp
+	push	ebx
+	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z"
+LBB37_54:
+	mov	dword ptr [eax + 20], offset "?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
 	pop	esi
 	pop	edi
 	pop	ebx
 	pop	ebp
 	ret
-LBB27_37:
+LBB37_55:
 	call	"?_Throw_tree_length_error@std@@YAXXZ"
                                         # -- End function
 	.def	 "?ext0102_pixel_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z";
@@ -5493,7 +9343,7 @@ LBB27_37:
 	mov	byte ptr [ecx + eax], dl
 	mov	ecx, dword ptr [esp + 40]
 	cmp	byte ptr [ecx + 84], 0
-	je	LBB28_2
+	je	LBB38_2
 # %bb.1:
 	push	offset "??_C@_01ODHLEDKK@?$CI?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
@@ -5513,7 +9363,7 @@ LBB27_37:
 	push	eax
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-LBB28_2:
+LBB38_2:
 	add	esp, 16
 	pop	esi
 	pop	edi
@@ -5756,7 +9606,7 @@ LBB28_2:
 	lea	edx, [ebp + ecx]
 	cmp	ecx, edx
 	mov	dword ptr [esp + 48], edx       # 4-byte Spill
-	jae	LBB29_10
+	jae	LBB39_10
 # %bb.1:
 	mov	edx, dword ptr [esp + 24]       # 4-byte Reload
 	mov	eax, dword ptr [esp + 44]       # 4-byte Reload
@@ -5779,50 +9629,50 @@ LBB28_2:
 	mov	dword ptr [esp + 4], eax        # 4-byte Spill
 	add	eax, edx
 	cmp	edx, eax
-	jae	LBB29_11
+	jae	LBB39_11
 # %bb.2:
 	lea	eax, [4*edx]
 	mov	dword ptr [esp + 24], edx       # 4-byte Spill
 	mov	dword ptr [esp + 20], eax       # 4-byte Spill
-	jmp	LBB29_3
+	jmp	LBB39_3
 	.p2align	4, 0x90
-LBB29_13:                               #   in Loop: Header=BB29_11 Depth=1
+LBB39_13:                               #   in Loop: Header=BB39_11 Depth=1
 	dec	ebp
-	je	LBB29_10
-LBB29_11:                               # =>This Inner Loop Header: Depth=1
+	je	LBB39_10
+LBB39_11:                               # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [esp + 76]
 	cmp	byte ptr [eax + 84], 0
-	je	LBB29_13
-# %bb.12:                               #   in Loop: Header=BB29_11 Depth=1
+	je	LBB39_13
+# %bb.12:                               #   in Loop: Header=BB39_11 Depth=1
 	push	offset "??_C@_01EEMJAFIK@?6?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-	jmp	LBB29_13
+	jmp	LBB39_13
 	.p2align	4, 0x90
-LBB29_9:                                #   in Loop: Header=BB29_3 Depth=1
+LBB39_9:                                #   in Loop: Header=BB39_3 Depth=1
 	mov	ecx, dword ptr [esp + 12]       # 4-byte Reload
 	inc	ecx
 	cmp	ecx, dword ptr [esp + 48]       # 4-byte Folded Reload
-	je	LBB29_10
-LBB29_3:                                # =>This Loop Header: Depth=1
-                                        #     Child Loop BB29_4 Depth 2
+	je	LBB39_10
+LBB39_3:                                # =>This Loop Header: Depth=1
+                                        #     Child Loop BB39_4 Depth 2
 	lea	eax, [4*ecx]
 	mov	edx, dword ptr [esp + 20]       # 4-byte Reload
 	mov	edi, dword ptr [esp + 24]       # 4-byte Reload
 	mov	dword ptr [esp + 12], ecx       # 4-byte Spill
 	mov	dword ptr [esp + 28], eax       # 4-byte Spill
 	mov	eax, dword ptr [esp + 4]        # 4-byte Reload
-	jmp	LBB29_4
+	jmp	LBB39_4
 	.p2align	4, 0x90
-LBB29_6:                                #   in Loop: Header=BB29_4 Depth=2
+LBB39_6:                                #   in Loop: Header=BB39_4 Depth=2
 	mov	edx, dword ptr [esp]            # 4-byte Reload
 	mov	eax, dword ptr [esp + 8]        # 4-byte Reload
 	inc	edi
 	add	edx, 4
 	dec	eax
-	je	LBB29_7
-LBB29_4:                                #   Parent Loop BB29_3 Depth=1
+	je	LBB39_7
+LBB39_4:                                #   Parent Loop BB39_3 Depth=1
                                         # =>  This Inner Loop Header: Depth=2
 	mov	dword ptr [esp + 8], eax        # 4-byte Spill
 	mov	eax, dword ptr [esp + 76]
@@ -5887,8 +9737,8 @@ LBB29_4:                                #   Parent Loop BB29_3 Depth=1
 	mov	byte ptr [eax + ecx], dl
 	mov	ecx, dword ptr [esp + 76]
 	cmp	byte ptr [ecx + 84], 0
-	je	LBB29_6
-# %bb.5:                                #   in Loop: Header=BB29_4 Depth=2
+	je	LBB39_6
+# %bb.5:                                #   in Loop: Header=BB39_4 Depth=2
 	push	offset "??_C@_01ODHLEDKK@?$CI?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
@@ -5907,19 +9757,19 @@ LBB29_4:                                #   Parent Loop BB29_3 Depth=1
 	push	eax
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-	jmp	LBB29_6
+	jmp	LBB39_6
 	.p2align	4, 0x90
-LBB29_7:                                #   in Loop: Header=BB29_3 Depth=1
+LBB39_7:                                #   in Loop: Header=BB39_3 Depth=1
 	mov	eax, dword ptr [esp + 76]
 	cmp	byte ptr [eax + 84], 0
-	je	LBB29_9
-# %bb.8:                                #   in Loop: Header=BB29_3 Depth=1
+	je	LBB39_9
+# %bb.8:                                #   in Loop: Header=BB39_3 Depth=1
 	push	offset "??_C@_01EEMJAFIK@?6?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-	jmp	LBB29_9
-LBB29_10:
+	jmp	LBB39_9
+LBB39_10:
 	add	esp, 52
 	pop	esi
 	pop	edi
@@ -5934,7 +9784,7 @@ LBB29_10:
 	.globl	"?ext0102_circle_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z" # -- Begin function ?ext0102_circle_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z
 	.p2align	4, 0x90
 "?ext0102_circle_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z": # @"?ext0102_circle_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
-Lfunc_begin9:
+Lfunc_begin13:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -6136,7 +9986,7 @@ Lfunc_begin9:
 	add	eax, -12
 	mov	dword ptr [edx + 80], eax
 	cmp	byte ptr [edx + 84], 0
-	je	LBB30_3
+	je	LBB40_3
 # %bb.1:
 	mov	eax, dword ptr ["?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"]
 	mov	ecx, -3585
@@ -6167,7 +10017,7 @@ Lfunc_begin9:
 	add	esp, 8
 	mov	eax, dword ptr [ebp + 12]
 	cmp	byte ptr [eax + 84], 0
-	je	LBB30_3
+	je	LBB40_3
 # %bb.2:
 	push	offset "??_C@_01ODHLEDKK@?$CI?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
@@ -6210,7 +10060,7 @@ Lfunc_begin9:
 	push	eax
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-LBB30_3:
+LBB40_3:
 	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
 	movq	xmm1, qword ptr [__real@4330000000000000] # xmm1 = mem[0],zero
 	lea	eax, [edi + esi + 1]
@@ -6228,16 +10078,16 @@ LBB30_3:
 	movupd	xmmword ptr [ebp - 136], xmm0   # 16-byte Spill
 	mov	dword ptr [ebp - 52], eax       # 4-byte Spill
 	mov	eax, esi
-	jmp	LBB30_4
+	jmp	LBB40_4
 	.p2align	4, 0x90
-LBB30_9:                                #   in Loop: Header=BB30_4 Depth=1
+LBB40_9:                                #   in Loop: Header=BB40_4 Depth=1
 	mov	eax, dword ptr [ebp - 48]       # 4-byte Reload
 	inc	edx
-LBB30_4:                                # =>This Loop Header: Depth=1
-                                        #     Child Loop BB30_6 Depth 2
+LBB40_4:                                # =>This Loop Header: Depth=1
+                                        #     Child Loop BB40_6 Depth 2
 	cmp	edx, dword ptr [ebp - 64]       # 4-byte Folded Reload
-	jae	LBB30_53
-# %bb.5:                                #   in Loop: Header=BB30_4 Depth=1
+	jae	LBB40_53
+# %bb.5:                                #   in Loop: Header=BB40_4 Depth=1
 	mov	esi, edx
 	mov	dword ptr [ebp - 40], edx       # 4-byte Spill
 	sub	esi, eax
@@ -6246,26 +10096,26 @@ LBB30_4:                                # =>This Loop Header: Depth=1
 	mov	eax, dword ptr [ebp - 60]       # 4-byte Reload
 	imul	esi, esi
 	mov	dword ptr [ebp - 36], esi       # 4-byte Spill
-	jmp	LBB30_6
-LBB30_38:                               #   in Loop: Header=BB30_6 Depth=2
+	jmp	LBB40_6
+LBB40_38:                               #   in Loop: Header=BB40_6 Depth=2
 	add	eax, 36
 	mov	ecx, esi
 	mov	edx, eax
-LBB30_39:                               #   in Loop: Header=BB30_6 Depth=2
+LBB40_39:                               #   in Loop: Header=BB40_6 Depth=2
 	push	edx
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB30_40:                               #   in Loop: Header=BB30_6 Depth=2
+LBB40_40:                               #   in Loop: Header=BB40_6 Depth=2
 	mov	eax, dword ptr [ebp - 44]       # 4-byte Reload
 	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	edx, dword ptr [ebp - 40]       # 4-byte Reload
 	inc	eax
-LBB30_6:                                #   Parent Loop BB30_4 Depth=1
+LBB40_6:                                #   Parent Loop BB40_4 Depth=1
                                         # =>  This Inner Loop Header: Depth=2
 	cmp	eax, dword ptr [ebp - 52]       # 4-byte Folded Reload
-	jae	LBB30_7
-# %bb.10:                               #   in Loop: Header=BB30_6 Depth=2
+	jae	LBB40_7
+# %bb.10:                               #   in Loop: Header=BB40_6 Depth=2
 	mov	edx, eax
 	sub	eax, ecx
 	movq	xmm1, qword ptr [__real@4330000000000000] # xmm1 = mem[0],zero
@@ -6278,18 +10128,18 @@ LBB30_6:                                #   Parent Loop BB30_4 Depth=1
 	subsd	xmm0, xmm1
 	sqrtsd	xmm0, xmm0
 	ucomisd	xmm0, qword ptr [ebp - 136]     # 16-byte Folded Reload
-	jbe	LBB30_13
-# %bb.11:                               #   in Loop: Header=BB30_6 Depth=2
+	jbe	LBB40_13
+# %bb.11:                               #   in Loop: Header=BB40_6 Depth=2
 	cmp	byte ptr [eax + 84], 0
-	je	LBB30_40
-# %bb.12:                               #   in Loop: Header=BB30_6 Depth=2
+	je	LBB40_40
+# %bb.12:                               #   in Loop: Header=BB40_6 Depth=2
 	mov	dword ptr [ebp - 16], -1
 	push	119
 	push	119
 	push	221
-	jmp	LBB30_15
+	jmp	LBB40_15
 	.p2align	4, 0x90
-LBB30_13:                               #   in Loop: Header=BB30_6 Depth=2
+LBB40_13:                               #   in Loop: Header=BB40_6 Depth=2
 	mov	ecx, dword ptr [eax + 36]
 	mov	ebx, 268435455
 	mov	dword ptr [ebp - 56], ecx       # 4-byte Spill
@@ -6352,53 +10202,53 @@ LBB30_13:                               #   in Loop: Header=BB30_6 Depth=2
 	mov	byte ptr [edx + ecx], al
 	mov	ecx, dword ptr [ebp + 12]
 	cmp	byte ptr [ecx + 84], 0
-	je	LBB30_40
-# %bb.14:                               #   in Loop: Header=BB30_6 Depth=2
+	je	LBB40_40
+# %bb.14:                               #   in Loop: Header=BB40_6 Depth=2
 	mov	dword ptr [ebp - 16], -1
 	push	119
 	push	221
 	push	119
-LBB30_15:                               #   in Loop: Header=BB30_6 Depth=2
+LBB40_15:                               #   in Loop: Header=BB40_6 Depth=2
 	push	edi
 	call	"?concolor_fg_rgb@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@EEE@Z"
 	add	esp, 16
 	mov	eax, dword ptr [ebp - 100]
 	cmp	dword ptr [ebp - 96], 15
 	mov	ecx, edi
-	jbe	LBB30_17
-# %bb.16:                               #   in Loop: Header=BB30_6 Depth=2
+	jbe	LBB40_17
+# %bb.16:                               #   in Loop: Header=BB40_6 Depth=2
 	mov	ecx, dword ptr [ebp - 116]
-LBB30_17:                               #   in Loop: Header=BB30_6 Depth=2
+LBB40_17:                               #   in Loop: Header=BB40_6 Depth=2
 	mov	dword ptr [ebp - 16], 2
 	push	eax
 	push	ecx
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z"
 	add	esp, 12
-# %bb.18:                               #   in Loop: Header=BB30_6 Depth=2
+# %bb.18:                               #   in Loop: Header=BB40_6 Depth=2
 	push	offset "??_C@_01ODHLEDKK@?$CI?$AA@"
 	push	eax
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.19:                               #   in Loop: Header=BB30_6 Depth=2
+# %bb.19:                               #   in Loop: Header=BB40_6 Depth=2
 	mov	ecx, eax
 	push	dword ptr [ebp - 40]            # 4-byte Folded Reload
 	call	"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@I@Z"
-# %bb.20:                               #   in Loop: Header=BB30_6 Depth=2
+# %bb.20:                               #   in Loop: Header=BB40_6 Depth=2
 	push	offset "??_C@_02KEGNLNML@?0?5?$AA@"
 	push	eax
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.21:                               #   in Loop: Header=BB30_6 Depth=2
+# %bb.21:                               #   in Loop: Header=BB40_6 Depth=2
 	mov	ecx, eax
 	push	dword ptr [ebp - 44]            # 4-byte Folded Reload
 	call	"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@I@Z"
-# %bb.22:                               #   in Loop: Header=BB30_6 Depth=2
+# %bb.22:                               #   in Loop: Header=BB40_6 Depth=2
 	push	offset "??_C@_01PKGAHCOL@?$CJ?$AA@"
 	push	eax
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.23:                               #   in Loop: Header=BB30_6 Depth=2
+# %bb.23:                               #   in Loop: Header=BB40_6 Depth=2
 	mov	dword ptr [ebp - 72], 15
 	mov	dword ptr [ebp - 76], 4
 	mov	dword ptr [ebp - 92], 1831885595
@@ -6410,53 +10260,53 @@ LBB30_17:                               #   in Loop: Header=BB30_6 Depth=2
 	push	eax
 	call	"??$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z"
 	add	esp, 12
-# %bb.24:                               #   in Loop: Header=BB30_6 Depth=2
+# %bb.24:                               #   in Loop: Header=BB40_6 Depth=2
 	mov	eax, dword ptr [ebp - 72]
 	lea	edi, [ebp - 116]
 	cmp	eax, 16
-	jb	LBB30_32
-# %bb.25:                               #   in Loop: Header=BB30_6 Depth=2
+	jb	LBB40_32
+# %bb.25:                               #   in Loop: Header=BB40_6 Depth=2
 	mov	ecx, dword ptr [ebp - 92]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB30_31
-# %bb.26:                               #   in Loop: Header=BB30_6 Depth=2
+	jb	LBB40_31
+# %bb.26:                               #   in Loop: Header=BB40_6 Depth=2
 	mov	esi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, esi
 	cmp	ecx, 32
-	jae	LBB30_27
-# %bb.30:                               #   in Loop: Header=BB30_6 Depth=2
+	jae	LBB40_27
+# %bb.30:                               #   in Loop: Header=BB40_6 Depth=2
 	add	eax, 36
 	mov	ecx, esi
 	mov	edx, eax
-LBB30_31:                               #   in Loop: Header=BB30_6 Depth=2
+LBB40_31:                               #   in Loop: Header=BB40_6 Depth=2
 	push	edx
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB30_32:                               #   in Loop: Header=BB30_6 Depth=2
+LBB40_32:                               #   in Loop: Header=BB40_6 Depth=2
 	mov	eax, dword ptr [ebp - 96]
 	cmp	eax, 16
-	jb	LBB30_40
-# %bb.33:                               #   in Loop: Header=BB30_6 Depth=2
+	jb	LBB40_40
+# %bb.33:                               #   in Loop: Header=BB40_6 Depth=2
 	mov	ecx, dword ptr [ebp - 116]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB30_39
-# %bb.34:                               #   in Loop: Header=BB30_6 Depth=2
+	jb	LBB40_39
+# %bb.34:                               #   in Loop: Header=BB40_6 Depth=2
 	mov	esi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, esi
 	cmp	ecx, 32
-	jb	LBB30_38
-	jmp	LBB30_35
+	jb	LBB40_38
+	jmp	LBB40_35
 	.p2align	4, 0x90
-LBB30_7:                                #   in Loop: Header=BB30_4 Depth=1
+LBB40_7:                                #   in Loop: Header=BB40_4 Depth=1
 	mov	eax, dword ptr [ebp + 12]
 	cmp	byte ptr [eax + 84], 0
-	je	LBB30_9
-# %bb.8:                                #   in Loop: Header=BB30_4 Depth=1
+	je	LBB40_9
+# %bb.8:                                #   in Loop: Header=BB40_4 Depth=1
 	mov	dword ptr [ebp - 16], -1
 	push	offset "??_C@_01EEMJAFIK@?6?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
@@ -6464,8 +10314,8 @@ LBB30_7:                                #   in Loop: Header=BB30_4 Depth=1
 	mov	edx, dword ptr [ebp - 40]       # 4-byte Reload
 	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
 	add	esp, 8
-	jmp	LBB30_9
-LBB30_53:
+	jmp	LBB40_9
+LBB40_53:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	add	esp, 124
@@ -6474,11 +10324,11 @@ LBB30_53:
 	pop	ebx
 	pop	ebp
 	ret
-LBB30_27:
+LBB40_27:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.28:
-LBB30_35:
+LBB40_35:
 	mov	dword ptr [ebp - 16], 1
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.36:
@@ -6488,7 +10338,7 @@ LBB30_35:
 	.endef
 	.p2align	4, 0x90
 "?dtor$29@?0??ext0102_circle_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@4HA":
-LBB30_29:
+LBB40_29:
 	push	ebp
 	sub	esp, 16
 	add	ebp, 12
@@ -6499,7 +10349,7 @@ LBB30_29:
 	.endef
 	.p2align	4, 0x90
 "?dtor$37@?0??ext0102_circle_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@4HA":
-LBB30_37:
+LBB40_37:
 	push	ebp
 	sub	esp, 16
 	add	ebp, 12
@@ -6510,41 +10360,41 @@ LBB30_37:
 	.endef
 	.p2align	4, 0x90
 "?dtor$41@?0??ext0102_circle_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@4HA":
-LBB30_41:
+LBB40_41:
 	push	ebp
 	sub	esp, 16
 	add	ebp, 12
 	mov	eax, dword ptr [ebp - 72]
 	cmp	eax, 16
-	jb	LBB30_46
+	jb	LBB40_46
 # %bb.42:
 	mov	ecx, dword ptr [ebp - 92]
 	lea	esi, [eax + 1]
 	cmp	esi, 4096
-	jb	LBB30_45
+	jb	LBB40_45
 # %bb.43:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB30_54
+	jae	LBB40_54
 # %bb.44:
 	add	eax, 36
 	mov	ecx, edx
 	mov	esi, eax
-LBB30_45:
+LBB40_45:
 	push	esi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB30_46:
+LBB40_46:
 	mov	dword ptr [ebp - 76], 0
 	mov	dword ptr [ebp - 72], 15
 	mov	byte ptr [ebp - 92], 0
 	add	esp, 16
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB30_54:
+LBB40_54:
 	call	__invalid_parameter_noinfo_noreturn
 	.def	 "?dtor$47@?0??ext0102_circle_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@4HA";
 	.scl	3;
@@ -6552,40 +10402,40 @@ LBB30_54:
 	.endef
 	.p2align	4, 0x90
 "?dtor$47@?0??ext0102_circle_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@4HA":
-LBB30_47:
+LBB40_47:
 	push	ebp
 	sub	esp, 16
 	add	ebp, 12
 	mov	eax, dword ptr [ebp - 96]
 	cmp	eax, 16
-	jb	LBB30_52
+	jb	LBB40_52
 # %bb.48:
 	mov	ecx, dword ptr [ebp - 116]
 	lea	esi, [eax + 1]
 	cmp	esi, 4096
-	jb	LBB30_51
+	jb	LBB40_51
 # %bb.49:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB30_55
+	jae	LBB40_55
 # %bb.50:
 	add	eax, 36
 	mov	ecx, edx
 	mov	esi, eax
-LBB30_51:
+LBB40_51:
 	push	esi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB30_52:
+LBB40_52:
 	add	esp, 16
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB30_55:
+LBB40_55:
 	call	__invalid_parameter_noinfo_noreturn
-Lfunc_end9:
+Lfunc_end13:
 	.section	.xdata,"dr"
 	.p2align	2
 "L__ehtable$?ext0102_circle_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z":
@@ -6809,15 +10659,15 @@ Lfunc_end9:
 	mov	dword ptr [ebx + 76], eax
 	mov	dword ptr [ebx + 80], edx
 	cmp	edi, esi
-	jae	LBB31_1
-LBB31_5:
+	jae	LBB41_1
+LBB41_5:
 	add	esp, 36
 	pop	esi
 	pop	edi
 	pop	ebx
 	pop	ebp
 	ret
-LBB31_1:
+LBB41_1:
 	mov	eax, dword ptr [esp + 28]       # 4-byte Reload
 	mov	ecx, dword ptr [esp + 24]       # 4-byte Reload
 	shl	ebp, 24
@@ -6829,9 +10679,9 @@ LBB31_1:
 	mov	ebx, ebp
 	lea	edx, [4*ebp]
 	lea	ebp, [4*esi]
-	jmp	LBB31_2
+	jmp	LBB41_2
 	.p2align	4, 0x90
-LBB31_4:                                #   in Loop: Header=BB31_2 Depth=1
+LBB41_4:                                #   in Loop: Header=BB41_2 Depth=1
 	mov	edx, dword ptr [esp + 8]        # 4-byte Reload
 	mov	ebp, dword ptr [esp + 4]        # 4-byte Reload
 	inc	esi
@@ -6839,8 +10689,8 @@ LBB31_4:                                #   in Loop: Header=BB31_2 Depth=1
 	add	edx, 4
 	add	ebp, 4
 	cmp	esi, dword ptr [esp + 16]       # 4-byte Folded Reload
-	ja	LBB31_5
-LBB31_2:                                # =>This Inner Loop Header: Depth=1
+	ja	LBB41_5
+LBB41_2:                                # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [esp + 60]
 	mov	edi, dword ptr [esp + 56]
 	mov	dword ptr [esp + 8], edx        # 4-byte Spill
@@ -6910,8 +10760,8 @@ LBB31_2:                                # =>This Inner Loop Header: Depth=1
 	mov	byte ptr [ecx + eax], dl
 	mov	ecx, dword ptr [esp + 60]
 	cmp	byte ptr [ecx + 84], 0
-	je	LBB31_4
-# %bb.3:                                #   in Loop: Header=BB31_2 Depth=1
+	je	LBB41_4
+# %bb.3:                                #   in Loop: Header=BB41_2 Depth=1
 	push	offset "??_C@_01ODHLEDKK@?$CI?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
@@ -6930,7 +10780,7 @@ LBB31_2:                                # =>This Inner Loop Header: Depth=1
 	push	eax
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-	jmp	LBB31_4
+	jmp	LBB41_4
                                         # -- End function
 	.def	 "?ext0102_registerAll@@YAXAAV?$map@IP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@ZU?$less@I@2@V?$allocator@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@2@@std@@@Z";
 	.scl	2;
@@ -6948,18 +10798,18 @@ LBB31_2:                                # =>This Inner Loop Header: Depth=1
 	mov	edi, dword ptr [esi]
 	mov	ebx, dword ptr [edi + 4]
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB32_2
+	je	LBB42_2
 # %bb.1:
 	xor	ebp, ebp
 	mov	eax, edi
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB32_7
-	jmp	LBB32_6
-LBB32_2:
+	jne	LBB42_7
+	jmp	LBB42_6
+LBB42_2:
 	mov	edx, dword ptr ["?ext0102_pixel_id@@3IA"]
 	mov	eax, edi
 	.p2align	4, 0x90
-LBB32_3:                                # =>This Inner Loop Header: Depth=1
+LBB42_3:                                # =>This Inner Loop Header: Depth=1
 	mov	ebp, dword ptr [ebx + 16]
 	mov	ecx, ebx
 	xor	ebx, ebx
@@ -6968,7 +10818,7 @@ LBB32_3:                                # =>This Inner Loop Header: Depth=1
 	cmovae	eax, ecx
 	mov	ebx, dword ptr [ecx + 8*ebx]
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB32_3
+	je	LBB42_3
 # %bb.4:
 	xor	ebx, ebx
 	cmp	ebp, edx
@@ -6976,14 +10826,14 @@ LBB32_3:                                # =>This Inner Loop Header: Depth=1
 	mov	ebp, ebx
 	mov	ebx, ecx
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB32_7
-LBB32_6:
+	jne	LBB42_7
+LBB42_6:
 	mov	ecx, dword ptr ["?ext0102_pixel_id@@3IA"]
 	cmp	ecx, dword ptr [eax + 16]
-	jae	LBB32_9
-LBB32_7:
+	jae	LBB42_9
+LBB42_7:
 	cmp	dword ptr [esi + 4], 178956970
-	je	LBB32_37
+	je	LBB42_37
 # %bb.8:
 	push	24
 	call	"??2@YAPAXI@Z"
@@ -7000,23 +10850,23 @@ LBB32_7:
 	push	ebp
 	push	ebx
 	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z"
-LBB32_9:
+LBB42_9:
 	mov	dword ptr [eax + 20], offset "?ext0102_pixel_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
 	mov	edi, dword ptr [esi]
 	mov	ebx, dword ptr [edi + 4]
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB32_11
+	je	LBB42_11
 # %bb.10:
 	xor	ebp, ebp
 	mov	eax, edi
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB32_16
-	jmp	LBB32_15
-LBB32_11:
+	jne	LBB42_16
+	jmp	LBB42_15
+LBB42_11:
 	mov	edx, dword ptr ["?ext0102_rect_id@@3IA"]
 	mov	eax, edi
 	.p2align	4, 0x90
-LBB32_12:                               # =>This Inner Loop Header: Depth=1
+LBB42_12:                               # =>This Inner Loop Header: Depth=1
 	mov	ebp, dword ptr [ebx + 16]
 	mov	ecx, ebx
 	xor	ebx, ebx
@@ -7025,7 +10875,7 @@ LBB32_12:                               # =>This Inner Loop Header: Depth=1
 	cmovae	eax, ecx
 	mov	ebx, dword ptr [ecx + 8*ebx]
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB32_12
+	je	LBB42_12
 # %bb.13:
 	xor	ebx, ebx
 	cmp	ebp, edx
@@ -7033,14 +10883,14 @@ LBB32_12:                               # =>This Inner Loop Header: Depth=1
 	mov	ebp, ebx
 	mov	ebx, ecx
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB32_16
-LBB32_15:
+	jne	LBB42_16
+LBB42_15:
 	mov	ecx, dword ptr ["?ext0102_rect_id@@3IA"]
 	cmp	ecx, dword ptr [eax + 16]
-	jae	LBB32_18
-LBB32_16:
+	jae	LBB42_18
+LBB42_16:
 	cmp	dword ptr [esi + 4], 178956970
-	je	LBB32_37
+	je	LBB42_37
 # %bb.17:
 	push	24
 	call	"??2@YAPAXI@Z"
@@ -7057,23 +10907,23 @@ LBB32_16:
 	push	ebp
 	push	ebx
 	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z"
-LBB32_18:
+LBB42_18:
 	mov	dword ptr [eax + 20], offset "?ext0102_rect_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
 	mov	edi, dword ptr [esi]
 	mov	ebx, dword ptr [edi + 4]
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB32_20
+	je	LBB42_20
 # %bb.19:
 	xor	ebp, ebp
 	mov	eax, edi
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB32_25
-	jmp	LBB32_24
-LBB32_20:
+	jne	LBB42_25
+	jmp	LBB42_24
+LBB42_20:
 	mov	edx, dword ptr ["?ext0102_circle_id@@3IA"]
 	mov	eax, edi
 	.p2align	4, 0x90
-LBB32_21:                               # =>This Inner Loop Header: Depth=1
+LBB42_21:                               # =>This Inner Loop Header: Depth=1
 	mov	ebp, dword ptr [ebx + 16]
 	mov	ecx, ebx
 	xor	ebx, ebx
@@ -7082,7 +10932,7 @@ LBB32_21:                               # =>This Inner Loop Header: Depth=1
 	cmovae	eax, ecx
 	mov	ebx, dword ptr [ecx + 8*ebx]
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB32_21
+	je	LBB42_21
 # %bb.22:
 	xor	ebx, ebx
 	cmp	ebp, edx
@@ -7090,14 +10940,14 @@ LBB32_21:                               # =>This Inner Loop Header: Depth=1
 	mov	ebp, ebx
 	mov	ebx, ecx
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB32_25
-LBB32_24:
+	jne	LBB42_25
+LBB42_24:
 	mov	ecx, dword ptr ["?ext0102_circle_id@@3IA"]
 	cmp	ecx, dword ptr [eax + 16]
-	jae	LBB32_27
-LBB32_25:
+	jae	LBB42_27
+LBB42_25:
 	cmp	dword ptr [esi + 4], 178956970
-	je	LBB32_37
+	je	LBB42_37
 # %bb.26:
 	push	24
 	call	"??2@YAPAXI@Z"
@@ -7114,23 +10964,23 @@ LBB32_25:
 	push	ebp
 	push	ebx
 	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z"
-LBB32_27:
+LBB42_27:
 	mov	dword ptr [eax + 20], offset "?ext0102_circle_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
 	mov	edi, dword ptr [esi]
 	mov	ebx, dword ptr [edi + 4]
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB32_29
+	je	LBB42_29
 # %bb.28:
 	xor	ebp, ebp
 	mov	eax, edi
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB32_34
-	jmp	LBB32_33
-LBB32_29:
+	jne	LBB42_34
+	jmp	LBB42_33
+LBB42_29:
 	mov	edx, dword ptr ["?ext0102_line_id@@3IA"]
 	mov	eax, edi
 	.p2align	4, 0x90
-LBB32_30:                               # =>This Inner Loop Header: Depth=1
+LBB42_30:                               # =>This Inner Loop Header: Depth=1
 	mov	ebp, dword ptr [ebx + 16]
 	mov	ecx, ebx
 	xor	ebx, ebx
@@ -7139,7 +10989,7 @@ LBB32_30:                               # =>This Inner Loop Header: Depth=1
 	cmovae	eax, ecx
 	mov	ebx, dword ptr [ecx + 8*ebx]
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB32_30
+	je	LBB42_30
 # %bb.31:
 	xor	ebx, ebx
 	cmp	ebp, edx
@@ -7147,14 +10997,14 @@ LBB32_30:                               # =>This Inner Loop Header: Depth=1
 	mov	ebp, ebx
 	mov	ebx, ecx
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB32_34
-LBB32_33:
+	jne	LBB42_34
+LBB42_33:
 	mov	ecx, dword ptr ["?ext0102_line_id@@3IA"]
 	cmp	ecx, dword ptr [eax + 16]
-	jae	LBB32_36
-LBB32_34:
+	jae	LBB42_36
+LBB42_34:
 	cmp	dword ptr [esi + 4], 178956970
-	je	LBB32_37
+	je	LBB42_37
 # %bb.35:
 	push	24
 	call	"??2@YAPAXI@Z"
@@ -7171,14 +11021,14 @@ LBB32_34:
 	push	ebp
 	push	ebx
 	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z"
-LBB32_36:
+LBB42_36:
 	mov	dword ptr [eax + 20], offset "?ext0102_line_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
 	pop	esi
 	pop	edi
 	pop	ebx
 	pop	ebp
 	ret
-LBB32_37:
+LBB42_37:
 	call	"?_Throw_tree_length_error@std@@YAXXZ"
                                         # -- End function
 	.def	 _main;
@@ -7188,7 +11038,7 @@ LBB32_37:
 	.globl	_main                           # -- Begin function main
 	.p2align	4, 0x90
 _main:                                  # @main
-Lfunc_begin10:
+Lfunc_begin14:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -7211,7 +11061,7 @@ Lfunc_begin10:
 	mov	dword ptr [esi + 228], 15
 	mov	dword ptr [esi + 224], 0
 	mov	byte ptr [esi + 208], 0
-	jl	LBB33_5
+	jl	LBB43_5
 # %bb.1:
 	mov	eax, dword ptr [ebp + 12]
 	mov	ebx, dword ptr [eax + 4]
@@ -7220,7 +11070,7 @@ Lfunc_begin10:
 	add	esp, 4
 	mov	edi, eax
 	cmp	eax, 15
-	jbe	LBB33_2
+	jbe	LBB43_2
 # %bb.3:
 	mov	dword ptr [esi + 344], 11
 	sub	esp, 12
@@ -7230,8 +11080,8 @@ Lfunc_begin10:
 	mov	dword ptr [esp + 8], ebx
 	mov	dword ptr [esp], edi
 	call	"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z"
-	jmp	LBB33_4
-LBB33_2:
+	jmp	LBB43_4
+LBB43_2:
 	mov	dword ptr [esi + 224], edi
 	lea	eax, [esi + 208]
 	push	edi
@@ -7240,9 +11090,9 @@ LBB33_2:
 	call	_memmove
 	add	esp, 12
 	mov	byte ptr [esi + edi + 208], 0
-LBB33_4:
+LBB43_4:
 	mov	dword ptr [esi + 344], 11
-LBB33_5:
+LBB43_5:
 	xorps	xmm0, xmm0
 	mov	dword ptr [esi + 64], 0
 	mov	dword ptr [esi + 344], 11
@@ -7318,87 +11168,89 @@ LBB33_5:
 	push	eax
 	call	dword ptr [__imp__SetConsoleMode@8]
 # %bb.13:
-	cmp	dword ptr [esi + 224], 0
-	je	LBB33_178
+	call	"?palettes_setup@@YAXXZ"
 # %bb.14:
+	cmp	dword ptr [esi + 224], 0
+	je	LBB43_179
+# %bb.15:
 	cmp	dword ptr [esi + 228], 15
-	jbe	LBB33_15
-# %bb.16:
+	jbe	LBB43_16
+# %bb.17:
 	mov	eax, dword ptr [esi + 208]
-	jmp	LBB33_17
-LBB33_178:
+	jmp	LBB43_18
+LBB43_179:
 	push	offset "??_C@_0P@JALJGNBE@Proper?5usage?3?5?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.179:
+# %bb.180:
 	mov	ecx, dword ptr [ebp + 12]
 	push	dword ptr [ecx]
 	push	eax
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.180:
+# %bb.181:
 	push	offset "??_C@_0M@IMDICCLP@?5?$DMwvc?5file?$DO?$AA@"
 	push	eax
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-	jmp	LBB33_130
-LBB33_15:
+	jmp	LBB43_131
+LBB43_16:
 	lea	eax, [esi + 208]
-LBB33_17:
+LBB43_18:
 	push	eax
 	lea	eax, [esi + 80]
 	push	eax
 	call	"?readFile@@YA?AV?$deque@EV?$allocator@E@std@@@std@@PBD@Z"
 	add	esp, 8
-# %bb.18:
-	cmp	dword ptr [esi + 64], 0
-	je	LBB33_20
 # %bb.19:
+	cmp	dword ptr [esi + 64], 0
+	je	LBB43_21
+# %bb.20:
 	mov	dword ptr [esi + 60], 0
 	mov	dword ptr [esi + 64], 0
-LBB33_20:
+LBB43_21:
 	mov	eax, dword ptr [esi + 52]
 	mov	edi, dword ptr [esi + 56]
 	.p2align	4, 0x90
-LBB33_21:                               # =>This Inner Loop Header: Depth=1
+LBB43_22:                               # =>This Inner Loop Header: Depth=1
 	test	edi, edi
-	je	LBB33_22
-# %bb.27:                               #   in Loop: Header=BB33_21 Depth=1
+	je	LBB43_23
+# %bb.28:                               #   in Loop: Header=BB43_22 Depth=1
 	mov	ecx, dword ptr [eax + 4*edi - 4]
 	dec	edi
 	test	ecx, ecx
-	je	LBB33_21
-# %bb.28:                               #   in Loop: Header=BB33_21 Depth=1
+	je	LBB43_22
+# %bb.29:                               #   in Loop: Header=BB43_22 Depth=1
 	push	16
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [esi + 52]
-	jmp	LBB33_21
-LBB33_22:
+	jmp	LBB43_22
+LBB43_23:
 	test	eax, eax
-	je	LBB33_32
-# %bb.23:
+	je	LBB43_33
+# %bb.24:
 	mov	ecx, dword ptr [esi + 56]
 	shl	ecx, 2
 	cmp	ecx, 4096
-	jb	LBB33_31
-# %bb.24:
+	jb	LBB43_32
+# %bb.25:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB33_25
-# %bb.30:
+	jae	LBB43_26
+# %bb.31:
 	add	ecx, 35
 	mov	eax, edx
-LBB33_31:
+LBB43_32:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_32:
+LBB43_33:
 	mov	dword ptr [esi + 56], 0
 	mov	dword ptr [esi + 52], 0
 	mov	ecx, dword ptr [esi + 80]
@@ -7406,17 +11258,17 @@ LBB33_32:
 	test	ecx, ecx
 	mov	dword ptr [esi + 48], ecx
 	mov	dword ptr [esi + 80], eax
-	je	LBB33_34
-# %bb.33:
+	je	LBB43_35
+# %bb.34:
 	lea	edx, [esi + 48]
 	mov	dword ptr [ecx], edx
-LBB33_34:
+LBB43_35:
 	test	eax, eax
-	je	LBB33_36
-# %bb.35:
+	je	LBB43_37
+# %bb.36:
 	lea	ecx, [esi + 80]
 	mov	dword ptr [eax], ecx
-LBB33_36:
+LBB43_37:
 	movups	xmm0, xmmword ptr [esi + 84]
 	mov	dword ptr [esi + 96], 0
 	mov	dword ptr [esi + 92], 0
@@ -7610,9 +11462,9 @@ LBB33_36:
 	mov	dword ptr [esi + 60], ecx
 	mov	dword ptr [esi + 12], edx       # 4-byte Spill
 	mov	dword ptr [esi + 64], edx
-	jmp	LBB33_37
+	jmp	LBB43_38
 	.p2align	4, 0x90
-LBB33_45:                               #   in Loop: Header=BB33_37 Depth=1
+LBB43_46:                               #   in Loop: Header=BB43_38 Depth=1
 	mov	ecx, dword ptr [esi + 8]        # 4-byte Reload
 	and	edx, 15
 	movzx	ecx, byte ptr [edi + ecx]
@@ -7627,7 +11479,7 @@ LBB33_45:                               #   in Loop: Header=BB33_37 Depth=1
 	mov	dword ptr [esi + 64], eax
 	mov	dword ptr [esi + 12], eax       # 4-byte Spill
 	mov	dword ptr [esi + 60], ecx
-LBB33_37:                               # =>This Inner Loop Header: Depth=1
+LBB43_38:                               # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [esi + 56]
 	mov	edi, dword ptr [esi + 52]
 	mov	ebx, ecx
@@ -7642,30 +11494,30 @@ LBB33_37:                               # =>This Inner Loop Header: Depth=1
 	and	edx, 15
 	mov	dword ptr [esi + 8], edx        # 4-byte Spill
 	cmp	byte ptr [edi + edx], 0
-	je	LBB33_46
-# %bb.38:                               #   in Loop: Header=BB33_37 Depth=1
+	je	LBB43_47
+# %bb.39:                               #   in Loop: Header=BB43_38 Depth=1
 	mov	ecx, dword ptr [esi + 140]
 	mov	eax, dword ptr [esi + 144]
 	lea	edx, [eax + ecx]
 	test	dl, 15
-	jne	LBB33_42
-# %bb.39:                               #   in Loop: Header=BB33_37 Depth=1
+	jne	LBB43_43
+# %bb.40:                               #   in Loop: Header=BB43_38 Depth=1
 	lea	edx, [eax + 16]
 	shr	edx, 4
 	cmp	dword ptr [esi + 136], edx
-	ja	LBB33_42
-# %bb.40:                               #   in Loop: Header=BB33_37 Depth=1
+	ja	LBB43_43
+# %bb.41:                               #   in Loop: Header=BB43_38 Depth=1
 	mov	dword ptr [esi], edi            # 4-byte Spill
 	mov	dword ptr [esi + 344], 15
 	lea	ecx, [esi + 128]
 	push	1
 	call	"?_Growmap@?$deque@EV?$allocator@E@std@@@std@@AAEXI@Z"
-# %bb.41:                               #   in Loop: Header=BB33_37 Depth=1
+# %bb.42:                               #   in Loop: Header=BB43_38 Depth=1
 	mov	ecx, dword ptr [esi + 140]
 	mov	eax, dword ptr [esi + 144]
 	mov	edi, dword ptr [esi]            # 4-byte Reload
 	.p2align	4, 0x90
-LBB33_42:                               #   in Loop: Header=BB33_37 Depth=1
+LBB43_43:                               #   in Loop: Header=BB43_38 Depth=1
 	mov	ebx, dword ptr [esi + 136]
 	mov	edx, ebx
 	add	ebx, 268435455
@@ -7680,8 +11532,8 @@ LBB33_42:                               #   in Loop: Header=BB33_37 Depth=1
 	and	ebx, eax
 	mov	eax, dword ptr [ecx + 4*ebx]
 	test	eax, eax
-	jne	LBB33_45
-# %bb.43:                               #   in Loop: Header=BB33_37 Depth=1
+	jne	LBB43_46
+# %bb.44:                               #   in Loop: Header=BB43_38 Depth=1
 	mov	dword ptr [esi + 12], ebx       # 4-byte Spill
 	mov	dword ptr [esi + 4], edx        # 4-byte Spill
 	mov	dword ptr [esi], edi            # 4-byte Spill
@@ -7689,7 +11541,7 @@ LBB33_42:                               #   in Loop: Header=BB33_37 Depth=1
 	push	16
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
-# %bb.44:                               #   in Loop: Header=BB33_37 Depth=1
+# %bb.45:                               #   in Loop: Header=BB43_38 Depth=1
 	mov	ecx, dword ptr [esi + 132]
 	mov	edx, dword ptr [esi + 12]       # 4-byte Reload
 	mov	edi, dword ptr [esi]            # 4-byte Reload
@@ -7697,8 +11549,8 @@ LBB33_42:                               #   in Loop: Header=BB33_37 Depth=1
 	mov	eax, dword ptr [esi + 132]
 	mov	eax, dword ptr [eax + 4*edx]
 	mov	edx, dword ptr [esi + 4]        # 4-byte Reload
-	jmp	LBB33_45
-LBB33_46:
+	jmp	LBB43_46
+LBB43_47:
 	mov	ebx, dword ptr [esi + 12]       # 4-byte Reload
 	inc	ecx
 	xor	edi, edi
@@ -7775,11 +11627,11 @@ LBB33_46:
 	mov	dword ptr [esi + 60], ebx
 	inc	ebx
 	add	ecx, -7
-	jmp	LBB33_47
+	jmp	LBB43_48
 	.p2align	4, 0x90
-LBB33_53:                               #   in Loop: Header=BB33_47 Depth=1
+LBB43_54:                               #   in Loop: Header=BB43_48 Depth=1
 	mov	dword ptr [esi + 12], edi       # 4-byte Spill
-LBB33_56:                               #   in Loop: Header=BB33_47 Depth=1
+LBB43_57:                               #   in Loop: Header=BB43_48 Depth=1
 	mov	edx, dword ptr [esi + 60]
 	mov	eax, dword ptr [esi + 56]
 	mov	ebx, dword ptr [esi + 52]
@@ -7824,7 +11676,7 @@ LBB33_56:                               #   in Loop: Header=BB33_47 Depth=1
 	mov	dword ptr [esi + 60], ebx
 	inc	ebx
 	add	ecx, -2
-LBB33_47:                               # =>This Inner Loop Header: Depth=1
+LBB43_48:                               # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [esi + 4]        # 4-byte Reload
 	cmove	ebx, edx
 	mov	edi, dword ptr [esi]            # 4-byte Reload
@@ -7838,26 +11690,26 @@ LBB33_47:                               # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [edi + 4*eax]
 	and	edx, 15
 	cmp	byte ptr [eax + edx], 0
-	je	LBB33_57
-# %bb.48:                               #   in Loop: Header=BB33_47 Depth=1
+	je	LBB43_58
+# %bb.49:                               #   in Loop: Header=BB43_48 Depth=1
 	mov	eax, dword ptr [esi + 172]
 	test	al, 7
-	jne	LBB33_52
-# %bb.49:                               #   in Loop: Header=BB33_47 Depth=1
+	jne	LBB43_53
+# %bb.50:                               #   in Loop: Header=BB43_48 Depth=1
 	mov	ecx, dword ptr [esi + 176]
 	add	ecx, 8
 	shr	ecx, 3
 	cmp	dword ptr [esi + 168], ecx
-	ja	LBB33_52
-# %bb.50:                               #   in Loop: Header=BB33_47 Depth=1
+	ja	LBB43_53
+# %bb.51:                               #   in Loop: Header=BB43_48 Depth=1
 	mov	dword ptr [esi + 344], 15
 	lea	ecx, [esi + 160]
 	push	1
 	call	"?_Growmap@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXI@Z"
-# %bb.51:                               #   in Loop: Header=BB33_47 Depth=1
+# %bb.52:                               #   in Loop: Header=BB43_48 Depth=1
 	mov	eax, dword ptr [esi + 172]
 	.p2align	4, 0x90
-LBB33_52:                               #   in Loop: Header=BB33_47 Depth=1
+LBB43_53:                               #   in Loop: Header=BB43_48 Depth=1
 	mov	edx, dword ptr [esi + 168]
 	mov	edi, dword ptr [esi + 164]
 	lea	ecx, [8*edx - 1]
@@ -7872,15 +11724,15 @@ LBB33_52:                               #   in Loop: Header=BB33_47 Depth=1
 	and	edx, eax
 	cmp	dword ptr [edi + 4*edx], 0
 	mov	dword ptr [esi + 8], edx        # 4-byte Spill
-	jne	LBB33_53
-# %bb.54:                               #   in Loop: Header=BB33_47 Depth=1
+	jne	LBB43_54
+# %bb.55:                               #   in Loop: Header=BB43_48 Depth=1
 	mov	dword ptr [esi + 4], eax        # 4-byte Spill
 	mov	dword ptr [esi], ecx            # 4-byte Spill
 	mov	dword ptr [esi + 344], 15
 	push	16
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
-# %bb.55:                               #   in Loop: Header=BB33_47 Depth=1
+# %bb.56:                               #   in Loop: Header=BB43_48 Depth=1
 	mov	ecx, dword ptr [esi + 164]
 	mov	edx, dword ptr [esi + 8]        # 4-byte Reload
 	mov	dword ptr [ecx + 4*edx], eax
@@ -7891,8 +11743,8 @@ LBB33_52:                               #   in Loop: Header=BB33_47 Depth=1
 	and	ecx, dword ptr [esi + 4]        # 4-byte Folded Reload
 	mov	dword ptr [esi + 8], ecx        # 4-byte Spill
 	mov	ecx, dword ptr [esi]            # 4-byte Reload
-	jmp	LBB33_56
-LBB33_57:
+	jmp	LBB43_57
+LBB43_58:
 	inc	ebx
 	xor	eax, eax
 	dec	ecx
@@ -7912,7 +11764,7 @@ LBB33_57:
 	push	8
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
-# %bb.58:
+# %bb.59:
 	mov	ecx, eax
 	lea	eax, [esi + 80]
 	mov	dword ptr [ecx], eax
@@ -7921,30 +11773,30 @@ LBB33_57:
 	mov	dword ptr [esi + 80], ecx
 	mov	dword ptr [esi + 104], ecx      # 4-byte Spill
 	test	eax, eax
-	je	LBB33_59
-# %bb.60:
+	je	LBB43_60
+# %bb.61:
 	mov	eax, dword ptr [eax]
 	mov	ecx, dword ptr [esi + 12]       # 4-byte Reload
 	mov	edi, dword ptr [esi]            # 4-byte Reload
 	test	eax, eax
-	je	LBB33_62
-# %bb.61:
+	je	LBB43_63
+# %bb.62:
 	mov	eax, dword ptr [eax]
 	mov	dword ptr [esi + 4], eax        # 4-byte Spill
-LBB33_62:
+LBB43_63:
 	test	ecx, ecx
-	jne	LBB33_63
-	jmp	LBB33_66
-LBB33_59:
+	jne	LBB43_64
+	jmp	LBB43_67
+LBB43_60:
 	mov	ecx, dword ptr [esi + 12]       # 4-byte Reload
 	mov	edi, dword ptr [esi]            # 4-byte Reload
 	test	ecx, ecx
-	je	LBB33_66
-LBB33_63:
+	je	LBB43_67
+LBB43_64:
 	add	ecx, edi
 	mov	dword ptr [esi + 12], ecx       # 4-byte Spill
 	.p2align	4, 0x90
-LBB33_64:                               # =>This Inner Loop Header: Depth=1
+LBB43_65:                               # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [esi + 4]        # 4-byte Reload
 	mov	ecx, edi
 	mov	dword ptr [esi], edi            # 4-byte Spill
@@ -7960,62 +11812,62 @@ LBB33_64:                               # =>This Inner Loop Header: Depth=1
 	mov	dword ptr [esi + 344], 17
 	push	edi
 	call	"??$emplace_back@AAE@?$deque@EV?$allocator@E@std@@@std@@QAE?A?<decltype-auto>@@AAE@Z"
-# %bb.65:                               #   in Loop: Header=BB33_64 Depth=1
+# %bb.66:                               #   in Loop: Header=BB43_65 Depth=1
 	mov	eax, dword ptr [esi]            # 4-byte Reload
 	mov	ecx, dword ptr [esi + 12]       # 4-byte Reload
 	inc	eax
 	cmp	eax, ecx
 	mov	edi, eax
-	jne	LBB33_64
-LBB33_66:
+	jne	LBB43_65
+LBB43_67:
 	mov	esp, dword ptr [esi + 44]       # 4-byte Reload
 	cmp	dword ptr [esi + 196], 0
-	je	LBB33_68
-# %bb.67:
+	je	LBB43_69
+# %bb.68:
 	mov	dword ptr [esi + 192], 0
 	mov	dword ptr [esi + 196], 0
-LBB33_68:
+LBB43_69:
 	mov	eax, dword ptr [esi + 184]
 	mov	edi, dword ptr [esi + 188]
 	.p2align	4, 0x90
-LBB33_69:                               # =>This Inner Loop Header: Depth=1
+LBB43_70:                               # =>This Inner Loop Header: Depth=1
 	test	edi, edi
-	je	LBB33_85
-# %bb.70:                               #   in Loop: Header=BB33_69 Depth=1
+	je	LBB43_86
+# %bb.71:                               #   in Loop: Header=BB43_70 Depth=1
 	mov	ecx, dword ptr [eax + 4*edi - 4]
 	dec	edi
 	test	ecx, ecx
-	je	LBB33_69
-# %bb.71:                               #   in Loop: Header=BB33_69 Depth=1
+	je	LBB43_70
+# %bb.72:                               #   in Loop: Header=BB43_70 Depth=1
 	push	16
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [esi + 184]
-	jmp	LBB33_69
-LBB33_85:
+	jmp	LBB43_70
+LBB43_86:
 	test	eax, eax
-	je	LBB33_93
-# %bb.86:
+	je	LBB43_94
+# %bb.87:
 	mov	ecx, dword ptr [esi + 188]
 	shl	ecx, 2
 	cmp	ecx, 4096
-	jb	LBB33_92
-# %bb.87:
+	jb	LBB43_93
+# %bb.88:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB33_88
-# %bb.91:
+	jae	LBB43_89
+# %bb.92:
 	add	ecx, 35
 	mov	eax, edx
-LBB33_92:
+LBB43_93:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_93:
+LBB43_94:
 	mov	dword ptr [esi + 188], 0
 	mov	dword ptr [esi + 184], 0
 	mov	ecx, dword ptr [esi + 80]
@@ -8023,18 +11875,18 @@ LBB33_93:
 	test	ecx, ecx
 	mov	dword ptr [esi + 180], ecx
 	mov	dword ptr [esi + 80], eax
-	je	LBB33_95
-# %bb.94:
+	je	LBB43_96
+# %bb.95:
 	lea	edx, [esi + 180]
 	mov	dword ptr [ecx], edx
-LBB33_95:
+LBB43_96:
 	test	eax, eax
-	je	LBB33_97
-# %bb.96:
+	je	LBB43_98
+# %bb.97:
 	lea	ecx, [esi + 80]
 	mov	dword ptr [eax], ecx
 	mov	dword ptr [esi + 344], 15
-LBB33_97:
+LBB43_98:
 	movups	xmm0, xmmword ptr [esi + 84]
 	mov	dword ptr [esi + 96], 0
 	mov	eax, dword ptr [esi + 80]
@@ -8050,63 +11902,63 @@ LBB33_97:
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.98:
+# %bb.99:
 	push	offset "??_C@_0M@NIJEHJNK@?5?5Version?3?5?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.99:
+# %bb.100:
 	mov	ecx, eax
 	push	dword ptr [esi + 116]
 	call	"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@I@Z"
-# %bb.100:
+# %bb.101:
 	push	offset "??_C@_01EEMJAFIK@?6?$AA@"
 	push	eax
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.101:
+# %bb.102:
 	push	offset "??_C@_09ENMJHFFI@?5?5Width?3?5?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.102:
+# %bb.103:
 	mov	ecx, eax
 	push	dword ptr [esi + 120]
 	call	"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@I@Z"
-# %bb.103:
+# %bb.104:
 	push	offset "??_C@_01EEMJAFIK@?6?$AA@"
 	push	eax
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.104:
+# %bb.105:
 	push	offset "??_C@_0L@FKEALEKD@?5?5Height?3?5?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.105:
+# %bb.106:
 	mov	ecx, eax
 	push	dword ptr [esi + 124]
 	call	"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@I@Z"
-# %bb.106:
+# %bb.107:
 	push	offset "??_C@_01EEMJAFIK@?6?$AA@"
 	push	eax
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.107:
+# %bb.108:
 	push	offset "??_C@_0N@EPDJKGNE@?5?5Metadata?3?5?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.108:
+# %bb.109:
 	mov	eax, dword ptr [esi + 128]
 	mov	dword ptr [esi + 4], eax        # 4-byte Spill
 	mov	eax, dword ptr [esi + 140]
 	mov	edi, eax
 	add	eax, dword ptr [esi + 144]
 	cmp	edi, eax
-	je	LBB33_110
+	je	LBB43_111
 	.p2align	4, 0x90
-LBB33_120:                              # =>This Inner Loop Header: Depth=1
+LBB43_121:                              # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [esi + 4]        # 4-byte Reload
 	mov	ecx, edi
 	mov	dword ptr [esi], edi            # 4-byte Spill
@@ -8124,24 +11976,24 @@ LBB33_120:                              # =>This Inner Loop Header: Depth=1
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z"
 	add	esp, 8
-# %bb.121:                              #   in Loop: Header=BB33_120 Depth=1
+# %bb.122:                              #   in Loop: Header=BB43_121 Depth=1
 	mov	edi, dword ptr [esi]            # 4-byte Reload
 	mov	eax, dword ptr [esi + 140]
 	inc	edi
 	add	eax, dword ptr [esi + 144]
 	cmp	edi, eax
-	jne	LBB33_120
-LBB33_110:
+	jne	LBB43_121
+LBB43_111:
 	push	offset "??_C@_01EEMJAFIK@?6?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.111:
+# %bb.112:
 	push	offset "??_C@_0BG@HIDIFMAH@?5?5Background?5Color?3?5?$CD?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.112:
+# %bb.113:
 	mov	ecx, dword ptr [eax]
 	mov	edx, -3585
 	mov	ecx, dword ptr [ecx + 4]
@@ -8152,22 +12004,22 @@ LBB33_110:
 	movzx	edx, byte ptr [esi + 148]
 	push	edx
 	call	"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
-# %bb.113:
+# %bb.114:
 	movzx	edx, byte ptr [esi + 149]
 	mov	ecx, eax
 	push	edx
 	call	"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
-# %bb.114:
+# %bb.115:
 	movzx	edx, byte ptr [esi + 150]
 	mov	ecx, eax
 	push	edx
 	call	"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
-# %bb.115:
+# %bb.116:
 	movzx	edx, byte ptr [esi + 151]
 	mov	ecx, eax
 	push	edx
 	call	"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
-# %bb.116:
+# %bb.117:
 	mov	ecx, dword ptr [eax]
 	mov	edx, -3585
 	mov	ecx, dword ptr [ecx + 4]
@@ -8178,50 +12030,50 @@ LBB33_110:
 	push	eax
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.117:
+# %bb.118:
 	push	offset "??_C@_0P@GKEBFNCL@?5?5Color?5Mode?3?5?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.118:
+# %bb.119:
 	movzx	ecx, byte ptr [esi + 156]
 	lea	edx, [ecx + 2*ecx]
 	mov	ecx, dword ptr [esi + 8*edx + 248]
 	cmp	dword ptr [esi + 8*edx + 252], 15
-	jbe	LBB33_119
-# %bb.122:
+	jbe	LBB43_120
+# %bb.123:
 	mov	edx, dword ptr [esi + 8*edx + 232]
-	jmp	LBB33_123
-LBB33_119:
+	jmp	LBB43_124
+LBB43_120:
 	lea	edx, [esi + 8*edx + 232]
-LBB33_123:
+LBB43_124:
 	push	ecx
 	push	edx
 	push	eax
 	call	"??$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z"
 	add	esp, 12
-# %bb.124:
+# %bb.125:
 	push	offset "??_C@_01EEMJAFIK@?6?$AA@"
 	push	eax
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.125:
+# %bb.126:
 	push	offset "??_C@_0BI@KGBMIJAP@?5?5Extensions?5Needed?3?5?$HL?5?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.126:
+# %bb.127:
 	mov	eax, dword ptr [esi + 160]
 	xor	ecx, ecx
 	mov	dword ptr [esi + 8], eax        # 4-byte Spill
 	mov	eax, dword ptr [esi + 172]
 	mov	edi, eax
-	jmp	LBB33_127
+	jmp	LBB43_128
 	.p2align	4, 0x90
-LBB33_174:                              #   in Loop: Header=BB33_127 Depth=1
+LBB43_175:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	ecx, dword ptr [esi]            # 4-byte Reload
 	mov	eax, edx
-LBB33_177:                              #   in Loop: Header=BB33_127 Depth=1
+LBB43_178:                              #   in Loop: Header=BB43_128 Depth=1
 	cmp	eax, ecx
 	mov	ecx, dword ptr [esi + 204]      # 4-byte Reload
 	mov	eax, 1
@@ -8230,13 +12082,13 @@ LBB33_177:                              #   in Loop: Header=BB33_127 Depth=1
 	cmove	ecx, eax
 	mov	eax, dword ptr [esi + 172]
 	inc	edi
-LBB33_127:                              # =>This Loop Header: Depth=1
-                                        #     Child Loop BB33_141 Depth 2
-                                        #     Child Loop BB33_173 Depth 2
+LBB43_128:                              # =>This Loop Header: Depth=1
+                                        #     Child Loop BB43_142 Depth 2
+                                        #     Child Loop BB43_174 Depth 2
 	add	eax, dword ptr [esi + 176]
 	cmp	edi, eax
-	je	LBB33_128
-# %bb.136:                              #   in Loop: Header=BB33_127 Depth=1
+	je	LBB43_129
+# %bb.137:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	eax, dword ptr ["?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"]
 	mov	dword ptr [esi + 204], ecx      # 4-byte Spill
 	mov	edx, -3585
@@ -8264,18 +12116,18 @@ LBB33_127:                              # =>This Loop Header: Depth=1
 	mov	edi, dword ptr ["?supportedExtensions@@3V?$deque@GV?$allocator@G@std@@@std@@A"]
 	mov	dword ptr [esi], ecx            # 4-byte Spill
 	test	edi, edi
-	je	LBB33_137
-# %bb.138:                              #   in Loop: Header=BB33_127 Depth=1
+	je	LBB43_138
+# %bb.139:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	ebx, dword ptr [edi]
 	cmp	dword ptr [esi], 0              # 4-byte Folded Reload
-	jne	LBB33_140
-	jmp	LBB33_143
+	jne	LBB43_141
+	jmp	LBB43_144
 	.p2align	4, 0x90
-LBB33_137:                              #   in Loop: Header=BB33_127 Depth=1
+LBB43_138:                              #   in Loop: Header=BB43_128 Depth=1
 	xor	ebx, ebx
 	cmp	dword ptr [esi], 0              # 4-byte Folded Reload
-	je	LBB33_143
-LBB33_140:                              #   in Loop: Header=BB33_127 Depth=1
+	je	LBB43_144
+LBB43_141:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	edi, dword ptr [ebx + 8]
 	shl	eax, 16
 	mov	ebx, dword ptr [ebx + 4]
@@ -8285,7 +12137,7 @@ LBB33_140:                              #   in Loop: Header=BB33_127 Depth=1
 	mov	eax, 536870911
 	add	edi, eax
 	.p2align	4, 0x90
-LBB33_141:                              #   Parent Loop BB33_127 Depth=1
+LBB43_142:                              #   Parent Loop BB43_128 Depth=1
                                         # =>  This Inner Loop Header: Depth=2
 	mov	ecx, edx
 	mov	eax, edx
@@ -8295,19 +12147,19 @@ LBB33_141:                              #   Parent Loop BB33_127 Depth=1
 	mov	ecx, dword ptr [ebx + 4*ecx]
 	movzx	eax, word ptr [ecx + 2*eax]
 	cmp	dword ptr [esi + 4], eax        # 4-byte Folded Reload
-	je	LBB33_144
-# %bb.142:                              #   in Loop: Header=BB33_141 Depth=2
+	je	LBB43_145
+# %bb.143:                              #   in Loop: Header=BB43_142 Depth=2
 	inc	edx
 	cmp	edx, dword ptr [esi]            # 4-byte Folded Reload
-	jne	LBB33_141
-	jmp	LBB33_143
+	jne	LBB43_142
+	jmp	LBB43_144
 	.p2align	4, 0x90
-LBB33_144:                              #   in Loop: Header=BB33_127 Depth=1
+LBB43_145:                              #   in Loop: Header=BB43_128 Depth=1
 	cmp	edx, dword ptr [esi]            # 4-byte Folded Reload
 	mov	dword ptr [esi + 344], 15
-	jne	LBB33_145
+	jne	LBB43_146
 	.p2align	4, 0x90
-LBB33_143:                              #   in Loop: Header=BB33_127 Depth=1
+LBB43_144:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	dword ptr [esi + 344], 15
 	push	119
 	push	119
@@ -8316,21 +12168,21 @@ LBB33_143:                              #   in Loop: Header=BB33_127 Depth=1
 	push	eax
 	call	"?concolor_fg_rgb@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@EEE@Z"
 	add	esp, 16
-LBB33_146:                              #   in Loop: Header=BB33_127 Depth=1
+LBB43_147:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	eax, dword ptr [esi + 96]
 	cmp	dword ptr [esi + 100], 15
 	lea	ecx, [esi + 80]
-	jbe	LBB33_148
-# %bb.147:                              #   in Loop: Header=BB33_127 Depth=1
+	jbe	LBB43_149
+# %bb.148:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	ecx, dword ptr [esi + 80]
-LBB33_148:                              #   in Loop: Header=BB33_127 Depth=1
+LBB43_149:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	dword ptr [esi + 344], 16
 	push	eax
 	push	ecx
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z"
 	add	esp, 12
-# %bb.149:                              #   in Loop: Header=BB33_127 Depth=1
+# %bb.150:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	ecx, dword ptr [esi + 8]        # 4-byte Reload
 	mov	ecx, dword ptr [ecx]
 	mov	edx, dword ptr [ecx + 4]
@@ -8345,57 +12197,57 @@ LBB33_148:                              #   in Loop: Header=BB33_127 Depth=1
 	bswap	edx
 	push	edx
 	call	"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
-# %bb.150:                              #   in Loop: Header=BB33_127 Depth=1
+# %bb.151:                              #   in Loop: Header=BB43_128 Depth=1
 	push	offset "??_C@_04MGNJNGKI@?$BL?$FL0m?$AA@"
 	push	eax
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.151:                              #   in Loop: Header=BB33_127 Depth=1
+# %bb.152:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	eax, dword ptr [esi + 100]
 	mov	ebx, dword ptr [esi + 104]      # 4-byte Reload
 	cmp	eax, 16
-	jb	LBB33_159
-# %bb.152:                              #   in Loop: Header=BB33_127 Depth=1
+	jb	LBB43_160
+# %bb.153:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	ecx, dword ptr [esi + 80]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB33_158
-# %bb.153:                              #   in Loop: Header=BB33_127 Depth=1
+	jb	LBB43_159
+# %bb.154:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	edi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edi
 	cmp	ecx, 32
-	jae	LBB33_154
-# %bb.157:                              #   in Loop: Header=BB33_127 Depth=1
+	jae	LBB43_155
+# %bb.158:                              #   in Loop: Header=BB43_128 Depth=1
 	add	eax, 36
 	mov	ecx, edi
 	mov	edx, eax
-LBB33_158:                              #   in Loop: Header=BB33_127 Depth=1
+LBB43_159:                              #   in Loop: Header=BB43_128 Depth=1
 	push	edx
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_159:                              #   in Loop: Header=BB33_127 Depth=1
+LBB43_160:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	eax, dword ptr [esi + 172]
 	mov	ecx, dword ptr [esi + 176]
 	lea	eax, [eax + ecx - 1]
 	cmp	eax, ebx
-	jne	LBB33_160
-# %bb.167:                              #   in Loop: Header=BB33_127 Depth=1
+	jne	LBB43_161
+# %bb.168:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	dword ptr [esi + 344], 15
 	push	offset "??_C@_03NIEPJMFE@?5?$HN?6?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-	jmp	LBB33_168
+	jmp	LBB43_169
 	.p2align	4, 0x90
-LBB33_160:                              #   in Loop: Header=BB33_127 Depth=1
+LBB43_161:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	dword ptr [esi + 344], 15
 	push	offset "??_C@_02KEGNLNML@?0?5?$AA@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-LBB33_168:                              #   in Loop: Header=BB33_127 Depth=1
+LBB43_169:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	eax, dword ptr [esi + 8]        # 4-byte Reload
 	mov	edx, dword ptr ["?supportedExtensions@@3V?$deque@GV?$allocator@G@std@@@std@@A"+12]
 	mov	eax, dword ptr [eax]
@@ -8409,22 +12261,22 @@ LBB33_168:                              #   in Loop: Header=BB33_127 Depth=1
 	mov	ecx, dword ptr ["?supportedExtensions@@3V?$deque@GV?$allocator@G@std@@@std@@A"]
 	mov	eax, dword ptr ["?supportedExtensions@@3V?$deque@GV?$allocator@G@std@@@std@@A"+16]
 	test	ecx, ecx
-	je	LBB33_169
-# %bb.170:                              #   in Loop: Header=BB33_127 Depth=1
+	je	LBB43_170
+# %bb.171:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	ebx, dword ptr [ecx]
 	lea	ecx, [eax + edx]
 	test	eax, eax
 	mov	eax, ecx
-	jne	LBB33_172
-	jmp	LBB33_177
+	jne	LBB43_173
+	jmp	LBB43_178
 	.p2align	4, 0x90
-LBB33_169:                              #   in Loop: Header=BB33_127 Depth=1
+LBB43_170:                              #   in Loop: Header=BB43_128 Depth=1
 	xor	ebx, ebx
 	lea	ecx, [eax + edx]
 	test	eax, eax
 	mov	eax, ecx
-	je	LBB33_177
-LBB33_172:                              #   in Loop: Header=BB33_127 Depth=1
+	je	LBB43_178
+LBB43_173:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	dword ptr [esi], ecx            # 4-byte Spill
 	mov	ecx, dword ptr [ebx + 8]
 	mov	ebx, dword ptr [ebx + 4]
@@ -8434,7 +12286,7 @@ LBB33_172:                              #   in Loop: Header=BB33_127 Depth=1
 	mov	dword ptr [esi + 4], edi        # 4-byte Spill
 	add	ecx, eax
 	.p2align	4, 0x90
-LBB33_173:                              #   Parent Loop BB33_127 Depth=1
+LBB43_174:                              #   Parent Loop BB43_128 Depth=1
                                         # =>  This Inner Loop Header: Depth=2
 	mov	eax, edx
 	mov	edi, edx
@@ -8444,16 +12296,16 @@ LBB33_173:                              #   Parent Loop BB33_127 Depth=1
 	mov	eax, dword ptr [ebx + 4*eax]
 	movzx	eax, word ptr [eax + 2*edi]
 	cmp	dword ptr [esi + 4], eax        # 4-byte Folded Reload
-	je	LBB33_174
-# %bb.175:                              #   in Loop: Header=BB33_173 Depth=2
+	je	LBB43_175
+# %bb.176:                              #   in Loop: Header=BB43_174 Depth=2
 	inc	edx
 	cmp	edx, dword ptr [esi]            # 4-byte Folded Reload
-	jne	LBB33_173
-# %bb.176:                              #   in Loop: Header=BB33_127 Depth=1
+	jne	LBB43_174
+# %bb.177:                              #   in Loop: Header=BB43_128 Depth=1
 	mov	ecx, dword ptr [esi]            # 4-byte Reload
 	mov	eax, ecx
-	jmp	LBB33_177
-LBB33_145:                              #   in Loop: Header=BB33_127 Depth=1
+	jmp	LBB43_178
+LBB43_146:                              #   in Loop: Header=BB43_128 Depth=1
 	push	119
 	push	221
 	push	119
@@ -8461,70 +12313,70 @@ LBB33_145:                              #   in Loop: Header=BB33_127 Depth=1
 	push	eax
 	call	"?concolor_fg_rgb@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@EEE@Z"
 	add	esp, 16
-	jmp	LBB33_146
-LBB33_128:
+	jmp	LBB43_147
+LBB43_129:
 	test	cl, 1
 	mov	dword ptr [esi + 344], 15
-	jne	LBB33_129
-# %bb.181:
+	jne	LBB43_130
+# %bb.182:
 	lea	eax, [esi + 108]
 	push	eax
 	call	"?ext0101_registerAll@@YAXAAV?$map@IP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@ZU?$less@I@2@V?$allocator@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@2@@std@@@Z"
 	add	esp, 4
-# %bb.182:
+# %bb.183:
 	lea	eax, [esi + 108]
 	push	eax
 	call	"?ext0102_registerAll@@YAXAAV?$map@IP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@ZU?$less@I@2@V?$allocator@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@2@@std@@@Z"
 	add	esp, 4
-# %bb.183:
+# %bb.184:
 	xor	ecx, ecx
-	jmp	LBB33_184
+	jmp	LBB43_185
 	.p2align	4, 0x90
-LBB33_187:                              #   in Loop: Header=BB33_184 Depth=1
+LBB43_188:                              #   in Loop: Header=BB43_185 Depth=1
 	mov	ecx, dword ptr [esi + 12]       # 4-byte Reload
 	inc	ecx
-LBB33_184:                              # =>This Loop Header: Depth=1
-                                        #     Child Loop BB33_186 Depth 2
+LBB43_185:                              # =>This Loop Header: Depth=1
+                                        #     Child Loop BB43_187 Depth 2
 	mov	eax, dword ptr [esi + 120]
 	mov	dword ptr [esi + 12], ecx       # 4-byte Spill
 	cmp	ecx, eax
-	jae	LBB33_188
-# %bb.185:                              #   in Loop: Header=BB33_184 Depth=1
+	jae	LBB43_189
+# %bb.186:                              #   in Loop: Header=BB43_185 Depth=1
 	xor	eax, eax
-	jmp	LBB33_186
+	jmp	LBB43_187
 	.p2align	4, 0x90
-LBB33_220:                              #   in Loop: Header=BB33_186 Depth=2
+LBB43_221:                              #   in Loop: Header=BB43_187 Depth=2
 	and	edx, 15
 	mov	byte ptr [eax + edx], 0
 	mov	eax, dword ptr [esi]            # 4-byte Reload
 	inc	dword ptr [esi + 32]
 	inc	eax
-LBB33_186:                              #   Parent Loop BB33_184 Depth=1
+LBB43_187:                              #   Parent Loop BB43_185 Depth=1
                                         # =>  This Inner Loop Header: Depth=2
 	cmp	eax, dword ptr [esi + 124]
 	mov	dword ptr [esi], eax            # 4-byte Spill
-	jae	LBB33_187
-# %bb.192:                              #   in Loop: Header=BB33_186 Depth=2
+	jae	LBB43_188
+# %bb.193:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	ecx, dword ptr [esi + 28]
 	mov	eax, dword ptr [esi + 32]
 	lea	edx, [eax + ecx]
 	test	dl, 15
-	jne	LBB33_196
-# %bb.193:                              #   in Loop: Header=BB33_186 Depth=2
+	jne	LBB43_197
+# %bb.194:                              #   in Loop: Header=BB43_187 Depth=2
 	lea	edx, [eax + 16]
 	shr	edx, 4
 	cmp	dword ptr [esi + 24], edx
-	ja	LBB33_196
-# %bb.194:                              #   in Loop: Header=BB33_186 Depth=2
+	ja	LBB43_197
+# %bb.195:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	dword ptr [esi + 344], 15
 	lea	ecx, [esi + 16]
 	push	1
 	call	"?_Growmap@?$deque@EV?$allocator@E@std@@@std@@AAEXI@Z"
-# %bb.195:                              #   in Loop: Header=BB33_186 Depth=2
+# %bb.196:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	ecx, dword ptr [esi + 28]
 	mov	eax, dword ptr [esi + 32]
 	.p2align	4, 0x90
-LBB33_196:                              #   in Loop: Header=BB33_186 Depth=2
+LBB43_197:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	edi, dword ptr [esi + 24]
 	mov	edx, edi
 	add	edi, 268435455
@@ -8539,22 +12391,22 @@ LBB33_196:                              #   in Loop: Header=BB33_186 Depth=2
 	and	edi, eax
 	mov	eax, dword ptr [ecx + 4*edi]
 	test	eax, eax
-	jne	LBB33_199
-# %bb.197:                              #   in Loop: Header=BB33_186 Depth=2
+	jne	LBB43_200
+# %bb.198:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	dword ptr [esi + 8], edi        # 4-byte Spill
 	mov	dword ptr [esi + 4], edx        # 4-byte Spill
 	mov	dword ptr [esi + 344], 15
 	push	16
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
-# %bb.198:                              #   in Loop: Header=BB33_186 Depth=2
+# %bb.199:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	ecx, dword ptr [esi + 20]
 	mov	edx, dword ptr [esi + 8]        # 4-byte Reload
 	mov	dword ptr [ecx + 4*edx], eax
 	mov	eax, dword ptr [esi + 20]
 	mov	eax, dword ptr [eax + 4*edx]
 	mov	edx, dword ptr [esi + 4]        # 4-byte Reload
-LBB33_199:                              #   in Loop: Header=BB33_186 Depth=2
+LBB43_200:                              #   in Loop: Header=BB43_187 Depth=2
 	and	edx, 15
 	mov	byte ptr [eax + edx], 0
 	mov	edx, dword ptr [esi + 32]
@@ -8563,22 +12415,22 @@ LBB33_199:                              #   in Loop: Header=BB33_186 Depth=2
 	lea	eax, [edx + 1]
 	test	bl, 15
 	mov	dword ptr [esi + 32], eax
-	jne	LBB33_203
-# %bb.200:                              #   in Loop: Header=BB33_186 Depth=2
+	jne	LBB43_204
+# %bb.201:                              #   in Loop: Header=BB43_187 Depth=2
 	add	edx, 17
 	shr	edx, 4
 	cmp	dword ptr [esi + 24], edx
-	ja	LBB33_203
-# %bb.201:                              #   in Loop: Header=BB33_186 Depth=2
+	ja	LBB43_204
+# %bb.202:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	dword ptr [esi + 344], 15
 	lea	ecx, [esi + 16]
 	push	1
 	call	"?_Growmap@?$deque@EV?$allocator@E@std@@@std@@AAEXI@Z"
-# %bb.202:                              #   in Loop: Header=BB33_186 Depth=2
+# %bb.203:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	ecx, dword ptr [esi + 28]
 	mov	eax, dword ptr [esi + 32]
 	.p2align	4, 0x90
-LBB33_203:                              #   in Loop: Header=BB33_186 Depth=2
+LBB43_204:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	edi, dword ptr [esi + 24]
 	mov	edx, edi
 	add	edi, 268435455
@@ -8593,22 +12445,22 @@ LBB33_203:                              #   in Loop: Header=BB33_186 Depth=2
 	and	edi, eax
 	mov	eax, dword ptr [ecx + 4*edi]
 	test	eax, eax
-	jne	LBB33_206
-# %bb.204:                              #   in Loop: Header=BB33_186 Depth=2
+	jne	LBB43_207
+# %bb.205:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	dword ptr [esi + 8], edi        # 4-byte Spill
 	mov	dword ptr [esi + 4], edx        # 4-byte Spill
 	mov	dword ptr [esi + 344], 15
 	push	16
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
-# %bb.205:                              #   in Loop: Header=BB33_186 Depth=2
+# %bb.206:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	ecx, dword ptr [esi + 20]
 	mov	edx, dword ptr [esi + 8]        # 4-byte Reload
 	mov	dword ptr [ecx + 4*edx], eax
 	mov	eax, dword ptr [esi + 20]
 	mov	eax, dword ptr [eax + 4*edx]
 	mov	edx, dword ptr [esi + 4]        # 4-byte Reload
-LBB33_206:                              #   in Loop: Header=BB33_186 Depth=2
+LBB43_207:                              #   in Loop: Header=BB43_187 Depth=2
 	and	edx, 15
 	mov	byte ptr [eax + edx], 0
 	mov	edx, dword ptr [esi + 32]
@@ -8617,22 +12469,22 @@ LBB33_206:                              #   in Loop: Header=BB33_186 Depth=2
 	lea	eax, [edx + 1]
 	test	bl, 15
 	mov	dword ptr [esi + 32], eax
-	jne	LBB33_210
-# %bb.207:                              #   in Loop: Header=BB33_186 Depth=2
+	jne	LBB43_211
+# %bb.208:                              #   in Loop: Header=BB43_187 Depth=2
 	add	edx, 17
 	shr	edx, 4
 	cmp	dword ptr [esi + 24], edx
-	ja	LBB33_210
-# %bb.208:                              #   in Loop: Header=BB33_186 Depth=2
+	ja	LBB43_211
+# %bb.209:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	dword ptr [esi + 344], 15
 	lea	ecx, [esi + 16]
 	push	1
 	call	"?_Growmap@?$deque@EV?$allocator@E@std@@@std@@AAEXI@Z"
-# %bb.209:                              #   in Loop: Header=BB33_186 Depth=2
+# %bb.210:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	ecx, dword ptr [esi + 28]
 	mov	eax, dword ptr [esi + 32]
 	.p2align	4, 0x90
-LBB33_210:                              #   in Loop: Header=BB33_186 Depth=2
+LBB43_211:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	edi, dword ptr [esi + 24]
 	mov	edx, edi
 	add	edi, 268435455
@@ -8647,22 +12499,22 @@ LBB33_210:                              #   in Loop: Header=BB33_186 Depth=2
 	and	edi, eax
 	mov	eax, dword ptr [ecx + 4*edi]
 	test	eax, eax
-	jne	LBB33_213
-# %bb.211:                              #   in Loop: Header=BB33_186 Depth=2
+	jne	LBB43_214
+# %bb.212:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	dword ptr [esi + 8], edi        # 4-byte Spill
 	mov	dword ptr [esi + 4], edx        # 4-byte Spill
 	mov	dword ptr [esi + 344], 15
 	push	16
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
-# %bb.212:                              #   in Loop: Header=BB33_186 Depth=2
+# %bb.213:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	ecx, dword ptr [esi + 20]
 	mov	edx, dword ptr [esi + 8]        # 4-byte Reload
 	mov	dword ptr [ecx + 4*edx], eax
 	mov	eax, dword ptr [esi + 20]
 	mov	eax, dword ptr [eax + 4*edx]
 	mov	edx, dword ptr [esi + 4]        # 4-byte Reload
-LBB33_213:                              #   in Loop: Header=BB33_186 Depth=2
+LBB43_214:                              #   in Loop: Header=BB43_187 Depth=2
 	and	edx, 15
 	mov	byte ptr [eax + edx], 0
 	mov	edx, dword ptr [esi + 32]
@@ -8671,22 +12523,22 @@ LBB33_213:                              #   in Loop: Header=BB33_186 Depth=2
 	lea	eax, [edx + 1]
 	test	bl, 15
 	mov	dword ptr [esi + 32], eax
-	jne	LBB33_217
-# %bb.214:                              #   in Loop: Header=BB33_186 Depth=2
+	jne	LBB43_218
+# %bb.215:                              #   in Loop: Header=BB43_187 Depth=2
 	add	edx, 17
 	shr	edx, 4
 	cmp	dword ptr [esi + 24], edx
-	ja	LBB33_217
-# %bb.215:                              #   in Loop: Header=BB33_186 Depth=2
+	ja	LBB43_218
+# %bb.216:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	dword ptr [esi + 344], 15
 	lea	ecx, [esi + 16]
 	push	1
 	call	"?_Growmap@?$deque@EV?$allocator@E@std@@@std@@AAEXI@Z"
-# %bb.216:                              #   in Loop: Header=BB33_186 Depth=2
+# %bb.217:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	ecx, dword ptr [esi + 28]
 	mov	eax, dword ptr [esi + 32]
 	.p2align	4, 0x90
-LBB33_217:                              #   in Loop: Header=BB33_186 Depth=2
+LBB43_218:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	edi, dword ptr [esi + 24]
 	mov	edx, edi
 	add	edi, 268435455
@@ -8701,54 +12553,54 @@ LBB33_217:                              #   in Loop: Header=BB33_186 Depth=2
 	and	edi, eax
 	mov	eax, dword ptr [ecx + 4*edi]
 	test	eax, eax
-	jne	LBB33_220
-# %bb.218:                              #   in Loop: Header=BB33_186 Depth=2
+	jne	LBB43_221
+# %bb.219:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	dword ptr [esi + 8], edi        # 4-byte Spill
 	mov	dword ptr [esi + 4], edx        # 4-byte Spill
 	mov	dword ptr [esi + 344], 15
 	push	16
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
-# %bb.219:                              #   in Loop: Header=BB33_186 Depth=2
+# %bb.220:                              #   in Loop: Header=BB43_187 Depth=2
 	mov	ecx, dword ptr [esi + 20]
 	mov	edx, dword ptr [esi + 8]        # 4-byte Reload
 	mov	dword ptr [ecx + 4*edx], eax
 	mov	eax, dword ptr [esi + 20]
 	mov	eax, dword ptr [eax + 4*edx]
 	mov	edx, dword ptr [esi + 4]        # 4-byte Reload
-	jmp	LBB33_220
-LBB33_129:
+	jmp	LBB43_221
+LBB43_130:
 	push	offset "??_C@_0DJ@JGGEKIIH@Image?5uses?5one?5or?5more?5unsupport@"
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-	jmp	LBB33_130
-LBB33_188:
+	jmp	LBB43_131
+LBB43_189:
 	test	eax, eax
-	je	LBB33_224
-# %bb.189:
+	je	LBB43_225
+# %bb.190:
 	mov	ebx, dword ptr [esi + 124]
 	xor	ecx, ecx
-	jmp	LBB33_190
+	jmp	LBB43_191
 	.p2align	4, 0x90
-LBB33_191:                              #   in Loop: Header=BB33_190 Depth=1
+LBB43_192:                              #   in Loop: Header=BB43_191 Depth=1
 	xor	ebx, ebx
-LBB33_223:                              #   in Loop: Header=BB33_190 Depth=1
+LBB43_224:                              #   in Loop: Header=BB43_191 Depth=1
 	mov	ecx, dword ptr [esi + 8]        # 4-byte Reload
 	inc	ecx
 	cmp	ecx, eax
-	jae	LBB33_224
-LBB33_190:                              # =>This Loop Header: Depth=1
-                                        #     Child Loop BB33_222 Depth 2
+	jae	LBB43_225
+LBB43_191:                              # =>This Loop Header: Depth=1
+                                        #     Child Loop BB43_223 Depth 2
 	test	ebx, ebx
 	mov	dword ptr [esi + 8], ecx        # 4-byte Spill
-	je	LBB33_191
-# %bb.221:                              #   in Loop: Header=BB33_190 Depth=1
+	je	LBB43_192
+# %bb.222:                              #   in Loop: Header=BB43_191 Depth=1
 	lea	ecx, [4*ecx]
 	mov	dword ptr [esi], ecx            # 4-byte Spill
 	xor	ecx, ecx
 	.p2align	4, 0x90
-LBB33_222:                              #   Parent Loop BB33_190 Depth=1
+LBB43_223:                              #   Parent Loop BB43_191 Depth=1
                                         # =>  This Inner Loop Header: Depth=2
 	lea	ebx, [4*ecx]
 	mov	dword ptr [esi + 4], ecx        # 4-byte Spill
@@ -8820,22 +12672,22 @@ LBB33_222:                              #   Parent Loop BB33_190 Depth=1
 	mov	ebx, dword ptr [esi + 124]
 	mov	eax, dword ptr [esi + 120]
 	cmp	edx, ebx
-	jb	LBB33_222
-	jmp	LBB33_223
+	jb	LBB43_223
+	jmp	LBB43_224
 	.p2align	4, 0x90
-LBB33_226:                              #   in Loop: Header=BB33_224 Depth=1
+LBB43_227:                              #   in Loop: Header=BB43_225 Depth=1
 	inc	edi
 	xor	ecx, ecx
 	dec	eax
 	cmovne	ecx, edi
 	mov	dword ptr [esi + 196], eax
 	mov	dword ptr [esi + 192], ecx
-LBB33_224:                              # =>This Loop Header: Depth=1
-                                        #     Child Loop BB33_233 Depth 2
+LBB43_225:                              # =>This Loop Header: Depth=1
+                                        #     Child Loop BB43_234 Depth 2
 	mov	eax, dword ptr [esi + 196]
 	test	eax, eax
-	je	LBB33_243
-# %bb.225:                              #   in Loop: Header=BB33_224 Depth=1
+	je	LBB43_244
+# %bb.226:                              #   in Loop: Header=BB43_225 Depth=1
 	mov	edi, dword ptr [esi + 192]
 	mov	ecx, 268435455
 	mov	edx, dword ptr [esi + 184]
@@ -8850,8 +12702,8 @@ LBB33_224:                              # =>This Loop Header: Depth=1
 	and	ecx, 15
 	movzx	ecx, byte ptr [ebx + ecx]
 	cmp	ecx, 255
-	je	LBB33_226
-# %bb.227:                              #   in Loop: Header=BB33_224 Depth=1
+	je	LBB43_227
+# %bb.228:                              #   in Loop: Header=BB43_225 Depth=1
 	mov	dword ptr [esi + 12], ecx       # 4-byte Spill
 	lea	ecx, [edi + 3]
 	mov	edx, dword ptr [esi + 8]        # 4-byte Reload
@@ -8904,7 +12756,7 @@ LBB33_224:                              # =>This Loop Header: Depth=1
 	push	offset "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.228:                              #   in Loop: Header=BB33_224 Depth=1
+# %bb.229:                              #   in Loop: Header=BB43_225 Depth=1
 	mov	ecx, dword ptr [esi + 12]       # 4-byte Reload
 	mov	edx, dword ptr [esi]            # 4-byte Reload
 	mov	edi, dword ptr [esi + 4]        # 4-byte Reload
@@ -8918,28 +12770,28 @@ LBB33_224:                              # =>This Loop Header: Depth=1
 	mov	dword ptr [esi], edx            # 4-byte Spill
 	push	edx
 	call	"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@I@Z"
-# %bb.229:                              #   in Loop: Header=BB33_224 Depth=1
+# %bb.230:                              #   in Loop: Header=BB43_225 Depth=1
 	push	offset "??_C@_01EEMJAFIK@?6?$AA@"
 	push	eax
 	call	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	add	esp, 8
-# %bb.230:                              #   in Loop: Header=BB33_224 Depth=1
+# %bb.231:                              #   in Loop: Header=BB43_225 Depth=1
 	mov	eax, dword ptr [esi + 108]
 	xor	edx, edx
 	mov	ebx, dword ptr [eax + 4]
 	mov	dword ptr [esi + 4], eax        # 4-byte Spill
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB33_232
-# %bb.231:                              #   in Loop: Header=BB33_224 Depth=1
+	je	LBB43_233
+# %bb.232:                              #   in Loop: Header=BB43_225 Depth=1
 	mov	edi, dword ptr [esi]            # 4-byte Reload
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB33_237
-	jmp	LBB33_236
+	jne	LBB43_238
+	jmp	LBB43_237
 	.p2align	4, 0x90
-LBB33_232:                              #   in Loop: Header=BB33_224 Depth=1
+LBB43_233:                              #   in Loop: Header=BB43_225 Depth=1
 	mov	edi, dword ptr [esi]            # 4-byte Reload
 	.p2align	4, 0x90
-LBB33_233:                              #   Parent Loop BB33_224 Depth=1
+LBB43_234:                              #   Parent Loop BB43_225 Depth=1
                                         # =>  This Inner Loop Header: Depth=2
 	mov	edx, dword ptr [ebx + 16]
 	mov	ecx, ebx
@@ -8949,28 +12801,28 @@ LBB33_233:                              #   Parent Loop BB33_224 Depth=1
 	cmovae	eax, ecx
 	mov	ebx, dword ptr [ecx + 8*ebx]
 	cmp	byte ptr [ebx + 13], 0
-	je	LBB33_233
-# %bb.234:                              #   in Loop: Header=BB33_224 Depth=1
+	je	LBB43_234
+# %bb.235:                              #   in Loop: Header=BB43_225 Depth=1
 	cmp	edx, edi
 	mov	edx, 0
 	mov	ebx, ecx
 	setae	dl
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB33_237
-LBB33_236:                              #   in Loop: Header=BB33_224 Depth=1
+	jne	LBB43_238
+LBB43_237:                              #   in Loop: Header=BB43_225 Depth=1
 	cmp	edi, dword ptr [eax + 16]
-	jae	LBB33_242
-LBB33_237:                              #   in Loop: Header=BB33_224 Depth=1
+	jae	LBB43_243
+LBB43_238:                              #   in Loop: Header=BB43_225 Depth=1
 	cmp	dword ptr [esi + 112], 178956970
 	mov	dword ptr [esi + 12], edx       # 4-byte Spill
 	mov	dword ptr [esi + 8], ebx        # 4-byte Spill
 	mov	dword ptr [esi + 344], 15
-	je	LBB33_238
-# %bb.240:                              #   in Loop: Header=BB33_224 Depth=1
+	je	LBB43_239
+# %bb.241:                              #   in Loop: Header=BB43_225 Depth=1
 	push	24
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
-# %bb.241:                              #   in Loop: Header=BB33_224 Depth=1
+# %bb.242:                              #   in Loop: Header=BB43_225 Depth=1
 	mov	ecx, dword ptr [esi]            # 4-byte Reload
 	mov	dword ptr [eax + 16], ecx
 	mov	ecx, dword ptr [esi + 4]        # 4-byte Reload
@@ -8984,7 +12836,7 @@ LBB33_237:                              #   in Loop: Header=BB33_224 Depth=1
 	push	dword ptr [esi + 12]            # 4-byte Folded Reload
 	push	dword ptr [esi + 8]             # 4-byte Folded Reload
 	call	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z"
-LBB33_242:                              #   in Loop: Header=BB33_224 Depth=1
+LBB43_243:                              #   in Loop: Header=BB43_225 Depth=1
 	mov	eax, dword ptr [eax + 20]
 	lea	ecx, [esi + 116]
 	mov	dword ptr [esi + 344], 15
@@ -8993,14 +12845,14 @@ LBB33_242:                              #   in Loop: Header=BB33_224 Depth=1
 	push	ecx
 	call	eax
 	add	esp, 8
-	jmp	LBB33_224
-LBB33_243:
+	jmp	LBB43_225
+LBB43_244:
 	mov	edx, dword ptr [esi + 224]
 	mov	eax, edx
 	and	eax, -4
 	cmp	eax, 2147483644
-	je	LBB33_244
-# %bb.246:
+	je	LBB43_245
+# %bb.247:
 	mov	eax, dword ptr [esi + 120]
 	mov	ecx, dword ptr [esi + 208]
 	lea	ebx, [edx + 4]
@@ -9013,55 +12865,55 @@ LBB33_243:
 	mov	eax, dword ptr [esi + 124]
 	mov	dword ptr [esi + 8], eax        # 4-byte Spill
 	mov	eax, dword ptr [esi + 228]
-	jb	LBB33_256
-# %bb.247:
-	mov	dword ptr [esi + 104], ecx      # 4-byte Spill
+	jb	LBB43_257
+# %bb.248:
+	mov	dword ptr [esi + 44], ecx       # 4-byte Spill
 	mov	ecx, ebx
 	mov	dword ptr [esi + 204], eax      # 4-byte Spill
 	mov	dword ptr [esi + 12], edx       # 4-byte Spill
-	mov	dword ptr [esi + 44], ebx       # 4-byte Spill
+	mov	dword ptr [esi + 104], ebx      # 4-byte Spill
 	or	ecx, 15
-	js	LBB33_248
-# %bb.249:
+	js	LBB43_249
+# %bb.250:
 	cmp	ecx, 22
 	mov	edi, 22
 	mov	dword ptr [esi + 344], 15
 	cmova	edi, ecx
 	lea	eax, [edi + 1]
 	cmp	edi, 4095
-	jb	LBB33_253
-# %bb.250:
+	jb	LBB43_254
+# %bb.251:
 	mov	dword ptr [esi], ecx            # 4-byte Spill
-	jmp	LBB33_251
-LBB33_248:
+	jmp	LBB43_252
+LBB43_249:
 	mov	dword ptr [esi], 2147483647     # 4-byte Folded Spill
 	mov	eax, -2147483648
-LBB33_251:
+LBB43_252:
 	add	eax, 35
 	mov	dword ptr [esi + 344], 15
 	push	eax
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
-# %bb.252:
+# %bb.253:
 	mov	edi, eax
 	add	edi, 35
 	and	edi, -32
 	mov	dword ptr [edi - 4], eax
-	jmp	LBB33_255
-LBB33_253:
+	jmp	LBB43_256
+LBB43_254:
 	mov	dword ptr [esi], edi            # 4-byte Spill
 	push	eax
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
-# %bb.254:
+# %bb.255:
 	mov	edi, eax
-LBB33_255:
-	mov	edx, dword ptr [esi + 12]       # 4-byte Reload
-	mov	ebx, dword ptr [esi + 44]       # 4-byte Reload
-	mov	ecx, dword ptr [esi + 104]      # 4-byte Reload
+LBB43_256:
+	mov	ebx, dword ptr [esi + 104]      # 4-byte Reload
 	mov	eax, dword ptr [esi + 204]      # 4-byte Reload
+	mov	edx, dword ptr [esi + 12]       # 4-byte Reload
+	mov	ecx, dword ptr [esi + 44]       # 4-byte Reload
 	mov	dword ptr [esi + 80], edi
-LBB33_256:
+LBB43_257:
 	cmp	eax, 15
 	lea	eax, [esi + 208]
 	mov	dword ptr [esi + 96], ebx
@@ -9078,10 +12930,10 @@ LBB33_256:
 	mov	byte ptr [edi + ebx + 4], 0
 	lea	ecx, [esi + 80]
 	cmp	dword ptr [esi + 100], 15
-	jbe	LBB33_258
-# %bb.257:
+	jbe	LBB43_259
+# %bb.258:
 	mov	ecx, dword ptr [esi + 80]
-LBB33_258:
+LBB43_259:
 	mov	dword ptr [esi + 344], 18
 	push	dword ptr [esi + 8]             # 4-byte Folded Reload
 	push	dword ptr [esi + 4]             # 4-byte Folded Reload
@@ -9090,78 +12942,78 @@ LBB33_258:
 	push	ecx
 	call	"?saveImage@@YAXPBDPAV?$deque@EV?$allocator@E@std@@@std@@II@Z"
 	add	esp, 16
-# %bb.259:
+# %bb.260:
 	mov	eax, dword ptr [esi + 100]
 	cmp	eax, 16
-	jb	LBB33_130
-# %bb.260:
+	jb	LBB43_131
+# %bb.261:
 	mov	ecx, dword ptr [esi + 80]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB33_266
-# %bb.261:
+	jb	LBB43_267
+# %bb.262:
 	mov	edi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edi
 	cmp	ecx, 32
-	jae	LBB33_262
-# %bb.265:
+	jae	LBB43_263
+# %bb.266:
 	add	eax, 36
 	mov	ecx, edi
 	mov	edx, eax
-LBB33_266:
+LBB43_267:
 	push	edx
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_130:
+LBB43_131:
 	cmp	dword ptr [esi + 32], 0
-	je	LBB33_132
-# %bb.131:
+	je	LBB43_133
+# %bb.132:
 	mov	dword ptr [esi + 28], 0
 	mov	dword ptr [esi + 32], 0
-LBB33_132:
+LBB43_133:
 	mov	eax, dword ptr [esi + 20]
 	mov	edi, dword ptr [esi + 24]
 	.p2align	4, 0x90
-LBB33_133:                              # =>This Inner Loop Header: Depth=1
+LBB43_134:                              # =>This Inner Loop Header: Depth=1
 	test	edi, edi
-	je	LBB33_273
-# %bb.134:                              #   in Loop: Header=BB33_133 Depth=1
+	je	LBB43_274
+# %bb.135:                              #   in Loop: Header=BB43_134 Depth=1
 	mov	ecx, dword ptr [eax + 4*edi - 4]
 	dec	edi
 	test	ecx, ecx
-	je	LBB33_133
-# %bb.135:                              #   in Loop: Header=BB33_133 Depth=1
+	je	LBB43_134
+# %bb.136:                              #   in Loop: Header=BB43_134 Depth=1
 	push	16
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [esi + 20]
-	jmp	LBB33_133
-LBB33_273:
+	jmp	LBB43_134
+LBB43_274:
 	test	eax, eax
-	je	LBB33_281
-# %bb.274:
+	je	LBB43_282
+# %bb.275:
 	mov	ecx, dword ptr [esi + 24]
 	shl	ecx, 2
 	cmp	ecx, 4096
-	jb	LBB33_280
-# %bb.275:
+	jb	LBB43_281
+# %bb.276:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB33_276
-# %bb.279:
+	jae	LBB43_277
+# %bb.280:
 	add	ecx, 35
 	mov	eax, edx
-LBB33_280:
+LBB43_281:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_281:
+LBB43_282:
 	mov	dword ptr [esi + 24], 0
 	mov	dword ptr [esi + 20], 0
 	mov	eax, dword ptr [esi + 16]
@@ -9181,156 +13033,156 @@ LBB33_281:
 	add	esp, 8
 	mov	eax, dword ptr [esi + 324]
 	cmp	eax, 15
-	jbe	LBB33_303
-# %bb.282:
+	jbe	LBB43_304
+# %bb.283:
 	mov	ecx, dword ptr [esi + 304]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB33_302
-# %bb.283:
+	jb	LBB43_303
+# %bb.284:
 	mov	edi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edi
 	cmp	ecx, 32
-	jae	LBB33_284
-# %bb.301:
+	jae	LBB43_285
+# %bb.302:
 	add	eax, 36
 	mov	ecx, edi
 	mov	edx, eax
-LBB33_302:
+LBB43_303:
 	push	edx
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_303:
+LBB43_304:
 	mov	dword ptr [esi + 320], 0
 	mov	dword ptr [esi + 324], 15
 	mov	byte ptr [esi + 304], 0
 	mov	eax, dword ptr [esi + 300]
 	cmp	eax, 15
-	jbe	LBB33_308
-# %bb.304:
+	jbe	LBB43_309
+# %bb.305:
 	mov	ecx, dword ptr [esi + 280]
 	lea	edi, [eax + 1]
 	cmp	edi, 4096
-	jb	LBB33_307
-# %bb.305:
+	jb	LBB43_308
+# %bb.306:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 31
-	ja	LBB33_284
-# %bb.306:
+	ja	LBB43_285
+# %bb.307:
 	add	eax, 36
 	mov	ecx, edx
 	mov	edi, eax
-LBB33_307:
+LBB43_308:
 	push	edi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_308:
+LBB43_309:
 	mov	dword ptr [esi + 296], 0
 	mov	dword ptr [esi + 300], 15
 	mov	byte ptr [esi + 280], 0
 	mov	eax, dword ptr [esi + 276]
 	cmp	eax, 16
-	jb	LBB33_313
-# %bb.309:
+	jb	LBB43_314
+# %bb.310:
 	mov	ecx, dword ptr [esi + 256]
 	lea	edi, [eax + 1]
 	cmp	edi, 4096
-	jb	LBB33_312
-# %bb.310:
+	jb	LBB43_313
+# %bb.311:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 31
-	ja	LBB33_284
-# %bb.311:
+	ja	LBB43_285
+# %bb.312:
 	add	eax, 36
 	mov	ecx, edx
 	mov	edi, eax
-LBB33_312:
+LBB43_313:
 	push	edi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_313:
+LBB43_314:
 	mov	dword ptr [esi + 272], 0
 	mov	dword ptr [esi + 276], 15
 	mov	byte ptr [esi + 256], 0
 	mov	eax, dword ptr [esi + 252]
 	cmp	eax, 16
-	jb	LBB33_318
-# %bb.314:
+	jb	LBB43_319
+# %bb.315:
 	mov	ecx, dword ptr [esi + 232]
 	lea	edi, [eax + 1]
 	cmp	edi, 4096
-	jb	LBB33_317
-# %bb.315:
+	jb	LBB43_318
+# %bb.316:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 31
-	ja	LBB33_284
-# %bb.316:
+	ja	LBB43_285
+# %bb.317:
 	add	eax, 36
 	mov	ecx, edx
 	mov	edi, eax
-LBB33_317:
+LBB43_318:
 	push	edi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_318:
+LBB43_319:
 	cmp	dword ptr [esi + 196], 0
-	je	LBB33_320
-# %bb.319:
+	je	LBB43_321
+# %bb.320:
 	mov	dword ptr [esi + 192], 0
 	mov	dword ptr [esi + 196], 0
-LBB33_320:
+LBB43_321:
 	mov	eax, dword ptr [esi + 184]
 	mov	edi, dword ptr [esi + 188]
 	.p2align	4, 0x90
-LBB33_321:                              # =>This Inner Loop Header: Depth=1
+LBB43_322:                              # =>This Inner Loop Header: Depth=1
 	test	edi, edi
-	je	LBB33_322
-# %bb.327:                              #   in Loop: Header=BB33_321 Depth=1
+	je	LBB43_323
+# %bb.328:                              #   in Loop: Header=BB43_322 Depth=1
 	mov	ecx, dword ptr [eax + 4*edi - 4]
 	dec	edi
 	test	ecx, ecx
-	je	LBB33_321
-# %bb.328:                              #   in Loop: Header=BB33_321 Depth=1
+	je	LBB43_322
+# %bb.329:                              #   in Loop: Header=BB43_322 Depth=1
 	push	16
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [esi + 184]
-	jmp	LBB33_321
-LBB33_322:
+	jmp	LBB43_322
+LBB43_323:
 	test	eax, eax
-	je	LBB33_332
-# %bb.323:
+	je	LBB43_333
+# %bb.324:
 	mov	ecx, dword ptr [esi + 188]
 	shl	ecx, 2
 	cmp	ecx, 4096
-	jb	LBB33_331
-# %bb.324:
+	jb	LBB43_332
+# %bb.325:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB33_325
-# %bb.330:
+	jae	LBB43_326
+# %bb.331:
 	add	ecx, 35
 	mov	eax, edx
-LBB33_331:
+LBB43_332:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_332:
+LBB43_333:
 	mov	dword ptr [esi + 188], 0
 	mov	dword ptr [esi + 184], 0
 	mov	eax, dword ptr [esi + 180]
@@ -9340,52 +13192,52 @@ LBB33_332:
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	cmp	dword ptr [esi + 176], 0
-	je	LBB33_334
-# %bb.333:
+	je	LBB43_335
+# %bb.334:
 	mov	dword ptr [esi + 172], 0
 	mov	dword ptr [esi + 176], 0
-LBB33_334:
+LBB43_335:
 	mov	eax, dword ptr [esi + 164]
 	mov	edi, dword ptr [esi + 168]
 	.p2align	4, 0x90
-LBB33_335:                              # =>This Inner Loop Header: Depth=1
+LBB43_336:                              # =>This Inner Loop Header: Depth=1
 	test	edi, edi
-	je	LBB33_336
-# %bb.341:                              #   in Loop: Header=BB33_335 Depth=1
+	je	LBB43_337
+# %bb.342:                              #   in Loop: Header=BB43_336 Depth=1
 	mov	ecx, dword ptr [eax + 4*edi - 4]
 	dec	edi
 	test	ecx, ecx
-	je	LBB33_335
-# %bb.342:                              #   in Loop: Header=BB33_335 Depth=1
+	je	LBB43_336
+# %bb.343:                              #   in Loop: Header=BB43_336 Depth=1
 	push	16
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [esi + 164]
-	jmp	LBB33_335
-LBB33_336:
+	jmp	LBB43_336
+LBB43_337:
 	test	eax, eax
-	je	LBB33_346
-# %bb.337:
+	je	LBB43_347
+# %bb.338:
 	mov	ecx, dword ptr [esi + 168]
 	shl	ecx, 2
 	cmp	ecx, 4096
-	jb	LBB33_345
-# %bb.338:
+	jb	LBB43_346
+# %bb.339:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB33_339
-# %bb.344:
+	jae	LBB43_340
+# %bb.345:
 	add	ecx, 35
 	mov	eax, edx
-LBB33_345:
+LBB43_346:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_346:
+LBB43_347:
 	mov	dword ptr [esi + 168], 0
 	mov	dword ptr [esi + 164], 0
 	mov	eax, dword ptr [esi + 160]
@@ -9395,52 +13247,52 @@ LBB33_346:
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	cmp	dword ptr [esi + 144], 0
-	je	LBB33_348
-# %bb.347:
+	je	LBB43_349
+# %bb.348:
 	mov	dword ptr [esi + 140], 0
 	mov	dword ptr [esi + 144], 0
-LBB33_348:
+LBB43_349:
 	mov	eax, dword ptr [esi + 132]
 	mov	edi, dword ptr [esi + 136]
 	.p2align	4, 0x90
-LBB33_349:                              # =>This Inner Loop Header: Depth=1
+LBB43_350:                              # =>This Inner Loop Header: Depth=1
 	test	edi, edi
-	je	LBB33_350
-# %bb.355:                              #   in Loop: Header=BB33_349 Depth=1
+	je	LBB43_351
+# %bb.356:                              #   in Loop: Header=BB43_350 Depth=1
 	mov	ecx, dword ptr [eax + 4*edi - 4]
 	dec	edi
 	test	ecx, ecx
-	je	LBB33_349
-# %bb.356:                              #   in Loop: Header=BB33_349 Depth=1
+	je	LBB43_350
+# %bb.357:                              #   in Loop: Header=BB43_350 Depth=1
 	push	16
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [esi + 132]
-	jmp	LBB33_349
-LBB33_350:
+	jmp	LBB43_350
+LBB43_351:
 	test	eax, eax
-	je	LBB33_360
-# %bb.351:
+	je	LBB43_361
+# %bb.352:
 	mov	ecx, dword ptr [esi + 136]
 	shl	ecx, 2
 	cmp	ecx, 4096
-	jb	LBB33_359
-# %bb.352:
+	jb	LBB43_360
+# %bb.353:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB33_353
-# %bb.358:
+	jae	LBB43_354
+# %bb.359:
 	add	ecx, 35
 	mov	eax, edx
-LBB33_359:
+LBB43_360:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_360:
+LBB43_361:
 	mov	dword ptr [esi + 136], 0
 	mov	dword ptr [esi + 132], 0
 	mov	eax, dword ptr [esi + 128]
@@ -9450,52 +13302,52 @@ LBB33_360:
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	cmp	dword ptr [esi + 64], 0
-	je	LBB33_362
-# %bb.361:
+	je	LBB43_363
+# %bb.362:
 	mov	dword ptr [esi + 60], 0
 	mov	dword ptr [esi + 64], 0
-LBB33_362:
+LBB43_363:
 	mov	eax, dword ptr [esi + 52]
 	mov	edi, dword ptr [esi + 56]
 	.p2align	4, 0x90
-LBB33_363:                              # =>This Inner Loop Header: Depth=1
+LBB43_364:                              # =>This Inner Loop Header: Depth=1
 	test	edi, edi
-	je	LBB33_364
-# %bb.369:                              #   in Loop: Header=BB33_363 Depth=1
+	je	LBB43_365
+# %bb.370:                              #   in Loop: Header=BB43_364 Depth=1
 	mov	ecx, dword ptr [eax + 4*edi - 4]
 	dec	edi
 	test	ecx, ecx
-	je	LBB33_363
-# %bb.370:                              #   in Loop: Header=BB33_363 Depth=1
+	je	LBB43_364
+# %bb.371:                              #   in Loop: Header=BB43_364 Depth=1
 	push	16
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [esi + 52]
-	jmp	LBB33_363
-LBB33_364:
+	jmp	LBB43_364
+LBB43_365:
 	test	eax, eax
-	je	LBB33_374
-# %bb.365:
+	je	LBB43_375
+# %bb.366:
 	mov	ecx, dword ptr [esi + 56]
 	shl	ecx, 2
 	cmp	ecx, 4096
-	jb	LBB33_373
-# %bb.366:
+	jb	LBB43_374
+# %bb.367:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB33_367
-# %bb.372:
+	jae	LBB43_368
+# %bb.373:
 	add	ecx, 35
 	mov	eax, edx
-LBB33_373:
+LBB43_374:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_374:
+LBB43_375:
 	mov	dword ptr [esi + 56], 0
 	mov	dword ptr [esi + 52], 0
 	mov	eax, dword ptr [esi + 48]
@@ -9506,28 +13358,28 @@ LBB33_374:
 	add	esp, 8
 	mov	eax, dword ptr [esi + 228]
 	cmp	eax, 16
-	jb	LBB33_382
-# %bb.375:
+	jb	LBB43_383
+# %bb.376:
 	mov	ecx, dword ptr [esi + 208]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB33_381
-# %bb.376:
+	jb	LBB43_382
+# %bb.377:
 	mov	edi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edi
 	cmp	ecx, 32
-	jae	LBB33_377
-# %bb.380:
+	jae	LBB43_378
+# %bb.381:
 	add	eax, 36
 	mov	ecx, edi
 	mov	edx, eax
-LBB33_381:
+LBB43_382:
 	push	edx
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_382:
+LBB43_383:
 	mov	eax, dword ptr [esi + 336]
 	mov	dword ptr fs:[0], eax
 	xor	eax, eax
@@ -9537,126 +13389,126 @@ LBB33_382:
 	pop	ebx
 	pop	ebp
 	ret
-LBB33_154:
+LBB43_155:
 	mov	dword ptr [esi + 344], 2
 	call	__invalid_parameter_noinfo_noreturn
-# %bb.155:
-LBB33_238:
+# %bb.156:
+LBB43_239:
 	call	"?_Throw_tree_length_error@std@@YAXXZ"
-# %bb.239:
-LBB33_284:
+# %bb.240:
+LBB43_285:
 	mov	dword ptr [esi + 344], 5
 	call	__invalid_parameter_noinfo_noreturn
-# %bb.285:
-LBB33_276:
+# %bb.286:
+LBB43_277:
 	mov	dword ptr [esi + 344], 4
 	call	__invalid_parameter_noinfo_noreturn
-# %bb.277:
-LBB33_325:
+# %bb.278:
+LBB43_326:
 	mov	dword ptr [esi + 344], 6
 	call	__invalid_parameter_noinfo_noreturn
-# %bb.326:
-LBB33_339:
+# %bb.327:
+LBB43_340:
 	mov	dword ptr [esi + 344], 7
 	call	__invalid_parameter_noinfo_noreturn
-# %bb.340:
-LBB33_353:
+# %bb.341:
+LBB43_354:
 	mov	dword ptr [esi + 344], 8
 	call	__invalid_parameter_noinfo_noreturn
-# %bb.354:
-LBB33_367:
+# %bb.355:
+LBB43_368:
 	mov	dword ptr [esi + 344], 9
 	call	__invalid_parameter_noinfo_noreturn
-# %bb.368:
-LBB33_244:
+# %bb.369:
+LBB43_245:
 	mov	dword ptr [esi + 344], 15
 	call	"?_Xlen_string@std@@YAXXZ"
-# %bb.245:
-LBB33_377:
+# %bb.246:
+LBB43_378:
 	mov	dword ptr [esi + 344], 10
 	call	__invalid_parameter_noinfo_noreturn
-# %bb.378:
-LBB33_25:
+# %bb.379:
+LBB43_26:
 	mov	dword ptr [esi + 344], 0
 	call	__invalid_parameter_noinfo_noreturn
-# %bb.26:
-LBB33_88:
+# %bb.27:
+LBB43_89:
 	mov	dword ptr [esi + 344], 1
 	call	__invalid_parameter_noinfo_noreturn
-# %bb.89:
-LBB33_262:
+# %bb.90:
+LBB43_263:
 	mov	dword ptr [esi + 344], 3
 	call	__invalid_parameter_noinfo_noreturn
-# %bb.263:
-	.def	 "?dtor$29@?0?main@4HA";
+# %bb.264:
+	.def	 "?dtor$30@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$29@?0?main@4HA":
-LBB33_29:
+"?dtor$30@?0?main@4HA":
+LBB43_30:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	call	___std_terminate
-	.def	 "?dtor$72@?0?main@4HA";
+	.def	 "?dtor$73@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$72@?0?main@4HA":
-LBB33_72:
+"?dtor$73@?0?main@4HA":
+LBB43_73:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	cmp	dword ptr [esi + 96], 0
-	je	LBB33_74
-# %bb.73:
+	je	LBB43_75
+# %bb.74:
 	mov	dword ptr [esi + 92], 0
 	mov	dword ptr [esi + 96], 0
-LBB33_74:
+LBB43_75:
 	mov	eax, dword ptr [esi + 84]
 	mov	edi, dword ptr [esi + 88]
-LBB33_75:                               # =>This Inner Loop Header: Depth=1
+LBB43_76:                               # =>This Inner Loop Header: Depth=1
 	test	edi, edi
-	je	LBB33_76
-# %bb.80:                               #   in Loop: Header=BB33_75 Depth=1
+	je	LBB43_77
+# %bb.81:                               #   in Loop: Header=BB43_76 Depth=1
 	mov	ecx, dword ptr [eax + 4*edi - 4]
 	dec	edi
 	test	ecx, ecx
-	je	LBB33_75
-# %bb.81:                               #   in Loop: Header=BB33_75 Depth=1
+	je	LBB43_76
+# %bb.82:                               #   in Loop: Header=BB43_76 Depth=1
 	push	16
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [esi + 84]
-	jmp	LBB33_75
-LBB33_76:
+	jmp	LBB43_76
+LBB43_77:
 	test	eax, eax
-	je	LBB33_84
-# %bb.77:
+	je	LBB43_85
+# %bb.78:
 	mov	ecx, dword ptr [esi + 88]
 	shl	ecx, 2
 	cmp	ecx, 4096
-	jb	LBB33_83
-# %bb.78:
+	jb	LBB43_84
+# %bb.79:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB33_79
-# %bb.82:
+	jae	LBB43_80
+# %bb.83:
 	add	ecx, 35
 	mov	eax, edx
-LBB33_83:
+LBB43_84:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_84:
+LBB43_85:
 	mov	dword ptr [esi + 88], 0
 	mov	dword ptr [esi + 84], 0
 	push	8
@@ -9665,199 +13517,199 @@ LBB33_84:
 	add	esp, 24
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB33_79:
+LBB43_80:
 	call	__invalid_parameter_noinfo_noreturn
-	.def	 "?dtor$90@?0?main@4HA";
+	.def	 "?dtor$91@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$90@?0?main@4HA":
-LBB33_90:
+"?dtor$91@?0?main@4HA":
+LBB43_91:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	call	___std_terminate
-	.def	 "?dtor$156@?0?main@4HA";
+	.def	 "?dtor$157@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$156@?0?main@4HA":
-LBB33_156:
+"?dtor$157@?0?main@4HA":
+LBB43_157:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	call	___std_terminate
-	.def	 "?dtor$161@?0?main@4HA";
+	.def	 "?dtor$162@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$161@?0?main@4HA":
-LBB33_161:
+"?dtor$162@?0?main@4HA":
+LBB43_162:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	mov	eax, dword ptr [esi + 100]
 	cmp	eax, 16
-	jb	LBB33_166
-# %bb.162:
-	mov	ecx, dword ptr [esi + 80]
-	lea	edi, [eax + 1]
-	cmp	edi, 4096
-	jb	LBB33_165
+	jb	LBB43_167
 # %bb.163:
+	mov	ecx, dword ptr [esi + 80]
+	lea	edi, [eax + 1]
+	cmp	edi, 4096
+	jb	LBB43_166
+# %bb.164:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB33_456
-# %bb.164:
+	jae	LBB43_457
+# %bb.165:
 	add	eax, 36
 	mov	ecx, edx
 	mov	edi, eax
-LBB33_165:
+LBB43_166:
 	push	edi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_166:
+LBB43_167:
 	mov	dword ptr [esi + 96], 0
 	mov	dword ptr [esi + 100], 15
 	mov	byte ptr [esi + 80], 0
 	add	esp, 16
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB33_456:
+LBB43_457:
 	call	__invalid_parameter_noinfo_noreturn
-	.def	 "?dtor$264@?0?main@4HA";
+	.def	 "?dtor$265@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$264@?0?main@4HA":
-LBB33_264:
+"?dtor$265@?0?main@4HA":
+LBB43_265:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	call	___std_terminate
-	.def	 "?dtor$267@?0?main@4HA";
+	.def	 "?dtor$268@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$267@?0?main@4HA":
-LBB33_267:
+"?dtor$268@?0?main@4HA":
+LBB43_268:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	mov	eax, dword ptr [esi + 100]
 	cmp	eax, 16
-	jb	LBB33_272
-# %bb.268:
+	jb	LBB43_273
+# %bb.269:
 	mov	ecx, dword ptr [esi + 80]
 	lea	edi, [eax + 1]
 	cmp	edi, 4096
-	jb	LBB33_271
-# %bb.269:
+	jb	LBB43_272
+# %bb.270:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB33_457
-# %bb.270:
+	jae	LBB43_458
+# %bb.271:
 	add	eax, 36
 	mov	ecx, edx
 	mov	edi, eax
-LBB33_271:
+LBB43_272:
 	push	edi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_272:
+LBB43_273:
 	mov	dword ptr [esi + 96], 0
 	mov	dword ptr [esi + 100], 15
 	mov	byte ptr [esi + 80], 0
 	add	esp, 16
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB33_457:
+LBB43_458:
 	call	__invalid_parameter_noinfo_noreturn
-	.def	 "?dtor$278@?0?main@4HA";
+	.def	 "?dtor$279@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$278@?0?main@4HA":
-LBB33_278:
+"?dtor$279@?0?main@4HA":
+LBB43_279:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	call	___std_terminate
-	.def	 "?dtor$286@?0?main@4HA";
+	.def	 "?dtor$287@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$286@?0?main@4HA":
-LBB33_286:
+"?dtor$287@?0?main@4HA":
+LBB43_287:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	cmp	dword ptr [esi + 32], 0
-	je	LBB33_288
-# %bb.287:
+	je	LBB43_289
+# %bb.288:
 	mov	dword ptr [esi + 28], 0
 	mov	dword ptr [esi + 32], 0
-LBB33_288:
+LBB43_289:
 	mov	eax, dword ptr [esi + 20]
 	mov	edi, dword ptr [esi + 24]
-LBB33_289:                              # =>This Inner Loop Header: Depth=1
+LBB43_290:                              # =>This Inner Loop Header: Depth=1
 	test	edi, edi
-	je	LBB33_290
-# %bb.294:                              #   in Loop: Header=BB33_289 Depth=1
+	je	LBB43_291
+# %bb.295:                              #   in Loop: Header=BB43_290 Depth=1
 	mov	ecx, dword ptr [eax + 4*edi - 4]
 	dec	edi
 	test	ecx, ecx
-	je	LBB33_289
-# %bb.295:                              #   in Loop: Header=BB33_289 Depth=1
+	je	LBB43_290
+# %bb.296:                              #   in Loop: Header=BB43_290 Depth=1
 	push	16
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [esi + 20]
-	jmp	LBB33_289
-LBB33_290:
+	jmp	LBB43_290
+LBB43_291:
 	test	eax, eax
-	je	LBB33_298
-# %bb.291:
+	je	LBB43_299
+# %bb.292:
 	mov	ecx, dword ptr [esi + 24]
 	shl	ecx, 2
 	cmp	ecx, 4096
-	jb	LBB33_297
-# %bb.292:
+	jb	LBB43_298
+# %bb.293:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB33_293
-# %bb.296:
+	jae	LBB43_294
+# %bb.297:
 	add	ecx, 35
 	mov	eax, edx
-LBB33_297:
+LBB43_298:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_298:
+LBB43_299:
 	mov	dword ptr [esi + 24], 0
 	mov	dword ptr [esi + 20], 0
 	mov	eax, dword ptr [esi + 16]
@@ -9868,15 +13720,15 @@ LBB33_298:
 	add	esp, 24
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB33_293:
+LBB43_294:
 	call	__invalid_parameter_noinfo_noreturn
-	.def	 "?dtor$299@?0?main@4HA";
+	.def	 "?dtor$300@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$299@?0?main@4HA":
-LBB33_299:
+"?dtor$300@?0?main@4HA":
+LBB43_300:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
@@ -9892,240 +13744,240 @@ LBB33_299:
 	add	esp, 24
 	pop	ebp
 	ret                                     # CLEANUPRET
-	.def	 "?dtor$300@?0?main@4HA";
+	.def	 "?dtor$301@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$300@?0?main@4HA":
-LBB33_300:
+"?dtor$301@?0?main@4HA":
+LBB43_301:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	call	___std_terminate
-	.def	 "?dtor$329@?0?main@4HA";
+	.def	 "?dtor$330@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$329@?0?main@4HA":
-LBB33_329:
+"?dtor$330@?0?main@4HA":
+LBB43_330:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	call	___std_terminate
-	.def	 "?dtor$343@?0?main@4HA";
+	.def	 "?dtor$344@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$343@?0?main@4HA":
-LBB33_343:
+"?dtor$344@?0?main@4HA":
+LBB43_344:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	call	___std_terminate
-	.def	 "?dtor$357@?0?main@4HA";
+	.def	 "?dtor$358@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$357@?0?main@4HA":
-LBB33_357:
+"?dtor$358@?0?main@4HA":
+LBB43_358:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	call	___std_terminate
-	.def	 "?dtor$371@?0?main@4HA";
+	.def	 "?dtor$372@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$371@?0?main@4HA":
-LBB33_371:
+"?dtor$372@?0?main@4HA":
+LBB43_372:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	call	___std_terminate
-	.def	 "?dtor$379@?0?main@4HA";
+	.def	 "?dtor$380@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$379@?0?main@4HA":
-LBB33_379:
+"?dtor$380@?0?main@4HA":
+LBB43_380:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	call	___std_terminate
-	.def	 "?dtor$383@?0?main@4HA";
+	.def	 "?dtor$384@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$383@?0?main@4HA":
-LBB33_383:
+"?dtor$384@?0?main@4HA":
+LBB43_384:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	mov	eax, dword ptr [esi + 324]
 	cmp	eax, 15
-	jbe	LBB33_388
-# %bb.384:
+	jbe	LBB43_389
+# %bb.385:
 	mov	ecx, dword ptr [esi + 304]
 	lea	edi, [eax + 1]
 	cmp	edi, 4096
-	jb	LBB33_387
-# %bb.385:
+	jb	LBB43_388
+# %bb.386:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB33_458
-# %bb.386:
+	jae	LBB43_459
+# %bb.387:
 	add	eax, 36
 	mov	ecx, edx
 	mov	edi, eax
-LBB33_387:
+LBB43_388:
 	push	edi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_388:
+LBB43_389:
 	mov	dword ptr [esi + 320], 0
 	mov	dword ptr [esi + 324], 15
 	mov	byte ptr [esi + 304], 0
 	mov	eax, dword ptr [esi + 300]
 	cmp	eax, 15
-	jbe	LBB33_393
-# %bb.389:
+	jbe	LBB43_394
+# %bb.390:
 	mov	ecx, dword ptr [esi + 280]
 	lea	edi, [eax + 1]
 	cmp	edi, 4096
-	jb	LBB33_392
-# %bb.390:
+	jb	LBB43_393
+# %bb.391:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 31
-	ja	LBB33_458
-# %bb.391:
+	ja	LBB43_459
+# %bb.392:
 	add	eax, 36
 	mov	ecx, edx
 	mov	edi, eax
-LBB33_392:
+LBB43_393:
 	push	edi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_393:
+LBB43_394:
 	mov	dword ptr [esi + 296], 0
 	mov	dword ptr [esi + 300], 15
 	mov	byte ptr [esi + 280], 0
 	mov	eax, dword ptr [esi + 276]
 	cmp	eax, 16
-	jb	LBB33_398
-# %bb.394:
+	jb	LBB43_399
+# %bb.395:
 	mov	ecx, dword ptr [esi + 256]
 	lea	edi, [eax + 1]
 	cmp	edi, 4096
-	jb	LBB33_397
-# %bb.395:
+	jb	LBB43_398
+# %bb.396:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 31
-	ja	LBB33_458
-# %bb.396:
+	ja	LBB43_459
+# %bb.397:
 	add	eax, 36
 	mov	ecx, edx
 	mov	edi, eax
-LBB33_397:
+LBB43_398:
 	push	edi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_398:
+LBB43_399:
 	mov	dword ptr [esi + 272], 0
 	mov	dword ptr [esi + 276], 15
 	mov	byte ptr [esi + 256], 0
 	mov	eax, dword ptr [esi + 252]
 	cmp	eax, 16
-	jb	LBB33_403
-# %bb.399:
+	jb	LBB43_404
+# %bb.400:
 	mov	ecx, dword ptr [esi + 232]
 	lea	edi, [eax + 1]
 	cmp	edi, 4096
-	jb	LBB33_402
-# %bb.400:
+	jb	LBB43_403
+# %bb.401:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 31
-	ja	LBB33_458
-# %bb.401:
+	ja	LBB43_459
+# %bb.402:
 	add	eax, 36
 	mov	ecx, edx
 	mov	edi, eax
-LBB33_402:
+LBB43_403:
 	push	edi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_403:
+LBB43_404:
 	cmp	dword ptr [esi + 196], 0
-	je	LBB33_405
-# %bb.404:
+	je	LBB43_406
+# %bb.405:
 	mov	dword ptr [esi + 192], 0
 	mov	dword ptr [esi + 196], 0
-LBB33_405:
+LBB43_406:
 	mov	eax, dword ptr [esi + 184]
 	mov	edi, dword ptr [esi + 188]
-LBB33_406:                              # =>This Inner Loop Header: Depth=1
+LBB43_407:                              # =>This Inner Loop Header: Depth=1
 	test	edi, edi
-	je	LBB33_407
-# %bb.418:                              #   in Loop: Header=BB33_406 Depth=1
+	je	LBB43_408
+# %bb.419:                              #   in Loop: Header=BB43_407 Depth=1
 	mov	ecx, dword ptr [eax + 4*edi - 4]
 	dec	edi
 	test	ecx, ecx
-	je	LBB33_406
-# %bb.419:                              #   in Loop: Header=BB33_406 Depth=1
+	je	LBB43_407
+# %bb.420:                              #   in Loop: Header=BB43_407 Depth=1
 	push	16
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [esi + 184]
-	jmp	LBB33_406
-LBB33_407:
+	jmp	LBB43_407
+LBB43_408:
 	test	eax, eax
-	je	LBB33_412
-# %bb.408:
+	je	LBB43_413
+# %bb.409:
 	mov	ecx, dword ptr [esi + 188]
 	shl	ecx, 2
 	cmp	ecx, 4096
-	jb	LBB33_411
-# %bb.409:
+	jb	LBB43_412
+# %bb.410:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB33_458
-# %bb.410:
+	jae	LBB43_459
+# %bb.411:
 	add	ecx, 35
 	mov	eax, edx
-LBB33_411:
+LBB43_412:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_412:
+LBB43_413:
 	mov	dword ptr [esi + 188], 0
 	mov	dword ptr [esi + 184], 0
 	mov	eax, dword ptr [esi + 180]
@@ -10135,51 +13987,51 @@ LBB33_412:
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	cmp	dword ptr [esi + 176], 0
-	je	LBB33_414
-# %bb.413:
+	je	LBB43_415
+# %bb.414:
 	mov	dword ptr [esi + 172], 0
 	mov	dword ptr [esi + 176], 0
-LBB33_414:
+LBB43_415:
 	mov	eax, dword ptr [esi + 164]
 	mov	edi, dword ptr [esi + 168]
-LBB33_415:                              # =>This Inner Loop Header: Depth=1
+LBB43_416:                              # =>This Inner Loop Header: Depth=1
 	test	edi, edi
-	je	LBB33_420
-# %bb.416:                              #   in Loop: Header=BB33_415 Depth=1
+	je	LBB43_421
+# %bb.417:                              #   in Loop: Header=BB43_416 Depth=1
 	mov	ecx, dword ptr [eax + 4*edi - 4]
 	dec	edi
 	test	ecx, ecx
-	je	LBB33_415
-# %bb.417:                              #   in Loop: Header=BB33_415 Depth=1
+	je	LBB43_416
+# %bb.418:                              #   in Loop: Header=BB43_416 Depth=1
 	push	16
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [esi + 164]
-	jmp	LBB33_415
-LBB33_420:
+	jmp	LBB43_416
+LBB43_421:
 	test	eax, eax
-	je	LBB33_425
-# %bb.421:
+	je	LBB43_426
+# %bb.422:
 	mov	ecx, dword ptr [esi + 168]
 	shl	ecx, 2
 	cmp	ecx, 4096
-	jb	LBB33_424
-# %bb.422:
+	jb	LBB43_425
+# %bb.423:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB33_458
-# %bb.423:
+	jae	LBB43_459
+# %bb.424:
 	add	ecx, 35
 	mov	eax, edx
-LBB33_424:
+LBB43_425:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_425:
+LBB43_426:
 	mov	dword ptr [esi + 168], 0
 	mov	dword ptr [esi + 164], 0
 	mov	eax, dword ptr [esi + 160]
@@ -10189,51 +14041,51 @@ LBB33_425:
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	cmp	dword ptr [esi + 144], 0
-	je	LBB33_427
-# %bb.426:
+	je	LBB43_428
+# %bb.427:
 	mov	dword ptr [esi + 140], 0
 	mov	dword ptr [esi + 144], 0
-LBB33_427:
+LBB43_428:
 	mov	eax, dword ptr [esi + 132]
 	mov	edi, dword ptr [esi + 136]
-LBB33_428:                              # =>This Inner Loop Header: Depth=1
+LBB43_429:                              # =>This Inner Loop Header: Depth=1
 	test	edi, edi
-	je	LBB33_429
-# %bb.435:                              #   in Loop: Header=BB33_428 Depth=1
+	je	LBB43_430
+# %bb.436:                              #   in Loop: Header=BB43_429 Depth=1
 	mov	ecx, dword ptr [eax + 4*edi - 4]
 	dec	edi
 	test	ecx, ecx
-	je	LBB33_428
-# %bb.436:                              #   in Loop: Header=BB33_428 Depth=1
+	je	LBB43_429
+# %bb.437:                              #   in Loop: Header=BB43_429 Depth=1
 	push	16
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [esi + 132]
-	jmp	LBB33_428
-LBB33_429:
+	jmp	LBB43_429
+LBB43_430:
 	test	eax, eax
-	je	LBB33_434
-# %bb.430:
+	je	LBB43_435
+# %bb.431:
 	mov	ecx, dword ptr [esi + 136]
 	shl	ecx, 2
 	cmp	ecx, 4096
-	jb	LBB33_433
-# %bb.431:
+	jb	LBB43_434
+# %bb.432:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB33_458
-# %bb.432:
+	jae	LBB43_459
+# %bb.433:
 	add	ecx, 35
 	mov	eax, edx
-LBB33_433:
+LBB43_434:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_434:
+LBB43_435:
 	mov	dword ptr [esi + 136], 0
 	mov	dword ptr [esi + 132], 0
 	mov	eax, dword ptr [esi + 128]
@@ -10244,65 +14096,65 @@ LBB33_434:
 	add	esp, 24
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB33_458:
+LBB43_459:
 	call	__invalid_parameter_noinfo_noreturn
-	.def	 "?dtor$437@?0?main@4HA";
+	.def	 "?dtor$438@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$437@?0?main@4HA":
-LBB33_437:
+"?dtor$438@?0?main@4HA":
+LBB43_438:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	cmp	dword ptr [esi + 64], 0
-	je	LBB33_439
-# %bb.438:
+	je	LBB43_440
+# %bb.439:
 	mov	dword ptr [esi + 60], 0
 	mov	dword ptr [esi + 64], 0
-LBB33_439:
+LBB43_440:
 	mov	eax, dword ptr [esi + 52]
 	mov	edi, dword ptr [esi + 56]
-LBB33_440:                              # =>This Inner Loop Header: Depth=1
+LBB43_441:                              # =>This Inner Loop Header: Depth=1
 	test	edi, edi
-	je	LBB33_441
-# %bb.445:                              #   in Loop: Header=BB33_440 Depth=1
+	je	LBB43_442
+# %bb.446:                              #   in Loop: Header=BB43_441 Depth=1
 	mov	ecx, dword ptr [eax + 4*edi - 4]
 	dec	edi
 	test	ecx, ecx
-	je	LBB33_440
-# %bb.446:                              #   in Loop: Header=BB33_440 Depth=1
+	je	LBB43_441
+# %bb.447:                              #   in Loop: Header=BB43_441 Depth=1
 	push	16
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [esi + 52]
-	jmp	LBB33_440
-LBB33_441:
+	jmp	LBB43_441
+LBB43_442:
 	test	eax, eax
-	je	LBB33_449
-# %bb.442:
+	je	LBB43_450
+# %bb.443:
 	mov	ecx, dword ptr [esi + 56]
 	shl	ecx, 2
 	cmp	ecx, 4096
-	jb	LBB33_448
-# %bb.443:
+	jb	LBB43_449
+# %bb.444:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB33_444
-# %bb.447:
+	jae	LBB43_445
+# %bb.448:
 	add	ecx, 35
 	mov	eax, edx
-LBB33_448:
+LBB43_449:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_449:
+LBB43_450:
 	mov	dword ptr [esi + 56], 0
 	mov	dword ptr [esi + 52], 0
 	mov	eax, dword ptr [esi + 48]
@@ -10313,49 +14165,49 @@ LBB33_449:
 	add	esp, 24
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB33_444:
+LBB43_445:
 	call	__invalid_parameter_noinfo_noreturn
-	.def	 "?dtor$450@?0?main@4HA";
+	.def	 "?dtor$451@?0?main@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$450@?0?main@4HA":
-LBB33_450:
+"?dtor$451@?0?main@4HA":
+LBB43_451:
 	push	ebp
 	sub	esp, 16
 	lea	esi, [ebp - 348]
 	mov	ebp, dword ptr [esi + 328]
 	mov	eax, dword ptr [esi + 228]
 	cmp	eax, 16
-	jb	LBB33_455
-# %bb.451:
+	jb	LBB43_456
+# %bb.452:
 	mov	ecx, dword ptr [esi + 208]
 	lea	edi, [eax + 1]
 	cmp	edi, 4096
-	jb	LBB33_454
-# %bb.452:
+	jb	LBB43_455
+# %bb.453:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB33_459
-# %bb.453:
+	jae	LBB43_460
+# %bb.454:
 	add	eax, 36
 	mov	ecx, edx
 	mov	edi, eax
-LBB33_454:
+LBB43_455:
 	push	edi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB33_455:
+LBB43_456:
 	add	esp, 16
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB33_459:
+LBB43_460:
 	call	__invalid_parameter_noinfo_noreturn
-Lfunc_end10:
+Lfunc_end14:
 	.section	.xdata,"dr"
 	.p2align	2
 L__ehtable$main:
@@ -10370,43 +14222,43 @@ L__ehtable$main:
 	.long	1                               # EHFlags
 $stateUnwindMap$main:
 	.long	-1                              # ToState
-	.long	"?dtor$29@?0?main@4HA"          # Action
+	.long	"?dtor$30@?0?main@4HA"          # Action
 	.long	-1                              # ToState
-	.long	"?dtor$90@?0?main@4HA"          # Action
+	.long	"?dtor$91@?0?main@4HA"          # Action
 	.long	-1                              # ToState
-	.long	"?dtor$156@?0?main@4HA"         # Action
+	.long	"?dtor$157@?0?main@4HA"         # Action
 	.long	-1                              # ToState
-	.long	"?dtor$264@?0?main@4HA"         # Action
+	.long	"?dtor$265@?0?main@4HA"         # Action
 	.long	-1                              # ToState
-	.long	"?dtor$278@?0?main@4HA"         # Action
+	.long	"?dtor$279@?0?main@4HA"         # Action
 	.long	-1                              # ToState
-	.long	"?dtor$300@?0?main@4HA"         # Action
+	.long	"?dtor$301@?0?main@4HA"         # Action
 	.long	-1                              # ToState
-	.long	"?dtor$329@?0?main@4HA"         # Action
+	.long	"?dtor$330@?0?main@4HA"         # Action
 	.long	-1                              # ToState
-	.long	"?dtor$343@?0?main@4HA"         # Action
+	.long	"?dtor$344@?0?main@4HA"         # Action
 	.long	-1                              # ToState
-	.long	"?dtor$357@?0?main@4HA"         # Action
+	.long	"?dtor$358@?0?main@4HA"         # Action
 	.long	-1                              # ToState
-	.long	"?dtor$371@?0?main@4HA"         # Action
+	.long	"?dtor$372@?0?main@4HA"         # Action
 	.long	-1                              # ToState
-	.long	"?dtor$379@?0?main@4HA"         # Action
+	.long	"?dtor$380@?0?main@4HA"         # Action
 	.long	-1                              # ToState
-	.long	"?dtor$450@?0?main@4HA"         # Action
+	.long	"?dtor$451@?0?main@4HA"         # Action
 	.long	11                              # ToState
-	.long	"?dtor$437@?0?main@4HA"         # Action
+	.long	"?dtor$438@?0?main@4HA"         # Action
 	.long	12                              # ToState
-	.long	"?dtor$383@?0?main@4HA"         # Action
+	.long	"?dtor$384@?0?main@4HA"         # Action
 	.long	13                              # ToState
-	.long	"?dtor$299@?0?main@4HA"         # Action
+	.long	"?dtor$300@?0?main@4HA"         # Action
 	.long	14                              # ToState
-	.long	"?dtor$286@?0?main@4HA"         # Action
+	.long	"?dtor$287@?0?main@4HA"         # Action
 	.long	15                              # ToState
-	.long	"?dtor$161@?0?main@4HA"         # Action
+	.long	"?dtor$162@?0?main@4HA"         # Action
 	.long	15                              # ToState
-	.long	"?dtor$72@?0?main@4HA"          # Action
+	.long	"?dtor$73@?0?main@4HA"          # Action
 	.long	15                              # ToState
-	.long	"?dtor$267@?0?main@4HA"         # Action
+	.long	"?dtor$268@?0?main@4HA"         # Action
 	.text
                                         # -- End function
 	.def	 "??0fileInfo@@QAE@XZ";
@@ -10417,7 +14269,7 @@ $stateUnwindMap$main:
 	.globl	"??0fileInfo@@QAE@XZ"           # -- Begin function ??0fileInfo@@QAE@XZ
 	.p2align	4, 0x90
 "??0fileInfo@@QAE@XZ":                  # @"??0fileInfo@@QAE@XZ"
-Lfunc_begin11:
+Lfunc_begin15:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -10495,7 +14347,7 @@ Lfunc_begin11:
 	.endef
 	.p2align	4, 0x90
 "?dtor$3@?0???0fileInfo@@QAE@XZ@4HA":
-LBB34_3:
+LBB44_3:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
@@ -10516,7 +14368,7 @@ LBB34_3:
 	.endef
 	.p2align	4, 0x90
 "?dtor$4@?0???0fileInfo@@QAE@XZ@4HA":
-LBB34_4:
+LBB44_4:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
@@ -10531,7 +14383,7 @@ LBB34_4:
 	add	esp, 16
 	pop	ebp
 	ret                                     # CLEANUPRET
-Lfunc_end11:
+Lfunc_end15:
 	.section	.xdata,"dr",associative,"??0fileInfo@@QAE@XZ"
 	.p2align	2
 "L__ehtable$??0fileInfo@@QAE@XZ":
@@ -10550,383 +14402,6 @@ Lfunc_end11:
 	.long	0                               # ToState
 	.long	"?dtor$3@?0???0fileInfo@@QAE@XZ@4HA" # Action
 	.section	.text,"xr",discard,"??0fileInfo@@QAE@XZ"
-                                        # -- End function
-	.def	 "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z";
-	.scl	2;
-	.type	32;
-	.endef
-	.section	.text,"xr",discard,"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
-	.globl	"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z" # -- Begin function ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z
-	.p2align	4, 0x90
-"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z": # @"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
-Lfunc_begin12:
-# %bb.0:
-	push	ebp
-	mov	ebp, esp
-	push	ebx
-	push	edi
-	push	esi
-	sub	esp, 64
-	mov	dword ptr [ebp - 28], esp
-	mov	dword ptr [ebp - 16], -1
-	mov	dword ptr [ebp - 20], offset "___ehhandler$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
-	mov	esi, ecx
-	lea	eax, [ebp - 24]
-	mov	ecx, dword ptr fs:[0]
-	mov	dword ptr [ebp - 24], ecx
-	mov	dword ptr fs:[0], eax
-	mov	dword ptr [ebp - 40], esi
-	mov	eax, dword ptr [esi]
-	mov	edx, dword ptr [eax + 4]
-	mov	ecx, dword ptr [esi + edx + 56]
-	test	ecx, ecx
-	je	LBB35_2
-# %bb.1:
-	mov	eax, dword ptr [ecx]
-	call	dword ptr [eax + 4]
-	mov	eax, dword ptr [esi]
-	mov	edx, dword ptr [eax + 4]
-LBB35_2:
-	cmp	dword ptr [esi + edx + 12], 0
-	mov	dword ptr [ebp - 32], esi       # 4-byte Spill
-	je	LBB35_9
-# %bb.3:
-	xor	edi, edi
-	mov	byte ptr [ebp - 36], 0
-	jmp	LBB35_4
-LBB35_9:
-	mov	ecx, dword ptr [esi + edx + 60]
-	test	ecx, ecx
-	je	LBB35_11
-# %bb.10:
-	cmp	ecx, esi
-	je	LBB35_11
-# %bb.15:
-	mov	dword ptr [ebp - 16], 0
-	call	"?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ"
-# %bb.16:
-	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-	xor	edi, edi
-	mov	eax, dword ptr [esi]
-	mov	ecx, dword ptr [eax + 4]
-	cmp	dword ptr [esi + ecx + 12], 0
-	sete	byte ptr [ebp - 36]
-	jne	LBB35_4
-	jmp	LBB35_17
-LBB35_11:
-	mov	byte ptr [ebp - 36], 1
-LBB35_17:
-	mov	eax, dword ptr [eax + 4]
-	mov	eax, dword ptr [esi + eax + 48]
-	mov	ecx, dword ptr [eax + 4]
-	mov	dword ptr [ebp - 64], ecx
-	mov	eax, dword ptr [ecx]
-	call	dword ptr [eax + 4]
-	lea	eax, [ebp - 68]
-	mov	dword ptr [ebp - 16], 4
-	push	eax
-	call	"??$use_facet@V?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@@std@@YAABV?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@0@ABVlocale@0@@Z"
-	add	esp, 4
-# %bb.18:
-	mov	ecx, dword ptr [ebp - 64]
-	mov	edi, dword ptr [ebp + 8]
-	mov	esi, eax
-	test	ecx, ecx
-	je	LBB35_21
-# %bb.19:
-	mov	eax, dword ptr [ecx]
-	call	dword ptr [eax + 8]
-	test	eax, eax
-	je	LBB35_21
-# %bb.20:
-	mov	edx, dword ptr [eax]
-	mov	ecx, eax
-	push	1
-	call	dword ptr [edx]
-LBB35_21:
-	mov	ebx, dword ptr [ebp - 32]       # 4-byte Reload
-	mov	eax, dword ptr [ebx]
-	mov	eax, dword ptr [eax + 4]
-	lea	ecx, [ebx + eax]
-	movsx	edx, byte ptr [ebx + eax + 64]
-	mov	eax, dword ptr [ebx + eax + 56]
-	mov	dword ptr [ebp - 48], 0
-	mov	dword ptr [ebp - 44], eax
-	mov	eax, dword ptr [esi]
-	mov	eax, dword ptr [eax + 36]
-	mov	dword ptr [ebp - 16], 5
-	sub	esp, 24
-	movsd	xmm0, qword ptr [ebp - 48]      # xmm0 = mem[0],zero
-	movsd	qword ptr [esp + 4], xmm0
-	mov	dword ptr [esp + 12], ecx
-	lea	ecx, [ebp - 76]
-	mov	dword ptr [esp + 20], edi
-	mov	dword ptr [esp + 16], edx
-	mov	dword ptr [esp], ecx
-	mov	ecx, esi
-	call	eax
-# %bb.22:
-	movzx	edi, byte ptr [ebp - 76]
-	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-	shl	edi, 2
-LBB35_4:
-	mov	eax, dword ptr [esi]
-	xor	ecx, ecx
-	mov	edx, dword ptr [eax + 4]
-	cmp	dword ptr [esi + edx + 56], 0
-	mov	eax, dword ptr [esi + edx + 12]
-	sete	cl
-	and	eax, 23
-	shl	ecx, 2
-	or	ecx, edi
-	or	eax, ecx
-	mov	dword ptr [esi + edx + 12], eax
-	and	eax, dword ptr [esi + edx + 16]
-	jne	LBB35_5
-# %bb.33:
-	call	"?uncaught_exception@std@@YA_NXZ"
-	test	al, al
-	jne	LBB35_35
-# %bb.34:
-	mov	ecx, dword ptr [ebp - 40]
-	mov	dword ptr [ebp - 16], 2
-	call	"?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ"
-	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-LBB35_35:
-	mov	eax, dword ptr [ebp - 40]
-	mov	ecx, dword ptr [eax]
-	mov	ecx, dword ptr [ecx + 4]
-	mov	ecx, dword ptr [eax + ecx + 56]
-	test	ecx, ecx
-	je	LBB35_37
-# %bb.36:
-	mov	eax, dword ptr [ecx]
-	mov	eax, dword ptr [eax + 8]
-	mov	dword ptr [ebp - 16], 1
-	call	eax
-	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-LBB35_37:
-	mov	eax, dword ptr [ebp - 24]
-	mov	dword ptr fs:[0], eax
-	mov	eax, esi
-	add	esp, 64
-	pop	esi
-	pop	edi
-	pop	ebx
-	pop	ebp
-	ret	4
-LBB35_5:
-	cmp	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], 0
-	#MEMBARRIER
-	jne	LBB35_7
-# %bb.6:
-	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"+4], 5
-	#MEMBARRIER
-	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], offset "??_7_Iostream_error_category2@std@@6B@"
-	mov	dword ptr [ebp - 16], 3
-LBB35_7:
-	test	al, 2
-	mov	ecx, offset "??_C@_0BF@OOHOMBOF@ios_base?3?3eofbit?5set?$AA@"
-	mov	edx, offset "??_C@_0BG@FMKFHCIL@ios_base?3?3failbit?5set?$AA@"
-	mov	dword ptr [ebp - 16], 3
-	cmove	edx, ecx
-	test	al, 4
-	mov	eax, offset "??_C@_0BF@PHHKMMFD@ios_base?3?3badbit?5set?$AA@"
-	lea	ecx, [ebp - 68]
-	cmove	eax, edx
-	push	eax
-	push	offset "?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"
-	push	1
-	call	"??0system_error@std@@QAE@Verror_code@1@PBD@Z"
-# %bb.8:
-	mov	dword ptr [ebp - 68], offset "??_7failure@ios_base@std@@6B@"
-	push	offset "__TI5?AVfailure@ios_base@std@@"
-	lea	eax, [ebp - 68]
-	push	eax
-	call	__CxxThrowException@8
-	add	esp, 8
-# %bb.32:
-LBB35_31:                               # Block address taken
-	add	ebp, 12
-	xor	edi, edi
-	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-	jmp	LBB35_4
-	.def	 "?dtor$12@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA";
-	.scl	3;
-	.type	32;
-	.endef
-	.p2align	4, 0x90
-"?dtor$12@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA":
-LBB35_12:
-	push	ebp
-	sub	esp, 24
-	add	ebp, 12
-	mov	eax, dword ptr [ebp - 40]
-	mov	ecx, dword ptr [eax]
-	mov	ecx, dword ptr [ecx + 4]
-	mov	ecx, dword ptr [eax + ecx + 56]
-	test	ecx, ecx
-	je	LBB35_14
-# %bb.13:
-	mov	eax, dword ptr [ecx]
-	call	dword ptr [eax + 8]
-LBB35_14:
-	add	esp, 24
-	pop	ebp
-	ret                                     # CLEANUPRET
-	.def	 "?dtor$23@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA";
-	.scl	3;
-	.type	32;
-	.endef
-	.p2align	4, 0x90
-"?dtor$23@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA":
-LBB35_23:
-	push	ebp
-	sub	esp, 24
-	add	ebp, 12
-	mov	ecx, dword ptr [ebp - 64]
-	test	ecx, ecx
-	je	LBB35_26
-# %bb.24:
-	mov	eax, dword ptr [ecx]
-	call	dword ptr [eax + 8]
-	test	eax, eax
-	je	LBB35_26
-# %bb.25:
-	mov	edx, dword ptr [eax]
-	mov	ecx, eax
-	push	1
-	call	dword ptr [edx]
-LBB35_26:
-	add	esp, 24
-	pop	ebp
-	ret                                     # CLEANUPRET
-	.def	 "?catch$27@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA";
-	.scl	3;
-	.type	32;
-	.endef
-	.p2align	4, 0x90
-"?catch$27@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA":
-LBB35_27:
-	push	ebp
-	sub	esp, 24
-	add	ebp, 12
-	mov	dword ptr [ebp - 28], esp
-	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
-	mov	eax, dword ptr [edx]
-	mov	eax, dword ptr [eax + 4]
-	mov	ecx, dword ptr [edx + eax + 12]
-	and	ecx, 19
-	or	ecx, 4
-	mov	dword ptr [edx + eax + 12], ecx
-	test	dword ptr [edx + eax + 16], ecx
-	jne	LBB35_28
-# %bb.30:
-	mov	eax, offset LBB35_31
-	add	esp, 24
-	pop	ebp
-	ret                                     # CATCHRET
-LBB35_28:
-	mov	dword ptr [ebp - 16], 6
-	push	0
-	push	0
-	call	__CxxThrowException@8
-	add	esp, 8
-# %bb.29:
-	.def	 "?dtor$38@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA";
-	.scl	3;
-	.type	32;
-	.endef
-	.p2align	4, 0x90
-"?dtor$38@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA":
-LBB35_38:
-	push	ebp
-	sub	esp, 24
-	add	ebp, 12
-	call	___std_terminate
-	.def	 "?dtor$39@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA";
-	.scl	3;
-	.type	32;
-	.endef
-	.p2align	4, 0x90
-"?dtor$39@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA":
-LBB35_39:
-	push	ebp
-	sub	esp, 24
-	add	ebp, 12
-	lea	ecx, [ebp - 40]
-	call	"??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ"
-	call	___std_terminate
-	.def	 "?dtor$40@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA";
-	.scl	3;
-	.type	32;
-	.endef
-	.p2align	4, 0x90
-"?dtor$40@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA":
-LBB35_40:
-	push	ebp
-	sub	esp, 24
-	add	ebp, 12
-	call	"?uncaught_exception@std@@YA_NXZ"
-	test	al, al
-	jne	LBB35_42
-# %bb.41:
-	mov	ecx, dword ptr [ebp - 40]
-	call	"?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ"
-LBB35_42:
-	mov	eax, dword ptr [ebp - 40]
-	mov	ecx, dword ptr [eax]
-	mov	ecx, dword ptr [ecx + 4]
-	mov	ecx, dword ptr [eax + ecx + 56]
-	test	ecx, ecx
-	je	LBB35_44
-# %bb.43:
-	mov	eax, dword ptr [ecx]
-	call	dword ptr [eax + 8]
-LBB35_44:
-	add	esp, 24
-	pop	ebp
-	ret                                     # CLEANUPRET
-Lfunc_end12:
-	.section	.xdata,"dr",associative,"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
-	.p2align	2
-"L__ehtable$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z":
-	.long	429065506                       # MagicNumber
-	.long	7                               # MaxState
-	.long	("$stateUnwindMap$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z") # UnwindMap
-	.long	1                               # NumTryBlocks
-	.long	("$tryMap$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z") # TryBlockMap
-	.long	0                               # IPMapEntries
-	.long	0                               # IPToStateXData
-	.long	0                               # ESTypeList
-	.long	1                               # EHFlags
-"$stateUnwindMap$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z":
-	.long	-1                              # ToState
-	.long	"?dtor$12@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA" # Action
-	.long	-1                              # ToState
-	.long	"?dtor$38@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA" # Action
-	.long	-1                              # ToState
-	.long	"?dtor$39@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA" # Action
-	.long	-1                              # ToState
-	.long	"?dtor$40@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA" # Action
-	.long	3                               # ToState
-	.long	"?dtor$23@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA" # Action
-	.long	3                               # ToState
-	.long	0                               # Action
-	.long	3                               # ToState
-	.long	0                               # Action
-"$tryMap$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z":
-	.long	5                               # TryLow
-	.long	5                               # TryHigh
-	.long	6                               # CatchHigh
-	.long	1                               # NumCatches
-	.long	("$handlerMap$0$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z") # HandlerArray
-"$handlerMap$0$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z":
-	.long	64                              # Adjectives
-	.long	0                               # Type
-	.long	0                               # CatchObjOffset
-	.long	"?catch$27@?0???6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z@4HA" # Handler
-	.section	.text,"xr",discard,"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
                                         # -- End function
 	.def	 "??__E?id@?$codecvt@DDU_Mbstatet@@@std@@2V0locale@2@A@@YAXXZ";
 	.scl	2;
@@ -10972,7 +14447,7 @@ Lfunc_end12:
 	.globl	"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z" # -- Begin function ??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z
 	.p2align	4, 0x90
 "??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z": # @"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z"
-Lfunc_begin13:
+Lfunc_begin16:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -10990,7 +14465,7 @@ Lfunc_begin13:
 	test	edx, edx
 	mov	dword ptr [ebp - 24], ecx
 	mov	dword ptr fs:[0], eax
-	js	LBB39_18
+	js	LBB48_18
 # %bb.1:
 	mov	ebx, dword ptr [esi + 20]
 	mov	ecx, edx
@@ -10998,26 +14473,26 @@ Lfunc_begin13:
 	mov	dword ptr [ebp - 32], 2147483647 # 4-byte Folded Spill
 	or	ecx, 15
 	mov	dword ptr [ebp - 36], ebx       # 4-byte Spill
-	js	LBB39_5
+	js	LBB48_5
 # %bb.2:
 	mov	edx, ebx
 	shr	edx
 	mov	edi, edx
 	xor	edi, 2147483647
 	cmp	edi, ebx
-	jb	LBB39_5
+	jb	LBB48_5
 # %bb.3:
 	add	edx, ebx
 	cmp	ecx, edx
 	cmovae	edx, ecx
 	lea	eax, [edx + 1]
 	cmp	eax, 4096
-	jb	LBB39_6
+	jb	LBB48_6
 # %bb.4:
 	cmp	eax, -35
 	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
-	jae	LBB39_19
-LBB39_5:
+	jae	LBB48_19
+LBB48_5:
 	add	eax, 35
 	push	eax
 	call	"??2@YAPAXI@Z"
@@ -11026,7 +14501,7 @@ LBB39_5:
 	lea	edi, [eax + 35]
 	and	edi, -32
 	mov	dword ptr [edi - 4], eax
-LBB39_9:
+LBB48_9:
 	mov	ebx, dword ptr [ebp + 8]
 	mov	eax, dword ptr [ebp + 16]
 	mov	dword ptr [esi + 16], ebx
@@ -11039,28 +14514,28 @@ LBB39_9:
 	mov	byte ptr [edi + ebx], 0
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
 	cmp	ebx, 16
-	jb	LBB39_17
+	jb	LBB48_17
 # %bb.10:
 	mov	eax, dword ptr [esi]
 	lea	ecx, [ebx + 1]
 	cmp	ecx, 4096
-	jb	LBB39_16
+	jb	LBB48_16
 # %bb.11:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB39_12
+	jae	LBB48_12
 # %bb.15:
 	add	ebx, 36
 	mov	eax, edx
 	mov	ecx, ebx
-LBB39_16:
+LBB48_16:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB39_17:
+LBB48_17:
 	mov	dword ptr [esi], edi
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
@@ -11071,9 +14546,9 @@ LBB39_17:
 	pop	ebx
 	pop	ebp
 	ret	12
-LBB39_6:
+LBB48_6:
 	test	eax, eax
-	je	LBB39_7
+	je	LBB48_7
 # %bb.8:
 	push	eax
 	mov	edi, edx
@@ -11081,18 +14556,18 @@ LBB39_6:
 	mov	edx, edi
 	add	esp, 4
 	mov	edi, eax
-	jmp	LBB39_9
-LBB39_7:
+	jmp	LBB48_9
+LBB48_7:
 	xor	edi, edi
 	mov	edx, -1
-	jmp	LBB39_9
-LBB39_18:
+	jmp	LBB48_9
+LBB48_18:
 	call	"?_Xlen_string@std@@YAXXZ"
-LBB39_12:
+LBB48_12:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.13:
-LBB39_19:
+LBB48_19:
 	call	"?_Throw_bad_array_new_length@std@@YAXXZ"
 	.def	 "?dtor$14@?0???$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z@4HA";
 	.scl	3;
@@ -11100,12 +14575,12 @@ LBB39_19:
 	.endef
 	.p2align	4, 0x90
 "?dtor$14@?0???$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z@4HA":
-LBB39_14:
+LBB48_14:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end13:
+Lfunc_end16:
 	.section	.xdata,"dr",associative,"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z"
 	.p2align	2
 "L__ehtable$??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z":
@@ -11161,7 +14636,7 @@ Lfunc_end13:
 	.globl	"??0bad_array_new_length@std@@QAE@ABV01@@Z" # -- Begin function ??0bad_array_new_length@std@@QAE@ABV01@@Z
 	.p2align	4, 0x90
 "??0bad_array_new_length@std@@QAE@ABV01@@Z": # @"??0bad_array_new_length@std@@QAE@ABV01@@Z"
-Lfunc_begin14:
+Lfunc_begin17:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -11205,12 +14680,12 @@ Lfunc_begin14:
 	.endef
 	.p2align	4, 0x90
 "?dtor$2@?0???0bad_array_new_length@std@@QAE@ABV01@@Z@4HA":
-LBB42_2:
+LBB51_2:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end14:
+Lfunc_end17:
 	.section	.xdata,"dr",associative,"??0bad_array_new_length@std@@QAE@ABV01@@Z"
 	.p2align	2
 "L__ehtable$??0bad_array_new_length@std@@QAE@ABV01@@Z":
@@ -11236,7 +14711,7 @@ Lfunc_end14:
 	.globl	"??0bad_alloc@std@@QAE@ABV01@@Z" # -- Begin function ??0bad_alloc@std@@QAE@ABV01@@Z
 	.p2align	4, 0x90
 "??0bad_alloc@std@@QAE@ABV01@@Z":       # @"??0bad_alloc@std@@QAE@ABV01@@Z"
-Lfunc_begin15:
+Lfunc_begin18:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -11280,12 +14755,12 @@ Lfunc_begin15:
 	.endef
 	.p2align	4, 0x90
 "?dtor$2@?0???0bad_alloc@std@@QAE@ABV01@@Z@4HA":
-LBB43_2:
+LBB52_2:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end15:
+Lfunc_end18:
 	.section	.xdata,"dr",associative,"??0bad_alloc@std@@QAE@ABV01@@Z"
 	.p2align	2
 "L__ehtable$??0bad_alloc@std@@QAE@ABV01@@Z":
@@ -11311,7 +14786,7 @@ Lfunc_end15:
 	.globl	"??0exception@std@@QAE@ABV01@@Z" # -- Begin function ??0exception@std@@QAE@ABV01@@Z
 	.p2align	4, 0x90
 "??0exception@std@@QAE@ABV01@@Z":       # @"??0exception@std@@QAE@ABV01@@Z"
-Lfunc_begin16:
+Lfunc_begin19:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -11354,12 +14829,12 @@ Lfunc_begin16:
 	.endef
 	.p2align	4, 0x90
 "?dtor$2@?0???0exception@std@@QAE@ABV01@@Z@4HA":
-LBB44_2:
+LBB53_2:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end16:
+Lfunc_end19:
 	.section	.xdata,"dr",associative,"??0exception@std@@QAE@ABV01@@Z"
 	.p2align	2
 "L__ehtable$??0exception@std@@QAE@ABV01@@Z":
@@ -11377,6 +14852,73 @@ Lfunc_end16:
 	.long	"?dtor$2@?0???0exception@std@@QAE@ABV01@@Z@4HA" # Action
 	.section	.text,"xr",discard,"??0exception@std@@QAE@ABV01@@Z"
                                         # -- End function
+	.def	 "??1exception@std@@UAE@XZ";
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text,"xr",discard,"??1exception@std@@UAE@XZ"
+	.globl	"??1exception@std@@UAE@XZ"      # -- Begin function ??1exception@std@@UAE@XZ
+	.p2align	4, 0x90
+"??1exception@std@@UAE@XZ":             # @"??1exception@std@@UAE@XZ"
+Lfunc_begin20:
+# %bb.0:
+	push	ebp
+	mov	ebp, esp
+	push	ebx
+	push	edi
+	push	esi
+	sub	esp, 16
+	mov	dword ptr [ebp - 28], esp
+	mov	dword ptr [ebp - 16], -1
+	mov	dword ptr [ebp - 20], offset "___ehhandler$??1exception@std@@UAE@XZ"
+	lea	eax, [ebp - 24]
+	mov	edx, dword ptr fs:[0]
+	mov	dword ptr [ebp - 24], edx
+	mov	dword ptr fs:[0], eax
+	mov	dword ptr [ecx], offset "??_7exception@std@@6B@"
+	add	ecx, 4
+	mov	dword ptr [ebp - 16], 0
+	push	ecx
+	call	___std_exception_destroy
+	add	esp, 4
+# %bb.1:
+	mov	eax, dword ptr [ebp - 24]
+	mov	dword ptr fs:[0], eax
+	add	esp, 16
+	pop	esi
+	pop	edi
+	pop	ebx
+	pop	ebp
+	ret
+	.def	 "?dtor$2@?0???1exception@std@@UAE@XZ@4HA";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90
+"?dtor$2@?0???1exception@std@@UAE@XZ@4HA":
+LBB54_2:
+	push	ebp
+	push	eax
+	add	ebp, 12
+	call	___std_terminate
+Lfunc_end20:
+	.section	.xdata,"dr",associative,"??1exception@std@@UAE@XZ"
+	.p2align	2
+"L__ehtable$??1exception@std@@UAE@XZ":
+	.long	429065506                       # MagicNumber
+	.long	1                               # MaxState
+	.long	("$stateUnwindMap$??1exception@std@@UAE@XZ") # UnwindMap
+	.long	0                               # NumTryBlocks
+	.long	0                               # TryBlockMap
+	.long	0                               # IPMapEntries
+	.long	0                               # IPToStateXData
+	.long	0                               # ESTypeList
+	.long	1                               # EHFlags
+"$stateUnwindMap$??1exception@std@@UAE@XZ":
+	.long	-1                              # ToState
+	.long	"?dtor$2@?0???1exception@std@@UAE@XZ@4HA" # Action
+	.section	.text,"xr",discard,"??1exception@std@@UAE@XZ"
+                                        # -- End function
 	.def	 "??_Gbad_array_new_length@std@@UAEPAXI@Z";
 	.scl	2;
 	.type	32;
@@ -11385,7 +14927,7 @@ Lfunc_end16:
 	.globl	"??_Gbad_array_new_length@std@@UAEPAXI@Z" # -- Begin function ??_Gbad_array_new_length@std@@UAEPAXI@Z
 	.p2align	4, 0x90
 "??_Gbad_array_new_length@std@@UAEPAXI@Z": # @"??_Gbad_array_new_length@std@@UAEPAXI@Z"
-Lfunc_begin17:
+Lfunc_begin21:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -11410,12 +14952,12 @@ Lfunc_begin17:
 # %bb.1:
 	cmp	dword ptr [ebp + 8], 0
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-	je	LBB45_3
+	je	LBB55_3
 # %bb.2:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB45_3:
+LBB55_3:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, esi
@@ -11431,12 +14973,12 @@ LBB45_3:
 	.endef
 	.p2align	4, 0x90
 "?dtor$4@?0???_Gbad_array_new_length@std@@UAEPAXI@Z@4HA":
-LBB45_4:
+LBB55_4:
 	push	ebp
 	push	eax
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end17:
+Lfunc_end21:
 	.section	.xdata,"dr",associative,"??_Gbad_array_new_length@std@@UAEPAXI@Z"
 	.p2align	2
 "L__ehtable$??_Gbad_array_new_length@std@@UAEPAXI@Z":
@@ -11477,7 +15019,7 @@ Lfunc_end17:
 	.globl	"??_Gbad_alloc@std@@UAEPAXI@Z"  # -- Begin function ??_Gbad_alloc@std@@UAEPAXI@Z
 	.p2align	4, 0x90
 "??_Gbad_alloc@std@@UAEPAXI@Z":         # @"??_Gbad_alloc@std@@UAEPAXI@Z"
-Lfunc_begin18:
+Lfunc_begin22:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -11502,12 +15044,12 @@ Lfunc_begin18:
 # %bb.1:
 	cmp	dword ptr [ebp + 8], 0
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-	je	LBB47_3
+	je	LBB57_3
 # %bb.2:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB47_3:
+LBB57_3:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, esi
@@ -11523,12 +15065,12 @@ LBB47_3:
 	.endef
 	.p2align	4, 0x90
 "?dtor$4@?0???_Gbad_alloc@std@@UAEPAXI@Z@4HA":
-LBB47_4:
+LBB57_4:
 	push	ebp
 	push	eax
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end18:
+Lfunc_end22:
 	.section	.xdata,"dr",associative,"??_Gbad_alloc@std@@UAEPAXI@Z"
 	.p2align	2
 "L__ehtable$??_Gbad_alloc@std@@UAEPAXI@Z":
@@ -11554,7 +15096,7 @@ Lfunc_end18:
 	.globl	"??_Gexception@std@@UAEPAXI@Z"  # -- Begin function ??_Gexception@std@@UAEPAXI@Z
 	.p2align	4, 0x90
 "??_Gexception@std@@UAEPAXI@Z":         # @"??_Gexception@std@@UAEPAXI@Z"
-Lfunc_begin19:
+Lfunc_begin23:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -11579,12 +15121,12 @@ Lfunc_begin19:
 # %bb.1:
 	cmp	dword ptr [ebp + 8], 0
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-	je	LBB48_3
+	je	LBB58_3
 # %bb.2:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB48_3:
+LBB58_3:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, esi
@@ -11600,12 +15142,12 @@ LBB48_3:
 	.endef
 	.p2align	4, 0x90
 "?dtor$4@?0???_Gexception@std@@UAEPAXI@Z@4HA":
-LBB48_4:
+LBB58_4:
 	push	ebp
 	push	eax
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end19:
+Lfunc_end23:
 	.section	.xdata,"dr",associative,"??_Gexception@std@@UAEPAXI@Z"
 	.p2align	2
 "L__ehtable$??_Gexception@std@@UAEPAXI@Z":
@@ -11631,7 +15173,7 @@ Lfunc_end19:
 	.globl	"??1?$basic_filebuf@DU?$char_traits@D@std@@@std@@UAE@XZ" # -- Begin function ??1?$basic_filebuf@DU?$char_traits@D@std@@@std@@UAE@XZ
 	.p2align	4, 0x90
 "??1?$basic_filebuf@DU?$char_traits@D@std@@@std@@UAE@XZ": # @"??1?$basic_filebuf@DU?$char_traits@D@std@@@std@@UAE@XZ"
-Lfunc_begin20:
+Lfunc_begin24:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -11649,24 +15191,24 @@ Lfunc_begin20:
 	mov	dword ptr fs:[0], eax
 	mov	dword ptr [esi], offset "??_7?$basic_filebuf@DU?$char_traits@D@std@@@std@@6B@"
 	cmp	dword ptr [esi + 76], 0
-	je	LBB49_3
+	je	LBB59_3
 # %bb.1:
 	mov	eax, dword ptr [esi + 12]
 	lea	ecx, [esi + 60]
 	cmp	dword ptr [eax], ecx
-	je	LBB49_2
-LBB49_3:
+	je	LBB59_2
+LBB59_3:
 	cmp	byte ptr [esi + 72], 0
-	je	LBB49_19
-LBB49_4:
+	je	LBB59_19
+LBB59_4:
 	cmp	dword ptr [esi + 76], 0
-	je	LBB49_18
+	je	LBB59_18
 # %bb.5:
 	cmp	dword ptr [esi + 56], 0
-	je	LBB49_17
+	je	LBB59_17
 # %bb.6:
 	cmp	byte ptr [esi + 61], 0
-	je	LBB49_17
+	je	LBB59_17
 # %bb.7:
 	mov	dword ptr [ebp - 16], 0
 	mov	dword ptr [ebp - 32], esi       # 4-byte Spill
@@ -11676,7 +15218,7 @@ LBB49_4:
 # %bb.8:
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
 	cmp	eax, -1
-	je	LBB49_17
+	je	LBB59_17
 # %bb.9:
 	mov	ecx, dword ptr [esi + 56]
 	lea	edx, [esi + 64]
@@ -11691,21 +15233,21 @@ LBB49_4:
 	call	dword ptr [esi + 32]
 # %bb.10:
 	cmp	eax, 3
-	je	LBB49_16
+	je	LBB59_16
 # %bb.11:
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
 	cmp	eax, 1
 	lea	ecx, [ebp - 68]
-	je	LBB49_14
+	je	LBB59_14
 # %bb.12:
 	test	eax, eax
-	jne	LBB49_17
+	jne	LBB59_17
 # %bb.13:
 	mov	byte ptr [esi + 61], 0
-LBB49_14:
+LBB59_14:
 	mov	eax, dword ptr [ebp - 36]
 	sub	eax, ecx
-	je	LBB49_17
+	je	LBB59_17
 # %bb.15:
 	push	dword ptr [esi + 76]
 	push	eax
@@ -11713,8 +15255,8 @@ LBB49_14:
 	push	ecx
 	call	_fwrite
 	add	esp, 16
-	jmp	LBB49_17
-LBB49_2:
+	jmp	LBB59_17
+LBB59_2:
 	mov	ecx, dword ptr [esi + 80]
 	mov	edx, dword ptr [esi + 84]
 	mov	dword ptr [eax], ecx
@@ -11724,16 +15266,16 @@ LBB49_2:
 	mov	eax, dword ptr [esi + 44]
 	mov	dword ptr [eax], edx
 	cmp	byte ptr [esi + 72], 0
-	jne	LBB49_4
-	jmp	LBB49_19
-LBB49_16:
+	jne	LBB59_4
+	jmp	LBB59_19
+LBB59_16:
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	byte ptr [esi + 61], 0
-LBB49_17:
+LBB59_17:
 	push	dword ptr [esi + 76]
 	call	_fclose
 	add	esp, 4
-LBB49_18:
+LBB59_18:
 	lea	eax, [esi + 4]
 	mov	byte ptr [esi + 72], 0
 	mov	byte ptr [esi + 61], 0
@@ -11760,30 +15302,30 @@ LBB49_18:
 	mov	dword ptr [esi + 68], ecx
 	mov	dword ptr [esi + 64], eax
 	mov	dword ptr [esi + 56], 0
-LBB49_19:
+LBB59_19:
 	mov	dword ptr [esi], offset "??_7?$basic_streambuf@DU?$char_traits@D@std@@@std@@6B@"
 	mov	esi, dword ptr [esi + 52]
 	test	esi, esi
-	je	LBB49_24
+	je	LBB59_24
 # %bb.20:
 	mov	ecx, dword ptr [esi + 4]
 	test	ecx, ecx
-	je	LBB49_23
+	je	LBB59_23
 # %bb.21:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB49_23
+	je	LBB59_23
 # %bb.22:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB49_23:
+LBB59_23:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB49_24:
+LBB59_24:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	add	esp, 56
@@ -11798,14 +15340,14 @@ LBB49_24:
 	.endef
 	.p2align	4, 0x90
 "?dtor$25@?0???1?$basic_filebuf@DU?$char_traits@D@std@@@std@@UAE@XZ@4HA":
-LBB49_25:
+LBB59_25:
 	push	ebp
 	sub	esp, 16
 	add	ebp, 12
 	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
 	call	"??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UAE@XZ"
 	call	___std_terminate
-Lfunc_end20:
+Lfunc_end24:
 	.section	.xdata,"dr",associative,"??1?$basic_filebuf@DU?$char_traits@D@std@@@std@@UAE@XZ"
 	.p2align	2
 "L__ehtable$??1?$basic_filebuf@DU?$char_traits@D@std@@@std@@UAE@XZ":
@@ -11831,7 +15373,7 @@ Lfunc_end20:
 	.globl	"??_E?$basic_ifstream@DU?$char_traits@D@std@@@std@@$4PPPPPPPM@A@AEPAXI@Z" # -- Begin function ??_E?$basic_ifstream@DU?$char_traits@D@std@@@std@@$4PPPPPPPM@A@AEPAXI@Z
 	.p2align	4, 0x90
 "??_E?$basic_ifstream@DU?$char_traits@D@std@@@std@@$4PPPPPPPM@A@AEPAXI@Z": # @"??_E?$basic_ifstream@DU?$char_traits@D@std@@@std@@$4PPPPPPPM@A@AEPAXI@Z"
-Lfunc_begin21:
+Lfunc_begin25:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -11867,12 +15409,12 @@ Lfunc_begin21:
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
 	add	esi, -112
 	cmp	dword ptr [ebp + 8], 0
-	je	LBB50_3
+	je	LBB60_3
 # %bb.2:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB50_3:
+LBB60_3:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, esi
@@ -11888,12 +15430,12 @@ LBB50_3:
 	.endef
 	.p2align	4, 0x90
 "?dtor$4@?0???_E?$basic_ifstream@DU?$char_traits@D@std@@@std@@$4PPPPPPPM@A@AEPAXI@Z@4HA":
-LBB50_4:
+LBB60_4:
 	push	ebp
 	push	eax
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end21:
+Lfunc_end25:
 	.section	.xdata,"dr",associative,"??_E?$basic_ifstream@DU?$char_traits@D@std@@@std@@$4PPPPPPPM@A@AEPAXI@Z"
 	.p2align	2
 "L__ehtable$??_E?$basic_ifstream@DU?$char_traits@D@std@@@std@@$4PPPPPPPM@A@AEPAXI@Z":
@@ -11924,26 +15466,26 @@ Lfunc_end21:
 	mov	dword ptr [ecx], offset "??_7?$basic_streambuf@DU?$char_traits@D@std@@@std@@6B@"
 	mov	esi, dword ptr [ecx + 52]
 	test	esi, esi
-	je	LBB51_5
+	je	LBB61_5
 # %bb.1:
 	mov	ecx, dword ptr [esi + 4]
 	test	ecx, ecx
-	je	LBB51_4
+	je	LBB61_4
 # %bb.2:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB51_4
+	je	LBB61_4
 # %bb.3:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB51_4:
+LBB61_4:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB51_5:
+LBB61_5:
 	pop	esi
 	ret
                                         # -- End function
@@ -11960,12 +15502,12 @@ LBB51_5:
 	mov	esi, ecx
 	call	"??1?$basic_filebuf@DU?$char_traits@D@std@@@std@@UAE@XZ"
 	cmp	dword ptr [esp + 8], 0
-	je	LBB52_2
+	je	LBB62_2
 # %bb.1:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB52_2:
+LBB62_2:
 	mov	eax, esi
 	pop	esi
 	ret	4
@@ -11981,12 +15523,12 @@ LBB52_2:
 # %bb.0:
 	mov	eax, dword ptr [ecx + 76]
 	test	eax, eax
-	je	LBB53_2
+	je	LBB63_2
 # %bb.1:
 	push	eax
 	call	__lock_file
 	add	esp, 4
-LBB53_2:
+LBB63_2:
 	ret
                                         # -- End function
 	.def	 "?_Unlock@?$basic_filebuf@DU?$char_traits@D@std@@@std@@UAEXXZ";
@@ -12000,12 +15542,12 @@ LBB53_2:
 # %bb.0:
 	mov	eax, dword ptr [ecx + 76]
 	test	eax, eax
-	je	LBB54_2
+	je	LBB64_2
 # %bb.1:
 	push	eax
 	call	__unlock_file
 	add	esp, 4
-LBB54_2:
+LBB64_2:
 	ret
                                         # -- End function
 	.def	 "?overflow@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MAEHH@Z";
@@ -12024,38 +15566,38 @@ LBB54_2:
 	sub	esp, 44
 	mov	ebx, dword ptr [esp + 64]
 	cmp	ebx, -1
-	je	LBB55_1
+	je	LBB65_1
 # %bb.2:
 	mov	eax, dword ptr [ecx + 32]
 	mov	esi, ecx
 	mov	ecx, dword ptr [eax]
 	test	ecx, ecx
-	je	LBB55_5
+	je	LBB65_5
 # %bb.3:
 	mov	edx, dword ptr [esi + 48]
 	mov	edi, dword ptr [edx]
 	test	edi, edi
-	jle	LBB55_5
+	jle	LBB65_5
 # %bb.4:
 	dec	edi
 	lea	esi, [ecx + 1]
 	mov	dword ptr [edx], edi
 	mov	dword ptr [eax], esi
 	mov	byte ptr [ecx], bl
-	jmp	LBB55_19
-LBB55_5:
+	jmp	LBB65_19
+LBB65_5:
 	cmp	dword ptr [esi + 76], 0
-	je	LBB55_6
+	je	LBB65_6
 # %bb.7:
 	mov	eax, dword ptr [esi + 12]
 	lea	ecx, [esi + 60]
 	cmp	dword ptr [eax], ecx
-	je	LBB55_8
+	je	LBB65_8
 # %bb.9:
 	mov	ecx, dword ptr [esi + 56]
 	test	ecx, ecx
-	je	LBB55_10
-LBB55_11:
+	je	LBB65_10
+LBB65_11:
 	mov	byte ptr [esp + 3], bl
 	lea	edi, [esi + 64]
 	lea	edx, [esp + 4]
@@ -12075,12 +15617,12 @@ LBB55_11:
 	call	dword ptr [ebp + 28]
 	mov	edi, -1
 	cmp	eax, 2
-	jae	LBB55_12
+	jae	LBB65_12
 # %bb.14:
 	mov	ebp, dword ptr [esp + 4]
 	lea	eax, [esp + 12]
 	sub	ebp, eax
-	je	LBB55_16
+	je	LBB65_16
 # %bb.15:
 	push	dword ptr [esi + 76]
 	push	ebp
@@ -12089,20 +15631,20 @@ LBB55_11:
 	call	_fwrite
 	add	esp, 16
 	cmp	ebp, eax
-	jne	LBB55_18
-LBB55_16:
+	jne	LBB65_18
+LBB65_16:
 	mov	byte ptr [esi + 61], 1
 	lea	eax, [esp + 3]
 	cmp	dword ptr [esp + 8], eax
 	mov	eax, -1
-	jmp	LBB55_17
-LBB55_1:
+	jmp	LBB65_17
+LBB65_1:
 	xor	ebx, ebx
-	jmp	LBB55_19
-LBB55_6:
+	jmp	LBB65_19
+LBB65_6:
 	mov	ebx, -1
-	jmp	LBB55_19
-LBB55_8:
+	jmp	LBB65_19
+LBB65_8:
 	mov	ecx, dword ptr [esi + 80]
 	mov	edx, dword ptr [esi + 84]
 	mov	dword ptr [eax], ecx
@@ -12113,8 +15655,8 @@ LBB55_8:
 	mov	dword ptr [eax], edx
 	mov	ecx, dword ptr [esi + 56]
 	test	ecx, ecx
-	jne	LBB55_11
-LBB55_10:
+	jne	LBB65_11
+LBB65_10:
 	movsx	eax, bl
 	push	dword ptr [esi + 76]
 	push	eax
@@ -12122,10 +15664,10 @@ LBB55_10:
 	add	esp, 8
 	cmp	eax, -1
 	cmovne	eax, ebx
-	jmp	LBB55_20
-LBB55_12:
+	jmp	LBB65_20
+LBB65_12:
 	cmp	eax, 3
-	jne	LBB55_18
+	jne	LBB65_18
 # %bb.13:
 	movsx	eax, byte ptr [esp + 3]
 	push	dword ptr [esi + 76]
@@ -12133,14 +15675,14 @@ LBB55_12:
 	call	_fputc
 	add	esp, 8
 	cmp	eax, -1
-LBB55_17:
+LBB65_17:
 	cmove	ebx, eax
 	mov	edi, ebx
-LBB55_18:
+LBB65_18:
 	mov	ebx, edi
-LBB55_19:
+LBB65_19:
 	mov	eax, ebx
-LBB55_20:
+LBB65_20:
 	add	esp, 44
 	pop	esi
 	pop	edi
@@ -12165,77 +15707,77 @@ LBB55_20:
 	mov	ebx, dword ptr [esp + 16]
 	mov	ecx, dword ptr [eax]
 	test	ecx, ecx
-	je	LBB56_6
+	je	LBB66_6
 # %bb.1:
 	mov	edx, dword ptr [esi + 12]
 	cmp	dword ptr [edx], ecx
-	jae	LBB56_6
+	jae	LBB66_6
 # %bb.2:
 	cmp	ebx, -1
-	je	LBB56_3
+	je	LBB66_3
 # %bb.4:
 	movzx	edx, byte ptr [ecx - 1]
 	cmp	edx, ebx
-	je	LBB56_5
-LBB56_6:
+	je	LBB66_5
+LBB66_6:
 	cmp	ebx, -1
 	mov	edi, -1
-	je	LBB56_16
+	je	LBB66_16
 # %bb.7:
 	mov	edx, dword ptr [esi + 76]
 	test	edx, edx
-	je	LBB56_16
+	je	LBB66_16
 # %bb.8:
 	cmp	dword ptr [esi + 56], 0
-	je	LBB56_9
+	je	LBB66_9
 # %bb.11:
 	lea	edx, [esi + 60]
 	cmp	ecx, edx
-	je	LBB56_16
-LBB56_12:
+	je	LBB66_16
+LBB66_12:
 	mov	byte ptr [esi + 60], bl
 	mov	ecx, dword ptr [esi + 12]
 	mov	edi, dword ptr [ecx]
 	cmp	edi, edx
-	je	LBB56_14
+	je	LBB66_14
 # %bb.13:
 	mov	dword ptr [esi + 80], edi
 	mov	eax, dword ptr [eax]
 	mov	edi, dword ptr [esi + 44]
 	add	eax, dword ptr [edi]
 	mov	dword ptr [esi + 84], eax
-LBB56_14:
+LBB66_14:
 	mov	dword ptr [ecx], edx
 	mov	eax, dword ptr [esi + 28]
 	mov	dword ptr [eax], edx
 	mov	eax, dword ptr [esi + 44]
 	mov	dword ptr [eax], 1
-	jmp	LBB56_15
-LBB56_9:
+	jmp	LBB66_15
+LBB66_9:
 	movzx	eax, bl
 	push	edx
 	push	eax
 	call	_ungetc
 	add	esp, 8
 	cmp	eax, -1
-	jne	LBB56_15
+	jne	LBB66_15
 # %bb.10:
 	mov	eax, dword ptr [esi + 28]
 	mov	ecx, dword ptr [eax]
 	lea	edx, [esi + 60]
 	cmp	ecx, edx
-	jne	LBB56_12
-	jmp	LBB56_16
-LBB56_3:
+	jne	LBB66_12
+	jmp	LBB66_16
+LBB66_3:
 	xor	ebx, ebx
-LBB56_5:
+LBB66_5:
 	mov	edx, dword ptr [esi + 44]
 	dec	ecx
 	inc	dword ptr [edx]
 	mov	dword ptr [eax], ecx
-LBB56_15:
+LBB66_15:
 	mov	edi, ebx
-LBB56_16:
+LBB66_16:
 	mov	eax, edi
 	pop	esi
 	pop	edi
@@ -12270,23 +15812,23 @@ LBB56_16:
 	mov	esi, ecx
 	mov	eax, dword ptr [eax]
 	test	eax, eax
-	je	LBB58_3
+	je	LBB68_3
 # %bb.1:
 	mov	ecx, dword ptr [esi + 44]
 	cmp	dword ptr [ecx], 0
-	jle	LBB58_3
+	jle	LBB68_3
 # %bb.2:
 	movzx	edi, byte ptr [eax]
 	mov	eax, edi
 	pop	esi
 	pop	edi
 	ret
-LBB58_3:
+LBB68_3:
 	mov	eax, dword ptr [esi]
 	mov	ecx, esi
 	call	dword ptr [eax + 28]
 	cmp	eax, -1
-	je	LBB58_4
+	je	LBB68_4
 # %bb.5:
 	mov	edi, eax
 	mov	eax, dword ptr [esi]
@@ -12297,7 +15839,7 @@ LBB58_3:
 	pop	esi
 	pop	edi
 	ret
-LBB58_4:
+LBB68_4:
 	mov	edi, -1
 	mov	eax, edi
 	pop	esi
@@ -12312,7 +15854,7 @@ LBB58_4:
 	.globl	"?uflow@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MAEHXZ" # -- Begin function ?uflow@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MAEHXZ
 	.p2align	4, 0x90
 "?uflow@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MAEHXZ": # @"?uflow@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MAEHXZ"
-Lfunc_begin22:
+Lfunc_begin26:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -12331,31 +15873,31 @@ Lfunc_begin22:
 	mov	eax, dword ptr [edi + 28]
 	mov	ecx, dword ptr [eax]
 	test	ecx, ecx
-	je	LBB59_3
+	je	LBB69_3
 # %bb.1:
 	mov	edx, dword ptr [edi + 44]
 	mov	esi, dword ptr [edx]
 	test	esi, esi
-	jle	LBB59_3
+	jle	LBB69_3
 # %bb.2:
 	dec	esi
 	mov	dword ptr [edx], esi
 	lea	esi, [ecx + 1]
 	mov	dword ptr [eax], esi
 	movzx	esi, byte ptr [ecx]
-	jmp	LBB59_43
-LBB59_3:
+	jmp	LBB69_43
+LBB69_3:
 	cmp	dword ptr [edi + 76], 0
-	je	LBB59_23
+	je	LBB69_23
 # %bb.4:
 	mov	eax, dword ptr [edi + 12]
 	lea	ecx, [edi + 60]
 	cmp	dword ptr [eax], ecx
-	je	LBB59_24
+	je	LBB69_24
 # %bb.5:
 	cmp	dword ptr [edi + 56], 0
-	je	LBB59_25
-LBB59_6:
+	je	LBB69_25
+LBB69_6:
 	mov	dword ptr [ebp - 36], 15
 	mov	dword ptr [ebp - 40], 0
 	mov	byte ptr [ebp - 56], 0
@@ -12363,17 +15905,17 @@ LBB59_6:
 	call	_fgetc
 	add	esp, 4
 	cmp	eax, -1
-	je	LBB59_29
+	je	LBB69_29
 # %bb.7:
 	lea	ecx, [edi + 64]
 	mov	dword ptr [ebp - 64], edi       # 4-byte Spill
 	mov	dword ptr [ebp - 72], ecx       # 4-byte Spill
-	jmp	LBB59_11
+	jmp	LBB69_11
 	.p2align	4, 0x90
-LBB59_8:                                #   in Loop: Header=BB59_11 Depth=1
+LBB69_8:                                #   in Loop: Header=BB69_11 Depth=1
 	mov	ecx, dword ptr [ebp - 40]
 	lea	edx, [ebp - 56]
-LBB59_9:                                #   in Loop: Header=BB59_11 Depth=1
+LBB69_9:                                #   in Loop: Header=BB69_11 Depth=1
 	sub	eax, edx
 	cmp	ecx, eax
 	cmovb	eax, ecx
@@ -12390,27 +15932,27 @@ LBB59_9:                                #   in Loop: Header=BB59_11 Depth=1
 	call	_fgetc
 	add	esp, 4
 	cmp	eax, -1
-	je	LBB59_29
-LBB59_11:                               # =>This Inner Loop Header: Depth=1
+	je	LBB69_29
+LBB69_11:                               # =>This Inner Loop Header: Depth=1
 	mov	ecx, dword ptr [ebp - 40]
 	mov	edx, dword ptr [ebp - 36]
 	cmp	ecx, edx
-	jae	LBB59_15
-# %bb.12:                               #   in Loop: Header=BB59_11 Depth=1
+	jae	LBB69_15
+# %bb.12:                               #   in Loop: Header=BB69_11 Depth=1
 	lea	esi, [ecx + 1]
 	cmp	edx, 15
 	lea	edx, [ebp - 56]
 	mov	dword ptr [ebp - 40], esi
-	jbe	LBB59_14
-# %bb.13:                               #   in Loop: Header=BB59_11 Depth=1
+	jbe	LBB69_14
+# %bb.13:                               #   in Loop: Header=BB69_11 Depth=1
 	mov	edx, dword ptr [ebp - 56]
-LBB59_14:                               #   in Loop: Header=BB59_11 Depth=1
+LBB69_14:                               #   in Loop: Header=BB69_11 Depth=1
 	mov	byte ptr [edx + ecx], al
 	mov	byte ptr [edx + ecx + 1], 0
 	mov	dword ptr [ebp - 16], 0
-	jmp	LBB59_16
+	jmp	LBB69_16
 	.p2align	4, 0x90
-LBB59_15:                               #   in Loop: Header=BB59_11 Depth=1
+LBB69_15:                               #   in Loop: Header=BB69_11 Depth=1
 	mov	dword ptr [ebp - 16], 0
 	sub	esp, 12
 	movzx	ecx, byte ptr [ebp - 68]
@@ -12421,14 +15963,14 @@ LBB59_15:                               #   in Loop: Header=BB59_11 Depth=1
 	mov	dword ptr [esp], 1
 	call	"??$_Reallocate_grow_by@V<lambda_1>@?0??push_back@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXD@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??push_back@01@QAEXD@Z@D@Z"
 	mov	edi, dword ptr [ebp - 64]       # 4-byte Reload
-LBB59_16:                               #   in Loop: Header=BB59_11 Depth=1
+LBB69_16:                               #   in Loop: Header=BB69_11 Depth=1
 	mov	ecx, dword ptr [edi + 56]
 	cmp	dword ptr [ebp - 36], 15
 	lea	eax, [ebp - 56]
-	jbe	LBB59_18
-# %bb.17:                               #   in Loop: Header=BB59_11 Depth=1
+	jbe	LBB69_18
+# %bb.17:                               #   in Loop: Header=BB69_11 Depth=1
 	mov	eax, dword ptr [ebp - 56]
-LBB59_18:                               #   in Loop: Header=BB59_11 Depth=1
+LBB69_18:                               #   in Loop: Header=BB69_11 Depth=1
 	mov	edx, dword ptr [ebp - 40]
 	mov	esi, dword ptr [ecx]
 	lea	edi, [ebp - 68]
@@ -12445,25 +15987,25 @@ LBB59_18:                               #   in Loop: Header=BB59_11 Depth=1
 	push	dword ptr [ebp - 72]            # 4-byte Folded Reload
 	call	dword ptr [esi + 24]
 	mov	edi, dword ptr [ebp - 64]       # 4-byte Reload
-# %bb.19:                               #   in Loop: Header=BB59_11 Depth=1
+# %bb.19:                               #   in Loop: Header=BB69_11 Depth=1
 	cmp	eax, 2
-	jae	LBB59_26
-# %bb.20:                               #   in Loop: Header=BB59_11 Depth=1
+	jae	LBB69_26
+# %bb.20:                               #   in Loop: Header=BB69_11 Depth=1
 	lea	eax, [ebp - 29]
 	cmp	dword ptr [ebp - 68], eax
-	jne	LBB59_30
-# %bb.21:                               #   in Loop: Header=BB59_11 Depth=1
+	jne	LBB69_30
+# %bb.21:                               #   in Loop: Header=BB69_11 Depth=1
 	mov	eax, dword ptr [ebp - 60]
 	cmp	dword ptr [ebp - 36], 15
-	jbe	LBB59_8
-# %bb.22:                               #   in Loop: Header=BB59_11 Depth=1
+	jbe	LBB69_8
+# %bb.22:                               #   in Loop: Header=BB69_11 Depth=1
 	mov	edx, dword ptr [ebp - 56]
 	mov	ecx, dword ptr [ebp - 40]
-	jmp	LBB59_9
-LBB59_23:
+	jmp	LBB69_9
+LBB69_23:
 	mov	esi, -1
-	jmp	LBB59_43
-LBB59_24:
+	jmp	LBB69_43
+LBB69_24:
 	mov	ecx, dword ptr [edi + 80]
 	mov	edx, dword ptr [edi + 84]
 	mov	dword ptr [eax], ecx
@@ -12473,8 +16015,8 @@ LBB59_24:
 	mov	eax, dword ptr [edi + 44]
 	mov	dword ptr [eax], edx
 	cmp	dword ptr [edi + 56], 0
-	jne	LBB59_6
-LBB59_25:
+	jne	LBB69_6
+LBB69_25:
 	push	dword ptr [edi + 76]
 	call	_fgetc
 	add	esp, 4
@@ -12483,36 +16025,36 @@ LBB59_25:
 	movzx	ecx, al
 	cmovne	eax, ecx
 	mov	dword ptr fs:[0], edx
-	jmp	LBB59_44
-LBB59_26:
+	jmp	LBB69_44
+LBB69_26:
 	cmp	eax, 3
-	jne	LBB59_29
+	jne	LBB69_29
 # %bb.27:
 	cmp	dword ptr [ebp - 36], 15
-	jbe	LBB59_37
+	jbe	LBB69_37
 # %bb.28:
 	mov	eax, dword ptr [ebp - 56]
-	jmp	LBB59_38
-LBB59_29:
+	jmp	LBB69_38
+LBB69_29:
 	mov	esi, -1
 	mov	eax, dword ptr [ebp - 36]
 	cmp	eax, 16
-	jae	LBB59_39
-	jmp	LBB59_43
-LBB59_30:
+	jae	LBB69_39
+	jmp	LBB69_43
+LBB69_30:
 	cmp	dword ptr [ebp - 36], 15
-	jbe	LBB59_32
+	jbe	LBB69_32
 # %bb.31:
 	mov	esi, dword ptr [ebp - 56]
-	jmp	LBB59_33
-LBB59_32:
+	jmp	LBB69_33
+LBB69_32:
 	lea	esi, [ebp - 56]
-LBB59_33:
+LBB69_33:
 	add	esi, dword ptr [ebp - 40]
 	mov	eax, dword ptr [ebp - 60]
 	sub	esi, eax
 	test	esi, esi
-	jle	LBB59_36
+	jle	LBB69_36
 # %bb.34:
 	movsx	eax, byte ptr [esi + eax - 1]
 	push	dword ptr [edi + 76]
@@ -12520,9 +16062,9 @@ LBB59_33:
 	call	_ungetc
 	add	esp, 8
 	cmp	esi, 1
-	je	LBB59_36
+	je	LBB69_36
 	.p2align	4, 0x90
-LBB59_35:                               # =>This Inner Loop Header: Depth=1
+LBB69_35:                               # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [ebp - 60]
 	movsx	eax, byte ptr [eax + esi - 2]
 	push	dword ptr [edi + 76]
@@ -12531,52 +16073,52 @@ LBB59_35:                               # =>This Inner Loop Header: Depth=1
 	add	esp, 8
 	dec	esi
 	cmp	esi, 1
-	jg	LBB59_35
-LBB59_36:
+	jg	LBB69_35
+LBB69_36:
 	movzx	esi, byte ptr [ebp - 29]
 	mov	eax, dword ptr [ebp - 36]
 	cmp	eax, 16
-	jae	LBB59_39
-	jmp	LBB59_43
-LBB59_37:
+	jae	LBB69_39
+	jmp	LBB69_43
+LBB69_37:
 	lea	eax, [ebp - 56]
-LBB59_38:
+LBB69_38:
 	movsx	esi, byte ptr [eax]
 	mov	eax, dword ptr [ebp - 36]
 	cmp	eax, 16
-	jb	LBB59_43
-LBB59_39:
+	jb	LBB69_43
+LBB69_39:
 	mov	ecx, dword ptr [ebp - 56]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB59_42
+	jb	LBB69_42
 # %bb.40:
 	mov	edi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edi
 	cmp	ecx, 32
-	jae	LBB59_45
+	jae	LBB69_45
 # %bb.41:
 	add	eax, 36
 	mov	ecx, edi
 	mov	edx, eax
-LBB59_42:
+LBB69_42:
 	push	edx
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB59_43:
+LBB69_43:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, esi
-LBB59_44:
+LBB69_44:
 	add	esp, 60
 	pop	esi
 	pop	edi
 	pop	ebx
 	pop	ebp
 	ret
-LBB59_45:
+LBB69_45:
 	mov	dword ptr [ebp - 16], 1
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.46:
@@ -12586,7 +16128,7 @@ LBB59_45:
 	.endef
 	.p2align	4, 0x90
 "?dtor$47@?0??uflow@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MAEHXZ@4HA":
-LBB59_47:
+LBB69_47:
 	push	ebp
 	sub	esp, 28
 	add	ebp, 12
@@ -12597,40 +16139,40 @@ LBB59_47:
 	.endef
 	.p2align	4, 0x90
 "?dtor$48@?0??uflow@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MAEHXZ@4HA":
-LBB59_48:
+LBB69_48:
 	push	ebp
 	sub	esp, 28
 	add	ebp, 12
 	mov	eax, dword ptr [ebp - 36]
 	cmp	eax, 16
-	jb	LBB59_53
+	jb	LBB69_53
 # %bb.49:
 	mov	ecx, dword ptr [ebp - 56]
 	lea	esi, [eax + 1]
 	cmp	esi, 4096
-	jb	LBB59_52
+	jb	LBB69_52
 # %bb.50:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB59_54
+	jae	LBB69_54
 # %bb.51:
 	add	eax, 36
 	mov	ecx, edx
 	mov	esi, eax
-LBB59_52:
+LBB69_52:
 	push	esi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB59_53:
+LBB69_53:
 	add	esp, 28
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB59_54:
+LBB69_54:
 	call	__invalid_parameter_noinfo_noreturn
-Lfunc_end22:
+Lfunc_end26:
 	.section	.xdata,"dr",associative,"?uflow@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MAEHXZ"
 	.p2align	2
 "L__ehtable$?uflow@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MAEHXZ":
@@ -12669,18 +16211,18 @@ Lfunc_end22:
 	cmp	ebx, 1
 	mov	eax, edi
 	sbb	eax, 0
-	jl	LBB60_1
+	jl	LBB70_1
 # %bb.2:
 	mov	edx, dword ptr [esp + 28]
 	cmp	dword ptr [ecx + 56], 0
 	mov	ebp, ecx
-	je	LBB60_11
+	je	LBB70_11
 # %bb.3:
 	mov	esi, ebx
 	mov	dword ptr [esp + 4], ebp        # 4-byte Spill
-	jmp	LBB60_4
+	jmp	LBB70_4
 	.p2align	4, 0x90
-LBB60_6:                                #   in Loop: Header=BB60_4 Depth=1
+LBB70_6:                                #   in Loop: Header=BB70_4 Depth=1
 	mov	ebp, ebx
 	sar	ebp, 31
 	cmp	ebx, esi
@@ -12703,57 +16245,57 @@ LBB60_6:                                #   in Loop: Header=BB60_4 Depth=1
 	sub	dword ptr [eax], ebx
 	mov	eax, dword ptr [ebp + 28]
 	add	dword ptr [eax], ebx
-LBB60_9:                                #   in Loop: Header=BB60_4 Depth=1
+LBB70_9:                                #   in Loop: Header=BB70_4 Depth=1
 	mov	eax, esi
 	neg	eax
 	mov	eax, 0
 	sbb	eax, edi
-	jge	LBB60_10
-LBB60_4:                                # =>This Inner Loop Header: Depth=1
+	jge	LBB70_10
+LBB70_4:                                # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [ebp + 28]
 	mov	eax, dword ptr [eax]
 	test	eax, eax
-	je	LBB60_7
-# %bb.5:                                #   in Loop: Header=BB60_4 Depth=1
+	je	LBB70_7
+# %bb.5:                                #   in Loop: Header=BB70_4 Depth=1
 	mov	ecx, dword ptr [ebp + 44]
 	mov	ebx, dword ptr [ecx]
 	test	ebx, ebx
-	jg	LBB60_6
-LBB60_7:                                #   in Loop: Header=BB60_4 Depth=1
+	jg	LBB70_6
+LBB70_7:                                #   in Loop: Header=BB70_4 Depth=1
 	mov	eax, dword ptr [ebp]
 	mov	ecx, ebp
 	mov	ebx, edx
 	call	dword ptr [eax + 28]
 	cmp	eax, -1
-	je	LBB60_10
-# %bb.8:                                #   in Loop: Header=BB60_4 Depth=1
+	je	LBB70_10
+# %bb.8:                                #   in Loop: Header=BB70_4 Depth=1
 	mov	edx, ebx
 	mov	byte ptr [ebx], al
 	inc	edx
 	add	esi, -1
 	adc	edi, -1
-	jmp	LBB60_9
-LBB60_10:
+	jmp	LBB70_9
+LBB70_10:
 	mov	ebx, dword ptr [esp + 32]
 	mov	eax, dword ptr [esp + 36]
 	sub	ebx, esi
 	sbb	eax, edi
 	mov	edi, eax
-	jmp	LBB60_27
-LBB60_1:
+	jmp	LBB70_27
+LBB70_1:
 	xor	ebx, ebx
 	xor	edi, edi
-	jmp	LBB60_27
-LBB60_11:
+	jmp	LBB70_27
+LBB70_11:
 	mov	eax, dword ptr [ebp + 28]
 	mov	eax, dword ptr [eax]
 	test	eax, eax
-	je	LBB60_12
+	je	LBB70_12
 # %bb.13:
 	mov	ecx, dword ptr [ebp + 44]
 	mov	edi, dword ptr [ecx]
 	test	edi, edi
-	je	LBB60_14
+	je	LBB70_14
 # %bb.15:
 	cmp	edi, ebx
 	cmovae	edi, ebx
@@ -12771,23 +16313,23 @@ LBB60_11:
 	sub	dword ptr [eax], edi
 	mov	eax, dword ptr [ebp + 28]
 	add	dword ptr [eax], edi
-	jmp	LBB60_16
-LBB60_12:
+	jmp	LBB70_16
+LBB70_12:
 	mov	esi, ebx
 	cmp	dword ptr [ebp + 76], 0
-	jne	LBB60_18
-	jmp	LBB60_26
-LBB60_14:
+	jne	LBB70_18
+	jmp	LBB70_26
+LBB70_14:
 	mov	esi, ebx
-LBB60_16:
+LBB70_16:
 	mov	edi, dword ptr [esp + 36]
 	cmp	dword ptr [ebp + 76], 0
-	je	LBB60_26
-LBB60_18:
+	je	LBB70_26
+LBB70_18:
 	mov	eax, dword ptr [ebp + 12]
 	lea	ecx, [ebp + 60]
 	cmp	dword ptr [eax], ecx
-	jne	LBB60_20
+	jne	LBB70_20
 # %bb.19:
 	mov	ecx, dword ptr [ebp + 80]
 	mov	dword ptr [esp], edx            # 4-byte Spill
@@ -12800,10 +16342,10 @@ LBB60_18:
 	mov	dword ptr [eax], edx
 	mov	edx, dword ptr [esp]            # 4-byte Reload
 	.p2align	4, 0x90
-LBB60_20:                               # =>This Inner Loop Header: Depth=1
+LBB70_20:                               # =>This Inner Loop Header: Depth=1
 	cmp	esi, 4096
-	jb	LBB60_22
-# %bb.21:                               #   in Loop: Header=BB60_20 Depth=1
+	jb	LBB70_22
+# %bb.21:                               #   in Loop: Header=BB70_20 Depth=1
 	push	dword ptr [ebp + 76]
 	push	4095
 	push	1
@@ -12815,11 +16357,11 @@ LBB60_20:                               # =>This Inner Loop Header: Depth=1
 	add	edx, eax
 	sub	esi, eax
 	cmp	eax, 4095
-	je	LBB60_20
-	jmp	LBB60_25
-LBB60_22:
+	je	LBB70_20
+	jmp	LBB70_25
+LBB70_22:
 	test	esi, esi
-	je	LBB60_23
+	je	LBB70_23
 # %bb.24:
 	push	dword ptr [ebp + 76]
 	push	esi
@@ -12828,15 +16370,15 @@ LBB60_22:
 	call	_fread
 	add	esp, 16
 	sub	esi, eax
-	jmp	LBB60_25
-LBB60_23:
+	jmp	LBB70_25
+LBB70_23:
 	xor	esi, esi
-LBB60_25:
+LBB70_25:
 	mov	ebx, dword ptr [esp + 32]
-LBB60_26:
+LBB70_26:
 	sub	ebx, esi
 	sbb	edi, 0
-LBB60_27:
+LBB70_27:
 	mov	eax, ebx
 	mov	edx, edi
 	add	esp, 8
@@ -12864,21 +16406,21 @@ LBB60_27:
 	mov	edi, dword ptr [esp + 36]
 	mov	ebx, dword ptr [esp + 32]
 	cmp	dword ptr [ecx + 56], 0
-	je	LBB61_9
+	je	LBB71_9
 # %bb.1:
 	cmp	edi, 1
 	mov	eax, esi
 	mov	edx, edi
 	sbb	eax, 0
-	jl	LBB61_20
+	jl	LBB71_20
 # %bb.2:
 	mov	dword ptr [esp], ecx            # 4-byte Spill
 	mov	edx, dword ptr [esp + 36]
 	mov	esi, dword ptr [esp + 40]
 	mov	edi, dword ptr [esp]            # 4-byte Reload
-	jmp	LBB61_5
+	jmp	LBB71_5
 	.p2align	4, 0x90
-LBB61_3:                                #   in Loop: Header=BB61_5 Depth=1
+LBB71_3:                                #   in Loop: Header=BB71_5 Depth=1
 	mov	edi, ebx
 	mov	ebx, ebp
 	sar	ebx, 31
@@ -12905,23 +16447,23 @@ LBB61_3:                                #   in Loop: Header=BB61_5 Depth=1
 	sub	dword ptr [eax], ebp
 	mov	eax, dword ptr [edi + 32]
 	add	dword ptr [eax], ebp
-LBB61_4:                                #   in Loop: Header=BB61_5 Depth=1
+LBB71_4:                                #   in Loop: Header=BB71_5 Depth=1
 	mov	eax, edx
 	neg	eax
 	mov	eax, 0
 	sbb	eax, esi
-	jge	LBB61_20
-LBB61_5:                                # =>This Inner Loop Header: Depth=1
+	jge	LBB71_20
+LBB71_5:                                # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [edi + 32]
 	mov	eax, dword ptr [eax]
 	test	eax, eax
-	je	LBB61_7
-# %bb.6:                                #   in Loop: Header=BB61_5 Depth=1
+	je	LBB71_7
+# %bb.6:                                #   in Loop: Header=BB71_5 Depth=1
 	mov	ecx, dword ptr [edi + 48]
 	mov	ebp, dword ptr [ecx]
 	test	ebp, ebp
-	jg	LBB61_3
-LBB61_7:                                #   in Loop: Header=BB61_5 Depth=1
+	jg	LBB71_3
+LBB71_7:                                #   in Loop: Header=BB71_5 Depth=1
 	movzx	eax, byte ptr [ebx]
 	mov	ebp, edx
 	mov	edx, dword ptr [edi]
@@ -12929,31 +16471,31 @@ LBB61_7:                                #   in Loop: Header=BB61_5 Depth=1
 	push	eax
 	call	dword ptr [edx + 12]
 	cmp	eax, -1
-	je	LBB61_13
-# %bb.8:                                #   in Loop: Header=BB61_5 Depth=1
+	je	LBB71_13
+# %bb.8:                                #   in Loop: Header=BB71_5 Depth=1
 	mov	edx, ebp
 	inc	ebx
 	add	edx, -1
 	adc	esi, -1
-	jmp	LBB61_4
-LBB61_9:
+	jmp	LBB71_4
+LBB71_9:
 	mov	eax, dword ptr [ecx + 32]
 	mov	ebp, ecx
 	mov	dword ptr [esp + 4], ebx        # 4-byte Spill
 	mov	eax, dword ptr [eax]
 	test	eax, eax
-	je	LBB61_15
+	je	LBB71_15
 # %bb.10:
 	cmp	edi, 1
 	mov	ecx, esi
 	sbb	ecx, 0
-	jl	LBB61_15
+	jl	LBB71_15
 # %bb.11:
 	mov	ecx, dword ptr [ebp + 48]
 	mov	ebx, ebp
 	mov	ebp, dword ptr [ecx]
 	test	ebp, ebp
-	jle	LBB61_14
+	jle	LBB71_14
 # %bb.12:
 	mov	edx, ebp
 	mov	ecx, esi
@@ -12980,22 +16522,22 @@ LBB61_9:
 	mov	eax, dword ptr [ecx + 32]
 	add	dword ptr [eax], ebp
 	mov	ebp, ecx
-	jmp	LBB61_15
-LBB61_13:
+	jmp	LBB71_15
+LBB71_13:
 	mov	edx, ebp
-	jmp	LBB61_20
-LBB61_14:
+	jmp	LBB71_20
+LBB71_14:
 	mov	ebp, ebx
-LBB61_15:
+LBB71_15:
 	cmp	edi, 1
 	mov	eax, esi
 	mov	ecx, edi
 	sbb	eax, 0
-	jl	LBB61_19
+	jl	LBB71_19
 # %bb.16:
 	mov	eax, dword ptr [ebp + 76]
 	test	eax, eax
-	je	LBB61_19
+	je	LBB71_19
 # %bb.17:
 	push	eax
 	mov	edi, esi
@@ -13009,10 +16551,10 @@ LBB61_15:
 	add	esp, 16
 	sub	edx, eax
 	sbb	esi, 0
-	jmp	LBB61_20
-LBB61_19:
+	jmp	LBB71_20
+LBB71_19:
 	mov	edx, ecx
-LBB61_20:
+LBB71_20:
 	mov	eax, dword ptr [esp + 36]
 	sub	eax, edx
 	mov	edx, dword ptr [esp + 40]
@@ -13047,26 +16589,26 @@ LBB61_20:
 	mov	edi, ecx
 	lea	ecx, [ecx + 60]
 	mov	dword ptr [esp + 8], ecx        # 4-byte Spill
-	jne	LBB62_3
+	jne	LBB72_3
 # %bb.1:
 	mov	eax, dword ptr [edi + 28]
 	cmp	dword ptr [eax], ecx
-	jne	LBB62_3
+	jne	LBB72_3
 # %bb.2:
 	xor	eax, eax
 	cmp	dword ptr [edi + 56], 0
 	sete	al
 	sub	ebx, eax
 	sbb	edx, 0
-LBB62_3:
+LBB72_3:
 	cmp	dword ptr [edi + 76], 0
-	je	LBB62_18
+	je	LBB72_18
 # %bb.4:
 	cmp	dword ptr [edi + 56], 0
-	je	LBB62_14
+	je	LBB72_14
 # %bb.5:
 	cmp	byte ptr [edi + 61], 0
-	je	LBB62_14
+	je	LBB72_14
 # %bb.6:
 	mov	eax, dword ptr [edi]
 	mov	ecx, edi
@@ -13074,7 +16616,7 @@ LBB62_3:
 	mov	dword ptr [esp + 8], edx        # 4-byte Spill
 	call	dword ptr [eax + 12]
 	cmp	eax, -1
-	je	LBB62_18
+	je	LBB72_18
 # %bb.7:
 	mov	ecx, dword ptr [edi + 56]
 	lea	edx, [edi + 64]
@@ -13090,21 +16632,21 @@ LBB62_3:
 	mov	eax, dword ptr [esp + 16]       # 4-byte Reload
 	call	dword ptr [eax + 32]
 	cmp	eax, 3
-	je	LBB62_23
+	je	LBB72_23
 # %bb.8:
 	mov	edx, dword ptr [esp + 4]        # 4-byte Reload
 	cmp	eax, 1
 	lea	ecx, [esp + 16]
-	je	LBB62_11
+	je	LBB72_11
 # %bb.9:
 	test	eax, eax
-	jne	LBB62_18
+	jne	LBB72_18
 # %bb.10:
 	mov	byte ptr [edi + 61], 0
-LBB62_11:
+LBB72_11:
 	mov	eax, dword ptr [esp + 12]
 	sub	eax, ecx
-	je	LBB62_13
+	je	LBB72_13
 # %bb.12:
 	push	dword ptr [edi + 76]
 	push	eax
@@ -13115,22 +16657,22 @@ LBB62_11:
 	mov	edx, dword ptr [esp + 20]       # 4-byte Reload
 	add	esp, 16
 	cmp	dword ptr [esp], eax            # 4-byte Folded Reload
-	jne	LBB62_18
-LBB62_13:
+	jne	LBB72_18
+LBB72_13:
 	cmp	byte ptr [edi + 61], 0
-	jne	LBB62_18
-	jmp	LBB62_14
-LBB62_23:
+	jne	LBB72_18
+	jmp	LBB72_14
+LBB72_23:
 	mov	edx, dword ptr [esp + 4]        # 4-byte Reload
 	mov	byte ptr [edi + 61], 0
-LBB62_14:
+LBB72_14:
 	cmp	dword ptr [ebp + 20], 1
-	jne	LBB62_16
+	jne	LBB72_16
 # %bb.15:
 	mov	eax, ebx
 	or	eax, edx
-	je	LBB62_17
-LBB62_16:
+	je	LBB72_17
+LBB72_16:
 	push	dword ptr [ebp + 20]
 	push	edx
 	push	ebx
@@ -13138,23 +16680,23 @@ LBB62_16:
 	call	__fseeki64
 	add	esp, 16
 	test	eax, eax
-	jne	LBB62_18
-LBB62_17:
+	jne	LBB72_18
+LBB72_17:
 	lea	eax, [esp + 16]
 	push	eax
 	push	dword ptr [edi + 76]
 	call	_fgetpos
 	add	esp, 8
 	test	eax, eax
-	je	LBB62_19
-LBB62_18:
+	je	LBB72_19
+LBB72_18:
 	mov	dword ptr [esi + 4], -1
 	mov	dword ptr [esi], -1
 	mov	dword ptr [esi + 12], 0
 	mov	dword ptr [esi + 8], 0
 	mov	dword ptr [esi + 20], 0
 	mov	dword ptr [esi + 16], 0
-LBB62_22:
+LBB72_22:
 	mov	eax, esi
 	lea	esp, [ebp - 12]
 	pop	esi
@@ -13162,11 +16704,11 @@ LBB62_22:
 	pop	ebx
 	pop	ebp
 	ret	20
-LBB62_19:
+LBB72_19:
 	mov	eax, dword ptr [edi + 12]
 	mov	ecx, dword ptr [esp + 8]        # 4-byte Reload
 	cmp	dword ptr [eax], ecx
-	jne	LBB62_21
+	jne	LBB72_21
 # %bb.20:
 	mov	ecx, dword ptr [edi + 80]
 	mov	edx, dword ptr [edi + 84]
@@ -13176,7 +16718,7 @@ LBB62_19:
 	mov	dword ptr [eax], ecx
 	mov	eax, dword ptr [edi + 44]
 	mov	dword ptr [eax], edx
-LBB62_21:
+LBB72_21:
 	mov	edx, dword ptr [edi + 64]
 	mov	eax, dword ptr [esp + 16]
 	mov	edi, dword ptr [edi + 68]
@@ -13187,7 +16729,7 @@ LBB62_21:
 	mov	dword ptr [esi + 12], 0
 	mov	dword ptr [esi + 16], edx
 	mov	dword ptr [esi + 20], edi
-	jmp	LBB62_22
+	jmp	LBB72_22
                                         # -- End function
 	.def	 "?seekpos@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MAE?AV?$fpos@U_Mbstatet@@@2@V32@H@Z";
 	.scl	2;
@@ -13217,20 +16759,20 @@ LBB62_21:
 	mov	dword ptr [esp + 8], eax
 	mov	dword ptr [esp + 12], ecx
 	cmp	dword ptr [edi + 76], 0
-	je	LBB63_12
+	je	LBB73_12
 # %bb.1:
 	cmp	dword ptr [edi + 56], 0
-	je	LBB63_11
+	je	LBB73_11
 # %bb.2:
 	cmp	byte ptr [edi + 61], 0
-	je	LBB63_11
+	je	LBB73_11
 # %bb.3:
 	mov	eax, dword ptr [edi]
 	mov	ecx, edi
 	push	-1
 	call	dword ptr [eax + 12]
 	cmp	eax, -1
-	je	LBB63_12
+	je	LBB73_12
 # %bb.4:
 	mov	ecx, dword ptr [edi + 56]
 	lea	edx, [edi + 64]
@@ -13246,20 +16788,20 @@ LBB62_21:
 	mov	eax, dword ptr [esp + 20]       # 4-byte Reload
 	call	dword ptr [eax + 32]
 	cmp	eax, 3
-	je	LBB63_17
+	je	LBB73_17
 # %bb.5:
 	cmp	eax, 1
 	lea	ecx, [esp + 28]
-	je	LBB63_8
+	je	LBB73_8
 # %bb.6:
 	test	eax, eax
-	jne	LBB63_12
+	jne	LBB73_12
 # %bb.7:
 	mov	byte ptr [edi + 61], 0
-LBB63_8:
+LBB73_8:
 	mov	eax, dword ptr [esp + 24]
 	sub	eax, ecx
-	je	LBB63_10
+	je	LBB73_10
 # %bb.9:
 	push	dword ptr [edi + 76]
 	push	eax
@@ -13269,29 +16811,29 @@ LBB63_8:
 	call	_fwrite
 	add	esp, 16
 	cmp	dword ptr [esp + 4], eax        # 4-byte Folded Reload
-	jne	LBB63_12
-LBB63_10:
+	jne	LBB73_12
+LBB73_10:
 	cmp	byte ptr [edi + 61], 0
-	jne	LBB63_12
-	jmp	LBB63_11
-LBB63_17:
+	jne	LBB73_12
+	jmp	LBB73_11
+LBB73_17:
 	mov	byte ptr [edi + 61], 0
-LBB63_11:
+LBB73_11:
 	lea	eax, [esp + 8]
 	push	eax
 	push	dword ptr [edi + 76]
 	call	_fsetpos
 	add	esp, 8
 	test	eax, eax
-	je	LBB63_13
-LBB63_12:
+	je	LBB73_13
+LBB73_12:
 	mov	dword ptr [esi + 4], -1
 	mov	dword ptr [esi], -1
 	mov	dword ptr [esi + 12], 0
 	mov	dword ptr [esi + 8], 0
 	mov	dword ptr [esi + 20], 0
 	mov	dword ptr [esi + 16], 0
-LBB63_16:
+LBB73_16:
 	mov	eax, esi
 	lea	esp, [ebp - 12]
 	pop	esi
@@ -13299,14 +16841,14 @@ LBB63_16:
 	pop	ebx
 	pop	ebp
 	ret	32
-LBB63_13:
+LBB73_13:
 	mov	edx, dword ptr [esp + 20]       # 4-byte Reload
 	mov	dword ptr [edi + 64], ebx
 	lea	ecx, [edi + 60]
 	mov	dword ptr [edi + 68], edx
 	mov	eax, dword ptr [edi + 12]
 	cmp	dword ptr [eax], ecx
-	jne	LBB63_15
+	jne	LBB73_15
 # %bb.14:
 	mov	ecx, dword ptr [edi + 80]
 	mov	edx, dword ptr [edi + 84]
@@ -13318,7 +16860,7 @@ LBB63_13:
 	mov	dword ptr [eax], edx
 	mov	ebx, dword ptr [edi + 64]
 	mov	edx, dword ptr [edi + 68]
-LBB63_15:
+LBB73_15:
 	mov	eax, dword ptr [esp + 8]
 	mov	ecx, dword ptr [esp + 12]
 	mov	dword ptr [esi], eax
@@ -13327,7 +16869,7 @@ LBB63_15:
 	mov	dword ptr [esi + 12], 0
 	mov	dword ptr [esi + 16], ebx
 	mov	dword ptr [esi + 20], edx
-	jmp	LBB63_16
+	jmp	LBB73_16
                                         # -- End function
 	.def	 "?setbuf@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MAEPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@PAD_J@Z";
 	.scl	2;
@@ -13346,7 +16888,7 @@ LBB63_15:
 	mov	eax, dword ptr [ecx + 76]
 	xor	edi, edi
 	test	eax, eax
-	je	LBB64_5
+	je	LBB74_5
 # %bb.1:
 	mov	edx, dword ptr [esp + 36]
 	mov	ebp, dword ptr [esp + 40]
@@ -13364,7 +16906,7 @@ LBB63_15:
 	call	_setvbuf
 	add	esp, 16
 	test	eax, eax
-	jne	LBB64_5
+	jne	LBB74_5
 # %bb.2:
 	mov	edi, dword ptr [esi + 76]
 	lea	eax, [esi + 4]
@@ -13388,7 +16930,7 @@ LBB63_15:
 	mov	dword ptr [esi + 20], 0
 	mov	dword ptr [esi + 36], 0
 	test	edi, edi
-	je	LBB64_4
+	je	LBB74_4
 # %bb.3:
 	mov	eax, esp
 	mov	dword ptr [esp + 8], 0
@@ -13411,7 +16953,7 @@ LBB63_15:
 	mov	dword ptr [esi + 32], ecx
 	mov	dword ptr [esi + 44], eax
 	mov	dword ptr [esi + 48], eax
-LBB64_4:
+LBB74_4:
 	mov	dword ptr [esi + 76], edi
 	mov	edi, esi
 	mov	eax, dword ptr ["?_Stinit@?1??_Init@?$basic_filebuf@DU?$char_traits@D@std@@@std@@IAEXPAU_iobuf@@W4_Initfl@23@@Z@4U_Mbstatet@@A"]
@@ -13419,7 +16961,7 @@ LBB64_4:
 	mov	dword ptr [esi + 68], ecx
 	mov	dword ptr [esi + 64], eax
 	mov	dword ptr [esi + 56], 0
-LBB64_5:
+LBB74_5:
 	mov	eax, edi
 	add	esp, 12
 	pop	esi
@@ -13439,14 +16981,14 @@ LBB64_5:
 # %bb.0:
 	push	esi
 	cmp	dword ptr [ecx + 76], 0
-	je	LBB65_3
+	je	LBB75_3
 # %bb.1:
 	mov	eax, dword ptr [ecx]
 	mov	esi, ecx
 	push	-1
 	call	dword ptr [eax + 12]
 	cmp	eax, -1
-	je	LBB65_3
+	je	LBB75_3
 # %bb.2:
 	push	dword ptr [esi + 76]
 	call	_fflush
@@ -13454,7 +16996,7 @@ LBB64_5:
 	sar	eax, 31
 	pop	esi
 	ret
-LBB65_3:
+LBB75_3:
 	xor	eax, eax
 	pop	esi
 	ret
@@ -13479,13 +17021,13 @@ LBB65_3:
 	mov	ecx, edi
 	call	dword ptr [eax + 12]
 	test	al, al
-	je	LBB66_2
+	je	LBB76_2
 # %bb.1:
 	mov	dword ptr [esi + 56], 0
 	pop	esi
 	pop	edi
 	ret	4
-LBB66_2:
+LBB76_2:
 	lea	eax, [esi + 4]
 	lea	ecx, [esi + 8]
 	mov	dword ptr [esi + 56], edi
@@ -13526,33 +17068,33 @@ LBB66_2:
 	mov	esi, ecx
 	mov	ebx, dword ptr [ecx + 52]
 	test	ebx, ebx
-	je	LBB67_5
+	je	LBB77_5
 # %bb.1:
 	mov	ecx, dword ptr [ebx + 4]
 	test	ecx, ecx
-	je	LBB67_4
+	je	LBB77_4
 # %bb.2:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB67_4
+	je	LBB77_4
 # %bb.3:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB67_4:
+LBB77_4:
 	push	ebx
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB67_5:
+LBB77_5:
 	test	edi, edi
-	je	LBB67_7
+	je	LBB77_7
 # %bb.6:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB67_7:
+LBB77_7:
 	mov	eax, esi
 	pop	esi
 	pop	edi
@@ -13631,7 +17173,7 @@ LBB67_7:
 	mov	esi, ecx
 	call	dword ptr [eax + 24]
 	cmp	eax, -1
-	je	LBB73_1
+	je	LBB83_1
 # %bb.2:
 	mov	eax, dword ptr [esi + 44]
 	dec	dword ptr [eax]
@@ -13642,7 +17184,7 @@ LBB67_7:
 	movzx	eax, byte ptr [ecx]
 	pop	esi
 	ret
-LBB73_1:
+LBB83_1:
 	mov	eax, -1
 	pop	esi
 	ret
@@ -13666,16 +17208,16 @@ LBB73_1:
 	cmp	ebp, 1
 	mov	eax, esi
 	sbb	eax, 0
-	jl	LBB74_8
+	jl	LBB84_8
 # %bb.1:
 	mov	edx, dword ptr [esp + 28]
 	mov	ebp, dword ptr [esp + 32]
 	mov	esi, dword ptr [esp + 36]
 	mov	ebx, ecx
 	mov	dword ptr [esp], ecx            # 4-byte Spill
-	jmp	LBB74_2
+	jmp	LBB84_2
 	.p2align	4, 0x90
-LBB74_4:                                #   in Loop: Header=BB74_2 Depth=1
+LBB84_4:                                #   in Loop: Header=BB84_2 Depth=1
 	mov	ebx, edi
 	sar	ebx, 31
 	cmp	edi, ebp
@@ -13698,37 +17240,37 @@ LBB74_4:                                #   in Loop: Header=BB74_2 Depth=1
 	sub	dword ptr [eax], edi
 	mov	eax, dword ptr [ebx + 28]
 	add	dword ptr [eax], edi
-LBB74_7:                                #   in Loop: Header=BB74_2 Depth=1
+LBB84_7:                                #   in Loop: Header=BB84_2 Depth=1
 	mov	eax, ebp
 	neg	eax
 	mov	eax, 0
 	sbb	eax, esi
-	jge	LBB74_8
-LBB74_2:                                # =>This Inner Loop Header: Depth=1
+	jge	LBB84_8
+LBB84_2:                                # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [ebx + 28]
 	mov	eax, dword ptr [eax]
 	test	eax, eax
-	je	LBB74_5
-# %bb.3:                                #   in Loop: Header=BB74_2 Depth=1
+	je	LBB84_5
+# %bb.3:                                #   in Loop: Header=BB84_2 Depth=1
 	mov	ecx, dword ptr [ebx + 44]
 	mov	edi, dword ptr [ecx]
 	test	edi, edi
-	jg	LBB74_4
-LBB74_5:                                #   in Loop: Header=BB74_2 Depth=1
+	jg	LBB84_4
+LBB84_5:                                #   in Loop: Header=BB84_2 Depth=1
 	mov	eax, dword ptr [ebx]
 	mov	ecx, ebx
 	mov	edi, edx
 	call	dword ptr [eax + 28]
 	cmp	eax, -1
-	je	LBB74_8
-# %bb.6:                                #   in Loop: Header=BB74_2 Depth=1
+	je	LBB84_8
+# %bb.6:                                #   in Loop: Header=BB84_2 Depth=1
 	mov	edx, edi
 	mov	byte ptr [edi], al
 	inc	edx
 	add	ebp, -1
 	adc	esi, -1
-	jmp	LBB74_7
-LBB74_8:
+	jmp	LBB84_7
+LBB84_8:
 	mov	eax, dword ptr [esp + 32]
 	mov	edx, dword ptr [esp + 36]
 	sub	eax, ebp
@@ -13759,16 +17301,16 @@ LBB74_8:
 	cmp	ebp, 1
 	mov	eax, esi
 	sbb	eax, 0
-	jl	LBB75_8
+	jl	LBB85_8
 # %bb.1:
 	mov	edx, dword ptr [esp + 28]
 	mov	ebp, dword ptr [esp + 32]
 	mov	esi, dword ptr [esp + 36]
 	mov	ebx, ecx
 	mov	dword ptr [esp], ecx            # 4-byte Spill
-	jmp	LBB75_2
+	jmp	LBB85_2
 	.p2align	4, 0x90
-LBB75_4:                                #   in Loop: Header=BB75_2 Depth=1
+LBB85_4:                                #   in Loop: Header=BB85_2 Depth=1
 	mov	ebx, edi
 	sar	ebx, 31
 	cmp	edi, ebp
@@ -13791,23 +17333,23 @@ LBB75_4:                                #   in Loop: Header=BB75_2 Depth=1
 	sub	dword ptr [eax], edi
 	mov	eax, dword ptr [ebx + 32]
 	add	dword ptr [eax], edi
-LBB75_7:                                #   in Loop: Header=BB75_2 Depth=1
+LBB85_7:                                #   in Loop: Header=BB85_2 Depth=1
 	mov	eax, ebp
 	neg	eax
 	mov	eax, 0
 	sbb	eax, esi
-	jge	LBB75_8
-LBB75_2:                                # =>This Inner Loop Header: Depth=1
+	jge	LBB85_8
+LBB85_2:                                # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [ebx + 32]
 	mov	eax, dword ptr [eax]
 	test	eax, eax
-	je	LBB75_5
-# %bb.3:                                #   in Loop: Header=BB75_2 Depth=1
+	je	LBB85_5
+# %bb.3:                                #   in Loop: Header=BB85_2 Depth=1
 	mov	ecx, dword ptr [ebx + 48]
 	mov	edi, dword ptr [ecx]
 	test	edi, edi
-	jg	LBB75_4
-LBB75_5:                                #   in Loop: Header=BB75_2 Depth=1
+	jg	LBB85_4
+LBB85_5:                                #   in Loop: Header=BB85_2 Depth=1
 	movzx	eax, byte ptr [edx]
 	mov	edi, edx
 	mov	edx, dword ptr [ebx]
@@ -13815,14 +17357,14 @@ LBB75_5:                                #   in Loop: Header=BB75_2 Depth=1
 	push	eax
 	call	dword ptr [edx + 12]
 	cmp	eax, -1
-	je	LBB75_8
-# %bb.6:                                #   in Loop: Header=BB75_2 Depth=1
+	je	LBB85_8
+# %bb.6:                                #   in Loop: Header=BB85_2 Depth=1
 	inc	edi
 	add	ebp, -1
 	adc	esi, -1
 	mov	edx, edi
-	jmp	LBB75_7
-LBB75_8:
+	jmp	LBB85_7
+LBB85_8:
 	mov	eax, dword ptr [esp + 32]
 	mov	edx, dword ptr [esp + 36]
 	sub	eax, ebp
@@ -13913,7 +17455,7 @@ LBB75_8:
 	.globl	"??$_Reallocate_grow_by@V<lambda_1>@?0??push_back@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXD@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??push_back@01@QAEXD@Z@D@Z" # -- Begin function ??$_Reallocate_grow_by@V<lambda_1>@?0??push_back@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXD@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??push_back@01@QAEXD@Z@D@Z
 	.p2align	4, 0x90
 "??$_Reallocate_grow_by@V<lambda_1>@?0??push_back@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXD@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??push_back@01@QAEXD@Z@D@Z": # @"??$_Reallocate_grow_by@V<lambda_1>@?0??push_back@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXD@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??push_back@01@QAEXD@Z@D@Z"
-Lfunc_begin23:
+Lfunc_begin27:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -13934,7 +17476,7 @@ Lfunc_begin23:
 	mov	edx, dword ptr [ecx + 16]
 	sub	eax, edx
 	cmp	eax, esi
-	jb	LBB81_19
+	jb	LBB91_19
 # %bb.1:
 	mov	ebx, dword ptr [ecx + 20]
 	add	esi, edx
@@ -13944,14 +17486,14 @@ Lfunc_begin23:
 	mov	ecx, esi
 	or	ecx, 15
 	mov	dword ptr [ebp - 32], ebx       # 4-byte Spill
-	js	LBB81_5
+	js	LBB91_5
 # %bb.2:
 	mov	edx, ebx
 	shr	edx
 	mov	edi, edx
 	xor	edi, 2147483647
 	cmp	edi, ebx
-	jb	LBB81_5
+	jb	LBB91_5
 # %bb.3:
 	add	edx, dword ptr [ebp - 32]       # 4-byte Folded Reload
 	cmp	ecx, edx
@@ -13959,12 +17501,12 @@ Lfunc_begin23:
 	cmovae	ebx, ecx
 	lea	eax, [ebx + 1]
 	cmp	eax, 4096
-	jb	LBB81_6
+	jb	LBB91_6
 # %bb.4:
 	cmp	eax, -35
 	mov	dword ptr [ebp - 36], ebx       # 4-byte Spill
-	jae	LBB81_20
-LBB81_5:
+	jae	LBB91_20
+LBB91_5:
 	add	eax, 35
 	push	eax
 	call	"??2@YAPAXI@Z"
@@ -13973,13 +17515,13 @@ LBB81_5:
 	lea	edi, [eax + 35]
 	and	edi, -32
 	mov	dword ptr [edi - 4], eax
-LBB81_9:
+LBB91_9:
 	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	eax, dword ptr [ebp - 44]       # 4-byte Reload
 	cmp	ecx, 16
 	mov	dword ptr [eax + 16], esi
 	mov	dword ptr [eax + 20], ebx
-	jb	LBB81_17
+	jb	LBB91_17
 # %bb.10:
 	mov	esi, dword ptr [eax]
 	mov	ebx, dword ptr [ebp - 40]       # 4-byte Reload
@@ -13994,25 +17536,25 @@ LBB81_9:
 	lea	eax, [edx + 1]
 	mov	byte ptr [edi + ebx + 1], 0
 	cmp	eax, 4096
-	jb	LBB81_16
+	jb	LBB91_16
 # %bb.11:
 	mov	ecx, dword ptr [esi - 4]
 	add	esi, -4
 	sub	esi, ecx
 	cmp	esi, 32
-	jae	LBB81_12
+	jae	LBB91_12
 # %bb.15:
 	add	edx, 36
 	mov	esi, ecx
 	mov	eax, edx
-LBB81_16:
+LBB91_16:
 	push	eax
 	push	esi
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	esi, dword ptr [ebp - 44]       # 4-byte Reload
-	jmp	LBB81_18
-LBB81_17:
+	jmp	LBB91_18
+LBB91_17:
 	mov	ebx, dword ptr [ebp - 40]       # 4-byte Reload
 	push	ebx
 	push	eax
@@ -14023,7 +17565,7 @@ LBB81_17:
 	mov	al, byte ptr [ebp + 16]
 	mov	byte ptr [edi + ebx], al
 	mov	byte ptr [edi + ebx + 1], 0
-LBB81_18:
+LBB91_18:
 	mov	dword ptr [esi], edi
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
@@ -14034,26 +17576,26 @@ LBB81_18:
 	pop	ebx
 	pop	ebp
 	ret	12
-LBB81_6:
+LBB91_6:
 	test	eax, eax
-	je	LBB81_7
+	je	LBB91_7
 # %bb.8:
 	push	eax
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
 	mov	edi, eax
-	jmp	LBB81_9
-LBB81_7:
+	jmp	LBB91_9
+LBB91_7:
 	xor	edi, edi
 	mov	ebx, -1
-	jmp	LBB81_9
-LBB81_19:
+	jmp	LBB91_9
+LBB91_19:
 	call	"?_Xlen_string@std@@YAXXZ"
-LBB81_12:
+LBB91_12:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.13:
-LBB81_20:
+LBB91_20:
 	call	"?_Throw_bad_array_new_length@std@@YAXXZ"
 	.def	 "?dtor$14@?0???$_Reallocate_grow_by@V<lambda_1>@?0??push_back@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXD@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??push_back@01@QAEXD@Z@D@Z@4HA";
 	.scl	3;
@@ -14061,12 +17603,12 @@ LBB81_20:
 	.endef
 	.p2align	4, 0x90
 "?dtor$14@?0???$_Reallocate_grow_by@V<lambda_1>@?0??push_back@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXD@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??push_back@01@QAEXD@Z@D@Z@4HA":
-LBB81_14:
+LBB91_14:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end23:
+Lfunc_end27:
 	.section	.xdata,"dr",associative,"??$_Reallocate_grow_by@V<lambda_1>@?0??push_back@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXD@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??push_back@01@QAEXD@Z@D@Z"
 	.p2align	2
 "L__ehtable$??$_Reallocate_grow_by@V<lambda_1>@?0??push_back@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXD@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??push_back@01@QAEXD@Z@D@Z":
@@ -14104,7 +17646,7 @@ Lfunc_end23:
 	.globl	"??$use_facet@V?$codecvt@DDU_Mbstatet@@@std@@@std@@YAABV?$codecvt@DDU_Mbstatet@@@0@ABVlocale@0@@Z" # -- Begin function ??$use_facet@V?$codecvt@DDU_Mbstatet@@@std@@@std@@YAABV?$codecvt@DDU_Mbstatet@@@0@ABVlocale@0@@Z
 	.p2align	4, 0x90
 "??$use_facet@V?$codecvt@DDU_Mbstatet@@@std@@@std@@YAABV?$codecvt@DDU_Mbstatet@@@0@ABVlocale@0@@Z": # @"??$use_facet@V?$codecvt@DDU_Mbstatet@@@std@@@std@@YAABV?$codecvt@DDU_Mbstatet@@@0@ABVlocale@0@@Z"
-Lfunc_begin24:
+Lfunc_begin28:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -14126,38 +17668,38 @@ Lfunc_begin24:
 	mov	edx, dword ptr ["?id@?$codecvt@DDU_Mbstatet@@@std@@2V0locale@2@A"]
 	mov	edi, dword ptr ["?_Psave@?$_Facetptr@V?$codecvt@DDU_Mbstatet@@@std@@@std@@2PBVfacet@locale@2@B"]
 	test	edx, edx
-	je	LBB83_1
+	je	LBB93_1
 # %bb.4:
 	mov	eax, dword ptr [esi + 4]
 	cmp	dword ptr [eax + 12], edx
-	ja	LBB83_5
-	jmp	LBB83_6
-LBB83_1:
+	ja	LBB93_5
+	jmp	LBB93_6
+LBB93_1:
 	lea	ecx, [ebp - 92]
 	push	0
 	call	"??0_Lockit@std@@QAE@H@Z"
 	cmp	dword ptr ["?id@?$codecvt@DDU_Mbstatet@@@std@@2V0locale@2@A"], 0
-	jne	LBB83_3
+	jne	LBB93_3
 # %bb.2:
 	mov	eax, dword ptr ["?_Id_cnt@id@locale@std@@0HA"]
 	inc	eax
 	mov	dword ptr ["?_Id_cnt@id@locale@std@@0HA"], eax
 	mov	dword ptr ["?id@?$codecvt@DDU_Mbstatet@@@std@@2V0locale@2@A"], eax
-LBB83_3:
+LBB93_3:
 	lea	ecx, [ebp - 92]
 	call	"??1_Lockit@std@@QAE@XZ"
 	mov	edx, dword ptr ["?id@?$codecvt@DDU_Mbstatet@@@std@@2V0locale@2@A"]
 	mov	eax, dword ptr [esi + 4]
 	cmp	dword ptr [eax + 12], edx
-	jbe	LBB83_6
-LBB83_5:
+	jbe	LBB93_6
+LBB93_5:
 	mov	ecx, dword ptr [eax + 8]
 	mov	esi, dword ptr [ecx + 4*edx]
 	test	esi, esi
-	jne	LBB83_18
-LBB83_6:
+	jne	LBB93_18
+LBB93_6:
 	cmp	byte ptr [eax + 20], 0
-	je	LBB83_10
+	je	LBB93_10
 # %bb.7:
 	mov	dword ptr [ebp - 40], edx       # 4-byte Spill
 	mov	dword ptr [ebp - 32], edi       # 4-byte Spill
@@ -14167,16 +17709,16 @@ LBB83_6:
 	mov	ecx, dword ptr [ebp - 40]       # 4-byte Reload
 	mov	edi, dword ptr [ebp - 32]       # 4-byte Reload
 	cmp	dword ptr [eax + 12], ecx
-	jbe	LBB83_10
+	jbe	LBB93_10
 # %bb.9:
 	mov	eax, dword ptr [eax + 8]
 	mov	esi, dword ptr [eax + 4*ecx]
 	test	esi, esi
-	jne	LBB83_18
-LBB83_10:
+	jne	LBB93_18
+LBB93_10:
 	test	edi, edi
 	mov	esi, edi
-	jne	LBB83_18
+	jne	LBB93_18
 # %bb.11:
 	mov	dword ptr [ebp - 16], 0
 	push	8
@@ -14188,7 +17730,7 @@ LBB83_10:
 	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
 	mov	eax, dword ptr [eax + 4]
 	test	eax, eax
-	je	LBB83_13
+	je	LBB93_13
 # %bb.14:
 	mov	ecx, dword ptr [eax + 24]
 	add	eax, 28
@@ -14198,14 +17740,14 @@ LBB83_10:
 	lea	ecx, [ebp - 92]
 	push	eax
 	call	"??0_Locinfo@std@@QAE@PBD@Z"
-	jmp	LBB83_16
-LBB83_13:
+	jmp	LBB93_16
+LBB93_13:
 	mov	eax, offset "??_C@_00CNPNBAHC@?$AA@"
 	mov	dword ptr [ebp - 16], 1
 	lea	ecx, [ebp - 92]
 	push	eax
 	call	"??0_Locinfo@std@@QAE@PBD@Z"
-LBB83_16:
+LBB93_16:
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
 	lea	ecx, [ebp - 92]
 	mov	dword ptr [esi + 4], 0
@@ -14221,7 +17763,7 @@ LBB83_16:
 	mov	ecx, esi
 	call	dword ptr [eax + 4]
 	mov	dword ptr ["?_Psave@?$_Facetptr@V?$codecvt@DDU_Mbstatet@@@std@@@std@@2PBVfacet@locale@2@B"], esi
-LBB83_18:
+LBB93_18:
 	lea	ecx, [ebp - 36]
 	call	"??1_Lockit@std@@QAE@XZ"
 	mov	eax, dword ptr [ebp - 24]
@@ -14239,7 +17781,7 @@ LBB83_18:
 	.endef
 	.p2align	4, 0x90
 "?dtor$19@?0???$use_facet@V?$codecvt@DDU_Mbstatet@@@std@@@std@@YAABV?$codecvt@DDU_Mbstatet@@@0@ABVlocale@0@@Z@4HA":
-LBB83_19:
+LBB93_19:
 	push	ebp
 	push	eax
 	add	ebp, 12
@@ -14254,7 +17796,7 @@ LBB83_19:
 	.endef
 	.p2align	4, 0x90
 "?dtor$20@?0???$use_facet@V?$codecvt@DDU_Mbstatet@@@std@@@std@@YAABV?$codecvt@DDU_Mbstatet@@@0@ABVlocale@0@@Z@4HA":
-LBB83_20:
+LBB93_20:
 	push	ebp
 	push	eax
 	add	ebp, 12
@@ -14269,7 +17811,7 @@ LBB83_20:
 	.endef
 	.p2align	4, 0x90
 "?dtor$21@?0???$use_facet@V?$codecvt@DDU_Mbstatet@@@std@@@std@@YAABV?$codecvt@DDU_Mbstatet@@@0@ABVlocale@0@@Z@4HA":
-LBB83_21:
+LBB93_21:
 	push	ebp
 	push	eax
 	add	ebp, 12
@@ -14280,7 +17822,7 @@ LBB83_21:
 	add	esp, 4
 	pop	ebp
 	ret                                     # CLEANUPRET
-Lfunc_end24:
+Lfunc_end28:
 	.section	.xdata,"dr",associative,"??$use_facet@V?$codecvt@DDU_Mbstatet@@@std@@@std@@YAABV?$codecvt@DDU_Mbstatet@@@0@ABVlocale@0@@Z"
 	.p2align	2
 "L__ehtable$??$use_facet@V?$codecvt@DDU_Mbstatet@@@std@@@std@@YAABV?$codecvt@DDU_Mbstatet@@@0@ABVlocale@0@@Z":
@@ -14328,7 +17870,7 @@ Lfunc_end24:
 	.globl	"??0_Locinfo@std@@QAE@PBD@Z"    # -- Begin function ??0_Locinfo@std@@QAE@PBD@Z
 	.p2align	4, 0x90
 "??0_Locinfo@std@@QAE@PBD@Z":           # @"??0_Locinfo@std@@QAE@PBD@Z"
-Lfunc_begin25:
+Lfunc_begin29:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -14362,7 +17904,7 @@ Lfunc_begin25:
 	mov	dword ptr [edi + 44], 0
 	mov	byte ptr [edi + 48], 0
 	mov	dword ptr [ebp - 32], edi       # 4-byte Spill
-	je	LBB85_3
+	je	LBB95_3
 # %bb.1:
 	mov	dword ptr [ebp - 16], 0
 	push	esi
@@ -14379,7 +17921,7 @@ Lfunc_begin25:
 	pop	ebx
 	pop	ebp
 	ret	4
-LBB85_3:
+LBB95_3:
 	mov	dword ptr [ebp - 16], 0
 	push	offset "??_C@_0BA@ELKIONDK@bad?5locale?5name?$AA@"
 	call	"?_Xruntime_error@std@@YAXPBD@Z"
@@ -14391,7 +17933,7 @@ LBB85_3:
 	.endef
 	.p2align	4, 0x90
 "?dtor$5@?0???0_Locinfo@std@@QAE@PBD@Z@4HA":
-LBB85_5:
+LBB95_5:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
@@ -14399,69 +17941,69 @@ LBB85_5:
 	mov	esi, eax
 	mov	eax, dword ptr [eax + 44]
 	test	eax, eax
-	je	LBB85_7
+	je	LBB95_7
 # %bb.6:
 	push	eax
 	call	_free
 	add	esp, 4
-LBB85_7:
+LBB95_7:
 	mov	dword ptr [esi + 44], 0
 	mov	eax, esi
 	mov	eax, dword ptr [esi + 36]
 	test	eax, eax
-	je	LBB85_9
+	je	LBB95_9
 # %bb.8:
 	push	eax
 	call	_free
 	add	esp, 4
-LBB85_9:
+LBB95_9:
 	mov	dword ptr [esi + 36], 0
 	mov	eax, esi
 	mov	eax, dword ptr [esi + 28]
 	test	eax, eax
-	je	LBB85_11
+	je	LBB95_11
 # %bb.10:
 	push	eax
 	call	_free
 	add	esp, 4
-LBB85_11:
+LBB95_11:
 	mov	dword ptr [esi + 28], 0
 	mov	eax, esi
 	mov	eax, dword ptr [esi + 20]
 	test	eax, eax
-	je	LBB85_13
+	je	LBB95_13
 # %bb.12:
 	push	eax
 	call	_free
 	add	esp, 4
-LBB85_13:
+LBB95_13:
 	mov	dword ptr [esi + 20], 0
 	mov	eax, esi
 	mov	eax, dword ptr [esi + 12]
 	test	eax, eax
-	je	LBB85_15
+	je	LBB95_15
 # %bb.14:
 	push	eax
 	call	_free
 	add	esp, 4
-LBB85_15:
+LBB95_15:
 	mov	dword ptr [esi + 12], 0
 	mov	eax, esi
 	mov	eax, dword ptr [esi + 4]
 	test	eax, eax
-	je	LBB85_17
+	je	LBB95_17
 # %bb.16:
 	push	eax
 	call	_free
 	add	esp, 4
-LBB85_17:
+LBB95_17:
 	mov	ecx, esi
 	mov	dword ptr [esi + 4], 0
 	call	"??1_Lockit@std@@QAE@XZ"
 	add	esp, 8
 	pop	ebp
 	ret                                     # CLEANUPRET
-Lfunc_end25:
+Lfunc_end29:
 	.section	.xdata,"dr",associative,"??0_Locinfo@std@@QAE@PBD@Z"
 	.p2align	2
 "L__ehtable$??0_Locinfo@std@@QAE@PBD@Z":
@@ -14487,7 +18029,7 @@ Lfunc_end25:
 	.globl	"??1_Locinfo@std@@QAE@XZ"       # -- Begin function ??1_Locinfo@std@@QAE@XZ
 	.p2align	4, 0x90
 "??1_Locinfo@std@@QAE@XZ":              # @"??1_Locinfo@std@@QAE@XZ"
-Lfunc_begin26:
+Lfunc_begin30:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -14511,57 +18053,57 @@ Lfunc_begin26:
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	eax, dword ptr [esi + 44]
 	test	eax, eax
-	je	LBB86_3
+	je	LBB96_3
 # %bb.2:
 	push	eax
 	call	_free
 	add	esp, 4
-LBB86_3:
+LBB96_3:
 	mov	dword ptr [esi + 44], 0
 	mov	eax, dword ptr [esi + 36]
 	test	eax, eax
-	je	LBB86_5
+	je	LBB96_5
 # %bb.4:
 	push	eax
 	call	_free
 	add	esp, 4
-LBB86_5:
+LBB96_5:
 	mov	dword ptr [esi + 36], 0
 	mov	eax, dword ptr [esi + 28]
 	test	eax, eax
-	je	LBB86_7
+	je	LBB96_7
 # %bb.6:
 	push	eax
 	call	_free
 	add	esp, 4
-LBB86_7:
+LBB96_7:
 	mov	dword ptr [esi + 28], 0
 	mov	eax, dword ptr [esi + 20]
 	test	eax, eax
-	je	LBB86_9
+	je	LBB96_9
 # %bb.8:
 	push	eax
 	call	_free
 	add	esp, 4
-LBB86_9:
+LBB96_9:
 	mov	dword ptr [esi + 20], 0
 	mov	eax, dword ptr [esi + 12]
 	test	eax, eax
-	je	LBB86_11
+	je	LBB96_11
 # %bb.10:
 	push	eax
 	call	_free
 	add	esp, 4
-LBB86_11:
+LBB96_11:
 	mov	dword ptr [esi + 12], 0
 	mov	eax, dword ptr [esi + 4]
 	test	eax, eax
-	je	LBB86_13
+	je	LBB96_13
 # %bb.12:
 	push	eax
 	call	_free
 	add	esp, 4
-LBB86_13:
+LBB96_13:
 	mov	ecx, esi
 	mov	dword ptr [esi + 4], 0
 	call	"??1_Lockit@std@@QAE@XZ"
@@ -14579,7 +18121,7 @@ LBB86_13:
 	.endef
 	.p2align	4, 0x90
 "?dtor$14@?0???1_Locinfo@std@@QAE@XZ@4HA":
-LBB86_14:
+LBB96_14:
 	push	ebp
 	push	eax
 	add	ebp, 12
@@ -14599,7 +18141,7 @@ LBB86_14:
 	mov	ecx, esi
 	call	"??1_Lockit@std@@QAE@XZ"
 	call	___std_terminate
-Lfunc_end26:
+Lfunc_end30:
 	.section	.xdata,"dr",associative,"??1_Locinfo@std@@QAE@XZ"
 	.p2align	2
 "L__ehtable$??1_Locinfo@std@@QAE@XZ":
@@ -14630,12 +18172,12 @@ Lfunc_end26:
 	mov	eax, dword ptr [ecx]
 	mov	esi, ecx
 	test	eax, eax
-	je	LBB87_2
+	je	LBB97_2
 # %bb.1:
 	push	eax
 	call	_free
 	add	esp, 4
-LBB87_2:
+LBB97_2:
 	mov	dword ptr [esi], 0
 	pop	esi
 	ret
@@ -14653,12 +18195,12 @@ LBB87_2:
 	mov	eax, dword ptr [ecx]
 	mov	esi, ecx
 	test	eax, eax
-	je	LBB88_2
+	je	LBB98_2
 # %bb.1:
 	push	eax
 	call	_free
 	add	esp, 4
-LBB88_2:
+LBB98_2:
 	mov	dword ptr [esi], 0
 	pop	esi
 	ret
@@ -14675,12 +18217,12 @@ LBB88_2:
 	push	esi
 	cmp	dword ptr [esp + 8], 0
 	mov	esi, ecx
-	je	LBB89_2
+	je	LBB99_2
 # %bb.1:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB89_2:
+LBB99_2:
 	mov	eax, esi
 	pop	esi
 	ret	4
@@ -14830,12 +18372,12 @@ LBB89_2:
 	push	esi
 	cmp	dword ptr [esp + 8], 0
 	mov	esi, ecx
-	je	LBB99_2
+	je	LBB109_2
 # %bb.1:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB99_2:
+LBB109_2:
 	mov	eax, esi
 	pop	esi
 	ret	4
@@ -14864,12 +18406,12 @@ LBB99_2:
 	push	esi
 	cmp	dword ptr [esp + 8], 0
 	mov	esi, ecx
-	je	LBB101_2
+	je	LBB111_2
 # %bb.1:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB101_2:
+LBB111_2:
 	mov	eax, esi
 	pop	esi
 	ret	4
@@ -14893,7 +18435,7 @@ LBB101_2:
 	.globl	"??0bad_cast@std@@QAE@ABV01@@Z" # -- Begin function ??0bad_cast@std@@QAE@ABV01@@Z
 	.p2align	4, 0x90
 "??0bad_cast@std@@QAE@ABV01@@Z":        # @"??0bad_cast@std@@QAE@ABV01@@Z"
-Lfunc_begin27:
+Lfunc_begin31:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -14937,12 +18479,12 @@ Lfunc_begin27:
 	.endef
 	.p2align	4, 0x90
 "?dtor$2@?0???0bad_cast@std@@QAE@ABV01@@Z@4HA":
-LBB103_2:
+LBB113_2:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end27:
+Lfunc_end31:
 	.section	.xdata,"dr",associative,"??0bad_cast@std@@QAE@ABV01@@Z"
 	.p2align	2
 "L__ehtable$??0bad_cast@std@@QAE@ABV01@@Z":
@@ -14960,73 +18502,6 @@ Lfunc_end27:
 	.long	"?dtor$2@?0???0bad_cast@std@@QAE@ABV01@@Z@4HA" # Action
 	.section	.text,"xr",discard,"??0bad_cast@std@@QAE@ABV01@@Z"
                                         # -- End function
-	.def	 "??1exception@std@@UAE@XZ";
-	.scl	2;
-	.type	32;
-	.endef
-	.section	.text,"xr",discard,"??1exception@std@@UAE@XZ"
-	.globl	"??1exception@std@@UAE@XZ"      # -- Begin function ??1exception@std@@UAE@XZ
-	.p2align	4, 0x90
-"??1exception@std@@UAE@XZ":             # @"??1exception@std@@UAE@XZ"
-Lfunc_begin28:
-# %bb.0:
-	push	ebp
-	mov	ebp, esp
-	push	ebx
-	push	edi
-	push	esi
-	sub	esp, 16
-	mov	dword ptr [ebp - 28], esp
-	mov	dword ptr [ebp - 16], -1
-	mov	dword ptr [ebp - 20], offset "___ehhandler$??1exception@std@@UAE@XZ"
-	lea	eax, [ebp - 24]
-	mov	edx, dword ptr fs:[0]
-	mov	dword ptr [ebp - 24], edx
-	mov	dword ptr fs:[0], eax
-	mov	dword ptr [ecx], offset "??_7exception@std@@6B@"
-	add	ecx, 4
-	mov	dword ptr [ebp - 16], 0
-	push	ecx
-	call	___std_exception_destroy
-	add	esp, 4
-# %bb.1:
-	mov	eax, dword ptr [ebp - 24]
-	mov	dword ptr fs:[0], eax
-	add	esp, 16
-	pop	esi
-	pop	edi
-	pop	ebx
-	pop	ebp
-	ret
-	.def	 "?dtor$2@?0???1exception@std@@UAE@XZ@4HA";
-	.scl	3;
-	.type	32;
-	.endef
-	.p2align	4, 0x90
-"?dtor$2@?0???1exception@std@@UAE@XZ@4HA":
-LBB104_2:
-	push	ebp
-	push	eax
-	add	ebp, 12
-	call	___std_terminate
-Lfunc_end28:
-	.section	.xdata,"dr",associative,"??1exception@std@@UAE@XZ"
-	.p2align	2
-"L__ehtable$??1exception@std@@UAE@XZ":
-	.long	429065506                       # MagicNumber
-	.long	1                               # MaxState
-	.long	("$stateUnwindMap$??1exception@std@@UAE@XZ") # UnwindMap
-	.long	0                               # NumTryBlocks
-	.long	0                               # TryBlockMap
-	.long	0                               # IPMapEntries
-	.long	0                               # IPToStateXData
-	.long	0                               # ESTypeList
-	.long	1                               # EHFlags
-"$stateUnwindMap$??1exception@std@@UAE@XZ":
-	.long	-1                              # ToState
-	.long	"?dtor$2@?0???1exception@std@@UAE@XZ@4HA" # Action
-	.section	.text,"xr",discard,"??1exception@std@@UAE@XZ"
-                                        # -- End function
 	.def	 "??_Gbad_cast@std@@UAEPAXI@Z";
 	.scl	2;
 	.type	32;
@@ -15035,7 +18510,7 @@ Lfunc_end28:
 	.globl	"??_Gbad_cast@std@@UAEPAXI@Z"   # -- Begin function ??_Gbad_cast@std@@UAEPAXI@Z
 	.p2align	4, 0x90
 "??_Gbad_cast@std@@UAEPAXI@Z":          # @"??_Gbad_cast@std@@UAEPAXI@Z"
-Lfunc_begin29:
+Lfunc_begin32:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -15060,12 +18535,12 @@ Lfunc_begin29:
 # %bb.1:
 	cmp	dword ptr [ebp + 8], 0
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-	je	LBB105_3
+	je	LBB114_3
 # %bb.2:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB105_3:
+LBB114_3:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, esi
@@ -15081,12 +18556,12 @@ LBB105_3:
 	.endef
 	.p2align	4, 0x90
 "?dtor$4@?0???_Gbad_cast@std@@UAEPAXI@Z@4HA":
-LBB105_4:
+LBB114_4:
 	push	ebp
 	push	eax
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end29:
+Lfunc_end32:
 	.section	.xdata,"dr",associative,"??_Gbad_cast@std@@UAEPAXI@Z"
 	.p2align	2
 "L__ehtable$??_Gbad_cast@std@@UAEPAXI@Z":
@@ -15112,7 +18587,7 @@ Lfunc_end29:
 	.globl	"??_Gios_base@std@@UAEPAXI@Z"   # -- Begin function ??_Gios_base@std@@UAEPAXI@Z
 	.p2align	4, 0x90
 "??_Gios_base@std@@UAEPAXI@Z":          # @"??_Gios_base@std@@UAEPAXI@Z"
-Lfunc_begin30:
+Lfunc_begin33:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -15136,12 +18611,12 @@ Lfunc_begin30:
 # %bb.1:
 	cmp	dword ptr [ebp + 8], 0
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-	je	LBB106_3
+	je	LBB115_3
 # %bb.2:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB106_3:
+LBB115_3:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, esi
@@ -15157,12 +18632,12 @@ LBB106_3:
 	.endef
 	.p2align	4, 0x90
 "?dtor$4@?0???_Gios_base@std@@UAEPAXI@Z@4HA":
-LBB106_4:
+LBB115_4:
 	push	ebp
 	push	eax
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end30:
+Lfunc_end33:
 	.section	.xdata,"dr",associative,"??_Gios_base@std@@UAEPAXI@Z"
 	.p2align	2
 "L__ehtable$??_Gios_base@std@@UAEPAXI@Z":
@@ -15180,6 +18655,46 @@ Lfunc_end30:
 	.long	"?dtor$4@?0???_Gios_base@std@@UAEPAXI@Z@4HA" # Action
 	.section	.text,"xr",discard,"??_Gios_base@std@@UAEPAXI@Z"
                                         # -- End function
+	.def	 "??$_Erase_tree@V?$allocator@U?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@std@@@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEXAAV?$allocator@U?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@1@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@1@@Z";
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text,"xr",discard,"??$_Erase_tree@V?$allocator@U?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@std@@@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEXAAV?$allocator@U?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@1@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@1@@Z"
+	.globl	"??$_Erase_tree@V?$allocator@U?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@std@@@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEXAAV?$allocator@U?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@1@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@1@@Z" # -- Begin function ??$_Erase_tree@V?$allocator@U?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@std@@@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEXAAV?$allocator@U?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@1@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@1@@Z
+	.p2align	4, 0x90
+"??$_Erase_tree@V?$allocator@U?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@std@@@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEXAAV?$allocator@U?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@1@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@1@@Z": # @"??$_Erase_tree@V?$allocator@U?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@std@@@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEXAAV?$allocator@U?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@1@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@1@@Z"
+# %bb.0:
+	push	ebp
+	push	ebx
+	push	edi
+	push	esi
+	mov	ebx, dword ptr [esp + 24]
+	cmp	byte ptr [ebx + 13], 0
+	jne	LBB116_3
+# %bb.1:
+	mov	edi, dword ptr [esp + 20]
+	mov	esi, ecx
+	.p2align	4, 0x90
+LBB116_2:                               # =>This Inner Loop Header: Depth=1
+	mov	ecx, esi
+	push	dword ptr [ebx + 8]
+	push	edi
+	call	"??$_Erase_tree@V?$allocator@U?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@std@@@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEXAAV?$allocator@U?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@1@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@1@@Z"
+	mov	ebp, dword ptr [ebx]
+	push	16
+	push	ebx
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+	cmp	byte ptr [ebp + 13], 0
+	mov	ebx, ebp
+	je	LBB116_2
+LBB116_3:
+	pop	esi
+	pop	edi
+	pop	ebx
+	pop	ebp
+	ret	8
+                                        # -- End function
 	.def	 "?_Tidy@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXXZ";
 	.scl	2;
 	.type	32;
@@ -15188,7 +18703,7 @@ Lfunc_end30:
 	.globl	"?_Tidy@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXXZ" # -- Begin function ?_Tidy@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXXZ
 	.p2align	4, 0x90
 "?_Tidy@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXXZ": # @"?_Tidy@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXXZ"
-Lfunc_begin31:
+Lfunc_begin34:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -15205,52 +18720,52 @@ Lfunc_begin31:
 	mov	dword ptr [ebp - 24], ecx
 	mov	dword ptr fs:[0], eax
 	cmp	dword ptr [esi + 16], 0
-	je	LBB107_2
+	je	LBB117_2
 # %bb.1:
 	mov	dword ptr [esi + 12], 0
 	mov	dword ptr [esi + 16], 0
-LBB107_2:
+LBB117_2:
 	mov	eax, dword ptr [esi + 4]
 	mov	edi, dword ptr [esi + 8]
 	.p2align	4, 0x90
-LBB107_3:                               # =>This Inner Loop Header: Depth=1
+LBB117_3:                               # =>This Inner Loop Header: Depth=1
 	test	edi, edi
-	je	LBB107_4
-# %bb.9:                                #   in Loop: Header=BB107_3 Depth=1
+	je	LBB117_4
+# %bb.9:                                #   in Loop: Header=BB117_3 Depth=1
 	mov	ecx, dword ptr [eax + 4*edi - 4]
 	dec	edi
 	test	ecx, ecx
-	je	LBB107_3
-# %bb.10:                               #   in Loop: Header=BB107_3 Depth=1
+	je	LBB117_3
+# %bb.10:                               #   in Loop: Header=BB117_3 Depth=1
 	push	16
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [esi + 4]
-	jmp	LBB107_3
-LBB107_4:
+	jmp	LBB117_3
+LBB117_4:
 	test	eax, eax
-	je	LBB107_14
+	je	LBB117_14
 # %bb.5:
 	mov	ecx, dword ptr [esi + 8]
 	shl	ecx, 2
 	cmp	ecx, 4096
-	jb	LBB107_13
+	jb	LBB117_13
 # %bb.6:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB107_7
+	jae	LBB117_7
 # %bb.12:
 	add	ecx, 35
 	mov	eax, edx
-LBB107_13:
+LBB117_13:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB107_14:
+LBB117_14:
 	mov	dword ptr [esi + 8], 0
 	mov	dword ptr [esi + 4], 0
 	mov	eax, dword ptr [ebp - 24]
@@ -15261,7 +18776,7 @@ LBB107_14:
 	pop	ebx
 	pop	ebp
 	ret
-LBB107_7:
+LBB117_7:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.8:
@@ -15271,12 +18786,12 @@ LBB107_7:
 	.endef
 	.p2align	4, 0x90
 "?dtor$11@?0??_Tidy@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXXZ@4HA":
-LBB107_11:
+LBB117_11:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end31:
+Lfunc_end34:
 	.section	.xdata,"dr",associative,"?_Tidy@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXXZ"
 	.p2align	2
 "L__ehtable$?_Tidy@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXXZ":
@@ -15309,12 +18824,12 @@ Lfunc_end31:
 	push	esi
 	mov	ebx, dword ptr [esp + 24]
 	cmp	byte ptr [ebx + 13], 0
-	jne	LBB108_3
+	jne	LBB118_3
 # %bb.1:
 	mov	edi, dword ptr [esp + 20]
 	mov	esi, ecx
 	.p2align	4, 0x90
-LBB108_2:                               # =>This Inner Loop Header: Depth=1
+LBB118_2:                               # =>This Inner Loop Header: Depth=1
 	mov	ecx, esi
 	push	dword ptr [ebx + 8]
 	push	edi
@@ -15326,8 +18841,8 @@ LBB108_2:                               # =>This Inner Loop Header: Depth=1
 	add	esp, 8
 	cmp	byte ptr [ebp + 13], 0
 	mov	ebx, ebp
-	je	LBB108_2
-LBB108_3:
+	je	LBB118_2
+LBB118_3:
 	pop	esi
 	pop	edi
 	pop	ebx
@@ -15342,7 +18857,7 @@ LBB108_3:
 	.globl	"??$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IQBDI@Z@IPBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IQBDI@Z@IPBDI@Z" # -- Begin function ??$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IQBDI@Z@IPBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IQBDI@Z@IPBDI@Z
 	.p2align	4, 0x90
 "??$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IQBDI@Z@IPBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IQBDI@Z@IPBDI@Z": # @"??$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IQBDI@Z@IPBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IQBDI@Z@IPBDI@Z"
-Lfunc_begin32:
+Lfunc_begin35:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -15363,7 +18878,7 @@ Lfunc_begin32:
 	mov	ecx, dword ptr [ebx + 16]
 	sub	eax, ecx
 	cmp	eax, esi
-	jb	LBB109_19
+	jb	LBB119_19
 # %bb.1:
 	mov	edi, dword ptr [ebx + 20]
 	add	esi, ecx
@@ -15372,7 +18887,7 @@ Lfunc_begin32:
 	mov	dword ptr [ebp - 32], 2147483647 # 4-byte Folded Spill
 	mov	ecx, esi
 	or	ecx, 15
-	js	LBB109_5
+	js	LBB119_5
 # %bb.2:
 	mov	edx, edi
 	mov	dword ptr [ebp - 36], esi       # 4-byte Spill
@@ -15383,19 +18898,19 @@ Lfunc_begin32:
 	cmp	edi, esi
 	mov	edi, esi
 	mov	esi, dword ptr [ebp - 36]       # 4-byte Reload
-	jb	LBB109_5
+	jb	LBB119_5
 # %bb.3:
 	add	edx, edi
 	cmp	ecx, edx
 	cmovae	edx, ecx
 	lea	eax, [edx + 1]
 	cmp	eax, 4096
-	jb	LBB109_6
+	jb	LBB119_6
 # %bb.4:
 	cmp	eax, -35
 	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
-	jae	LBB109_20
-LBB109_5:
+	jae	LBB119_20
+LBB119_5:
 	add	eax, 35
 	push	eax
 	call	"??2@YAPAXI@Z"
@@ -15404,13 +18919,13 @@ LBB109_5:
 	lea	ecx, [eax + 35]
 	and	ecx, -32
 	mov	dword ptr [ecx - 4], eax
-LBB109_9:
+LBB119_9:
 	mov	dword ptr [ebx + 16], esi
 	mov	esi, dword ptr [ebp + 16]
 	cmp	edi, 16
 	mov	dword ptr [ebx + 20], edx
 	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
-	jb	LBB109_17
+	jb	LBB119_17
 # %bb.10:
 	mov	dword ptr [ebp - 44], edi       # 4-byte Spill
 	mov	edi, dword ptr [ebx]
@@ -15442,26 +18957,26 @@ LBB109_9:
 	mov	edx, eax
 	inc	eax
 	cmp	eax, 4096
-	jb	LBB109_16
+	jb	LBB119_16
 # %bb.11:
 	mov	ecx, dword ptr [edi - 4]
 	add	edi, -4
 	sub	edi, ecx
 	cmp	edi, 32
-	jae	LBB109_12
+	jae	LBB119_12
 # %bb.15:
 	mov	eax, edx
 	mov	edi, ecx
 	add	eax, 36
-LBB109_16:
+LBB119_16:
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
 	push	eax
 	push	edi
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
-	jmp	LBB109_18
-LBB109_17:
+	jmp	LBB119_18
+LBB119_17:
 	push	esi
 	push	ebx
 	push	ecx
@@ -15486,7 +19001,7 @@ LBB109_17:
 	call	_memcpy
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	add	esp, 12
-LBB109_18:
+LBB119_18:
 	mov	dword ptr [ebx], eax
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
@@ -15497,9 +19012,9 @@ LBB109_18:
 	pop	ebx
 	pop	ebp
 	ret	20
-LBB109_6:
+LBB119_6:
 	test	eax, eax
-	je	LBB109_7
+	je	LBB119_7
 # %bb.8:
 	push	eax
 	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
@@ -15507,18 +19022,18 @@ LBB109_6:
 	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
 	add	esp, 4
 	mov	ecx, eax
-	jmp	LBB109_9
-LBB109_7:
+	jmp	LBB119_9
+LBB119_7:
 	xor	ecx, ecx
 	mov	edx, -1
-	jmp	LBB109_9
-LBB109_19:
+	jmp	LBB119_9
+LBB119_19:
 	call	"?_Xlen_string@std@@YAXXZ"
-LBB109_12:
+LBB119_12:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.13:
-LBB109_20:
+LBB119_20:
 	call	"?_Throw_bad_array_new_length@std@@YAXXZ"
 	.def	 "?dtor$14@?0???$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IQBDI@Z@IPBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IQBDI@Z@IPBDI@Z@4HA";
 	.scl	3;
@@ -15526,12 +19041,12 @@ LBB109_20:
 	.endef
 	.p2align	4, 0x90
 "?dtor$14@?0???$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IQBDI@Z@IPBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IQBDI@Z@IPBDI@Z@4HA":
-LBB109_14:
+LBB119_14:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end32:
+Lfunc_end35:
 	.section	.xdata,"dr",associative,"??$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IQBDI@Z@IPBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IQBDI@Z@IPBDI@Z"
 	.p2align	2
 "L__ehtable$??$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IQBDI@Z@IPBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IQBDI@Z@IPBDI@Z":
@@ -15557,7 +19072,7 @@ Lfunc_end32:
 	.globl	"??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@QBDI@Z@PBDI@Z" # -- Begin function ??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@QBDI@Z@PBDI@Z
 	.p2align	4, 0x90
 "??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@QBDI@Z@PBDI@Z": # @"??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@QBDI@Z@PBDI@Z"
-Lfunc_begin33:
+Lfunc_begin36:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -15578,7 +19093,7 @@ Lfunc_begin33:
 	mov	ebx, dword ptr [ecx + 16]
 	sub	eax, ebx
 	cmp	eax, edi
-	jb	LBB110_19
+	jb	LBB120_19
 # %bb.1:
 	mov	esi, dword ptr [ecx + 20]
 	add	edi, ebx
@@ -15588,14 +19103,14 @@ Lfunc_begin33:
 	mov	dword ptr [ebp - 44], edi       # 4-byte Spill
 	or	ecx, 15
 	mov	dword ptr [ebp - 32], esi       # 4-byte Spill
-	js	LBB110_5
+	js	LBB120_5
 # %bb.2:
 	mov	edx, esi
 	shr	edx
 	mov	edi, edx
 	xor	edi, 2147483647
 	cmp	edi, esi
-	jb	LBB110_5
+	jb	LBB120_5
 # %bb.3:
 	add	edx, dword ptr [ebp - 32]       # 4-byte Folded Reload
 	cmp	ecx, edx
@@ -15603,12 +19118,12 @@ Lfunc_begin33:
 	cmovae	esi, ecx
 	lea	eax, [esi + 1]
 	cmp	eax, 4096
-	jb	LBB110_6
+	jb	LBB120_6
 # %bb.4:
 	cmp	eax, -35
 	mov	dword ptr [ebp - 36], esi       # 4-byte Spill
-	jae	LBB110_20
-LBB110_5:
+	jae	LBB120_20
+LBB120_5:
 	add	eax, 35
 	push	eax
 	call	"??2@YAPAXI@Z"
@@ -15617,14 +19132,14 @@ LBB110_5:
 	lea	edi, [eax + 35]
 	and	edi, -32
 	mov	dword ptr [edi - 4], eax
-LBB110_9:
+LBB120_9:
 	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	eax, dword ptr [ebp - 40]       # 4-byte Reload
 	mov	ecx, dword ptr [ebp - 44]       # 4-byte Reload
 	cmp	edx, 16
 	mov	dword ptr [eax + 16], ecx
 	mov	dword ptr [eax + 20], esi
-	jb	LBB110_17
+	jb	LBB120_17
 # %bb.10:
 	mov	esi, dword ptr [eax]
 	push	ebx
@@ -15644,25 +19159,25 @@ LBB110_9:
 	lea	eax, [edx + 1]
 	cmp	eax, 4096
 	mov	byte ptr [edi + ebx], 0
-	jb	LBB110_16
+	jb	LBB120_16
 # %bb.11:
 	mov	ecx, dword ptr [esi - 4]
 	add	esi, -4
 	sub	esi, ecx
 	cmp	esi, 32
-	jae	LBB110_12
+	jae	LBB120_12
 # %bb.15:
 	add	edx, 36
 	mov	esi, ecx
 	mov	eax, edx
-LBB110_16:
+LBB120_16:
 	push	eax
 	push	esi
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	esi, dword ptr [ebp - 40]       # 4-byte Reload
-	jmp	LBB110_18
-LBB110_17:
+	jmp	LBB120_18
+LBB120_17:
 	push	ebx
 	push	eax
 	push	edi
@@ -15678,7 +19193,7 @@ LBB110_17:
 	add	esp, 12
 	add	ebx, dword ptr [ebp + 20]
 	mov	byte ptr [edi + ebx], 0
-LBB110_18:
+LBB120_18:
 	mov	dword ptr [esi], edi
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
@@ -15689,26 +19204,26 @@ LBB110_18:
 	pop	ebx
 	pop	ebp
 	ret	16
-LBB110_6:
+LBB120_6:
 	test	eax, eax
-	je	LBB110_7
+	je	LBB120_7
 # %bb.8:
 	push	eax
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
 	mov	edi, eax
-	jmp	LBB110_9
-LBB110_7:
+	jmp	LBB120_9
+LBB120_7:
 	xor	edi, edi
 	mov	esi, -1
-	jmp	LBB110_9
-LBB110_19:
+	jmp	LBB120_9
+LBB120_19:
 	call	"?_Xlen_string@std@@YAXXZ"
-LBB110_12:
+LBB120_12:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.13:
-LBB110_20:
+LBB120_20:
 	call	"?_Throw_bad_array_new_length@std@@YAXXZ"
 	.def	 "?dtor$14@?0???$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@QBDI@Z@PBDI@Z@4HA";
 	.scl	3;
@@ -15716,12 +19231,12 @@ LBB110_20:
 	.endef
 	.p2align	4, 0x90
 "?dtor$14@?0???$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@QBDI@Z@PBDI@Z@4HA":
-LBB110_14:
+LBB120_14:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end33:
+Lfunc_end36:
 	.section	.xdata,"dr",associative,"??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@QBDI@Z@PBDI@Z"
 	.p2align	2
 "L__ehtable$??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@QBDI@Z@PBDI@Z":
@@ -15767,10 +19282,10 @@ Lfunc_end33:
 	mov	ecx, dword ptr [ebp + 20]
 	lea	ebp, [edi + edx]
 	mov	dword ptr [esp], ebp            # 4-byte Spill
-	ja	LBB111_7
+	ja	LBB121_7
 # %bb.1:
 	cmp	ecx, eax
-	ja	LBB111_7
+	ja	LBB121_7
 # %bb.2:
 	movsd	xmm0, qword ptr [ebx + 16]      # xmm0 = mem[0],zero
 	mov	eax, esi
@@ -15783,47 +19298,47 @@ Lfunc_end33:
 	mov	dword ptr [ebx + 20], 15
 	mov	byte ptr [ebx], 0
 	cmp	dword ptr [esi + 20], 16
-	jb	LBB111_4
+	jb	LBB121_4
 # %bb.3:
 	mov	eax, dword ptr [esi]
-LBB111_4:
+LBB121_4:
 	mov	ecx, dword ptr [esp + 40]
 	inc	edi
 	cmp	dword ptr [ecx + 20], 15
-	jbe	LBB111_6
+	jbe	LBB121_6
 # %bb.5:
 	mov	ecx, dword ptr [ecx]
-LBB111_6:
+LBB121_6:
 	add	eax, edx
 	push	edi
 	push	ecx
 	push	eax
-	jmp	LBB111_11
-LBB111_7:
+	jmp	LBB121_11
+LBB121_7:
 	sub	ecx, edi
 	mov	dword ptr [esp + 8], edx        # 4-byte Spill
 	cmp	edx, ecx
-	jbe	LBB111_8
+	jbe	LBB121_8
 # %bb.12:
 	mov	eax, 2147483647
 	sub	eax, edx
 	cmp	eax, edi
-	jb	LBB111_25
+	jb	LBB121_25
 # %bb.13:
 	mov	ecx, dword ptr [esp]            # 4-byte Reload
 	or	ecx, 15
-	js	LBB111_14
+	js	LBB121_14
 # %bb.15:
 	cmp	ecx, 22
 	mov	ebp, 22
 	cmova	ebp, ecx
 	lea	eax, [ebp + 1]
 	cmp	ebp, 4095
-	jb	LBB111_18
+	jb	LBB121_18
 # %bb.16:
 	mov	dword ptr [esp + 4], ecx        # 4-byte Spill
-	jmp	LBB111_17
-LBB111_8:
+	jmp	LBB121_17
+LBB121_8:
 	mov	eax, dword ptr [esp + 40]
 	inc	edi
 	movsd	xmm0, qword ptr [eax + 16]      # xmm0 = mem[0],zero
@@ -15843,23 +19358,23 @@ LBB111_8:
 	call	_memmove
 	add	esp, 12
 	cmp	dword ptr [ebx + 20], 15
-	jbe	LBB111_10
+	jbe	LBB121_10
 # %bb.9:
 	mov	ebx, dword ptr [ebx]
-LBB111_10:
+LBB121_10:
 	push	dword ptr [esp + 8]             # 4-byte Folded Reload
 	push	ebx
 	push	ebp
-LBB111_11:
+LBB121_11:
 	call	_memcpy
 	add	esp, 12
 	mov	eax, dword ptr [esp]            # 4-byte Reload
 	mov	dword ptr [esi + 16], eax
-	jmp	LBB111_24
-LBB111_14:
+	jmp	LBB121_24
+LBB121_14:
 	mov	dword ptr [esp + 4], 2147483647 # 4-byte Folded Spill
 	mov	eax, -2147483648
-LBB111_17:
+LBB121_17:
 	add	eax, 35
 	push	eax
 	call	"??2@YAPAXI@Z"
@@ -15867,14 +19382,14 @@ LBB111_17:
 	lea	ebp, [eax + 35]
 	and	ebp, -32
 	mov	dword ptr [ebp - 4], eax
-	jmp	LBB111_19
-LBB111_18:
+	jmp	LBB121_19
+LBB121_18:
 	mov	dword ptr [esp + 4], ebp        # 4-byte Spill
 	push	eax
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
 	mov	ebp, eax
-LBB111_19:
+LBB121_19:
 	mov	eax, dword ptr [esp]            # 4-byte Reload
 	mov	dword ptr [esi], ebp
 	mov	dword ptr [esi + 16], eax
@@ -15882,10 +19397,10 @@ LBB111_19:
 	mov	dword ptr [esi + 20], eax
 	mov	eax, dword ptr [esp + 8]        # 4-byte Reload
 	cmp	dword ptr [ebx + 20], 15
-	jbe	LBB111_21
+	jbe	LBB121_21
 # %bb.20:
 	mov	ebx, dword ptr [ebx]
-LBB111_21:
+LBB121_21:
 	push	eax
 	push	ebx
 	push	ebp
@@ -15894,17 +19409,17 @@ LBB111_21:
 	mov	eax, dword ptr [esp + 40]
 	inc	edi
 	cmp	dword ptr [eax + 20], 15
-	jbe	LBB111_23
+	jbe	LBB121_23
 # %bb.22:
 	mov	eax, dword ptr [eax]
-LBB111_23:
+LBB121_23:
 	add	ebp, dword ptr [esp + 8]        # 4-byte Folded Reload
 	push	edi
 	push	eax
 	push	ebp
 	call	_memcpy
 	add	esp, 12
-LBB111_24:
+LBB121_24:
 	mov	eax, esi
 	add	esp, 12
 	pop	esi
@@ -15912,7 +19427,7 @@ LBB111_24:
 	pop	ebx
 	pop	ebp
 	ret	12
-LBB111_25:
+LBB121_25:
 	call	"?_Xlen_string@std@@YAXXZ"
                                         # -- End function
 	.def	 "??$emplace_back@ABG@?$deque@GV?$allocator@G@std@@@std@@QAE?A?<decltype-auto>@@ABG@Z";
@@ -15934,19 +19449,19 @@ LBB111_25:
 	mov	ecx, dword ptr [ecx + 16]
 	lea	edx, [ecx + eax]
 	test	dl, 7
-	jne	LBB112_3
+	jne	LBB122_3
 # %bb.1:
 	lea	edx, [ecx + 8]
 	shr	edx, 3
 	cmp	dword ptr [esi + 8], edx
-	ja	LBB112_3
+	ja	LBB122_3
 # %bb.2:
 	mov	ecx, esi
 	push	1
 	call	"?_Growmap@?$deque@GV?$allocator@G@std@@@std@@AAEXI@Z"
 	mov	eax, dword ptr [esi + 12]
 	mov	ecx, dword ptr [esi + 16]
-LBB112_3:
+LBB122_3:
 	mov	ebp, dword ptr [esi + 8]
 	mov	edi, dword ptr [esi + 4]
 	mov	edx, dword ptr [esp + 24]
@@ -15961,12 +19476,12 @@ LBB112_3:
 	mov	eax, edi
 	mov	edi, dword ptr [edi + 4*ebp]
 	test	edi, edi
-	je	LBB112_5
+	je	LBB122_5
 # %bb.4:
 	mov	dword ptr [esp], eax            # 4-byte Spill
 	mov	eax, ebx
-	jmp	LBB112_6
-LBB112_5:
+	jmp	LBB122_6
+LBB122_5:
 	push	16
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
@@ -15984,7 +19499,7 @@ LBB112_5:
 	shr	edx, 3
 	and	ebp, edx
 	mov	edx, dword ptr [esp + 24]
-LBB112_6:
+LBB122_6:
 	movzx	edx, word ptr [edx]
 	and	ebx, 7
 	and	eax, 7
@@ -16009,7 +19524,7 @@ LBB112_6:
 	.globl	"?_Growmap@?$deque@GV?$allocator@G@std@@@std@@AAEXI@Z" # -- Begin function ?_Growmap@?$deque@GV?$allocator@G@std@@@std@@AAEXI@Z
 	.p2align	4, 0x90
 "?_Growmap@?$deque@GV?$allocator@G@std@@@std@@AAEXI@Z": # @"?_Growmap@?$deque@GV?$allocator@G@std@@@std@@AAEXI@Z"
-Lfunc_begin34:
+Lfunc_begin37:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -16030,35 +19545,35 @@ Lfunc_begin34:
 	test	edx, edx
 	cmovne	eax, edx
 	cmp	eax, 8
-	jb	LBB113_3
+	jb	LBB123_3
 	.p2align	4, 0x90
-LBB113_2:
+LBB123_2:
 	mov	ebx, eax
 	sub	ebx, edx
 	cmp	ebx, edi
-	jae	LBB113_5
-LBB113_3:                               # =>This Inner Loop Header: Depth=1
+	jae	LBB123_5
+LBB123_3:                               # =>This Inner Loop Header: Depth=1
 	mov	esi, 268435455
 	sub	esi, eax
 	cmp	esi, eax
-	jb	LBB113_22
-# %bb.4:                                #   in Loop: Header=BB113_3 Depth=1
+	jb	LBB123_22
+# %bb.4:                                #   in Loop: Header=BB123_3 Depth=1
 	add	eax, eax
 	cmp	eax, 8
-	jae	LBB113_2
-	jmp	LBB113_3
-LBB113_5:
+	jae	LBB123_2
+	jmp	LBB123_3
+LBB123_5:
 	cmp	eax, 1073741824
-	jae	LBB113_23
+	jae	LBB123_23
 # %bb.6:
 	mov	edi, dword ptr [ecx + 12]
 	lea	edx, [4*eax]
 	cmp	eax, 1024
-	jb	LBB113_9
+	jb	LBB123_9
 # %bb.7:
 	cmp	eax, 1073741816
 	mov	dword ptr [ebp - 16], -1
-	jae	LBB113_24
+	jae	LBB123_24
 # %bb.8:
 	mov	esi, ecx
 	add	edx, 35
@@ -16068,15 +19583,15 @@ LBB113_5:
 	lea	ecx, [eax + 35]
 	and	ecx, -32
 	mov	dword ptr [ecx - 4], eax
-	jmp	LBB113_10
-LBB113_9:
+	jmp	LBB123_10
+LBB123_9:
 	mov	esi, ecx
 	mov	dword ptr [ebp - 16], -1
 	push	edx
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
 	mov	ecx, eax
-LBB113_10:
+LBB123_10:
 	shr	edi, 3
 	mov	dword ptr [ebp - 44], ecx       # 4-byte Spill
 	mov	eax, dword ptr [esi + 4]
@@ -16098,7 +19613,7 @@ LBB113_10:
 	mov	dword ptr [ebp - 32], edi       # 4-byte Spill
 	sub	ecx, edi
 	mov	eax, dword ptr [eax + 4]
-	jae	LBB113_11
+	jae	LBB123_11
 # %bb.12:
 	lea	ecx, [4*ebx]
 	mov	dword ptr [ebp - 36], ecx       # 4-byte Spill
@@ -16123,8 +19638,8 @@ LBB113_10:
 	push	dword ptr [ebp - 36]            # 4-byte Folded Reload
 	push	0
 	push	esi
-	jmp	LBB113_13
-LBB113_11:
+	jmp	LBB123_13
+LBB123_11:
 	mov	edi, ecx
 	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
 	lea	ecx, [4*ecx]
@@ -16146,33 +19661,33 @@ LBB113_11:
 	push	0
 	mov	edi, dword ptr [ebp - 44]       # 4-byte Reload
 	push	edi
-LBB113_13:
+LBB123_13:
 	call	_memset
 	add	esp, 12
 	mov	esi, dword ptr [ebp - 40]       # 4-byte Reload
 	mov	ecx, dword ptr [esi + 4]
 	test	ecx, ecx
-	je	LBB113_21
+	je	LBB123_21
 # %bb.14:
 	mov	eax, dword ptr [esi + 8]
 	shl	eax, 2
 	cmp	eax, 4096
-	jb	LBB113_20
+	jb	LBB123_20
 # %bb.15:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB113_16
+	jae	LBB123_16
 # %bb.19:
 	add	eax, 35
 	mov	ecx, edx
-LBB113_20:
+LBB123_20:
 	push	eax
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB113_21:
+LBB123_21:
 	mov	dword ptr [esi + 4], edi
 	add	dword ptr [esi + 8], ebx
 	mov	eax, dword ptr [ebp - 24]
@@ -16183,14 +19698,14 @@ LBB113_21:
 	pop	ebx
 	pop	ebp
 	ret	4
-LBB113_22:
+LBB123_22:
 	mov	dword ptr [ebp - 16], -1
 	call	"?_Xlen@?$deque@GV?$allocator@G@std@@@std@@ABEXXZ"
-LBB113_23:
+LBB123_23:
 	mov	dword ptr [ebp - 16], -1
-LBB113_24:
+LBB123_24:
 	call	"?_Throw_bad_array_new_length@std@@YAXXZ"
-LBB113_16:
+LBB123_16:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.17:
@@ -16200,12 +19715,12 @@ LBB113_16:
 	.endef
 	.p2align	4, 0x90
 "?dtor$18@?0??_Growmap@?$deque@GV?$allocator@G@std@@@std@@AAEXI@Z@4HA":
-LBB113_18:
+LBB123_18:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end34:
+Lfunc_end37:
 	.section	.xdata,"dr",associative,"?_Growmap@?$deque@GV?$allocator@G@std@@@std@@AAEXI@Z"
 	.p2align	2
 "L__ehtable$?_Growmap@?$deque@GV?$allocator@G@std@@@std@@AAEXI@Z":
@@ -16243,7 +19758,7 @@ Lfunc_end34:
 	.globl	"?_Tidy@?$deque@GV?$allocator@G@std@@@std@@AAEXXZ" # -- Begin function ?_Tidy@?$deque@GV?$allocator@G@std@@@std@@AAEXXZ
 	.p2align	4, 0x90
 "?_Tidy@?$deque@GV?$allocator@G@std@@@std@@AAEXXZ": # @"?_Tidy@?$deque@GV?$allocator@G@std@@@std@@AAEXXZ"
-Lfunc_begin35:
+Lfunc_begin38:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -16260,52 +19775,52 @@ Lfunc_begin35:
 	mov	dword ptr [ebp - 24], ecx
 	mov	dword ptr fs:[0], eax
 	cmp	dword ptr [esi + 16], 0
-	je	LBB115_2
+	je	LBB125_2
 # %bb.1:
 	mov	dword ptr [esi + 12], 0
 	mov	dword ptr [esi + 16], 0
-LBB115_2:
+LBB125_2:
 	mov	eax, dword ptr [esi + 4]
 	mov	edi, dword ptr [esi + 8]
 	.p2align	4, 0x90
-LBB115_3:                               # =>This Inner Loop Header: Depth=1
+LBB125_3:                               # =>This Inner Loop Header: Depth=1
 	test	edi, edi
-	je	LBB115_4
-# %bb.9:                                #   in Loop: Header=BB115_3 Depth=1
+	je	LBB125_4
+# %bb.9:                                #   in Loop: Header=BB125_3 Depth=1
 	mov	ecx, dword ptr [eax + 4*edi - 4]
 	dec	edi
 	test	ecx, ecx
-	je	LBB115_3
-# %bb.10:                               #   in Loop: Header=BB115_3 Depth=1
+	je	LBB125_3
+# %bb.10:                               #   in Loop: Header=BB125_3 Depth=1
 	push	16
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [esi + 4]
-	jmp	LBB115_3
-LBB115_4:
+	jmp	LBB125_3
+LBB125_4:
 	test	eax, eax
-	je	LBB115_14
+	je	LBB125_14
 # %bb.5:
 	mov	ecx, dword ptr [esi + 8]
 	shl	ecx, 2
 	cmp	ecx, 4096
-	jb	LBB115_13
+	jb	LBB125_13
 # %bb.6:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB115_7
+	jae	LBB125_7
 # %bb.12:
 	add	ecx, 35
 	mov	eax, edx
-LBB115_13:
+LBB125_13:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB115_14:
+LBB125_14:
 	mov	dword ptr [esi + 8], 0
 	mov	dword ptr [esi + 4], 0
 	mov	eax, dword ptr [ebp - 24]
@@ -16316,7 +19831,7 @@ LBB115_14:
 	pop	ebx
 	pop	ebp
 	ret
-LBB115_7:
+LBB125_7:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.8:
@@ -16326,12 +19841,12 @@ LBB115_7:
 	.endef
 	.p2align	4, 0x90
 "?dtor$11@?0??_Tidy@?$deque@GV?$allocator@G@std@@@std@@AAEXXZ@4HA":
-LBB115_11:
+LBB125_11:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end35:
+Lfunc_end38:
 	.section	.xdata,"dr",associative,"?_Tidy@?$deque@GV?$allocator@G@std@@@std@@AAEXXZ"
 	.p2align	2
 "L__ehtable$?_Tidy@?$deque@GV?$allocator@G@std@@@std@@AAEXXZ":
@@ -16357,7 +19872,7 @@ Lfunc_end35:
 	.globl	"?open@?$basic_filebuf@DU?$char_traits@D@std@@@std@@QAEPAV12@PBDHH@Z" # -- Begin function ?open@?$basic_filebuf@DU?$char_traits@D@std@@@std@@QAEPAV12@PBDHH@Z
 	.p2align	4, 0x90
 "?open@?$basic_filebuf@DU?$char_traits@D@std@@@std@@QAEPAV12@PBDHH@Z": # @"?open@?$basic_filebuf@DU?$char_traits@D@std@@@std@@QAEPAV12@PBDHH@Z"
-Lfunc_begin36:
+Lfunc_begin39:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -16375,8 +19890,8 @@ Lfunc_begin36:
 	mov	dword ptr [ebp - 24], ecx
 	mov	dword ptr fs:[0], eax
 	cmp	dword ptr [ebx + 76], 0
-	je	LBB116_1
-LBB116_9:
+	je	LBB126_1
+LBB126_9:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, edi
@@ -16386,14 +19901,14 @@ LBB116_9:
 	pop	ebx
 	pop	ebp
 	ret	12
-LBB116_1:
+LBB126_1:
 	push	dword ptr [ebp + 16]
 	push	dword ptr [ebp + 12]
 	push	dword ptr [ebp + 8]
 	call	"?_Fiopen@std@@YAPAU_iobuf@@PBDHH@Z"
 	add	esp, 12
 	test	eax, eax
-	je	LBB116_9
+	je	LBB126_9
 # %bb.2:
 	mov	esi, eax
 	lea	eax, [ebx + 4]
@@ -16465,15 +19980,15 @@ LBB116_1:
 	mov	ecx, esi
 	call	dword ptr [eax + 12]
 	test	al, al
-	je	LBB116_5
+	je	LBB126_5
 # %bb.4:
 	mov	edi, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	dword ptr [edi + 56], 0
 	mov	ecx, dword ptr [ebp - 36]
 	test	ecx, ecx
-	jne	LBB116_7
-	jmp	LBB116_9
-LBB116_5:
+	jne	LBB126_7
+	jmp	LBB126_9
+LBB126_5:
 	mov	edi, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	eax, dword ptr [ebp - 72]       # 4-byte Reload
 	mov	ecx, dword ptr [ebp - 68]       # 4-byte Reload
@@ -16496,46 +20011,46 @@ LBB116_5:
 	mov	dword ptr [edi + 36], 0
 	mov	ecx, dword ptr [ebp - 36]
 	test	ecx, ecx
-	je	LBB116_9
-LBB116_7:
+	je	LBB126_9
+LBB126_7:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB116_9
+	je	LBB126_9
 # %bb.8:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-	jmp	LBB116_9
+	jmp	LBB126_9
 	.def	 "?dtor$10@?0??open@?$basic_filebuf@DU?$char_traits@D@std@@@std@@QAEPAV12@PBDHH@Z@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
 "?dtor$10@?0??open@?$basic_filebuf@DU?$char_traits@D@std@@@std@@QAEPAV12@PBDHH@Z@4HA":
-LBB116_10:
+LBB126_10:
 	push	ebp
 	sub	esp, 16
 	add	ebp, 12
 	mov	ecx, dword ptr [ebp - 36]
 	test	ecx, ecx
-	je	LBB116_13
+	je	LBB126_13
 # %bb.11:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB116_13
+	je	LBB126_13
 # %bb.12:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB116_13:
+LBB126_13:
 	add	esp, 16
 	pop	ebp
 	ret                                     # CLEANUPRET
-Lfunc_end36:
+Lfunc_end39:
 	.section	.xdata,"dr",associative,"?open@?$basic_filebuf@DU?$char_traits@D@std@@@std@@QAEPAV12@PBDHH@Z"
 	.p2align	2
 "L__ehtable$?open@?$basic_filebuf@DU?$char_traits@D@std@@@std@@QAEPAV12@PBDHH@Z":
@@ -16561,7 +20076,7 @@ Lfunc_end36:
 	.globl	"??_G?$basic_ios@DU?$char_traits@D@std@@@std@@UAEPAXI@Z" # -- Begin function ??_G?$basic_ios@DU?$char_traits@D@std@@@std@@UAEPAXI@Z
 	.p2align	4, 0x90
 "??_G?$basic_ios@DU?$char_traits@D@std@@@std@@UAEPAXI@Z": # @"??_G?$basic_ios@DU?$char_traits@D@std@@@std@@UAEPAXI@Z"
-Lfunc_begin37:
+Lfunc_begin40:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -16585,12 +20100,12 @@ Lfunc_begin37:
 # %bb.1:
 	cmp	dword ptr [ebp + 8], 0
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-	je	LBB117_3
+	je	LBB127_3
 # %bb.2:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB117_3:
+LBB127_3:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, esi
@@ -16606,12 +20121,12 @@ LBB117_3:
 	.endef
 	.p2align	4, 0x90
 "?dtor$4@?0???_G?$basic_ios@DU?$char_traits@D@std@@@std@@UAEPAXI@Z@4HA":
-LBB117_4:
+LBB127_4:
 	push	ebp
 	push	eax
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end37:
+Lfunc_end40:
 	.section	.xdata,"dr",associative,"??_G?$basic_ios@DU?$char_traits@D@std@@@std@@UAEPAXI@Z"
 	.p2align	2
 "L__ehtable$??_G?$basic_ios@DU?$char_traits@D@std@@@std@@UAEPAXI@Z":
@@ -16645,7 +20160,7 @@ __xmm@00000201000000000000000000000000:
 	.globl	"?init@?$basic_ios@DU?$char_traits@D@std@@@std@@IAEXPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@_N@Z"
 	.p2align	4, 0x90
 "?init@?$basic_ios@DU?$char_traits@D@std@@@std@@IAEXPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@_N@Z": # @"?init@?$basic_ios@DU?$char_traits@D@std@@@std@@IAEXPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@_N@Z"
-Lfunc_begin38:
+Lfunc_begin41:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -16704,22 +20219,22 @@ Lfunc_begin38:
 	mov	ecx, dword ptr [ebp - 60]
 	mov	ebx, eax
 	test	ecx, ecx
-	je	LBB118_6
+	je	LBB128_6
 # %bb.4:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB118_6
+	je	LBB128_6
 # %bb.5:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB118_6:
+LBB128_6:
 	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	byte ptr [edx + 64], bl
 	cmp	dword ptr [edx + 56], 0
-	jne	LBB118_15
+	jne	LBB128_15
 # %bb.7:
 	mov	eax, dword ptr [edx + 12]
 	and	eax, 19
@@ -16727,16 +20242,16 @@ LBB118_6:
 	mov	dword ptr [edx + 12], eax
 	mov	ecx, dword ptr [edx + 16]
 	and	eax, ecx
-	jne	LBB118_8
-LBB118_15:
+	jne	LBB128_8
+LBB128_15:
 	cmp	byte ptr [ebp + 12], 0
-	je	LBB118_17
+	je	LBB128_17
 # %bb.16:
 	mov	dword ptr [ebp - 16], -1
 	push	edx
 	call	"?_Addstd@ios_base@std@@SAXPAV12@@Z"
 	add	esp, 4
-LBB118_17:
+LBB128_17:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	add	esp, 52
@@ -16745,15 +20260,15 @@ LBB118_17:
 	pop	ebx
 	pop	ebp
 	ret	8
-LBB118_8:
+LBB128_8:
 	cmp	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], 0
 	#MEMBARRIER
-	jne	LBB118_10
+	jne	LBB128_10
 # %bb.9:
 	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"+4], 5
 	#MEMBARRIER
 	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], offset "??_7_Iostream_error_category2@std@@6B@"
-LBB118_10:
+LBB128_10:
 	test	al, 2
 	mov	eax, offset "??_C@_0BF@OOHOMBOF@ios_base?3?3eofbit?5set?$AA@"
 	mov	edx, offset "??_C@_0BG@FMKFHCIL@ios_base?3?3failbit?5set?$AA@"
@@ -16779,24 +20294,24 @@ LBB118_10:
 	.endef
 	.p2align	4, 0x90
 "?dtor$11@?0??init@?$basic_ios@DU?$char_traits@D@std@@@std@@IAEXPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@_N@Z@4HA":
-LBB118_11:
+LBB128_11:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
 	mov	ecx, dword ptr [ebp - 60]
 	test	ecx, ecx
-	je	LBB118_14
+	je	LBB128_14
 # %bb.12:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB118_14
+	je	LBB128_14
 # %bb.13:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB118_14:
+LBB128_14:
 	add	esp, 8
 	pop	ebp
 	ret                                     # CLEANUPRET
@@ -16806,12 +20321,12 @@ LBB118_14:
 	.endef
 	.p2align	4, 0x90
 "?dtor$18@?0??init@?$basic_ios@DU?$char_traits@D@std@@@std@@IAEXPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@_N@Z@4HA":
-LBB118_18:
+LBB128_18:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end38:
+Lfunc_end41:
 	.section	.xdata,"dr",associative,"?init@?$basic_ios@DU?$char_traits@D@std@@@std@@IAEXPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@_N@Z"
 	.p2align	2
 "L__ehtable$?init@?$basic_ios@DU?$char_traits@D@std@@@std@@IAEXPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@_N@Z":
@@ -16839,7 +20354,7 @@ Lfunc_end38:
 	.globl	"??_E?$basic_istream@DU?$char_traits@D@std@@@std@@$4PPPPPPPM@A@AEPAXI@Z" # -- Begin function ??_E?$basic_istream@DU?$char_traits@D@std@@@std@@$4PPPPPPPM@A@AEPAXI@Z
 	.p2align	4, 0x90
 "??_E?$basic_istream@DU?$char_traits@D@std@@@std@@$4PPPPPPPM@A@AEPAXI@Z": # @"??_E?$basic_istream@DU?$char_traits@D@std@@@std@@$4PPPPPPPM@A@AEPAXI@Z"
-Lfunc_begin39:
+Lfunc_begin42:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -16865,12 +20380,12 @@ Lfunc_begin39:
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
 	add	esi, -24
 	cmp	dword ptr [ebp + 8], 0
-	je	LBB119_3
+	je	LBB129_3
 # %bb.2:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB119_3:
+LBB129_3:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, esi
@@ -16886,12 +20401,12 @@ LBB119_3:
 	.endef
 	.p2align	4, 0x90
 "?dtor$4@?0???_E?$basic_istream@DU?$char_traits@D@std@@@std@@$4PPPPPPPM@A@AEPAXI@Z@4HA":
-LBB119_4:
+LBB129_4:
 	push	ebp
 	push	eax
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end39:
+Lfunc_end42:
 	.section	.xdata,"dr",associative,"??_E?$basic_istream@DU?$char_traits@D@std@@@std@@$4PPPPPPPM@A@AEPAXI@Z"
 	.p2align	2
 "L__ehtable$??_E?$basic_istream@DU?$char_traits@D@std@@@std@@$4PPPPPPPM@A@AEPAXI@Z":
@@ -16938,7 +20453,7 @@ Lfunc_end39:
 	.globl	"??0failure@ios_base@std@@QAE@ABV012@@Z" # -- Begin function ??0failure@ios_base@std@@QAE@ABV012@@Z
 	.p2align	4, 0x90
 "??0failure@ios_base@std@@QAE@ABV012@@Z": # @"??0failure@ios_base@std@@QAE@ABV012@@Z"
-Lfunc_begin40:
+Lfunc_begin43:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -16988,12 +20503,12 @@ Lfunc_begin40:
 	.endef
 	.p2align	4, 0x90
 "?dtor$2@?0???0failure@ios_base@std@@QAE@ABV012@@Z@4HA":
-LBB121_2:
+LBB131_2:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end40:
+Lfunc_end43:
 	.section	.xdata,"dr",associative,"??0failure@ios_base@std@@QAE@ABV012@@Z"
 	.p2align	2
 "L__ehtable$??0failure@ios_base@std@@QAE@ABV012@@Z":
@@ -17019,7 +20534,7 @@ Lfunc_end40:
 	.globl	"??0system_error@std@@QAE@ABV01@@Z" # -- Begin function ??0system_error@std@@QAE@ABV01@@Z
 	.p2align	4, 0x90
 "??0system_error@std@@QAE@ABV01@@Z":    # @"??0system_error@std@@QAE@ABV01@@Z"
-Lfunc_begin41:
+Lfunc_begin44:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -17069,12 +20584,12 @@ Lfunc_begin41:
 	.endef
 	.p2align	4, 0x90
 "?dtor$2@?0???0system_error@std@@QAE@ABV01@@Z@4HA":
-LBB122_2:
+LBB132_2:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end41:
+Lfunc_end44:
 	.section	.xdata,"dr",associative,"??0system_error@std@@QAE@ABV01@@Z"
 	.p2align	2
 "L__ehtable$??0system_error@std@@QAE@ABV01@@Z":
@@ -17100,7 +20615,7 @@ Lfunc_end41:
 	.globl	"??0_System_error@std@@QAE@ABV01@@Z" # -- Begin function ??0_System_error@std@@QAE@ABV01@@Z
 	.p2align	4, 0x90
 "??0_System_error@std@@QAE@ABV01@@Z":   # @"??0_System_error@std@@QAE@ABV01@@Z"
-Lfunc_begin42:
+Lfunc_begin45:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -17147,12 +20662,12 @@ Lfunc_begin42:
 	.endef
 	.p2align	4, 0x90
 "?dtor$2@?0???0_System_error@std@@QAE@ABV01@@Z@4HA":
-LBB123_2:
+LBB133_2:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end42:
+Lfunc_end45:
 	.section	.xdata,"dr",associative,"??0_System_error@std@@QAE@ABV01@@Z"
 	.p2align	2
 "L__ehtable$??0_System_error@std@@QAE@ABV01@@Z":
@@ -17178,7 +20693,7 @@ Lfunc_end42:
 	.globl	"??0runtime_error@std@@QAE@ABV01@@Z" # -- Begin function ??0runtime_error@std@@QAE@ABV01@@Z
 	.p2align	4, 0x90
 "??0runtime_error@std@@QAE@ABV01@@Z":   # @"??0runtime_error@std@@QAE@ABV01@@Z"
-Lfunc_begin43:
+Lfunc_begin46:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -17222,12 +20737,12 @@ Lfunc_begin43:
 	.endef
 	.p2align	4, 0x90
 "?dtor$2@?0???0runtime_error@std@@QAE@ABV01@@Z@4HA":
-LBB124_2:
+LBB134_2:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end43:
+Lfunc_end46:
 	.section	.xdata,"dr",associative,"??0runtime_error@std@@QAE@ABV01@@Z"
 	.p2align	2
 "L__ehtable$??0runtime_error@std@@QAE@ABV01@@Z":
@@ -17257,12 +20772,12 @@ Lfunc_end43:
 	push	esi
 	cmp	dword ptr [esp + 8], 0
 	mov	esi, ecx
-	je	LBB125_2
+	je	LBB135_2
 # %bb.1:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB125_2:
+LBB135_2:
 	mov	eax, esi
 	pop	esi
 	ret	4
@@ -17295,7 +20810,7 @@ LBB125_2:
 	mov	eax, dword ptr [esp + 40]
 	mov	esi, dword ptr [esp + 36]
 	cmp	eax, 1
-	jne	LBB127_2
+	jne	LBB137_2
 # %bb.1:
 	mov	dword ptr [esi + 20], 15
 	mov	dword ptr [esi + 16], 0
@@ -17304,8 +20819,8 @@ LBB125_2:
 	mov	byte ptr [esp + 4], al
 	mov	dword ptr [esp + 8], offset "?_Iostream_error@?4??message@_Iostream_error_category2@std@@UBE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@H@Z@4QBDB"
 	mov	dword ptr [esp], 21
-	jmp	LBB127_5
-LBB127_2:
+	jmp	LBB137_5
+LBB137_2:
 	mov	dword ptr [esp], eax
 	call	"?_Syserror_map@std@@YAPBDH@Z"
 	mov	edi, eax
@@ -17316,25 +20831,25 @@ LBB127_2:
 	call	_strlen
 	mov	ebx, eax
 	cmp	eax, 15
-	jbe	LBB127_3
+	jbe	LBB137_3
 # %bb.4:
 	mov	al, byte ptr [esp + 16]
 	mov	byte ptr [esp + 4], al
 	mov	dword ptr [esp + 8], edi
 	mov	dword ptr [esp], ebx
-LBB127_5:
+LBB137_5:
 	mov	ecx, esi
 	call	"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z"
 	sub	esp, 12
-	jmp	LBB127_6
-LBB127_3:
+	jmp	LBB137_6
+LBB137_3:
 	mov	dword ptr [esi + 16], ebx
 	mov	dword ptr [esp + 8], ebx
 	mov	dword ptr [esp + 4], edi
 	mov	dword ptr [esp], esi
 	call	_memmove
 	mov	byte ptr [esi + ebx], 0
-LBB127_6:
+LBB137_6:
 	mov	eax, esi
 	add	esp, 20
 	pop	esi
@@ -17413,7 +20928,7 @@ LBB127_6:
 	.globl	"??0system_error@std@@QAE@Verror_code@1@PBD@Z" # -- Begin function ??0system_error@std@@QAE@Verror_code@1@PBD@Z
 	.p2align	4, 0x90
 "??0system_error@std@@QAE@Verror_code@1@PBD@Z": # @"??0system_error@std@@QAE@Verror_code@1@PBD@Z"
-Lfunc_begin44:
+Lfunc_begin47:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -17439,7 +20954,7 @@ Lfunc_begin44:
 	add	esp, 4
 	mov	esi, eax
 	cmp	eax, 15
-	jbe	LBB131_1
+	jbe	LBB141_1
 # %bb.2:
 	sub	esp, 12
 	mov	al, byte ptr [ebp - 32]
@@ -17448,8 +20963,8 @@ Lfunc_begin44:
 	mov	dword ptr [esp + 8], edi
 	mov	dword ptr [esp], esi
 	call	"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z"
-	jmp	LBB131_3
-LBB131_1:
+	jmp	LBB141_3
+LBB141_1:
 	mov	dword ptr [ebp - 44], esi
 	lea	eax, [ebp - 60]
 	push	esi
@@ -17458,7 +20973,7 @@ LBB131_1:
 	call	_memcpy
 	add	esp, 12
 	mov	byte ptr [ebp + esi - 60], 0
-LBB131_3:
+LBB141_3:
 	mov	ecx, dword ptr [ebp - 36]       # 4-byte Reload
 	lea	eax, [ebp - 60]
 	mov	dword ptr [ebp - 16], 1
@@ -17469,28 +20984,28 @@ LBB131_3:
 # %bb.4:
 	mov	eax, dword ptr [ebp - 40]
 	cmp	eax, 16
-	jb	LBB131_12
+	jb	LBB141_12
 # %bb.5:
 	mov	ecx, dword ptr [ebp - 60]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB131_11
+	jb	LBB141_11
 # %bb.6:
 	mov	esi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, esi
 	cmp	ecx, 32
-	jae	LBB131_7
+	jae	LBB141_7
 # %bb.10:
 	add	eax, 36
 	mov	ecx, esi
 	mov	edx, eax
-LBB131_11:
+LBB141_11:
 	push	edx
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB131_12:
+LBB141_12:
 	mov	eax, dword ptr [ebp - 36]       # 4-byte Reload
 	mov	dword ptr [eax], offset "??_7system_error@std@@6B@"
 	mov	ecx, dword ptr [ebp - 24]
@@ -17501,7 +21016,7 @@ LBB131_12:
 	pop	ebx
 	pop	ebp
 	ret	12
-LBB131_7:
+LBB141_7:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.8:
@@ -17511,7 +21026,7 @@ LBB131_7:
 	.endef
 	.p2align	4, 0x90
 "?dtor$9@?0???0system_error@std@@QAE@Verror_code@1@PBD@Z@4HA":
-LBB131_9:
+LBB141_9:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
@@ -17522,40 +21037,40 @@ LBB131_9:
 	.endef
 	.p2align	4, 0x90
 "?dtor$13@?0???0system_error@std@@QAE@Verror_code@1@PBD@Z@4HA":
-LBB131_13:
+LBB141_13:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
 	mov	eax, dword ptr [ebp - 40]
 	cmp	eax, 16
-	jb	LBB131_18
+	jb	LBB141_18
 # %bb.14:
 	mov	ecx, dword ptr [ebp - 60]
 	lea	esi, [eax + 1]
 	cmp	esi, 4096
-	jb	LBB131_17
+	jb	LBB141_17
 # %bb.15:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB131_19
+	jae	LBB141_19
 # %bb.16:
 	add	eax, 36
 	mov	ecx, edx
 	mov	esi, eax
-LBB131_17:
+LBB141_17:
 	push	esi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB131_18:
+LBB141_18:
 	add	esp, 12
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB131_19:
+LBB141_19:
 	call	__invalid_parameter_noinfo_noreturn
-Lfunc_end44:
+Lfunc_end47:
 	.section	.xdata,"dr",associative,"??0system_error@std@@QAE@Verror_code@1@PBD@Z"
 	.p2align	2
 "L__ehtable$??0system_error@std@@QAE@Verror_code@1@PBD@Z":
@@ -17583,7 +21098,7 @@ Lfunc_end44:
 	.globl	"??_Gfailure@ios_base@std@@UAEPAXI@Z" # -- Begin function ??_Gfailure@ios_base@std@@UAEPAXI@Z
 	.p2align	4, 0x90
 "??_Gfailure@ios_base@std@@UAEPAXI@Z":  # @"??_Gfailure@ios_base@std@@UAEPAXI@Z"
-Lfunc_begin45:
+Lfunc_begin48:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -17608,12 +21123,12 @@ Lfunc_begin45:
 # %bb.1:
 	cmp	dword ptr [ebp + 8], 0
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-	je	LBB132_3
+	je	LBB142_3
 # %bb.2:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB132_3:
+LBB142_3:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, esi
@@ -17629,12 +21144,12 @@ LBB132_3:
 	.endef
 	.p2align	4, 0x90
 "?dtor$4@?0???_Gfailure@ios_base@std@@UAEPAXI@Z@4HA":
-LBB132_4:
+LBB142_4:
 	push	ebp
 	push	eax
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end45:
+Lfunc_end48:
 	.section	.xdata,"dr",associative,"??_Gfailure@ios_base@std@@UAEPAXI@Z"
 	.p2align	2
 "L__ehtable$??_Gfailure@ios_base@std@@UAEPAXI@Z":
@@ -17660,7 +21175,7 @@ Lfunc_end45:
 	.globl	"??0_System_error@std@@IAE@Verror_code@1@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z" # -- Begin function ??0_System_error@std@@IAE@Verror_code@1@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z
 	.p2align	4, 0x90
 "??0_System_error@std@@IAE@Verror_code@1@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z": # @"??0_System_error@std@@IAE@Verror_code@1@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z"
-Lfunc_begin46:
+Lfunc_begin49:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -17685,22 +21200,22 @@ Lfunc_begin46:
 	mov	dword ptr [edi + 32], 0
 	mov	eax, dword ptr [esi + 16]
 	cmp	dword ptr [esi + 20], 15
-	jbe	LBB133_2
+	jbe	LBB143_2
 # %bb.1:
 	mov	esi, dword ptr [esi]
-LBB133_2:
+LBB143_2:
 	mov	ebx, edi
 	add	ebx, 12
 	cmp	eax, 15
-	ja	LBB133_4
+	ja	LBB143_4
 # %bb.3:
 	movsd	xmm0, qword ptr [esi]           # xmm0 = mem[0],zero
 	movsd	xmm1, qword ptr [esi + 8]       # xmm1 = mem[0],zero
 	mov	ecx, 15
 	movsd	qword ptr [ebx + 8], xmm1
 	movsd	qword ptr [ebx], xmm0
-	jmp	LBB133_8
-LBB133_4:
+	jmp	LBB143_8
+LBB143_4:
 	mov	dword ptr [ebp - 40], eax       # 4-byte Spill
 	or	eax, 15
 	mov	ecx, 2147483647
@@ -17708,7 +21223,7 @@ LBB133_4:
 	cmovb	ecx, eax
 	cmp	ecx, 4095
 	mov	dword ptr [ebp - 36], ecx       # 4-byte Spill
-	jb	LBB133_6
+	jb	LBB143_6
 # %bb.5:
 	lea	eax, [ecx + 36]
 	push	eax
@@ -17718,13 +21233,13 @@ LBB133_4:
 	add	eax, 35
 	and	eax, -32
 	mov	dword ptr [eax - 4], ecx
-	jmp	LBB133_7
-LBB133_6:
+	jmp	LBB143_7
+LBB143_6:
 	lea	eax, [ecx + 1]
 	push	eax
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
-LBB133_7:
+LBB143_7:
 	mov	dword ptr [ebx], eax
 	mov	ebx, dword ptr [ebp - 40]       # 4-byte Reload
 	lea	ecx, [ebx + 1]
@@ -17735,7 +21250,7 @@ LBB133_7:
 	mov	eax, ebx
 	add	esp, 12
 	mov	ecx, dword ptr [ebp - 36]       # 4-byte Reload
-LBB133_8:
+LBB143_8:
 	mov	dword ptr [edi + 28], eax
 	mov	eax, dword ptr [ebp + 8]
 	mov	dword ptr [edi + 32], ecx
@@ -17748,10 +21263,10 @@ LBB133_8:
 	add	esp, 36
 	mov	esp, dword ptr [ebp - 44]       # 4-byte Reload
 	cmp	dword ptr [ebp - 56], 15
-	jbe	LBB133_10
+	jbe	LBB143_10
 # %bb.9:
 	mov	esi, dword ptr [ebp - 76]
-LBB133_10:
+LBB143_10:
 	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
 	lea	eax, [ecx + 4]
 	mov	dword ptr [ecx], offset "??_7exception@std@@6B@"
@@ -17770,28 +21285,28 @@ LBB133_10:
 	mov	dword ptr [edi], offset "??_7runtime_error@std@@6B@"
 	mov	eax, dword ptr [ebp - 56]
 	cmp	eax, 16
-	jb	LBB133_19
+	jb	LBB143_19
 # %bb.12:
 	mov	ecx, dword ptr [ebp - 76]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB133_18
+	jb	LBB143_18
 # %bb.13:
 	mov	esi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, esi
 	cmp	ecx, 32
-	jae	LBB133_14
+	jae	LBB143_14
 # %bb.17:
 	add	eax, 36
 	mov	ecx, esi
 	mov	edx, eax
-LBB133_18:
+LBB143_18:
 	push	edx
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB133_19:
+LBB143_19:
 	mov	eax, dword ptr [ebp + 8]
 	mov	dword ptr [edi], offset "??_7_System_error@std@@6B@"
 	mov	dword ptr [edi + 12], eax
@@ -17806,7 +21321,7 @@ LBB133_19:
 	pop	ebx
 	pop	ebp
 	ret	12
-LBB133_14:
+LBB143_14:
 	mov	dword ptr [ebp - 16], 1
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.15:
@@ -17816,7 +21331,7 @@ LBB133_14:
 	.endef
 	.p2align	4, 0x90
 "?dtor$16@?0???0_System_error@std@@IAE@Verror_code@1@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z@4HA":
-LBB133_16:
+LBB143_16:
 	push	ebp
 	sub	esp, 36
 	add	ebp, 12
@@ -17827,12 +21342,12 @@ LBB133_16:
 	.endef
 	.p2align	4, 0x90
 "?dtor$20@?0???0_System_error@std@@IAE@Verror_code@1@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z@4HA":
-LBB133_20:
+LBB143_20:
 	push	ebp
 	sub	esp, 36
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end46:
+Lfunc_end49:
 	.section	.xdata,"dr",associative,"??0_System_error@std@@IAE@Verror_code@1@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z"
 	.p2align	2
 "L__ehtable$??0_System_error@std@@IAE@Verror_code@1@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z":
@@ -17860,7 +21375,7 @@ Lfunc_end46:
 	.globl	"??_Gsystem_error@std@@UAEPAXI@Z" # -- Begin function ??_Gsystem_error@std@@UAEPAXI@Z
 	.p2align	4, 0x90
 "??_Gsystem_error@std@@UAEPAXI@Z":      # @"??_Gsystem_error@std@@UAEPAXI@Z"
-Lfunc_begin47:
+Lfunc_begin50:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -17885,12 +21400,12 @@ Lfunc_begin47:
 # %bb.1:
 	cmp	dword ptr [ebp + 8], 0
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-	je	LBB134_3
+	je	LBB144_3
 # %bb.2:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB134_3:
+LBB144_3:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, esi
@@ -17906,12 +21421,12 @@ LBB134_3:
 	.endef
 	.p2align	4, 0x90
 "?dtor$4@?0???_Gsystem_error@std@@UAEPAXI@Z@4HA":
-LBB134_4:
+LBB144_4:
 	push	ebp
 	push	eax
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end47:
+Lfunc_end50:
 	.section	.xdata,"dr",associative,"??_Gsystem_error@std@@UAEPAXI@Z"
 	.p2align	2
 "L__ehtable$??_Gsystem_error@std@@UAEPAXI@Z":
@@ -17937,7 +21452,7 @@ Lfunc_end47:
 	.globl	"?_Makestr@_System_error@std@@CA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@Verror_code@2@V32@@Z" # -- Begin function ?_Makestr@_System_error@std@@CA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@Verror_code@2@V32@@Z
 	.p2align	4, 0x90
 "?_Makestr@_System_error@std@@CA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@Verror_code@2@V32@@Z": # @"?_Makestr@_System_error@std@@CA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@Verror_code@2@V32@@Z"
-Lfunc_begin48:
+Lfunc_begin51:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -17957,13 +21472,13 @@ Lfunc_begin48:
 	mov	dword ptr [ebp - 60], eax       # 4-byte Spill
 	mov	eax, dword ptr [ebp + 36]
 	test	eax, eax
-	je	LBB135_7
+	je	LBB145_7
 # %bb.1:
 	mov	ecx, dword ptr [esi + 32]
 	mov	edx, ecx
 	sub	edx, eax
 	cmp	edx, 2
-	jae	LBB135_2
+	jae	LBB145_2
 # %bb.5:
 	mov	dword ptr [ebp - 16], 1
 	sub	esp, 16
@@ -17974,23 +21489,23 @@ Lfunc_begin48:
 	mov	dword ptr [esp + 8], offset "??_C@_02LMMGGCAJ@?3?5?$AA@"
 	mov	dword ptr [esp], 2
 	call	"??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@QBDI@Z@PBDI@Z"
-	jmp	LBB135_6
-LBB135_2:
+	jmp	LBB145_6
+LBB145_2:
 	lea	edx, [eax + 2]
 	cmp	ecx, 16
 	lea	ecx, [ebp + 20]
 	mov	dword ptr [esi + 28], edx
-	jb	LBB135_4
+	jb	LBB145_4
 # %bb.3:
 	lea	ecx, [ebp + 20]
 	mov	ecx, dword ptr [ecx]
-LBB135_4:
+LBB145_4:
 	mov	word ptr [ecx + eax], 8250
 	mov	byte ptr [ecx + eax + 2], 0
-LBB135_6:
+LBB145_6:
 	lea	esi, [ebp + 8]
 	mov	dword ptr [ebp - 16], 1
-LBB135_7:
+LBB145_7:
 	mov	ecx, dword ptr [esi + 8]
 	mov	eax, dword ptr [esi + 4]
 	lea	esi, [ebp - 56]
@@ -18004,17 +21519,17 @@ LBB135_7:
 	mov	eax, dword ptr [ebp - 40]
 	cmp	dword ptr [ebp - 36], 15
 	lea	ebx, [ebp - 56]
-	jbe	LBB135_10
+	jbe	LBB145_10
 # %bb.9:
 	mov	ebx, dword ptr [ebp - 56]
-LBB135_10:
+LBB145_10:
 	lea	edi, [ebp + 8]
 	mov	edx, dword ptr [edi + 32]
 	mov	ecx, dword ptr [edi + 28]
 	mov	esi, edx
 	sub	esi, ecx
 	cmp	esi, eax
-	jae	LBB135_11
+	jae	LBB145_11
 # %bb.14:
 	mov	dword ptr [ebp - 16], 2
 	sub	esp, 16
@@ -18029,18 +21544,18 @@ LBB135_10:
 	mov	eax, dword ptr [ebp - 36]
 	lea	edi, [ebp + 8]
 	cmp	eax, 16
-	jae	LBB135_16
-	jmp	LBB135_23
-LBB135_11:
+	jae	LBB145_16
+	jmp	LBB145_23
+LBB145_11:
 	lea	esi, [ecx + eax]
 	cmp	edx, 16
 	mov	dword ptr [edi + 28], esi
 	lea	edi, [ebp + 20]
-	jb	LBB135_13
+	jb	LBB145_13
 # %bb.12:
 	lea	edx, [ebp + 20]
 	mov	edi, dword ptr [edx]
-LBB135_13:
+LBB145_13:
 	add	ecx, edi
 	push	eax
 	push	ebx
@@ -18051,28 +21566,28 @@ LBB135_13:
 	mov	eax, dword ptr [ebp - 36]
 	lea	edi, [ebp + 8]
 	cmp	eax, 16
-	jb	LBB135_23
-LBB135_16:
+	jb	LBB145_23
+LBB145_16:
 	mov	ecx, dword ptr [ebp - 56]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB135_22
+	jb	LBB145_22
 # %bb.17:
 	mov	esi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, esi
 	cmp	ecx, 32
-	jae	LBB135_18
+	jae	LBB145_18
 # %bb.21:
 	add	eax, 36
 	mov	ecx, esi
 	mov	edx, eax
-LBB135_22:
+LBB145_22:
 	push	edx
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB135_23:
+LBB145_23:
 	mov	ecx, dword ptr [ebp - 60]       # 4-byte Reload
 	lea	eax, [ebp + 20]
 	mov	dword ptr [ecx + 16], 0
@@ -18095,7 +21610,7 @@ LBB135_23:
 	pop	ebx
 	pop	ebp
 	ret
-LBB135_18:
+LBB145_18:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.19:
@@ -18105,7 +21620,7 @@ LBB135_18:
 	.endef
 	.p2align	4, 0x90
 "?dtor$20@?0??_Makestr@_System_error@std@@CA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@Verror_code@2@V32@@Z@4HA":
-LBB135_20:
+LBB145_20:
 	push	ebp
 	sub	esp, 16
 	add	ebp, 12
@@ -18116,41 +21631,41 @@ LBB135_20:
 	.endef
 	.p2align	4, 0x90
 "?dtor$24@?0??_Makestr@_System_error@std@@CA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@Verror_code@2@V32@@Z@4HA":
-LBB135_24:
+LBB145_24:
 	push	ebp
 	sub	esp, 16
 	add	ebp, 12
 	mov	eax, dword ptr [ebp - 36]
 	cmp	eax, 16
-	jb	LBB135_29
+	jb	LBB145_29
 # %bb.25:
 	mov	ecx, dword ptr [ebp - 56]
 	lea	esi, [eax + 1]
 	cmp	esi, 4096
-	jb	LBB135_28
+	jb	LBB145_28
 # %bb.26:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB135_36
+	jae	LBB145_36
 # %bb.27:
 	add	eax, 36
 	mov	ecx, edx
 	mov	esi, eax
-LBB135_28:
+LBB145_28:
 	push	esi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB135_29:
+LBB145_29:
 	mov	dword ptr [ebp - 40], 0
 	mov	dword ptr [ebp - 36], 15
 	mov	byte ptr [ebp - 56], 0
 	add	esp, 16
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB135_36:
+LBB145_36:
 	call	__invalid_parameter_noinfo_noreturn
 	.def	 "?dtor$30@?0??_Makestr@_System_error@std@@CA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@Verror_code@2@V32@@Z@4HA";
 	.scl	3;
@@ -18158,42 +21673,42 @@ LBB135_36:
 	.endef
 	.p2align	4, 0x90
 "?dtor$30@?0??_Makestr@_System_error@std@@CA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@Verror_code@2@V32@@Z@4HA":
-LBB135_30:
+LBB145_30:
 	push	ebp
 	sub	esp, 16
 	add	ebp, 12
 	lea	eax, [ebp + 8]
 	mov	eax, dword ptr [eax + 32]
 	cmp	eax, 16
-	jb	LBB135_35
+	jb	LBB145_35
 # %bb.31:
 	lea	ecx, [ebp + 20]
 	lea	esi, [eax + 1]
 	mov	ecx, dword ptr [ecx]
 	cmp	esi, 4096
-	jb	LBB135_34
+	jb	LBB145_34
 # %bb.32:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB135_37
+	jae	LBB145_37
 # %bb.33:
 	add	eax, 36
 	mov	ecx, edx
 	mov	esi, eax
-LBB135_34:
+LBB145_34:
 	push	esi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB135_35:
+LBB145_35:
 	add	esp, 16
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB135_37:
+LBB145_37:
 	call	__invalid_parameter_noinfo_noreturn
-Lfunc_end48:
+Lfunc_end51:
 	.section	.xdata,"dr",associative,"?_Makestr@_System_error@std@@CA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@Verror_code@2@V32@@Z"
 	.p2align	2
 "L__ehtable$?_Makestr@_System_error@std@@CA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@Verror_code@2@V32@@Z":
@@ -18223,7 +21738,7 @@ Lfunc_end48:
 	.globl	"??_G_System_error@std@@UAEPAXI@Z" # -- Begin function ??_G_System_error@std@@UAEPAXI@Z
 	.p2align	4, 0x90
 "??_G_System_error@std@@UAEPAXI@Z":     # @"??_G_System_error@std@@UAEPAXI@Z"
-Lfunc_begin49:
+Lfunc_begin52:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -18248,12 +21763,12 @@ Lfunc_begin49:
 # %bb.1:
 	cmp	dword ptr [ebp + 8], 0
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-	je	LBB136_3
+	je	LBB146_3
 # %bb.2:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB136_3:
+LBB146_3:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, esi
@@ -18269,12 +21784,12 @@ LBB136_3:
 	.endef
 	.p2align	4, 0x90
 "?dtor$4@?0???_G_System_error@std@@UAEPAXI@Z@4HA":
-LBB136_4:
+LBB146_4:
 	push	ebp
 	push	eax
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end49:
+Lfunc_end52:
 	.section	.xdata,"dr",associative,"??_G_System_error@std@@UAEPAXI@Z"
 	.p2align	2
 "L__ehtable$??_G_System_error@std@@UAEPAXI@Z":
@@ -18300,7 +21815,7 @@ Lfunc_end49:
 	.globl	"??_Gruntime_error@std@@UAEPAXI@Z" # -- Begin function ??_Gruntime_error@std@@UAEPAXI@Z
 	.p2align	4, 0x90
 "??_Gruntime_error@std@@UAEPAXI@Z":     # @"??_Gruntime_error@std@@UAEPAXI@Z"
-Lfunc_begin50:
+Lfunc_begin53:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -18325,12 +21840,12 @@ Lfunc_begin50:
 # %bb.1:
 	cmp	dword ptr [ebp + 8], 0
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-	je	LBB137_3
+	je	LBB147_3
 # %bb.2:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB137_3:
+LBB147_3:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, esi
@@ -18346,12 +21861,12 @@ LBB137_3:
 	.endef
 	.p2align	4, 0x90
 "?dtor$4@?0???_Gruntime_error@std@@UAEPAXI@Z@4HA":
-LBB137_4:
+LBB147_4:
 	push	ebp
 	push	eax
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end50:
+Lfunc_end53:
 	.section	.xdata,"dr",associative,"??_Gruntime_error@std@@UAEPAXI@Z"
 	.p2align	2
 "L__ehtable$??_Gruntime_error@std@@UAEPAXI@Z":
@@ -18377,7 +21892,7 @@ Lfunc_end50:
 	.globl	"??$use_facet@V?$ctype@D@std@@@std@@YAABV?$ctype@D@0@ABVlocale@0@@Z" # -- Begin function ??$use_facet@V?$ctype@D@std@@@std@@YAABV?$ctype@D@0@ABVlocale@0@@Z
 	.p2align	4, 0x90
 "??$use_facet@V?$ctype@D@std@@@std@@YAABV?$ctype@D@0@ABVlocale@0@@Z": # @"??$use_facet@V?$ctype@D@std@@@std@@YAABV?$ctype@D@0@ABVlocale@0@@Z"
-Lfunc_begin51:
+Lfunc_begin54:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -18400,38 +21915,38 @@ Lfunc_begin51:
 	mov	eax, dword ptr ["?_Psave@?$_Facetptr@V?$ctype@D@std@@@std@@2PBVfacet@locale@2@B"]
 	test	edx, edx
 	mov	dword ptr [ebp - 36], eax
-	je	LBB138_1
+	je	LBB148_1
 # %bb.4:
 	mov	eax, dword ptr [edi + 4]
 	cmp	dword ptr [eax + 12], edx
-	ja	LBB138_5
-	jmp	LBB138_6
-LBB138_1:
+	ja	LBB148_5
+	jmp	LBB148_6
+LBB148_1:
 	lea	ecx, [ebp - 44]
 	push	0
 	call	"??0_Lockit@std@@QAE@H@Z"
 	cmp	dword ptr ["?id@?$ctype@D@std@@2V0locale@2@A"], 0
-	jne	LBB138_3
+	jne	LBB148_3
 # %bb.2:
 	mov	eax, dword ptr ["?_Id_cnt@id@locale@std@@0HA"]
 	inc	eax
 	mov	dword ptr ["?_Id_cnt@id@locale@std@@0HA"], eax
 	mov	dword ptr ["?id@?$ctype@D@std@@2V0locale@2@A"], eax
-LBB138_3:
+LBB148_3:
 	lea	ecx, [ebp - 44]
 	call	"??1_Lockit@std@@QAE@XZ"
 	mov	edx, dword ptr ["?id@?$ctype@D@std@@2V0locale@2@A"]
 	mov	eax, dword ptr [edi + 4]
 	cmp	dword ptr [eax + 12], edx
-	jbe	LBB138_6
-LBB138_5:
+	jbe	LBB148_6
+LBB148_5:
 	mov	ecx, dword ptr [eax + 8]
 	mov	esi, dword ptr [ecx + 4*edx]
 	test	esi, esi
-	jne	LBB138_17
-LBB138_6:
+	jne	LBB148_17
+LBB148_6:
 	cmp	byte ptr [eax + 20], 0
-	je	LBB138_10
+	je	LBB148_10
 # %bb.7:
 	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
 	mov	dword ptr [ebp - 16], 0
@@ -18440,16 +21955,16 @@ LBB138_6:
 	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	edi, dword ptr [ebp + 8]
 	cmp	dword ptr [eax + 12], ecx
-	jbe	LBB138_10
+	jbe	LBB148_10
 # %bb.9:
 	mov	eax, dword ptr [eax + 8]
 	mov	esi, dword ptr [eax + 4*ecx]
 	test	esi, esi
-	jne	LBB138_17
-LBB138_10:
+	jne	LBB148_17
+LBB148_10:
 	mov	esi, dword ptr [ebp - 36]
 	test	esi, esi
-	jne	LBB138_17
+	jne	LBB148_17
 # %bb.11:
 	lea	eax, [ebp - 36]
 	mov	dword ptr [ebp - 16], 0
@@ -18459,7 +21974,7 @@ LBB138_10:
 	add	esp, 8
 # %bb.12:
 	cmp	eax, -1
-	je	LBB138_13
+	je	LBB148_13
 # %bb.15:
 	mov	eax, dword ptr [ebp - 36]
 	mov	dword ptr [ebp - 16], 1
@@ -18473,7 +21988,7 @@ LBB138_10:
 	call	dword ptr [eax + 4]
 	mov	esi, dword ptr [ebp - 36]
 	mov	dword ptr ["?_Psave@?$_Facetptr@V?$ctype@D@std@@@std@@2PBVfacet@locale@2@B"], esi
-LBB138_17:
+LBB148_17:
 	lea	ecx, [ebp - 40]
 	call	"??1_Lockit@std@@QAE@XZ"
 	mov	eax, dword ptr [ebp - 24]
@@ -18485,7 +22000,7 @@ LBB138_17:
 	pop	ebx
 	pop	ebp
 	ret
-LBB138_13:
+LBB148_13:
 	call	"?_Throw_bad_cast@std@@YAXXZ"
 # %bb.14:
 	.def	 "?dtor$18@?0???$use_facet@V?$ctype@D@std@@@std@@YAABV?$ctype@D@0@ABVlocale@0@@Z@4HA";
@@ -18494,18 +22009,18 @@ LBB138_13:
 	.endef
 	.p2align	4, 0x90
 "?dtor$18@?0???$use_facet@V?$ctype@D@std@@@std@@YAABV?$ctype@D@0@ABVlocale@0@@Z@4HA":
-LBB138_18:
+LBB148_18:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
 	cmp	dword ptr [ebp - 32], 0         # 4-byte Folded Reload
-	je	LBB138_20
+	je	LBB148_20
 # %bb.19:
 	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	eax, dword ptr [ecx]
 	push	1
 	call	dword ptr [eax]
-LBB138_20:
+LBB148_20:
 	add	esp, 8
 	pop	ebp
 	ret                                     # CLEANUPRET
@@ -18515,7 +22030,7 @@ LBB138_20:
 	.endef
 	.p2align	4, 0x90
 "?dtor$21@?0???$use_facet@V?$ctype@D@std@@@std@@YAABV?$ctype@D@0@ABVlocale@0@@Z@4HA":
-LBB138_21:
+LBB148_21:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
@@ -18524,7 +22039,7 @@ LBB138_21:
 	add	esp, 8
 	pop	ebp
 	ret                                     # CLEANUPRET
-Lfunc_end51:
+Lfunc_end54:
 	.section	.xdata,"dr",associative,"??$use_facet@V?$ctype@D@std@@@std@@YAABV?$ctype@D@0@ABVlocale@0@@Z"
 	.p2align	2
 "L__ehtable$??$use_facet@V?$ctype@D@std@@@std@@YAABV?$ctype@D@0@ABVlocale@0@@Z":
@@ -18552,7 +22067,7 @@ Lfunc_end51:
 	.globl	"?_Getcat@?$ctype@D@std@@SAIPAPBVfacet@locale@2@PBV42@@Z" # -- Begin function ?_Getcat@?$ctype@D@std@@SAIPAPBVfacet@locale@2@PBV42@@Z
 	.p2align	4, 0x90
 "?_Getcat@?$ctype@D@std@@SAIPAPBVfacet@locale@2@PBV42@@Z": # @"?_Getcat@?$ctype@D@std@@SAIPAPBVfacet@locale@2@PBV42@@Z"
-Lfunc_begin52:
+Lfunc_begin55:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -18569,10 +22084,10 @@ Lfunc_begin52:
 	test	edx, edx
 	mov	dword ptr [ebp - 24], ecx
 	mov	dword ptr fs:[0], eax
-	je	LBB139_8
+	je	LBB149_8
 # %bb.1:
 	cmp	dword ptr [edx], 0
-	jne	LBB139_8
+	jne	LBB149_8
 # %bb.2:
 	mov	esi, dword ptr [ebp + 12]
 	push	24
@@ -18581,7 +22096,7 @@ Lfunc_begin52:
 	mov	edx, dword ptr [esi + 4]
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
 	test	edx, edx
-	je	LBB139_3
+	je	LBB149_3
 # %bb.4:
 	mov	ecx, dword ptr [edx + 24]
 	add	edx, 28
@@ -18591,14 +22106,14 @@ Lfunc_begin52:
 	lea	ecx, [ebp - 100]
 	push	edx
 	call	"??0_Locinfo@std@@QAE@PBD@Z"
-	jmp	LBB139_6
-LBB139_3:
+	jmp	LBB149_6
+LBB149_3:
 	mov	edx, offset "??_C@_00CNPNBAHC@?$AA@"
 	mov	dword ptr [ebp - 16], 0
 	lea	ecx, [ebp - 100]
 	push	edx
 	call	"??0_Locinfo@std@@QAE@PBD@Z"
-LBB139_6:
+LBB149_6:
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	dword ptr [ebp - 16], 1
 	mov	dword ptr [eax + 4], 0
@@ -18617,7 +22132,7 @@ LBB139_6:
 	mov	dword ptr [eax], ecx
 	lea	ecx, [ebp - 100]
 	call	"??1_Locinfo@std@@QAE@XZ"
-LBB139_8:
+LBB149_8:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, 2
@@ -18633,7 +22148,7 @@ LBB139_8:
 	.endef
 	.p2align	4, 0x90
 "?dtor$9@?0??_Getcat@?$ctype@D@std@@SAIPAPBVfacet@locale@2@PBV42@@Z@4HA":
-LBB139_9:
+LBB149_9:
 	push	ebp
 	push	eax
 	add	ebp, 12
@@ -18648,7 +22163,7 @@ LBB139_9:
 	.endef
 	.p2align	4, 0x90
 "?dtor$10@?0??_Getcat@?$ctype@D@std@@SAIPAPBVfacet@locale@2@PBV42@@Z@4HA":
-LBB139_10:
+LBB149_10:
 	push	ebp
 	push	eax
 	add	ebp, 12
@@ -18657,7 +22172,7 @@ LBB139_10:
 	add	esp, 8
 	pop	ebp
 	ret                                     # CLEANUPRET
-Lfunc_end52:
+Lfunc_end55:
 	.section	.xdata,"dr",associative,"?_Getcat@?$ctype@D@std@@SAIPAPBVfacet@locale@2@PBV42@@Z"
 	.p2align	2
 "L__ehtable$?_Getcat@?$ctype@D@std@@SAIPAPBVfacet@locale@2@PBV42@@Z":
@@ -18692,38 +22207,38 @@ Lfunc_end52:
 	mov	edi, dword ptr [esp + 12]
 	mov	esi, ecx
 	cmp	dword ptr [ecx + 16], 0
-	jle	LBB140_2
+	jle	LBB150_2
 # %bb.1:
 	push	dword ptr [esi + 12]
 	call	_free
-LBB140_5:
+LBB150_5:
 	add	esp, 4
-	jmp	LBB140_6
-LBB140_2:
-	js	LBB140_3
-LBB140_6:
+	jmp	LBB150_6
+LBB150_2:
+	js	LBB150_3
+LBB150_6:
 	push	dword ptr [esi + 20]
 	call	_free
 	add	esp, 4
 	test	edi, edi
-	je	LBB140_8
+	je	LBB150_8
 # %bb.7:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB140_8:
+LBB150_8:
 	mov	eax, esi
 	pop	esi
 	pop	edi
 	ret	4
-LBB140_3:
+LBB150_3:
 	mov	eax, dword ptr [esi + 12]
 	test	eax, eax
-	je	LBB140_6
+	je	LBB150_6
 # %bb.4:
 	push	eax
 	call	"??_V@YAXPAX@Z"
-	jmp	LBB140_5
+	jmp	LBB150_5
                                         # -- End function
 	.def	 "?do_tolower@?$ctype@D@std@@MBEPBDPADPBD@Z";
 	.scl	2;
@@ -18740,12 +22255,12 @@ LBB140_3:
 	mov	ebx, dword ptr [esp + 20]
 	mov	esi, dword ptr [esp + 16]
 	cmp	esi, ebx
-	je	LBB141_4
+	je	LBB151_4
 # %bb.1:
 	mov	edi, ecx
 	add	edi, 8
 	.p2align	4, 0x90
-LBB141_2:                               # =>This Inner Loop Header: Depth=1
+LBB151_2:                               # =>This Inner Loop Header: Depth=1
 	movzx	eax, byte ptr [esi]
 	push	edi
 	push	eax
@@ -18754,10 +22269,10 @@ LBB141_2:                               # =>This Inner Loop Header: Depth=1
 	mov	byte ptr [esi], al
 	inc	esi
 	cmp	ebx, esi
-	jne	LBB141_2
+	jne	LBB151_2
 # %bb.3:
 	mov	esi, ebx
-LBB141_4:
+LBB151_4:
 	mov	eax, esi
 	pop	esi
 	pop	edi
@@ -18797,12 +22312,12 @@ LBB141_4:
 	mov	ebx, dword ptr [esp + 20]
 	mov	esi, dword ptr [esp + 16]
 	cmp	esi, ebx
-	je	LBB143_4
+	je	LBB153_4
 # %bb.1:
 	mov	edi, ecx
 	add	edi, 8
 	.p2align	4, 0x90
-LBB143_2:                               # =>This Inner Loop Header: Depth=1
+LBB153_2:                               # =>This Inner Loop Header: Depth=1
 	movzx	eax, byte ptr [esi]
 	push	edi
 	push	eax
@@ -18811,10 +22326,10 @@ LBB143_2:                               # =>This Inner Loop Header: Depth=1
 	mov	byte ptr [esi], al
 	inc	esi
 	cmp	ebx, esi
-	jne	LBB143_2
+	jne	LBB153_2
 # %bb.3:
 	mov	esi, ebx
-LBB143_4:
+LBB153_4:
 	mov	eax, esi
 	pop	esi
 	pop	edi
@@ -18921,12 +22436,12 @@ LBB143_4:
 	push	esi
 	cmp	dword ptr [esp + 8], 0
 	mov	esi, ecx
-	je	LBB149_2
+	je	LBB159_2
 # %bb.1:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB149_2:
+LBB159_2:
 	mov	eax, esi
 	pop	esi
 	ret	4
@@ -18939,7 +22454,7 @@ LBB149_2:
 	.globl	"?_Ipfx@?$basic_istream@DU?$char_traits@D@std@@@std@@QAE_N_N@Z" # -- Begin function ?_Ipfx@?$basic_istream@DU?$char_traits@D@std@@@std@@QAE_N_N@Z
 	.p2align	4, 0x90
 "?_Ipfx@?$basic_istream@DU?$char_traits@D@std@@@std@@QAE_N_N@Z": # @"?_Ipfx@?$basic_istream@DU?$char_traits@D@std@@@std@@QAE_N_N@Z"
-Lfunc_begin53:
+Lfunc_begin56:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -18959,7 +22474,7 @@ Lfunc_begin53:
 	mov	ecx, dword ptr [eax + 4]
 	mov	eax, dword ptr [esi + ecx + 12]
 	test	eax, eax
-	je	LBB150_3
+	je	LBB160_3
 # %bb.1:
 	xor	edx, edx
 	cmp	dword ptr [esi + ecx + 56], 0
@@ -18971,25 +22486,25 @@ Lfunc_begin53:
 	mov	dword ptr [esi + ecx + 12], eax
 	mov	ecx, dword ptr [esi + ecx + 16]
 	and	eax, ecx
-	jne	LBB150_31
+	jne	LBB160_31
 # %bb.2:
 	xor	eax, eax
-	jmp	LBB150_30
-LBB150_3:
+	jmp	LBB160_30
+LBB160_3:
 	mov	ecx, dword ptr [esi + ecx + 60]
 	mov	bl, byte ptr [ebp + 8]
 	test	ecx, ecx
-	je	LBB150_5
+	je	LBB160_5
 # %bb.4:
 	call	"?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ"
-LBB150_5:
+LBB160_5:
 	test	bl, bl
-	jne	LBB150_29
+	jne	LBB160_29
 # %bb.6:
 	mov	eax, dword ptr [esi]
 	mov	eax, dword ptr [eax + 4]
 	test	byte ptr [esi + eax + 20], 1
-	je	LBB150_29
+	je	LBB160_29
 # %bb.7:
 	mov	eax, dword ptr [esi + eax + 48]
 	mov	dword ptr [ebp - 32], esi       # 4-byte Spill
@@ -19006,18 +22521,18 @@ LBB150_5:
 # %bb.8:
 	mov	ecx, dword ptr [ebp - 64]
 	test	ecx, ecx
-	je	LBB150_11
+	je	LBB160_11
 # %bb.9:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB150_11
+	je	LBB160_11
 # %bb.10:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB150_11:
+LBB160_11:
 	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	eax, dword ptr [ecx]
 	mov	eax, dword ptr [eax + 4]
@@ -19025,91 +22540,91 @@ LBB150_11:
 	mov	eax, dword ptr [ecx + 28]
 	mov	eax, dword ptr [eax]
 	test	eax, eax
-	je	LBB150_14
+	je	LBB160_14
 # %bb.12:
 	mov	edx, dword ptr [ecx + 44]
 	cmp	dword ptr [edx], 0
-	jle	LBB150_14
+	jle	LBB160_14
 # %bb.13:
 	movzx	eax, byte ptr [eax]
-	jmp	LBB150_16
-LBB150_14:
+	jmp	LBB160_16
+LBB160_14:
 	mov	eax, dword ptr [ecx]
 	mov	eax, dword ptr [eax + 24]
 	mov	dword ptr [ebp - 16], 1
 	call	eax
-	jmp	LBB150_16
+	jmp	LBB160_16
 	.p2align	4, 0x90
-LBB150_15:                              #   in Loop: Header=BB150_16 Depth=1
+LBB160_15:                              #   in Loop: Header=BB160_16 Depth=1
 	dec	esi
 	lea	ecx, [edi + 1]
 	mov	dword ptr [edx], esi
 	mov	dword ptr [eax], ecx
 	movzx	eax, byte ptr [edi + 1]
-LBB150_16:                              # =>This Inner Loop Header: Depth=1
+LBB160_16:                              # =>This Inner Loop Header: Depth=1
 	cmp	eax, -1
-	je	LBB150_28
-# %bb.17:                               #   in Loop: Header=BB150_16 Depth=1
+	je	LBB160_28
+# %bb.17:                               #   in Loop: Header=BB160_16 Depth=1
 	mov	ecx, dword ptr [ebp - 48]       # 4-byte Reload
 	movzx	eax, al
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ecx, dword ptr [ecx + 12]
 	test	byte ptr [ecx + 2*eax], 72
-	je	LBB150_29
-# %bb.18:                               #   in Loop: Header=BB150_16 Depth=1
+	je	LBB160_29
+# %bb.18:                               #   in Loop: Header=BB160_16 Depth=1
 	mov	eax, dword ptr [esi]
 	mov	eax, dword ptr [eax + 4]
 	mov	ecx, dword ptr [esi + eax + 56]
 	mov	eax, dword ptr [ecx + 28]
 	mov	edi, dword ptr [eax]
 	test	edi, edi
-	je	LBB150_22
-# %bb.19:                               #   in Loop: Header=BB150_16 Depth=1
+	je	LBB160_22
+# %bb.19:                               #   in Loop: Header=BB160_16 Depth=1
 	mov	edx, dword ptr [ecx + 44]
 	mov	esi, dword ptr [edx]
 	cmp	esi, 2
-	jge	LBB150_15
-# %bb.20:                               #   in Loop: Header=BB150_16 Depth=1
+	jge	LBB160_15
+# %bb.20:                               #   in Loop: Header=BB160_16 Depth=1
 	cmp	esi, 1
-	jne	LBB150_22
-# %bb.21:                               #   in Loop: Header=BB150_16 Depth=1
+	jne	LBB160_22
+# %bb.21:                               #   in Loop: Header=BB160_16 Depth=1
 	inc	edi
 	mov	dword ptr [edx], 0
 	mov	dword ptr [eax], edi
-	jmp	LBB150_24
+	jmp	LBB160_24
 	.p2align	4, 0x90
-LBB150_22:                              #   in Loop: Header=BB150_16 Depth=1
+LBB160_22:                              #   in Loop: Header=BB160_16 Depth=1
 	mov	eax, dword ptr [ecx]
 	mov	dword ptr [ebp - 44], ecx       # 4-byte Spill
 	mov	eax, dword ptr [eax + 28]
 	mov	dword ptr [ebp - 16], 1
 	call	eax
 	mov	ecx, dword ptr [ebp - 44]       # 4-byte Reload
-# %bb.23:                               #   in Loop: Header=BB150_16 Depth=1
+# %bb.23:                               #   in Loop: Header=BB160_16 Depth=1
 	mov	edx, eax
 	mov	eax, -1
 	cmp	edx, -1
-	je	LBB150_16
-LBB150_24:                              #   in Loop: Header=BB150_16 Depth=1
+	je	LBB160_16
+LBB160_24:                              #   in Loop: Header=BB160_16 Depth=1
 	mov	eax, dword ptr [ecx + 28]
 	mov	eax, dword ptr [eax]
 	test	eax, eax
-	je	LBB150_27
-# %bb.25:                               #   in Loop: Header=BB150_16 Depth=1
+	je	LBB160_27
+# %bb.25:                               #   in Loop: Header=BB160_16 Depth=1
 	mov	edx, dword ptr [ecx + 44]
 	cmp	dword ptr [edx], 0
-	jle	LBB150_27
-# %bb.26:                               #   in Loop: Header=BB150_16 Depth=1
+	jle	LBB160_27
+# %bb.26:                               #   in Loop: Header=BB160_16 Depth=1
 	movzx	eax, byte ptr [eax]
-	jmp	LBB150_16
+	jmp	LBB160_16
 	.p2align	4, 0x90
-LBB150_27:                              #   in Loop: Header=BB150_16 Depth=1
+LBB160_27:                              #   in Loop: Header=BB160_16 Depth=1
 	mov	eax, dword ptr [ecx]
 	mov	eax, dword ptr [eax + 24]
 	mov	dword ptr [ebp - 16], 1
 	call	eax
-	jmp	LBB150_16
-LBB150_28:
+	jmp	LBB160_16
+LBB160_28:
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
 	xor	ecx, ecx
 	mov	eax, dword ptr [esi]
@@ -19124,13 +22639,13 @@ LBB150_28:
 	mov	dword ptr [esi + edx + 12], eax
 	mov	ecx, dword ptr [esi + edx + 16]
 	and	eax, ecx
-	jne	LBB150_36
-LBB150_29:
+	jne	LBB160_36
+LBB160_29:
 	mov	eax, dword ptr [esi]
 	mov	eax, dword ptr [eax + 4]
 	cmp	dword ptr [esi + eax + 12], 0
 	sete	al
-LBB150_30:
+LBB160_30:
 	mov	ecx, dword ptr [ebp - 24]
                                         # kill: def $al killed $al killed $eax
 	mov	dword ptr fs:[0], ecx
@@ -19140,21 +22655,21 @@ LBB150_30:
 	pop	ebx
 	pop	ebp
 	ret	4
-LBB150_31:
+LBB160_31:
 	cmp	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], 0
 	#MEMBARRIER
-	jne	LBB150_33
+	jne	LBB160_33
 # %bb.32:
 	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"+4], 5
 	#MEMBARRIER
 	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], offset "??_7_Iostream_error_category2@std@@6B@"
-LBB150_33:
+LBB160_33:
 	test	cl, 2
 	mov	ecx, offset "??_C@_0BF@OOHOMBOF@ios_base?3?3eofbit?5set?$AA@"
 	mov	edx, offset "??_C@_0BG@FMKFHCIL@ios_base?3?3failbit?5set?$AA@"
 	mov	dword ptr [ebp - 40], 1
 	mov	dword ptr [ebp - 36], offset "?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"
-LBB150_34:
+LBB160_34:
 	cmove	edx, ecx
 	test	al, 4
 	mov	eax, offset "??_C@_0BF@PHHKMMFD@ios_base?3?3badbit?5set?$AA@"
@@ -19168,51 +22683,51 @@ LBB150_34:
 	push	offset "__TI5?AVfailure@ios_base@std@@"
 	push	esi
 	call	__CxxThrowException@8
-LBB150_36:
+LBB160_36:
 	cmp	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], 0
 	#MEMBARRIER
-	jne	LBB150_38
+	jne	LBB160_38
 # %bb.37:
 	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"+4], 5
 	#MEMBARRIER
 	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], offset "??_7_Iostream_error_category2@std@@6B@"
 	mov	dword ptr [ebp - 16], -1
-LBB150_38:
+LBB160_38:
 	test	cl, 2
 	mov	ecx, offset "??_C@_0BF@OOHOMBOF@ios_base?3?3eofbit?5set?$AA@"
 	mov	edx, offset "??_C@_0BG@FMKFHCIL@ios_base?3?3failbit?5set?$AA@"
 	mov	dword ptr [ebp - 40], 1
 	mov	dword ptr [ebp - 36], offset "?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"
 	mov	dword ptr [ebp - 16], -1
-	jmp	LBB150_34
-LBB150_46:                              # Block address taken
+	jmp	LBB160_34
+LBB160_46:                              # Block address taken
 	add	ebp, 12
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-	jmp	LBB150_29
+	jmp	LBB160_29
 	.def	 "?dtor$39@?0??_Ipfx@?$basic_istream@DU?$char_traits@D@std@@@std@@QAE_N_N@Z@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
 "?dtor$39@?0??_Ipfx@?$basic_istream@DU?$char_traits@D@std@@@std@@QAE_N_N@Z@4HA":
-LBB150_39:
+LBB160_39:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
 	mov	ecx, dword ptr [ebp - 64]
 	test	ecx, ecx
-	je	LBB150_42
+	je	LBB160_42
 # %bb.40:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB150_42
+	je	LBB160_42
 # %bb.41:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB150_42:
+LBB160_42:
 	add	esp, 8
 	pop	ebp
 	ret                                     # CLEANUPRET
@@ -19222,7 +22737,7 @@ LBB150_42:
 	.endef
 	.p2align	4, 0x90
 "?catch$43@?0??_Ipfx@?$basic_istream@DU?$char_traits@D@std@@@std@@QAE_N_N@Z@4HA":
-LBB150_43:
+LBB160_43:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
@@ -19235,18 +22750,18 @@ LBB150_43:
 	or	ecx, 4
 	mov	dword ptr [edx + eax + 12], ecx
 	test	dword ptr [edx + eax + 16], ecx
-	jne	LBB150_45
+	jne	LBB160_45
 # %bb.44:
-	mov	eax, offset LBB150_46
+	mov	eax, offset LBB160_46
 	add	esp, 8
 	pop	ebp
 	ret                                     # CATCHRET
-LBB150_45:
+LBB160_45:
 	mov	dword ptr [ebp - 16], 2
 	push	0
 	push	0
 	call	__CxxThrowException@8
-Lfunc_end53:
+Lfunc_end56:
 	.section	.xdata,"dr",associative,"?_Ipfx@?$basic_istream@DU?$char_traits@D@std@@@std@@QAE_N_N@Z"
 	.p2align	2
 "L__ehtable$?_Ipfx@?$basic_istream@DU?$char_traits@D@std@@@std@@QAE_N_N@Z":
@@ -19287,7 +22802,7 @@ Lfunc_end53:
 	.globl	"?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ" # -- Begin function ?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ
 	.p2align	4, 0x90
 "?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ": # @"?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ"
-Lfunc_begin54:
+Lfunc_begin57:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -19307,7 +22822,7 @@ Lfunc_begin54:
 	mov	eax, dword ptr [eax + 4]
 	mov	edi, dword ptr [esi + eax + 56]
 	test	edi, edi
-	je	LBB151_7
+	je	LBB161_7
 # %bb.1:
 	mov	dword ptr [ebp - 40], esi
 	mov	ecx, edi
@@ -19317,17 +22832,17 @@ Lfunc_begin54:
 	mov	dword ptr [ebp - 32], esi       # 4-byte Spill
 	mov	eax, dword ptr [eax + 4]
 	cmp	dword ptr [esi + eax + 12], 0
-	je	LBB151_8
+	je	LBB161_8
 # %bb.2:
 	mov	byte ptr [ebp - 36], 0
-	jmp	LBB151_3
-LBB151_8:
+	jmp	LBB161_3
+LBB161_8:
 	mov	ecx, dword ptr [esi + eax + 60]
 	test	ecx, ecx
-	je	LBB151_10
+	je	LBB161_10
 # %bb.9:
 	cmp	ecx, esi
-	je	LBB151_10
+	je	LBB161_10
 # %bb.14:
 	mov	dword ptr [ebp - 44], edi       # 4-byte Spill
 	mov	dword ptr [ebp - 16], 0
@@ -19339,11 +22854,11 @@ LBB151_8:
 	mov	eax, dword ptr [eax + 4]
 	cmp	dword ptr [esi + eax + 12], 0
 	sete	byte ptr [ebp - 36]
-	jne	LBB151_3
-	jmp	LBB151_16
-LBB151_10:
+	jne	LBB161_3
+	jmp	LBB161_16
+LBB161_10:
 	mov	byte ptr [ebp - 36], 1
-LBB151_16:
+LBB161_16:
 	mov	eax, dword ptr [edi]
 	mov	ecx, edi
 	mov	eax, dword ptr [eax + 52]
@@ -19352,7 +22867,7 @@ LBB151_16:
 # %bb.17:
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
 	cmp	eax, -1
-	jne	LBB151_3
+	jne	LBB161_3
 # %bb.18:
 	mov	eax, dword ptr [esi]
 	mov	ecx, dword ptr [eax + 4]
@@ -19362,30 +22877,30 @@ LBB151_16:
 	mov	dword ptr [esi + ecx + 12], eax
 	mov	ecx, dword ptr [esi + ecx + 16]
 	and	eax, ecx
-	jne	LBB151_19
-LBB151_3:
+	jne	LBB161_19
+LBB161_3:
 	call	"?uncaught_exception@std@@YA_NXZ"
 	test	al, al
-	jne	LBB151_5
+	jne	LBB161_5
 # %bb.4:
 	mov	ecx, dword ptr [ebp - 40]
 	mov	dword ptr [ebp - 16], 2
 	call	"?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ"
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-LBB151_5:
+LBB161_5:
 	mov	eax, dword ptr [ebp - 40]
 	mov	ecx, dword ptr [eax]
 	mov	ecx, dword ptr [ecx + 4]
 	mov	ecx, dword ptr [eax + ecx + 56]
 	test	ecx, ecx
-	je	LBB151_7
+	je	LBB161_7
 # %bb.6:
 	mov	eax, dword ptr [ecx]
 	mov	eax, dword ptr [eax + 8]
 	mov	dword ptr [ebp - 16], 1
 	call	eax
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
-LBB151_7:
+LBB161_7:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, esi
@@ -19395,15 +22910,15 @@ LBB151_7:
 	pop	ebx
 	pop	ebp
 	ret
-LBB151_19:
+LBB161_19:
 	cmp	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], 0
 	#MEMBARRIER
-	jne	LBB151_21
+	jne	LBB161_21
 # %bb.20:
 	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"+4], 5
 	#MEMBARRIER
 	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], offset "??_7_Iostream_error_category2@std@@6B@"
-LBB151_21:
+LBB161_21:
 	test	al, 2
 	mov	eax, offset "??_C@_0BF@OOHOMBOF@ios_base?3?3eofbit?5set?$AA@"
 	mov	edx, offset "??_C@_0BG@FMKFHCIL@ios_base?3?3failbit?5set?$AA@"
@@ -19430,7 +22945,7 @@ LBB151_21:
 	.endef
 	.p2align	4, 0x90
 "?dtor$11@?0??flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ@4HA":
-LBB151_11:
+LBB161_11:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
@@ -19439,11 +22954,11 @@ LBB151_11:
 	mov	ecx, dword ptr [ecx + 4]
 	mov	ecx, dword ptr [eax + ecx + 56]
 	test	ecx, ecx
-	je	LBB151_13
+	je	LBB161_13
 # %bb.12:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
-LBB151_13:
+LBB161_13:
 	add	esp, 12
 	pop	ebp
 	ret                                     # CLEANUPRET
@@ -19453,7 +22968,7 @@ LBB151_13:
 	.endef
 	.p2align	4, 0x90
 "?dtor$24@?0??flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ@4HA":
-LBB151_24:
+LBB161_24:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
@@ -19464,7 +22979,7 @@ LBB151_24:
 	.endef
 	.p2align	4, 0x90
 "?dtor$25@?0??flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ@4HA":
-LBB151_25:
+LBB161_25:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
@@ -19477,31 +22992,31 @@ LBB151_25:
 	.endef
 	.p2align	4, 0x90
 "?dtor$26@?0??flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ@4HA":
-LBB151_26:
+LBB161_26:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
 	call	"?uncaught_exception@std@@YA_NXZ"
 	test	al, al
-	jne	LBB151_28
+	jne	LBB161_28
 # %bb.27:
 	mov	ecx, dword ptr [ebp - 40]
 	call	"?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ"
-LBB151_28:
+LBB161_28:
 	mov	eax, dword ptr [ebp - 40]
 	mov	ecx, dword ptr [eax]
 	mov	ecx, dword ptr [ecx + 4]
 	mov	ecx, dword ptr [eax + ecx + 56]
 	test	ecx, ecx
-	je	LBB151_30
+	je	LBB161_30
 # %bb.29:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
-LBB151_30:
+LBB161_30:
 	add	esp, 12
 	pop	ebp
 	ret                                     # CLEANUPRET
-Lfunc_end54:
+Lfunc_end57:
 	.section	.xdata,"dr",associative,"?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ"
 	.p2align	2
 "L__ehtable$?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ":
@@ -19533,7 +23048,7 @@ Lfunc_end54:
 	.globl	"??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ" # -- Begin function ??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ
 	.p2align	4, 0x90
 "??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ": # @"??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ"
-Lfunc_begin55:
+Lfunc_begin58:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -19553,13 +23068,13 @@ Lfunc_begin55:
 	mov	ecx, dword ptr [ecx + 4]
 	mov	ecx, dword ptr [eax + ecx + 56]
 	test	ecx, ecx
-	je	LBB152_2
+	je	LBB162_2
 # %bb.1:
 	mov	eax, dword ptr [ecx]
 	mov	eax, dword ptr [eax + 8]
 	mov	dword ptr [ebp - 16], 0
 	call	eax
-LBB152_2:
+LBB162_2:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	add	esp, 16
@@ -19574,11 +23089,11 @@ LBB152_2:
 	.endef
 	.p2align	4, 0x90
 "?dtor$3@?0???1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ@4HA":
-LBB152_3:
+LBB162_3:
 	push	ebp
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end55:
+Lfunc_end58:
 	.section	.xdata,"dr",associative,"??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ"
 	.p2align	2
 "L__ehtable$??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ":
@@ -19604,7 +23119,7 @@ Lfunc_end55:
 	.globl	"?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ" # -- Begin function ?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ
 	.p2align	4, 0x90
 "?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ": # @"?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ"
-Lfunc_begin56:
+Lfunc_begin59:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -19622,10 +23137,10 @@ Lfunc_begin56:
 	mov	eax, dword ptr [ecx]
 	mov	eax, dword ptr [eax + 4]
 	cmp	dword ptr [ecx + eax + 12], 0
-	jne	LBB153_12
+	jne	LBB163_12
 # %bb.1:
 	test	byte ptr [ecx + eax + 20], 2
-	je	LBB153_12
+	je	LBB163_12
 # %bb.2:
 	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
 	mov	ecx, dword ptr [ecx + eax + 56]
@@ -19636,7 +23151,7 @@ Lfunc_begin56:
 # %bb.3:
 	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
 	cmp	eax, -1
-	jne	LBB153_12
+	jne	LBB163_12
 # %bb.4:
 	mov	eax, dword ptr [edx]
 	mov	ecx, dword ptr [eax + 4]
@@ -19646,8 +23161,8 @@ Lfunc_begin56:
 	mov	dword ptr [edx + ecx + 12], eax
 	mov	ecx, dword ptr [edx + ecx + 16]
 	and	eax, ecx
-	jne	LBB153_5
-LBB153_12:
+	jne	LBB163_5
+LBB163_12:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	add	esp, 40
@@ -19656,15 +23171,15 @@ LBB153_12:
 	pop	ebx
 	pop	ebp
 	ret
-LBB153_5:
+LBB163_5:
 	cmp	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], 0
 	#MEMBARRIER
-	jne	LBB153_7
+	jne	LBB163_7
 # %bb.6:
 	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"+4], 5
 	#MEMBARRIER
 	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], offset "??_7_Iostream_error_category2@std@@6B@"
-LBB153_7:
+LBB163_7:
 	test	al, 2
 	mov	eax, offset "??_C@_0BF@OOHOMBOF@ios_base?3?3eofbit?5set?$AA@"
 	mov	edx, offset "??_C@_0BG@FMKFHCIL@ios_base?3?3failbit?5set?$AA@"
@@ -19685,25 +23200,25 @@ LBB153_7:
 	call	__CxxThrowException@8
 	add	esp, 8
 # %bb.9:
-LBB153_11:                              # Block address taken
+LBB163_11:                              # Block address taken
 	add	ebp, 12
-	jmp	LBB153_12
+	jmp	LBB163_12
 	.def	 "?catch$10@?0??_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
 "?catch$10@?0??_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ@4HA":
-LBB153_10:
+LBB163_10:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
-	mov	eax, offset LBB153_11
+	mov	eax, offset LBB163_11
 	mov	dword ptr [ebp - 28], esp
 	add	esp, 12
 	pop	ebp
 	ret                                     # CATCHRET
-Lfunc_end56:
+Lfunc_end59:
 	.section	.xdata,"dr",associative,"?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ"
 	.p2align	2
 "L__ehtable$?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ":
@@ -19742,7 +23257,7 @@ Lfunc_end56:
 	.globl	"?_Tidy@?$deque@EV?$allocator@E@std@@@std@@AAEXXZ" # -- Begin function ?_Tidy@?$deque@EV?$allocator@E@std@@@std@@AAEXXZ
 	.p2align	4, 0x90
 "?_Tidy@?$deque@EV?$allocator@E@std@@@std@@AAEXXZ": # @"?_Tidy@?$deque@EV?$allocator@E@std@@@std@@AAEXXZ"
-Lfunc_begin57:
+Lfunc_begin60:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -19759,52 +23274,52 @@ Lfunc_begin57:
 	mov	dword ptr [ebp - 24], ecx
 	mov	dword ptr fs:[0], eax
 	cmp	dword ptr [esi + 16], 0
-	je	LBB154_2
+	je	LBB164_2
 # %bb.1:
 	mov	dword ptr [esi + 12], 0
 	mov	dword ptr [esi + 16], 0
-LBB154_2:
+LBB164_2:
 	mov	eax, dword ptr [esi + 4]
 	mov	edi, dword ptr [esi + 8]
 	.p2align	4, 0x90
-LBB154_3:                               # =>This Inner Loop Header: Depth=1
+LBB164_3:                               # =>This Inner Loop Header: Depth=1
 	test	edi, edi
-	je	LBB154_4
-# %bb.9:                                #   in Loop: Header=BB154_3 Depth=1
+	je	LBB164_4
+# %bb.9:                                #   in Loop: Header=BB164_3 Depth=1
 	mov	ecx, dword ptr [eax + 4*edi - 4]
 	dec	edi
 	test	ecx, ecx
-	je	LBB154_3
-# %bb.10:                               #   in Loop: Header=BB154_3 Depth=1
+	je	LBB164_3
+# %bb.10:                               #   in Loop: Header=BB164_3 Depth=1
 	push	16
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [esi + 4]
-	jmp	LBB154_3
-LBB154_4:
+	jmp	LBB164_3
+LBB164_4:
 	test	eax, eax
-	je	LBB154_14
+	je	LBB164_14
 # %bb.5:
 	mov	ecx, dword ptr [esi + 8]
 	shl	ecx, 2
 	cmp	ecx, 4096
-	jb	LBB154_13
+	jb	LBB164_13
 # %bb.6:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB154_7
+	jae	LBB164_7
 # %bb.12:
 	add	ecx, 35
 	mov	eax, edx
-LBB154_13:
+LBB164_13:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB154_14:
+LBB164_14:
 	mov	dword ptr [esi + 8], 0
 	mov	dword ptr [esi + 4], 0
 	mov	eax, dword ptr [ebp - 24]
@@ -19815,7 +23330,7 @@ LBB154_14:
 	pop	ebx
 	pop	ebp
 	ret
-LBB154_7:
+LBB164_7:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.8:
@@ -19825,12 +23340,12 @@ LBB154_7:
 	.endef
 	.p2align	4, 0x90
 "?dtor$11@?0??_Tidy@?$deque@EV?$allocator@E@std@@@std@@AAEXXZ@4HA":
-LBB154_11:
+LBB164_11:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end57:
+Lfunc_end60:
 	.section	.xdata,"dr",associative,"?_Tidy@?$deque@EV?$allocator@E@std@@@std@@AAEXXZ"
 	.p2align	2
 "L__ehtable$?_Tidy@?$deque@EV?$allocator@E@std@@@std@@AAEXXZ":
@@ -19856,7 +23371,7 @@ Lfunc_end57:
 	.globl	"??$?5DU?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAD@Z" # -- Begin function ??$?5DU?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAD@Z
 	.p2align	4, 0x90
 "??$?5DU?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAD@Z": # @"??$?5DU?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAD@Z"
-Lfunc_begin58:
+Lfunc_begin61:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -19876,11 +23391,11 @@ Lfunc_begin58:
 	mov	eax, dword ptr [eax + 4]
 	mov	ecx, dword ptr [esi + eax + 56]
 	test	ecx, ecx
-	je	LBB155_2
+	je	LBB165_2
 # %bb.1:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 4]
-LBB155_2:
+LBB165_2:
 	mov	dword ptr [ebp - 16], 0
 	mov	ecx, esi
 	push	0
@@ -19889,7 +23404,7 @@ LBB155_2:
 	mov	ebx, dword ptr [ebp + 8]
 	xor	esi, esi
 	test	al, al
-	je	LBB155_19
+	je	LBB165_19
 # %bb.4:
 	mov	eax, dword ptr [ebx]
 	mov	eax, dword ptr [eax + 4]
@@ -19897,20 +23412,20 @@ LBB155_2:
 	mov	eax, dword ptr [ecx + 28]
 	mov	edx, dword ptr [eax]
 	test	edx, edx
-	je	LBB155_16
+	je	LBB165_16
 # %bb.5:
 	mov	esi, dword ptr [ecx + 44]
 	mov	edi, dword ptr [esi]
 	test	edi, edi
-	jle	LBB155_16
+	jle	LBB165_16
 # %bb.6:
 	dec	edi
 	lea	ecx, [edx + 1]
 	mov	dword ptr [esi], edi
 	mov	dword ptr [eax], ecx
 	movzx	eax, byte ptr [edx]
-	jmp	LBB155_7
-LBB155_16:
+	jmp	LBB165_7
+LBB165_16:
 	mov	eax, dword ptr [ecx]
 	mov	eax, dword ptr [eax + 28]
 	mov	dword ptr [ebp - 16], 3
@@ -19918,15 +23433,15 @@ LBB155_16:
 # %bb.17:
 	mov	ebx, dword ptr [ebp + 8]
 	cmp	eax, -1
-	je	LBB155_18
-LBB155_7:
+	je	LBB165_18
+LBB165_7:
 	mov	ecx, dword ptr [ebp + 12]
 	xor	esi, esi
 	mov	byte ptr [ecx], al
-	jmp	LBB155_19
-LBB155_18:
+	jmp	LBB165_19
+LBB165_18:
 	mov	esi, 3
-LBB155_19:
+LBB165_19:
 	mov	eax, dword ptr [ebx]
 	xor	ecx, ecx
 	mov	edx, dword ptr [eax + 4]
@@ -19939,20 +23454,20 @@ LBB155_19:
 	or	eax, ecx
 	mov	dword ptr [ebx + edx + 12], eax
 	and	eax, dword ptr [ebx + edx + 16]
-	jne	LBB155_20
+	jne	LBB165_20
 # %bb.25:
 	mov	eax, dword ptr [ebx]
 	mov	eax, dword ptr [eax + 4]
 	mov	ecx, dword ptr [ebx + eax + 56]
 	test	ecx, ecx
-	je	LBB155_27
+	je	LBB165_27
 # %bb.26:
 	mov	eax, dword ptr [ecx]
 	mov	eax, dword ptr [eax + 8]
 	mov	dword ptr [ebp - 16], 1
 	call	eax
 	mov	ebx, dword ptr [ebp + 8]
-LBB155_27:
+LBB165_27:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, ebx
@@ -19962,16 +23477,16 @@ LBB155_27:
 	pop	ebx
 	pop	ebp
 	ret
-LBB155_20:
+LBB165_20:
 	cmp	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], 0
 	#MEMBARRIER
-	jne	LBB155_22
+	jne	LBB165_22
 # %bb.21:
 	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"+4], 5
 	#MEMBARRIER
 	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], offset "??_7_Iostream_error_category2@std@@6B@"
 	mov	dword ptr [ebp - 16], 2
-LBB155_22:
+LBB165_22:
 	test	al, 2
 	mov	ecx, offset "??_C@_0BF@OOHOMBOF@ios_base?3?3eofbit?5set?$AA@"
 	mov	edx, offset "??_C@_0BG@FMKFHCIL@ios_base?3?3failbit?5set?$AA@"
@@ -19993,18 +23508,18 @@ LBB155_22:
 	call	__CxxThrowException@8
 	add	esp, 8
 # %bb.24:
-LBB155_15:                              # Block address taken
+LBB165_15:                              # Block address taken
 	add	ebp, 12
 	xor	esi, esi
 	mov	ebx, dword ptr [ebp + 8]
-	jmp	LBB155_19
+	jmp	LBB165_19
 	.def	 "?dtor$8@?0???$?5DU?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAD@Z@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
 "?dtor$8@?0???$?5DU?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAD@Z@4HA":
-LBB155_8:
+LBB165_8:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
@@ -20013,11 +23528,11 @@ LBB155_8:
 	mov	eax, dword ptr [eax + 4]
 	mov	ecx, dword ptr [ecx + eax + 56]
 	test	ecx, ecx
-	je	LBB155_10
+	je	LBB165_10
 # %bb.9:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
-LBB155_10:
+LBB165_10:
 	add	esp, 12
 	pop	ebp
 	ret                                     # CLEANUPRET
@@ -20027,7 +23542,7 @@ LBB155_10:
 	.endef
 	.p2align	4, 0x90
 "?catch$11@?0???$?5DU?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAD@Z@4HA":
-LBB155_11:
+LBB165_11:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
@@ -20040,13 +23555,13 @@ LBB155_11:
 	or	ecx, 4
 	mov	dword ptr [edx + eax + 12], ecx
 	test	dword ptr [edx + eax + 16], ecx
-	jne	LBB155_12
+	jne	LBB165_12
 # %bb.14:
-	mov	eax, offset LBB155_15
+	mov	eax, offset LBB165_15
 	add	esp, 12
 	pop	ebp
 	ret                                     # CATCHRET
-LBB155_12:
+LBB165_12:
 	mov	dword ptr [ebp - 16], 4
 	push	0
 	push	0
@@ -20059,7 +23574,7 @@ LBB155_12:
 	.endef
 	.p2align	4, 0x90
 "?dtor$28@?0???$?5DU?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAD@Z@4HA":
-LBB155_28:
+LBB165_28:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
@@ -20068,11 +23583,11 @@ LBB155_28:
 	mov	eax, dword ptr [eax + 4]
 	mov	ecx, dword ptr [ecx + eax + 56]
 	test	ecx, ecx
-	je	LBB155_30
+	je	LBB165_30
 # %bb.29:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
-LBB155_30:
+LBB165_30:
 	add	esp, 12
 	pop	ebp
 	ret                                     # CLEANUPRET
@@ -20082,12 +23597,12 @@ LBB155_30:
 	.endef
 	.p2align	4, 0x90
 "?dtor$31@?0???$?5DU?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAD@Z@4HA":
-LBB155_31:
+LBB165_31:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end58:
+Lfunc_end61:
 	.section	.xdata,"dr",associative,"??$?5DU?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAD@Z"
 	.p2align	2
 "L__ehtable$??$?5DU?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAD@Z":
@@ -20145,59 +23660,59 @@ Lfunc_end58:
 	mov	dword ptr [esp + 12], 0         # 4-byte Folded Spill
 	mov	dword ptr [esp + 8], 0          # 4-byte Folded Spill
 	test	ecx, ecx
-	je	LBB156_2
+	je	LBB166_2
 # %bb.1:
 	mov	eax, dword ptr [ecx]
 	mov	dword ptr [esp + 8], eax        # 4-byte Spill
-LBB156_2:
+LBB166_2:
 	mov	ecx, dword ptr [edx + 16]
 	mov	ebp, dword ptr [edx + 24]
 	test	ecx, ecx
-	je	LBB156_4
+	je	LBB166_4
 # %bb.3:
 	mov	eax, dword ptr [ecx]
 	mov	dword ptr [esp + 12], eax       # 4-byte Spill
-LBB156_4:
+LBB166_4:
 	mov	ecx, dword ptr [edx + 28]
 	mov	edi, dword ptr [edx + 36]
 	test	ecx, ecx
-	je	LBB156_7
+	je	LBB166_7
 # %bb.5:
 	mov	eax, dword ptr [ecx]
 	mov	dword ptr [esp + 4], eax        # 4-byte Spill
 	cmp	ebx, ebp
-	jne	LBB156_8
-LBB156_6:
+	jne	LBB166_8
+LBB166_6:
 	mov	dword ptr [esi], 0
 	mov	dword ptr [esi + 4], 0
 	mov	eax, dword ptr [edx + 28]
 	test	eax, eax
-	jne	LBB156_23
-	jmp	LBB156_29
-LBB156_7:
+	jne	LBB166_23
+	jmp	LBB166_29
+LBB166_7:
 	mov	dword ptr [esp + 4], 0          # 4-byte Folded Spill
 	cmp	ebx, ebp
-	je	LBB156_6
-LBB156_8:
+	je	LBB166_6
+LBB166_8:
 	mov	eax, edi
 	sub	eax, ebp
-	jne	LBB156_12
+	jne	LBB166_12
 # %bb.9:
 	mov	dword ptr [esi], 0
 	mov	dword ptr [esi + 4], 0
 	mov	eax, dword ptr [edx + 4]
 	test	eax, eax
-	je	LBB156_28
+	je	LBB166_28
 # %bb.10:
 	mov	eax, dword ptr [eax]
 	test	eax, eax
-	je	LBB156_27
+	je	LBB166_27
 # %bb.11:
 	mov	eax, dword ptr [eax]
 	mov	edi, ebx
 	mov	dword ptr [esi], eax
-	jmp	LBB156_29
-LBB156_12:
+	jmp	LBB166_29
+LBB166_12:
 	mov	dword ptr [esp + 16], edi       # 4-byte Spill
 	lea	edi, [ebp - 1]
 	mov	ecx, ebx
@@ -20206,10 +23721,10 @@ LBB156_12:
 	mov	dword ptr [esp + 20], ebp       # 4-byte Spill
 	mov	dword ptr [esp], ebx            # 4-byte Spill
 	.p2align	4, 0x90
-LBB156_13:                              # =>This Inner Loop Header: Depth=1
+LBB166_13:                              # =>This Inner Loop Header: Depth=1
 	cmp	edi, ecx
-	je	LBB156_15
-# %bb.14:                               #   in Loop: Header=BB156_13 Depth=1
+	je	LBB166_15
+# %bb.14:                               #   in Loop: Header=BB166_13 Depth=1
 	mov	eax, dword ptr [esp + 12]       # 4-byte Reload
 	mov	edx, edi
 	shr	edx, 4
@@ -20237,16 +23752,16 @@ LBB156_13:                              # =>This Inner Loop Header: Depth=1
 	mov	bh, byte ptr [eax + ebp]
 	mov	byte ptr [eax + ebp], bl
 	mov	byte ptr [esi + edx], bh
-	jne	LBB156_13
-LBB156_15:
+	jne	LBB166_13
+LBB166_15:
 	mov	eax, dword ptr [esp + 16]       # 4-byte Reload
 	mov	ebp, dword ptr [esp + 20]       # 4-byte Reload
 	lea	edx, [eax - 1]
 	.p2align	4, 0x90
-LBB156_16:                              # =>This Inner Loop Header: Depth=1
+LBB166_16:                              # =>This Inner Loop Header: Depth=1
 	cmp	edx, ebp
-	je	LBB156_18
-# %bb.17:                               #   in Loop: Header=BB156_16 Depth=1
+	je	LBB166_18
+# %bb.17:                               #   in Loop: Header=BB166_16 Depth=1
 	mov	esi, dword ptr [esp + 4]        # 4-byte Reload
 	mov	ebx, dword ptr [esp + 12]       # 4-byte Reload
 	mov	eax, edx
@@ -20274,19 +23789,19 @@ LBB156_16:                              # =>This Inner Loop Header: Depth=1
 	mov	bl, byte ptr [edi + esi]
 	mov	byte ptr [edi + esi], bh
 	mov	byte ptr [ecx + eax], bl
-	jne	LBB156_16
-LBB156_18:
+	jne	LBB166_16
+LBB166_18:
 	mov	ebp, dword ptr [esp + 16]       # 4-byte Reload
 	cmp	dword ptr [esp], ebp            # 4-byte Folded Reload
-	je	LBB156_22
+	je	LBB166_22
 # %bb.19:
 	mov	eax, dword ptr [esp]            # 4-byte Reload
 	dec	ebp
 	.p2align	4, 0x90
-LBB156_20:                              # =>This Inner Loop Header: Depth=1
+LBB166_20:                              # =>This Inner Loop Header: Depth=1
 	cmp	ebp, eax
-	je	LBB156_22
-# %bb.21:                               #   in Loop: Header=BB156_20 Depth=1
+	je	LBB166_22
+# %bb.21:                               #   in Loop: Header=BB166_20 Depth=1
 	mov	esi, dword ptr [esp + 4]        # 4-byte Reload
 	mov	ebx, dword ptr [esp + 8]        # 4-byte Reload
 	mov	ecx, ebp
@@ -20314,8 +23829,8 @@ LBB156_20:                              # =>This Inner Loop Header: Depth=1
 	mov	bl, byte ptr [edi + esi]
 	mov	byte ptr [edi + esi], bh
 	mov	byte ptr [edx + ecx], bl
-	jne	LBB156_20
-LBB156_22:
+	jne	LBB166_20
+LBB166_22:
 	mov	edi, dword ptr [esp + 24]       # 4-byte Reload
 	mov	esi, dword ptr [esp + 28]       # 4-byte Reload
 	lea	edx, [esp + 52]
@@ -20325,23 +23840,23 @@ LBB156_22:
 	mov	dword ptr [esi + 4], 0
 	mov	eax, dword ptr [edx + 4]
 	test	eax, eax
-	je	LBB156_29
-LBB156_23:
+	je	LBB166_29
+LBB166_23:
 	mov	eax, dword ptr [eax]
 	test	eax, eax
-	je	LBB156_25
+	je	LBB166_25
 # %bb.24:
 	mov	eax, dword ptr [eax]
 	mov	dword ptr [esi], eax
-	jmp	LBB156_29
-LBB156_25:
+	jmp	LBB166_29
+LBB166_25:
 	mov	dword ptr [esi], 0
-	jmp	LBB156_29
-LBB156_27:
+	jmp	LBB166_29
+LBB166_27:
 	mov	dword ptr [esi], 0
-LBB156_28:
+LBB166_28:
 	mov	edi, ebx
-LBB156_29:
+LBB166_29:
 	mov	dword ptr [esi + 8], edi
 	mov	eax, dword ptr [edx]
 	add	esp, 32
@@ -20359,7 +23874,7 @@ LBB156_29:
 	.globl	"?_Growmap@?$deque@EV?$allocator@E@std@@@std@@AAEXI@Z" # -- Begin function ?_Growmap@?$deque@EV?$allocator@E@std@@@std@@AAEXI@Z
 	.p2align	4, 0x90
 "?_Growmap@?$deque@EV?$allocator@E@std@@@std@@AAEXI@Z": # @"?_Growmap@?$deque@EV?$allocator@E@std@@@std@@AAEXI@Z"
-Lfunc_begin59:
+Lfunc_begin62:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -20380,35 +23895,35 @@ Lfunc_begin59:
 	test	edx, edx
 	cmovne	eax, edx
 	cmp	eax, 8
-	jb	LBB157_3
+	jb	LBB167_3
 	.p2align	4, 0x90
-LBB157_2:
+LBB167_2:
 	mov	ebx, eax
 	sub	ebx, edx
 	cmp	ebx, edi
-	jae	LBB157_5
-LBB157_3:                               # =>This Inner Loop Header: Depth=1
+	jae	LBB167_5
+LBB167_3:                               # =>This Inner Loop Header: Depth=1
 	mov	esi, 134217727
 	sub	esi, eax
 	cmp	esi, eax
-	jb	LBB157_22
-# %bb.4:                                #   in Loop: Header=BB157_3 Depth=1
+	jb	LBB167_22
+# %bb.4:                                #   in Loop: Header=BB167_3 Depth=1
 	add	eax, eax
 	cmp	eax, 8
-	jae	LBB157_2
-	jmp	LBB157_3
-LBB157_5:
+	jae	LBB167_2
+	jmp	LBB167_3
+LBB167_5:
 	cmp	eax, 1073741824
-	jae	LBB157_23
+	jae	LBB167_23
 # %bb.6:
 	mov	edi, dword ptr [ecx + 12]
 	lea	edx, [4*eax]
 	cmp	eax, 1024
-	jb	LBB157_9
+	jb	LBB167_9
 # %bb.7:
 	cmp	eax, 1073741816
 	mov	dword ptr [ebp - 16], -1
-	jae	LBB157_24
+	jae	LBB167_24
 # %bb.8:
 	mov	esi, ecx
 	add	edx, 35
@@ -20418,15 +23933,15 @@ LBB157_5:
 	lea	ecx, [eax + 35]
 	and	ecx, -32
 	mov	dword ptr [ecx - 4], eax
-	jmp	LBB157_10
-LBB157_9:
+	jmp	LBB167_10
+LBB167_9:
 	mov	esi, ecx
 	mov	dword ptr [ebp - 16], -1
 	push	edx
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
 	mov	ecx, eax
-LBB157_10:
+LBB167_10:
 	shr	edi, 4
 	mov	dword ptr [ebp - 44], ecx       # 4-byte Spill
 	mov	eax, dword ptr [esi + 4]
@@ -20448,7 +23963,7 @@ LBB157_10:
 	mov	dword ptr [ebp - 32], edi       # 4-byte Spill
 	sub	ecx, edi
 	mov	eax, dword ptr [eax + 4]
-	jae	LBB157_11
+	jae	LBB167_11
 # %bb.12:
 	lea	ecx, [4*ebx]
 	mov	dword ptr [ebp - 36], ecx       # 4-byte Spill
@@ -20473,8 +23988,8 @@ LBB157_10:
 	push	dword ptr [ebp - 36]            # 4-byte Folded Reload
 	push	0
 	push	esi
-	jmp	LBB157_13
-LBB157_11:
+	jmp	LBB167_13
+LBB167_11:
 	mov	edi, ecx
 	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
 	lea	ecx, [4*ecx]
@@ -20496,33 +24011,33 @@ LBB157_11:
 	push	0
 	mov	edi, dword ptr [ebp - 44]       # 4-byte Reload
 	push	edi
-LBB157_13:
+LBB167_13:
 	call	_memset
 	add	esp, 12
 	mov	esi, dword ptr [ebp - 40]       # 4-byte Reload
 	mov	ecx, dword ptr [esi + 4]
 	test	ecx, ecx
-	je	LBB157_21
+	je	LBB167_21
 # %bb.14:
 	mov	eax, dword ptr [esi + 8]
 	shl	eax, 2
 	cmp	eax, 4096
-	jb	LBB157_20
+	jb	LBB167_20
 # %bb.15:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB157_16
+	jae	LBB167_16
 # %bb.19:
 	add	eax, 35
 	mov	ecx, edx
-LBB157_20:
+LBB167_20:
 	push	eax
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB157_21:
+LBB167_21:
 	mov	dword ptr [esi + 4], edi
 	add	dword ptr [esi + 8], ebx
 	mov	eax, dword ptr [ebp - 24]
@@ -20533,14 +24048,14 @@ LBB157_21:
 	pop	ebx
 	pop	ebp
 	ret	4
-LBB157_22:
+LBB167_22:
 	mov	dword ptr [ebp - 16], -1
 	call	"?_Xlen@?$deque@EV?$allocator@E@std@@@std@@ABEXXZ"
-LBB157_23:
+LBB167_23:
 	mov	dword ptr [ebp - 16], -1
-LBB157_24:
+LBB167_24:
 	call	"?_Throw_bad_array_new_length@std@@YAXXZ"
-LBB157_16:
+LBB167_16:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.17:
@@ -20550,12 +24065,12 @@ LBB157_16:
 	.endef
 	.p2align	4, 0x90
 "?dtor$18@?0??_Growmap@?$deque@EV?$allocator@E@std@@@std@@AAEXI@Z@4HA":
-LBB157_18:
+LBB167_18:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end59:
+Lfunc_end62:
 	.section	.xdata,"dr",associative,"?_Growmap@?$deque@EV?$allocator@E@std@@@std@@AAEXI@Z"
 	.p2align	2
 "L__ehtable$?_Growmap@?$deque@EV?$allocator@E@std@@@std@@AAEXI@Z":
@@ -20605,7 +24120,7 @@ Lfunc_end59:
 	.globl	"??$use_facet@V?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@@std@@YAABV?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@0@ABVlocale@0@@Z" # -- Begin function ??$use_facet@V?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@@std@@YAABV?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@0@ABVlocale@0@@Z
 	.p2align	4, 0x90
 "??$use_facet@V?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@@std@@YAABV?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@0@ABVlocale@0@@Z": # @"??$use_facet@V?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@@std@@YAABV?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@0@ABVlocale@0@@Z"
-Lfunc_begin60:
+Lfunc_begin63:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -20627,38 +24142,38 @@ Lfunc_begin60:
 	mov	edx, dword ptr ["?id@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@2V0locale@2@A"]
 	mov	edi, dword ptr ["?_Psave@?$_Facetptr@V?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@@std@@2PBVfacet@locale@2@B"]
 	test	edx, edx
-	je	LBB160_1
+	je	LBB170_1
 # %bb.4:
 	mov	eax, dword ptr [esi + 4]
 	cmp	dword ptr [eax + 12], edx
-	ja	LBB160_5
-	jmp	LBB160_6
-LBB160_1:
+	ja	LBB170_5
+	jmp	LBB170_6
+LBB170_1:
 	lea	ecx, [ebp - 92]
 	push	0
 	call	"??0_Lockit@std@@QAE@H@Z"
 	cmp	dword ptr ["?id@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@2V0locale@2@A"], 0
-	jne	LBB160_3
+	jne	LBB170_3
 # %bb.2:
 	mov	eax, dword ptr ["?_Id_cnt@id@locale@std@@0HA"]
 	inc	eax
 	mov	dword ptr ["?_Id_cnt@id@locale@std@@0HA"], eax
 	mov	dword ptr ["?id@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@2V0locale@2@A"], eax
-LBB160_3:
+LBB170_3:
 	lea	ecx, [ebp - 92]
 	call	"??1_Lockit@std@@QAE@XZ"
 	mov	edx, dword ptr ["?id@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@2V0locale@2@A"]
 	mov	eax, dword ptr [esi + 4]
 	cmp	dword ptr [eax + 12], edx
-	jbe	LBB160_6
-LBB160_5:
+	jbe	LBB170_6
+LBB170_5:
 	mov	ecx, dword ptr [eax + 8]
 	mov	esi, dword ptr [ecx + 4*edx]
 	test	esi, esi
-	jne	LBB160_18
-LBB160_6:
+	jne	LBB170_18
+LBB170_6:
 	cmp	byte ptr [eax + 20], 0
-	je	LBB160_10
+	je	LBB170_10
 # %bb.7:
 	mov	dword ptr [ebp - 40], edx       # 4-byte Spill
 	mov	dword ptr [ebp - 32], edi       # 4-byte Spill
@@ -20668,16 +24183,16 @@ LBB160_6:
 	mov	ecx, dword ptr [ebp - 40]       # 4-byte Reload
 	mov	edi, dword ptr [ebp - 32]       # 4-byte Reload
 	cmp	dword ptr [eax + 12], ecx
-	jbe	LBB160_10
+	jbe	LBB170_10
 # %bb.9:
 	mov	eax, dword ptr [eax + 8]
 	mov	esi, dword ptr [eax + 4*ecx]
 	test	esi, esi
-	jne	LBB160_18
-LBB160_10:
+	jne	LBB170_18
+LBB170_10:
 	test	edi, edi
 	mov	esi, edi
-	jne	LBB160_18
+	jne	LBB170_18
 # %bb.11:
 	mov	dword ptr [ebp - 16], 0
 	push	8
@@ -20689,7 +24204,7 @@ LBB160_10:
 	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
 	mov	eax, dword ptr [eax + 4]
 	test	eax, eax
-	je	LBB160_13
+	je	LBB170_13
 # %bb.14:
 	mov	ecx, dword ptr [eax + 24]
 	add	eax, 28
@@ -20699,14 +24214,14 @@ LBB160_10:
 	lea	ecx, [ebp - 92]
 	push	eax
 	call	"??0_Locinfo@std@@QAE@PBD@Z"
-	jmp	LBB160_16
-LBB160_13:
+	jmp	LBB170_16
+LBB170_13:
 	mov	eax, offset "??_C@_00CNPNBAHC@?$AA@"
 	mov	dword ptr [ebp - 16], 1
 	lea	ecx, [ebp - 92]
 	push	eax
 	call	"??0_Locinfo@std@@QAE@PBD@Z"
-LBB160_16:
+LBB170_16:
 	mov	esi, dword ptr [ebp - 32]       # 4-byte Reload
 	lea	ecx, [ebp - 92]
 	mov	dword ptr [esi + 4], 0
@@ -20722,7 +24237,7 @@ LBB160_16:
 	mov	ecx, esi
 	call	dword ptr [eax + 4]
 	mov	dword ptr ["?_Psave@?$_Facetptr@V?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@@std@@2PBVfacet@locale@2@B"], esi
-LBB160_18:
+LBB170_18:
 	lea	ecx, [ebp - 36]
 	call	"??1_Lockit@std@@QAE@XZ"
 	mov	eax, dword ptr [ebp - 24]
@@ -20740,7 +24255,7 @@ LBB160_18:
 	.endef
 	.p2align	4, 0x90
 "?dtor$19@?0???$use_facet@V?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@@std@@YAABV?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@0@ABVlocale@0@@Z@4HA":
-LBB160_19:
+LBB170_19:
 	push	ebp
 	push	eax
 	add	ebp, 12
@@ -20755,7 +24270,7 @@ LBB160_19:
 	.endef
 	.p2align	4, 0x90
 "?dtor$20@?0???$use_facet@V?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@@std@@YAABV?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@0@ABVlocale@0@@Z@4HA":
-LBB160_20:
+LBB170_20:
 	push	ebp
 	push	eax
 	add	ebp, 12
@@ -20770,7 +24285,7 @@ LBB160_20:
 	.endef
 	.p2align	4, 0x90
 "?dtor$21@?0???$use_facet@V?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@@std@@YAABV?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@0@ABVlocale@0@@Z@4HA":
-LBB160_21:
+LBB170_21:
 	push	ebp
 	push	eax
 	add	ebp, 12
@@ -20781,7 +24296,7 @@ LBB160_21:
 	add	esp, 4
 	pop	ebp
 	ret                                     # CLEANUPRET
-Lfunc_end60:
+Lfunc_end63:
 	.section	.xdata,"dr",associative,"??$use_facet@V?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@@std@@YAABV?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@0@ABVlocale@0@@Z"
 	.p2align	2
 "L__ehtable$??$use_facet@V?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@@std@@YAABV?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@0@ABVlocale@0@@Z":
@@ -20815,12 +24330,12 @@ Lfunc_end60:
 	push	esi
 	cmp	dword ptr [esp + 8], 0
 	mov	esi, ecx
-	je	LBB161_2
+	je	LBB171_2
 # %bb.1:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB161_2:
+LBB171_2:
 	mov	eax, esi
 	pop	esi
 	ret	4
@@ -20892,7 +24407,7 @@ __real@4202a05f20000000:
 	.globl	"?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DO@Z"
 	.p2align	4, 0x90
 "?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DO@Z": # @"?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DO@Z"
-Lfunc_begin61:
+Lfunc_begin64:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -20928,11 +24443,11 @@ Lfunc_begin61:
 	sbb	esi, dword ptr [ebx + 28]
 	cmovl	edi, edx
 	ucomisd	xmm0, qword ptr [__real@4202a05f20000000]
-	jbe	LBB163_1
+	jbe	LBB173_1
 # %bb.2:
 	cmp	ecx, 8192
 	mov	esi, edi
-	jne	LBB163_4
+	jne	LBB173_4
 # %bb.3:
 	lea	eax, [ebp - 56]
 	movsd	qword ptr [esp], xmm1
@@ -20952,18 +24467,18 @@ Lfunc_begin61:
 	mov	esi, edx
 	shr	esi, 7
 	add	esi, edi
-LBB163_4:
+LBB173_4:
 	add	esi, 50
 	mov	ecx, esi
 	sub	ecx, eax
-	jbe	LBB163_5
-LBB163_9:
+	jbe	LBB173_5
+LBB173_9:
 	mov	edx, dword ptr [ebp - 32]
 	mov	dword ptr [ebp - 68], edi       # 4-byte Spill
 	mov	edi, edx
 	sub	edi, eax
 	cmp	edi, ecx
-	jae	LBB163_10
+	jae	LBB173_10
 # %bb.14:
 	mov	dword ptr [ebp - 16], 1
 	mov	al, byte ptr [ebp - 56]
@@ -20975,75 +24490,75 @@ LBB163_9:
 	call	"??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@ID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@ID@Z@ID@Z"
 	sub	esp, 16
 	mov	ebx, dword ptr [ebp + 20]
-	jmp	LBB163_15
-LBB163_1:
+	jmp	LBB173_15
+LBB173_1:
 	mov	esi, edi
 	add	esi, 50
 	mov	ecx, esi
 	sub	ecx, eax
-	ja	LBB163_9
-LBB163_5:
+	ja	LBB173_9
+LBB173_5:
 	cmp	dword ptr [ebp - 32], 15
-	jbe	LBB163_6
+	jbe	LBB173_6
 # %bb.7:
 	mov	eax, dword ptr [ebp - 52]
-	jmp	LBB163_8
-LBB163_10:
+	jmp	LBB173_8
+LBB173_10:
 	cmp	edx, 15
 	mov	dword ptr [ebp - 36], esi
-	jbe	LBB163_11
+	jbe	LBB173_11
 # %bb.12:
 	mov	edi, dword ptr [ebp - 52]
-	jmp	LBB163_13
-LBB163_6:
+	jmp	LBB173_13
+LBB173_6:
 	lea	eax, [ebp - 52]
-LBB163_8:
+LBB173_8:
 	mov	dword ptr [ebp - 36], esi
 	mov	byte ptr [eax + esi], 0
 	mov	ecx, dword ptr [ebx + 20]
 	mov	byte ptr [ebp - 64], 37
 	test	cl, 32
-	jne	LBB163_18
-LBB163_17:
+	jne	LBB173_18
+LBB173_17:
 	lea	eax, [ebp - 63]
 	test	cl, 16
-	jne	LBB163_20
-	jmp	LBB163_21
-LBB163_11:
+	jne	LBB173_20
+	jmp	LBB173_21
+LBB173_11:
 	lea	edi, [ebp - 52]
-LBB163_13:
+LBB173_13:
 	add	eax, edi
 	mov	dword ptr [esp + 8], ecx
 	mov	dword ptr [esp + 4], 0
 	mov	dword ptr [esp], eax
 	call	_memset
 	mov	byte ptr [edi + esi], 0
-LBB163_15:
+LBB173_15:
 	mov	edi, dword ptr [ebp - 68]       # 4-byte Reload
 	movsd	xmm1, qword ptr [ebp + 28]      # xmm1 = mem[0],zero
 	mov	ecx, dword ptr [ebx + 20]
 	mov	byte ptr [ebp - 64], 37
 	test	cl, 32
-	je	LBB163_17
-LBB163_18:
+	je	LBB173_17
+LBB173_18:
 	lea	eax, [ebp - 62]
 	mov	byte ptr [ebp - 63], 43
 	test	cl, 16
-	je	LBB163_21
-LBB163_20:
+	je	LBB173_21
+LBB173_20:
 	mov	byte ptr [eax], 35
 	inc	eax
-LBB163_21:
+LBB173_21:
 	mov	edx, ecx
 	mov	word ptr [eax], 10798
 	mov	byte ptr [eax + 2], 76
 	and	edx, 12288
 	test	cl, 4
-	jne	LBB163_22
+	jne	LBB173_22
 # %bb.24:
 	mov	cl, 102
 	cmp	edx, 8192
-	je	LBB163_27
+	je	LBB173_27
 # %bb.25:
 	cmp	edx, 4096
 	setne	cl
@@ -21052,11 +24567,11 @@ LBB163_21:
 	cmp	edx, 12288
 	movzx	edx, cl
 	mov	ecx, 97
-	jmp	LBB163_26
-LBB163_22:
+	jmp	LBB173_26
+LBB173_22:
 	mov	cl, 102
 	cmp	edx, 8192
-	je	LBB163_27
+	je	LBB173_27
 # %bb.23:
 	cmp	edx, 4096
 	setne	cl
@@ -21065,21 +24580,21 @@ LBB163_22:
 	cmp	edx, 12288
 	movzx	edx, cl
 	mov	ecx, 65
-LBB163_26:
+LBB173_26:
 	cmovne	ecx, edx
 	mov	dword ptr [ebp - 16], 1
-LBB163_27:
+LBB173_27:
 	mov	byte ptr [eax + 3], cl
 	mov	byte ptr [eax + 4], 0
 	mov	eax, dword ptr [ebp - 36]
 	cmp	dword ptr [ebp - 32], 15
-	jbe	LBB163_28
+	jbe	LBB173_28
 # %bb.29:
 	mov	ecx, dword ptr [ebp - 52]
-	jmp	LBB163_30
-LBB163_28:
+	jmp	LBB173_30
+LBB173_28:
 	lea	ecx, [ebp - 52]
-LBB163_30:
+LBB173_30:
 	lea	edx, [ebp - 64]
 	mov	dword ptr [ebp - 16], 1
 	movsd	qword ptr [esp + 16], xmm1
@@ -21094,13 +24609,13 @@ LBB163_30:
 	mov	cl, byte ptr [ebp + 24]
 	cmp	dword ptr [ebp - 32], 15
 	lea	esi, [ebp + 12]
-	jbe	LBB163_32
+	jbe	LBB173_32
 # %bb.33:
 	mov	edx, dword ptr [ebp - 52]
-	jmp	LBB163_34
-LBB163_32:
+	jmp	LBB173_34
+LBB173_32:
 	lea	edx, [ebp - 52]
-LBB163_34:
+LBB173_34:
 	movsd	xmm0, qword ptr [esi]           # xmm0 = mem[0],zero
 	movsd	qword ptr [ebp - 80], xmm0
 	movsd	xmm0, qword ptr [ebp - 80]      # xmm0 = mem[0],zero
@@ -21118,27 +24633,27 @@ LBB163_34:
 	mov	eax, dword ptr [ebp - 32]
 	mov	edi, dword ptr [ebp + 8]
 	cmp	eax, 16
-	jb	LBB163_43
+	jb	LBB173_43
 # %bb.36:
 	mov	ecx, dword ptr [ebp - 52]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB163_42
+	jb	LBB173_42
 # %bb.37:
 	mov	esi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, esi
 	cmp	ecx, 32
-	jae	LBB163_38
+	jae	LBB173_38
 # %bb.41:
 	add	eax, 36
 	mov	ecx, esi
 	mov	edx, eax
-LBB163_42:
+LBB173_42:
 	mov	dword ptr [esp + 4], edx
 	mov	dword ptr [esp], ecx
 	call	"??3@YAXPAXI@Z"
-LBB163_43:
+LBB173_43:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, edi
@@ -21148,7 +24663,7 @@ LBB163_43:
 	pop	ebx
 	pop	ebp
 	ret	28
-LBB163_38:
+LBB173_38:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.39:
@@ -21158,7 +24673,7 @@ LBB163_38:
 	.endef
 	.p2align	4, 0x90
 "?dtor$40@?0??do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DO@Z@4HA":
-LBB163_40:
+LBB173_40:
 	push	ebp
 	sub	esp, 32
 	add	ebp, 12
@@ -21169,39 +24684,39 @@ LBB163_40:
 	.endef
 	.p2align	4, 0x90
 "?dtor$44@?0??do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DO@Z@4HA":
-LBB163_44:
+LBB173_44:
 	push	ebp
 	sub	esp, 32
 	add	ebp, 12
 	mov	eax, dword ptr [ebp - 32]
 	cmp	eax, 16
-	jb	LBB163_49
+	jb	LBB173_49
 # %bb.45:
 	mov	ecx, dword ptr [ebp - 52]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB163_48
+	jb	LBB173_48
 # %bb.46:
 	mov	esi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, esi
 	cmp	ecx, 32
-	jae	LBB163_50
+	jae	LBB173_50
 # %bb.47:
 	add	eax, 36
 	mov	ecx, esi
 	mov	edx, eax
-LBB163_48:
+LBB173_48:
 	mov	dword ptr [esp + 4], edx
 	mov	dword ptr [esp], ecx
 	call	"??3@YAXPAXI@Z"
-LBB163_49:
+LBB173_49:
 	add	esp, 32
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB163_50:
+LBB173_50:
 	call	__invalid_parameter_noinfo_noreturn
-Lfunc_end61:
+Lfunc_end64:
 	.section	.xdata,"dr",associative,"?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DO@Z"
 	.p2align	2
 "L__ehtable$?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DO@Z":
@@ -21229,7 +24744,7 @@ Lfunc_end61:
 	.globl	"?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DN@Z" # -- Begin function ?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DN@Z
 	.p2align	4, 0x90
 "?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DN@Z": # @"?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DN@Z"
-Lfunc_begin62:
+Lfunc_begin65:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -21265,11 +24780,11 @@ Lfunc_begin62:
 	sbb	esi, dword ptr [ebx + 28]
 	cmovl	edi, edx
 	ucomisd	xmm0, qword ptr [__real@4202a05f20000000]
-	jbe	LBB164_1
+	jbe	LBB174_1
 # %bb.2:
 	cmp	ecx, 8192
 	mov	esi, edi
-	jne	LBB164_4
+	jne	LBB174_4
 # %bb.3:
 	lea	eax, [ebp - 56]
 	movsd	qword ptr [esp], xmm1
@@ -21289,18 +24804,18 @@ Lfunc_begin62:
 	mov	esi, edx
 	shr	esi, 7
 	add	esi, edi
-LBB164_4:
+LBB174_4:
 	add	esi, 50
 	mov	ecx, esi
 	sub	ecx, eax
-	jbe	LBB164_5
-LBB164_9:
+	jbe	LBB174_5
+LBB174_9:
 	mov	edx, dword ptr [ebp - 32]
 	mov	dword ptr [ebp - 68], edi       # 4-byte Spill
 	mov	edi, edx
 	sub	edi, eax
 	cmp	edi, ecx
-	jae	LBB164_10
+	jae	LBB174_10
 # %bb.14:
 	mov	dword ptr [ebp - 16], 1
 	mov	al, byte ptr [ebp - 56]
@@ -21312,74 +24827,74 @@ LBB164_9:
 	call	"??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@ID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@ID@Z@ID@Z"
 	sub	esp, 16
 	mov	ebx, dword ptr [ebp + 20]
-	jmp	LBB164_15
-LBB164_1:
+	jmp	LBB174_15
+LBB174_1:
 	mov	esi, edi
 	add	esi, 50
 	mov	ecx, esi
 	sub	ecx, eax
-	ja	LBB164_9
-LBB164_5:
+	ja	LBB174_9
+LBB174_5:
 	cmp	dword ptr [ebp - 32], 15
-	jbe	LBB164_6
+	jbe	LBB174_6
 # %bb.7:
 	mov	eax, dword ptr [ebp - 52]
-	jmp	LBB164_8
-LBB164_10:
+	jmp	LBB174_8
+LBB174_10:
 	cmp	edx, 15
 	mov	dword ptr [ebp - 36], esi
-	jbe	LBB164_11
+	jbe	LBB174_11
 # %bb.12:
 	mov	edi, dword ptr [ebp - 52]
-	jmp	LBB164_13
-LBB164_6:
+	jmp	LBB174_13
+LBB174_6:
 	lea	eax, [ebp - 52]
-LBB164_8:
+LBB174_8:
 	mov	dword ptr [ebp - 36], esi
 	mov	byte ptr [eax + esi], 0
 	mov	edx, dword ptr [ebx + 20]
 	mov	byte ptr [ebp - 64], 37
 	test	dl, 32
-	jne	LBB164_18
-LBB164_17:
+	jne	LBB174_18
+LBB174_17:
 	lea	eax, [ebp - 63]
 	test	dl, 16
-	jne	LBB164_20
-	jmp	LBB164_21
-LBB164_11:
+	jne	LBB174_20
+	jmp	LBB174_21
+LBB174_11:
 	lea	edi, [ebp - 52]
-LBB164_13:
+LBB174_13:
 	add	eax, edi
 	mov	dword ptr [esp + 8], ecx
 	mov	dword ptr [esp + 4], 0
 	mov	dword ptr [esp], eax
 	call	_memset
 	mov	byte ptr [edi + esi], 0
-LBB164_15:
+LBB174_15:
 	mov	edi, dword ptr [ebp - 68]       # 4-byte Reload
 	movsd	xmm1, qword ptr [ebp + 28]      # xmm1 = mem[0],zero
 	mov	edx, dword ptr [ebx + 20]
 	mov	byte ptr [ebp - 64], 37
 	test	dl, 32
-	je	LBB164_17
-LBB164_18:
+	je	LBB174_17
+LBB174_18:
 	lea	eax, [ebp - 62]
 	mov	byte ptr [ebp - 63], 43
 	test	dl, 16
-	je	LBB164_21
-LBB164_20:
+	je	LBB174_21
+LBB174_20:
 	mov	byte ptr [eax], 35
 	inc	eax
-LBB164_21:
+LBB174_21:
 	mov	ecx, edx
 	mov	word ptr [eax], 10798
 	and	ecx, 12288
 	test	dl, 4
-	jne	LBB164_22
+	jne	LBB174_22
 # %bb.24:
 	mov	dl, 102
 	cmp	ecx, 8192
-	je	LBB164_27
+	je	LBB174_27
 # %bb.25:
 	cmp	ecx, 4096
 	setne	dl
@@ -21388,11 +24903,11 @@ LBB164_21:
 	cmp	ecx, 12288
 	movzx	ecx, dl
 	mov	edx, 97
-	jmp	LBB164_26
-LBB164_22:
+	jmp	LBB174_26
+LBB174_22:
 	mov	dl, 102
 	cmp	ecx, 8192
-	je	LBB164_27
+	je	LBB174_27
 # %bb.23:
 	cmp	ecx, 4096
 	setne	dl
@@ -21401,21 +24916,21 @@ LBB164_22:
 	cmp	ecx, 12288
 	movzx	ecx, dl
 	mov	edx, 65
-LBB164_26:
+LBB174_26:
 	cmovne	edx, ecx
 	mov	dword ptr [ebp - 16], 1
-LBB164_27:
+LBB174_27:
 	mov	byte ptr [eax + 2], dl
 	mov	byte ptr [eax + 3], 0
 	mov	eax, dword ptr [ebp - 36]
 	cmp	dword ptr [ebp - 32], 15
-	jbe	LBB164_28
+	jbe	LBB174_28
 # %bb.29:
 	mov	ecx, dword ptr [ebp - 52]
-	jmp	LBB164_30
-LBB164_28:
+	jmp	LBB174_30
+LBB174_28:
 	lea	ecx, [ebp - 52]
-LBB164_30:
+LBB174_30:
 	lea	edx, [ebp - 64]
 	mov	dword ptr [ebp - 16], 1
 	movsd	qword ptr [esp + 16], xmm1
@@ -21430,13 +24945,13 @@ LBB164_30:
 	mov	cl, byte ptr [ebp + 24]
 	cmp	dword ptr [ebp - 32], 15
 	lea	esi, [ebp + 12]
-	jbe	LBB164_32
+	jbe	LBB174_32
 # %bb.33:
 	mov	edx, dword ptr [ebp - 52]
-	jmp	LBB164_34
-LBB164_32:
+	jmp	LBB174_34
+LBB174_32:
 	lea	edx, [ebp - 52]
-LBB164_34:
+LBB174_34:
 	movsd	xmm0, qword ptr [esi]           # xmm0 = mem[0],zero
 	movsd	qword ptr [ebp - 80], xmm0
 	movsd	xmm0, qword ptr [ebp - 80]      # xmm0 = mem[0],zero
@@ -21454,27 +24969,27 @@ LBB164_34:
 	mov	eax, dword ptr [ebp - 32]
 	mov	edi, dword ptr [ebp + 8]
 	cmp	eax, 16
-	jb	LBB164_43
+	jb	LBB174_43
 # %bb.36:
 	mov	ecx, dword ptr [ebp - 52]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB164_42
+	jb	LBB174_42
 # %bb.37:
 	mov	esi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, esi
 	cmp	ecx, 32
-	jae	LBB164_38
+	jae	LBB174_38
 # %bb.41:
 	add	eax, 36
 	mov	ecx, esi
 	mov	edx, eax
-LBB164_42:
+LBB174_42:
 	mov	dword ptr [esp + 4], edx
 	mov	dword ptr [esp], ecx
 	call	"??3@YAXPAXI@Z"
-LBB164_43:
+LBB174_43:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, edi
@@ -21484,7 +24999,7 @@ LBB164_43:
 	pop	ebx
 	pop	ebp
 	ret	28
-LBB164_38:
+LBB174_38:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.39:
@@ -21494,7 +25009,7 @@ LBB164_38:
 	.endef
 	.p2align	4, 0x90
 "?dtor$40@?0??do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DN@Z@4HA":
-LBB164_40:
+LBB174_40:
 	push	ebp
 	sub	esp, 32
 	add	ebp, 12
@@ -21505,39 +25020,39 @@ LBB164_40:
 	.endef
 	.p2align	4, 0x90
 "?dtor$44@?0??do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DN@Z@4HA":
-LBB164_44:
+LBB174_44:
 	push	ebp
 	sub	esp, 32
 	add	ebp, 12
 	mov	eax, dword ptr [ebp - 32]
 	cmp	eax, 16
-	jb	LBB164_49
+	jb	LBB174_49
 # %bb.45:
 	mov	ecx, dword ptr [ebp - 52]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB164_48
+	jb	LBB174_48
 # %bb.46:
 	mov	esi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, esi
 	cmp	ecx, 32
-	jae	LBB164_50
+	jae	LBB174_50
 # %bb.47:
 	add	eax, 36
 	mov	ecx, esi
 	mov	edx, eax
-LBB164_48:
+LBB174_48:
 	mov	dword ptr [esp + 4], edx
 	mov	dword ptr [esp], ecx
 	call	"??3@YAXPAXI@Z"
-LBB164_49:
+LBB174_49:
 	add	esp, 32
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB164_50:
+LBB174_50:
 	call	__invalid_parameter_noinfo_noreturn
-Lfunc_end62:
+Lfunc_end65:
 	.section	.xdata,"dr",associative,"?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DN@Z"
 	.p2align	2
 "L__ehtable$?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DN@Z":
@@ -21576,21 +25091,21 @@ Lfunc_end62:
 	mov	edx, dword ptr [eax + 20]
 	mov	byte ptr [esp], 37
 	test	dl, 32
-	jne	LBB165_2
+	jne	LBB175_2
 # %bb.1:
 	lea	eax, [esp + 1]
 	test	dl, 8
-	jne	LBB165_4
-	jmp	LBB165_5
-LBB165_2:
+	jne	LBB175_4
+	jmp	LBB175_5
+LBB175_2:
 	lea	eax, [esp + 2]
 	mov	byte ptr [esp + 1], 43
 	test	dl, 8
-	je	LBB165_5
-LBB165_4:
+	je	LBB175_5
+LBB175_4:
 	mov	byte ptr [eax], 35
 	inc	eax
-LBB165_5:
+LBB175_5:
 	mov	ebx, dword ptr [esp + 124]
 	mov	ebp, dword ptr [esp + 120]
 	mov	ecx, edx
@@ -21598,22 +25113,22 @@ LBB165_5:
 	mov	byte ptr [eax + 2], 52
 	and	ecx, 3584
 	cmp	ecx, 1024
-	je	LBB165_6
+	je	LBB175_6
 # %bb.7:
 	cmp	ecx, 2048
-	jne	LBB165_8
+	jne	LBB175_8
 # %bb.9:
 	test	dl, 4
 	sete	cl
 	shl	cl, 5
 	or	cl, 88
-	jmp	LBB165_10
-LBB165_6:
+	jmp	LBB175_10
+LBB175_6:
 	mov	cl, 111
-	jmp	LBB165_10
-LBB165_8:
+	jmp	LBB175_10
+LBB175_8:
 	mov	cl, 117
-LBB165_10:
+LBB175_10:
 	mov	byte ptr [eax + 3], cl
 	mov	byte ptr [eax + 4], 0
 	mov	eax, esp
@@ -21669,21 +25184,21 @@ LBB165_10:
 	mov	edx, dword ptr [eax + 20]
 	mov	byte ptr [esp], 37
 	test	dl, 32
-	jne	LBB166_2
+	jne	LBB176_2
 # %bb.1:
 	lea	eax, [esp + 1]
 	test	dl, 8
-	jne	LBB166_4
-	jmp	LBB166_5
-LBB166_2:
+	jne	LBB176_4
+	jmp	LBB176_5
+LBB176_2:
 	lea	eax, [esp + 2]
 	mov	byte ptr [esp + 1], 43
 	test	dl, 8
-	je	LBB166_5
-LBB166_4:
+	je	LBB176_5
+LBB176_4:
 	mov	byte ptr [eax], 35
 	inc	eax
-LBB166_5:
+LBB176_5:
 	mov	ebx, dword ptr [esp + 124]
 	mov	ebp, dword ptr [esp + 120]
 	mov	ecx, edx
@@ -21691,22 +25206,22 @@ LBB166_5:
 	mov	byte ptr [eax + 2], 52
 	and	ecx, 3584
 	cmp	ecx, 1024
-	je	LBB166_6
+	je	LBB176_6
 # %bb.7:
 	cmp	ecx, 2048
-	jne	LBB166_8
+	jne	LBB176_8
 # %bb.9:
 	test	dl, 4
 	sete	cl
 	shl	cl, 5
 	or	cl, 88
-	jmp	LBB166_10
-LBB166_6:
+	jmp	LBB176_10
+LBB176_6:
 	mov	cl, 111
-	jmp	LBB166_10
-LBB166_8:
+	jmp	LBB176_10
+LBB176_8:
 	mov	cl, 100
-LBB166_10:
+LBB176_10:
 	mov	byte ptr [eax + 3], cl
 	mov	byte ptr [eax + 4], 0
 	mov	eax, esp
@@ -21762,45 +25277,45 @@ LBB166_10:
 	mov	ebx, dword ptr [eax + 20]
 	mov	byte ptr [esp + 2], 37
 	test	bl, 32
-	jne	LBB167_2
+	jne	LBB177_2
 # %bb.1:
 	lea	eax, [esp + 3]
 	mov	edi, dword ptr [esp + 100]
 	test	bl, 8
-	jne	LBB167_4
-	jmp	LBB167_5
-LBB167_2:
+	jne	LBB177_4
+	jmp	LBB177_5
+LBB177_2:
 	lea	eax, [esp + 4]
 	mov	byte ptr [esp + 3], 43
 	mov	edi, dword ptr [esp + 100]
 	test	bl, 8
-	je	LBB167_5
-LBB167_4:
+	je	LBB177_5
+LBB177_4:
 	mov	byte ptr [eax], 35
 	inc	eax
-LBB167_5:
+LBB177_5:
 	mov	edx, dword ptr [esp + 120]
 	mov	ecx, ebx
 	lea	ebp, [esp + 104]
 	mov	byte ptr [eax], 108
 	and	ecx, 3584
 	cmp	ecx, 1024
-	je	LBB167_6
+	je	LBB177_6
 # %bb.7:
 	cmp	ecx, 2048
-	jne	LBB167_8
+	jne	LBB177_8
 # %bb.9:
 	test	bl, 4
 	sete	cl
 	shl	cl, 5
 	or	cl, 88
-	jmp	LBB167_10
-LBB167_6:
+	jmp	LBB177_10
+LBB177_6:
 	mov	cl, 111
-	jmp	LBB167_10
-LBB167_8:
+	jmp	LBB177_10
+LBB177_8:
 	mov	cl, 117
-LBB167_10:
+LBB177_10:
 	mov	byte ptr [eax + 1], cl
 	mov	byte ptr [eax + 2], 0
 	lea	eax, [esp + 2]
@@ -21853,45 +25368,45 @@ LBB167_10:
 	mov	ebx, dword ptr [eax + 20]
 	mov	byte ptr [esp + 2], 37
 	test	bl, 32
-	jne	LBB168_2
+	jne	LBB178_2
 # %bb.1:
 	lea	eax, [esp + 3]
 	mov	edi, dword ptr [esp + 100]
 	test	bl, 8
-	jne	LBB168_4
-	jmp	LBB168_5
-LBB168_2:
+	jne	LBB178_4
+	jmp	LBB178_5
+LBB178_2:
 	lea	eax, [esp + 4]
 	mov	byte ptr [esp + 3], 43
 	mov	edi, dword ptr [esp + 100]
 	test	bl, 8
-	je	LBB168_5
-LBB168_4:
+	je	LBB178_5
+LBB178_4:
 	mov	byte ptr [eax], 35
 	inc	eax
-LBB168_5:
+LBB178_5:
 	mov	edx, dword ptr [esp + 120]
 	mov	ecx, ebx
 	lea	ebp, [esp + 104]
 	mov	byte ptr [eax], 108
 	and	ecx, 3584
 	cmp	ecx, 1024
-	je	LBB168_6
+	je	LBB178_6
 # %bb.7:
 	cmp	ecx, 2048
-	jne	LBB168_8
+	jne	LBB178_8
 # %bb.9:
 	test	bl, 4
 	sete	cl
 	shl	cl, 5
 	or	cl, 88
-	jmp	LBB168_10
-LBB168_6:
+	jmp	LBB178_10
+LBB178_6:
 	mov	cl, 111
-	jmp	LBB168_10
-LBB168_8:
+	jmp	LBB178_10
+LBB178_8:
 	mov	cl, 100
-LBB168_10:
+LBB178_10:
 	mov	byte ptr [eax + 1], cl
 	mov	byte ptr [eax + 2], 0
 	lea	eax, [esp + 2]
@@ -21933,7 +25448,7 @@ LBB168_10:
 	.globl	"?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@D_N@Z" # -- Begin function ?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@D_N@Z
 	.p2align	4, 0x90
 "?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@D_N@Z": # @"?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@D_N@Z"
-Lfunc_begin63:
+Lfunc_begin66:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -21953,7 +25468,7 @@ Lfunc_begin63:
 	mov	eax, edx
 	lea	edx, [ebp + 12]
 	test	byte ptr [eax + 21], 64
-	jne	LBB169_2
+	jne	LBB179_2
 # %bb.1:
 	movsd	xmm0, qword ptr [edx]           # xmm0 = mem[0],zero
 	mov	edi, eax
@@ -21972,8 +25487,8 @@ Lfunc_begin63:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, esi
-	jmp	LBB169_47
-LBB169_2:
+	jmp	LBB179_47
+LBB179_2:
 	mov	eax, dword ptr [eax + 48]
 	mov	ecx, dword ptr [eax + 4]
 	mov	dword ptr [ebp - 68], ecx
@@ -21989,23 +25504,23 @@ LBB169_2:
 	mov	bl, byte ptr [ebp + 28]
 	mov	esi, eax
 	test	ecx, ecx
-	je	LBB169_6
+	je	LBB179_6
 # %bb.4:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB169_6
+	je	LBB179_6
 # %bb.5:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB169_6:
+LBB179_6:
 	test	bl, bl
 	mov	dword ptr [ebp - 52], 15
 	mov	dword ptr [ebp - 56], 0
 	mov	byte ptr [ebp - 72], 0
-	je	LBB169_8
+	je	LBB179_8
 # %bb.7:
 	mov	eax, dword ptr [esi]
 	lea	edx, [ebp - 100]
@@ -22014,8 +25529,8 @@ LBB169_6:
 	mov	dword ptr [ebp - 16], 2
 	push	edx
 	call	eax
-	jmp	LBB169_9
-LBB169_8:
+	jmp	LBB179_9
+LBB179_8:
 	mov	eax, dword ptr [esi]
 	lea	edx, [ebp - 100]
 	mov	ecx, esi
@@ -22023,7 +25538,7 @@ LBB169_8:
 	mov	dword ptr [ebp - 16], 2
 	push	edx
 	call	eax
-LBB169_9:
+LBB179_9:
 	movsd	xmm0, qword ptr [ebp - 84]      # xmm0 = mem[0],zero
 	movsd	xmm2, qword ptr [ebp - 100]     # xmm2 = mem[0],zero
 	movsd	xmm1, qword ptr [ebp - 92]      # xmm1 = mem[0],zero
@@ -22049,25 +25564,25 @@ LBB169_9:
 	mov	ecx, dword ptr [edx]
 	cmp	eax, 64
 	mov	dword ptr [ebp - 48], ebx       # 4-byte Spill
-	jne	LBB169_11
+	jne	LBB179_11
 # %bb.10:
 	mov	dword ptr [ebp - 36], esi       # 4-byte Spill
-	jmp	LBB169_21
-LBB169_11:
+	jmp	LBB179_21
+LBB179_11:
 	mov	eax, ecx
 	test	esi, esi
 	mov	dword ptr [ebp - 40], ecx       # 4-byte Spill
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-	je	LBB169_20
+	je	LBB179_20
 # %bb.12:
 	test	ebx, ebx
-	je	LBB169_19
+	je	LBB179_19
 # %bb.13:
 	movzx	eax, byte ptr [ebp + 24]
 	mov	dword ptr [ebp - 44], eax       # 4-byte Spill
-	jmp	LBB169_15
+	jmp	LBB179_15
 	.p2align	4, 0x90
-LBB169_14:                              #   in Loop: Header=BB169_15 Depth=1
+LBB179_14:                              #   in Loop: Header=BB179_15 Depth=1
 	dec	esi
 	mov	dword ptr [edx], esi
 	lea	edx, [ecx + 1]
@@ -22076,26 +25591,26 @@ LBB169_14:                              #   in Loop: Header=BB169_15 Depth=1
 	mov	byte ptr [ecx], dl
 	mov	esi, dword ptr [ebp - 36]       # 4-byte Reload
 	dec	esi
-	je	LBB169_20
-LBB169_15:                              # =>This Inner Loop Header: Depth=1
+	je	LBB179_20
+LBB179_15:                              # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [ebx + 32]
 	mov	dword ptr [ebp - 36], esi       # 4-byte Spill
 	mov	ecx, dword ptr [eax]
 	test	ecx, ecx
-	je	LBB169_17
-# %bb.16:                               #   in Loop: Header=BB169_15 Depth=1
+	je	LBB179_17
+# %bb.16:                               #   in Loop: Header=BB179_15 Depth=1
 	mov	edx, dword ptr [ebx + 48]
 	mov	esi, dword ptr [edx]
 	test	esi, esi
-	jg	LBB169_14
-LBB169_17:                              #   in Loop: Header=BB169_15 Depth=1
+	jg	LBB179_14
+LBB179_17:                              #   in Loop: Header=BB179_15 Depth=1
 	mov	eax, dword ptr [ebx]
 	mov	ecx, ebx
 	mov	eax, dword ptr [eax + 12]
 	mov	dword ptr [ebp - 16], 2
 	push	dword ptr [ebp - 44]            # 4-byte Folded Reload
 	call	eax
-# %bb.18:                               #   in Loop: Header=BB169_15 Depth=1
+# %bb.18:                               #   in Loop: Header=BB179_15 Depth=1
 	cmp	eax, -1
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 48]       # 4-byte Reload
@@ -22105,12 +25620,12 @@ LBB169_17:                              #   in Loop: Header=BB169_15 Depth=1
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
 	mov	esi, dword ptr [ebp - 36]       # 4-byte Reload
 	dec	esi
-	jne	LBB169_15
-	jmp	LBB169_20
-LBB169_19:
+	jne	LBB179_15
+	jmp	LBB179_20
+LBB179_19:
 	mov	al, 1
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-LBB169_20:
+LBB179_20:
 	mov	ecx, dword ptr [ebp - 40]       # 4-byte Reload
 	movzx	eax, byte ptr [ebp - 32]        # 1-byte Folded Reload
 	mov	dword ptr [ebp - 36], 0         # 4-byte Folded Spill
@@ -22119,25 +25634,25 @@ LBB169_20:
 	lea	eax, [ebp + 12]
 	mov	dword ptr [eax + 4], ebx
 	mov	dword ptr [eax], ecx
-LBB169_21:
+LBB179_21:
 	mov	eax, ecx
 	cmp	dword ptr [ebp - 76], 0         # 4-byte Folded Reload
 	mov	ecx, eax
 	mov	dword ptr [ebp - 40], eax       # 4-byte Spill
 	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
-	je	LBB169_32
+	je	LBB179_32
 # %bb.23:
 	test	ebx, ebx
-	je	LBB169_31
+	je	LBB179_31
 # %bb.24:
 	cmp	dword ptr [ebp - 52], 15
 	lea	eax, [ebp - 72]
-	jbe	LBB169_27
+	jbe	LBB179_27
 # %bb.25:
 	mov	eax, dword ptr [ebp - 72]
-	jmp	LBB169_27
+	jmp	LBB179_27
 	.p2align	4, 0x90
-LBB169_26:                              #   in Loop: Header=BB169_27 Depth=1
+LBB179_26:                              #   in Loop: Header=BB179_27 Depth=1
 	dec	edi
 	mov	dword ptr [esi], edi
 	lea	edi, [edx + 1]
@@ -22146,20 +25661,20 @@ LBB169_26:                              #   in Loop: Header=BB169_27 Depth=1
 	mov	eax, dword ptr [ebp - 44]       # 4-byte Reload
 	inc	eax
 	dec	dword ptr [ebp - 76]            # 4-byte Folded Spill
-	je	LBB169_32
-LBB169_27:                              # =>This Inner Loop Header: Depth=1
+	je	LBB179_32
+LBB179_27:                              # =>This Inner Loop Header: Depth=1
 	mov	ecx, dword ptr [ebx + 32]
 	mov	dword ptr [ebp - 44], eax       # 4-byte Spill
 	movzx	eax, byte ptr [eax]
 	mov	edx, dword ptr [ecx]
 	test	edx, edx
-	je	LBB169_29
-# %bb.28:                               #   in Loop: Header=BB169_27 Depth=1
+	je	LBB179_29
+# %bb.28:                               #   in Loop: Header=BB179_27 Depth=1
 	mov	esi, dword ptr [ebx + 48]
 	mov	edi, dword ptr [esi]
 	test	edi, edi
-	jg	LBB169_26
-LBB169_29:                              #   in Loop: Header=BB169_27 Depth=1
+	jg	LBB179_26
+LBB179_29:                              #   in Loop: Header=BB179_27 Depth=1
 	mov	ecx, dword ptr [ebx]
 	movzx	eax, al
 	mov	edx, dword ptr [ecx + 12]
@@ -22167,7 +25682,7 @@ LBB169_29:                              #   in Loop: Header=BB169_27 Depth=1
 	mov	ecx, ebx
 	push	eax
 	call	edx
-# %bb.30:                               #   in Loop: Header=BB169_27 Depth=1
+# %bb.30:                               #   in Loop: Header=BB179_27 Depth=1
 	cmp	eax, -1
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 48]       # 4-byte Reload
@@ -22178,12 +25693,12 @@ LBB169_29:                              #   in Loop: Header=BB169_27 Depth=1
 	mov	eax, dword ptr [ebp - 44]       # 4-byte Reload
 	inc	eax
 	dec	dword ptr [ebp - 76]            # 4-byte Folded Spill
-	jne	LBB169_27
-	jmp	LBB169_32
-LBB169_31:
+	jne	LBB179_27
+	jmp	LBB179_32
+LBB179_31:
 	mov	al, 1
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-LBB169_32:
+LBB179_32:
 	mov	ecx, dword ptr [ebp - 40]       # 4-byte Reload
 	movzx	eax, byte ptr [ebp - 32]        # 1-byte Folded Reload
 	lea	edx, [ebp + 12]
@@ -22197,16 +25712,16 @@ LBB169_32:
 	mov	dword ptr [eax + 32], 0
 	mov	eax, dword ptr [ebp - 36]       # 4-byte Reload
 	test	eax, eax
-	je	LBB169_41
+	je	LBB179_41
 # %bb.33:
 	test	ebx, ebx
-	je	LBB169_40
+	je	LBB179_40
 # %bb.34:
 	movzx	ecx, byte ptr [ebp + 24]
 	mov	dword ptr [ebp - 44], ecx       # 4-byte Spill
-	jmp	LBB169_36
+	jmp	LBB179_36
 	.p2align	4, 0x90
-LBB169_35:                              #   in Loop: Header=BB169_36 Depth=1
+LBB179_35:                              #   in Loop: Header=BB179_36 Depth=1
 	dec	esi
 	mov	dword ptr [edx], esi
 	lea	edx, [ecx + 1]
@@ -22215,26 +25730,26 @@ LBB169_35:                              #   in Loop: Header=BB169_36 Depth=1
 	mov	byte ptr [ecx], dl
 	mov	eax, dword ptr [ebp - 36]       # 4-byte Reload
 	dec	eax
-	je	LBB169_41
-LBB169_36:                              # =>This Inner Loop Header: Depth=1
+	je	LBB179_41
+LBB179_36:                              # =>This Inner Loop Header: Depth=1
 	mov	dword ptr [ebp - 36], eax       # 4-byte Spill
 	mov	eax, dword ptr [ebx + 32]
 	mov	ecx, dword ptr [eax]
 	test	ecx, ecx
-	je	LBB169_38
-# %bb.37:                               #   in Loop: Header=BB169_36 Depth=1
+	je	LBB179_38
+# %bb.37:                               #   in Loop: Header=BB179_36 Depth=1
 	mov	edx, dword ptr [ebx + 48]
 	mov	esi, dword ptr [edx]
 	test	esi, esi
-	jg	LBB169_35
-LBB169_38:                              #   in Loop: Header=BB169_36 Depth=1
+	jg	LBB179_35
+LBB179_38:                              #   in Loop: Header=BB179_36 Depth=1
 	mov	eax, dword ptr [ebx]
 	mov	ecx, ebx
 	mov	eax, dword ptr [eax + 12]
 	mov	dword ptr [ebp - 16], 2
 	push	dword ptr [ebp - 44]            # 4-byte Folded Reload
 	call	eax
-# %bb.39:                               #   in Loop: Header=BB169_36 Depth=1
+# %bb.39:                               #   in Loop: Header=BB179_36 Depth=1
 	cmp	eax, -1
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 48]       # 4-byte Reload
@@ -22244,12 +25759,12 @@ LBB169_38:                              #   in Loop: Header=BB169_36 Depth=1
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
 	mov	eax, dword ptr [ebp - 36]       # 4-byte Reload
 	dec	eax
-	jne	LBB169_36
-	jmp	LBB169_41
-LBB169_40:
+	jne	LBB179_36
+	jmp	LBB179_41
+LBB179_40:
 	mov	al, 1
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-LBB169_41:
+LBB179_41:
 	movzx	eax, byte ptr [ebp - 32]        # 1-byte Folded Reload
 	mov	ecx, dword ptr [ebp - 40]       # 4-byte Reload
 	mov	edi, dword ptr [ebp - 52]
@@ -22258,39 +25773,39 @@ LBB169_41:
 	cmp	edi, 16
 	mov	dword ptr [eax], ecx
 	mov	dword ptr [eax + 4], ebx
-	jb	LBB169_46
+	jb	LBB179_46
 # %bb.42:
 	mov	ecx, dword ptr [ebp - 72]
 	lea	edx, [edi + 1]
 	cmp	edx, 4096
-	jb	LBB169_45
+	jb	LBB179_45
 # %bb.43:
 	mov	esi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, esi
 	cmp	ecx, 32
-	jae	LBB169_48
+	jae	LBB179_48
 # %bb.44:
 	add	edi, 36
 	mov	ecx, esi
 	mov	edx, edi
-LBB169_45:
+LBB179_45:
 	push	edx
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [ebp + 8]
-LBB169_46:
+LBB179_46:
 	mov	ecx, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], ecx
-LBB169_47:
+LBB179_47:
 	add	esp, 96
 	pop	esi
 	pop	edi
 	pop	ebx
 	pop	ebp
 	ret	24
-LBB169_48:
+LBB179_48:
 	mov	dword ptr [ebp - 16], 1
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.49:
@@ -22300,7 +25815,7 @@ LBB169_48:
 	.endef
 	.p2align	4, 0x90
 "?dtor$50@?0??do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@D_N@Z@4HA":
-LBB169_50:
+LBB179_50:
 	push	ebp
 	sub	esp, 24
 	add	ebp, 12
@@ -22311,24 +25826,24 @@ LBB169_50:
 	.endef
 	.p2align	4, 0x90
 "?dtor$51@?0??do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@D_N@Z@4HA":
-LBB169_51:
+LBB179_51:
 	push	ebp
 	sub	esp, 24
 	add	ebp, 12
 	mov	ecx, dword ptr [ebp - 68]
 	test	ecx, ecx
-	je	LBB169_54
+	je	LBB179_54
 # %bb.52:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB169_54
+	je	LBB179_54
 # %bb.53:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB169_54:
+LBB179_54:
 	add	esp, 24
 	pop	ebp
 	ret                                     # CLEANUPRET
@@ -22338,40 +25853,40 @@ LBB169_54:
 	.endef
 	.p2align	4, 0x90
 "?dtor$55@?0??do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@D_N@Z@4HA":
-LBB169_55:
+LBB179_55:
 	push	ebp
 	sub	esp, 24
 	add	ebp, 12
 	mov	eax, dword ptr [ebp - 52]
 	cmp	eax, 16
-	jb	LBB169_60
+	jb	LBB179_60
 # %bb.56:
 	mov	ecx, dword ptr [ebp - 72]
 	lea	esi, [eax + 1]
 	cmp	esi, 4096
-	jb	LBB169_59
+	jb	LBB179_59
 # %bb.57:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB169_61
+	jae	LBB179_61
 # %bb.58:
 	add	eax, 36
 	mov	ecx, edx
 	mov	esi, eax
-LBB169_59:
+LBB179_59:
 	push	esi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB169_60:
+LBB179_60:
 	add	esp, 24
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB169_61:
+LBB179_61:
 	call	__invalid_parameter_noinfo_noreturn
-Lfunc_end63:
+Lfunc_end66:
 	.section	.xdata,"dr",associative,"?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@D_N@Z"
 	.p2align	2
 "L__ehtable$?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@D_N@Z":
@@ -22401,7 +25916,7 @@ Lfunc_end63:
 	.globl	"?_Iput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPADI@Z" # -- Begin function ?_Iput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPADI@Z
 	.p2align	4, 0x90
 "?_Iput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPADI@Z": # @"?_Iput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPADI@Z"
-Lfunc_begin64:
+Lfunc_begin67:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -22419,16 +25934,16 @@ Lfunc_begin64:
 	test	esi, esi
 	mov	dword ptr [ebp - 24], ecx
 	mov	dword ptr fs:[0], eax
-	je	LBB170_2
+	je	LBB180_2
 # %bb.1:
 	mov	al, byte ptr [edi]
 	add	al, -43
 	test	al, -3
 	sete	al
-	jmp	LBB170_3
-LBB170_2:
+	jmp	LBB180_3
+LBB180_2:
 	xor	eax, eax
-LBB170_3:
+LBB180_3:
 	mov	edx, dword ptr [ebp + 24]
 	movzx	ecx, al
 	mov	dword ptr [ebp - 32], esi       # 4-byte Spill
@@ -22436,24 +25951,24 @@ LBB170_3:
 	mov	ecx, 3584
 	and	ecx, dword ptr [edx + 20]
 	cmp	ecx, 2048
-	jne	LBB170_8
+	jne	LBB180_8
 # %bb.4:
 	movzx	ecx, al
 	lea	eax, [ecx + 2]
 	cmp	eax, esi
-	ja	LBB170_8
+	ja	LBB180_8
 # %bb.5:
 	mov	edx, dword ptr [ebp - 40]       # 4-byte Reload
 	cmp	byte ptr [edi + edx], 48
-	jne	LBB170_8
+	jne	LBB180_8
 # %bb.6:
 	mov	cl, byte ptr [ecx + edi + 1]
 	or	cl, 32
 	cmp	cl, 120
-	jne	LBB170_8
+	jne	LBB180_8
 # %bb.7:
 	mov	dword ptr [ebp - 40], eax       # 4-byte Spill
-LBB170_8:
+LBB180_8:
 	mov	eax, dword ptr [ebp + 24]
 	mov	eax, dword ptr [eax + 48]
 	mov	ecx, dword ptr [eax + 4]
@@ -22471,23 +25986,23 @@ LBB170_8:
 	mov	edi, dword ptr [ebp + 36]
 	mov	esi, eax
 	test	ecx, ecx
-	je	LBB170_12
+	je	LBB180_12
 # %bb.10:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB170_12
+	je	LBB180_12
 # %bb.11:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB170_12:
+LBB180_12:
 	cmp	edi, 15
 	mov	dword ptr [ebp - 64], 15
 	mov	dword ptr [ebp - 68], 0
 	mov	byte ptr [ebp - 84], 0
-	jbe	LBB170_14
+	jbe	LBB180_14
 # %bb.13:
 	mov	dword ptr [ebp - 16], -1
 	sub	esp, 12
@@ -22498,9 +26013,9 @@ LBB170_12:
 	mov	dword ptr [esp + 8], 0
 	call	"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@ID@Z@D@Z"
 	cmp	dword ptr [ebp - 64], 15
-	ja	LBB170_15
-	jmp	LBB170_16
-LBB170_14:
+	ja	LBB180_15
+	jmp	LBB180_16
+LBB180_14:
 	mov	dword ptr [ebp - 68], edi
 	push	edi
 	push	0
@@ -22510,11 +26025,11 @@ LBB170_14:
 	add	esp, 12
 	mov	byte ptr [ebp + edi - 84], 0
 	cmp	dword ptr [ebp - 64], 15
-	jbe	LBB170_16
-LBB170_15:
+	jbe	LBB180_16
+LBB180_15:
 	mov	eax, dword ptr [ebp - 84]
 	mov	dword ptr [ebp - 36], eax       # 4-byte Spill
-LBB170_16:
+LBB180_16:
 	mov	ecx, dword ptr [esi]
 	mov	ebx, dword ptr [ebp + 32]
 	mov	edx, dword ptr [ecx + 28]
@@ -22541,18 +26056,18 @@ LBB170_16:
 	mov	ecx, dword ptr [ebp - 108]
 	mov	esi, eax
 	test	ecx, ecx
-	je	LBB170_21
+	je	LBB180_21
 # %bb.19:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB170_21
+	je	LBB180_21
 # %bb.20:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB170_21:
+LBB180_21:
 	mov	eax, dword ptr [esi]
 	lea	edx, [ebp - 112]
 	mov	dword ptr [ebp - 56], esi       # 4-byte Spill
@@ -22564,15 +26079,15 @@ LBB170_21:
 # %bb.22:
 	cmp	dword ptr [ebp - 92], 15
 	lea	edx, [ebp - 112]
-	jbe	LBB170_24
+	jbe	LBB180_24
 # %bb.23:
 	mov	edx, dword ptr [ebp - 112]
-LBB170_24:
+LBB180_24:
 	mov	al, byte ptr [edx]
 	mov	ecx, dword ptr [ebp - 56]       # 4-byte Reload
 	dec	al
 	cmp	al, 125
-	ja	LBB170_36
+	ja	LBB180_36
 # %bb.25:
 	mov	eax, dword ptr [ecx]
 	mov	dword ptr [ebp - 36], edx       # 4-byte Spill
@@ -22585,9 +26100,9 @@ LBB170_24:
 	mov	edx, dword ptr [ebp - 36]       # 4-byte Reload
 	lea	ebx, [ebp - 84]
 	mov	dword ptr [ebp - 48], eax       # 4-byte Spill
-	jmp	LBB170_29
+	jmp	LBB180_29
 	.p2align	4, 0x90
-LBB170_27:                              #   in Loop: Header=BB170_29 Depth=1
+LBB180_27:                              #   in Loop: Header=BB180_29 Depth=1
 	inc	eax
 	lea	ecx, [esi + edi]
 	lea	edx, [esi + edi + 1]
@@ -22598,36 +26113,36 @@ LBB170_27:                              #   in Loop: Header=BB170_29 Depth=1
 	add	esp, 12
 	movzx	eax, byte ptr [ebp - 56]        # 1-byte Folded Reload
 	mov	byte ptr [esi + edi], al
-LBB170_28:                              #   in Loop: Header=BB170_29 Depth=1
+LBB180_28:                              #   in Loop: Header=BB180_29 Depth=1
 	mov	edx, dword ptr [ebp - 36]       # 4-byte Reload
 	cmp	byte ptr [edx + 1], 0
 	lea	eax, [edx + 1]
 	cmovg	edx, eax
-LBB170_29:                              # =>This Inner Loop Header: Depth=1
+LBB180_29:                              # =>This Inner Loop Header: Depth=1
 	movsx	eax, byte ptr [edx]
 	mov	edi, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ecx, eax
 	dec	cl
 	cmp	cl, 125
-	ja	LBB170_36
-# %bb.30:                               #   in Loop: Header=BB170_29 Depth=1
+	ja	LBB180_36
+# %bb.30:                               #   in Loop: Header=BB180_29 Depth=1
 	mov	ecx, edi
 	sub	ecx, dword ptr [ebp - 40]       # 4-byte Folded Reload
 	cmp	ecx, eax
-	jbe	LBB170_36
-# %bb.31:                               #   in Loop: Header=BB170_29 Depth=1
+	jbe	LBB180_36
+# %bb.31:                               #   in Loop: Header=BB180_29 Depth=1
 	mov	ecx, dword ptr [ebp - 68]
 	sub	edi, eax
 	mov	eax, ecx
 	sub	eax, edi
-	jb	LBB170_131
-# %bb.32:                               #   in Loop: Header=BB170_29 Depth=1
+	jb	LBB180_131
+# %bb.32:                               #   in Loop: Header=BB180_29 Depth=1
 	mov	dword ptr [ebp - 36], edx       # 4-byte Spill
 	mov	edx, dword ptr [ebp - 64]
 	mov	dword ptr [ebp - 32], edi       # 4-byte Spill
 	cmp	edx, ecx
-	jne	LBB170_34
-# %bb.33:                               #   in Loop: Header=BB170_29 Depth=1
+	jne	LBB180_34
+# %bb.33:                               #   in Loop: Header=BB180_29 Depth=1
 	mov	dword ptr [ebp - 16], 5
 	sub	esp, 20
 	movzx	eax, byte ptr [ebp - 88]
@@ -22640,18 +26155,18 @@ LBB170_29:                              # =>This Inner Loop Header: Depth=1
 	mov	dword ptr [esp + 16], eax
 	call	"??$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IID@Z@IID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IID@Z@IID@Z"
 	lea	ebx, [ebp - 84]
-	jmp	LBB170_28
+	jmp	LBB180_28
 	.p2align	4, 0x90
-LBB170_34:                              #   in Loop: Header=BB170_29 Depth=1
+LBB180_34:                              #   in Loop: Header=BB180_29 Depth=1
 	inc	ecx
 	cmp	edx, 15
 	mov	esi, ebx
 	mov	dword ptr [ebp - 68], ecx
-	jbe	LBB170_27
-# %bb.35:                               #   in Loop: Header=BB170_29 Depth=1
+	jbe	LBB180_27
+# %bb.35:                               #   in Loop: Header=BB180_29 Depth=1
 	mov	esi, dword ptr [ebp - 84]
-	jmp	LBB170_27
-LBB170_36:
+	jmp	LBB180_27
+LBB180_36:
 	mov	edx, dword ptr [ebp + 24]
 	mov	esi, dword ptr [ebp - 68]
 	xor	ecx, ecx
@@ -22668,10 +26183,10 @@ LBB170_36:
 	and	eax, dword ptr [edx + 20]
 	mov	dword ptr [ebp - 48], edi       # 4-byte Spill
 	cmp	eax, 64
-	je	LBB170_42
+	je	LBB180_42
 # %bb.37:
 	cmp	eax, 256
-	jne	LBB170_46
+	jne	LBB180_46
 # %bb.38:
 	lea	eax, [ebp + 16]
 	cmp	dword ptr [ebp - 40], 0         # 4-byte Folded Reload
@@ -22681,35 +26196,35 @@ LBB170_36:
 	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
 	mov	dword ptr [ebp - 36], ebx       # 4-byte Spill
 	mov	dword ptr [ebp - 44], ecx       # 4-byte Spill
-	je	LBB170_56
+	je	LBB180_56
 # %bb.39:
 	test	ebx, ebx
-	je	LBB170_55
+	je	LBB180_55
 # %bb.40:
 	cmp	dword ptr [ebp - 64], 15
-	jbe	LBB170_107
+	jbe	LBB180_107
 # %bb.41:
 	mov	ecx, dword ptr [ebp - 84]
-	jmp	LBB170_108
-LBB170_42:
+	jmp	LBB180_108
+LBB180_42:
 	lea	eax, [ebp + 16]
 	cmp	dword ptr [ebp - 40], 0         # 4-byte Folded Reload
 	mov	ecx, dword ptr [eax]
 	mov	ebx, dword ptr [eax + 4]
 	mov	dword ptr [ebp - 44], ecx       # 4-byte Spill
                                         # kill: def $cl killed $cl killed $ecx def $ecx
-	je	LBB170_54
+	je	LBB180_54
 # %bb.43:
 	test	ebx, ebx
-	je	LBB170_64
+	je	LBB180_64
 # %bb.44:
 	cmp	dword ptr [ebp - 64], 15
 	mov	dword ptr [ebp - 60], ecx       # 4-byte Spill
-	jbe	LBB170_115
+	jbe	LBB180_115
 # %bb.45:
 	mov	ecx, dword ptr [ebp - 84]
-	jmp	LBB170_116
-LBB170_46:
+	jmp	LBB180_116
+LBB180_46:
 	lea	eax, [ebp + 16]
 	cmp	dword ptr [ebp - 48], 0         # 4-byte Folded Reload
 	mov	ecx, dword ptr [eax]
@@ -22718,16 +26233,16 @@ LBB170_46:
 	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
 	mov	dword ptr [ebp - 36], ebx       # 4-byte Spill
 	mov	dword ptr [ebp - 44], ecx       # 4-byte Spill
-	je	LBB170_67
+	je	LBB180_67
 # %bb.47:
 	test	ebx, ebx
-	je	LBB170_66
+	je	LBB180_66
 # %bb.48:
 	movzx	eax, byte ptr [ebp + 28]
 	mov	dword ptr [ebp - 52], eax       # 4-byte Spill
-	jmp	LBB170_50
+	jmp	LBB180_50
 	.p2align	4, 0x90
-LBB170_49:                              #   in Loop: Header=BB170_50 Depth=1
+LBB180_49:                              #   in Loop: Header=BB180_50 Depth=1
 	dec	esi
 	mov	dword ptr [edx], esi
 	lea	edx, [ecx + 1]
@@ -22735,25 +26250,25 @@ LBB170_49:                              #   in Loop: Header=BB170_50 Depth=1
 	movzx	edx, byte ptr [ebp + 28]
 	mov	byte ptr [ecx], dl
 	dec	dword ptr [ebp - 48]            # 4-byte Folded Spill
-	je	LBB170_67
-LBB170_50:                              # =>This Inner Loop Header: Depth=1
+	je	LBB180_67
+LBB180_50:                              # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [ebx + 32]
 	mov	ecx, dword ptr [eax]
 	test	ecx, ecx
-	je	LBB170_52
-# %bb.51:                               #   in Loop: Header=BB170_50 Depth=1
+	je	LBB180_52
+# %bb.51:                               #   in Loop: Header=BB180_50 Depth=1
 	mov	edx, dword ptr [ebx + 48]
 	mov	esi, dword ptr [edx]
 	test	esi, esi
-	jg	LBB170_49
-LBB170_52:                              #   in Loop: Header=BB170_50 Depth=1
+	jg	LBB180_49
+LBB180_52:                              #   in Loop: Header=BB180_50 Depth=1
 	mov	eax, dword ptr [ebx]
 	mov	ecx, ebx
 	mov	eax, dword ptr [eax + 12]
 	mov	dword ptr [ebp - 16], 5
 	push	dword ptr [ebp - 52]            # 4-byte Folded Reload
 	call	eax
-# %bb.53:                               #   in Loop: Header=BB170_50 Depth=1
+# %bb.53:                               #   in Loop: Header=BB180_50 Depth=1
 	cmp	eax, -1
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
@@ -22762,15 +26277,15 @@ LBB170_52:                              #   in Loop: Header=BB170_50 Depth=1
 	cmove	eax, ecx
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
 	dec	dword ptr [ebp - 48]            # 4-byte Folded Spill
-	jne	LBB170_50
-	jmp	LBB170_67
-LBB170_54:
+	jne	LBB180_50
+	jmp	LBB180_67
+LBB180_54:
 	mov	dword ptr [ebp - 60], ecx       # 4-byte Spill
-	jmp	LBB170_65
-LBB170_55:
+	jmp	LBB180_65
+LBB180_55:
 	mov	al, 1
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-LBB170_56:
+LBB180_56:
 	mov	ecx, dword ptr [ebp - 44]       # 4-byte Reload
 	movzx	eax, byte ptr [ebp - 32]        # 1-byte Folded Reload
 	and	ecx, -256
@@ -22780,16 +26295,16 @@ LBB170_56:
 	lea	ecx, [ebp + 16]
 	mov	dword ptr [ecx], eax
 	mov	dword ptr [ecx + 4], ebx
-	je	LBB170_72
+	je	LBB180_72
 # %bb.57:
 	test	ebx, ebx
-	je	LBB170_71
+	je	LBB180_71
 # %bb.58:
 	movzx	eax, byte ptr [ebp + 28]
 	mov	dword ptr [ebp - 52], eax       # 4-byte Spill
-	jmp	LBB170_60
+	jmp	LBB180_60
 	.p2align	4, 0x90
-LBB170_59:                              #   in Loop: Header=BB170_60 Depth=1
+LBB180_59:                              #   in Loop: Header=BB180_60 Depth=1
 	dec	esi
 	mov	dword ptr [edx], esi
 	lea	edx, [ecx + 1]
@@ -22797,25 +26312,25 @@ LBB170_59:                              #   in Loop: Header=BB170_60 Depth=1
 	movzx	edx, byte ptr [ebp + 28]
 	mov	byte ptr [ecx], dl
 	dec	dword ptr [ebp - 48]            # 4-byte Folded Spill
-	je	LBB170_72
-LBB170_60:                              # =>This Inner Loop Header: Depth=1
+	je	LBB180_72
+LBB180_60:                              # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [ebx + 32]
 	mov	ecx, dword ptr [eax]
 	test	ecx, ecx
-	je	LBB170_62
-# %bb.61:                               #   in Loop: Header=BB170_60 Depth=1
+	je	LBB180_62
+# %bb.61:                               #   in Loop: Header=BB180_60 Depth=1
 	mov	edx, dword ptr [ebx + 48]
 	mov	esi, dword ptr [edx]
 	test	esi, esi
-	jg	LBB170_59
-LBB170_62:                              #   in Loop: Header=BB170_60 Depth=1
+	jg	LBB180_59
+LBB180_62:                              #   in Loop: Header=BB180_60 Depth=1
 	mov	eax, dword ptr [ebx]
 	mov	ecx, ebx
 	mov	eax, dword ptr [eax + 12]
 	mov	dword ptr [ebp - 16], 5
 	push	dword ptr [ebp - 52]            # 4-byte Folded Reload
 	call	eax
-# %bb.63:                               #   in Loop: Header=BB170_60 Depth=1
+# %bb.63:                               #   in Loop: Header=BB180_60 Depth=1
 	cmp	eax, -1
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
@@ -22824,22 +26339,22 @@ LBB170_62:                              #   in Loop: Header=BB170_60 Depth=1
 	cmove	eax, ecx
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
 	dec	dword ptr [ebp - 48]            # 4-byte Folded Spill
-	jne	LBB170_60
-	jmp	LBB170_72
-LBB170_64:
+	jne	LBB180_60
+	jmp	LBB180_72
+LBB180_64:
 	mov	al, 1
 	mov	dword ptr [ebp - 60], eax       # 4-byte Spill
-LBB170_65:
+LBB180_65:
 	mov	eax, dword ptr [ebp - 44]       # 4-byte Reload
 	movzx	ecx, byte ptr [ebp - 60]        # 1-byte Folded Reload
 	lea	edx, [ebp + 16]
 	mov	dword ptr [edx + 4], ebx
 	and	eax, -256
-	jmp	LBB170_73
-LBB170_66:
+	jmp	LBB180_73
+LBB180_66:
 	mov	al, 1
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-LBB170_67:
+LBB180_67:
 	mov	ecx, dword ptr [ebp - 44]       # 4-byte Reload
 	movzx	eax, byte ptr [ebp - 32]        # 1-byte Folded Reload
 	and	ecx, -256
@@ -22849,26 +26364,26 @@ LBB170_67:
 	lea	ecx, [ebp + 16]
 	mov	dword ptr [ecx], eax
 	mov	dword ptr [ecx + 4], ebx
-	je	LBB170_72
+	je	LBB180_72
 # %bb.68:
 	test	ebx, ebx
-	je	LBB170_71
+	je	LBB180_71
 # %bb.69:
 	cmp	dword ptr [ebp - 64], 15
-	jbe	LBB170_123
+	jbe	LBB180_123
 # %bb.70:
 	mov	ecx, dword ptr [ebp - 84]
-	jmp	LBB170_124
-LBB170_71:
+	jmp	LBB180_124
+LBB180_71:
 	mov	al, 1
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-LBB170_72:
+LBB180_72:
 	movzx	eax, byte ptr [ebp - 32]        # 1-byte Folded Reload
 	mov	ecx, dword ptr [ebp - 44]       # 4-byte Reload
 	lea	edx, [ebp + 16]
 	mov	dword ptr [ebp - 48], 0         # 4-byte Folded Spill
 	mov	dword ptr [edx + 4], ebx
-LBB170_73:
+LBB180_73:
 	or	ecx, eax
 	mov	dword ptr [edx], ecx
 	mov	eax, dword ptr [ebp - 56]       # 4-byte Reload
@@ -22877,20 +26392,20 @@ LBB170_73:
 	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
 	mov	dword ptr [ebp - 36], ebx       # 4-byte Spill
 	sub	eax, dword ptr [ebp - 40]       # 4-byte Folded Reload
-	je	LBB170_79
+	je	LBB180_79
 # %bb.75:
 	test	ebx, ebx
-	je	LBB170_78
+	je	LBB180_78
 # %bb.76:
 	cmp	dword ptr [ebp - 64], 15
-	jbe	LBB170_99
+	jbe	LBB180_99
 # %bb.77:
 	mov	ecx, dword ptr [ebp - 84]
-	jmp	LBB170_100
-LBB170_78:
+	jmp	LBB180_100
+LBB180_78:
 	mov	al, 1
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-LBB170_79:
+LBB180_79:
 	mov	ecx, dword ptr [ebp - 44]       # 4-byte Reload
 	movzx	eax, byte ptr [ebp - 32]        # 1-byte Folded Reload
 	and	ecx, -256
@@ -22903,16 +26418,16 @@ LBB170_79:
 	mov	ecx, dword ptr [ebp + 24]
 	mov	dword ptr [ecx + 36], 0
 	mov	dword ptr [ecx + 32], 0
-	je	LBB170_88
+	je	LBB180_88
 # %bb.80:
 	test	ebx, ebx
-	je	LBB170_87
+	je	LBB180_87
 # %bb.81:
 	movzx	eax, byte ptr [ebp + 28]
 	mov	dword ptr [ebp - 56], eax       # 4-byte Spill
-	jmp	LBB170_83
+	jmp	LBB180_83
 	.p2align	4, 0x90
-LBB170_82:                              #   in Loop: Header=BB170_83 Depth=1
+LBB180_82:                              #   in Loop: Header=BB180_83 Depth=1
 	dec	esi
 	mov	dword ptr [edx], esi
 	lea	edx, [ecx + 1]
@@ -22920,25 +26435,25 @@ LBB170_82:                              #   in Loop: Header=BB170_83 Depth=1
 	movzx	edx, byte ptr [ebp + 28]
 	mov	byte ptr [ecx], dl
 	dec	dword ptr [ebp - 48]            # 4-byte Folded Spill
-	je	LBB170_88
-LBB170_83:                              # =>This Inner Loop Header: Depth=1
+	je	LBB180_88
+LBB180_83:                              # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [ebx + 32]
 	mov	ecx, dword ptr [eax]
 	test	ecx, ecx
-	je	LBB170_85
-# %bb.84:                               #   in Loop: Header=BB170_83 Depth=1
+	je	LBB180_85
+# %bb.84:                               #   in Loop: Header=BB180_83 Depth=1
 	mov	edx, dword ptr [ebx + 48]
 	mov	esi, dword ptr [edx]
 	test	esi, esi
-	jg	LBB170_82
-LBB170_85:                              #   in Loop: Header=BB170_83 Depth=1
+	jg	LBB180_82
+LBB180_85:                              #   in Loop: Header=BB180_83 Depth=1
 	mov	eax, dword ptr [ebx]
 	mov	ecx, ebx
 	mov	eax, dword ptr [eax + 12]
 	mov	dword ptr [ebp - 16], 5
 	push	dword ptr [ebp - 56]            # 4-byte Folded Reload
 	call	eax
-# %bb.86:                               #   in Loop: Header=BB170_83 Depth=1
+# %bb.86:                               #   in Loop: Header=BB180_83 Depth=1
 	cmp	eax, -1
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
@@ -22947,12 +26462,12 @@ LBB170_85:                              #   in Loop: Header=BB170_83 Depth=1
 	cmove	eax, ecx
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
 	dec	dword ptr [ebp - 48]            # 4-byte Folded Spill
-	jne	LBB170_83
-	jmp	LBB170_88
-LBB170_87:
+	jne	LBB180_83
+	jmp	LBB180_88
+LBB180_87:
 	mov	al, 1
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-LBB170_88:
+LBB180_88:
 	movzx	eax, byte ptr [ebp - 32]        # 1-byte Folded Reload
 	mov	ecx, dword ptr [ebp - 44]       # 4-byte Reload
 	mov	esi, dword ptr [ebp + 12]
@@ -22961,52 +26476,52 @@ LBB170_88:
 	mov	dword ptr [esi], ecx
 	mov	dword ptr [esi + 4], ebx
 	cmp	eax, 16
-	jb	LBB170_93
+	jb	LBB180_93
 # %bb.89:
 	mov	ecx, dword ptr [ebp - 112]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB170_92
+	jb	LBB180_92
 # %bb.90:
 	mov	edi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edi
 	cmp	ecx, 32
-	jae	LBB170_133
+	jae	LBB180_133
 # %bb.91:
 	add	eax, 36
 	mov	ecx, edi
 	mov	edx, eax
-LBB170_92:
+LBB180_92:
 	push	edx
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB170_93:
+LBB180_93:
 	mov	eax, dword ptr [ebp - 64]
 	cmp	eax, 16
-	jb	LBB170_98
+	jb	LBB180_98
 # %bb.94:
 	mov	ecx, dword ptr [ebp - 84]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB170_97
+	jb	LBB180_97
 # %bb.95:
 	mov	edi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edi
 	cmp	ecx, 32
-	jae	LBB170_135
+	jae	LBB180_135
 # %bb.96:
 	add	eax, 36
 	mov	ecx, edi
 	mov	edx, eax
-LBB170_97:
+LBB180_97:
 	push	edx
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB170_98:
+LBB180_98:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, esi
@@ -23016,38 +26531,38 @@ LBB170_98:
 	pop	ebx
 	pop	ebp
 	ret
-LBB170_99:
+LBB180_99:
 	lea	ecx, [ebp - 84]
-LBB170_100:
+LBB180_100:
 	add	ecx, dword ptr [ebp - 40]       # 4-byte Folded Reload
-	jmp	LBB170_103
+	jmp	LBB180_103
 	.p2align	4, 0x90
-LBB170_101:                             #   in Loop: Header=BB170_103 Depth=1
+LBB180_101:                             #   in Loop: Header=BB180_103 Depth=1
 	dec	edi
 	mov	dword ptr [esi], edi
 	lea	edi, [edx + 1]
 	mov	dword ptr [ecx], edi
 	mov	byte ptr [edx], al
-LBB170_102:                             #   in Loop: Header=BB170_103 Depth=1
+LBB180_102:                             #   in Loop: Header=BB180_103 Depth=1
 	mov	ecx, dword ptr [ebp - 40]       # 4-byte Reload
 	mov	eax, dword ptr [ebp - 56]       # 4-byte Reload
 	inc	ecx
 	dec	eax
-	je	LBB170_79
-LBB170_103:                             # =>This Inner Loop Header: Depth=1
+	je	LBB180_79
+LBB180_103:                             # =>This Inner Loop Header: Depth=1
 	mov	dword ptr [ebp - 56], eax       # 4-byte Spill
 	mov	dword ptr [ebp - 40], ecx       # 4-byte Spill
 	movzx	eax, byte ptr [ecx]
 	mov	ecx, dword ptr [ebx + 32]
 	mov	edx, dword ptr [ecx]
 	test	edx, edx
-	je	LBB170_105
-# %bb.104:                              #   in Loop: Header=BB170_103 Depth=1
+	je	LBB180_105
+# %bb.104:                              #   in Loop: Header=BB180_103 Depth=1
 	mov	esi, dword ptr [ebx + 48]
 	mov	edi, dword ptr [esi]
 	test	edi, edi
-	jg	LBB170_101
-LBB170_105:                             #   in Loop: Header=BB170_103 Depth=1
+	jg	LBB180_101
+LBB180_105:                             #   in Loop: Header=BB180_103 Depth=1
 	mov	ecx, dword ptr [ebx]
 	movzx	eax, al
 	mov	edx, dword ptr [ecx + 12]
@@ -23055,7 +26570,7 @@ LBB170_105:                             #   in Loop: Header=BB170_103 Depth=1
 	mov	ecx, ebx
 	push	eax
 	call	edx
-# %bb.106:                              #   in Loop: Header=BB170_103 Depth=1
+# %bb.106:                              #   in Loop: Header=BB180_103 Depth=1
 	cmp	eax, -1
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
@@ -23063,39 +26578,39 @@ LBB170_105:                             #   in Loop: Header=BB170_103 Depth=1
 	movzx	eax, al
 	cmove	eax, ecx
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-	jmp	LBB170_102
-LBB170_107:
+	jmp	LBB180_102
+LBB180_107:
 	lea	ecx, [ebp - 84]
-LBB170_108:
+LBB180_108:
 	mov	eax, dword ptr [ebp - 40]       # 4-byte Reload
-	jmp	LBB170_111
+	jmp	LBB180_111
 	.p2align	4, 0x90
-LBB170_109:                             #   in Loop: Header=BB170_111 Depth=1
+LBB180_109:                             #   in Loop: Header=BB180_111 Depth=1
 	dec	edi
 	mov	dword ptr [esi], edi
 	lea	edi, [edx + 1]
 	mov	dword ptr [ecx], edi
 	mov	byte ptr [edx], al
-LBB170_110:                             #   in Loop: Header=BB170_111 Depth=1
+LBB180_110:                             #   in Loop: Header=BB180_111 Depth=1
 	mov	ecx, dword ptr [ebp - 52]       # 4-byte Reload
 	mov	eax, dword ptr [ebp - 60]       # 4-byte Reload
 	inc	ecx
 	dec	eax
-	je	LBB170_56
-LBB170_111:                             # =>This Inner Loop Header: Depth=1
+	je	LBB180_56
+LBB180_111:                             # =>This Inner Loop Header: Depth=1
 	mov	dword ptr [ebp - 60], eax       # 4-byte Spill
 	mov	dword ptr [ebp - 52], ecx       # 4-byte Spill
 	movzx	eax, byte ptr [ecx]
 	mov	ecx, dword ptr [ebx + 32]
 	mov	edx, dword ptr [ecx]
 	test	edx, edx
-	je	LBB170_113
-# %bb.112:                              #   in Loop: Header=BB170_111 Depth=1
+	je	LBB180_113
+# %bb.112:                              #   in Loop: Header=BB180_111 Depth=1
 	mov	esi, dword ptr [ebx + 48]
 	mov	edi, dword ptr [esi]
 	test	edi, edi
-	jg	LBB170_109
-LBB170_113:                             #   in Loop: Header=BB170_111 Depth=1
+	jg	LBB180_109
+LBB180_113:                             #   in Loop: Header=BB180_111 Depth=1
 	mov	ecx, dword ptr [ebx]
 	movzx	eax, al
 	mov	edx, dword ptr [ecx + 12]
@@ -23103,7 +26618,7 @@ LBB170_113:                             #   in Loop: Header=BB170_111 Depth=1
 	mov	ecx, ebx
 	push	eax
 	call	edx
-# %bb.114:                              #   in Loop: Header=BB170_111 Depth=1
+# %bb.114:                              #   in Loop: Header=BB180_111 Depth=1
 	cmp	eax, -1
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
@@ -23111,40 +26626,40 @@ LBB170_113:                             #   in Loop: Header=BB170_111 Depth=1
 	movzx	eax, al
 	cmove	eax, ecx
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-	jmp	LBB170_110
-LBB170_115:
+	jmp	LBB180_110
+LBB180_115:
 	lea	ecx, [ebp - 84]
-LBB170_116:
+LBB180_116:
 	mov	eax, dword ptr [ebp - 40]       # 4-byte Reload
 	mov	dword ptr [ebp - 36], ebx       # 4-byte Spill
-	jmp	LBB170_119
+	jmp	LBB180_119
 	.p2align	4, 0x90
-LBB170_117:                             #   in Loop: Header=BB170_119 Depth=1
+LBB180_117:                             #   in Loop: Header=BB180_119 Depth=1
 	dec	edi
 	mov	dword ptr [esi], edi
 	lea	edi, [edx + 1]
 	mov	dword ptr [ecx], edi
 	mov	byte ptr [edx], al
-LBB170_118:                             #   in Loop: Header=BB170_119 Depth=1
+LBB180_118:                             #   in Loop: Header=BB180_119 Depth=1
 	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	eax, dword ptr [ebp - 52]       # 4-byte Reload
 	inc	ecx
 	dec	eax
-	je	LBB170_65
-LBB170_119:                             # =>This Inner Loop Header: Depth=1
+	je	LBB180_65
+LBB180_119:                             # =>This Inner Loop Header: Depth=1
 	mov	dword ptr [ebp - 52], eax       # 4-byte Spill
 	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
 	movzx	eax, byte ptr [ecx]
 	mov	ecx, dword ptr [ebx + 32]
 	mov	edx, dword ptr [ecx]
 	test	edx, edx
-	je	LBB170_121
-# %bb.120:                              #   in Loop: Header=BB170_119 Depth=1
+	je	LBB180_121
+# %bb.120:                              #   in Loop: Header=BB180_119 Depth=1
 	mov	esi, dword ptr [ebx + 48]
 	mov	edi, dword ptr [esi]
 	test	edi, edi
-	jg	LBB170_117
-LBB170_121:                             #   in Loop: Header=BB170_119 Depth=1
+	jg	LBB180_117
+LBB180_121:                             #   in Loop: Header=BB180_119 Depth=1
 	mov	ecx, dword ptr [ebx]
 	movzx	eax, al
 	mov	edx, dword ptr [ecx + 12]
@@ -23152,7 +26667,7 @@ LBB170_121:                             #   in Loop: Header=BB170_119 Depth=1
 	mov	ecx, ebx
 	push	eax
 	call	edx
-# %bb.122:                              #   in Loop: Header=BB170_119 Depth=1
+# %bb.122:                              #   in Loop: Header=BB180_119 Depth=1
 	cmp	eax, -1
 	mov	eax, dword ptr [ebp - 60]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
@@ -23160,39 +26675,39 @@ LBB170_121:                             #   in Loop: Header=BB170_119 Depth=1
 	movzx	eax, al
 	cmove	eax, ecx
 	mov	dword ptr [ebp - 60], eax       # 4-byte Spill
-	jmp	LBB170_118
-LBB170_123:
+	jmp	LBB180_118
+LBB180_123:
 	lea	ecx, [ebp - 84]
-LBB170_124:
+LBB180_124:
 	mov	eax, dword ptr [ebp - 40]       # 4-byte Reload
-	jmp	LBB170_127
+	jmp	LBB180_127
 	.p2align	4, 0x90
-LBB170_125:                             #   in Loop: Header=BB170_127 Depth=1
+LBB180_125:                             #   in Loop: Header=BB180_127 Depth=1
 	dec	edi
 	mov	dword ptr [esi], edi
 	lea	edi, [edx + 1]
 	mov	dword ptr [ecx], edi
 	mov	byte ptr [edx], al
-LBB170_126:                             #   in Loop: Header=BB170_127 Depth=1
+LBB180_126:                             #   in Loop: Header=BB180_127 Depth=1
 	mov	ecx, dword ptr [ebp - 48]       # 4-byte Reload
 	mov	eax, dword ptr [ebp - 52]       # 4-byte Reload
 	inc	ecx
 	dec	eax
-	je	LBB170_72
-LBB170_127:                             # =>This Inner Loop Header: Depth=1
+	je	LBB180_72
+LBB180_127:                             # =>This Inner Loop Header: Depth=1
 	mov	dword ptr [ebp - 52], eax       # 4-byte Spill
 	mov	dword ptr [ebp - 48], ecx       # 4-byte Spill
 	movzx	eax, byte ptr [ecx]
 	mov	ecx, dword ptr [ebx + 32]
 	mov	edx, dword ptr [ecx]
 	test	edx, edx
-	je	LBB170_129
-# %bb.128:                              #   in Loop: Header=BB170_127 Depth=1
+	je	LBB180_129
+# %bb.128:                              #   in Loop: Header=BB180_127 Depth=1
 	mov	esi, dword ptr [ebx + 48]
 	mov	edi, dword ptr [esi]
 	test	edi, edi
-	jg	LBB170_125
-LBB170_129:                             #   in Loop: Header=BB170_127 Depth=1
+	jg	LBB180_125
+LBB180_129:                             #   in Loop: Header=BB180_127 Depth=1
 	mov	ecx, dword ptr [ebx]
 	movzx	eax, al
 	mov	edx, dword ptr [ecx + 12]
@@ -23200,7 +26715,7 @@ LBB170_129:                             #   in Loop: Header=BB170_127 Depth=1
 	mov	ecx, ebx
 	push	eax
 	call	edx
-# %bb.130:                              #   in Loop: Header=BB170_127 Depth=1
+# %bb.130:                              #   in Loop: Header=BB180_127 Depth=1
 	cmp	eax, -1
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
@@ -23208,16 +26723,16 @@ LBB170_129:                             #   in Loop: Header=BB170_127 Depth=1
 	movzx	eax, al
 	cmove	eax, ecx
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-	jmp	LBB170_126
-LBB170_131:
+	jmp	LBB180_126
+LBB180_131:
 	mov	dword ptr [ebp - 16], 5
 	call	"?_Xran@?$_String_val@U?$_Simple_types@D@std@@@std@@SAXXZ"
 # %bb.132:
-LBB170_133:
+LBB180_133:
 	mov	dword ptr [ebp - 16], 1
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.134:
-LBB170_135:
+LBB180_135:
 	mov	dword ptr [ebp - 16], 2
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.136:
@@ -23227,7 +26742,7 @@ LBB170_135:
 	.endef
 	.p2align	4, 0x90
 "?dtor$137@?0??_Iput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPADI@Z@4HA":
-LBB170_137:
+LBB180_137:
 	push	ebp
 	sub	esp, 20
 	add	ebp, 12
@@ -23238,7 +26753,7 @@ LBB170_137:
 	.endef
 	.p2align	4, 0x90
 "?dtor$138@?0??_Iput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPADI@Z@4HA":
-LBB170_138:
+LBB180_138:
 	push	ebp
 	sub	esp, 20
 	add	ebp, 12
@@ -23249,24 +26764,24 @@ LBB170_138:
 	.endef
 	.p2align	4, 0x90
 "?dtor$139@?0??_Iput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPADI@Z@4HA":
-LBB170_139:
+LBB180_139:
 	push	ebp
 	sub	esp, 20
 	add	ebp, 12
 	mov	ecx, dword ptr [ebp - 108]
 	test	ecx, ecx
-	je	LBB170_142
+	je	LBB180_142
 # %bb.140:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB170_142
+	je	LBB180_142
 # %bb.141:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB170_142:
+LBB180_142:
 	add	esp, 20
 	pop	ebp
 	ret                                     # CLEANUPRET
@@ -23276,24 +26791,24 @@ LBB170_142:
 	.endef
 	.p2align	4, 0x90
 "?dtor$143@?0??_Iput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPADI@Z@4HA":
-LBB170_143:
+LBB180_143:
 	push	ebp
 	sub	esp, 20
 	add	ebp, 12
 	mov	ecx, dword ptr [ebp - 80]
 	test	ecx, ecx
-	je	LBB170_146
+	je	LBB180_146
 # %bb.144:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB170_146
+	je	LBB180_146
 # %bb.145:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB170_146:
+LBB180_146:
 	add	esp, 20
 	pop	ebp
 	ret                                     # CLEANUPRET
@@ -23303,41 +26818,41 @@ LBB170_146:
 	.endef
 	.p2align	4, 0x90
 "?dtor$147@?0??_Iput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPADI@Z@4HA":
-LBB170_147:
+LBB180_147:
 	push	ebp
 	sub	esp, 20
 	add	ebp, 12
 	mov	eax, dword ptr [ebp - 92]
 	cmp	eax, 16
-	jb	LBB170_152
+	jb	LBB180_152
 # %bb.148:
 	mov	ecx, dword ptr [ebp - 112]
 	lea	esi, [eax + 1]
 	cmp	esi, 4096
-	jb	LBB170_151
+	jb	LBB180_151
 # %bb.149:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB170_153
+	jae	LBB180_153
 # %bb.150:
 	add	eax, 36
 	mov	ecx, edx
 	mov	esi, eax
-LBB170_151:
+LBB180_151:
 	push	esi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB170_152:
+LBB180_152:
 	mov	dword ptr [ebp - 96], 0
 	mov	dword ptr [ebp - 92], 15
 	mov	byte ptr [ebp - 112], 0
 	add	esp, 20
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB170_153:
+LBB180_153:
 	call	__invalid_parameter_noinfo_noreturn
 	.def	 "?dtor$154@?0??_Iput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPADI@Z@4HA";
 	.scl	3;
@@ -23345,40 +26860,40 @@ LBB170_153:
 	.endef
 	.p2align	4, 0x90
 "?dtor$154@?0??_Iput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPADI@Z@4HA":
-LBB170_154:
+LBB180_154:
 	push	ebp
 	sub	esp, 20
 	add	ebp, 12
 	mov	eax, dword ptr [ebp - 64]
 	cmp	eax, 16
-	jb	LBB170_159
+	jb	LBB180_159
 # %bb.155:
 	mov	ecx, dword ptr [ebp - 84]
 	lea	esi, [eax + 1]
 	cmp	esi, 4096
-	jb	LBB170_158
+	jb	LBB180_158
 # %bb.156:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB170_160
+	jae	LBB180_160
 # %bb.157:
 	add	eax, 36
 	mov	ecx, edx
 	mov	esi, eax
-LBB170_158:
+LBB180_158:
 	push	esi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB170_159:
+LBB180_159:
 	add	esp, 20
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB170_160:
+LBB180_160:
 	call	__invalid_parameter_noinfo_noreturn
-Lfunc_end64:
+Lfunc_end67:
 	.section	.xdata,"dr",associative,"?_Iput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPADI@Z"
 	.p2align	2
 "L__ehtable$?_Iput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPADI@Z":
@@ -23453,7 +26968,7 @@ _sprintf_s:                             # @sprintf_s
 	.globl	"??$use_facet@V?$numpunct@D@std@@@std@@YAABV?$numpunct@D@0@ABVlocale@0@@Z" # -- Begin function ??$use_facet@V?$numpunct@D@std@@@std@@YAABV?$numpunct@D@0@ABVlocale@0@@Z
 	.p2align	4, 0x90
 "??$use_facet@V?$numpunct@D@std@@@std@@YAABV?$numpunct@D@0@ABVlocale@0@@Z": # @"??$use_facet@V?$numpunct@D@std@@@std@@YAABV?$numpunct@D@0@ABVlocale@0@@Z"
-Lfunc_begin65:
+Lfunc_begin68:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -23476,38 +26991,38 @@ Lfunc_begin65:
 	mov	eax, dword ptr ["?_Psave@?$_Facetptr@V?$numpunct@D@std@@@std@@2PBVfacet@locale@2@B"]
 	test	edx, edx
 	mov	dword ptr [ebp - 36], eax
-	je	LBB172_1
+	je	LBB182_1
 # %bb.4:
 	mov	eax, dword ptr [edi + 4]
 	cmp	dword ptr [eax + 12], edx
-	ja	LBB172_5
-	jmp	LBB172_6
-LBB172_1:
+	ja	LBB182_5
+	jmp	LBB182_6
+LBB182_1:
 	lea	ecx, [ebp - 44]
 	push	0
 	call	"??0_Lockit@std@@QAE@H@Z"
 	cmp	dword ptr ["?id@?$numpunct@D@std@@2V0locale@2@A"], 0
-	jne	LBB172_3
+	jne	LBB182_3
 # %bb.2:
 	mov	eax, dword ptr ["?_Id_cnt@id@locale@std@@0HA"]
 	inc	eax
 	mov	dword ptr ["?_Id_cnt@id@locale@std@@0HA"], eax
 	mov	dword ptr ["?id@?$numpunct@D@std@@2V0locale@2@A"], eax
-LBB172_3:
+LBB182_3:
 	lea	ecx, [ebp - 44]
 	call	"??1_Lockit@std@@QAE@XZ"
 	mov	edx, dword ptr ["?id@?$numpunct@D@std@@2V0locale@2@A"]
 	mov	eax, dword ptr [edi + 4]
 	cmp	dword ptr [eax + 12], edx
-	jbe	LBB172_6
-LBB172_5:
+	jbe	LBB182_6
+LBB182_5:
 	mov	ecx, dword ptr [eax + 8]
 	mov	esi, dword ptr [ecx + 4*edx]
 	test	esi, esi
-	jne	LBB172_17
-LBB172_6:
+	jne	LBB182_17
+LBB182_6:
 	cmp	byte ptr [eax + 20], 0
-	je	LBB172_10
+	je	LBB182_10
 # %bb.7:
 	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
 	mov	dword ptr [ebp - 16], 0
@@ -23516,16 +27031,16 @@ LBB172_6:
 	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	edi, dword ptr [ebp + 8]
 	cmp	dword ptr [eax + 12], ecx
-	jbe	LBB172_10
+	jbe	LBB182_10
 # %bb.9:
 	mov	eax, dword ptr [eax + 8]
 	mov	esi, dword ptr [eax + 4*ecx]
 	test	esi, esi
-	jne	LBB172_17
-LBB172_10:
+	jne	LBB182_17
+LBB182_10:
 	mov	esi, dword ptr [ebp - 36]
 	test	esi, esi
-	jne	LBB172_17
+	jne	LBB182_17
 # %bb.11:
 	lea	eax, [ebp - 36]
 	mov	dword ptr [ebp - 16], 0
@@ -23535,7 +27050,7 @@ LBB172_10:
 	add	esp, 8
 # %bb.12:
 	cmp	eax, -1
-	je	LBB172_13
+	je	LBB182_13
 # %bb.15:
 	mov	eax, dword ptr [ebp - 36]
 	mov	dword ptr [ebp - 16], 1
@@ -23549,7 +27064,7 @@ LBB172_10:
 	call	dword ptr [eax + 4]
 	mov	esi, dword ptr [ebp - 36]
 	mov	dword ptr ["?_Psave@?$_Facetptr@V?$numpunct@D@std@@@std@@2PBVfacet@locale@2@B"], esi
-LBB172_17:
+LBB182_17:
 	lea	ecx, [ebp - 40]
 	call	"??1_Lockit@std@@QAE@XZ"
 	mov	eax, dword ptr [ebp - 24]
@@ -23561,7 +27076,7 @@ LBB172_17:
 	pop	ebx
 	pop	ebp
 	ret
-LBB172_13:
+LBB182_13:
 	call	"?_Throw_bad_cast@std@@YAXXZ"
 # %bb.14:
 	.def	 "?dtor$18@?0???$use_facet@V?$numpunct@D@std@@@std@@YAABV?$numpunct@D@0@ABVlocale@0@@Z@4HA";
@@ -23570,18 +27085,18 @@ LBB172_13:
 	.endef
 	.p2align	4, 0x90
 "?dtor$18@?0???$use_facet@V?$numpunct@D@std@@@std@@YAABV?$numpunct@D@0@ABVlocale@0@@Z@4HA":
-LBB172_18:
+LBB182_18:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
 	cmp	dword ptr [ebp - 32], 0         # 4-byte Folded Reload
-	je	LBB172_20
+	je	LBB182_20
 # %bb.19:
 	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	eax, dword ptr [ecx]
 	push	1
 	call	dword ptr [eax]
-LBB172_20:
+LBB182_20:
 	add	esp, 8
 	pop	ebp
 	ret                                     # CLEANUPRET
@@ -23591,7 +27106,7 @@ LBB172_20:
 	.endef
 	.p2align	4, 0x90
 "?dtor$21@?0???$use_facet@V?$numpunct@D@std@@@std@@YAABV?$numpunct@D@0@ABVlocale@0@@Z@4HA":
-LBB172_21:
+LBB182_21:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
@@ -23600,7 +27115,7 @@ LBB172_21:
 	add	esp, 8
 	pop	ebp
 	ret                                     # CLEANUPRET
-Lfunc_end65:
+Lfunc_end68:
 	.section	.xdata,"dr",associative,"??$use_facet@V?$numpunct@D@std@@@std@@YAABV?$numpunct@D@0@ABVlocale@0@@Z"
 	.p2align	2
 "L__ehtable$??$use_facet@V?$numpunct@D@std@@@std@@YAABV?$numpunct@D@0@ABVlocale@0@@Z":
@@ -23628,7 +27143,7 @@ Lfunc_end65:
 	.globl	"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@ID@Z@D@Z" # -- Begin function ??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@ID@Z@D@Z
 	.p2align	4, 0x90
 "??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@ID@Z@D@Z": # @"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@ID@Z@D@Z"
-Lfunc_begin66:
+Lfunc_begin69:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -23646,7 +27161,7 @@ Lfunc_begin66:
 	test	edx, edx
 	mov	dword ptr [ebp - 24], ecx
 	mov	dword ptr fs:[0], eax
-	js	LBB173_18
+	js	LBB183_18
 # %bb.1:
 	mov	ebx, dword ptr [esi + 20]
 	mov	ecx, edx
@@ -23654,26 +27169,26 @@ Lfunc_begin66:
 	mov	dword ptr [ebp - 32], 2147483647 # 4-byte Folded Spill
 	or	ecx, 15
 	mov	dword ptr [ebp - 36], ebx       # 4-byte Spill
-	js	LBB173_5
+	js	LBB183_5
 # %bb.2:
 	mov	edx, ebx
 	shr	edx
 	mov	edi, edx
 	xor	edi, 2147483647
 	cmp	edi, ebx
-	jb	LBB173_5
+	jb	LBB183_5
 # %bb.3:
 	add	edx, ebx
 	cmp	ecx, edx
 	cmovae	edx, ecx
 	lea	eax, [edx + 1]
 	cmp	eax, 4096
-	jb	LBB173_6
+	jb	LBB183_6
 # %bb.4:
 	cmp	eax, -35
 	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
-	jae	LBB173_19
-LBB173_5:
+	jae	LBB183_19
+LBB183_5:
 	add	eax, 35
 	push	eax
 	call	"??2@YAPAXI@Z"
@@ -23682,7 +27197,7 @@ LBB173_5:
 	lea	edi, [eax + 35]
 	and	edi, -32
 	mov	dword ptr [edi - 4], eax
-LBB173_9:
+LBB183_9:
 	mov	al, byte ptr [ebp + 16]
 	mov	ebx, dword ptr [ebp + 8]
 	mov	dword ptr [esi + 16], ebx
@@ -23696,28 +27211,28 @@ LBB173_9:
 	mov	byte ptr [edi + ebx], 0
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
 	cmp	ebx, 16
-	jb	LBB173_17
+	jb	LBB183_17
 # %bb.10:
 	mov	eax, dword ptr [esi]
 	lea	ecx, [ebx + 1]
 	cmp	ecx, 4096
-	jb	LBB173_16
+	jb	LBB183_16
 # %bb.11:
 	mov	edx, dword ptr [eax - 4]
 	add	eax, -4
 	sub	eax, edx
 	cmp	eax, 32
-	jae	LBB173_12
+	jae	LBB183_12
 # %bb.15:
 	add	ebx, 36
 	mov	eax, edx
 	mov	ecx, ebx
-LBB173_16:
+LBB183_16:
 	push	ecx
 	push	eax
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB173_17:
+LBB183_17:
 	mov	dword ptr [esi], edi
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
@@ -23728,9 +27243,9 @@ LBB173_17:
 	pop	ebx
 	pop	ebp
 	ret	12
-LBB173_6:
+LBB183_6:
 	test	eax, eax
-	je	LBB173_7
+	je	LBB183_7
 # %bb.8:
 	push	eax
 	mov	edi, edx
@@ -23738,18 +27253,18 @@ LBB173_6:
 	mov	edx, edi
 	add	esp, 4
 	mov	edi, eax
-	jmp	LBB173_9
-LBB173_7:
+	jmp	LBB183_9
+LBB183_7:
 	xor	edi, edi
 	mov	edx, -1
-	jmp	LBB173_9
-LBB173_18:
+	jmp	LBB183_9
+LBB183_18:
 	call	"?_Xlen_string@std@@YAXXZ"
-LBB173_12:
+LBB183_12:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.13:
-LBB173_19:
+LBB183_19:
 	call	"?_Throw_bad_array_new_length@std@@YAXXZ"
 	.def	 "?dtor$14@?0???$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@ID@Z@D@Z@4HA";
 	.scl	3;
@@ -23757,12 +27272,12 @@ LBB173_19:
 	.endef
 	.p2align	4, 0x90
 "?dtor$14@?0???$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@ID@Z@D@Z@4HA":
-LBB173_14:
+LBB183_14:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end66:
+Lfunc_end69:
 	.section	.xdata,"dr",associative,"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@ID@Z@D@Z"
 	.p2align	2
 "L__ehtable$??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@ID@Z@D@Z":
@@ -23788,7 +27303,7 @@ Lfunc_end66:
 	.globl	"?_Getcat@?$numpunct@D@std@@SAIPAPBVfacet@locale@2@PBV42@@Z" # -- Begin function ?_Getcat@?$numpunct@D@std@@SAIPAPBVfacet@locale@2@PBV42@@Z
 	.p2align	4, 0x90
 "?_Getcat@?$numpunct@D@std@@SAIPAPBVfacet@locale@2@PBV42@@Z": # @"?_Getcat@?$numpunct@D@std@@SAIPAPBVfacet@locale@2@PBV42@@Z"
-Lfunc_begin67:
+Lfunc_begin70:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -23805,10 +27320,10 @@ Lfunc_begin67:
 	test	edx, edx
 	mov	dword ptr [ebp - 24], ecx
 	mov	dword ptr fs:[0], eax
-	je	LBB174_8
+	je	LBB184_8
 # %bb.1:
 	cmp	dword ptr [edx], 0
-	jne	LBB174_8
+	jne	LBB184_8
 # %bb.2:
 	mov	esi, dword ptr [ebp + 12]
 	push	24
@@ -23817,7 +27332,7 @@ Lfunc_begin67:
 	mov	edx, dword ptr [esi + 4]
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
 	test	edx, edx
-	je	LBB174_3
+	je	LBB184_3
 # %bb.4:
 	mov	ecx, dword ptr [edx + 24]
 	add	edx, 28
@@ -23827,14 +27342,14 @@ Lfunc_begin67:
 	lea	ecx, [ebp - 84]
 	push	edx
 	call	"??0_Locinfo@std@@QAE@PBD@Z"
-	jmp	LBB174_6
-LBB174_3:
+	jmp	LBB184_6
+LBB184_3:
 	mov	edx, offset "??_C@_00CNPNBAHC@?$AA@"
 	mov	dword ptr [ebp - 16], 0
 	lea	ecx, [ebp - 84]
 	push	edx
 	call	"??0_Locinfo@std@@QAE@PBD@Z"
-LBB174_6:
+LBB184_6:
 	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	dword ptr [ebp - 16], 1
 	mov	dword ptr [ecx + 4], 0
@@ -23849,7 +27364,7 @@ LBB174_6:
 	mov	dword ptr [eax], ecx
 	lea	ecx, [ebp - 84]
 	call	"??1_Locinfo@std@@QAE@XZ"
-LBB174_8:
+LBB184_8:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, 4
@@ -23865,7 +27380,7 @@ LBB174_8:
 	.endef
 	.p2align	4, 0x90
 "?dtor$9@?0??_Getcat@?$numpunct@D@std@@SAIPAPBVfacet@locale@2@PBV42@@Z@4HA":
-LBB174_9:
+LBB184_9:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
@@ -23880,7 +27395,7 @@ LBB174_9:
 	.endef
 	.p2align	4, 0x90
 "?dtor$10@?0??_Getcat@?$numpunct@D@std@@SAIPAPBVfacet@locale@2@PBV42@@Z@4HA":
-LBB174_10:
+LBB184_10:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
@@ -23889,7 +27404,7 @@ LBB174_10:
 	add	esp, 12
 	pop	ebp
 	ret                                     # CLEANUPRET
-Lfunc_end67:
+Lfunc_end70:
 	.section	.xdata,"dr",associative,"?_Getcat@?$numpunct@D@std@@SAIPAPBVfacet@locale@2@PBV42@@Z"
 	.p2align	2
 "L__ehtable$?_Getcat@?$numpunct@D@std@@SAIPAPBVfacet@locale@2@PBV42@@Z":
@@ -23917,7 +27432,7 @@ Lfunc_end67:
 	.globl	"?_Init@?$numpunct@D@std@@IAEXABV_Locinfo@2@_N@Z" # -- Begin function ?_Init@?$numpunct@D@std@@IAEXABV_Locinfo@2@_N@Z
 	.p2align	4, 0x90
 "?_Init@?$numpunct@D@std@@IAEXABV_Locinfo@2@_N@Z": # @"?_Init@?$numpunct@D@std@@IAEXABV_Locinfo@2@_N@Z"
-Lfunc_begin68:
+Lfunc_begin71:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -23952,11 +27467,11 @@ Lfunc_begin68:
 	mov	bh, byte ptr [ebp + 12]
 	mov	edi, offset "??_C@_00CNPNBAHC@?$AA@"
 	test	bh, bh
-	jne	LBB175_3
+	jne	LBB185_3
 # %bb.2:
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	edi, dword ptr [eax + 8]
-LBB175_3:
+LBB185_3:
 	push	edi
 	call	_strlen
 	add	esp, 4
@@ -23967,34 +27482,34 @@ LBB175_3:
 	call	_calloc
 	add	esp, 8
 	test	eax, eax
-	je	LBB175_18
+	je	LBB185_18
 # %bb.4:
 	test	esi, esi
-	je	LBB175_14
+	je	LBB185_14
 # %bb.5:
 	cmp	esi, 31
-	jbe	LBB175_6
+	jbe	LBB185_6
 # %bb.9:
 	lea	ecx, [edi + esi]
 	cmp	eax, ecx
-	jae	LBB175_11
+	jae	LBB185_11
 # %bb.10:
 	lea	ecx, [eax + esi]
 	cmp	edi, ecx
-	jae	LBB175_11
-LBB175_6:
+	jae	LBB185_11
+LBB185_6:
 	mov	ecx, eax
 	mov	edx, edi
-LBB175_7:
+LBB185_7:
 	xor	edi, edi
 	.p2align	4, 0x90
-LBB175_8:                               # =>This Inner Loop Header: Depth=1
+LBB185_8:                               # =>This Inner Loop Header: Depth=1
 	mov	bl, byte ptr [edx + edi]
 	mov	byte ptr [ecx + edi], bl
 	inc	edi
 	cmp	esi, edi
-	jne	LBB175_8
-LBB175_14:
+	jne	LBB185_8
+LBB185_14:
 	mov	esi, dword ptr [ebp - 36]       # 4-byte Reload
 	mov	dword ptr [esi + 8], eax
 	push	1
@@ -24002,7 +27517,7 @@ LBB175_14:
 	call	_calloc
 	add	esp, 8
 	test	eax, eax
-	je	LBB175_20
+	je	LBB185_20
 # %bb.15:
 	mov	dword ptr [eax], 1936482662
 	mov	byte ptr [eax + 4], 101
@@ -24012,24 +27527,24 @@ LBB175_14:
 	call	_calloc
 	add	esp, 8
 	test	eax, eax
-	je	LBB175_22
+	je	LBB185_22
 # %bb.16:
 	test	bh, bh
 	mov	dword ptr [eax], 1702195828
 	mov	dword ptr [esi + 20], eax
-	je	LBB175_24
+	je	LBB185_24
 # %bb.17:
 	mov	byte ptr [esi + 12], 46
 	mov	al, 44
-	jmp	LBB175_25
-LBB175_24:
+	jmp	LBB185_25
+LBB185_24:
 	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	eax, dword ptr [ecx]
 	mov	al, byte ptr [eax]
 	mov	byte ptr [esi + 12], al
 	mov	eax, dword ptr [ecx + 4]
 	mov	al, byte ptr [eax]
-LBB175_25:
+LBB185_25:
 	mov	byte ptr [esi + 13], al
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
@@ -24039,7 +27554,7 @@ LBB175_25:
 	pop	ebx
 	pop	ebp
 	ret	8
-LBB175_11:
+LBB185_11:
 	mov	edx, esi
 	mov	ecx, eax
 	mov	dword ptr [ebp - 44], esi       # 4-byte Spill
@@ -24050,28 +27565,28 @@ LBB175_11:
 	mov	dword ptr [ebp - 40], edx       # 4-byte Spill
 	add	edx, edi
 	.p2align	4, 0x90
-LBB175_12:                              # =>This Inner Loop Header: Depth=1
+LBB185_12:                              # =>This Inner Loop Header: Depth=1
 	movups	xmm0, xmmword ptr [edi + ebx]
 	movups	xmm1, xmmword ptr [edi + ebx + 16]
 	movups	xmmword ptr [eax + ebx], xmm0
 	movups	xmmword ptr [eax + ebx + 16], xmm1
 	add	ebx, 32
 	cmp	dword ptr [ebp - 40], ebx       # 4-byte Folded Reload
-	jne	LBB175_12
+	jne	LBB185_12
 # %bb.13:
 	mov	edi, dword ptr [ebp - 40]       # 4-byte Reload
 	mov	bh, byte ptr [ebp + 12]
 	cmp	dword ptr [ebp - 44], edi       # 4-byte Folded Reload
-	jne	LBB175_7
-	jmp	LBB175_14
-LBB175_18:
+	jne	LBB185_7
+	jmp	LBB185_14
+LBB185_18:
 	call	"?_Xbad_alloc@std@@YAXXZ"
 # %bb.19:
-LBB175_20:
+LBB185_20:
 	mov	dword ptr [ebp - 16], 0
 	call	"?_Xbad_alloc@std@@YAXXZ"
 # %bb.21:
-LBB175_22:
+LBB185_22:
 	mov	dword ptr [ebp - 16], 0
 	call	"?_Xbad_alloc@std@@YAXXZ"
 # %bb.23:
@@ -24081,7 +27596,7 @@ LBB175_22:
 	.endef
 	.p2align	4, 0x90
 "?dtor$26@?0??_Init@?$numpunct@D@std@@IAEXABV_Locinfo@2@_N@Z@4HA":
-LBB175_26:
+LBB185_26:
 	push	ebp
 	sub	esp, 8
 	add	ebp, 12
@@ -24097,7 +27612,7 @@ LBB175_26:
 	add	esp, 12
 	pop	ebp
 	ret                                     # CLEANUPRET
-Lfunc_end68:
+Lfunc_end71:
 	.section	.xdata,"dr",associative,"?_Init@?$numpunct@D@std@@IAEXABV_Locinfo@2@_N@Z"
 	.p2align	2
 "L__ehtable$?_Init@?$numpunct@D@std@@IAEXABV_Locinfo@2@_N@Z":
@@ -24137,12 +27652,12 @@ Lfunc_end68:
 	call	_free
 	add	esp, 4
 	cmp	dword ptr [esp + 8], 0
-	je	LBB176_2
+	je	LBB186_2
 # %bb.1:
 	push	esi
 	call	"??3@YAXPAX@Z"
 	add	esp, 4
-LBB176_2:
+LBB186_2:
 	mov	eax, esi
 	pop	esi
 	ret	4
@@ -24194,7 +27709,7 @@ LBB176_2:
 	add	esp, 4
 	mov	edi, eax
 	cmp	eax, 15
-	jbe	LBB179_1
+	jbe	LBB189_1
 # %bb.2:
 	sub	esp, 12
 	mov	al, byte ptr [esp + 12]
@@ -24203,8 +27718,8 @@ LBB176_2:
 	mov	dword ptr [esp + 8], ebx
 	mov	dword ptr [esp], edi
 	call	"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z"
-	jmp	LBB179_3
-LBB179_1:
+	jmp	LBB189_3
+LBB189_1:
 	mov	dword ptr [esi + 16], edi
 	push	edi
 	push	ebx
@@ -24212,7 +27727,7 @@ LBB179_1:
 	call	_memmove
 	add	esp, 12
 	mov	byte ptr [esi + edi], 0
-LBB179_3:
+LBB189_3:
 	mov	eax, esi
 	add	esp, 4
 	pop	esi
@@ -24243,7 +27758,7 @@ LBB179_3:
 	add	esp, 4
 	mov	edi, eax
 	cmp	eax, 15
-	jbe	LBB180_1
+	jbe	LBB190_1
 # %bb.2:
 	sub	esp, 12
 	mov	al, byte ptr [esp + 12]
@@ -24252,8 +27767,8 @@ LBB179_3:
 	mov	dword ptr [esp + 8], ebx
 	mov	dword ptr [esp], edi
 	call	"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z"
-	jmp	LBB180_3
-LBB180_1:
+	jmp	LBB190_3
+LBB190_1:
 	mov	dword ptr [esi + 16], edi
 	push	edi
 	push	ebx
@@ -24261,7 +27776,7 @@ LBB180_1:
 	call	_memmove
 	add	esp, 12
 	mov	byte ptr [esi + edi], 0
-LBB180_3:
+LBB190_3:
 	mov	eax, esi
 	add	esp, 4
 	pop	esi
@@ -24292,7 +27807,7 @@ LBB180_3:
 	add	esp, 4
 	mov	edi, eax
 	cmp	eax, 15
-	jbe	LBB181_1
+	jbe	LBB191_1
 # %bb.2:
 	sub	esp, 12
 	mov	al, byte ptr [esp + 12]
@@ -24301,8 +27816,8 @@ LBB180_3:
 	mov	dword ptr [esp + 8], ebx
 	mov	dword ptr [esp], edi
 	call	"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z"
-	jmp	LBB181_3
-LBB181_1:
+	jmp	LBB191_3
+LBB191_1:
 	mov	dword ptr [esi + 16], edi
 	push	edi
 	push	ebx
@@ -24310,7 +27825,7 @@ LBB181_1:
 	call	_memmove
 	add	esp, 12
 	mov	byte ptr [esi + edi], 0
-LBB181_3:
+LBB191_3:
 	mov	eax, esi
 	add	esp, 4
 	pop	esi
@@ -24326,7 +27841,7 @@ LBB181_3:
 	.globl	"??$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IID@Z@IID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IID@Z@IID@Z" # -- Begin function ??$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IID@Z@IID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IID@Z@IID@Z
 	.p2align	4, 0x90
 "??$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IID@Z@IID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IID@Z@IID@Z": # @"??$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IID@Z@IID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IID@Z@IID@Z"
-Lfunc_begin69:
+Lfunc_begin72:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -24347,7 +27862,7 @@ Lfunc_begin69:
 	mov	ecx, dword ptr [ebx + 16]
 	sub	eax, ecx
 	cmp	eax, esi
-	jb	LBB182_19
+	jb	LBB192_19
 # %bb.1:
 	mov	edi, dword ptr [ebx + 20]
 	add	esi, ecx
@@ -24356,7 +27871,7 @@ Lfunc_begin69:
 	mov	dword ptr [ebp - 32], 2147483647 # 4-byte Folded Spill
 	mov	ecx, esi
 	or	ecx, 15
-	js	LBB182_5
+	js	LBB192_5
 # %bb.2:
 	mov	edx, edi
 	mov	dword ptr [ebp - 36], esi       # 4-byte Spill
@@ -24367,19 +27882,19 @@ Lfunc_begin69:
 	cmp	edi, esi
 	mov	edi, esi
 	mov	esi, dword ptr [ebp - 36]       # 4-byte Reload
-	jb	LBB182_5
+	jb	LBB192_5
 # %bb.3:
 	add	edx, edi
 	cmp	ecx, edx
 	cmovae	edx, ecx
 	lea	eax, [edx + 1]
 	cmp	eax, 4096
-	jb	LBB182_6
+	jb	LBB192_6
 # %bb.4:
 	cmp	eax, -35
 	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
-	jae	LBB182_20
-LBB182_5:
+	jae	LBB192_20
+LBB192_5:
 	add	eax, 35
 	push	eax
 	call	"??2@YAPAXI@Z"
@@ -24388,13 +27903,13 @@ LBB182_5:
 	lea	ecx, [eax + 35]
 	and	ecx, -32
 	mov	dword ptr [ecx - 4], eax
-LBB182_9:
+LBB192_9:
 	mov	dword ptr [ebx + 16], esi
 	mov	esi, dword ptr [ebp + 16]
 	cmp	edi, 16
 	mov	dword ptr [ebx + 20], edx
 	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
-	jb	LBB182_17
+	jb	LBB192_17
 # %bb.10:
 	mov	dword ptr [ebp - 44], edi       # 4-byte Spill
 	mov	edi, dword ptr [ebx]
@@ -24427,26 +27942,26 @@ LBB182_9:
 	mov	edx, eax
 	inc	eax
 	cmp	eax, 4096
-	jb	LBB182_16
+	jb	LBB192_16
 # %bb.11:
 	mov	ecx, dword ptr [edi - 4]
 	add	edi, -4
 	sub	edi, ecx
 	cmp	edi, 32
-	jae	LBB182_12
+	jae	LBB192_12
 # %bb.15:
 	mov	eax, edx
 	mov	edi, ecx
 	add	eax, 36
-LBB182_16:
+LBB192_16:
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
 	push	eax
 	push	edi
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
-	jmp	LBB182_18
-LBB182_17:
+	jmp	LBB192_18
+LBB192_17:
 	push	esi
 	push	ebx
 	push	ecx
@@ -24472,7 +27987,7 @@ LBB182_17:
 	call	_memcpy
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	add	esp, 12
-LBB182_18:
+LBB192_18:
 	mov	dword ptr [ebx], eax
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
@@ -24483,9 +27998,9 @@ LBB182_18:
 	pop	ebx
 	pop	ebp
 	ret	20
-LBB182_6:
+LBB192_6:
 	test	eax, eax
-	je	LBB182_7
+	je	LBB192_7
 # %bb.8:
 	push	eax
 	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
@@ -24493,18 +28008,18 @@ LBB182_6:
 	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
 	add	esp, 4
 	mov	ecx, eax
-	jmp	LBB182_9
-LBB182_7:
+	jmp	LBB192_9
+LBB192_7:
 	xor	ecx, ecx
 	mov	edx, -1
-	jmp	LBB182_9
-LBB182_19:
+	jmp	LBB192_9
+LBB192_19:
 	call	"?_Xlen_string@std@@YAXXZ"
-LBB182_12:
+LBB192_12:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.13:
-LBB182_20:
+LBB192_20:
 	call	"?_Throw_bad_array_new_length@std@@YAXXZ"
 	.def	 "?dtor$14@?0???$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IID@Z@IID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IID@Z@IID@Z@4HA";
 	.scl	3;
@@ -24512,12 +28027,12 @@ LBB182_20:
 	.endef
 	.p2align	4, 0x90
 "?dtor$14@?0???$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IID@Z@IID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IID@Z@IID@Z@4HA":
-LBB182_14:
+LBB192_14:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end69:
+Lfunc_end72:
 	.section	.xdata,"dr",associative,"??$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IID@Z@IID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IID@Z@IID@Z"
 	.p2align	2
 "L__ehtable$??$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IID@Z@IID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IID@Z@IID@Z":
@@ -24555,7 +28070,7 @@ ___local_stdio_printf_options:          # @__local_stdio_printf_options
 	.globl	"?_Fput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPBDI@Z" # -- Begin function ?_Fput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPBDI@Z
 	.p2align	4, 0x90
 "?_Fput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPBDI@Z": # @"?_Fput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPBDI@Z"
-Lfunc_begin70:
+Lfunc_begin73:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -24573,41 +28088,41 @@ Lfunc_begin70:
 	test	edi, edi
 	mov	dword ptr [ebp - 24], ecx
 	mov	dword ptr fs:[0], eax
-	je	LBB184_2
+	je	LBB194_2
 # %bb.1:
 	mov	al, byte ptr [ebx]
 	add	al, -43
 	test	al, -3
 	sete	dl
-	jmp	LBB184_3
-LBB184_2:
+	jmp	LBB194_3
+LBB194_2:
 	xor	edx, edx
-LBB184_3:
+LBB194_3:
 	mov	eax, dword ptr [ebp + 24]
 	mov	esi, 12288
 	movzx	ecx, dl
 	and	esi, dword ptr [eax + 20]
 	mov	eax, offset "??_C@_02MDKMJEGG@eE?$AA@"
 	cmp	esi, 12288
-	jne	LBB184_7
+	jne	LBB194_7
 # %bb.4:
 	movzx	edx, dl
 	mov	eax, offset "??_C@_02OOPEBDOJ@pP?$AA@"
 	lea	esi, [edx + 2]
 	cmp	esi, edi
 	mov	dword ptr [ebp - 40], esi       # 4-byte Spill
-	ja	LBB184_7
+	ja	LBB194_7
 # %bb.5:
 	cmp	byte ptr [ebx + ecx], 48
-	jne	LBB184_7
+	jne	LBB194_7
 # %bb.6:
 	mov	dl, byte ptr [edx + ebx + 1]
 	or	dl, 32
 	cmp	dl, 120
-	je	LBB184_8
-LBB184_7:
+	je	LBB194_8
+LBB194_7:
 	mov	dword ptr [ebp - 40], ecx       # 4-byte Spill
-LBB184_8:
+LBB194_8:
 	push	eax
 	push	ebx
 	call	_strcspn
@@ -24641,24 +28156,24 @@ LBB184_8:
 	mov	edi, dword ptr [ebp + 36]
 	mov	esi, eax
 	test	ecx, ecx
-	je	LBB184_12
+	je	LBB194_12
 # %bb.10:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB184_12
+	je	LBB194_12
 # %bb.11:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB184_12:
+LBB194_12:
 	mov	ebx, dword ptr [ebp + 32]
 	cmp	edi, 15
 	mov	dword ptr [ebp - 64], 15
 	mov	dword ptr [ebp - 68], 0
 	mov	byte ptr [ebp - 84], 0
-	jbe	LBB184_14
+	jbe	LBB194_14
 # %bb.13:
 	mov	dword ptr [ebp - 16], -1
 	sub	esp, 12
@@ -24669,9 +28184,9 @@ LBB184_12:
 	mov	dword ptr [esp + 8], 0
 	call	"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@ID@Z@D@Z"
 	cmp	dword ptr [ebp - 64], 15
-	ja	LBB184_15
-	jmp	LBB184_16
-LBB184_14:
+	ja	LBB194_15
+	jmp	LBB194_16
+LBB194_14:
 	mov	dword ptr [ebp - 68], edi
 	push	edi
 	push	0
@@ -24681,11 +28196,11 @@ LBB184_14:
 	add	esp, 12
 	mov	byte ptr [ebp + edi - 84], 0
 	cmp	dword ptr [ebp - 64], 15
-	jbe	LBB184_16
-LBB184_15:
+	jbe	LBB194_16
+LBB194_15:
 	mov	eax, dword ptr [ebp - 84]
 	mov	dword ptr [ebp - 36], eax       # 4-byte Spill
-LBB184_16:
+LBB194_16:
 	mov	ecx, dword ptr [esi]
 	lea	eax, [ebx + edi]
 	mov	edx, dword ptr [ecx + 28]
@@ -24711,18 +28226,18 @@ LBB184_16:
 	mov	ecx, dword ptr [ebp - 108]
 	mov	esi, eax
 	test	ecx, ecx
-	je	LBB184_21
+	je	LBB194_21
 # %bb.19:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB184_21
+	je	LBB194_21
 # %bb.20:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB184_21:
+LBB194_21:
 	mov	eax, dword ptr [esi]
 	lea	edx, [ebp - 112]
 	mov	ecx, esi
@@ -24743,7 +28258,7 @@ LBB184_21:
 # %bb.23:
 	mov	eax, dword ptr [ebp - 44]       # 4-byte Reload
 	cmp	eax, dword ptr [ebp + 36]
-	je	LBB184_29
+	je	LBB194_29
 # %bb.24:
 	mov	ecx, dword ptr [ebp - 36]       # 4-byte Reload
 	mov	eax, dword ptr [ecx]
@@ -24751,26 +28266,26 @@ LBB184_21:
 	lea	ebx, [ebp - 112]
 # %bb.25:
 	cmp	dword ptr [ebp - 64], 15
-	jbe	LBB184_27
+	jbe	LBB194_27
 # %bb.26:
 	mov	ecx, dword ptr [ebp - 84]
-	jmp	LBB184_28
-LBB184_27:
+	jmp	LBB194_28
+LBB194_27:
 	lea	ecx, [ebp - 84]
-LBB184_28:
+LBB194_28:
 	mov	edi, dword ptr [ebp - 44]       # 4-byte Reload
 	mov	byte ptr [ecx + edi], al
-LBB184_29:
+LBB194_29:
 	cmp	dword ptr [ebp - 92], 15
-	jbe	LBB184_31
+	jbe	LBB194_31
 # %bb.30:
 	mov	ebx, dword ptr [ebp - 112]
-LBB184_31:
+LBB194_31:
 	movsx	eax, byte ptr [ebp - 60]        # 1-byte Folded Reload
 	mov	dword ptr [ebp - 44], eax       # 4-byte Spill
-	jmp	LBB184_34
+	jmp	LBB194_34
 	.p2align	4, 0x90
-LBB184_32:                              #   in Loop: Header=BB184_34 Depth=1
+LBB194_32:                              #   in Loop: Header=BB194_34 Depth=1
 	inc	eax
 	lea	ecx, [esi + edi]
 	lea	edx, [esi + edi + 1]
@@ -24781,32 +28296,32 @@ LBB184_32:                              #   in Loop: Header=BB184_34 Depth=1
 	add	esp, 12
 	movzx	eax, byte ptr [ebp - 60]        # 1-byte Folded Reload
 	mov	byte ptr [esi + edi], al
-LBB184_33:                              #   in Loop: Header=BB184_34 Depth=1
+LBB194_33:                              #   in Loop: Header=BB194_34 Depth=1
 	cmp	byte ptr [ebx + 1], 0
 	lea	eax, [ebx + 1]
 	cmovg	ebx, eax
-LBB184_34:                              # =>This Inner Loop Header: Depth=1
+LBB194_34:                              # =>This Inner Loop Header: Depth=1
 	movsx	eax, byte ptr [ebx]
 	mov	ecx, eax
 	dec	cl
 	cmp	cl, 125
-	ja	LBB184_41
-# %bb.35:                               #   in Loop: Header=BB184_34 Depth=1
+	ja	LBB194_41
+# %bb.35:                               #   in Loop: Header=BB194_34 Depth=1
 	mov	ecx, edi
 	sub	ecx, dword ptr [ebp - 40]       # 4-byte Folded Reload
 	cmp	ecx, eax
-	jbe	LBB184_41
-# %bb.36:                               #   in Loop: Header=BB184_34 Depth=1
+	jbe	LBB194_41
+# %bb.36:                               #   in Loop: Header=BB194_34 Depth=1
 	mov	ecx, dword ptr [ebp - 68]
 	sub	edi, eax
 	mov	eax, ecx
 	sub	eax, edi
-	jb	LBB184_136
-# %bb.37:                               #   in Loop: Header=BB184_34 Depth=1
+	jb	LBB194_136
+# %bb.37:                               #   in Loop: Header=BB194_34 Depth=1
 	mov	edx, dword ptr [ebp - 64]
 	cmp	edx, ecx
-	jne	LBB184_39
-# %bb.38:                               #   in Loop: Header=BB184_34 Depth=1
+	jne	LBB194_39
+# %bb.38:                               #   in Loop: Header=BB194_34 Depth=1
 	mov	dword ptr [ebp - 16], 5
 	sub	esp, 20
 	movzx	eax, byte ptr [ebp - 88]
@@ -24822,18 +28337,18 @@ LBB184_34:                              # =>This Inner Loop Header: Depth=1
 	call	"??$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IID@Z@IID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IID@Z@IID@Z"
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
 	mov	edi, dword ptr [ebp - 32]       # 4-byte Reload
-	jmp	LBB184_33
+	jmp	LBB194_33
 	.p2align	4, 0x90
-LBB184_39:                              #   in Loop: Header=BB184_34 Depth=1
+LBB194_39:                              #   in Loop: Header=BB194_34 Depth=1
 	inc	ecx
 	cmp	edx, 15
 	lea	esi, [ebp - 84]
 	mov	dword ptr [ebp - 68], ecx
-	jbe	LBB184_32
-# %bb.40:                               #   in Loop: Header=BB184_34 Depth=1
+	jbe	LBB194_32
+# %bb.40:                               #   in Loop: Header=BB194_34 Depth=1
 	mov	esi, dword ptr [ebp - 84]
-	jmp	LBB184_32
-LBB184_41:
+	jmp	LBB194_32
+LBB194_41:
 	mov	edx, dword ptr [ebp + 24]
 	mov	esi, dword ptr [ebp - 68]
 	xor	ecx, ecx
@@ -24850,10 +28365,10 @@ LBB184_41:
 	and	eax, dword ptr [edx + 20]
 	mov	dword ptr [ebp - 44], edi       # 4-byte Spill
 	cmp	eax, 64
-	je	LBB184_47
+	je	LBB194_47
 # %bb.42:
 	cmp	eax, 256
-	jne	LBB184_51
+	jne	LBB194_51
 # %bb.43:
 	lea	eax, [ebp + 16]
 	cmp	dword ptr [ebp - 40], 0         # 4-byte Folded Reload
@@ -24863,35 +28378,35 @@ LBB184_41:
 	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
 	mov	dword ptr [ebp - 36], ebx       # 4-byte Spill
 	mov	dword ptr [ebp - 48], ecx       # 4-byte Spill
-	je	LBB184_61
+	je	LBB194_61
 # %bb.44:
 	test	ebx, ebx
-	je	LBB184_60
+	je	LBB194_60
 # %bb.45:
 	cmp	dword ptr [ebp - 64], 15
-	jbe	LBB184_112
+	jbe	LBB194_112
 # %bb.46:
 	mov	eax, dword ptr [ebp - 84]
-	jmp	LBB184_113
-LBB184_47:
+	jmp	LBB194_113
+LBB194_47:
 	lea	eax, [ebp + 16]
 	cmp	dword ptr [ebp - 40], 0         # 4-byte Folded Reload
 	mov	ecx, dword ptr [eax]
 	mov	ebx, dword ptr [eax + 4]
 	mov	dword ptr [ebp - 48], ecx       # 4-byte Spill
                                         # kill: def $cl killed $cl killed $ecx def $ecx
-	je	LBB184_59
+	je	LBB194_59
 # %bb.48:
 	test	ebx, ebx
-	je	LBB184_69
+	je	LBB194_69
 # %bb.49:
 	cmp	dword ptr [ebp - 64], 15
 	mov	dword ptr [ebp - 56], ecx       # 4-byte Spill
-	jbe	LBB184_120
+	jbe	LBB194_120
 # %bb.50:
 	mov	eax, dword ptr [ebp - 84]
-	jmp	LBB184_121
-LBB184_51:
+	jmp	LBB194_121
+LBB194_51:
 	lea	eax, [ebp + 16]
 	cmp	dword ptr [ebp - 44], 0         # 4-byte Folded Reload
 	mov	ecx, dword ptr [eax]
@@ -24900,16 +28415,16 @@ LBB184_51:
 	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
 	mov	dword ptr [ebp - 36], ebx       # 4-byte Spill
 	mov	dword ptr [ebp - 48], ecx       # 4-byte Spill
-	je	LBB184_72
+	je	LBB194_72
 # %bb.52:
 	test	ebx, ebx
-	je	LBB184_71
+	je	LBB194_71
 # %bb.53:
 	movzx	eax, byte ptr [ebp + 28]
 	mov	dword ptr [ebp - 52], eax       # 4-byte Spill
-	jmp	LBB184_55
+	jmp	LBB194_55
 	.p2align	4, 0x90
-LBB184_54:                              #   in Loop: Header=BB184_55 Depth=1
+LBB194_54:                              #   in Loop: Header=BB194_55 Depth=1
 	dec	esi
 	mov	dword ptr [edx], esi
 	lea	edx, [ecx + 1]
@@ -24917,25 +28432,25 @@ LBB184_54:                              #   in Loop: Header=BB184_55 Depth=1
 	movzx	edx, byte ptr [ebp + 28]
 	mov	byte ptr [ecx], dl
 	dec	dword ptr [ebp - 44]            # 4-byte Folded Spill
-	je	LBB184_72
-LBB184_55:                              # =>This Inner Loop Header: Depth=1
+	je	LBB194_72
+LBB194_55:                              # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [ebx + 32]
 	mov	ecx, dword ptr [eax]
 	test	ecx, ecx
-	je	LBB184_57
-# %bb.56:                               #   in Loop: Header=BB184_55 Depth=1
+	je	LBB194_57
+# %bb.56:                               #   in Loop: Header=BB194_55 Depth=1
 	mov	edx, dword ptr [ebx + 48]
 	mov	esi, dword ptr [edx]
 	test	esi, esi
-	jg	LBB184_54
-LBB184_57:                              #   in Loop: Header=BB184_55 Depth=1
+	jg	LBB194_54
+LBB194_57:                              #   in Loop: Header=BB194_55 Depth=1
 	mov	eax, dword ptr [ebx]
 	mov	ecx, ebx
 	mov	eax, dword ptr [eax + 12]
 	mov	dword ptr [ebp - 16], 5
 	push	dword ptr [ebp - 52]            # 4-byte Folded Reload
 	call	eax
-# %bb.58:                               #   in Loop: Header=BB184_55 Depth=1
+# %bb.58:                               #   in Loop: Header=BB194_55 Depth=1
 	cmp	eax, -1
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
@@ -24944,15 +28459,15 @@ LBB184_57:                              #   in Loop: Header=BB184_55 Depth=1
 	cmove	eax, ecx
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
 	dec	dword ptr [ebp - 44]            # 4-byte Folded Spill
-	jne	LBB184_55
-	jmp	LBB184_72
-LBB184_59:
+	jne	LBB194_55
+	jmp	LBB194_72
+LBB194_59:
 	mov	dword ptr [ebp - 56], ecx       # 4-byte Spill
-	jmp	LBB184_70
-LBB184_60:
+	jmp	LBB194_70
+LBB194_60:
 	mov	al, 1
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-LBB184_61:
+LBB194_61:
 	mov	ecx, dword ptr [ebp - 48]       # 4-byte Reload
 	movzx	eax, byte ptr [ebp - 32]        # 1-byte Folded Reload
 	and	ecx, -256
@@ -24962,16 +28477,16 @@ LBB184_61:
 	lea	ecx, [ebp + 16]
 	mov	dword ptr [ecx], eax
 	mov	dword ptr [ecx + 4], ebx
-	je	LBB184_77
+	je	LBB194_77
 # %bb.62:
 	test	ebx, ebx
-	je	LBB184_76
+	je	LBB194_76
 # %bb.63:
 	movzx	eax, byte ptr [ebp + 28]
 	mov	dword ptr [ebp - 52], eax       # 4-byte Spill
-	jmp	LBB184_65
+	jmp	LBB194_65
 	.p2align	4, 0x90
-LBB184_64:                              #   in Loop: Header=BB184_65 Depth=1
+LBB194_64:                              #   in Loop: Header=BB194_65 Depth=1
 	dec	esi
 	mov	dword ptr [edx], esi
 	lea	edx, [ecx + 1]
@@ -24979,25 +28494,25 @@ LBB184_64:                              #   in Loop: Header=BB184_65 Depth=1
 	movzx	edx, byte ptr [ebp + 28]
 	mov	byte ptr [ecx], dl
 	dec	dword ptr [ebp - 44]            # 4-byte Folded Spill
-	je	LBB184_77
-LBB184_65:                              # =>This Inner Loop Header: Depth=1
+	je	LBB194_77
+LBB194_65:                              # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [ebx + 32]
 	mov	ecx, dword ptr [eax]
 	test	ecx, ecx
-	je	LBB184_67
-# %bb.66:                               #   in Loop: Header=BB184_65 Depth=1
+	je	LBB194_67
+# %bb.66:                               #   in Loop: Header=BB194_65 Depth=1
 	mov	edx, dword ptr [ebx + 48]
 	mov	esi, dword ptr [edx]
 	test	esi, esi
-	jg	LBB184_64
-LBB184_67:                              #   in Loop: Header=BB184_65 Depth=1
+	jg	LBB194_64
+LBB194_67:                              #   in Loop: Header=BB194_65 Depth=1
 	mov	eax, dword ptr [ebx]
 	mov	ecx, ebx
 	mov	eax, dword ptr [eax + 12]
 	mov	dword ptr [ebp - 16], 5
 	push	dword ptr [ebp - 52]            # 4-byte Folded Reload
 	call	eax
-# %bb.68:                               #   in Loop: Header=BB184_65 Depth=1
+# %bb.68:                               #   in Loop: Header=BB194_65 Depth=1
 	cmp	eax, -1
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
@@ -25006,22 +28521,22 @@ LBB184_67:                              #   in Loop: Header=BB184_65 Depth=1
 	cmove	eax, ecx
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
 	dec	dword ptr [ebp - 44]            # 4-byte Folded Spill
-	jne	LBB184_65
-	jmp	LBB184_77
-LBB184_69:
+	jne	LBB194_65
+	jmp	LBB194_77
+LBB194_69:
 	mov	al, 1
 	mov	dword ptr [ebp - 56], eax       # 4-byte Spill
-LBB184_70:
+LBB194_70:
 	mov	eax, dword ptr [ebp - 48]       # 4-byte Reload
 	movzx	ecx, byte ptr [ebp - 56]        # 1-byte Folded Reload
 	lea	edx, [ebp + 16]
 	mov	dword ptr [edx + 4], ebx
 	and	eax, -256
-	jmp	LBB184_78
-LBB184_71:
+	jmp	LBB194_78
+LBB194_71:
 	mov	al, 1
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-LBB184_72:
+LBB194_72:
 	mov	ecx, dword ptr [ebp - 48]       # 4-byte Reload
 	movzx	eax, byte ptr [ebp - 32]        # 1-byte Folded Reload
 	and	ecx, -256
@@ -25031,26 +28546,26 @@ LBB184_72:
 	lea	ecx, [ebp + 16]
 	mov	dword ptr [ecx], eax
 	mov	dword ptr [ecx + 4], ebx
-	je	LBB184_77
+	je	LBB194_77
 # %bb.73:
 	test	ebx, ebx
-	je	LBB184_76
+	je	LBB194_76
 # %bb.74:
 	cmp	dword ptr [ebp - 64], 15
-	jbe	LBB184_128
+	jbe	LBB194_128
 # %bb.75:
 	mov	eax, dword ptr [ebp - 84]
-	jmp	LBB184_129
-LBB184_76:
+	jmp	LBB194_129
+LBB194_76:
 	mov	al, 1
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-LBB184_77:
+LBB194_77:
 	movzx	eax, byte ptr [ebp - 32]        # 1-byte Folded Reload
 	mov	ecx, dword ptr [ebp - 48]       # 4-byte Reload
 	lea	edx, [ebp + 16]
 	mov	dword ptr [ebp - 44], 0         # 4-byte Folded Spill
 	mov	dword ptr [edx + 4], ebx
-LBB184_78:
+LBB194_78:
 	or	ecx, eax
 	mov	dword ptr [edx], ecx
 	mov	eax, dword ptr [ebp - 60]       # 4-byte Reload
@@ -25059,20 +28574,20 @@ LBB184_78:
 	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
 	mov	dword ptr [ebp - 36], ebx       # 4-byte Spill
 	sub	eax, dword ptr [ebp - 40]       # 4-byte Folded Reload
-	je	LBB184_84
+	je	LBB194_84
 # %bb.80:
 	test	ebx, ebx
-	je	LBB184_83
+	je	LBB194_83
 # %bb.81:
 	cmp	dword ptr [ebp - 64], 15
-	jbe	LBB184_104
+	jbe	LBB194_104
 # %bb.82:
 	mov	ecx, dword ptr [ebp - 84]
-	jmp	LBB184_105
-LBB184_83:
+	jmp	LBB194_105
+LBB194_83:
 	mov	al, 1
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-LBB184_84:
+LBB194_84:
 	mov	ecx, dword ptr [ebp - 48]       # 4-byte Reload
 	movzx	eax, byte ptr [ebp - 32]        # 1-byte Folded Reload
 	and	ecx, -256
@@ -25085,16 +28600,16 @@ LBB184_84:
 	mov	ecx, dword ptr [ebp + 24]
 	mov	dword ptr [ecx + 36], 0
 	mov	dword ptr [ecx + 32], 0
-	je	LBB184_93
+	je	LBB194_93
 # %bb.85:
 	test	ebx, ebx
-	je	LBB184_92
+	je	LBB194_92
 # %bb.86:
 	movzx	eax, byte ptr [ebp + 28]
 	mov	dword ptr [ebp - 40], eax       # 4-byte Spill
-	jmp	LBB184_88
+	jmp	LBB194_88
 	.p2align	4, 0x90
-LBB184_87:                              #   in Loop: Header=BB184_88 Depth=1
+LBB194_87:                              #   in Loop: Header=BB194_88 Depth=1
 	dec	esi
 	mov	dword ptr [edx], esi
 	lea	edx, [ecx + 1]
@@ -25102,25 +28617,25 @@ LBB184_87:                              #   in Loop: Header=BB184_88 Depth=1
 	movzx	edx, byte ptr [ebp + 28]
 	mov	byte ptr [ecx], dl
 	dec	dword ptr [ebp - 44]            # 4-byte Folded Spill
-	je	LBB184_93
-LBB184_88:                              # =>This Inner Loop Header: Depth=1
+	je	LBB194_93
+LBB194_88:                              # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [ebx + 32]
 	mov	ecx, dword ptr [eax]
 	test	ecx, ecx
-	je	LBB184_90
-# %bb.89:                               #   in Loop: Header=BB184_88 Depth=1
+	je	LBB194_90
+# %bb.89:                               #   in Loop: Header=BB194_88 Depth=1
 	mov	edx, dword ptr [ebx + 48]
 	mov	esi, dword ptr [edx]
 	test	esi, esi
-	jg	LBB184_87
-LBB184_90:                              #   in Loop: Header=BB184_88 Depth=1
+	jg	LBB194_87
+LBB194_90:                              #   in Loop: Header=BB194_88 Depth=1
 	mov	eax, dword ptr [ebx]
 	mov	ecx, ebx
 	mov	eax, dword ptr [eax + 12]
 	mov	dword ptr [ebp - 16], 5
 	push	dword ptr [ebp - 40]            # 4-byte Folded Reload
 	call	eax
-# %bb.91:                               #   in Loop: Header=BB184_88 Depth=1
+# %bb.91:                               #   in Loop: Header=BB194_88 Depth=1
 	cmp	eax, -1
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
@@ -25129,12 +28644,12 @@ LBB184_90:                              #   in Loop: Header=BB184_88 Depth=1
 	cmove	eax, ecx
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
 	dec	dword ptr [ebp - 44]            # 4-byte Folded Spill
-	jne	LBB184_88
-	jmp	LBB184_93
-LBB184_92:
+	jne	LBB194_88
+	jmp	LBB194_93
+LBB194_92:
 	mov	al, 1
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-LBB184_93:
+LBB194_93:
 	movzx	eax, byte ptr [ebp - 32]        # 1-byte Folded Reload
 	mov	ecx, dword ptr [ebp - 48]       # 4-byte Reload
 	or	ecx, eax
@@ -25143,52 +28658,52 @@ LBB184_93:
 	mov	dword ptr [eax + 4], ebx
 	mov	eax, dword ptr [ebp - 92]
 	cmp	eax, 16
-	jb	LBB184_98
+	jb	LBB194_98
 # %bb.94:
 	mov	ecx, dword ptr [ebp - 112]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB184_97
+	jb	LBB194_97
 # %bb.95:
 	mov	esi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, esi
 	cmp	ecx, 32
-	jae	LBB184_138
+	jae	LBB194_138
 # %bb.96:
 	add	eax, 36
 	mov	ecx, esi
 	mov	edx, eax
-LBB184_97:
+LBB194_97:
 	push	edx
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB184_98:
+LBB194_98:
 	mov	eax, dword ptr [ebp - 64]
 	cmp	eax, 16
-	jb	LBB184_103
+	jb	LBB194_103
 # %bb.99:
 	mov	ecx, dword ptr [ebp - 84]
 	lea	edx, [eax + 1]
 	cmp	edx, 4096
-	jb	LBB184_102
+	jb	LBB194_102
 # %bb.100:
 	mov	esi, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, esi
 	cmp	ecx, 32
-	jae	LBB184_140
+	jae	LBB194_140
 # %bb.101:
 	add	eax, 36
 	mov	ecx, esi
 	mov	edx, eax
-LBB184_102:
+LBB194_102:
 	push	edx
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB184_103:
+LBB194_103:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, dword ptr [ebp + 12]
@@ -25198,38 +28713,38 @@ LBB184_103:
 	pop	ebx
 	pop	ebp
 	ret
-LBB184_104:
+LBB194_104:
 	lea	ecx, [ebp - 84]
-LBB184_105:
+LBB194_105:
 	add	ecx, dword ptr [ebp - 40]       # 4-byte Folded Reload
-	jmp	LBB184_108
+	jmp	LBB194_108
 	.p2align	4, 0x90
-LBB184_106:                             #   in Loop: Header=BB184_108 Depth=1
+LBB194_106:                             #   in Loop: Header=BB194_108 Depth=1
 	dec	edi
 	mov	dword ptr [esi], edi
 	lea	edi, [edx + 1]
 	mov	dword ptr [ecx], edi
 	mov	byte ptr [edx], al
-LBB184_107:                             #   in Loop: Header=BB184_108 Depth=1
+LBB194_107:                             #   in Loop: Header=BB194_108 Depth=1
 	mov	ecx, dword ptr [ebp - 40]       # 4-byte Reload
 	mov	eax, dword ptr [ebp - 60]       # 4-byte Reload
 	inc	ecx
 	dec	eax
-	je	LBB184_84
-LBB184_108:                             # =>This Inner Loop Header: Depth=1
+	je	LBB194_84
+LBB194_108:                             # =>This Inner Loop Header: Depth=1
 	mov	dword ptr [ebp - 60], eax       # 4-byte Spill
 	mov	dword ptr [ebp - 40], ecx       # 4-byte Spill
 	movzx	eax, byte ptr [ecx]
 	mov	ecx, dword ptr [ebx + 32]
 	mov	edx, dword ptr [ecx]
 	test	edx, edx
-	je	LBB184_110
-# %bb.109:                              #   in Loop: Header=BB184_108 Depth=1
+	je	LBB194_110
+# %bb.109:                              #   in Loop: Header=BB194_108 Depth=1
 	mov	esi, dword ptr [ebx + 48]
 	mov	edi, dword ptr [esi]
 	test	edi, edi
-	jg	LBB184_106
-LBB184_110:                             #   in Loop: Header=BB184_108 Depth=1
+	jg	LBB194_106
+LBB194_110:                             #   in Loop: Header=BB194_108 Depth=1
 	mov	ecx, dword ptr [ebx]
 	movzx	eax, al
 	mov	edx, dword ptr [ecx + 12]
@@ -25237,7 +28752,7 @@ LBB184_110:                             #   in Loop: Header=BB184_108 Depth=1
 	mov	ecx, ebx
 	push	eax
 	call	edx
-# %bb.111:                              #   in Loop: Header=BB184_108 Depth=1
+# %bb.111:                              #   in Loop: Header=BB194_108 Depth=1
 	cmp	eax, -1
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
@@ -25245,39 +28760,39 @@ LBB184_110:                             #   in Loop: Header=BB184_108 Depth=1
 	movzx	eax, al
 	cmove	eax, ecx
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-	jmp	LBB184_107
-LBB184_112:
+	jmp	LBB194_107
+LBB194_112:
 	lea	eax, [ebp - 84]
-LBB184_113:
+LBB194_113:
 	mov	ecx, dword ptr [ebp - 40]       # 4-byte Reload
-	jmp	LBB184_116
+	jmp	LBB194_116
 	.p2align	4, 0x90
-LBB184_114:                             #   in Loop: Header=BB184_116 Depth=1
+LBB194_114:                             #   in Loop: Header=BB194_116 Depth=1
 	dec	edi
 	mov	dword ptr [esi], edi
 	lea	edi, [edx + 1]
 	mov	dword ptr [ecx], edi
 	mov	byte ptr [edx], al
-LBB184_115:                             #   in Loop: Header=BB184_116 Depth=1
+LBB194_115:                             #   in Loop: Header=BB194_116 Depth=1
 	mov	eax, dword ptr [ebp - 52]       # 4-byte Reload
 	mov	ecx, dword ptr [ebp - 56]       # 4-byte Reload
 	inc	eax
 	dec	ecx
-	je	LBB184_61
-LBB184_116:                             # =>This Inner Loop Header: Depth=1
+	je	LBB194_61
+LBB194_116:                             # =>This Inner Loop Header: Depth=1
 	mov	dword ptr [ebp - 56], ecx       # 4-byte Spill
 	mov	ecx, dword ptr [ebx + 32]
 	mov	dword ptr [ebp - 52], eax       # 4-byte Spill
 	movzx	eax, byte ptr [eax]
 	mov	edx, dword ptr [ecx]
 	test	edx, edx
-	je	LBB184_118
-# %bb.117:                              #   in Loop: Header=BB184_116 Depth=1
+	je	LBB194_118
+# %bb.117:                              #   in Loop: Header=BB194_116 Depth=1
 	mov	esi, dword ptr [ebx + 48]
 	mov	edi, dword ptr [esi]
 	test	edi, edi
-	jg	LBB184_114
-LBB184_118:                             #   in Loop: Header=BB184_116 Depth=1
+	jg	LBB194_114
+LBB194_118:                             #   in Loop: Header=BB194_116 Depth=1
 	mov	ecx, dword ptr [ebx]
 	movzx	eax, al
 	mov	edx, dword ptr [ecx + 12]
@@ -25285,7 +28800,7 @@ LBB184_118:                             #   in Loop: Header=BB184_116 Depth=1
 	mov	ecx, ebx
 	push	eax
 	call	edx
-# %bb.119:                              #   in Loop: Header=BB184_116 Depth=1
+# %bb.119:                              #   in Loop: Header=BB194_116 Depth=1
 	cmp	eax, -1
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
@@ -25293,40 +28808,40 @@ LBB184_118:                             #   in Loop: Header=BB184_116 Depth=1
 	movzx	eax, al
 	cmove	eax, ecx
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-	jmp	LBB184_115
-LBB184_120:
+	jmp	LBB194_115
+LBB194_120:
 	lea	eax, [ebp - 84]
-LBB184_121:
+LBB194_121:
 	mov	ecx, dword ptr [ebp - 40]       # 4-byte Reload
 	mov	dword ptr [ebp - 36], ebx       # 4-byte Spill
-	jmp	LBB184_124
+	jmp	LBB194_124
 	.p2align	4, 0x90
-LBB184_122:                             #   in Loop: Header=BB184_124 Depth=1
+LBB194_122:                             #   in Loop: Header=BB194_124 Depth=1
 	dec	edi
 	mov	dword ptr [esi], edi
 	lea	edi, [edx + 1]
 	mov	dword ptr [ecx], edi
 	mov	byte ptr [edx], al
-LBB184_123:                             #   in Loop: Header=BB184_124 Depth=1
+LBB194_123:                             #   in Loop: Header=BB194_124 Depth=1
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ecx, dword ptr [ebp - 52]       # 4-byte Reload
 	inc	eax
 	dec	ecx
-	je	LBB184_70
-LBB184_124:                             # =>This Inner Loop Header: Depth=1
+	je	LBB194_70
+LBB194_124:                             # =>This Inner Loop Header: Depth=1
 	mov	dword ptr [ebp - 52], ecx       # 4-byte Spill
 	mov	ecx, dword ptr [ebx + 32]
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
 	movzx	eax, byte ptr [eax]
 	mov	edx, dword ptr [ecx]
 	test	edx, edx
-	je	LBB184_126
-# %bb.125:                              #   in Loop: Header=BB184_124 Depth=1
+	je	LBB194_126
+# %bb.125:                              #   in Loop: Header=BB194_124 Depth=1
 	mov	esi, dword ptr [ebx + 48]
 	mov	edi, dword ptr [esi]
 	test	edi, edi
-	jg	LBB184_122
-LBB184_126:                             #   in Loop: Header=BB184_124 Depth=1
+	jg	LBB194_122
+LBB194_126:                             #   in Loop: Header=BB194_124 Depth=1
 	mov	ecx, dword ptr [ebx]
 	movzx	eax, al
 	mov	edx, dword ptr [ecx + 12]
@@ -25334,7 +28849,7 @@ LBB184_126:                             #   in Loop: Header=BB184_124 Depth=1
 	mov	ecx, ebx
 	push	eax
 	call	edx
-# %bb.127:                              #   in Loop: Header=BB184_124 Depth=1
+# %bb.127:                              #   in Loop: Header=BB194_124 Depth=1
 	cmp	eax, -1
 	mov	eax, dword ptr [ebp - 56]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
@@ -25342,39 +28857,39 @@ LBB184_126:                             #   in Loop: Header=BB184_124 Depth=1
 	movzx	eax, al
 	cmove	eax, ecx
 	mov	dword ptr [ebp - 56], eax       # 4-byte Spill
-	jmp	LBB184_123
-LBB184_128:
+	jmp	LBB194_123
+LBB194_128:
 	lea	eax, [ebp - 84]
-LBB184_129:
+LBB194_129:
 	mov	ecx, dword ptr [ebp - 40]       # 4-byte Reload
-	jmp	LBB184_132
+	jmp	LBB194_132
 	.p2align	4, 0x90
-LBB184_130:                             #   in Loop: Header=BB184_132 Depth=1
+LBB194_130:                             #   in Loop: Header=BB194_132 Depth=1
 	dec	edi
 	mov	dword ptr [esi], edi
 	lea	edi, [edx + 1]
 	mov	dword ptr [ecx], edi
 	mov	byte ptr [edx], al
-LBB184_131:                             #   in Loop: Header=BB184_132 Depth=1
+LBB194_131:                             #   in Loop: Header=BB194_132 Depth=1
 	mov	eax, dword ptr [ebp - 44]       # 4-byte Reload
 	mov	ecx, dword ptr [ebp - 52]       # 4-byte Reload
 	inc	eax
 	dec	ecx
-	je	LBB184_77
-LBB184_132:                             # =>This Inner Loop Header: Depth=1
+	je	LBB194_77
+LBB194_132:                             # =>This Inner Loop Header: Depth=1
 	mov	dword ptr [ebp - 52], ecx       # 4-byte Spill
 	mov	ecx, dword ptr [ebx + 32]
 	mov	dword ptr [ebp - 44], eax       # 4-byte Spill
 	movzx	eax, byte ptr [eax]
 	mov	edx, dword ptr [ecx]
 	test	edx, edx
-	je	LBB184_134
-# %bb.133:                              #   in Loop: Header=BB184_132 Depth=1
+	je	LBB194_134
+# %bb.133:                              #   in Loop: Header=BB194_132 Depth=1
 	mov	esi, dword ptr [ebx + 48]
 	mov	edi, dword ptr [esi]
 	test	edi, edi
-	jg	LBB184_130
-LBB184_134:                             #   in Loop: Header=BB184_132 Depth=1
+	jg	LBB194_130
+LBB194_134:                             #   in Loop: Header=BB194_132 Depth=1
 	mov	ecx, dword ptr [ebx]
 	movzx	eax, al
 	mov	edx, dword ptr [ecx + 12]
@@ -25382,7 +28897,7 @@ LBB184_134:                             #   in Loop: Header=BB184_132 Depth=1
 	mov	ecx, ebx
 	push	eax
 	call	edx
-# %bb.135:                              #   in Loop: Header=BB184_132 Depth=1
+# %bb.135:                              #   in Loop: Header=BB194_132 Depth=1
 	cmp	eax, -1
 	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 36]       # 4-byte Reload
@@ -25390,16 +28905,16 @@ LBB184_134:                             #   in Loop: Header=BB184_132 Depth=1
 	movzx	eax, al
 	cmove	eax, ecx
 	mov	dword ptr [ebp - 32], eax       # 4-byte Spill
-	jmp	LBB184_131
-LBB184_136:
+	jmp	LBB194_131
+LBB194_136:
 	mov	dword ptr [ebp - 16], 5
 	call	"?_Xran@?$_String_val@U?$_Simple_types@D@std@@@std@@SAXXZ"
 # %bb.137:
-LBB184_138:
+LBB194_138:
 	mov	dword ptr [ebp - 16], 1
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.139:
-LBB184_140:
+LBB194_140:
 	mov	dword ptr [ebp - 16], 2
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.141:
@@ -25409,7 +28924,7 @@ LBB184_140:
 	.endef
 	.p2align	4, 0x90
 "?dtor$142@?0??_Fput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPBDI@Z@4HA":
-LBB184_142:
+LBB194_142:
 	push	ebp
 	sub	esp, 20
 	add	ebp, 12
@@ -25420,7 +28935,7 @@ LBB184_142:
 	.endef
 	.p2align	4, 0x90
 "?dtor$143@?0??_Fput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPBDI@Z@4HA":
-LBB184_143:
+LBB194_143:
 	push	ebp
 	sub	esp, 20
 	add	ebp, 12
@@ -25431,24 +28946,24 @@ LBB184_143:
 	.endef
 	.p2align	4, 0x90
 "?dtor$144@?0??_Fput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPBDI@Z@4HA":
-LBB184_144:
+LBB194_144:
 	push	ebp
 	sub	esp, 20
 	add	ebp, 12
 	mov	ecx, dword ptr [ebp - 108]
 	test	ecx, ecx
-	je	LBB184_147
+	je	LBB194_147
 # %bb.145:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB184_147
+	je	LBB194_147
 # %bb.146:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB184_147:
+LBB194_147:
 	add	esp, 20
 	pop	ebp
 	ret                                     # CLEANUPRET
@@ -25458,24 +28973,24 @@ LBB184_147:
 	.endef
 	.p2align	4, 0x90
 "?dtor$148@?0??_Fput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPBDI@Z@4HA":
-LBB184_148:
+LBB194_148:
 	push	ebp
 	sub	esp, 20
 	add	ebp, 12
 	mov	ecx, dword ptr [ebp - 80]
 	test	ecx, ecx
-	je	LBB184_151
+	je	LBB194_151
 # %bb.149:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
 	test	eax, eax
-	je	LBB184_151
+	je	LBB194_151
 # %bb.150:
 	mov	edx, dword ptr [eax]
 	mov	ecx, eax
 	push	1
 	call	dword ptr [edx]
-LBB184_151:
+LBB194_151:
 	add	esp, 20
 	pop	ebp
 	ret                                     # CLEANUPRET
@@ -25485,41 +29000,41 @@ LBB184_151:
 	.endef
 	.p2align	4, 0x90
 "?dtor$152@?0??_Fput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPBDI@Z@4HA":
-LBB184_152:
+LBB194_152:
 	push	ebp
 	sub	esp, 20
 	add	ebp, 12
 	mov	eax, dword ptr [ebp - 92]
 	cmp	eax, 16
-	jb	LBB184_157
+	jb	LBB194_157
 # %bb.153:
 	mov	ecx, dword ptr [ebp - 112]
 	lea	esi, [eax + 1]
 	cmp	esi, 4096
-	jb	LBB184_156
+	jb	LBB194_156
 # %bb.154:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB184_158
+	jae	LBB194_158
 # %bb.155:
 	add	eax, 36
 	mov	ecx, edx
 	mov	esi, eax
-LBB184_156:
+LBB194_156:
 	push	esi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB184_157:
+LBB194_157:
 	mov	dword ptr [ebp - 96], 0
 	mov	dword ptr [ebp - 92], 15
 	mov	byte ptr [ebp - 112], 0
 	add	esp, 20
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB184_158:
+LBB194_158:
 	call	__invalid_parameter_noinfo_noreturn
 	.def	 "?dtor$159@?0??_Fput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPBDI@Z@4HA";
 	.scl	3;
@@ -25527,40 +29042,40 @@ LBB184_158:
 	.endef
 	.p2align	4, 0x90
 "?dtor$159@?0??_Fput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPBDI@Z@4HA":
-LBB184_159:
+LBB194_159:
 	push	ebp
 	sub	esp, 20
 	add	ebp, 12
 	mov	eax, dword ptr [ebp - 64]
 	cmp	eax, 16
-	jb	LBB184_164
+	jb	LBB194_164
 # %bb.160:
 	mov	ecx, dword ptr [ebp - 84]
 	lea	esi, [eax + 1]
 	cmp	esi, 4096
-	jb	LBB184_163
+	jb	LBB194_163
 # %bb.161:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB184_165
+	jae	LBB194_165
 # %bb.162:
 	add	eax, 36
 	mov	ecx, edx
 	mov	esi, eax
-LBB184_163:
+LBB194_163:
 	push	esi
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB184_164:
+LBB194_164:
 	add	esp, 20
 	pop	ebp
 	ret                                     # CLEANUPRET
-LBB184_165:
+LBB194_165:
 	call	__invalid_parameter_noinfo_noreturn
-Lfunc_end70:
+Lfunc_end73:
 	.section	.xdata,"dr",associative,"?_Fput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPBDI@Z"
 	.p2align	2
 "L__ehtable$?_Fput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPBDI@Z":
@@ -25596,7 +29111,7 @@ Lfunc_end70:
 	.globl	"??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@ID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@ID@Z@ID@Z" # -- Begin function ??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@ID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@ID@Z@ID@Z
 	.p2align	4, 0x90
 "??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@ID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@ID@Z@ID@Z": # @"??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@ID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@ID@Z@ID@Z"
-Lfunc_begin71:
+Lfunc_begin74:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -25617,7 +29132,7 @@ Lfunc_begin71:
 	mov	ebx, dword ptr [ecx + 16]
 	sub	eax, ebx
 	cmp	eax, edi
-	jb	LBB185_19
+	jb	LBB195_19
 # %bb.1:
 	mov	esi, dword ptr [ecx + 20]
 	add	edi, ebx
@@ -25627,14 +29142,14 @@ Lfunc_begin71:
 	mov	dword ptr [ebp - 44], edi       # 4-byte Spill
 	or	ecx, 15
 	mov	dword ptr [ebp - 32], esi       # 4-byte Spill
-	js	LBB185_5
+	js	LBB195_5
 # %bb.2:
 	mov	edx, esi
 	shr	edx
 	mov	edi, edx
 	xor	edi, 2147483647
 	cmp	edi, esi
-	jb	LBB185_5
+	jb	LBB195_5
 # %bb.3:
 	add	edx, dword ptr [ebp - 32]       # 4-byte Folded Reload
 	cmp	ecx, edx
@@ -25642,12 +29157,12 @@ Lfunc_begin71:
 	cmovae	esi, ecx
 	lea	eax, [esi + 1]
 	cmp	eax, 4096
-	jb	LBB185_6
+	jb	LBB195_6
 # %bb.4:
 	cmp	eax, -35
 	mov	dword ptr [ebp - 36], esi       # 4-byte Spill
-	jae	LBB185_20
-LBB185_5:
+	jae	LBB195_20
+LBB195_5:
 	add	eax, 35
 	push	eax
 	call	"??2@YAPAXI@Z"
@@ -25656,14 +29171,14 @@ LBB185_5:
 	lea	edi, [eax + 35]
 	and	edi, -32
 	mov	dword ptr [edi - 4], eax
-LBB185_9:
+LBB195_9:
 	mov	edx, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	eax, dword ptr [ebp - 40]       # 4-byte Reload
 	mov	ecx, dword ptr [ebp - 44]       # 4-byte Reload
 	cmp	edx, 16
 	mov	dword ptr [eax + 16], ecx
 	mov	dword ptr [eax + 20], esi
-	jb	LBB185_17
+	jb	LBB195_17
 # %bb.10:
 	mov	esi, dword ptr [eax]
 	push	ebx
@@ -25684,25 +29199,25 @@ LBB185_9:
 	lea	eax, [edx + 1]
 	cmp	eax, 4096
 	mov	byte ptr [edi + ebx], 0
-	jb	LBB185_16
+	jb	LBB195_16
 # %bb.11:
 	mov	ecx, dword ptr [esi - 4]
 	add	esi, -4
 	sub	esi, ecx
 	cmp	esi, 32
-	jae	LBB185_12
+	jae	LBB195_12
 # %bb.15:
 	add	edx, 36
 	mov	esi, ecx
 	mov	eax, edx
-LBB185_16:
+LBB195_16:
 	push	eax
 	push	esi
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
 	mov	esi, dword ptr [ebp - 40]       # 4-byte Reload
-	jmp	LBB185_18
-LBB185_17:
+	jmp	LBB195_18
+LBB195_17:
 	push	ebx
 	push	eax
 	push	edi
@@ -25719,7 +29234,7 @@ LBB185_17:
 	add	esp, 12
 	add	ebx, dword ptr [ebp + 16]
 	mov	byte ptr [edi + ebx], 0
-LBB185_18:
+LBB195_18:
 	mov	dword ptr [esi], edi
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
@@ -25730,26 +29245,26 @@ LBB185_18:
 	pop	ebx
 	pop	ebp
 	ret	16
-LBB185_6:
+LBB195_6:
 	test	eax, eax
-	je	LBB185_7
+	je	LBB195_7
 # %bb.8:
 	push	eax
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
 	mov	edi, eax
-	jmp	LBB185_9
-LBB185_7:
+	jmp	LBB195_9
+LBB195_7:
 	xor	edi, edi
 	mov	esi, -1
-	jmp	LBB185_9
-LBB185_19:
+	jmp	LBB195_9
+LBB195_19:
 	call	"?_Xlen_string@std@@YAXXZ"
-LBB185_12:
+LBB195_12:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.13:
-LBB185_20:
+LBB195_20:
 	call	"?_Throw_bad_array_new_length@std@@YAXXZ"
 	.def	 "?dtor$14@?0???$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@ID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@ID@Z@ID@Z@4HA";
 	.scl	3;
@@ -25757,12 +29272,12 @@ LBB185_20:
 	.endef
 	.p2align	4, 0x90
 "?dtor$14@?0???$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@ID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@ID@Z@ID@Z@4HA":
-LBB185_14:
+LBB195_14:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end71:
+Lfunc_end74:
 	.section	.xdata,"dr",associative,"??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@ID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@ID@Z@ID@Z"
 	.p2align	2
 "L__ehtable$??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@ID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@ID@Z@ID@Z":
@@ -25780,14 +29295,362 @@ Lfunc_end71:
 	.long	"?dtor$14@?0???$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@ID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@ID@Z@ID@Z@4HA" # Action
 	.section	.text,"xr",discard,"??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@ID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@ID@Z@ID@Z"
                                         # -- End function
-	.def	 "?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z";
+	.def	 "?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ";
 	.scl	2;
 	.type	32;
 	.endef
-	.section	.text,"xr",discard,"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z"
-	.globl	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z" # -- Begin function ?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z
+	.section	.text,"xr",discard,"?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ"
+	.globl	"?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ" # -- Begin function ?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ
 	.p2align	4, 0x90
-"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z": # @"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z"
+"?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ": # @"?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ"
+Lfunc_begin75:
+# %bb.0:
+	push	ebp
+	mov	ebp, esp
+	push	ebx
+	push	edi
+	push	esi
+	sub	esp, 16
+	mov	dword ptr [ebp - 28], esp
+	mov	dword ptr [ebp - 16], -1
+	mov	dword ptr [ebp - 20], offset "___ehhandler$?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ"
+	mov	esi, ecx
+	lea	eax, [ebp - 24]
+	mov	ecx, dword ptr fs:[0]
+	mov	dword ptr [ebp - 24], ecx
+	mov	dword ptr fs:[0], eax
+	cmp	dword ptr [esi + 16], 0
+	je	LBB196_2
+# %bb.1:
+	mov	dword ptr [esi + 12], 0
+	mov	dword ptr [esi + 16], 0
+LBB196_2:
+	mov	eax, dword ptr [esi + 4]
+	mov	edi, dword ptr [esi + 8]
+	.p2align	4, 0x90
+LBB196_3:                               # =>This Inner Loop Header: Depth=1
+	test	edi, edi
+	je	LBB196_4
+# %bb.9:                                #   in Loop: Header=BB196_3 Depth=1
+	mov	ecx, dword ptr [eax + 4*edi - 4]
+	dec	edi
+	test	ecx, ecx
+	je	LBB196_3
+# %bb.10:                               #   in Loop: Header=BB196_3 Depth=1
+	push	16
+	push	ecx
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+	mov	eax, dword ptr [esi + 4]
+	jmp	LBB196_3
+LBB196_4:
+	test	eax, eax
+	je	LBB196_14
+# %bb.5:
+	mov	ecx, dword ptr [esi + 8]
+	shl	ecx, 2
+	cmp	ecx, 4096
+	jb	LBB196_13
+# %bb.6:
+	mov	edx, dword ptr [eax - 4]
+	add	eax, -4
+	sub	eax, edx
+	cmp	eax, 32
+	jae	LBB196_7
+# %bb.12:
+	add	ecx, 35
+	mov	eax, edx
+LBB196_13:
+	push	ecx
+	push	eax
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+LBB196_14:
+	mov	dword ptr [esi + 8], 0
+	mov	dword ptr [esi + 4], 0
+	mov	eax, dword ptr [ebp - 24]
+	mov	dword ptr fs:[0], eax
+	add	esp, 16
+	pop	esi
+	pop	edi
+	pop	ebx
+	pop	ebp
+	ret
+LBB196_7:
+	mov	dword ptr [ebp - 16], 0
+	call	__invalid_parameter_noinfo_noreturn
+# %bb.8:
+	.def	 "?dtor$11@?0??_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ@4HA";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90
+"?dtor$11@?0??_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ@4HA":
+LBB196_11:
+	push	ebp
+	sub	esp, 8
+	add	ebp, 12
+	call	___std_terminate
+Lfunc_end75:
+	.section	.xdata,"dr",associative,"?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ"
+	.p2align	2
+"L__ehtable$?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ":
+	.long	429065506                       # MagicNumber
+	.long	1                               # MaxState
+	.long	("$stateUnwindMap$?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ") # UnwindMap
+	.long	0                               # NumTryBlocks
+	.long	0                               # TryBlockMap
+	.long	0                               # IPMapEntries
+	.long	0                               # IPToStateXData
+	.long	0                               # ESTypeList
+	.long	1                               # EHFlags
+"$stateUnwindMap$?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ":
+	.long	-1                              # ToState
+	.long	"?dtor$11@?0??_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ@4HA" # Action
+	.section	.text,"xr",discard,"?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ"
+                                        # -- End function
+	.def	 "?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z";
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text,"xr",discard,"?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
+	.globl	"?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z" # -- Begin function ?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z
+	.p2align	4, 0x90
+"?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z": # @"?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
+Lfunc_begin76:
+# %bb.0:
+	push	ebp
+	mov	ebp, esp
+	push	ebx
+	push	edi
+	push	esi
+	sub	esp, 32
+	mov	dword ptr [ebp - 28], esp
+	mov	dword ptr [ebp - 16], -1
+	mov	dword ptr [ebp - 20], offset "___ehhandler$?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
+	lea	eax, [ebp - 24]
+	mov	edi, dword ptr [ebp + 8]
+	mov	edx, dword ptr fs:[0]
+	mov	dword ptr [ebp - 24], edx
+	mov	dword ptr fs:[0], eax
+	mov	eax, 1
+	mov	edx, dword ptr [ecx + 8]
+	test	edx, edx
+	cmovne	eax, edx
+	cmp	eax, 8
+	jb	LBB197_3
+	.p2align	4, 0x90
+LBB197_2:
+	mov	ebx, eax
+	sub	ebx, edx
+	cmp	ebx, edi
+	jae	LBB197_5
+LBB197_3:                               # =>This Inner Loop Header: Depth=1
+	mov	esi, 268435455
+	sub	esi, eax
+	cmp	esi, eax
+	jb	LBB197_22
+# %bb.4:                                #   in Loop: Header=BB197_3 Depth=1
+	add	eax, eax
+	cmp	eax, 8
+	jae	LBB197_2
+	jmp	LBB197_3
+LBB197_5:
+	cmp	eax, 1073741824
+	jae	LBB197_23
+# %bb.6:
+	mov	edi, dword ptr [ecx + 12]
+	lea	edx, [4*eax]
+	cmp	eax, 1024
+	jb	LBB197_9
+# %bb.7:
+	cmp	eax, 1073741816
+	mov	dword ptr [ebp - 16], -1
+	jae	LBB197_24
+# %bb.8:
+	mov	esi, ecx
+	add	edx, 35
+	push	edx
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	lea	ecx, [eax + 35]
+	and	ecx, -32
+	mov	dword ptr [ecx - 4], eax
+	jmp	LBB197_10
+LBB197_9:
+	mov	esi, ecx
+	mov	dword ptr [ebp - 16], -1
+	push	edx
+	call	"??2@YAPAXI@Z"
+	add	esp, 4
+	mov	ecx, eax
+LBB197_10:
+	mov	dword ptr [ebp - 36], edi       # 4-byte Spill
+	shr	edi, 2
+	mov	dword ptr [ebp - 40], ecx       # 4-byte Spill
+	mov	eax, dword ptr [esi + 4]
+	mov	dword ptr [ebp - 44], esi       # 4-byte Spill
+	lea	edx, [ecx + 4*edi]
+	mov	ecx, dword ptr [esi + 8]
+	mov	dword ptr [ebp - 32], edx       # 4-byte Spill
+	lea	esi, [eax + 4*ecx]
+	lea	eax, [eax + 4*edi]
+	sub	esi, eax
+	push	esi
+	push	eax
+	push	edx
+	call	_memmove
+	add	esp, 12
+	mov	eax, dword ptr [ebp - 44]       # 4-byte Reload
+	add	esi, dword ptr [ebp - 32]       # 4-byte Folded Reload
+	mov	ecx, ebx
+	mov	dword ptr [ebp - 32], edi       # 4-byte Spill
+	sub	ecx, edi
+	mov	eax, dword ptr [eax + 4]
+	jae	LBB197_11
+# %bb.12:
+	lea	ecx, [4*ebx]
+	mov	dword ptr [ebp - 36], ecx       # 4-byte Spill
+	push	ecx
+	push	eax
+	push	esi
+	call	_memmove
+	add	esp, 12
+	mov	eax, dword ptr [ebp - 44]       # 4-byte Reload
+	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
+	mov	eax, dword ptr [eax + 4]
+	lea	esi, [eax + 4*ecx]
+	lea	eax, [eax + 4*ebx]
+	sub	esi, eax
+	push	esi
+	push	eax
+	mov	edi, dword ptr [ebp - 40]       # 4-byte Reload
+	push	edi
+	call	_memmove
+	add	esp, 12
+	add	esi, edi
+	push	dword ptr [ebp - 36]            # 4-byte Folded Reload
+	push	0
+	push	esi
+	jmp	LBB197_13
+LBB197_11:
+	mov	edi, dword ptr [ebp - 36]       # 4-byte Reload
+	and	edi, -4
+	push	edi
+	push	eax
+	push	esi
+	mov	dword ptr [ebp - 32], ecx       # 4-byte Spill
+	call	_memmove
+	add	esp, 12
+	mov	eax, dword ptr [ebp - 32]       # 4-byte Reload
+	add	esi, edi
+	shl	eax, 2
+	push	eax
+	push	0
+	push	esi
+	call	_memset
+	add	esp, 12
+	push	edi
+	push	0
+	push	dword ptr [ebp - 40]            # 4-byte Folded Reload
+LBB197_13:
+	call	_memset
+	add	esp, 12
+	mov	esi, dword ptr [ebp - 44]       # 4-byte Reload
+	mov	ecx, dword ptr [esi + 4]
+	test	ecx, ecx
+	je	LBB197_21
+# %bb.14:
+	mov	eax, dword ptr [esi + 8]
+	shl	eax, 2
+	cmp	eax, 4096
+	jb	LBB197_20
+# %bb.15:
+	mov	edx, dword ptr [ecx - 4]
+	add	ecx, -4
+	sub	ecx, edx
+	cmp	ecx, 32
+	jae	LBB197_16
+# %bb.19:
+	add	eax, 35
+	mov	ecx, edx
+LBB197_20:
+	push	eax
+	push	ecx
+	call	"??3@YAXPAXI@Z"
+	add	esp, 8
+LBB197_21:
+	mov	eax, dword ptr [ebp - 40]       # 4-byte Reload
+	mov	dword ptr [esi + 4], eax
+	add	dword ptr [esi + 8], ebx
+	mov	eax, dword ptr [ebp - 24]
+	mov	dword ptr fs:[0], eax
+	add	esp, 32
+	pop	esi
+	pop	edi
+	pop	ebx
+	pop	ebp
+	ret	4
+LBB197_22:
+	mov	dword ptr [ebp - 16], -1
+	call	"?_Xlen@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@ABEXXZ"
+LBB197_23:
+	mov	dword ptr [ebp - 16], -1
+LBB197_24:
+	call	"?_Throw_bad_array_new_length@std@@YAXXZ"
+LBB197_16:
+	mov	dword ptr [ebp - 16], 0
+	call	__invalid_parameter_noinfo_noreturn
+# %bb.17:
+	.def	 "?dtor$18@?0??_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z@4HA";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90
+"?dtor$18@?0??_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z@4HA":
+LBB197_18:
+	push	ebp
+	sub	esp, 12
+	add	ebp, 12
+	call	___std_terminate
+Lfunc_end76:
+	.section	.xdata,"dr",associative,"?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
+	.p2align	2
+"L__ehtable$?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z":
+	.long	429065506                       # MagicNumber
+	.long	1                               # MaxState
+	.long	("$stateUnwindMap$?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z") # UnwindMap
+	.long	0                               # NumTryBlocks
+	.long	0                               # TryBlockMap
+	.long	0                               # IPMapEntries
+	.long	0                               # IPToStateXData
+	.long	0                               # ESTypeList
+	.long	1                               # EHFlags
+"$stateUnwindMap$?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z":
+	.long	-1                              # ToState
+	.long	"?dtor$18@?0??_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z@4HA" # Action
+	.section	.text,"xr",discard,"?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
+                                        # -- End function
+	.def	 "?_Xlen@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@ABEXXZ";
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text,"xr",discard,"?_Xlen@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@ABEXXZ"
+	.globl	"?_Xlen@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@ABEXXZ" # -- Begin function ?_Xlen@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@ABEXXZ
+	.p2align	4, 0x90
+"?_Xlen@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@ABEXXZ": # @"?_Xlen@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@ABEXXZ"
+# %bb.0:
+	push	offset "??_C@_0BC@KBDMBKEH@deque?$DMT?$DO?5too?5long?$AA@"
+	call	"?_Xlength_error@std@@YAXPBD@Z"
+                                        # -- End function
+	.def	 "?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z";
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text,"xr",discard,"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
+	.globl	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z" # -- Begin function ?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z
+	.p2align	4, 0x90
+"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z": # @"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBEE@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBEE@std@@PAX@std@@@2@QAU32@@Z"
 # %bb.0:
 	push	ebp
 	push	ebx
@@ -25800,39 +29663,39 @@ Lfunc_end71:
 	mov	ecx, dword ptr [ecx]
 	mov	dword ptr [eax + 4], edx
 	cmp	ecx, edx
-	je	LBB186_1
+	je	LBB199_1
 # %bb.2:
 	cmp	dword ptr [esp + 28], 0
-	je	LBB186_3
+	je	LBB199_3
 # %bb.5:
 	mov	dword ptr [edx], eax
 	cmp	dword ptr [ecx], edx
-	jne	LBB186_7
+	jne	LBB199_7
 # %bb.6:
 	mov	dword ptr [ecx], eax
 	cmp	byte ptr [edx + 12], 0
 	mov	dword ptr [esp], ecx            # 4-byte Spill
-	jne	LBB186_38
-	jmp	LBB186_8
-LBB186_1:
+	jne	LBB199_38
+	jmp	LBB199_8
+LBB199_1:
 	mov	dword ptr [edx], eax
 	mov	dword ptr [edx + 4], eax
 	mov	dword ptr [edx + 8], eax
 	mov	ecx, eax
-	jmp	LBB186_39
-LBB186_3:
+	jmp	LBB199_39
+LBB199_3:
 	mov	dword ptr [edx + 8], eax
 	cmp	dword ptr [ecx + 8], edx
-	je	LBB186_4
-LBB186_7:
+	je	LBB199_4
+LBB199_7:
 	cmp	byte ptr [edx + 12], 0
 	mov	dword ptr [esp], ecx            # 4-byte Spill
-	je	LBB186_8
-LBB186_38:
+	je	LBB199_8
+LBB199_38:
 	mov	eax, dword ptr [esp]            # 4-byte Reload
 	mov	ecx, dword ptr [eax + 4]
 	mov	eax, dword ptr [esp + 32]
-LBB186_39:
+LBB199_39:
 	mov	byte ptr [ecx + 12], 1
 	add	esp, 4
 	pop	esi
@@ -25840,127 +29703,127 @@ LBB186_39:
 	pop	ebx
 	pop	ebp
 	ret	12
-LBB186_4:
+LBB199_4:
 	mov	dword ptr [ecx + 8], eax
 	cmp	byte ptr [edx + 12], 0
 	mov	dword ptr [esp], ecx            # 4-byte Spill
-	jne	LBB186_38
-LBB186_8:
+	jne	LBB199_38
+LBB199_8:
 	mov	eax, dword ptr [esp]            # 4-byte Reload
 	mov	ebx, dword ptr [esp + 32]
 	lea	ebp, [edx + 12]
 	lea	esi, [eax + 4]
-	jmp	LBB186_9
+	jmp	LBB199_9
 	.p2align	4, 0x90
-LBB186_11:                              #   in Loop: Header=BB186_9 Depth=1
+LBB199_11:                              #   in Loop: Header=BB199_9 Depth=1
 	mov	byte ptr [ebp], 1
 	mov	byte ptr [eax + 12], 1
 	mov	byte ptr [edi + 12], 0
 	mov	edx, edi
-LBB186_37:                              #   in Loop: Header=BB186_9 Depth=1
+LBB199_37:                              #   in Loop: Header=BB199_9 Depth=1
 	mov	ebx, edx
 	mov	edx, dword ptr [edx + 4]
 	cmp	byte ptr [edx + 12], 0
 	lea	ebp, [edx + 12]
-	jne	LBB186_38
-LBB186_9:                               # =>This Inner Loop Header: Depth=1
+	jne	LBB199_38
+LBB199_9:                               # =>This Inner Loop Header: Depth=1
 	mov	edi, dword ptr [edx + 4]
 	mov	eax, dword ptr [edi]
 	cmp	edx, eax
-	je	LBB186_10
-# %bb.24:                               #   in Loop: Header=BB186_9 Depth=1
+	je	LBB199_10
+# %bb.24:                               #   in Loop: Header=BB199_9 Depth=1
 	cmp	byte ptr [eax + 12], 0
-	je	LBB186_11
-# %bb.25:                               #   in Loop: Header=BB186_9 Depth=1
+	je	LBB199_11
+# %bb.25:                               #   in Loop: Header=BB199_9 Depth=1
 	cmp	ebx, dword ptr [edx]
-	je	LBB186_27
-# %bb.26:                               #   in Loop: Header=BB186_9 Depth=1
+	je	LBB199_27
+# %bb.26:                               #   in Loop: Header=BB199_9 Depth=1
 	mov	eax, edx
 	mov	edx, ebx
-	jmp	LBB186_32
+	jmp	LBB199_32
 	.p2align	4, 0x90
-LBB186_10:                              #   in Loop: Header=BB186_9 Depth=1
+LBB199_10:                              #   in Loop: Header=BB199_9 Depth=1
 	mov	eax, dword ptr [edi + 8]
 	cmp	byte ptr [eax + 12], 0
-	je	LBB186_11
-# %bb.12:                               #   in Loop: Header=BB186_9 Depth=1
+	je	LBB199_11
+# %bb.12:                               #   in Loop: Header=BB199_9 Depth=1
 	mov	ecx, dword ptr [edx + 8]
 	cmp	ebx, ecx
-	je	LBB186_14
-# %bb.13:                               #   in Loop: Header=BB186_9 Depth=1
+	je	LBB199_14
+# %bb.13:                               #   in Loop: Header=BB199_9 Depth=1
 	mov	ebp, edx
 	mov	eax, edx
 	mov	edx, ebx
-	jmp	LBB186_19
-LBB186_27:                              #   in Loop: Header=BB186_9 Depth=1
+	jmp	LBB199_19
+LBB199_27:                              #   in Loop: Header=BB199_9 Depth=1
 	mov	eax, dword ptr [ebx + 8]
 	mov	dword ptr [edx], eax
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB186_29
-# %bb.28:                               #   in Loop: Header=BB186_9 Depth=1
+	jne	LBB199_29
+# %bb.28:                               #   in Loop: Header=BB199_9 Depth=1
 	mov	dword ptr [eax + 4], edx
 	mov	edi, dword ptr [edx + 4]
-LBB186_29:                              #   in Loop: Header=BB186_9 Depth=1
+LBB199_29:                              #   in Loop: Header=BB199_9 Depth=1
 	mov	dword ptr [ebx + 4], edi
 	mov	eax, esi
 	cmp	dword ptr [esi], edx
-	je	LBB186_31
-# %bb.30:                               #   in Loop: Header=BB186_9 Depth=1
+	je	LBB199_31
+# %bb.30:                               #   in Loop: Header=BB199_9 Depth=1
 	mov	ecx, dword ptr [edx + 4]
 	cmp	dword ptr [ecx + 8], edx
 	lea	eax, [ecx + 8]
 	cmovne	eax, ecx
-LBB186_31:                              #   in Loop: Header=BB186_9 Depth=1
+LBB199_31:                              #   in Loop: Header=BB199_9 Depth=1
 	mov	dword ptr [eax], ebx
 	mov	dword ptr [ebx + 8], edx
 	mov	dword ptr [edx + 4], ebx
 	mov	eax, ebx
 	mov	edi, dword ptr [ebx + 4]
-LBB186_32:                              #   in Loop: Header=BB186_9 Depth=1
+LBB199_32:                              #   in Loop: Header=BB199_9 Depth=1
 	mov	byte ptr [eax + 12], 1
 	mov	byte ptr [edi + 12], 0
 	mov	ecx, dword ptr [edi + 8]
 	mov	eax, dword ptr [ecx]
 	mov	dword ptr [edi + 8], eax
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB186_34
-# %bb.33:                               #   in Loop: Header=BB186_9 Depth=1
+	jne	LBB199_34
+# %bb.33:                               #   in Loop: Header=BB199_9 Depth=1
 	mov	dword ptr [eax + 4], edi
-LBB186_34:                              #   in Loop: Header=BB186_9 Depth=1
+LBB199_34:                              #   in Loop: Header=BB199_9 Depth=1
 	mov	eax, dword ptr [edi + 4]
 	mov	dword ptr [ecx + 4], eax
 	mov	eax, esi
 	cmp	dword ptr [esi], edi
-	je	LBB186_36
-# %bb.35:                               #   in Loop: Header=BB186_9 Depth=1
+	je	LBB199_36
+# %bb.35:                               #   in Loop: Header=BB199_9 Depth=1
 	mov	ebx, dword ptr [edi + 4]
 	cmp	dword ptr [ebx], edi
 	lea	eax, [ebx + 8]
 	cmove	eax, ebx
-LBB186_36:                              #   in Loop: Header=BB186_9 Depth=1
+LBB199_36:                              #   in Loop: Header=BB199_9 Depth=1
 	mov	dword ptr [eax], ecx
 	mov	dword ptr [ecx], edi
 	mov	dword ptr [edi + 4], ecx
-	jmp	LBB186_37
-LBB186_14:                              #   in Loop: Header=BB186_9 Depth=1
+	jmp	LBB199_37
+LBB199_14:                              #   in Loop: Header=BB199_9 Depth=1
 	mov	eax, dword ptr [ebx]
 	mov	dword ptr [edx + 8], eax
 	cmp	byte ptr [eax + 13], 0
-	jne	LBB186_16
-# %bb.15:                               #   in Loop: Header=BB186_9 Depth=1
+	jne	LBB199_16
+# %bb.15:                               #   in Loop: Header=BB199_9 Depth=1
 	mov	dword ptr [eax + 4], edx
 	mov	edi, dword ptr [edx + 4]
-LBB186_16:                              #   in Loop: Header=BB186_9 Depth=1
+LBB199_16:                              #   in Loop: Header=BB199_9 Depth=1
 	mov	dword ptr [ebx + 4], edi
 	mov	eax, esi
 	cmp	dword ptr [esi], edx
-	je	LBB186_18
-# %bb.17:                               #   in Loop: Header=BB186_9 Depth=1
+	je	LBB199_18
+# %bb.17:                               #   in Loop: Header=BB199_9 Depth=1
 	mov	ecx, dword ptr [edx + 4]
 	cmp	dword ptr [ecx], edx
 	lea	eax, [ecx + 8]
 	cmove	eax, ecx
-LBB186_18:                              #   in Loop: Header=BB186_9 Depth=1
+LBB199_18:                              #   in Loop: Header=BB199_9 Depth=1
 	mov	dword ptr [eax], ebx
 	mov	dword ptr [ebx], edx
 	mov	dword ptr [edx + 4], ebx
@@ -25968,30 +29831,30 @@ LBB186_18:                              #   in Loop: Header=BB186_9 Depth=1
 	mov	edi, dword ptr [ebx + 4]
 	mov	ebp, dword ptr [edi]
 	mov	ecx, dword ptr [ebp + 8]
-LBB186_19:                              #   in Loop: Header=BB186_9 Depth=1
+LBB199_19:                              #   in Loop: Header=BB199_9 Depth=1
 	mov	byte ptr [eax + 12], 1
 	mov	byte ptr [edi + 12], 0
 	mov	dword ptr [edi], ecx
 	cmp	byte ptr [ecx + 13], 0
-	jne	LBB186_21
-# %bb.20:                               #   in Loop: Header=BB186_9 Depth=1
+	jne	LBB199_21
+# %bb.20:                               #   in Loop: Header=BB199_9 Depth=1
 	mov	dword ptr [ecx + 4], edi
-LBB186_21:                              #   in Loop: Header=BB186_9 Depth=1
+LBB199_21:                              #   in Loop: Header=BB199_9 Depth=1
 	mov	eax, dword ptr [edi + 4]
 	mov	dword ptr [ebp + 4], eax
 	mov	eax, esi
 	cmp	dword ptr [esi], edi
-	je	LBB186_23
-# %bb.22:                               #   in Loop: Header=BB186_9 Depth=1
+	je	LBB199_23
+# %bb.22:                               #   in Loop: Header=BB199_9 Depth=1
 	mov	ecx, dword ptr [edi + 4]
 	cmp	dword ptr [ecx + 8], edi
 	lea	eax, [ecx + 8]
 	cmovne	eax, ecx
-LBB186_23:                              #   in Loop: Header=BB186_9 Depth=1
+LBB199_23:                              #   in Loop: Header=BB199_9 Depth=1
 	mov	dword ptr [eax], ebp
 	mov	dword ptr [ebp + 8], edi
 	mov	dword ptr [edi + 4], ebp
-	jmp	LBB186_37
+	jmp	LBB199_37
                                         # -- End function
 	.def	 "?_Throw_tree_length_error@std@@YAXXZ";
 	.scl	2;
@@ -26013,7 +29876,7 @@ LBB186_23:                              #   in Loop: Header=BB186_9 Depth=1
 	.globl	"??$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z" # -- Begin function ??$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z
 	.p2align	4, 0x90
 "??$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z": # @"??$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z"
-Lfunc_begin72:
+Lfunc_begin77:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -26043,26 +29906,26 @@ Lfunc_begin72:
 	mov	ecx, dword ptr [edi + edx + 56]
 	cmovl	ebx, esi
 	test	ecx, ecx
-	je	LBB188_2
+	je	LBB201_2
 # %bb.1:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 4]
 	mov	eax, dword ptr [edi]
 	mov	edx, dword ptr [eax + 4]
-LBB188_2:
+LBB201_2:
 	cmp	dword ptr [edi + edx + 12], 0
-	je	LBB188_4
+	je	LBB201_4
 # %bb.3:
 	mov	byte ptr [ebp - 36], 0
 	mov	ecx, 4
-	jmp	LBB188_42
-LBB188_4:
+	jmp	LBB201_42
+LBB201_4:
 	mov	ecx, dword ptr [edi + edx + 60]
 	test	ecx, ecx
-	je	LBB188_6
+	je	LBB201_6
 # %bb.5:
 	cmp	ecx, edi
-	je	LBB188_6
+	je	LBB201_6
 # %bb.10:
 	mov	dword ptr [ebp - 32], ebx       # 4-byte Spill
 	mov	dword ptr [ebp - 16], 0
@@ -26075,49 +29938,49 @@ LBB188_4:
 	cmp	dword ptr [edi + ecx + 12], 0
 	mov	ecx, 4
 	sete	byte ptr [ebp - 36]
-	jne	LBB188_42
-	jmp	LBB188_12
-LBB188_6:
+	jne	LBB201_42
+	jmp	LBB201_12
+LBB201_6:
 	mov	byte ptr [ebp - 36], 1
-LBB188_12:
+LBB201_12:
 	mov	eax, dword ptr [eax + 4]
 	mov	ecx, 448
 	and	ecx, dword ptr [edi + eax + 20]
 	cmp	ecx, 64
-	jne	LBB188_14
+	jne	LBB201_14
 # %bb.13:
 	mov	dword ptr [ebp - 32], ebx       # 4-byte Spill
-	jmp	LBB188_16
+	jmp	LBB201_16
 	.p2align	4, 0x90
-LBB188_20:                              #   in Loop: Header=BB188_14 Depth=1
+LBB201_20:                              #   in Loop: Header=BB201_14 Depth=1
 	dec	ebx
 	lea	ecx, [esi + 1]
 	mov	dword ptr [edi], ebx
 	mov	ebx, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	dword ptr [edx], ecx
 	mov	byte ptr [esi], al
-LBB188_21:                              #   in Loop: Header=BB188_14 Depth=1
+LBB201_21:                              #   in Loop: Header=BB201_14 Depth=1
 	mov	edi, dword ptr [ebp + 8]
 	dec	ebx
-LBB188_14:                              # =>This Inner Loop Header: Depth=1
+LBB201_14:                              # =>This Inner Loop Header: Depth=1
 	mov	eax, dword ptr [edi]
 	test	ebx, ebx
 	mov	eax, dword ptr [eax + 4]
-	je	LBB188_15
-# %bb.18:                               #   in Loop: Header=BB188_14 Depth=1
+	je	LBB201_15
+# %bb.18:                               #   in Loop: Header=BB201_14 Depth=1
 	mov	ecx, dword ptr [edi + eax + 56]
 	movzx	eax, byte ptr [edi + eax + 64]
 	mov	dword ptr [ebp - 32], ebx       # 4-byte Spill
 	mov	edx, dword ptr [ecx + 32]
 	mov	esi, dword ptr [edx]
 	test	esi, esi
-	je	LBB188_22
-# %bb.19:                               #   in Loop: Header=BB188_14 Depth=1
+	je	LBB201_22
+# %bb.19:                               #   in Loop: Header=BB201_14 Depth=1
 	mov	edi, dword ptr [ecx + 48]
 	mov	ebx, dword ptr [edi]
 	test	ebx, ebx
-	jg	LBB188_20
-LBB188_22:                              #   in Loop: Header=BB188_14 Depth=1
+	jg	LBB201_20
+LBB201_22:                              #   in Loop: Header=BB201_14 Depth=1
 	mov	edx, dword ptr [ecx]
 	movzx	eax, al
 	mov	edx, dword ptr [edx + 12]
@@ -26125,16 +29988,16 @@ LBB188_22:                              #   in Loop: Header=BB188_14 Depth=1
 	mov	dword ptr [ebp - 16], 4
 	push	eax
 	call	edx
-# %bb.23:                               #   in Loop: Header=BB188_14 Depth=1
+# %bb.23:                               #   in Loop: Header=BB201_14 Depth=1
 	mov	ebx, dword ptr [ebp - 32]       # 4-byte Reload
 	cmp	eax, -1
-	jne	LBB188_21
+	jne	LBB201_21
 # %bb.24:
 	mov	dword ptr [ebp - 44], 4         # 4-byte Folded Spill
-	jmp	LBB188_25
-LBB188_15:
+	jmp	LBB201_25
+LBB201_15:
 	mov	dword ptr [ebp - 32], 0         # 4-byte Folded Spill
-LBB188_16:
+LBB201_16:
 	mov	ecx, dword ptr [edi + eax + 56]
 	mov	edx, dword ptr [ebp + 12]
 	mov	eax, dword ptr [ecx]
@@ -26152,13 +30015,13 @@ LBB188_16:
 	mov	ecx, 4
 	mov	dword ptr [ebp - 44], 0         # 4-byte Folded Spill
 	or	eax, edx
-	je	LBB188_26
-	jmp	LBB188_35
-LBB188_25:
+	je	LBB201_26
+	jmp	LBB201_35
+LBB201_25:
 	mov	edi, dword ptr [ebp + 8]
-LBB188_26:
+LBB201_26:
 	test	ebx, ebx
-	je	LBB188_27
+	je	LBB201_27
 # %bb.28:
 	mov	eax, dword ptr [edi]
 	mov	dword ptr [ebp - 32], ebx       # 4-byte Spill
@@ -26168,12 +30031,12 @@ LBB188_26:
 	mov	edx, dword ptr [ecx + 32]
 	mov	esi, dword ptr [edx]
 	test	esi, esi
-	je	LBB188_32
+	je	LBB201_32
 # %bb.29:
 	mov	edi, dword ptr [ecx + 48]
 	mov	ebx, dword ptr [edi]
 	test	ebx, ebx
-	jle	LBB188_32
+	jle	LBB201_32
 # %bb.30:
 	dec	ebx
 	lea	ecx, [esi + 1]
@@ -26181,8 +30044,8 @@ LBB188_26:
 	mov	ebx, dword ptr [ebp - 32]       # 4-byte Reload
 	mov	dword ptr [edx], ecx
 	mov	byte ptr [esi], al
-	jmp	LBB188_31
-LBB188_32:
+	jmp	LBB201_31
+LBB201_32:
 	mov	edx, dword ptr [ecx]
 	mov	esi, dword ptr [ebp - 44]       # 4-byte Reload
 	movzx	eax, al
@@ -26194,22 +30057,22 @@ LBB188_32:
 # %bb.33:
 	mov	ebx, dword ptr [ebp - 32]       # 4-byte Reload
 	cmp	eax, -1
-	je	LBB188_34
-LBB188_31:
+	je	LBB201_34
+LBB201_31:
 	dec	ebx
-	jmp	LBB188_25
-LBB188_27:
+	jmp	LBB201_25
+LBB201_27:
 	mov	ecx, dword ptr [ebp - 44]       # 4-byte Reload
-	jmp	LBB188_35
-LBB188_34:
+	jmp	LBB201_35
+LBB201_34:
 	mov	edi, dword ptr [ebp + 8]
 	mov	ecx, 4
-LBB188_35:
+LBB201_35:
 	mov	eax, dword ptr [edi]
 	mov	eax, dword ptr [eax + 4]
 	mov	dword ptr [edi + eax + 36], 0
 	mov	dword ptr [edi + eax + 32], 0
-LBB188_42:
+LBB201_42:
 	mov	eax, dword ptr [edi]
 	mov	edx, dword ptr [eax + 4]
 	xor	eax, eax
@@ -26221,30 +30084,30 @@ LBB188_42:
 	or	ecx, eax
 	mov	dword ptr [edi + edx + 12], ecx
 	and	ecx, dword ptr [edi + edx + 16]
-	jne	LBB188_43
+	jne	LBB201_43
 # %bb.48:
 	call	"?uncaught_exception@std@@YA_NXZ"
 	test	al, al
-	jne	LBB188_50
+	jne	LBB201_50
 # %bb.49:
 	mov	ecx, dword ptr [ebp - 40]
 	mov	dword ptr [ebp - 16], 2
 	call	"?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ"
 	mov	edi, dword ptr [ebp + 8]
-LBB188_50:
+LBB201_50:
 	mov	eax, dword ptr [ebp - 40]
 	mov	ecx, dword ptr [eax]
 	mov	ecx, dword ptr [ecx + 4]
 	mov	ecx, dword ptr [eax + ecx + 56]
 	test	ecx, ecx
-	je	LBB188_52
+	je	LBB201_52
 # %bb.51:
 	mov	eax, dword ptr [ecx]
 	mov	eax, dword ptr [eax + 8]
 	mov	dword ptr [ebp - 16], 1
 	call	eax
 	mov	edi, dword ptr [ebp + 8]
-LBB188_52:
+LBB201_52:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, edi
@@ -26254,16 +30117,16 @@ LBB188_52:
 	pop	ebx
 	pop	ebp
 	ret
-LBB188_43:
+LBB201_43:
 	cmp	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], 0
 	#MEMBARRIER
-	jne	LBB188_45
+	jne	LBB201_45
 # %bb.44:
 	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"+4], 5
 	#MEMBARRIER
 	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], offset "??_7_Iostream_error_category2@std@@6B@"
 	mov	dword ptr [ebp - 16], 3
-LBB188_45:
+LBB201_45:
 	test	cl, 2
 	mov	eax, offset "??_C@_0BF@OOHOMBOF@ios_base?3?3eofbit?5set?$AA@"
 	mov	edx, offset "??_C@_0BG@FMKFHCIL@ios_base?3?3failbit?5set?$AA@"
@@ -26285,20 +30148,20 @@ LBB188_45:
 	call	__CxxThrowException@8
 	add	esp, 8
 # %bb.47:
-LBB188_40:                              # Block address taken
+LBB201_40:                              # Block address taken
 	add	ebp, 12
-	jmp	LBB188_41
-LBB188_41:
+	jmp	LBB201_41
+LBB201_41:
 	mov	ecx, dword ptr [ebp - 48]
 	mov	edi, dword ptr [ebp + 8]
-	jmp	LBB188_42
+	jmp	LBB201_42
 	.def	 "?dtor$7@?0???$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
 "?dtor$7@?0???$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z@4HA":
-LBB188_7:
+LBB201_7:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
@@ -26307,11 +30170,11 @@ LBB188_7:
 	mov	ecx, dword ptr [ecx + 4]
 	mov	ecx, dword ptr [eax + ecx + 56]
 	test	ecx, ecx
-	je	LBB188_9
+	je	LBB201_9
 # %bb.8:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
-LBB188_9:
+LBB201_9:
 	add	esp, 12
 	pop	ebp
 	ret                                     # CLEANUPRET
@@ -26321,7 +30184,7 @@ LBB188_9:
 	.endef
 	.p2align	4, 0x90
 "?catch$36@?0???$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z@4HA":
-LBB188_36:
+LBB201_36:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
@@ -26334,13 +30197,13 @@ LBB188_36:
 	or	ecx, 4
 	mov	dword ptr [edx + eax + 12], ecx
 	test	dword ptr [edx + eax + 16], ecx
-	jne	LBB188_37
+	jne	LBB201_37
 # %bb.39:
-	mov	eax, offset LBB188_40
+	mov	eax, offset LBB201_40
 	add	esp, 12
 	pop	ebp
 	ret                                     # CATCHRET
-LBB188_37:
+LBB201_37:
 	mov	dword ptr [ebp - 16], 5
 	push	0
 	push	0
@@ -26353,7 +30216,7 @@ LBB188_37:
 	.endef
 	.p2align	4, 0x90
 "?dtor$53@?0???$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z@4HA":
-LBB188_53:
+LBB201_53:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
@@ -26364,7 +30227,7 @@ LBB188_53:
 	.endef
 	.p2align	4, 0x90
 "?dtor$54@?0???$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z@4HA":
-LBB188_54:
+LBB201_54:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
@@ -26377,31 +30240,31 @@ LBB188_54:
 	.endef
 	.p2align	4, 0x90
 "?dtor$55@?0???$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z@4HA":
-LBB188_55:
+LBB201_55:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
 	call	"?uncaught_exception@std@@YA_NXZ"
 	test	al, al
-	jne	LBB188_57
+	jne	LBB201_57
 # %bb.56:
 	mov	ecx, dword ptr [ebp - 40]
 	call	"?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ"
-LBB188_57:
+LBB201_57:
 	mov	eax, dword ptr [ebp - 40]
 	mov	ecx, dword ptr [eax]
 	mov	ecx, dword ptr [ecx + 4]
 	mov	ecx, dword ptr [eax + ecx + 56]
 	test	ecx, ecx
-	je	LBB188_59
+	je	LBB201_59
 # %bb.58:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
-LBB188_59:
+LBB201_59:
 	add	esp, 12
 	pop	ebp
 	ret                                     # CLEANUPRET
-Lfunc_end72:
+Lfunc_end77:
 	.section	.xdata,"dr",associative,"??$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z"
 	.p2align	2
 "L__ehtable$??$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z":
@@ -26440,6 +30303,219 @@ Lfunc_end72:
 	.long	"?catch$36@?0???$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z@4HA" # Handler
 	.section	.text,"xr",discard,"??$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z"
                                         # -- End function
+	.def	 "?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z";
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text,"xr",discard,"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z"
+	.globl	"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z" # -- Begin function ?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z
+	.p2align	4, 0x90
+"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z": # @"?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIP6AXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z@std@@PAX@std@@@2@QAU32@@Z"
+# %bb.0:
+	push	ebp
+	push	ebx
+	push	edi
+	push	esi
+	push	eax
+	inc	dword ptr [ecx + 4]
+	mov	edx, dword ptr [esp + 24]
+	mov	eax, dword ptr [esp + 32]
+	mov	ecx, dword ptr [ecx]
+	mov	dword ptr [eax + 4], edx
+	cmp	ecx, edx
+	je	LBB202_1
+# %bb.2:
+	cmp	dword ptr [esp + 28], 0
+	je	LBB202_3
+# %bb.5:
+	mov	dword ptr [edx], eax
+	cmp	dword ptr [ecx], edx
+	jne	LBB202_7
+# %bb.6:
+	mov	dword ptr [ecx], eax
+	cmp	byte ptr [edx + 12], 0
+	mov	dword ptr [esp], ecx            # 4-byte Spill
+	jne	LBB202_38
+	jmp	LBB202_8
+LBB202_1:
+	mov	dword ptr [edx], eax
+	mov	dword ptr [edx + 4], eax
+	mov	dword ptr [edx + 8], eax
+	mov	ecx, eax
+	jmp	LBB202_39
+LBB202_3:
+	mov	dword ptr [edx + 8], eax
+	cmp	dword ptr [ecx + 8], edx
+	je	LBB202_4
+LBB202_7:
+	cmp	byte ptr [edx + 12], 0
+	mov	dword ptr [esp], ecx            # 4-byte Spill
+	je	LBB202_8
+LBB202_38:
+	mov	eax, dword ptr [esp]            # 4-byte Reload
+	mov	ecx, dword ptr [eax + 4]
+	mov	eax, dword ptr [esp + 32]
+LBB202_39:
+	mov	byte ptr [ecx + 12], 1
+	add	esp, 4
+	pop	esi
+	pop	edi
+	pop	ebx
+	pop	ebp
+	ret	12
+LBB202_4:
+	mov	dword ptr [ecx + 8], eax
+	cmp	byte ptr [edx + 12], 0
+	mov	dword ptr [esp], ecx            # 4-byte Spill
+	jne	LBB202_38
+LBB202_8:
+	mov	eax, dword ptr [esp]            # 4-byte Reload
+	mov	ebx, dword ptr [esp + 32]
+	lea	ebp, [edx + 12]
+	lea	esi, [eax + 4]
+	jmp	LBB202_9
+	.p2align	4, 0x90
+LBB202_11:                              #   in Loop: Header=BB202_9 Depth=1
+	mov	byte ptr [ebp], 1
+	mov	byte ptr [eax + 12], 1
+	mov	byte ptr [edi + 12], 0
+	mov	edx, edi
+LBB202_37:                              #   in Loop: Header=BB202_9 Depth=1
+	mov	ebx, edx
+	mov	edx, dword ptr [edx + 4]
+	cmp	byte ptr [edx + 12], 0
+	lea	ebp, [edx + 12]
+	jne	LBB202_38
+LBB202_9:                               # =>This Inner Loop Header: Depth=1
+	mov	edi, dword ptr [edx + 4]
+	mov	eax, dword ptr [edi]
+	cmp	edx, eax
+	je	LBB202_10
+# %bb.24:                               #   in Loop: Header=BB202_9 Depth=1
+	cmp	byte ptr [eax + 12], 0
+	je	LBB202_11
+# %bb.25:                               #   in Loop: Header=BB202_9 Depth=1
+	cmp	ebx, dword ptr [edx]
+	je	LBB202_27
+# %bb.26:                               #   in Loop: Header=BB202_9 Depth=1
+	mov	eax, edx
+	mov	edx, ebx
+	jmp	LBB202_32
+	.p2align	4, 0x90
+LBB202_10:                              #   in Loop: Header=BB202_9 Depth=1
+	mov	eax, dword ptr [edi + 8]
+	cmp	byte ptr [eax + 12], 0
+	je	LBB202_11
+# %bb.12:                               #   in Loop: Header=BB202_9 Depth=1
+	mov	ecx, dword ptr [edx + 8]
+	cmp	ebx, ecx
+	je	LBB202_14
+# %bb.13:                               #   in Loop: Header=BB202_9 Depth=1
+	mov	ebp, edx
+	mov	eax, edx
+	mov	edx, ebx
+	jmp	LBB202_19
+LBB202_27:                              #   in Loop: Header=BB202_9 Depth=1
+	mov	eax, dword ptr [ebx + 8]
+	mov	dword ptr [edx], eax
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB202_29
+# %bb.28:                               #   in Loop: Header=BB202_9 Depth=1
+	mov	dword ptr [eax + 4], edx
+	mov	edi, dword ptr [edx + 4]
+LBB202_29:                              #   in Loop: Header=BB202_9 Depth=1
+	mov	dword ptr [ebx + 4], edi
+	mov	eax, esi
+	cmp	dword ptr [esi], edx
+	je	LBB202_31
+# %bb.30:                               #   in Loop: Header=BB202_9 Depth=1
+	mov	ecx, dword ptr [edx + 4]
+	cmp	dword ptr [ecx + 8], edx
+	lea	eax, [ecx + 8]
+	cmovne	eax, ecx
+LBB202_31:                              #   in Loop: Header=BB202_9 Depth=1
+	mov	dword ptr [eax], ebx
+	mov	dword ptr [ebx + 8], edx
+	mov	dword ptr [edx + 4], ebx
+	mov	eax, ebx
+	mov	edi, dword ptr [ebx + 4]
+LBB202_32:                              #   in Loop: Header=BB202_9 Depth=1
+	mov	byte ptr [eax + 12], 1
+	mov	byte ptr [edi + 12], 0
+	mov	ecx, dword ptr [edi + 8]
+	mov	eax, dword ptr [ecx]
+	mov	dword ptr [edi + 8], eax
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB202_34
+# %bb.33:                               #   in Loop: Header=BB202_9 Depth=1
+	mov	dword ptr [eax + 4], edi
+LBB202_34:                              #   in Loop: Header=BB202_9 Depth=1
+	mov	eax, dword ptr [edi + 4]
+	mov	dword ptr [ecx + 4], eax
+	mov	eax, esi
+	cmp	dword ptr [esi], edi
+	je	LBB202_36
+# %bb.35:                               #   in Loop: Header=BB202_9 Depth=1
+	mov	ebx, dword ptr [edi + 4]
+	cmp	dword ptr [ebx], edi
+	lea	eax, [ebx + 8]
+	cmove	eax, ebx
+LBB202_36:                              #   in Loop: Header=BB202_9 Depth=1
+	mov	dword ptr [eax], ecx
+	mov	dword ptr [ecx], edi
+	mov	dword ptr [edi + 4], ecx
+	jmp	LBB202_37
+LBB202_14:                              #   in Loop: Header=BB202_9 Depth=1
+	mov	eax, dword ptr [ebx]
+	mov	dword ptr [edx + 8], eax
+	cmp	byte ptr [eax + 13], 0
+	jne	LBB202_16
+# %bb.15:                               #   in Loop: Header=BB202_9 Depth=1
+	mov	dword ptr [eax + 4], edx
+	mov	edi, dword ptr [edx + 4]
+LBB202_16:                              #   in Loop: Header=BB202_9 Depth=1
+	mov	dword ptr [ebx + 4], edi
+	mov	eax, esi
+	cmp	dword ptr [esi], edx
+	je	LBB202_18
+# %bb.17:                               #   in Loop: Header=BB202_9 Depth=1
+	mov	ecx, dword ptr [edx + 4]
+	cmp	dword ptr [ecx], edx
+	lea	eax, [ecx + 8]
+	cmove	eax, ecx
+LBB202_18:                              #   in Loop: Header=BB202_9 Depth=1
+	mov	dword ptr [eax], ebx
+	mov	dword ptr [ebx], edx
+	mov	dword ptr [edx + 4], ebx
+	mov	eax, ebx
+	mov	edi, dword ptr [ebx + 4]
+	mov	ebp, dword ptr [edi]
+	mov	ecx, dword ptr [ebp + 8]
+LBB202_19:                              #   in Loop: Header=BB202_9 Depth=1
+	mov	byte ptr [eax + 12], 1
+	mov	byte ptr [edi + 12], 0
+	mov	dword ptr [edi], ecx
+	cmp	byte ptr [ecx + 13], 0
+	jne	LBB202_21
+# %bb.20:                               #   in Loop: Header=BB202_9 Depth=1
+	mov	dword ptr [ecx + 4], edi
+LBB202_21:                              #   in Loop: Header=BB202_9 Depth=1
+	mov	eax, dword ptr [edi + 4]
+	mov	dword ptr [ebp + 4], eax
+	mov	eax, esi
+	cmp	dword ptr [esi], edi
+	je	LBB202_23
+# %bb.22:                               #   in Loop: Header=BB202_9 Depth=1
+	mov	ecx, dword ptr [edi + 4]
+	cmp	dword ptr [ecx + 8], edi
+	lea	eax, [ecx + 8]
+	cmovne	eax, ecx
+LBB202_23:                              #   in Loop: Header=BB202_9 Depth=1
+	mov	dword ptr [eax], ebp
+	mov	dword ptr [ebp + 8], edi
+	mov	dword ptr [edi + 4], ebp
+	jmp	LBB202_37
+                                        # -- End function
 	.def	 "?_Growmap@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXI@Z";
 	.scl	2;
 	.type	32;
@@ -26448,7 +30524,7 @@ Lfunc_end72:
 	.globl	"?_Growmap@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXI@Z" # -- Begin function ?_Growmap@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXI@Z
 	.p2align	4, 0x90
 "?_Growmap@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXI@Z": # @"?_Growmap@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXI@Z"
-Lfunc_begin73:
+Lfunc_begin78:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -26469,35 +30545,35 @@ Lfunc_begin73:
 	test	edx, edx
 	cmovne	eax, edx
 	cmp	eax, 8
-	jb	LBB189_3
+	jb	LBB203_3
 	.p2align	4, 0x90
-LBB189_2:
+LBB203_2:
 	mov	ebx, eax
 	sub	ebx, edx
 	cmp	ebx, edi
-	jae	LBB189_5
-LBB189_3:                               # =>This Inner Loop Header: Depth=1
+	jae	LBB203_5
+LBB203_3:                               # =>This Inner Loop Header: Depth=1
 	mov	esi, 268435455
 	sub	esi, eax
 	cmp	esi, eax
-	jb	LBB189_22
-# %bb.4:                                #   in Loop: Header=BB189_3 Depth=1
+	jb	LBB203_22
+# %bb.4:                                #   in Loop: Header=BB203_3 Depth=1
 	add	eax, eax
 	cmp	eax, 8
-	jae	LBB189_2
-	jmp	LBB189_3
-LBB189_5:
+	jae	LBB203_2
+	jmp	LBB203_3
+LBB203_5:
 	cmp	eax, 1073741824
-	jae	LBB189_23
+	jae	LBB203_23
 # %bb.6:
 	mov	edi, dword ptr [ecx + 12]
 	lea	edx, [4*eax]
 	cmp	eax, 1024
-	jb	LBB189_9
+	jb	LBB203_9
 # %bb.7:
 	cmp	eax, 1073741816
 	mov	dword ptr [ebp - 16], -1
-	jae	LBB189_24
+	jae	LBB203_24
 # %bb.8:
 	mov	esi, ecx
 	add	edx, 35
@@ -26507,15 +30583,15 @@ LBB189_5:
 	lea	ecx, [eax + 35]
 	and	ecx, -32
 	mov	dword ptr [ecx - 4], eax
-	jmp	LBB189_10
-LBB189_9:
+	jmp	LBB203_10
+LBB203_9:
 	mov	esi, ecx
 	mov	dword ptr [ebp - 16], -1
 	push	edx
 	call	"??2@YAPAXI@Z"
 	add	esp, 4
 	mov	ecx, eax
-LBB189_10:
+LBB203_10:
 	shr	edi, 3
 	mov	dword ptr [ebp - 44], ecx       # 4-byte Spill
 	mov	eax, dword ptr [esi + 4]
@@ -26537,7 +30613,7 @@ LBB189_10:
 	mov	dword ptr [ebp - 32], edi       # 4-byte Spill
 	sub	ecx, edi
 	mov	eax, dword ptr [eax + 4]
-	jae	LBB189_11
+	jae	LBB203_11
 # %bb.12:
 	lea	ecx, [4*ebx]
 	mov	dword ptr [ebp - 36], ecx       # 4-byte Spill
@@ -26562,8 +30638,8 @@ LBB189_10:
 	push	dword ptr [ebp - 36]            # 4-byte Folded Reload
 	push	0
 	push	esi
-	jmp	LBB189_13
-LBB189_11:
+	jmp	LBB203_13
+LBB203_11:
 	mov	edi, ecx
 	mov	ecx, dword ptr [ebp - 32]       # 4-byte Reload
 	lea	ecx, [4*ecx]
@@ -26585,33 +30661,33 @@ LBB189_11:
 	push	0
 	mov	edi, dword ptr [ebp - 44]       # 4-byte Reload
 	push	edi
-LBB189_13:
+LBB203_13:
 	call	_memset
 	add	esp, 12
 	mov	esi, dword ptr [ebp - 40]       # 4-byte Reload
 	mov	ecx, dword ptr [esi + 4]
 	test	ecx, ecx
-	je	LBB189_21
+	je	LBB203_21
 # %bb.14:
 	mov	eax, dword ptr [esi + 8]
 	shl	eax, 2
 	cmp	eax, 4096
-	jb	LBB189_20
+	jb	LBB203_20
 # %bb.15:
 	mov	edx, dword ptr [ecx - 4]
 	add	ecx, -4
 	sub	ecx, edx
 	cmp	ecx, 32
-	jae	LBB189_16
+	jae	LBB203_16
 # %bb.19:
 	add	eax, 35
 	mov	ecx, edx
-LBB189_20:
+LBB203_20:
 	push	eax
 	push	ecx
 	call	"??3@YAXPAXI@Z"
 	add	esp, 8
-LBB189_21:
+LBB203_21:
 	mov	dword ptr [esi + 4], edi
 	add	dword ptr [esi + 8], ebx
 	mov	eax, dword ptr [ebp - 24]
@@ -26622,14 +30698,14 @@ LBB189_21:
 	pop	ebx
 	pop	ebp
 	ret	4
-LBB189_22:
+LBB203_22:
 	mov	dword ptr [ebp - 16], -1
 	call	"?_Xlen@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@ABEXXZ"
-LBB189_23:
+LBB203_23:
 	mov	dword ptr [ebp - 16], -1
-LBB189_24:
+LBB203_24:
 	call	"?_Throw_bad_array_new_length@std@@YAXXZ"
-LBB189_16:
+LBB203_16:
 	mov	dword ptr [ebp - 16], 0
 	call	__invalid_parameter_noinfo_noreturn
 # %bb.17:
@@ -26639,12 +30715,12 @@ LBB189_16:
 	.endef
 	.p2align	4, 0x90
 "?dtor$18@?0??_Growmap@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXI@Z@4HA":
-LBB189_18:
+LBB203_18:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
 	call	___std_terminate
-Lfunc_end73:
+Lfunc_end78:
 	.section	.xdata,"dr",associative,"?_Growmap@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXI@Z"
 	.p2align	2
 "L__ehtable$?_Growmap@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXI@Z":
@@ -26692,19 +30768,19 @@ Lfunc_end73:
 	mov	eax, dword ptr [esi + 16]
 	lea	edx, [eax + ecx]
 	test	dl, 15
-	jne	LBB191_3
+	jne	LBB205_3
 # %bb.1:
 	lea	edx, [eax + 16]
 	shr	edx, 4
 	cmp	dword ptr [esi + 8], edx
-	ja	LBB191_3
+	ja	LBB205_3
 # %bb.2:
 	mov	ecx, esi
 	push	1
 	call	"?_Growmap@?$deque@EV?$allocator@E@std@@@std@@AAEXI@Z"
 	mov	ecx, dword ptr [esi + 12]
 	mov	eax, dword ptr [esi + 16]
-LBB191_3:
+LBB205_3:
 	mov	ebp, dword ptr [esi + 8]
 	mov	edx, dword ptr [esi + 4]
 	mov	edi, dword ptr [esp + 20]
@@ -26720,7 +30796,7 @@ LBB191_3:
 	and	ebp, eax
 	mov	eax, dword ptr [edx + 4*ebp]
 	test	eax, eax
-	jne	LBB191_5
+	jne	LBB205_5
 # %bb.4:
 	push	16
 	call	"??2@YAPAXI@Z"
@@ -26729,7 +30805,7 @@ LBB191_3:
 	mov	dword ptr [ecx + 4*ebp], eax
 	mov	eax, dword ptr [esi + 4]
 	mov	eax, dword ptr [eax + 4*ebp]
-LBB191_5:
+LBB205_5:
 	mov	cl, byte ptr [edi]
 	and	ebx, 15
 	mov	byte ptr [eax + ebx], cl
@@ -26759,7 +30835,7 @@ LBB191_5:
 	.globl	"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z" # -- Begin function ??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z
 	.p2align	4, 0x90
 "??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z": # @"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z"
-Lfunc_begin74:
+Lfunc_begin79:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
@@ -26780,19 +30856,19 @@ Lfunc_begin74:
 	mov	edx, dword ptr [eax + 4]
 	mov	ecx, dword ptr [esi + edx + 56]
 	test	ecx, ecx
-	je	LBB192_2
+	je	LBB206_2
 # %bb.1:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 4]
 	mov	eax, dword ptr [esi]
 	mov	edx, dword ptr [eax + 4]
-LBB192_2:
+LBB206_2:
 	cmp	dword ptr [esi + edx + 12], 0
-	je	LBB192_9
+	je	LBB206_9
 # %bb.3:
 	xor	edx, edx
 	mov	byte ptr [ebp - 40], 0
-LBB192_4:
+LBB206_4:
 	mov	eax, dword ptr [esi]
 	mov	eax, dword ptr [eax + 4]
 	mov	dword ptr [esi + eax + 32], 0
@@ -26808,30 +30884,30 @@ LBB192_4:
 	or	edx, eax
 	mov	dword ptr [esi + ecx + 12], edx
 	and	edx, dword ptr [esi + ecx + 16]
-	jne	LBB192_5
+	jne	LBB206_5
 # %bb.47:
 	call	"?uncaught_exception@std@@YA_NXZ"
 	test	al, al
-	jne	LBB192_49
+	jne	LBB206_49
 # %bb.48:
 	mov	ecx, dword ptr [ebp - 44]
 	mov	dword ptr [ebp - 16], 2
 	call	"?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ"
 	mov	esi, dword ptr [ebp + 8]
-LBB192_49:
+LBB206_49:
 	mov	eax, dword ptr [ebp - 44]
 	mov	ecx, dword ptr [eax]
 	mov	ecx, dword ptr [ecx + 4]
 	mov	ecx, dword ptr [eax + ecx + 56]
 	test	ecx, ecx
-	je	LBB192_51
+	je	LBB206_51
 # %bb.50:
 	mov	eax, dword ptr [ecx]
 	mov	eax, dword ptr [eax + 8]
 	mov	dword ptr [ebp - 16], 1
 	call	eax
 	mov	esi, dword ptr [ebp + 8]
-LBB192_51:
+LBB206_51:
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
 	mov	eax, esi
@@ -26841,13 +30917,13 @@ LBB192_51:
 	pop	ebx
 	pop	ebp
 	ret
-LBB192_9:
+LBB206_9:
 	mov	ecx, dword ptr [esi + edx + 60]
 	test	ecx, ecx
-	je	LBB192_11
+	je	LBB206_11
 # %bb.10:
 	cmp	ecx, esi
-	je	LBB192_11
+	je	LBB206_11
 # %bb.15:
 	mov	dword ptr [ebp - 16], 0
 	call	"?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ"
@@ -26858,11 +30934,11 @@ LBB192_9:
 	mov	ecx, dword ptr [eax + 4]
 	cmp	dword ptr [esi + ecx + 12], 0
 	sete	byte ptr [ebp - 40]
-	jne	LBB192_4
-	jmp	LBB192_17
-LBB192_11:
+	jne	LBB206_4
+	jmp	LBB206_17
+LBB206_11:
 	mov	byte ptr [ebp - 40], 1
-LBB192_17:
+LBB206_17:
 	mov	eax, dword ptr [eax + 4]
 	mov	ecx, dword ptr [esi + eax + 32]
 	mov	edx, dword ptr [esi + eax + 36]
@@ -26878,20 +30954,20 @@ LBB192_17:
 	cmovl	edi, edx
 	and	ecx, dword ptr [esi + eax + 20]
 	cmp	ecx, 64
-	jne	LBB192_19
+	jne	LBB206_19
 # %bb.18:
 	mov	dword ptr [ebp - 32], ebx       # 4-byte Spill
 	mov	dword ptr [ebp - 36], edi       # 4-byte Spill
-	jmp	LBB192_28
+	jmp	LBB206_28
 	.p2align	4, 0x90
-LBB192_23:                              #   in Loop: Header=BB192_19 Depth=1
+LBB206_23:                              #   in Loop: Header=BB206_19 Depth=1
 	mov	ecx, dword ptr [ebp - 48]       # 4-byte Reload
 	dec	ebx
 	mov	dword ptr [ecx], ebx
 	lea	ebx, [edi + 1]
 	mov	dword ptr [esi], ebx
 	mov	byte ptr [edi], dl
-LBB192_25:                              #   in Loop: Header=BB192_19 Depth=1
+LBB206_25:                              #   in Loop: Header=BB206_19 Depth=1
 	mov	edi, dword ptr [ebp - 36]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 32]       # 4-byte Reload
 	xor	edx, edx
@@ -26901,17 +30977,17 @@ LBB192_25:                              #   in Loop: Header=BB192_19 Depth=1
 	shl	edx, 2
 	add	edi, -1
 	adc	ebx, -1
-LBB192_19:                              # =>This Inner Loop Header: Depth=1
+LBB206_19:                              # =>This Inner Loop Header: Depth=1
 	test	edx, edx
 	mov	dword ptr [ebp - 36], edi       # 4-byte Spill
 	mov	dword ptr [ebp - 32], ebx       # 4-byte Spill
-	jne	LBB192_26
-# %bb.20:                               #   in Loop: Header=BB192_19 Depth=1
+	jne	LBB206_26
+# %bb.20:                               #   in Loop: Header=BB206_19 Depth=1
 	cmp	edi, 1
 	mov	eax, ebx
 	sbb	eax, 0
-	jl	LBB192_26
-# %bb.21:                               #   in Loop: Header=BB192_19 Depth=1
+	jl	LBB206_26
+# %bb.21:                               #   in Loop: Header=BB206_19 Depth=1
 	mov	eax, dword ptr [esi]
 	mov	eax, dword ptr [eax + 4]
 	mov	ecx, dword ptr [esi + eax + 56]
@@ -26920,38 +30996,38 @@ LBB192_19:                              # =>This Inner Loop Header: Depth=1
 	movzx	eax, dl
 	mov	edi, dword ptr [esi]
 	test	edi, edi
-	je	LBB192_24
-# %bb.22:                               #   in Loop: Header=BB192_19 Depth=1
+	je	LBB206_24
+# %bb.22:                               #   in Loop: Header=BB206_19 Depth=1
 	mov	ebx, dword ptr [ecx + 48]
 	mov	dword ptr [ebp - 48], ebx       # 4-byte Spill
 	mov	ebx, dword ptr [ebx]
 	test	ebx, ebx
-	jg	LBB192_23
-LBB192_24:                              #   in Loop: Header=BB192_19 Depth=1
+	jg	LBB206_23
+LBB206_24:                              #   in Loop: Header=BB206_19 Depth=1
 	mov	edx, dword ptr [ecx]
 	mov	edx, dword ptr [edx + 12]
 	mov	dword ptr [ebp - 16], 4
 	push	eax
 	call	edx
-	jmp	LBB192_25
-LBB192_26:
+	jmp	LBB206_25
+LBB206_26:
 	test	edx, edx
-	jne	LBB192_34
+	jne	LBB206_34
 # %bb.27:
 	mov	eax, dword ptr [esi]
 	mov	eax, dword ptr [eax + 4]
-LBB192_28:
+LBB206_28:
 	mov	ecx, dword ptr [esi + eax + 56]
 	mov	dl, byte ptr [ebp + 12]
 	mov	eax, dword ptr [ecx + 32]
 	mov	esi, dword ptr [eax]
 	test	esi, esi
-	je	LBB192_31
+	je	LBB206_31
 # %bb.29:
 	mov	edi, dword ptr [ecx + 48]
 	mov	ebx, dword ptr [edi]
 	test	ebx, ebx
-	jle	LBB192_31
+	jle	LBB206_31
 # %bb.30:
 	dec	ebx
 	lea	ecx, [esi + 1]
@@ -26959,32 +31035,32 @@ LBB192_28:
 	mov	dword ptr [eax], ecx
 	mov	byte ptr [esi], dl
 	movzx	eax, dl
-	jmp	LBB192_32
-LBB192_31:
+	jmp	LBB206_32
+LBB206_31:
 	movzx	eax, dl
 	mov	edx, dword ptr [ecx]
 	mov	edx, dword ptr [edx + 12]
 	mov	dword ptr [ebp - 16], 4
 	push	eax
 	call	edx
-LBB192_32:
+LBB206_32:
 	mov	edi, dword ptr [ebp - 36]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 32]       # 4-byte Reload
 	xor	edx, edx
 	cmp	eax, -1
 	sete	dl
 	shl	edx, 2
-	jmp	LBB192_33
-LBB192_5:
+	jmp	LBB206_33
+LBB206_5:
 	cmp	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], 0
 	#MEMBARRIER
-	jne	LBB192_7
+	jne	LBB206_7
 # %bb.6:
 	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"+4], 5
 	#MEMBARRIER
 	mov	dword ptr ["?_Storage@?1???$_Immortalize_memcpy_image@V_Iostream_error_category2@std@@@std@@YAABV_Iostream_error_category2@1@XZ@4PAU?$atomic@I@1@A"], offset "??_7_Iostream_error_category2@std@@6B@"
 	mov	dword ptr [ebp - 16], 3
-LBB192_7:
+LBB206_7:
 	test	dl, 2
 	mov	eax, offset "??_C@_0BF@OOHOMBOF@ios_base?3?3eofbit?5set?$AA@"
 	mov	ecx, offset "??_C@_0BG@FMKFHCIL@ios_base?3?3failbit?5set?$AA@"
@@ -27006,16 +31082,16 @@ LBB192_7:
 	call	__CxxThrowException@8
 	add	esp, 8
 # %bb.46:
-LBB192_33:
+LBB206_33:
 	mov	esi, dword ptr [ebp + 8]
-LBB192_34:
+LBB206_34:
 	test	edx, edx
-	jne	LBB192_4
+	jne	LBB206_4
 # %bb.35:
 	cmp	edi, 1
 	mov	eax, ebx
 	sbb	eax, 0
-	jl	LBB192_4
+	jl	LBB206_4
 # %bb.36:
 	mov	eax, dword ptr [esi]
 	mov	dword ptr [ebp - 36], edi       # 4-byte Spill
@@ -27027,13 +31103,13 @@ LBB192_34:
 	movzx	eax, dl
 	mov	edi, dword ptr [esi]
 	test	edi, edi
-	je	LBB192_39
+	je	LBB206_39
 # %bb.37:
 	mov	ebx, dword ptr [ecx + 48]
 	mov	dword ptr [ebp - 48], ebx       # 4-byte Spill
 	mov	ebx, dword ptr [ebx]
 	test	ebx, ebx
-	jle	LBB192_39
+	jle	LBB206_39
 # %bb.38:
 	mov	ecx, dword ptr [ebp - 48]       # 4-byte Reload
 	dec	ebx
@@ -27041,14 +31117,14 @@ LBB192_34:
 	lea	ebx, [edi + 1]
 	mov	dword ptr [esi], ebx
 	mov	byte ptr [edi], dl
-	jmp	LBB192_40
-LBB192_39:
+	jmp	LBB206_40
+LBB206_39:
 	mov	edx, dword ptr [ecx]
 	mov	edx, dword ptr [edx + 12]
 	mov	dword ptr [ebp - 16], 4
 	push	eax
 	call	edx
-LBB192_40:
+LBB206_40:
 	mov	edi, dword ptr [ebp - 36]       # 4-byte Reload
 	mov	ebx, dword ptr [ebp - 32]       # 4-byte Reload
 	xor	edx, edx
@@ -27057,19 +31133,19 @@ LBB192_40:
 	shl	edx, 2
 	add	edi, -1
 	adc	ebx, -1
-	jmp	LBB192_33
-LBB192_45:                              # Block address taken
+	jmp	LBB206_33
+LBB206_45:                              # Block address taken
 	add	ebp, 12
 	xor	edx, edx
 	mov	esi, dword ptr [ebp + 8]
-	jmp	LBB192_4
+	jmp	LBB206_4
 	.def	 "?dtor$12@?0???$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
 "?dtor$12@?0???$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z@4HA":
-LBB192_12:
+LBB206_12:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
@@ -27078,11 +31154,11 @@ LBB192_12:
 	mov	ecx, dword ptr [ecx + 4]
 	mov	ecx, dword ptr [eax + ecx + 56]
 	test	ecx, ecx
-	je	LBB192_14
+	je	LBB206_14
 # %bb.13:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
-LBB192_14:
+LBB206_14:
 	add	esp, 12
 	pop	ebp
 	ret                                     # CLEANUPRET
@@ -27092,7 +31168,7 @@ LBB192_14:
 	.endef
 	.p2align	4, 0x90
 "?catch$41@?0???$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z@4HA":
-LBB192_41:
+LBB206_41:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
@@ -27105,13 +31181,13 @@ LBB192_41:
 	or	ecx, 4
 	mov	dword ptr [edx + eax + 12], ecx
 	test	dword ptr [edx + eax + 16], ecx
-	jne	LBB192_42
+	jne	LBB206_42
 # %bb.44:
-	mov	eax, offset LBB192_45
+	mov	eax, offset LBB206_45
 	add	esp, 12
 	pop	ebp
 	ret                                     # CATCHRET
-LBB192_42:
+LBB206_42:
 	mov	dword ptr [ebp - 16], 5
 	push	0
 	push	0
@@ -27124,7 +31200,7 @@ LBB192_42:
 	.endef
 	.p2align	4, 0x90
 "?dtor$52@?0???$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z@4HA":
-LBB192_52:
+LBB206_52:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
@@ -27135,7 +31211,7 @@ LBB192_52:
 	.endef
 	.p2align	4, 0x90
 "?dtor$53@?0???$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z@4HA":
-LBB192_53:
+LBB206_53:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
@@ -27148,31 +31224,31 @@ LBB192_53:
 	.endef
 	.p2align	4, 0x90
 "?dtor$54@?0???$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z@4HA":
-LBB192_54:
+LBB206_54:
 	push	ebp
 	sub	esp, 12
 	add	ebp, 12
 	call	"?uncaught_exception@std@@YA_NXZ"
 	test	al, al
-	jne	LBB192_56
+	jne	LBB206_56
 # %bb.55:
 	mov	ecx, dword ptr [ebp - 44]
 	call	"?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ"
-LBB192_56:
+LBB206_56:
 	mov	eax, dword ptr [ebp - 44]
 	mov	ecx, dword ptr [eax]
 	mov	ecx, dword ptr [ecx + 4]
 	mov	ecx, dword ptr [eax + ecx + 56]
 	test	ecx, ecx
-	je	LBB192_58
+	je	LBB206_58
 # %bb.57:
 	mov	eax, dword ptr [ecx]
 	call	dword ptr [eax + 8]
-LBB192_58:
+LBB206_58:
 	add	esp, 12
 	pop	ebp
 	ret                                     # CLEANUPRET
-Lfunc_end74:
+Lfunc_end79:
 	.section	.xdata,"dr",associative,"??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z"
 	.p2align	2
 "L__ehtable$??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z":
@@ -27218,14 +31294,14 @@ Lfunc_end74:
 	.text
 	.p2align	4, 0x90                         # -- Begin function _GLOBAL__sub_I_main.cpp
 __GLOBAL__sub_I_main.cpp:               # @_GLOBAL__sub_I_main.cpp
-Lfunc_begin75:
+Lfunc_begin80:
 # %bb.0:
 	push	ebp
 	mov	ebp, esp
 	push	ebx
 	push	edi
 	push	esi
-	sub	esp, 24
+	sub	esp, 44
 	mov	dword ptr [ebp - 28], esp
 	mov	dword ptr [ebp - 16], -1
 	mov	dword ptr [ebp - 20], offset ___ehhandler$_GLOBAL__sub_I_main.cpp
@@ -27233,65 +31309,253 @@ Lfunc_begin75:
 	mov	ecx, dword ptr fs:[0]
 	mov	dword ptr [ebp - 24], ecx
 	mov	dword ptr fs:[0], eax
-	mov	dword ptr [ebp - 32], 16908545
+	mov	dword ptr [ebp - 36], 16908545
 	mov	dword ptr ["?supportedExtensions@@3V?$deque@GV?$allocator@G@std@@@std@@A"+4], 0
 	mov	dword ptr ["?supportedExtensions@@3V?$deque@GV?$allocator@G@std@@@std@@A"], 0
 	mov	dword ptr ["?supportedExtensions@@3V?$deque@GV?$allocator@G@std@@@std@@A"+12], 0
 	mov	dword ptr ["?supportedExtensions@@3V?$deque@GV?$allocator@G@std@@@std@@A"+8], 0
 	mov	dword ptr ["?supportedExtensions@@3V?$deque@GV?$allocator@G@std@@@std@@A"+16], 0
-	push	8
+	mov	dword ptr [esp], 8
 	call	"??2@YAPAXI@Z"
-	add	esp, 4
 	mov	dword ptr [eax], offset "?supportedExtensions@@3V?$deque@GV?$allocator@G@std@@@std@@A"
+	mov	ecx, offset "?supportedExtensions@@3V?$deque@GV?$allocator@G@std@@@std@@A"
 	mov	dword ptr [eax + 4], 0
-	mov	dword ptr [ebp - 36], eax       # 4-byte Spill
+	mov	dword ptr [ebp - 44], eax       # 4-byte Spill
 	mov	dword ptr ["?supportedExtensions@@3V?$deque@GV?$allocator@G@std@@@std@@A"], eax
-	lea	eax, [ebp - 32]
+	lea	eax, [ebp - 36]
 	mov	dword ptr [ebp - 16], 0
-	mov	ecx, offset "?supportedExtensions@@3V?$deque@GV?$allocator@G@std@@@std@@A"
-	push	eax
+	mov	dword ptr [esp], eax
 	call	"??$emplace_back@ABG@?$deque@GV?$allocator@G@std@@@std@@QAE?A?<decltype-auto>@@ABG@Z"
+	sub	esp, 4
 # %bb.1:
-	lea	eax, [ebp - 30]
+	lea	eax, [ebp - 34]
 	mov	ecx, offset "?supportedExtensions@@3V?$deque@GV?$allocator@G@std@@@std@@A"
-	push	eax
+	mov	dword ptr [esp], eax
 	call	"??$emplace_back@ABG@?$deque@GV?$allocator@G@std@@@std@@QAE?A?<decltype-auto>@@ABG@Z"
+	sub	esp, 4
 # %bb.2:
-	push	offset "??__FsupportedExtensions@@YAXXZ"
+	mov	dword ptr [esp], offset "??__FsupportedExtensions@@YAXXZ"
 	call	_atexit
-	add	esp, 4
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+4], 0
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"], 0
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+12], 0
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+8], 0
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"+16], 0
+	mov	dword ptr [ebp - 16], -1
+	mov	dword ptr [esp], 8
+	call	"??2@YAPAXI@Z"
+	mov	dword ptr [eax + 4], 0
+	mov	dword ptr ["?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"], eax
+	mov	dword ptr [eax], offset "?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"
+	mov	dword ptr [esp], offset "??__Fpalettes@@YAXXZ"
+	call	_atexit
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+20], 15
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+16], 0
+	mov	byte ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"], 0
+	mov	byte ptr [ebp - 29], 1
+	mov	dword ptr [ebp - 40], offset "?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"
+	mov	dword ptr [ebp - 16], 1
+	mov	ecx, offset "?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"
+	mov	al, byte ptr [ebp - 36]
+	mov	byte ptr [esp + 4], al
+	mov	dword ptr [esp + 8], offset "??_C@_0BB@EFKDDADM@Atari?58bit?5?$CI256?$CJ?$AA@"
+	mov	dword ptr [esp], 16
+	call	"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z"
+	sub	esp, 12
+# %bb.3:
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+44], 15
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+40], 12
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+24], 1869772097
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+28], 673210738
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+32], 691418418
+	mov	byte ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+36], 0
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+68], 15
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+64], 10
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+48], 1818588484
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+52], 892479520
+	mov	word ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+56], 10550
+	mov	byte ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+58], 0
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+92], 15
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+88], 0
+	mov	byte ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+72], 0
+	mov	byte ptr [ebp - 29], 0
+	mov	dword ptr [ebp - 40], offset "?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+72
+	mov	ecx, offset "?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+72
+	mov	al, byte ptr [ebp - 36]
+	mov	byte ptr [esp + 4], al
+	mov	dword ptr [esp + 8], offset "??_C@_0BC@IBOHMGCP@Hocus?5Pocus?5?$CI256?$CJ?$AA@"
+	mov	dword ptr [esp], 17
+	call	"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z"
+	sub	esp, 12
+# %bb.4:
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+116], 15
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+112], 0
+	mov	byte ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+96], 0
+	mov	byte ptr [ebp - 29], 0
+	mov	dword ptr [ebp - 40], offset "?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+96
+	mov	ecx, offset "?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+96
+	mov	al, byte ptr [ebp - 36]
+	mov	byte ptr [esp + 4], al
+	mov	dword ptr [esp + 8], offset "??_C@_0BJ@FKMMNLBE@Sonic?5Robo?5Blast?52?5?$CI256?$CJ?$AA@"
+	mov	dword ptr [esp], 24
+	call	"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z"
+	sub	esp, 12
+# %bb.5:
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+140], 15
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+136], 10
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+120], 845312627
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+124], 892479520
+	mov	word ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+128], 10550
+	mov	byte ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+130], 0
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+164], 15
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+160], 12
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+144], 1650817653
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+148], 673216623
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+152], 691418418
+	mov	byte ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+156], 0
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+188], 15
+	mov	dword ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+184], 0
+	mov	byte ptr ["?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+168], 0
+	mov	byte ptr [ebp - 29], 0
+	mov	dword ptr [ebp - 40], offset "?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+168
+	mov	ecx, offset "?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"+168
+	mov	al, byte ptr [ebp - 36]
+	mov	byte ptr [esp + 4], al
+	mov	dword ptr [esp + 8], offset "??_C@_0BB@MABGHAKE@Windows?595?5?$CI256?$CJ?$AA@"
+	mov	dword ptr [esp], 16
+	call	"??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z"
+	sub	esp, 12
+# %bb.6:
+	mov	dword ptr [esp], offset "??__FpaletteNames@@YAXXZ"
+	call	_atexit
+	mov	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"], 0
+	mov	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"+4], 0
+	mov	dword ptr [ebp - 16], -1
+	mov	dword ptr [esp], 16
+	call	"??2@YAPAXI@Z"
+	mov	dword ptr [eax], eax
+	mov	dword ptr [eax + 4], eax
+	mov	dword ptr [eax + 8], eax
+	mov	word ptr [eax + 12], 257
+	mov	dword ptr ["?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"], eax
+	mov	dword ptr [esp], offset "??__Fchr2nib@@YAXXZ"
+	call	_atexit
 	mov	eax, dword ptr [ebp - 24]
 	mov	dword ptr fs:[0], eax
-	add	esp, 24
+	add	esp, 44
 	pop	esi
 	pop	edi
 	pop	ebx
 	pop	ebp
 	ret
-	.def	 "?dtor$3@?0?_GLOBAL__sub_I_main.cpp@4HA";
+	.def	 "?dtor$7@?0?_GLOBAL__sub_I_main.cpp@4HA";
 	.scl	3;
 	.type	32;
 	.endef
 	.p2align	4, 0x90
-"?dtor$3@?0?_GLOBAL__sub_I_main.cpp@4HA":
-LBB193_3:
+"?dtor$7@?0?_GLOBAL__sub_I_main.cpp@4HA":
+LBB207_7:
 	push	ebp
-	sub	esp, 8
+	sub	esp, 12
+	add	ebp, 12
+	cmp	byte ptr [ebp - 29], 0
+	jne	LBB207_21
+# %bb.8:
+	mov	edi, dword ptr [ebp - 40]
+	mov	eax, dword ptr [edi - 4]
+	lea	esi, [edi - 24]
+	cmp	eax, 16
+	jb	LBB207_13
+# %bb.9:
+	mov	ecx, dword ptr [esi]
+	lea	edx, [eax + 1]
+	cmp	edx, 4096
+	jb	LBB207_12
+# %bb.10:
+	mov	ebx, dword ptr [ecx - 4]
+	add	ecx, -4
+	sub	ecx, ebx
+	cmp	ecx, 32
+	jae	LBB207_23
+# %bb.11:
+	add	eax, 36
+	mov	ecx, ebx
+	mov	edx, eax
+LBB207_12:
+	mov	dword ptr [esp + 4], edx
+	mov	dword ptr [esp], ecx
+	call	"??3@YAXPAXI@Z"
+LBB207_13:
+	cmp	esi, offset "?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"
+	mov	dword ptr [edi - 8], 0
+	mov	dword ptr [edi - 4], 15
+	mov	byte ptr [edi - 24], 0
+	je	LBB207_21
+# %bb.14:
+	mov	edi, offset "?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"
+	jmp	LBB207_15
+LBB207_19:                              #   in Loop: Header=BB207_15 Depth=1
+	mov	dword ptr [esp + 4], edx
+	mov	dword ptr [esp], ecx
+	call	"??3@YAXPAXI@Z"
+LBB207_20:                              #   in Loop: Header=BB207_15 Depth=1
+	mov	dword ptr [esi - 8], 0
+	mov	dword ptr [esi - 4], 15
+	mov	byte ptr [esi - 24], 0
+	add	esi, -24
+	cmp	edi, esi
+	je	LBB207_21
+LBB207_15:                              # =>This Inner Loop Header: Depth=1
+	mov	eax, dword ptr [esi - 4]
+	cmp	eax, 16
+	jb	LBB207_20
+# %bb.16:                               #   in Loop: Header=BB207_15 Depth=1
+	mov	ecx, dword ptr [esi - 24]
+	lea	edx, [eax + 1]
+	cmp	edx, 4096
+	jb	LBB207_19
+# %bb.17:                               #   in Loop: Header=BB207_15 Depth=1
+	mov	ebx, dword ptr [ecx - 4]
+	add	ecx, -4
+	sub	ecx, ebx
+	cmp	ecx, 32
+	jae	LBB207_23
+# %bb.18:                               #   in Loop: Header=BB207_15 Depth=1
+	add	eax, 36
+	mov	ecx, ebx
+	mov	edx, eax
+	jmp	LBB207_19
+LBB207_21:
+	add	esp, 12
+	pop	ebp
+	ret                                     # CLEANUPRET
+LBB207_23:
+	call	__invalid_parameter_noinfo_noreturn
+	.def	 "?dtor$22@?0?_GLOBAL__sub_I_main.cpp@4HA";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90
+"?dtor$22@?0?_GLOBAL__sub_I_main.cpp@4HA":
+LBB207_22:
+	push	ebp
+	sub	esp, 12
 	mov	ecx, offset "?supportedExtensions@@3V?$deque@GV?$allocator@G@std@@@std@@A"
 	add	ebp, 12
 	call	"?_Tidy@?$deque@GV?$allocator@G@std@@@std@@AAEXXZ"
-	push	8
-	push	dword ptr [ebp - 36]            # 4-byte Folded Reload
+	mov	eax, dword ptr [ebp - 44]       # 4-byte Reload
+	mov	dword ptr [esp + 4], 8
+	mov	dword ptr [esp], eax
 	call	"??3@YAXPAXI@Z"
-	add	esp, 16
+	add	esp, 12
 	pop	ebp
 	ret                                     # CLEANUPRET
-Lfunc_end75:
+Lfunc_end80:
 	.section	.xdata,"dr"
 	.p2align	2
 L__ehtable$_GLOBAL__sub_I_main.cpp:
 	.long	429065506                       # MagicNumber
-	.long	1                               # MaxState
+	.long	2                               # MaxState
 	.long	($stateUnwindMap$_GLOBAL__sub_I_main.cpp) # UnwindMap
 	.long	0                               # NumTryBlocks
 	.long	0                               # TryBlockMap
@@ -27301,7 +31565,9 @@ L__ehtable$_GLOBAL__sub_I_main.cpp:
 	.long	1                               # EHFlags
 $stateUnwindMap$_GLOBAL__sub_I_main.cpp:
 	.long	-1                              # ToState
-	.long	"?dtor$3@?0?_GLOBAL__sub_I_main.cpp@4HA" # Action
+	.long	"?dtor$22@?0?_GLOBAL__sub_I_main.cpp@4HA" # Action
+	.long	-1                              # ToState
+	.long	"?dtor$7@?0?_GLOBAL__sub_I_main.cpp@4HA" # Action
 	.text
                                         # -- End function
 	.def	 "___ehhandler$?concolor_fg_rgb@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@EEE@Z";
@@ -27401,6 +31667,48 @@ $stateUnwindMap$_GLOBAL__sub_I_main.cpp:
 	mov	eax, offset "L__ehtable$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@I@Z"
 	jmp	___CxxFrameHandler3             # TAILCALL
                                         # -- End function
+	.def	 "___ehhandler$??__FpaletteNames@@YAXXZ";
+	.scl	3;
+	.type	32;
+	.endef
+	.text
+	.p2align	4, 0x90                         # -- Begin function __ehhandler$??__FpaletteNames@@YAXXZ
+"___ehhandler$??__FpaletteNames@@YAXXZ": # @"__ehhandler$??__FpaletteNames@@YAXXZ"
+# %bb.0:
+	mov	eax, offset "L__ehtable$??__FpaletteNames@@YAXXZ"
+	jmp	___CxxFrameHandler3             # TAILCALL
+                                        # -- End function
+	.def	 "___ehhandler$?read_palette_color@@YA?AUcolor@@E@Z";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90                         # -- Begin function __ehhandler$?read_palette_color@@YA?AUcolor@@E@Z
+"___ehhandler$?read_palette_color@@YA?AUcolor@@E@Z": # @"__ehhandler$?read_palette_color@@YA?AUcolor@@E@Z"
+# %bb.0:
+	mov	eax, offset "L__ehtable$?read_palette_color@@YA?AUcolor@@E@Z"
+	jmp	___CxxFrameHandler3             # TAILCALL
+                                        # -- End function
+	.def	 "___ehhandler$?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z";
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4, 0x90                         # -- Begin function __ehhandler$?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z
+"___ehhandler$?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z": # @"__ehhandler$?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
+# %bb.0:
+	mov	eax, offset "L__ehtable$?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
+	jmp	___CxxFrameHandler3             # TAILCALL
+                                        # -- End function
+	.def	 "___ehhandler$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z";
+	.scl	3;
+	.type	32;
+	.endef
+	.section	.text,"xr",associative,"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
+	.p2align	4, 0x90                         # -- Begin function __ehhandler$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z
+"___ehhandler$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z": # @"__ehhandler$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
+# %bb.0:
+	mov	eax, offset "L__ehtable$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
+	jmp	___CxxFrameHandler3             # TAILCALL
+                                        # -- End function
 	.def	 "___ehhandler$?ext0102_circle_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z";
 	.scl	3;
 	.type	32;
@@ -27431,17 +31739,6 @@ ___ehhandler$main:                      # @"__ehhandler$main"
 "___ehhandler$??0fileInfo@@QAE@XZ":     # @"__ehhandler$??0fileInfo@@QAE@XZ"
 # %bb.0:
 	mov	eax, offset "L__ehtable$??0fileInfo@@QAE@XZ"
-	jmp	___CxxFrameHandler3             # TAILCALL
-                                        # -- End function
-	.def	 "___ehhandler$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z";
-	.scl	3;
-	.type	32;
-	.endef
-	.section	.text,"xr",associative,"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
-	.p2align	4, 0x90                         # -- Begin function __ehhandler$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z
-"___ehhandler$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z": # @"__ehhandler$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
-# %bb.0:
-	mov	eax, offset "L__ehtable$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
 	jmp	___CxxFrameHandler3             # TAILCALL
                                         # -- End function
 	.def	 "___ehhandler$??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z";
@@ -27486,6 +31783,17 @@ ___ehhandler$main:                      # @"__ehhandler$main"
 "___ehhandler$??0exception@std@@QAE@ABV01@@Z": # @"__ehhandler$??0exception@std@@QAE@ABV01@@Z"
 # %bb.0:
 	mov	eax, offset "L__ehtable$??0exception@std@@QAE@ABV01@@Z"
+	jmp	___CxxFrameHandler3             # TAILCALL
+                                        # -- End function
+	.def	 "___ehhandler$??1exception@std@@UAE@XZ";
+	.scl	3;
+	.type	32;
+	.endef
+	.section	.text,"xr",associative,"??1exception@std@@UAE@XZ"
+	.p2align	4, 0x90                         # -- Begin function __ehhandler$??1exception@std@@UAE@XZ
+"___ehhandler$??1exception@std@@UAE@XZ": # @"__ehhandler$??1exception@std@@UAE@XZ"
+# %bb.0:
+	mov	eax, offset "L__ehtable$??1exception@std@@UAE@XZ"
 	jmp	___CxxFrameHandler3             # TAILCALL
                                         # -- End function
 	.def	 "___ehhandler$??_Gbad_array_new_length@std@@UAEPAXI@Z";
@@ -27607,17 +31915,6 @@ ___ehhandler$main:                      # @"__ehhandler$main"
 "___ehhandler$??0bad_cast@std@@QAE@ABV01@@Z": # @"__ehhandler$??0bad_cast@std@@QAE@ABV01@@Z"
 # %bb.0:
 	mov	eax, offset "L__ehtable$??0bad_cast@std@@QAE@ABV01@@Z"
-	jmp	___CxxFrameHandler3             # TAILCALL
-                                        # -- End function
-	.def	 "___ehhandler$??1exception@std@@UAE@XZ";
-	.scl	3;
-	.type	32;
-	.endef
-	.section	.text,"xr",associative,"??1exception@std@@UAE@XZ"
-	.p2align	4, 0x90                         # -- Begin function __ehhandler$??1exception@std@@UAE@XZ
-"___ehhandler$??1exception@std@@UAE@XZ": # @"__ehhandler$??1exception@std@@UAE@XZ"
-# %bb.0:
-	mov	eax, offset "L__ehtable$??1exception@std@@UAE@XZ"
 	jmp	___CxxFrameHandler3             # TAILCALL
                                         # -- End function
 	.def	 "___ehhandler$??_Gbad_cast@std@@UAEPAXI@Z";
@@ -28093,6 +32390,28 @@ ___ehhandler$main:                      # @"__ehhandler$main"
 	mov	eax, offset "L__ehtable$??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@ID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@ID@Z@ID@Z"
 	jmp	___CxxFrameHandler3             # TAILCALL
                                         # -- End function
+	.def	 "___ehhandler$?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ";
+	.scl	3;
+	.type	32;
+	.endef
+	.section	.text,"xr",associative,"?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ"
+	.p2align	4, 0x90                         # -- Begin function __ehhandler$?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ
+"___ehhandler$?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ": # @"__ehhandler$?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ"
+# %bb.0:
+	mov	eax, offset "L__ehtable$?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ"
+	jmp	___CxxFrameHandler3             # TAILCALL
+                                        # -- End function
+	.def	 "___ehhandler$?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z";
+	.scl	3;
+	.type	32;
+	.endef
+	.section	.text,"xr",associative,"?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
+	.p2align	4, 0x90                         # -- Begin function __ehhandler$?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z
+"___ehhandler$?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z": # @"__ehhandler$?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
+# %bb.0:
+	mov	eax, offset "L__ehtable$?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
+	jmp	___CxxFrameHandler3             # TAILCALL
+                                        # -- End function
 	.def	 "___ehhandler$??$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z";
 	.scl	3;
 	.type	32;
@@ -28174,6 +32493,107 @@ ___ehhandler$_GLOBAL__sub_I_main.cpp:   # @"__ehhandler$_GLOBAL__sub_I_main.cpp"
 	.asciz	", Expected Size: "
 
 	.bss
+	.globl	"?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A" # @"?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"
+	.p2align	2
+"?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A":
+	.zero	20
+
+	.globl	"?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A" # @"?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"
+	.p2align	2
+"?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A":
+	.zero	192
+
+	.section	.rdata,"dr",discard,"??_C@_0BB@EFKDDADM@Atari?58bit?5?$CI256?$CJ?$AA@"
+	.globl	"??_C@_0BB@EFKDDADM@Atari?58bit?5?$CI256?$CJ?$AA@" # @"??_C@_0BB@EFKDDADM@Atari?58bit?5?$CI256?$CJ?$AA@"
+"??_C@_0BB@EFKDDADM@Atari?58bit?5?$CI256?$CJ?$AA@":
+	.asciz	"Atari 8bit (256)"
+
+	.section	.rdata,"dr",discard,"??_C@_0N@DEDJKDHF@Aurora?5?$CI256?$CJ?$AA@"
+	.globl	"??_C@_0N@DEDJKDHF@Aurora?5?$CI256?$CJ?$AA@" # @"??_C@_0N@DEDJKDHF@Aurora?5?$CI256?$CJ?$AA@"
+"??_C@_0N@DEDJKDHF@Aurora?5?$CI256?$CJ?$AA@":
+	.asciz	"Aurora (256)"
+
+	.section	.rdata,"dr",discard,"??_C@_0L@CPMPEAMG@Duel?5?$CI256?$CJ?$AA@"
+	.globl	"??_C@_0L@CPMPEAMG@Duel?5?$CI256?$CJ?$AA@" # @"??_C@_0L@CPMPEAMG@Duel?5?$CI256?$CJ?$AA@"
+"??_C@_0L@CPMPEAMG@Duel?5?$CI256?$CJ?$AA@":
+	.asciz	"Duel (256)"
+
+	.section	.rdata,"dr",discard,"??_C@_0BC@IBOHMGCP@Hocus?5Pocus?5?$CI256?$CJ?$AA@"
+	.globl	"??_C@_0BC@IBOHMGCP@Hocus?5Pocus?5?$CI256?$CJ?$AA@" # @"??_C@_0BC@IBOHMGCP@Hocus?5Pocus?5?$CI256?$CJ?$AA@"
+"??_C@_0BC@IBOHMGCP@Hocus?5Pocus?5?$CI256?$CJ?$AA@":
+	.asciz	"Hocus Pocus (256)"
+
+	.section	.rdata,"dr",discard,"??_C@_0BJ@FKMMNLBE@Sonic?5Robo?5Blast?52?5?$CI256?$CJ?$AA@"
+	.globl	"??_C@_0BJ@FKMMNLBE@Sonic?5Robo?5Blast?52?5?$CI256?$CJ?$AA@" # @"??_C@_0BJ@FKMMNLBE@Sonic?5Robo?5Blast?52?5?$CI256?$CJ?$AA@"
+"??_C@_0BJ@FKMMNLBE@Sonic?5Robo?5Blast?52?5?$CI256?$CJ?$AA@":
+	.asciz	"Sonic Robo Blast 2 (256)"
+
+	.section	.rdata,"dr",discard,"??_C@_0L@OIIPIJBN@srb2?5?$CI256?$CJ?$AA@"
+	.globl	"??_C@_0L@OIIPIJBN@srb2?5?$CI256?$CJ?$AA@" # @"??_C@_0L@OIIPIJBN@srb2?5?$CI256?$CJ?$AA@"
+"??_C@_0L@OIIPIJBN@srb2?5?$CI256?$CJ?$AA@":
+	.asciz	"srb2 (256)"
+
+	.section	.rdata,"dr",discard,"??_C@_0N@MNCFGOGD@uzebox?5?$CI256?$CJ?$AA@"
+	.globl	"??_C@_0N@MNCFGOGD@uzebox?5?$CI256?$CJ?$AA@" # @"??_C@_0N@MNCFGOGD@uzebox?5?$CI256?$CJ?$AA@"
+"??_C@_0N@MNCFGOGD@uzebox?5?$CI256?$CJ?$AA@":
+	.asciz	"uzebox (256)"
+
+	.section	.rdata,"dr",discard,"??_C@_0BB@MABGHAKE@Windows?595?5?$CI256?$CJ?$AA@"
+	.globl	"??_C@_0BB@MABGHAKE@Windows?595?5?$CI256?$CJ?$AA@" # @"??_C@_0BB@MABGHAKE@Windows?595?5?$CI256?$CJ?$AA@"
+"??_C@_0BB@MABGHAKE@Windows?595?5?$CI256?$CJ?$AA@":
+	.asciz	"Windows 95 (256)"
+
+	.data
+	.globl	"?palette@@3EA"                 # @"?palette@@3EA"
+"?palette@@3EA":
+	.byte	1                               # 0x1
+
+	.bss
+	.globl	"?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A" # @"?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	.p2align	2
+"?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A":
+	.zero	8
+
+	.section	.rdata,"dr"
+_atari_8_bit_family_gtia_hex:           # @atari_8_bit_family_gtia_hex
+	.ascii	"000000\r\n111111\r\n222222\r\n333333\r\n444444\r\n555555\r\n666666\r\n777777\r\n888888\r\n999999\r\naaaaaa\r\nbbbbbb\r\ncccccc\r\ndddddd\r\neeeeee\r\nffffff\r\n190700\r\n2a1800\r\n3b2900\r\n4c3a00\r\n5d4b00\r\n6e5c00\r\n7f6d00\r\n907e09\r\na18f1a\r\nb3a02b\r\nc3b13c\r\nd4c24d\r\ne5d35e\r\nf7e46f\r\nfff582\r\nffff96\r\n310000\r\n3f0000\r\n531700\r\n642800\r\n753900\r\n864a00\r\n975b0a\r\na86c1b\r\nb97d2c\r\nca8e3d\r\ndb9f4e\r\necb05f\r\nfdc170\r\nffd285\r\nffe39c\r\nfff4b2\r\n420404\r\n4f0000\r\n600800\r\n711900\r\n822a0d\r\n933b1e\r\na44c2f\r\nb55d40\r\nc66e51\r\nd77f62\r\ne89073\r\nf9a183\r\nffb298\r\nffc3ae\r\nffd4c4\r\nffe5da\r\n410103\r\n50000f\r\n61001b\r\n720f2b\r\n83203c\r\n94314d\r\na5425e\r\nb6536f\r\nc76480\r\nd87591\r\ne986a2\r\nfa97b3\r\nffa8c8\r\nffb9de\r\nffcaef\r\nfbdcf6\r\n330035\r\n440041\r\n55004c\r\n660c5c\r\n771d6d\r\n882e7e\r\n993f8f\r\naa50a0\r\nbb61b1\r\ncc72c2\r\ndd83d3\r\nee94e4\r\nffa5e4\r\nffb6e9\r\nffc7ee\r\nffd8f3\r\n1d005c\r\n2e0068\r\n400074\r\n511084\r\n622195\r\n7332a6\r\n8443b7\r\n9554c8\r\na665d9\r\nb776ea\r\nc887eb\r\nd998eb\r\ne9a9ec\r\nfbbaeb\r\nffcbef\r\nffdff9\r\n020071\r\n13007d\r\n240b8c\r\n351c9d\r\n462dae\r\n573ebf\r\n684fd0\r\n7960e1\r\n8a71f2\r\n9b82f7\r\nac93f7\r\nbda4f7\r\nceb5f7\r\ndfc6f7\r\nf0d7f7\r\nffe8f8\r\n000068\r\n000a7c\r\n081b90\r\n192ca1\r\n2a3db2\r\n3b4ec3\r\n4c5fd4\r\n5d70e5\r\n6e81f6\r\n7f92ff\r\n90a3ff\r\na1b4ff\r\nb2c5ff\r\nc3d6ff\r\nd4e7ff\r\ne5f8ff\r\n000a4d\r\n001b63\r\n002c79\r\n023d8f\r\n134ea0\r\n245fb1\r\n3570c2\r\n4681d3\r\n5792e4\r\n68a3f5\r\n79b4ff\r\n8ac5ff\r\n9bd6ff\r\nace7ff\r\nbdf8ff\r\nceffff\r\n001a26\r\n002b3c\r\n003c52\r\n004d68\r\n065e7c\r\n176f8d\r\n28809e\r\n3991af\r\n4aa2c0\r\n5bb3d1\r\n6cc4e2\r\n7dd5f3\r\n8ee6ff\r\n9ff7ff\r\nb0ffff\r\nc1ffff\r\n01250a\r\n023610\r\n004622\r\n005738\r\n05684d\r\n16795e\r\n278a6f\r\n389b80\r\n49ac91\r\n5abda2\r\n6bceb3\r\n7cdfc4\r\n8df0d5\r\n9effe5\r\naffff1\r\nc0fffd\r\n04260d\r\n043811\r\n054713\r\n005a1b\r\n106b1b\r\n217c2c\r\n328d3d\r\n439e4e\r\n54af5f\r\n65c070\r\n76d181\r\n87e292\r\n98f3a3\r\na9ffb3\r\nbaffbf\r\ncbffcb\r\n00230a\r\n003510\r\n044613\r\n155613\r\n266713\r\n377813\r\n488914\r\n599a25\r\n6aab36\r\n7bbc47\r\n8ccd58\r\n9dde69\r\naeef7a\r\nbfff8b\r\nd0ff97\r\ne1ffa3\r\n001707\r\n0e2808\r\n1f3908\r\n304a08\r\n415b08\r\n526c08\r\n637d08\r\n748e0d\r\n859f1e\r\n96b02f\r\na7c140\r\nb8d251\r\nc9e362\r\ndaf473\r\nebff82\r\nfcff8e\r\n1b0701\r\n2c1801\r\n3c2900\r\n4d3b00\r\n5f4c00\r\n705e00\r\n816f00\r\n938009\r\na4921a\r\nb2a02b\r\nc7b43d\r\nd8c64e\r\nead760\r\nf6e46f\r\nfffa84\r\nffff99\r\n"
+
+_aurora_hex:                            # @aurora_hex
+	.ascii	"000000\r\n111111\r\n222222\r\n333333\r\n444444\r\n555555\r\n666666\r\n777777\r\n888888\r\n999999\r\naaaaaa\r\nbbbbbb\r\ncccccc\r\ndddddd\r\neeeeee\r\nffffff\r\n007f7f\r\n3fbfbf\r\n00ffff\r\nbfffff\r\n8181ff\r\n0000ff\r\n3f3fbf\r\n00007f\r\n0f0f50\r\n7f007f\r\nbf3fbf\r\nf500f5\r\nfd81ff\r\nffc0cb\r\nff8181\r\nff0000\r\nbf3f3f\r\n7f0000\r\n551414\r\n7f3f00\r\nbf7f3f\r\nff7f00\r\nffbf81\r\nffffbf\r\nffff00\r\nbfbf3f\r\n7f7f00\r\n007f00\r\n3fbf3f\r\n00ff00\r\nafffaf\r\n00bfff\r\n007fff\r\n4b7dc8\r\nbcafc0\r\ncbaa89\r\na6a090\r\n7e9494\r\n6e8287\r\n7e6e60\r\na0695f\r\nc07872\r\nd08a74\r\ne19b7d\r\nebaa8c\r\nf5b99b\r\nf6c8af\r\nf5e1d2\r\n7f00ff\r\n573b3b\r\n73413c\r\n8e5555\r\nab7373\r\nc78f8f\r\ne3abab\r\nf8d2da\r\ne3c7ab\r\nc49e73\r\n8f7357\r\n73573b\r\n3b2d1f\r\n414123\r\n73733b\r\n8f8f57\r\na2a255\r\nb5b572\r\nc7c78f\r\ndadaab\r\nededc7\r\nc7e3ab\r\nabc78f\r\n8ebe55\r\n738f57\r\n587d3e\r\n465032\r\n191e0f\r\n235037\r\n3b573b\r\n506450\r\n3b7349\r\n578f57\r\n73ab73\r\n64c082\r\n8fc78f\r\na2d8a2\r\ne1f8fa\r\nb4eeca\r\nabe3c5\r\n87b48e\r\n507d5f\r\n0f6946\r\n1e2d23\r\n234146\r\n3b7373\r\n64abab\r\n8fc7c7\r\nabe3e3\r\nc7f1f1\r\nbed2f0\r\nabc7e3\r\na8b9dc\r\n8fabc7\r\n578fc7\r\n57738f\r\n3b5773\r\n0f192d\r\n1f1f3b\r\n3b3b57\r\n494973\r\n57578f\r\n736eaa\r\n7676ca\r\n8f8fc7\r\nababe3\r\nd0daf8\r\ne3e3ff\r\nab8fc7\r\n8f57c7\r\n73578f\r\n573b73\r\n3c233c\r\n463246\r\n724072\r\n8f578f\r\nab57ab\r\nab73ab\r\nebace1\r\nffdcf5\r\ne3c7e3\r\ne1b9d2\r\nd7a0be\r\nc78fb9\r\nc87da0\r\nc35a91\r\n4b2837\r\n321623\r\n280a1e\r\n401811\r\n621800\r\na5140a\r\nda2010\r\nd5524a\r\nff3c0a\r\nf55a32\r\nff6262\r\nf6bd31\r\nffa53c\r\nd79b0f\r\nda6e0a\r\nb45a00\r\na04b05\r\n5f3214\r\n53500a\r\n626200\r\n8c805a\r\nac9400\r\nb1b10a\r\ne6d55a\r\nffd510\r\nffea4a\r\nc8ff41\r\n9bf046\r\n96dc19\r\n73c805\r\n6aa805\r\n3c6e14\r\n283405\r\n204608\r\n0c5c0c\r\n149605\r\n0ad70a\r\n14e60a\r\n7dff73\r\n4bf05a\r\n00c514\r\n05b450\r\n1c8c4e\r\n123832\r\n129880\r\n06c491\r\n00de6a\r\n2deba8\r\n3cfea5\r\n6affcd\r\n91ebff\r\n55e6ff\r\n7dd7f0\r\n08ded5\r\n109cde\r\n055a5c\r\n162c52\r\n0f377d\r\n004a9c\r\n326496\r\n0052f6\r\n186abd\r\n2378dc\r\n699dc3\r\n4aa4ff\r\n90b0ff\r\n5ac5ff\r\nbeb9fa\r\n786ef0\r\n4a5aff\r\n6241f6\r\n3c3cf5\r\n101cda\r\n0010bd\r\n231094\r\n0c2148\r\n5010b0\r\n6010d0\r\n8732d2\r\n9c41ff\r\nbd62ff\r\nb991ff\r\nd7a5ff\r\nd7c3fa\r\nf8c6fc\r\ne673ff\r\nff52ff\r\nda20e0\r\nbd29ff\r\nbd10c5\r\n8c14be\r\n5a187b\r\n641464\r\n410062\r\n320a46\r\n551937\r\na01982\r\nc80078\r\nff50bf\r\nff6ac5\r\nfaa0b9\r\nfc3a8c\r\ne61e78\r\nbd1039\r\n98344d\r\n911437\r\n"
+
+_duel_hex:                              # @duel_hex
+	.ascii	"000000\r\n222323\r\n434549\r\n626871\r\n828b98\r\na6aeba\r\ncdd2da\r\nf5f7fa\r\n625d54\r\n857565\r\n9e8c79\r\naea189\r\nbbafa4\r\nccc3b1\r\neadbc9\r\nfff3d6\r\n583126\r\n733d3b\r\n885041\r\n9a624c\r\nad6e51\r\nd58d6b\r\nfbaa84\r\nffce7f\r\n002735\r\n003850\r\n004d5e\r\n0b667f\r\n006f89\r\n328ca7\r\n24aed6\r\n88d6ff\r\n662b29\r\n94363a\r\nb64d46\r\ncd5e46\r\ne37840\r\nf99b4e\r\nffbc4e\r\nffe949\r\n282b4a\r\n3a4568\r\n615f84\r\n7a7799\r\n8690b2\r\n96b2d9\r\nc7d6ff\r\nc6ecff\r\n002219\r\n003221\r\n174a1b\r\n225918\r\n2f690c\r\n518822\r\n7da42d\r\na6cc34\r\n181f2f\r\n23324d\r\n25466b\r\n366b8a\r\n318eb8\r\n41b2e3\r\n52d2ff\r\n74f5fd\r\n1a332c\r\n2f3f38\r\n385140\r\n325c40\r\n417455\r\n498960\r\n55b67d\r\n91daa1\r\n5e0711\r\n82211d\r\nb63c35\r\ne45c5f\r\nff7676\r\nff9ba8\r\nffbbc7\r\nffdbff\r\n2d3136\r\n48474d\r\n5b5c69\r\n73737f\r\n848795\r\nabaebe\r\nbac7db\r\nebf0f6\r\n3b303c\r\n5a3c45\r\n8a5258\r\nae6b60\r\nc7826c\r\nd89f75\r\necc581\r\nfffaab\r\n31222a\r\n4a353c\r\n5e4646\r\n725a51\r\n7e6c54\r\n9e8a6e\r\nc0a588\r\nddbf9a\r\n2e1026\r\n49283d\r\n663659\r\n975475\r\nb96d91\r\nc178aa\r\ndb99bf\r\nf8c6da\r\n002e49\r\n004051\r\n005162\r\n006b6d\r\n008279\r\n00a087\r\n00bfa3\r\n00deda\r\n453125\r\n614a3c\r\n7e6144\r\n997951\r\nb29062\r\ncca96e\r\ne8cb82\r\nfbeaa3\r\n5f0926\r\n6e2434\r\n904647\r\na76057\r\nbd7d64\r\nce9770\r\nedb67c\r\nedd493\r\n323558\r\n4a5280\r\n64659d\r\n7877c1\r\n8e8ce2\r\n9c9bef\r\nb8aeff\r\ndcd4ff\r\n431729\r\n712b3b\r\n9f3b52\r\nd94a69\r\nf85d80\r\nff7daf\r\nffa6c5\r\nffcdff\r\n49251c\r\n633432\r\n7c4b47\r\n98595a\r\nac6f6e\r\nc17e7a\r\nd28d7a\r\ne59a7c\r\n202900\r\n2f4f08\r\n495d00\r\n617308\r\n7c831e\r\n969a26\r\nb4aa33\r\nd0cc32\r\n622a00\r\n753b09\r\n854f12\r\n9e6520\r\nba882e\r\nd1aa39\r\ne8d24b\r\nfff64f\r\n26233d\r\n3b3855\r\n56506f\r\n75686e\r\n917a7b\r\nb39783\r\ncfaf8e\r\nfedfb1\r\n1d2c43\r\n2e3d47\r\n394d3c\r\n4c5f33\r\n58712c\r\n6b842d\r\n789e24\r\n7fbd39\r\n372423\r\n53393a\r\n784c49\r\n945d4f\r\na96d58\r\nbf7e63\r\nd79374\r\nf4a380\r\n2d4b47\r\n47655a\r\n5b7b69\r\n71957d\r\n87ae8e\r\n8ac196\r\na9d1c1\r\ne0faeb\r\n001b40\r\n03315f\r\n07487c\r\n105da2\r\n1476c0\r\n4097ea\r\n55b1f1\r\n6dccff\r\n554769\r\n765d73\r\n977488\r\nb98c93\r\nd5a39a\r\nebbd9d\r\nffd59b\r\nfdf786\r\n1d1d21\r\n3c3151\r\n584a7f\r\n7964ba\r\n9585f1\r\na996ec\r\nbaabf7\r\nd1bdfe\r\n262450\r\n28335d\r\n2d3d72\r\n3d5083\r\n5165ae\r\n5274c5\r\n6c82c4\r\n8393c3\r\n492129\r\n5e414a\r\n77535b\r\n91606a\r\nad7984\r\nb58b94\r\nd4aeaa\r\nffe2cf\r\n721c03\r\n9c3327\r\nbf5a3e\r\ne98627\r\nffb108\r\nffcf05\r\nfff02b\r\nf7f4bf\r\n"
+
+_hocus_pocus_hex:                       # @hocus_pocus_hex
+	.ascii	"060013\r\n19141d\r\ne9e396\r\ncebb6c\r\nb58f46\r\n9e6628\r\n843b11\r\n78250f\r\nd2797e\r\nbb6a6e\r\na45d62\r\n8d5152\r\n764145\r\n5e3535\r\n482829\r\n361d1d\r\n4b09d4\r\n4308bd\r\n3a07a6\r\n320690\r\n290679\r\n210562\r\n18044c\r\n1d1044\r\n8295a8\r\n728594\r\n657584\r\n566670\r\n495660\r\n39464c\r\n2d373c\r\n22282e\r\na26f70\r\n956263\r\n855657\r\n784e4f\r\n684545\r\n5b3939\r\n4b3030\r\n472f35\r\na27fb8\r\n9273a4\r\n826794\r\n725b83\r\n624e6f\r\n52425f\r\n42364e\r\n372b3f\r\nca97a3\r\nb38690\r\n9e7680\r\n8a6670\r\n72565c\r\n5e474c\r\n493739\r\n3e3137\r\n8d88bc\r\n7b79a7\r\n6d6894\r\n5e5a7f\r\n4f4a6c\r\n413956\r\n322c44\r\n252033\r\ne8988c\r\nd18479\r\nba7369\r\na4625c\r\n8e524c\r\n77453f\r\n613532\r\n4c3825\r\n15c714\r\n12bb11\r\n0f9d0d\r\n0d810a\r\n0a6807\r\n074c05\r\n053003\r\n021b01\r\n38b3fa\r\n2996e5\r\n1f79d0\r\n1560bb\r\n0e4ba6\r\n083791\r\n03237c\r\n162a73\r\nf9f1dc\r\nd6c4b4\r\nb6988c\r\n97736b\r\n77534e\r\n583735\r\n381c1c\r\n1c0b0b\r\nedd8e4\r\nc3b0c3\r\n9d8ca6\r\n7a6b89\r\n5b4e6b\r\n3f354e\r\n241c31\r\n251f14\r\nfaf400\r\ndebb00\r\nc28900\r\naa5f00\r\n8e3d00\r\n762200\r\n5a0b00\r\n440300\r\ne40002\r\ncb0015\r\nb50015\r\n9c0014\r\n850014\r\n6c0014\r\n560013\r\n501013\r\ne4c013\r\ncba312\r\nb28912\r\n9b7012\r\n825a11\r\n6c4711\r\n523211\r\n3e2510\r\n000023\r\n0000f6\r\n0000f2\r\n0000ea\r\n0000e6\r\n0000e2\r\n0000de\r\n0000da\r\n0000d6\r\n0000d2\r\n0000ce\r\n0000ca\r\n0000c6\r\n0000c2\r\n0000be\r\n0000ba\r\n0000b6\r\n0000b2\r\n0000ad\r\n0000a6\r\n0000a2\r\n00009e\r\n00009a\r\n000096\r\n000092\r\n00008e\r\n00008a\r\n000086\r\n000082\r\n00007e\r\n00007a\r\n000076\r\n151583\r\n14147e\r\n131377\r\n121273\r\n11116f\r\n10106b\r\n0f0f67\r\n0e0e63\r\n0d0d5f\r\n0c0c5b\r\n0b0b57\r\n0a0a53\r\n0a0a4f\r\n09094b\r\n080847\r\n070743\r\ne5e5fb\r\nd7d7f2\r\nccccec\r\nc1c1e7\r\nb6b6e1\r\nababdc\r\na0a0d6\r\n9795d0\r\na38ec5\r\n9683be\r\n8978ba\r\n8071b7\r\n7669b3\r\n6a5faf\r\n6057ac\r\n5851a8\r\n0015e5\r\n0013cf\r\n0011b9\r\n000ea3\r\n000c91\r\n000a7b\r\n000865\r\n15074f\r\nfa1515\r\ne21313\r\nca1111\r\nb20f0f\r\n9a0d0d\r\n820b0b\r\n6a0909\r\n570707\r\n15f600\r\n15dc00\r\n15c400\r\n15a900\r\n159200\r\n157700\r\n156000\r\n295815\r\nfae4fa\r\ndecbde\r\nc6b5c6\r\nae9fae\r\n968996\r\n7e737e\r\n665d66\r\n504950\r\ne7c100\r\ne8b301\r\ne9a603\r\neb9904\r\nec8f06\r\nee8207\r\nef7508\r\nf1641e\r\nf00bf0\r\nd80dd8\r\nc30ec3\r\naf10af\r\n9a119a\r\n861286\r\n711471\r\n5f155f\r\n010101\r\n0d0d0d\r\n1e1e1e\r\n313131\r\n414141\r\n515151\r\n626262\r\n757575\r\n858585\r\n959595\r\na6a6a6\r\nb9b9b9\r\nc9c9c9\r\nd9d9d9\r\neaeaea\r\nfcfcfc\r\n"
+
+_sonic_robo_blast_2_v22_hex:            # @sonic_robo_blast_2_v22_hex
+	.ascii	"ffffff\r\nf6f6f6\r\nededed\r\ne4e4e4\r\ndadada\r\nd1d1d1\r\nc8c8c8\r\nbfbfbf\r\nb7b7b7\r\nafafaf\r\na7a7a7\r\n9f9f9f\r\n979797\r\n8f8f8f\r\n878787\r\n7f7f7f\r\n777777\r\n6f6f6f\r\n676767\r\n5f5f5f\r\n575757\r\n4f4f4f\r\n474747\r\n3f3f3f\r\n373737\r\n2f2f2f\r\n272727\r\n1f1f1f\r\n171717\r\n0f0f0f\r\n070707\r\n000000\r\nff7f7f\r\nff5f5f\r\nff3f3f\r\nff0000\r\nef0000\r\ndf0000\r\ncf0000\r\nbf0000\r\naf0000\r\n9f0000\r\n8f0000\r\n7f0000\r\n6f0000\r\n5f0000\r\n470000\r\n370000\r\nffdbc0\r\nffcb97\r\nffb975\r\nffa855\r\nff9736\r\nff8619\r\nff7500\r\nec6900\r\ndd5e00\r\nd05800\r\nc44f00\r\nb54400\r\n9f3800\r\n8a2900\r\n812000\r\n791800\r\nebdb57\r\nd7bb43\r\nc39b2f\r\naf7b1f\r\n9b5b13\r\n874307\r\n752900\r\n550000\r\nffff4f\r\nffff00\r\ne3d90f\r\nc9bb0e\r\naa9b0b\r\n887809\r\n706007\r\n5a4905\r\nffffcf\r\nffffaf\r\nffff8f\r\nffff73\r\nebde81\r\nd0c280\r\nb7a977\r\n96835d\r\ndeffa8\r\nc7e494\r\nadc880\r\n95ad6b\r\n7c9258\r\n647744\r\n4a5a30\r\n323f1d\r\n77ff4f\r\n70f04b\r\n69e046\r\n61d041\r\n5ac03c\r\n52b037\r\n4ba032\r\n43902d\r\n3c8028\r\n357023\r\n2d601e\r\n265019\r\n1e4014\r\n17300f\r\n0f200a\r\n070f04\r\n00ff00\r\n00df00\r\n00bf00\r\n009f00\r\n007f00\r\n005f00\r\n003f00\r\n002d00\r\nb7fbe7\r\n66f7cb\r\n15f2b0\r\n0bd297\r\n03b180\r\n02936b\r\n027354\r\n01563f\r\ncefaff\r\na6f1ff\r\n75e7ff\r\n57d5ff\r\n4fc7ff\r\n47b9ff\r\n37a5ff\r\n208ae1\r\n186fb6\r\n155386\r\n0e3556\r\n071e30\r\n74d1c9\r\n42b3b3\r\n178888\r\n005f5f\r\ne7e7ff\r\nc6c6ff\r\nadadff\r\n8c8cff\r\n7373ff\r\n5252ff\r\n3131ff\r\n1818ff\r\n0000ff\r\n0000df\r\n0000c4\r\n0000ac\r\n000095\r\n000080\r\n000066\r\n000052\r\nd8b7ff\r\nc799ff\r\nad6aff\r\n9844ff\r\n7f16ff\r\n6b00ee\r\n5b00c9\r\n48009f\r\n330071\r\n240051\r\n9797d5\r\n7777bb\r\n5454a7\r\n414183\r\n2e2e5c\r\n21224e\r\nffcaff\r\nffaaff\r\nff8aff\r\nff6aff\r\nff4aff\r\nff00ff\r\ndd00dd\r\nbf00bf\r\na200a2\r\n790079\r\n550055\r\n350035\r\nc5e800\r\na7ca04\r\n8ca80b\r\n6c7c12\r\ncf7fcf\r\nb76fb7\r\n9f5f9f\r\n874f87\r\n6f3f6f\r\n572f57\r\n402040\r\n2b152b\r\nffc4e0\r\nff99c0\r\nf570a5\r\ndd578c\r\nc73d74\r\nb13466\r\n9d2f5b\r\n85274d\r\nffe6db\r\nffbfbf\r\nff9f9f\r\ne18585\r\ncc7171\r\nc26363\r\nb55353\r\na73f3f\r\nffcfb3\r\nffc19e\r\nffb78b\r\nf7ab7b\r\nefa373\r\ne39767\r\nd78b5b\r\ncf8353\r\nbf7b4b\r\nb37347\r\nab6f43\r\na36b3f\r\n9b633b\r\n8f5f37\r\n875733\r\n7f532f\r\n774f2b\r\n6b4727\r\n5f4323\r\n533f1f\r\n4b371b\r\n3f2f17\r\n332b13\r\n2b230f\r\nbfa78f\r\naf9880\r\n9f8971\r\n927d65\r\n86725a\r\n7e6a52\r\n75624a\r\n6d5a42\r\n65533b\r\n5d4b33\r\n57452d\r\n4b3c23\r\nffe7f6\r\n00003f\r\n000020\r\n00ffff\r\n"
+
+_srb2_hex:                              # @srb2_hex
+	.ascii	"ffffff\r\nf7f7f7\r\nefefef\r\ne7e7e7\r\ndfdfdf\r\nd7d7d7\r\ncfcfcf\r\nc7c7c7\r\nbfbfbf\r\nb7b7b7\r\nafafaf\r\na7a7a7\r\n9f9f9f\r\n979797\r\n8f8f8f\r\n878787\r\n7f7f7f\r\n777777\r\n6f6f6f\r\n676767\r\n5f5f5f\r\n575757\r\n4f4f4f\r\n474747\r\n3f3f3f\r\n373737\r\n2f2f2f\r\n272727\r\n1f1f1f\r\n171717\r\n0f0f0f\r\n070707\r\n000000\r\nbfa78f\r\nb7a088\r\naf9880\r\na79078\r\n9f8971\r\n968169\r\n8e7961\r\n86725a\r\n7e6a52\r\n75624a\r\n6d5a42\r\n65533b\r\n5d4b33\r\n54432b\r\n4c3c24\r\n43331b\r\nbf7b4b\r\nb37347\r\nab6f43\r\na36b3f\r\n9b633b\r\n8f5f37\r\n875733\r\n7f532f\r\n774f2b\r\n6b4727\r\n5f4323\r\n533f1f\r\n4b371b\r\n3f2f17\r\n332b13\r\n2b230f\r\nffebdf\r\nffe3d3\r\nffdbc7\r\nffd3bb\r\nffcfb3\r\nffc7a7\r\nffbf9b\r\nffbb93\r\nffb383\r\nf7ab7b\r\nefa373\r\ne79b6b\r\ndf9363\r\nd78b5b\r\ncf8353\r\ncb7f4f\r\nffeedc\r\nffdcb9\r\nffcb97\r\nffb975\r\nffa855\r\nff9736\r\nff8619\r\nff7500\r\nf36d00\r\ne56500\r\nd85d00\r\ncb5500\r\nbe4d00\r\nb14500\r\na43d00\r\n973600\r\nffffef\r\nffffcf\r\nffffaf\r\nffff8f\r\nffff6f\r\nffff4f\r\nffff2f\r\nffff0f\r\nffff00\r\ncfcf00\r\nafaf00\r\n8f8f00\r\n6f6f00\r\n4f4f00\r\n2f2f00\r\n0f0f00\r\nffff73\r\nebdb57\r\nd7bb43\r\nc39b2f\r\naf7b1f\r\n9b5b13\r\n874307\r\n732b00\r\nffdfdf\r\nffbfbf\r\nff9f9f\r\nff7f7f\r\nff5f5f\r\nff3f3f\r\nff1f1f\r\nff0000\r\nef0000\r\ndf0000\r\ncf0000\r\nbf0000\r\naf0000\r\n9f0000\r\n8f0000\r\n7f0000\r\n6f0000\r\n5f0000\r\n4f0000\r\n3f0000\r\n2f0000\r\n1f0000\r\n0f0000\r\nffb7b7\r\nf3a3a3\r\ne78f8f\r\ndb7b7b\r\ncb6b6b\r\nbf5b5b\r\nb34f4f\r\na73f3f\r\n8e2e00\r\n862700\r\n7e2000\r\n751900\r\n6d1200\r\n650b00\r\n5d0500\r\n550000\r\n77ff4f\r\n70f04b\r\n69e046\r\n61d041\r\n5ac03c\r\n52b037\r\n4ba032\r\n43902d\r\n3c8028\r\n357023\r\n2d601e\r\n265019\r\n1e4014\r\n17300f\r\n0f200a\r\n070f04\r\ndeffa8\r\nc7e494\r\nadc880\r\n95ad6b\r\n7c9258\r\n647744\r\n4a5a30\r\n323f1d\r\n00ff00\r\n00df00\r\n00bf00\r\n009f00\r\n007f00\r\n005f00\r\n003f00\r\n001f00\r\nff6fff\r\nff00ff\r\ndf00df\r\nbf00bf\r\n9f009f\r\n7f007f\r\n5f005f\r\n3f003f\r\ne9e9f3\r\nc4c4e1\r\n9d9dce\r\n7777bb\r\n5454a7\r\n414183\r\n2e2e5c\r\n1b1b34\r\nd5f1ff\r\nbfebff\r\naae3ff\r\n95ddff\r\n80d6ff\r\n6acfff\r\n55c8ff\r\n3fbfff\r\n379ddf\r\n2f8fbf\r\n27779f\r\n1f5f7f\r\n00bfbf\r\n007f7f\r\n005f5f\r\n003f3f\r\ne7e7ff\r\nc6c6ff\r\nadadff\r\n8c8cff\r\n7373ff\r\n5252ff\r\n3131ff\r\n1818ff\r\n0000ff\r\n0000e7\r\n0000ce\r\n0000b5\r\n00009c\r\n000084\r\n00006b\r\n000052\r\n00004f\r\n00003f\r\n000037\r\n000027\r\n00001f\r\n00000f\r\n000007\r\n00ffff\r\ncf7fcf\r\nb76fb7\r\n9f5f9f\r\n874f87\r\n6f3f6f\r\n572f57\r\n3f1f3f\r\n270f27\r\n"
+
+_uzebox_hex:                            # @uzebox_hex
+	.ascii	"000000\r\n240000\r\n480000\r\n6d0000\r\n910000\r\nb60000\r\nda0000\r\nff0000\r\n002400\r\n242400\r\n482400\r\n6d2400\r\n912400\r\nb62400\r\nda2400\r\nff2400\r\n004800\r\n244800\r\n484800\r\n6d4800\r\n914800\r\nb64800\r\nda4800\r\nff4800\r\n006d00\r\n246d00\r\n486d00\r\n6d6d00\r\n916d00\r\nb66d00\r\nda6d00\r\nff6d00\r\n009100\r\n249100\r\n489100\r\n6d9100\r\n919100\r\nb69100\r\nda9100\r\nff9100\r\n00b600\r\n24b600\r\n48b600\r\n6db600\r\n91b600\r\nb6b600\r\ndab600\r\nffb600\r\n00da00\r\n24da00\r\n48da00\r\n6dda00\r\n91da00\r\nb6da00\r\ndada00\r\nffda00\r\n00ff00\r\n24ff00\r\n48ff00\r\n6dff00\r\n91ff00\r\nb6ff00\r\ndaff00\r\nffff00\r\n000055\r\n240055\r\n480055\r\n6d0055\r\n910055\r\nb60055\r\nda0055\r\nff0055\r\n002455\r\n242455\r\n482455\r\n6d2455\r\n912455\r\nb62455\r\nda2455\r\nff2455\r\n004855\r\n244855\r\n484855\r\n6d4855\r\n914855\r\nb64855\r\nda4855\r\nff4855\r\n006d55\r\n246d55\r\n486d55\r\n6d6d55\r\n916d55\r\nb66d55\r\nda6d55\r\nff6d55\r\n009155\r\n249155\r\n489155\r\n6d9155\r\n919155\r\nb69155\r\nda9155\r\nff9155\r\n00b655\r\n24b655\r\n48b655\r\n6db655\r\n91b655\r\nb6b655\r\ndab655\r\nffb655\r\n00da55\r\n24da55\r\n48da55\r\n6dda55\r\n91da55\r\nb6da55\r\ndada55\r\nffda55\r\n00ff55\r\n24ff55\r\n48ff55\r\n6dff55\r\n91ff55\r\nb6ff55\r\ndaff55\r\nffff55\r\n0000aa\r\n2400aa\r\n4800aa\r\n6d00aa\r\n9100aa\r\nb600aa\r\nda00aa\r\nff00aa\r\n0024aa\r\n2424aa\r\n4824aa\r\n6d24aa\r\n9124aa\r\nb624aa\r\nda24aa\r\nff24aa\r\n0048aa\r\n2448aa\r\n4848aa\r\n6d48aa\r\n9148aa\r\nb648aa\r\nda48aa\r\nff48aa\r\n006daa\r\n246daa\r\n486daa\r\n6d6daa\r\n916daa\r\nb66daa\r\nda6daa\r\nff6daa\r\n0091aa\r\n2491aa\r\n4891aa\r\n6d91aa\r\n9191aa\r\nb691aa\r\nda91aa\r\nff91aa\r\n00b6aa\r\n24b6aa\r\n48b6aa\r\n6db6aa\r\n91b6aa\r\nb6b6aa\r\ndab6aa\r\nffb6aa\r\n00daaa\r\n24daaa\r\n48daaa\r\n6ddaaa\r\n91daaa\r\nb6daaa\r\ndadaaa\r\nffdaaa\r\n00ffaa\r\n24ffaa\r\n48ffaa\r\n6dffaa\r\n91ffaa\r\nb6ffaa\r\ndaffaa\r\nffffaa\r\n0000ff\r\n2400ff\r\n4800ff\r\n6d00ff\r\n9100ff\r\nb600ff\r\nda00ff\r\nff00ff\r\n0024ff\r\n2424ff\r\n4824ff\r\n6d24ff\r\n9124ff\r\nb624ff\r\nda24ff\r\nff24ff\r\n0048ff\r\n2448ff\r\n4848ff\r\n6d48ff\r\n9148ff\r\nb648ff\r\nda48ff\r\nff48ff\r\n006dff\r\n246dff\r\n486dff\r\n6d6dff\r\n916dff\r\nb66dff\r\nda6dff\r\nff6dff\r\n0091ff\r\n2491ff\r\n4891ff\r\n6d91ff\r\n9191ff\r\nb691ff\r\nda91ff\r\nff91ff\r\n00b6ff\r\n24b6ff\r\n48b6ff\r\n6db6ff\r\n91b6ff\r\nb6b6ff\r\ndab6ff\r\nffb6ff\r\n00daff\r\n24daff\r\n48daff\r\n6ddaff\r\n91daff\r\nb6daff\r\ndadaff\r\nffdaff\r\n00ffff\r\n24ffff\r\n48ffff\r\n6dffff\r\n91ffff\r\nb6ffff\r\ndaffff\r\nffffff\r\n"
+
+_windows_95_256_colours_hex:            # @windows_95_256_colours_hex
+	.ascii	"000000\r\n800000\r\n008000\r\n808000\r\n000080\r\n800080\r\n008080\r\nc0c0c0\r\nc0dcc0\r\na6caf0\r\n2a3faa\r\n2a3fff\r\n2a5f00\r\n2a5f55\r\n2a5faa\r\n2a5fff\r\n2a7f00\r\n2a7f55\r\n2a7faa\r\n2a7fff\r\n2a9f00\r\n2a9f55\r\n2a9faa\r\n2a9fff\r\n2abf00\r\n2abf55\r\n2abfaa\r\n2abfff\r\n2adf00\r\n2adf55\r\n2adfaa\r\n2adfff\r\n2aff00\r\n2aff55\r\n2affaa\r\n2affff\r\n550000\r\n550055\r\n5500aa\r\n5500ff\r\n551f00\r\n551f55\r\n551faa\r\n551fff\r\n553f00\r\n553f55\r\n553faa\r\n553fff\r\n555f00\r\n555f55\r\n555faa\r\n555fff\r\n557f00\r\n557f55\r\n557faa\r\n557fff\r\n559f00\r\n559f55\r\n559faa\r\n559fff\r\n55bf00\r\n55bf55\r\n55bfaa\r\n55bfff\r\n55df00\r\n55df55\r\n55dfaa\r\n55dfff\r\n55ff00\r\n55ff55\r\n55ffaa\r\n55ffff\r\n7f0000\r\n7f0055\r\n7f00aa\r\n7f00ff\r\n7f1f00\r\n7f1f55\r\n7f1faa\r\n7f1fff\r\n7f3f00\r\n7f3f55\r\n7f3faa\r\n7f3fff\r\n7f5f00\r\n7f5f55\r\n7f5faa\r\n7f5fff\r\n7f7f00\r\n7f7f55\r\n7f7faa\r\n7f7fff\r\n7f9f00\r\n7f9f55\r\n7f9faa\r\n7f9fff\r\n7fbf00\r\n7fbf55\r\n7fbfaa\r\n7fbfff\r\n7fdf00\r\n7fdf55\r\n7fdfaa\r\n7fdfff\r\n7fff00\r\n7fff55\r\n7fffaa\r\n7fffff\r\naa0000\r\naa0055\r\naa00aa\r\naa00ff\r\naa1f00\r\naa1f55\r\naa1faa\r\naa1fff\r\naa3f00\r\naa3f55\r\naa3faa\r\naa3fff\r\naa5f00\r\naa5f55\r\naa5faa\r\naa5fff\r\naa7f00\r\naa7f55\r\naa7faa\r\naa7fff\r\naa9f00\r\naa9f55\r\naa9faa\r\naa9fff\r\naabf00\r\naabf55\r\naabfaa\r\naabfff\r\naadf00\r\naadf55\r\naadfaa\r\naadfff\r\naaff00\r\naaff55\r\naaffaa\r\naaffff\r\nd40000\r\nd40055\r\nd400aa\r\nd400ff\r\nd41f00\r\nd41f55\r\nd41faa\r\nd41fff\r\nd43f00\r\nd43f55\r\nd43faa\r\nd43fff\r\nd45f00\r\nd45f55\r\nd45faa\r\nd45fff\r\nd47f00\r\nd47f55\r\nd47faa\r\nd47fff\r\nd49f00\r\nd49f55\r\nd49faa\r\nd49fff\r\nd4bf00\r\nd4bf55\r\nd4bfaa\r\nd4bfff\r\nd4df00\r\nd4df55\r\nd4dfaa\r\nd4dfff\r\nd4ff00\r\nd4ff55\r\nd4ffaa\r\nd4ffff\r\nff0055\r\nff00aa\r\nff1f00\r\nff1f55\r\nff1faa\r\nff1fff\r\nff3f00\r\nff3f55\r\nff3faa\r\nff3fff\r\nff5f00\r\nff5f55\r\nff5faa\r\nff5fff\r\nff7f00\r\nff7f55\r\nff7faa\r\nff7fff\r\nff9f00\r\nff9f55\r\nff9faa\r\nff9fff\r\nffbf00\r\nffbf55\r\nffbfaa\r\nffbfff\r\nffdf00\r\nffdf55\r\nffdfaa\r\nffdfff\r\nffff55\r\nffffaa\r\nccccff\r\nffccff\r\n33ffff\r\n66ffff\r\n99ffff\r\nccffff\r\n007f00\r\n007f55\r\n007faa\r\n007fff\r\n009f00\r\n009f55\r\n009faa\r\n009fff\r\n00bf00\r\n00bf55\r\n00bfaa\r\n00bfff\r\n00df00\r\n00df55\r\n00dfaa\r\n00dfff\r\n00ff55\r\n00ffaa\r\n2a0000\r\n2a0055\r\n2a00aa\r\n2a00ff\r\n2a1f00\r\n2a1f55\r\n2a1faa\r\n2a1fff\r\n2a3f00\r\n2a3f55\r\nfffbf0\r\na0a0a4\r\n808080\r\nff0000\r\n00ff00\r\nffff00\r\n0000ff\r\nff00ff\r\n00ffff\r\nffffff\r\n"
+
+	.section	.data,"dw",discard,"??_R0?AVout_of_range@std@@@8"
+	.globl	"??_R0?AVout_of_range@std@@@8"  # @"??_R0?AVout_of_range@std@@@8"
+	.p2align	4
+"??_R0?AVout_of_range@std@@@8":
+	.long	"??_7type_info@@6B@"
+	.long	0
+	.asciz	".?AVout_of_range@std@@"
+	.zero	1
+
+	.section	.rdata,"dr",discard,"??_C@_0BP@LDKDOJOI@Index?5out?5of?5range?5for?5palette?$AA@"
+	.globl	"??_C@_0BP@LDKDOJOI@Index?5out?5of?5range?5for?5palette?$AA@" # @"??_C@_0BP@LDKDOJOI@Index?5out?5of?5range?5for?5palette?$AA@"
+"??_C@_0BP@LDKDOJOI@Index?5out?5of?5range?5for?5palette?$AA@":
+	.asciz	"Index out of range for palette"
+
+	.bss
 	.globl	"?ext0101_noop_id@@3IA"         # @"?ext0101_noop_id@@3IA"
 	.p2align	2
 "?ext0101_noop_id@@3IA":
@@ -28195,10 +32615,36 @@ ___ehhandler$_GLOBAL__sub_I_main.cpp:   # @"__ehhandler$_GLOBAL__sub_I_main.cpp"
 "?ext0101_setdebug_id@@3IA":
 	.long	16842753                        # 0x1010001
 
-	.globl	"?ext0102_pixel_id@@3IA"        # @"?ext0102_pixel_id@@3IA"
+	.globl	"?ext0101_raster4_id@@3IA"      # @"?ext0101_raster4_id@@3IA"
 	.p2align	2
-"?ext0102_pixel_id@@3IA":
-	.long	16908288                        # 0x1020000
+"?ext0101_raster4_id@@3IA":
+	.long	16842754                        # 0x1010002
+
+	.globl	"?ext0101_raster3_id@@3IA"      # @"?ext0101_raster3_id@@3IA"
+	.p2align	2
+"?ext0101_raster3_id@@3IA":
+	.long	16842755                        # 0x1010003
+
+	.globl	"?ext0101_raster_set_palette_id@@3IA" # @"?ext0101_raster_set_palette_id@@3IA"
+	.p2align	2
+"?ext0101_raster_set_palette_id@@3IA":
+	.long	16842756                        # 0x1010004
+
+	.section	.rdata,"dr",discard,"??_C@_0BB@OCFNGDLM@Set?5palette?5to?5?$CC?$AA@"
+	.globl	"??_C@_0BB@OCFNGDLM@Set?5palette?5to?5?$CC?$AA@" # @"??_C@_0BB@OCFNGDLM@Set?5palette?5to?5?$CC?$AA@"
+"??_C@_0BB@OCFNGDLM@Set?5palette?5to?5?$CC?$AA@":
+	.asciz	"Set palette to \""
+
+	.section	.rdata,"dr",discard,"??_C@_01BJJEKLCA@?$CC?$AA@"
+	.globl	"??_C@_01BJJEKLCA@?$CC?$AA@"    # @"??_C@_01BJJEKLCA@?$CC?$AA@"
+"??_C@_01BJJEKLCA@?$CC?$AA@":
+	.asciz	"\""
+
+	.data
+	.globl	"?ext0101_raster_palette_id@@3IA" # @"?ext0101_raster_palette_id@@3IA"
+	.p2align	2
+"?ext0101_raster_palette_id@@3IA":
+	.long	16842757                        # 0x1010005
 
 	.section	.rdata,"dr",discard,"??_C@_01ODHLEDKK@?$CI?$AA@"
 	.globl	"??_C@_01ODHLEDKK@?$CI?$AA@"    # @"??_C@_01ODHLEDKK@?$CI?$AA@"
@@ -28209,6 +32655,17 @@ ___ehhandler$_GLOBAL__sub_I_main.cpp:   # @"__ehhandler$_GLOBAL__sub_I_main.cpp"
 	.globl	"??_C@_02KEGNLNML@?0?5?$AA@"    # @"??_C@_02KEGNLNML@?0?5?$AA@"
 "??_C@_02KEGNLNML@?0?5?$AA@":
 	.asciz	", "
+
+	.section	.rdata,"dr",discard,"??_C@_02MNMNLDAI@?$CJ?6?$AA@"
+	.globl	"??_C@_02MNMNLDAI@?$CJ?6?$AA@"  # @"??_C@_02MNMNLDAI@?$CJ?6?$AA@"
+"??_C@_02MNMNLDAI@?$CJ?6?$AA@":
+	.asciz	")\n"
+
+	.data
+	.globl	"?ext0102_pixel_id@@3IA"        # @"?ext0102_pixel_id@@3IA"
+	.p2align	2
+"?ext0102_pixel_id@@3IA":
+	.long	16908288                        # 0x1020000
 
 	.section	.rdata,"dr",discard,"??_C@_01PKGAHCOL@?$CJ?$AA@"
 	.globl	"??_C@_01PKGAHCOL@?$CJ?$AA@"    # @"??_C@_01PKGAHCOL@?$CJ?$AA@"
@@ -28241,11 +32698,6 @@ ___ehhandler$_GLOBAL__sub_I_main.cpp:   # @"__ehhandler$_GLOBAL__sub_I_main.cpp"
 	.globl	"??_C@_06HDKPNFJF@?$CJ?5?9?$DO?5?$CI?$AA@" # @"??_C@_06HDKPNFJF@?$CJ?5?9?$DO?5?$CI?$AA@"
 "??_C@_06HDKPNFJF@?$CJ?5?9?$DO?5?$CI?$AA@":
 	.asciz	") -> ("
-
-	.section	.rdata,"dr",discard,"??_C@_02MNMNLDAI@?$CJ?6?$AA@"
-	.globl	"??_C@_02MNMNLDAI@?$CJ?6?$AA@"  # @"??_C@_02MNMNLDAI@?$CJ?6?$AA@"
-"??_C@_02MNMNLDAI@?$CJ?6?$AA@":
-	.asciz	")\n"
 
 	.data
 	.globl	"?ext0102_line_id@@3IA"         # @"?ext0102_line_id@@3IA"
@@ -30188,14 +34640,18 @@ L___unnamed_23:
 	.safeseh	"___ehhandler$?saveImage@@YAXPBDPAV?$deque@EV?$allocator@E@std@@@std@@II@Z"
 	.safeseh	"___ehhandler$??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	.safeseh	"___ehhandler$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@I@Z"
+	.safeseh	"___ehhandler$??__FpaletteNames@@YAXXZ"
+	.safeseh	"___ehhandler$?read_palette_color@@YA?AUcolor@@E@Z"
+	.safeseh	"___ehhandler$?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
+	.safeseh	"___ehhandler$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
 	.safeseh	"___ehhandler$?ext0102_circle_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
 	.safeseh	___ehhandler$main
 	.safeseh	"___ehhandler$??0fileInfo@@QAE@XZ"
-	.safeseh	"___ehhandler$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
 	.safeseh	"___ehhandler$??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z"
 	.safeseh	"___ehhandler$??0bad_array_new_length@std@@QAE@ABV01@@Z"
 	.safeseh	"___ehhandler$??0bad_alloc@std@@QAE@ABV01@@Z"
 	.safeseh	"___ehhandler$??0exception@std@@QAE@ABV01@@Z"
+	.safeseh	"___ehhandler$??1exception@std@@UAE@XZ"
 	.safeseh	"___ehhandler$??_Gbad_array_new_length@std@@UAEPAXI@Z"
 	.safeseh	"___ehhandler$??_Gbad_alloc@std@@UAEPAXI@Z"
 	.safeseh	"___ehhandler$??_Gexception@std@@UAEPAXI@Z"
@@ -30207,7 +34663,6 @@ L___unnamed_23:
 	.safeseh	"___ehhandler$??0_Locinfo@std@@QAE@PBD@Z"
 	.safeseh	"___ehhandler$??1_Locinfo@std@@QAE@XZ"
 	.safeseh	"___ehhandler$??0bad_cast@std@@QAE@ABV01@@Z"
-	.safeseh	"___ehhandler$??1exception@std@@UAE@XZ"
 	.safeseh	"___ehhandler$??_Gbad_cast@std@@UAEPAXI@Z"
 	.safeseh	"___ehhandler$??_Gios_base@std@@UAEPAXI@Z"
 	.safeseh	"___ehhandler$?_Tidy@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXXZ"
@@ -30251,6 +34706,8 @@ L___unnamed_23:
 	.safeseh	"___ehhandler$??$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IID@Z@IID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IID@Z@IID@Z"
 	.safeseh	"___ehhandler$?_Fput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPBDI@Z"
 	.safeseh	"___ehhandler$??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@ID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@ID@Z@ID@Z"
+	.safeseh	"___ehhandler$?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ"
+	.safeseh	"___ehhandler$?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
 	.safeseh	"___ehhandler$??$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z"
 	.safeseh	"___ehhandler$?_Growmap@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXI@Z"
 	.safeseh	"___ehhandler$??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z"
@@ -30307,10 +34764,15 @@ L___unnamed_23:
 	.addrsig
 	.addrsig_sym ___CxxFrameHandler3
 	.addrsig_sym "??__FsupportedExtensions@@YAXXZ"
+	.addrsig_sym "??__Fpalettes@@YAXXZ"
+	.addrsig_sym "??__FpaletteNames@@YAXXZ"
+	.addrsig_sym "??__Fchr2nib@@YAXXZ"
 	.addrsig_sym "?ext0101_noop_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
 	.addrsig_sym "?ext0101_noopex_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
 	.addrsig_sym "?ext0101_setcolor_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
 	.addrsig_sym "?ext0101_setdebug_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
+	.addrsig_sym "?ext0101_raster_set_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
+	.addrsig_sym "?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
 	.addrsig_sym "?ext0102_pixel_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
 	.addrsig_sym "?ext0102_rect_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
 	.addrsig_sym "?ext0102_circle_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
@@ -30328,14 +34790,18 @@ L___unnamed_23:
 	.addrsig_sym "___ehhandler$?saveImage@@YAXPBDPAV?$deque@EV?$allocator@E@std@@@std@@II@Z"
 	.addrsig_sym "___ehhandler$??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z"
 	.addrsig_sym "___ehhandler$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@I@Z"
+	.addrsig_sym "___ehhandler$??__FpaletteNames@@YAXXZ"
+	.addrsig_sym "___ehhandler$?read_palette_color@@YA?AUcolor@@E@Z"
+	.addrsig_sym "___ehhandler$?ext0101_raster_palette_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
+	.addrsig_sym "___ehhandler$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
 	.addrsig_sym "___ehhandler$?ext0102_circle_inst@@YAXAAV?$deque@EV?$allocator@E@std@@@std@@AAVfileInfo@@@Z"
 	.addrsig_sym ___ehhandler$main
 	.addrsig_sym "___ehhandler$??0fileInfo@@QAE@XZ"
-	.addrsig_sym "___ehhandler$??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z"
 	.addrsig_sym "___ehhandler$??$_Reallocate_for@V<lambda_1>@?0??assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??assign@01@QAEAAV01@QBDI@Z@PBD@Z"
 	.addrsig_sym "___ehhandler$??0bad_array_new_length@std@@QAE@ABV01@@Z"
 	.addrsig_sym "___ehhandler$??0bad_alloc@std@@QAE@ABV01@@Z"
 	.addrsig_sym "___ehhandler$??0exception@std@@QAE@ABV01@@Z"
+	.addrsig_sym "___ehhandler$??1exception@std@@UAE@XZ"
 	.addrsig_sym "___ehhandler$??_Gbad_array_new_length@std@@UAEPAXI@Z"
 	.addrsig_sym "___ehhandler$??_Gbad_alloc@std@@UAEPAXI@Z"
 	.addrsig_sym "___ehhandler$??_Gexception@std@@UAEPAXI@Z"
@@ -30347,7 +34813,6 @@ L___unnamed_23:
 	.addrsig_sym "___ehhandler$??0_Locinfo@std@@QAE@PBD@Z"
 	.addrsig_sym "___ehhandler$??1_Locinfo@std@@QAE@XZ"
 	.addrsig_sym "___ehhandler$??0bad_cast@std@@QAE@ABV01@@Z"
-	.addrsig_sym "___ehhandler$??1exception@std@@UAE@XZ"
 	.addrsig_sym "___ehhandler$??_Gbad_cast@std@@UAEPAXI@Z"
 	.addrsig_sym "___ehhandler$??_Gios_base@std@@UAEPAXI@Z"
 	.addrsig_sym "___ehhandler$?_Tidy@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXXZ"
@@ -30391,16 +34856,30 @@ L___unnamed_23:
 	.addrsig_sym "___ehhandler$??$_Reallocate_grow_by@V<lambda_1>@?0??insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@IID@Z@IID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??insert@01@QAEAAV01@IID@Z@IID@Z"
 	.addrsig_sym "___ehhandler$?_Fput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPBDI@Z"
 	.addrsig_sym "___ehhandler$??$_Reallocate_grow_by@V<lambda_1>@?0??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@ID@Z@ID@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?0??append@01@QAEAAV01@ID@Z@ID@Z"
+	.addrsig_sym "___ehhandler$?_Tidy@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXXZ"
+	.addrsig_sym "___ehhandler$?_Growmap@?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@AAEXI@Z"
 	.addrsig_sym "___ehhandler$??$_Insert_string@DU?$char_traits@D@std@@I@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@QBDI@Z"
 	.addrsig_sym "___ehhandler$?_Growmap@?$deque@Uextension@@V?$allocator@Uextension@@@std@@@std@@AAEXI@Z"
 	.addrsig_sym "___ehhandler$??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z"
 	.addrsig_sym ___ehhandler$_GLOBAL__sub_I_main.cpp
 	.addrsig_sym "?supportedExtensions@@3V?$deque@GV?$allocator@G@std@@@std@@A"
 	.addrsig_sym "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
+	.addrsig_sym "?palettes@@3V?$deque@PAY0IAA@$$CBEV?$allocator@PAY0IAA@$$CBE@std@@@std@@A"
+	.addrsig_sym "?paletteNames@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A"
+	.addrsig_sym "?chr2nib@@3V?$map@EEU?$less@E@std@@V?$allocator@U?$pair@$$CBEE@std@@@2@@std@@A"
+	.addrsig_sym _atari_8_bit_family_gtia_hex
+	.addrsig_sym _aurora_hex
+	.addrsig_sym _duel_hex
+	.addrsig_sym _hocus_pocus_hex
+	.addrsig_sym _sonic_robo_blast_2_v22_hex
+	.addrsig_sym _srb2_hex
+	.addrsig_sym _uzebox_hex
+	.addrsig_sym _windows_95_256_colours_hex
+	.addrsig_sym "??_7type_info@@6B@"
+	.addrsig_sym "??_R0?AVout_of_range@std@@@8"
 	.addrsig_sym "?id@?$codecvt@DDU_Mbstatet@@@std@@2V0locale@2@A"
 	.addrsig_sym "?id@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@2V0locale@2@A"
 	.addrsig_sym "?id@?$numpunct@D@std@@2V0locale@2@A"
-	.addrsig_sym "??_7type_info@@6B@"
 	.addrsig_sym "??_R0?AVbad_array_new_length@std@@@8"
 	.addrsig_sym "??_R0?AVbad_alloc@std@@@8"
 	.addrsig_sym "??_R0?AVexception@std@@@8"

@@ -1,9 +1,11 @@
 run: all
 ifeq ($(OS),Windows_NT)
 	bin/main.exe tests/2Dtest.wvc
+	bin/main.exe tests/paletteRaster.wvc
 	bin/main.exe tests/invalidExtensionTest.wvc
 else
 	bin/main tests/2Dtest.wvc
+	bin/main tests/paletteRaster.wvc
 	bin/main tests/invalidExtensionTest.wvc
 endif
 
