@@ -29,11 +29,35 @@ void ext0101_setdebug_inst(std::deque<uint8_t>& img, fileInfo& fi) {
 
 unsigned int ext0101_raster4_id = 0x01010002;
 void ext0101_raster4_inst(std::deque<uint8_t>& img, fileInfo& fi) {
-    fi.debugEnabled = (bool)getNextInt(fi.instructions);
+    unsigned int x = getNextInt(fi.instructions),
+                 y = getNextInt(fi.instructions),
+                 width = getNextInt(fi.instructions),
+                 height = getNextInt(fi.instructions);
+    color tmp;
+
+    for (int cy = x; cy < x+width; cy++){
+        for (int cx = y; cx < y+height; cx++){
+            tmp = getNextColor(fi.instructions);
+            setPixel(cx, cy, fi.width, img, tmp);
+            if (fi.debugEnabled) std::cout << concolor_fg_rgb(tmp.r, tmp.g, tmp.b) <<  "(" << cx << ", " << cy << ")\n" << concolor_reset();
+        }
+    }
 }
 unsigned int ext0101_raster3_id = 0x01010003;
 void ext0101_raster3_inst(std::deque<uint8_t>& img, fileInfo& fi) {
-    fi.debugEnabled = (bool)getNextInt(fi.instructions);
+    unsigned int x = getNextInt(fi.instructions),
+                 y = getNextInt(fi.instructions),
+                 width = getNextInt(fi.instructions),
+                 height = getNextInt(fi.instructions);
+    color tmp;
+
+    for (int cy = x; cy < x+width; cy++){
+        for (int cx = y; cx < y+height; cx++){
+            tmp = getNextColor3(fi.instructions);
+            setPixel(cx, cy, fi.width, img, tmp);
+            if (fi.debugEnabled) std::cout << concolor_fg_rgb(tmp.r, tmp.g, tmp.b) <<  "(" << cx << ", " << cy << ")\n" << concolor_reset();
+        }
+    }
 }
 
 unsigned int ext0101_raster_set_palette_id = 0x01010004;

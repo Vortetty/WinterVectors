@@ -70,6 +70,12 @@ color getNextColor(std::deque<uint8_t>& file){
     return tmp;
 }
 
+color getNextColor3(std::deque<uint8_t>& file){
+    color tmp = {file[0], file[1], file[2], 255};
+    for (int i = 0; i < 3; i++) file.pop_front();
+    return tmp;
+}
+
 bool checkInstructionSetSupported(uint8_t high, uint8_t low){
     return std::find(supportedExtensions.begin(), supportedExtensions.end(), (uint16_t)high << 8 | (uint16_t)low) != supportedExtensions.end();
 }
