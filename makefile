@@ -9,11 +9,7 @@ else
 	bin/main tests/invalidExtensionTest.wvc
 endif
 
-asm:
-	cd src && clang main.cpp -std=c++17 -I../src -I../include -I.. -Ofast -S -masm=intel
-	cd include && clang lodepng.cpp -std=c++17 -I../src -I../include -I.. -Ofast -S -masm=intel
-
-github: all asm
+github: all
 	git add *
 	git commit
 	git push
